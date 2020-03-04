@@ -5,3 +5,5 @@
 The stylistic extremes are 
 * 1: Terminals cut perpendicular to the stroke angle and rectangular stems.
 * 2: Terminals cut at 90 degree angles, introducing sharp details that are echoed in the diagonally sliced stems that loosely adheres to the traditional angle of broad nib calligraphy.
+
+![Geologisk typeface sample](Geologisk.png)
