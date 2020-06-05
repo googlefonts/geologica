@@ -218,6 +218,34 @@ https://github.com/googlefonts/fontbakery/blob/master/prebuilt/workarounds
 <details>
 <summary><b>[158] Geologisk-Black.ttf</b></summary>
 <details>
+<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+<pre>--- Rationale ---
+
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
+
+
+</pre>
+
+* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
+
+This can be accomplished by using the 'gftools fix-hinting' command.
+
+# create virtualenvpython3 -m venv venv
+# activate virtualenvsource venv/bin/activate
+# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
 * [com.google.fonts/check/contour_count](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/contour_count)
@@ -275,38 +303,38 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni20A6	Contours detected: 2	Expected: 1, 3 or 5
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni20A6	Contours detected: 2	Expected: 1, 3 or 5
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1 [code: contour-count]
 
 </details>
 <details>
@@ -554,55 +582,6 @@ not placed on subdirectories.
 * [com.google.fonts/check/family/has_license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/family/has_license)
 
 * 💤 **SKIP** Unfulfilled Conditions: gfonts_repo_structure
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Check license file has good copyright string.</summary>
-
-* [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
-<pre>--- Rationale ---
-
-An OFL.txt file&#x27;s first line should be the font copyright e.g:
-&quot;Copyright 2019 The Montserrat Project Authors
-(https://github.com/julietaula/montserrat)&quot;
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: license_contents
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Check copyright namerecords match license file.</summary>
-
-* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
-<pre>--- Rationale ---
-
-A known licensing description must be provided in the NameID 14 (LICENSE
-DESCRIPTION) entries of the name table.
-
-The source of truth for this check (to determine which license is in use) is a
-file placed side-by-side to your font project including the licensing terms.
-
-Depending on the chosen license, one of the following string snippets is
-expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
-table:
-- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
-This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
-- &quot;Licensed under the Apache License, Version 2.0&quot;
-- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
-
-
-Currently accepted licenses are Apache or Open Font License.
-For a small set of legacy families the Ubuntu Font License may be acceptable as
-well.
-
-When in doubt, please choose OFL for new font projects.
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: license
 
 </details>
 <details>
@@ -1396,9 +1375,9 @@ of hinted versus unhinted font files.
 	|  | ../fonts/static/ttfs/Geologisk-Black.ttf |
 	|:--- | ---:|
 	| Dehinted Size | 85.5kb |
-	| Hinted Size | 115.3kb |
-	| Increase | 29.8kb |
-	| Change   | 34.9 % |
+	| Hinted Size | 115.2kb |
+	| Increase | 29.6kb |
+	| Change   | 34.7 % |
  [code: size-impact]
 
 </details>
@@ -1490,7 +1469,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [cvt , fpgm, prep, GPOS, DSIG, loca, gasp, GSUB]
+* ℹ **INFO** This font contains the following optional tables [loca, GSUB, prep, cvt , gasp, GPOS, fpgm, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -1615,6 +1594,55 @@ set of characters defined in the `GF-latin-core` glyph-set.
 * [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
 
 * 🍞 **PASS** OS/2 usWeightClass value looks good!
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check license file has good copyright string.</summary>
+
+* [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
+<pre>--- Rationale ---
+
+An OFL.txt file&#x27;s first line should be the font copyright e.g:
+&quot;Copyright 2019 The Montserrat Project Authors
+(https://github.com/julietaula/montserrat)&quot;
+
+
+</pre>
+
+* 🍞 **PASS** looks good
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check copyright namerecords match license file.</summary>
+
+* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
+<pre>--- Rationale ---
+
+A known licensing description must be provided in the NameID 14 (LICENSE
+DESCRIPTION) entries of the name table.
+
+The source of truth for this check (to determine which license is in use) is a
+file placed side-by-side to your font project including the licensing terms.
+
+Depending on the chosen license, one of the following string snippets is
+expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
+table:
+- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
+- &quot;Licensed under the Apache License, Version 2.0&quot;
+- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
+
+
+Currently accepted licenses are Apache or Open Font License.
+For a small set of legacy families the Ubuntu Font License may be acceptable as
+well.
+
+When in doubt, please choose OFL for new font projects.
+
+
+</pre>
+
+* 🍞 **PASS** Licensing entry on name table is correctly set.
 
 </details>
 <details>
@@ -1987,28 +2015,6 @@ release files, but Google Fonts should only have OpenType tables.
 </pre>
 
 * 🍞 **PASS** There are no unwanted AAT tables.
-
-</details>
-<details>
-<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -2648,6 +2654,34 @@ the same x,y coordinates.
 <details>
 <summary><b>[158] Geologisk-BlackItalic.ttf</b></summary>
 <details>
+<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+<pre>--- Rationale ---
+
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
+
+
+</pre>
+
+* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
+
+This can be accomplished by using the 'gftools fix-hinting' command.
+
+# create virtualenvpython3 -m venv venv
+# activate virtualenvsource venv/bin/activate
+# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
 * [com.google.fonts/check/contour_count](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/contour_count)
@@ -2705,38 +2739,38 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni20A6	Contours detected: 2	Expected: 1, 3 or 5
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni20A6	Contours detected: 2	Expected: 1, 3 or 5
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1 [code: contour-count]
 
 </details>
 <details>
@@ -2984,55 +3018,6 @@ not placed on subdirectories.
 * [com.google.fonts/check/family/has_license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/family/has_license)
 
 * 💤 **SKIP** Unfulfilled Conditions: gfonts_repo_structure
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Check license file has good copyright string.</summary>
-
-* [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
-<pre>--- Rationale ---
-
-An OFL.txt file&#x27;s first line should be the font copyright e.g:
-&quot;Copyright 2019 The Montserrat Project Authors
-(https://github.com/julietaula/montserrat)&quot;
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: license_contents
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Check copyright namerecords match license file.</summary>
-
-* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
-<pre>--- Rationale ---
-
-A known licensing description must be provided in the NameID 14 (LICENSE
-DESCRIPTION) entries of the name table.
-
-The source of truth for this check (to determine which license is in use) is a
-file placed side-by-side to your font project including the licensing terms.
-
-Depending on the chosen license, one of the following string snippets is
-expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
-table:
-- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
-This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
-- &quot;Licensed under the Apache License, Version 2.0&quot;
-- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
-
-
-Currently accepted licenses are Apache or Open Font License.
-For a small set of legacy families the Ubuntu Font License may be acceptable as
-well.
-
-When in doubt, please choose OFL for new font projects.
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: license
 
 </details>
 <details>
@@ -3826,9 +3811,9 @@ of hinted versus unhinted font files.
 	|  | ../fonts/static/ttfs/Geologisk-BlackItalic.ttf |
 	|:--- | ---:|
 	| Dehinted Size | 87.3kb |
-	| Hinted Size | 117.6kb |
-	| Increase | 30.3kb |
-	| Change   | 34.6 % |
+	| Hinted Size | 117.4kb |
+	| Increase | 30.1kb |
+	| Change   | 34.4 % |
  [code: size-impact]
 
 </details>
@@ -3920,7 +3905,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [cvt , fpgm, prep, GPOS, DSIG, loca, gasp, GSUB]
+* ℹ **INFO** This font contains the following optional tables [loca, GSUB, prep, cvt , gasp, GPOS, fpgm, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -4045,6 +4030,55 @@ set of characters defined in the `GF-latin-core` glyph-set.
 * [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
 
 * 🍞 **PASS** OS/2 usWeightClass value looks good!
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check license file has good copyright string.</summary>
+
+* [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
+<pre>--- Rationale ---
+
+An OFL.txt file&#x27;s first line should be the font copyright e.g:
+&quot;Copyright 2019 The Montserrat Project Authors
+(https://github.com/julietaula/montserrat)&quot;
+
+
+</pre>
+
+* 🍞 **PASS** looks good
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check copyright namerecords match license file.</summary>
+
+* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
+<pre>--- Rationale ---
+
+A known licensing description must be provided in the NameID 14 (LICENSE
+DESCRIPTION) entries of the name table.
+
+The source of truth for this check (to determine which license is in use) is a
+file placed side-by-side to your font project including the licensing terms.
+
+Depending on the chosen license, one of the following string snippets is
+expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
+table:
+- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
+- &quot;Licensed under the Apache License, Version 2.0&quot;
+- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
+
+
+Currently accepted licenses are Apache or Open Font License.
+For a small set of legacy families the Ubuntu Font License may be acceptable as
+well.
+
+When in doubt, please choose OFL for new font projects.
+
+
+</pre>
+
+* 🍞 **PASS** Licensing entry on name table is correctly set.
 
 </details>
 <details>
@@ -4417,28 +4451,6 @@ release files, but Google Fonts should only have OpenType tables.
 </pre>
 
 * 🍞 **PASS** There are no unwanted AAT tables.
-
-</details>
-<details>
-<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -5078,6 +5090,34 @@ the same x,y coordinates.
 <details>
 <summary><b>[158] Geologisk-Bold.ttf</b></summary>
 <details>
+<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+<pre>--- Rationale ---
+
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
+
+
+</pre>
+
+* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
+
+This can be accomplished by using the 'gftools fix-hinting' command.
+
+# create virtualenvpython3 -m venv venv
+# activate virtualenvsource venv/bin/activate
+# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
 * [com.google.fonts/check/contour_count](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/contour_count)
@@ -5135,38 +5175,38 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: eogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1 [code: contour-count]
 
 </details>
 <details>
@@ -5414,55 +5454,6 @@ not placed on subdirectories.
 * [com.google.fonts/check/family/has_license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/family/has_license)
 
 * 💤 **SKIP** Unfulfilled Conditions: gfonts_repo_structure
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Check license file has good copyright string.</summary>
-
-* [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
-<pre>--- Rationale ---
-
-An OFL.txt file&#x27;s first line should be the font copyright e.g:
-&quot;Copyright 2019 The Montserrat Project Authors
-(https://github.com/julietaula/montserrat)&quot;
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: license_contents
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Check copyright namerecords match license file.</summary>
-
-* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
-<pre>--- Rationale ---
-
-A known licensing description must be provided in the NameID 14 (LICENSE
-DESCRIPTION) entries of the name table.
-
-The source of truth for this check (to determine which license is in use) is a
-file placed side-by-side to your font project including the licensing terms.
-
-Depending on the chosen license, one of the following string snippets is
-expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
-table:
-- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
-This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
-- &quot;Licensed under the Apache License, Version 2.0&quot;
-- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
-
-
-Currently accepted licenses are Apache or Open Font License.
-For a small set of legacy families the Ubuntu Font License may be acceptable as
-well.
-
-When in doubt, please choose OFL for new font projects.
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: license
 
 </details>
 <details>
@@ -6256,9 +6247,9 @@ of hinted versus unhinted font files.
 	|  | ../fonts/static/ttfs/Geologisk-Bold.ttf |
 	|:--- | ---:|
 	| Dehinted Size | 85.6kb |
-	| Hinted Size | 117.2kb |
-	| Increase | 31.5kb |
-	| Change   | 36.8 % |
+	| Hinted Size | 117.0kb |
+	| Increase | 31.3kb |
+	| Change   | 36.6 % |
  [code: size-impact]
 
 </details>
@@ -6350,7 +6341,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [cvt , fpgm, prep, GPOS, DSIG, loca, gasp, GSUB]
+* ℹ **INFO** This font contains the following optional tables [loca, GSUB, prep, cvt , gasp, GPOS, fpgm, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -6475,6 +6466,55 @@ set of characters defined in the `GF-latin-core` glyph-set.
 * [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
 
 * 🍞 **PASS** OS/2 usWeightClass value looks good!
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check license file has good copyright string.</summary>
+
+* [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
+<pre>--- Rationale ---
+
+An OFL.txt file&#x27;s first line should be the font copyright e.g:
+&quot;Copyright 2019 The Montserrat Project Authors
+(https://github.com/julietaula/montserrat)&quot;
+
+
+</pre>
+
+* 🍞 **PASS** looks good
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check copyright namerecords match license file.</summary>
+
+* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
+<pre>--- Rationale ---
+
+A known licensing description must be provided in the NameID 14 (LICENSE
+DESCRIPTION) entries of the name table.
+
+The source of truth for this check (to determine which license is in use) is a
+file placed side-by-side to your font project including the licensing terms.
+
+Depending on the chosen license, one of the following string snippets is
+expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
+table:
+- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
+- &quot;Licensed under the Apache License, Version 2.0&quot;
+- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
+
+
+Currently accepted licenses are Apache or Open Font License.
+For a small set of legacy families the Ubuntu Font License may be acceptable as
+well.
+
+When in doubt, please choose OFL for new font projects.
+
+
+</pre>
+
+* 🍞 **PASS** Licensing entry on name table is correctly set.
 
 </details>
 <details>
@@ -6847,28 +6887,6 @@ release files, but Google Fonts should only have OpenType tables.
 </pre>
 
 * 🍞 **PASS** There are no unwanted AAT tables.
-
-</details>
-<details>
-<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -7508,6 +7526,34 @@ the same x,y coordinates.
 <details>
 <summary><b>[158] Geologisk-BoldItalic.ttf</b></summary>
 <details>
+<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+<pre>--- Rationale ---
+
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
+
+
+</pre>
+
+* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
+
+This can be accomplished by using the 'gftools fix-hinting' command.
+
+# create virtualenvpython3 -m venv venv
+# activate virtualenvsource venv/bin/activate
+# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
 * [com.google.fonts/check/contour_count](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/contour_count)
@@ -7565,38 +7611,38 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: eogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1 [code: contour-count]
 
 </details>
 <details>
@@ -7844,55 +7890,6 @@ not placed on subdirectories.
 * [com.google.fonts/check/family/has_license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/family/has_license)
 
 * 💤 **SKIP** Unfulfilled Conditions: gfonts_repo_structure
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Check license file has good copyright string.</summary>
-
-* [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
-<pre>--- Rationale ---
-
-An OFL.txt file&#x27;s first line should be the font copyright e.g:
-&quot;Copyright 2019 The Montserrat Project Authors
-(https://github.com/julietaula/montserrat)&quot;
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: license_contents
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Check copyright namerecords match license file.</summary>
-
-* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
-<pre>--- Rationale ---
-
-A known licensing description must be provided in the NameID 14 (LICENSE
-DESCRIPTION) entries of the name table.
-
-The source of truth for this check (to determine which license is in use) is a
-file placed side-by-side to your font project including the licensing terms.
-
-Depending on the chosen license, one of the following string snippets is
-expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
-table:
-- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
-This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
-- &quot;Licensed under the Apache License, Version 2.0&quot;
-- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
-
-
-Currently accepted licenses are Apache or Open Font License.
-For a small set of legacy families the Ubuntu Font License may be acceptable as
-well.
-
-When in doubt, please choose OFL for new font projects.
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: license
 
 </details>
 <details>
@@ -8686,9 +8683,9 @@ of hinted versus unhinted font files.
 	|  | ../fonts/static/ttfs/Geologisk-BoldItalic.ttf |
 	|:--- | ---:|
 	| Dehinted Size | 87.3kb |
-	| Hinted Size | 118.4kb |
-	| Increase | 31.1kb |
-	| Change   | 35.7 % |
+	| Hinted Size | 118.2kb |
+	| Increase | 30.9kb |
+	| Change   | 35.5 % |
  [code: size-impact]
 
 </details>
@@ -8780,7 +8777,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [cvt , fpgm, prep, GPOS, DSIG, loca, gasp, GSUB]
+* ℹ **INFO** This font contains the following optional tables [loca, GSUB, prep, cvt , gasp, GPOS, fpgm, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -8905,6 +8902,55 @@ set of characters defined in the `GF-latin-core` glyph-set.
 * [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
 
 * 🍞 **PASS** OS/2 usWeightClass value looks good!
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check license file has good copyright string.</summary>
+
+* [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
+<pre>--- Rationale ---
+
+An OFL.txt file&#x27;s first line should be the font copyright e.g:
+&quot;Copyright 2019 The Montserrat Project Authors
+(https://github.com/julietaula/montserrat)&quot;
+
+
+</pre>
+
+* 🍞 **PASS** looks good
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check copyright namerecords match license file.</summary>
+
+* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
+<pre>--- Rationale ---
+
+A known licensing description must be provided in the NameID 14 (LICENSE
+DESCRIPTION) entries of the name table.
+
+The source of truth for this check (to determine which license is in use) is a
+file placed side-by-side to your font project including the licensing terms.
+
+Depending on the chosen license, one of the following string snippets is
+expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
+table:
+- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
+- &quot;Licensed under the Apache License, Version 2.0&quot;
+- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
+
+
+Currently accepted licenses are Apache or Open Font License.
+For a small set of legacy families the Ubuntu Font License may be acceptable as
+well.
+
+When in doubt, please choose OFL for new font projects.
+
+
+</pre>
+
+* 🍞 **PASS** Licensing entry on name table is correctly set.
 
 </details>
 <details>
@@ -9277,28 +9323,6 @@ release files, but Google Fonts should only have OpenType tables.
 </pre>
 
 * 🍞 **PASS** There are no unwanted AAT tables.
-
-</details>
-<details>
-<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -9938,6 +9962,34 @@ the same x,y coordinates.
 <details>
 <summary><b>[158] Geologisk-ExtraBold.ttf</b></summary>
 <details>
+<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+<pre>--- Rationale ---
+
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
+
+
+</pre>
+
+* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
+
+This can be accomplished by using the 'gftools fix-hinting' command.
+
+# create virtualenvpython3 -m venv venv
+# activate virtualenvsource venv/bin/activate
+# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
 * [com.google.fonts/check/contour_count](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/contour_count)
@@ -9994,37 +10046,37 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1 [code: contour-count]
 
 </details>
 <details>
@@ -10272,55 +10324,6 @@ not placed on subdirectories.
 * [com.google.fonts/check/family/has_license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/family/has_license)
 
 * 💤 **SKIP** Unfulfilled Conditions: gfonts_repo_structure
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Check license file has good copyright string.</summary>
-
-* [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
-<pre>--- Rationale ---
-
-An OFL.txt file&#x27;s first line should be the font copyright e.g:
-&quot;Copyright 2019 The Montserrat Project Authors
-(https://github.com/julietaula/montserrat)&quot;
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: license_contents
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Check copyright namerecords match license file.</summary>
-
-* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
-<pre>--- Rationale ---
-
-A known licensing description must be provided in the NameID 14 (LICENSE
-DESCRIPTION) entries of the name table.
-
-The source of truth for this check (to determine which license is in use) is a
-file placed side-by-side to your font project including the licensing terms.
-
-Depending on the chosen license, one of the following string snippets is
-expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
-table:
-- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
-This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
-- &quot;Licensed under the Apache License, Version 2.0&quot;
-- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
-
-
-Currently accepted licenses are Apache or Open Font License.
-For a small set of legacy families the Ubuntu Font License may be acceptable as
-well.
-
-When in doubt, please choose OFL for new font projects.
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: license
 
 </details>
 <details>
@@ -11114,9 +11117,9 @@ of hinted versus unhinted font files.
 	|  | ../fonts/static/ttfs/Geologisk-ExtraBold.ttf |
 	|:--- | ---:|
 	| Dehinted Size | 85.7kb |
-	| Hinted Size | 126.7kb |
-	| Increase | 41.0kb |
-	| Change   | 47.8 % |
+	| Hinted Size | 126.5kb |
+	| Increase | 40.8kb |
+	| Change   | 47.6 % |
  [code: size-impact]
 
 </details>
@@ -11208,7 +11211,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [cvt , fpgm, prep, GPOS, DSIG, loca, gasp, GSUB]
+* ℹ **INFO** This font contains the following optional tables [loca, GSUB, prep, cvt , gasp, GPOS, fpgm, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -11333,6 +11336,55 @@ set of characters defined in the `GF-latin-core` glyph-set.
 * [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
 
 * 🍞 **PASS** OS/2 usWeightClass value looks good!
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check license file has good copyright string.</summary>
+
+* [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
+<pre>--- Rationale ---
+
+An OFL.txt file&#x27;s first line should be the font copyright e.g:
+&quot;Copyright 2019 The Montserrat Project Authors
+(https://github.com/julietaula/montserrat)&quot;
+
+
+</pre>
+
+* 🍞 **PASS** looks good
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check copyright namerecords match license file.</summary>
+
+* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
+<pre>--- Rationale ---
+
+A known licensing description must be provided in the NameID 14 (LICENSE
+DESCRIPTION) entries of the name table.
+
+The source of truth for this check (to determine which license is in use) is a
+file placed side-by-side to your font project including the licensing terms.
+
+Depending on the chosen license, one of the following string snippets is
+expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
+table:
+- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
+- &quot;Licensed under the Apache License, Version 2.0&quot;
+- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
+
+
+Currently accepted licenses are Apache or Open Font License.
+For a small set of legacy families the Ubuntu Font License may be acceptable as
+well.
+
+When in doubt, please choose OFL for new font projects.
+
+
+</pre>
+
+* 🍞 **PASS** Licensing entry on name table is correctly set.
 
 </details>
 <details>
@@ -11705,28 +11757,6 @@ release files, but Google Fonts should only have OpenType tables.
 </pre>
 
 * 🍞 **PASS** There are no unwanted AAT tables.
-
-</details>
-<details>
-<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -12366,6 +12396,34 @@ the same x,y coordinates.
 <details>
 <summary><b>[158] Geologisk-ExtraBoldItalic.ttf</b></summary>
 <details>
+<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+<pre>--- Rationale ---
+
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
+
+
+</pre>
+
+* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
+
+This can be accomplished by using the 'gftools fix-hinting' command.
+
+# create virtualenvpython3 -m venv venv
+# activate virtualenvsource venv/bin/activate
+# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
 * [com.google.fonts/check/contour_count](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/contour_count)
@@ -12422,37 +12480,37 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1 [code: contour-count]
 
 </details>
 <details>
@@ -12700,55 +12758,6 @@ not placed on subdirectories.
 * [com.google.fonts/check/family/has_license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/family/has_license)
 
 * 💤 **SKIP** Unfulfilled Conditions: gfonts_repo_structure
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Check license file has good copyright string.</summary>
-
-* [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
-<pre>--- Rationale ---
-
-An OFL.txt file&#x27;s first line should be the font copyright e.g:
-&quot;Copyright 2019 The Montserrat Project Authors
-(https://github.com/julietaula/montserrat)&quot;
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: license_contents
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Check copyright namerecords match license file.</summary>
-
-* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
-<pre>--- Rationale ---
-
-A known licensing description must be provided in the NameID 14 (LICENSE
-DESCRIPTION) entries of the name table.
-
-The source of truth for this check (to determine which license is in use) is a
-file placed side-by-side to your font project including the licensing terms.
-
-Depending on the chosen license, one of the following string snippets is
-expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
-table:
-- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
-This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
-- &quot;Licensed under the Apache License, Version 2.0&quot;
-- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
-
-
-Currently accepted licenses are Apache or Open Font License.
-For a small set of legacy families the Ubuntu Font License may be acceptable as
-well.
-
-When in doubt, please choose OFL for new font projects.
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: license
 
 </details>
 <details>
@@ -13542,9 +13551,9 @@ of hinted versus unhinted font files.
 	|  | ../fonts/static/ttfs/Geologisk-ExtraBoldItalic.ttf |
 	|:--- | ---:|
 	| Dehinted Size | 87.5kb |
-	| Hinted Size | 128.6kb |
-	| Increase | 41.1kb |
-	| Change   | 47.0 % |
+	| Hinted Size | 128.4kb |
+	| Increase | 40.9kb |
+	| Change   | 46.8 % |
  [code: size-impact]
 
 </details>
@@ -13636,7 +13645,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [cvt , fpgm, prep, GPOS, DSIG, loca, gasp, GSUB]
+* ℹ **INFO** This font contains the following optional tables [loca, GSUB, prep, cvt , gasp, GPOS, fpgm, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -13761,6 +13770,55 @@ set of characters defined in the `GF-latin-core` glyph-set.
 * [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
 
 * 🍞 **PASS** OS/2 usWeightClass value looks good!
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check license file has good copyright string.</summary>
+
+* [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
+<pre>--- Rationale ---
+
+An OFL.txt file&#x27;s first line should be the font copyright e.g:
+&quot;Copyright 2019 The Montserrat Project Authors
+(https://github.com/julietaula/montserrat)&quot;
+
+
+</pre>
+
+* 🍞 **PASS** looks good
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check copyright namerecords match license file.</summary>
+
+* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
+<pre>--- Rationale ---
+
+A known licensing description must be provided in the NameID 14 (LICENSE
+DESCRIPTION) entries of the name table.
+
+The source of truth for this check (to determine which license is in use) is a
+file placed side-by-side to your font project including the licensing terms.
+
+Depending on the chosen license, one of the following string snippets is
+expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
+table:
+- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
+- &quot;Licensed under the Apache License, Version 2.0&quot;
+- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
+
+
+Currently accepted licenses are Apache or Open Font License.
+For a small set of legacy families the Ubuntu Font License may be acceptable as
+well.
+
+When in doubt, please choose OFL for new font projects.
+
+
+</pre>
+
+* 🍞 **PASS** Licensing entry on name table is correctly set.
 
 </details>
 <details>
@@ -14133,28 +14191,6 @@ release files, but Google Fonts should only have OpenType tables.
 </pre>
 
 * 🍞 **PASS** There are no unwanted AAT tables.
-
-</details>
-<details>
-<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -14794,6 +14830,34 @@ the same x,y coordinates.
 <details>
 <summary><b>[158] Geologisk-ExtraLight.ttf</b></summary>
 <details>
+<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+<pre>--- Rationale ---
+
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
+
+
+</pre>
+
+* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
+
+This can be accomplished by using the 'gftools fix-hinting' command.
+
+# create virtualenvpython3 -m venv venv
+# activate virtualenvsource venv/bin/activate
+# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Checking OS/2 usWeightClass.</summary>
 
 * [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
@@ -14858,37 +14922,37 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: eogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1 [code: contour-count]
 
 </details>
 <details>
@@ -15136,55 +15200,6 @@ not placed on subdirectories.
 * [com.google.fonts/check/family/has_license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/family/has_license)
 
 * 💤 **SKIP** Unfulfilled Conditions: gfonts_repo_structure
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Check license file has good copyright string.</summary>
-
-* [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
-<pre>--- Rationale ---
-
-An OFL.txt file&#x27;s first line should be the font copyright e.g:
-&quot;Copyright 2019 The Montserrat Project Authors
-(https://github.com/julietaula/montserrat)&quot;
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: license_contents
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Check copyright namerecords match license file.</summary>
-
-* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
-<pre>--- Rationale ---
-
-A known licensing description must be provided in the NameID 14 (LICENSE
-DESCRIPTION) entries of the name table.
-
-The source of truth for this check (to determine which license is in use) is a
-file placed side-by-side to your font project including the licensing terms.
-
-Depending on the chosen license, one of the following string snippets is
-expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
-table:
-- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
-This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
-- &quot;Licensed under the Apache License, Version 2.0&quot;
-- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
-
-
-Currently accepted licenses are Apache or Open Font License.
-For a small set of legacy families the Ubuntu Font License may be acceptable as
-well.
-
-When in doubt, please choose OFL for new font projects.
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: license
 
 </details>
 <details>
@@ -15978,9 +15993,9 @@ of hinted versus unhinted font files.
 	|  | ../fonts/static/ttfs/Geologisk-ExtraLight.ttf |
 	|:--- | ---:|
 	| Dehinted Size | 86.1kb |
-	| Hinted Size | 115.3kb |
-	| Increase | 29.2kb |
-	| Change   | 33.9 % |
+	| Hinted Size | 115.1kb |
+	| Increase | 29.0kb |
+	| Change   | 33.7 % |
  [code: size-impact]
 
 </details>
@@ -16072,7 +16087,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [cvt , fpgm, prep, GPOS, DSIG, loca, gasp, GSUB]
+* ℹ **INFO** This font contains the following optional tables [loca, GSUB, prep, cvt , gasp, GPOS, fpgm, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -16189,6 +16204,55 @@ set of characters defined in the `GF-latin-core` glyph-set.
 * [com.google.fonts/check/name/unwanted_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars)
 
 * 🍞 **PASS** No need to substitute copyright, registered and trademark symbols in name table entries of this font.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check license file has good copyright string.</summary>
+
+* [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
+<pre>--- Rationale ---
+
+An OFL.txt file&#x27;s first line should be the font copyright e.g:
+&quot;Copyright 2019 The Montserrat Project Authors
+(https://github.com/julietaula/montserrat)&quot;
+
+
+</pre>
+
+* 🍞 **PASS** looks good
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check copyright namerecords match license file.</summary>
+
+* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
+<pre>--- Rationale ---
+
+A known licensing description must be provided in the NameID 14 (LICENSE
+DESCRIPTION) entries of the name table.
+
+The source of truth for this check (to determine which license is in use) is a
+file placed side-by-side to your font project including the licensing terms.
+
+Depending on the chosen license, one of the following string snippets is
+expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
+table:
+- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
+- &quot;Licensed under the Apache License, Version 2.0&quot;
+- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
+
+
+Currently accepted licenses are Apache or Open Font License.
+For a small set of legacy families the Ubuntu Font License may be acceptable as
+well.
+
+When in doubt, please choose OFL for new font projects.
+
+
+</pre>
+
+* 🍞 **PASS** Licensing entry on name table is correctly set.
 
 </details>
 <details>
@@ -16561,28 +16625,6 @@ release files, but Google Fonts should only have OpenType tables.
 </pre>
 
 * 🍞 **PASS** There are no unwanted AAT tables.
-
-</details>
-<details>
-<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -17222,6 +17264,34 @@ the same x,y coordinates.
 <details>
 <summary><b>[158] Geologisk-ExtraLightItalic.ttf</b></summary>
 <details>
+<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+<pre>--- Rationale ---
+
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
+
+
+</pre>
+
+* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
+
+This can be accomplished by using the 'gftools fix-hinting' command.
+
+# create virtualenvpython3 -m venv venv
+# activate virtualenvsource venv/bin/activate
+# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Checking OS/2 usWeightClass.</summary>
 
 * [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
@@ -17286,37 +17356,37 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: eogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1 [code: contour-count]
 
 </details>
 <details>
@@ -17564,55 +17634,6 @@ not placed on subdirectories.
 * [com.google.fonts/check/family/has_license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/family/has_license)
 
 * 💤 **SKIP** Unfulfilled Conditions: gfonts_repo_structure
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Check license file has good copyright string.</summary>
-
-* [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
-<pre>--- Rationale ---
-
-An OFL.txt file&#x27;s first line should be the font copyright e.g:
-&quot;Copyright 2019 The Montserrat Project Authors
-(https://github.com/julietaula/montserrat)&quot;
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: license_contents
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Check copyright namerecords match license file.</summary>
-
-* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
-<pre>--- Rationale ---
-
-A known licensing description must be provided in the NameID 14 (LICENSE
-DESCRIPTION) entries of the name table.
-
-The source of truth for this check (to determine which license is in use) is a
-file placed side-by-side to your font project including the licensing terms.
-
-Depending on the chosen license, one of the following string snippets is
-expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
-table:
-- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
-This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
-- &quot;Licensed under the Apache License, Version 2.0&quot;
-- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
-
-
-Currently accepted licenses are Apache or Open Font License.
-For a small set of legacy families the Ubuntu Font License may be acceptable as
-well.
-
-When in doubt, please choose OFL for new font projects.
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: license
 
 </details>
 <details>
@@ -18406,9 +18427,9 @@ of hinted versus unhinted font files.
 	|  | ../fonts/static/ttfs/Geologisk-ExtraLightItalic.ttf |
 	|:--- | ---:|
 	| Dehinted Size | 87.6kb |
-	| Hinted Size | 117.4kb |
-	| Increase | 29.8kb |
-	| Change   | 34.0 % |
+	| Hinted Size | 117.2kb |
+	| Increase | 29.6kb |
+	| Change   | 33.7 % |
  [code: size-impact]
 
 </details>
@@ -18500,7 +18521,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [cvt , fpgm, prep, GPOS, DSIG, loca, gasp, GSUB]
+* ℹ **INFO** This font contains the following optional tables [loca, GSUB, prep, cvt , gasp, GPOS, fpgm, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -18617,6 +18638,55 @@ set of characters defined in the `GF-latin-core` glyph-set.
 * [com.google.fonts/check/name/unwanted_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars)
 
 * 🍞 **PASS** No need to substitute copyright, registered and trademark symbols in name table entries of this font.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check license file has good copyright string.</summary>
+
+* [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
+<pre>--- Rationale ---
+
+An OFL.txt file&#x27;s first line should be the font copyright e.g:
+&quot;Copyright 2019 The Montserrat Project Authors
+(https://github.com/julietaula/montserrat)&quot;
+
+
+</pre>
+
+* 🍞 **PASS** looks good
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check copyright namerecords match license file.</summary>
+
+* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
+<pre>--- Rationale ---
+
+A known licensing description must be provided in the NameID 14 (LICENSE
+DESCRIPTION) entries of the name table.
+
+The source of truth for this check (to determine which license is in use) is a
+file placed side-by-side to your font project including the licensing terms.
+
+Depending on the chosen license, one of the following string snippets is
+expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
+table:
+- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
+- &quot;Licensed under the Apache License, Version 2.0&quot;
+- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
+
+
+Currently accepted licenses are Apache or Open Font License.
+For a small set of legacy families the Ubuntu Font License may be acceptable as
+well.
+
+When in doubt, please choose OFL for new font projects.
+
+
+</pre>
+
+* 🍞 **PASS** Licensing entry on name table is correctly set.
 
 </details>
 <details>
@@ -18989,28 +19059,6 @@ release files, but Google Fonts should only have OpenType tables.
 </pre>
 
 * 🍞 **PASS** There are no unwanted AAT tables.
-
-</details>
-<details>
-<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -19650,6 +19698,34 @@ the same x,y coordinates.
 <details>
 <summary><b>[158] Geologisk-Italic.ttf</b></summary>
 <details>
+<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+<pre>--- Rationale ---
+
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
+
+
+</pre>
+
+* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
+
+This can be accomplished by using the 'gftools fix-hinting' command.
+
+# create virtualenvpython3 -m venv venv
+# activate virtualenvsource venv/bin/activate
+# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
 * [com.google.fonts/check/contour_count](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/contour_count)
@@ -19706,37 +19782,37 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: eogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1 [code: contour-count]
 
 </details>
 <details>
@@ -19984,55 +20060,6 @@ not placed on subdirectories.
 * [com.google.fonts/check/family/has_license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/family/has_license)
 
 * 💤 **SKIP** Unfulfilled Conditions: gfonts_repo_structure
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Check license file has good copyright string.</summary>
-
-* [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
-<pre>--- Rationale ---
-
-An OFL.txt file&#x27;s first line should be the font copyright e.g:
-&quot;Copyright 2019 The Montserrat Project Authors
-(https://github.com/julietaula/montserrat)&quot;
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: license_contents
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Check copyright namerecords match license file.</summary>
-
-* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
-<pre>--- Rationale ---
-
-A known licensing description must be provided in the NameID 14 (LICENSE
-DESCRIPTION) entries of the name table.
-
-The source of truth for this check (to determine which license is in use) is a
-file placed side-by-side to your font project including the licensing terms.
-
-Depending on the chosen license, one of the following string snippets is
-expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
-table:
-- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
-This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
-- &quot;Licensed under the Apache License, Version 2.0&quot;
-- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
-
-
-Currently accepted licenses are Apache or Open Font License.
-For a small set of legacy families the Ubuntu Font License may be acceptable as
-well.
-
-When in doubt, please choose OFL for new font projects.
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: license
 
 </details>
 <details>
@@ -20826,9 +20853,9 @@ of hinted versus unhinted font files.
 	|  | ../fonts/static/ttfs/Geologisk-Italic.ttf |
 	|:--- | ---:|
 	| Dehinted Size | 87.1kb |
-	| Hinted Size | 128.8kb |
-	| Increase | 41.7kb |
-	| Change   | 47.9 % |
+	| Hinted Size | 128.7kb |
+	| Increase | 41.5kb |
+	| Change   | 47.7 % |
  [code: size-impact]
 
 </details>
@@ -20920,7 +20947,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [cvt , fpgm, prep, GPOS, DSIG, loca, gasp, GSUB]
+* ℹ **INFO** This font contains the following optional tables [loca, GSUB, prep, cvt , gasp, GPOS, fpgm, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -21045,6 +21072,55 @@ set of characters defined in the `GF-latin-core` glyph-set.
 * [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
 
 * 🍞 **PASS** OS/2 usWeightClass value looks good!
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check license file has good copyright string.</summary>
+
+* [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
+<pre>--- Rationale ---
+
+An OFL.txt file&#x27;s first line should be the font copyright e.g:
+&quot;Copyright 2019 The Montserrat Project Authors
+(https://github.com/julietaula/montserrat)&quot;
+
+
+</pre>
+
+* 🍞 **PASS** looks good
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check copyright namerecords match license file.</summary>
+
+* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
+<pre>--- Rationale ---
+
+A known licensing description must be provided in the NameID 14 (LICENSE
+DESCRIPTION) entries of the name table.
+
+The source of truth for this check (to determine which license is in use) is a
+file placed side-by-side to your font project including the licensing terms.
+
+Depending on the chosen license, one of the following string snippets is
+expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
+table:
+- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
+- &quot;Licensed under the Apache License, Version 2.0&quot;
+- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
+
+
+Currently accepted licenses are Apache or Open Font License.
+For a small set of legacy families the Ubuntu Font License may be acceptable as
+well.
+
+When in doubt, please choose OFL for new font projects.
+
+
+</pre>
+
+* 🍞 **PASS** Licensing entry on name table is correctly set.
 
 </details>
 <details>
@@ -21417,28 +21493,6 @@ release files, but Google Fonts should only have OpenType tables.
 </pre>
 
 * 🍞 **PASS** There are no unwanted AAT tables.
-
-</details>
-<details>
-<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -22078,6 +22132,34 @@ the same x,y coordinates.
 <details>
 <summary><b>[158] Geologisk-Light.ttf</b></summary>
 <details>
+<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+<pre>--- Rationale ---
+
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
+
+
+</pre>
+
+* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
+
+This can be accomplished by using the 'gftools fix-hinting' command.
+
+# create virtualenvpython3 -m venv venv
+# activate virtualenvsource venv/bin/activate
+# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
 * [com.google.fonts/check/contour_count](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/contour_count)
@@ -22134,37 +22216,37 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: eogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1 [code: contour-count]
 
 </details>
 <details>
@@ -22412,55 +22494,6 @@ not placed on subdirectories.
 * [com.google.fonts/check/family/has_license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/family/has_license)
 
 * 💤 **SKIP** Unfulfilled Conditions: gfonts_repo_structure
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Check license file has good copyright string.</summary>
-
-* [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
-<pre>--- Rationale ---
-
-An OFL.txt file&#x27;s first line should be the font copyright e.g:
-&quot;Copyright 2019 The Montserrat Project Authors
-(https://github.com/julietaula/montserrat)&quot;
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: license_contents
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Check copyright namerecords match license file.</summary>
-
-* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
-<pre>--- Rationale ---
-
-A known licensing description must be provided in the NameID 14 (LICENSE
-DESCRIPTION) entries of the name table.
-
-The source of truth for this check (to determine which license is in use) is a
-file placed side-by-side to your font project including the licensing terms.
-
-Depending on the chosen license, one of the following string snippets is
-expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
-table:
-- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
-This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
-- &quot;Licensed under the Apache License, Version 2.0&quot;
-- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
-
-
-Currently accepted licenses are Apache or Open Font License.
-For a small set of legacy families the Ubuntu Font License may be acceptable as
-well.
-
-When in doubt, please choose OFL for new font projects.
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: license
 
 </details>
 <details>
@@ -23254,9 +23287,9 @@ of hinted versus unhinted font files.
 	|  | ../fonts/static/ttfs/Geologisk-Light.ttf |
 	|:--- | ---:|
 	| Dehinted Size | 85.6kb |
-	| Hinted Size | 115.1kb |
-	| Increase | 29.5kb |
-	| Change   | 34.5 % |
+	| Hinted Size | 114.9kb |
+	| Increase | 29.4kb |
+	| Change   | 34.3 % |
  [code: size-impact]
 
 </details>
@@ -23348,7 +23381,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [cvt , fpgm, prep, GPOS, DSIG, loca, gasp, GSUB]
+* ℹ **INFO** This font contains the following optional tables [loca, GSUB, prep, cvt , gasp, GPOS, fpgm, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -23473,6 +23506,55 @@ set of characters defined in the `GF-latin-core` glyph-set.
 * [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
 
 * 🍞 **PASS** OS/2 usWeightClass value looks good!
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check license file has good copyright string.</summary>
+
+* [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
+<pre>--- Rationale ---
+
+An OFL.txt file&#x27;s first line should be the font copyright e.g:
+&quot;Copyright 2019 The Montserrat Project Authors
+(https://github.com/julietaula/montserrat)&quot;
+
+
+</pre>
+
+* 🍞 **PASS** looks good
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check copyright namerecords match license file.</summary>
+
+* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
+<pre>--- Rationale ---
+
+A known licensing description must be provided in the NameID 14 (LICENSE
+DESCRIPTION) entries of the name table.
+
+The source of truth for this check (to determine which license is in use) is a
+file placed side-by-side to your font project including the licensing terms.
+
+Depending on the chosen license, one of the following string snippets is
+expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
+table:
+- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
+- &quot;Licensed under the Apache License, Version 2.0&quot;
+- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
+
+
+Currently accepted licenses are Apache or Open Font License.
+For a small set of legacy families the Ubuntu Font License may be acceptable as
+well.
+
+When in doubt, please choose OFL for new font projects.
+
+
+</pre>
+
+* 🍞 **PASS** Licensing entry on name table is correctly set.
 
 </details>
 <details>
@@ -23845,28 +23927,6 @@ release files, but Google Fonts should only have OpenType tables.
 </pre>
 
 * 🍞 **PASS** There are no unwanted AAT tables.
-
-</details>
-<details>
-<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -24506,6 +24566,34 @@ the same x,y coordinates.
 <details>
 <summary><b>[158] Geologisk-LightItalic.ttf</b></summary>
 <details>
+<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+<pre>--- Rationale ---
+
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
+
+
+</pre>
+
+* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
+
+This can be accomplished by using the 'gftools fix-hinting' command.
+
+# create virtualenvpython3 -m venv venv
+# activate virtualenvsource venv/bin/activate
+# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
 * [com.google.fonts/check/contour_count](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/contour_count)
@@ -24562,37 +24650,37 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: eogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1 [code: contour-count]
 
 </details>
 <details>
@@ -24840,55 +24928,6 @@ not placed on subdirectories.
 * [com.google.fonts/check/family/has_license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/family/has_license)
 
 * 💤 **SKIP** Unfulfilled Conditions: gfonts_repo_structure
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Check license file has good copyright string.</summary>
-
-* [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
-<pre>--- Rationale ---
-
-An OFL.txt file&#x27;s first line should be the font copyright e.g:
-&quot;Copyright 2019 The Montserrat Project Authors
-(https://github.com/julietaula/montserrat)&quot;
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: license_contents
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Check copyright namerecords match license file.</summary>
-
-* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
-<pre>--- Rationale ---
-
-A known licensing description must be provided in the NameID 14 (LICENSE
-DESCRIPTION) entries of the name table.
-
-The source of truth for this check (to determine which license is in use) is a
-file placed side-by-side to your font project including the licensing terms.
-
-Depending on the chosen license, one of the following string snippets is
-expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
-table:
-- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
-This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
-- &quot;Licensed under the Apache License, Version 2.0&quot;
-- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
-
-
-Currently accepted licenses are Apache or Open Font License.
-For a small set of legacy families the Ubuntu Font License may be acceptable as
-well.
-
-When in doubt, please choose OFL for new font projects.
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: license
 
 </details>
 <details>
@@ -25682,9 +25721,9 @@ of hinted versus unhinted font files.
 	|  | ../fonts/static/ttfs/Geologisk-LightItalic.ttf |
 	|:--- | ---:|
 	| Dehinted Size | 87.3kb |
-	| Hinted Size | 117.2kb |
-	| Increase | 29.9kb |
-	| Change   | 34.2 % |
+	| Hinted Size | 117.0kb |
+	| Increase | 29.7kb |
+	| Change   | 34.0 % |
  [code: size-impact]
 
 </details>
@@ -25776,7 +25815,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [cvt , fpgm, prep, GPOS, DSIG, loca, gasp, GSUB]
+* ℹ **INFO** This font contains the following optional tables [loca, GSUB, prep, cvt , gasp, GPOS, fpgm, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -25901,6 +25940,55 @@ set of characters defined in the `GF-latin-core` glyph-set.
 * [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
 
 * 🍞 **PASS** OS/2 usWeightClass value looks good!
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check license file has good copyright string.</summary>
+
+* [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
+<pre>--- Rationale ---
+
+An OFL.txt file&#x27;s first line should be the font copyright e.g:
+&quot;Copyright 2019 The Montserrat Project Authors
+(https://github.com/julietaula/montserrat)&quot;
+
+
+</pre>
+
+* 🍞 **PASS** looks good
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check copyright namerecords match license file.</summary>
+
+* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
+<pre>--- Rationale ---
+
+A known licensing description must be provided in the NameID 14 (LICENSE
+DESCRIPTION) entries of the name table.
+
+The source of truth for this check (to determine which license is in use) is a
+file placed side-by-side to your font project including the licensing terms.
+
+Depending on the chosen license, one of the following string snippets is
+expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
+table:
+- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
+- &quot;Licensed under the Apache License, Version 2.0&quot;
+- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
+
+
+Currently accepted licenses are Apache or Open Font License.
+For a small set of legacy families the Ubuntu Font License may be acceptable as
+well.
+
+When in doubt, please choose OFL for new font projects.
+
+
+</pre>
+
+* 🍞 **PASS** Licensing entry on name table is correctly set.
 
 </details>
 <details>
@@ -26273,28 +26361,6 @@ release files, but Google Fonts should only have OpenType tables.
 </pre>
 
 * 🍞 **PASS** There are no unwanted AAT tables.
-
-</details>
-<details>
-<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -26934,6 +27000,34 @@ the same x,y coordinates.
 <details>
 <summary><b>[158] Geologisk-Medium.ttf</b></summary>
 <details>
+<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+<pre>--- Rationale ---
+
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
+
+
+</pre>
+
+* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
+
+This can be accomplished by using the 'gftools fix-hinting' command.
+
+# create virtualenvpython3 -m venv venv
+# activate virtualenvsource venv/bin/activate
+# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
 * [com.google.fonts/check/contour_count](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/contour_count)
@@ -26990,37 +27084,37 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: eogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1 [code: contour-count]
 
 </details>
 <details>
@@ -27268,55 +27362,6 @@ not placed on subdirectories.
 * [com.google.fonts/check/family/has_license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/family/has_license)
 
 * 💤 **SKIP** Unfulfilled Conditions: gfonts_repo_structure
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Check license file has good copyright string.</summary>
-
-* [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
-<pre>--- Rationale ---
-
-An OFL.txt file&#x27;s first line should be the font copyright e.g:
-&quot;Copyright 2019 The Montserrat Project Authors
-(https://github.com/julietaula/montserrat)&quot;
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: license_contents
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Check copyright namerecords match license file.</summary>
-
-* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
-<pre>--- Rationale ---
-
-A known licensing description must be provided in the NameID 14 (LICENSE
-DESCRIPTION) entries of the name table.
-
-The source of truth for this check (to determine which license is in use) is a
-file placed side-by-side to your font project including the licensing terms.
-
-Depending on the chosen license, one of the following string snippets is
-expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
-table:
-- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
-This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
-- &quot;Licensed under the Apache License, Version 2.0&quot;
-- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
-
-
-Currently accepted licenses are Apache or Open Font License.
-For a small set of legacy families the Ubuntu Font License may be acceptable as
-well.
-
-When in doubt, please choose OFL for new font projects.
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: license
 
 </details>
 <details>
@@ -28110,9 +28155,9 @@ of hinted versus unhinted font files.
 	|  | ../fonts/static/ttfs/Geologisk-Medium.ttf |
 	|:--- | ---:|
 	| Dehinted Size | 85.6kb |
-	| Hinted Size | 116.3kb |
-	| Increase | 30.8kb |
-	| Change   | 36.0 % |
+	| Hinted Size | 116.1kb |
+	| Increase | 30.6kb |
+	| Change   | 35.7 % |
  [code: size-impact]
 
 </details>
@@ -28204,7 +28249,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [cvt , fpgm, prep, GPOS, DSIG, loca, gasp, GSUB]
+* ℹ **INFO** This font contains the following optional tables [loca, GSUB, prep, cvt , gasp, GPOS, fpgm, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -28329,6 +28374,55 @@ set of characters defined in the `GF-latin-core` glyph-set.
 * [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
 
 * 🍞 **PASS** OS/2 usWeightClass value looks good!
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check license file has good copyright string.</summary>
+
+* [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
+<pre>--- Rationale ---
+
+An OFL.txt file&#x27;s first line should be the font copyright e.g:
+&quot;Copyright 2019 The Montserrat Project Authors
+(https://github.com/julietaula/montserrat)&quot;
+
+
+</pre>
+
+* 🍞 **PASS** looks good
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check copyright namerecords match license file.</summary>
+
+* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
+<pre>--- Rationale ---
+
+A known licensing description must be provided in the NameID 14 (LICENSE
+DESCRIPTION) entries of the name table.
+
+The source of truth for this check (to determine which license is in use) is a
+file placed side-by-side to your font project including the licensing terms.
+
+Depending on the chosen license, one of the following string snippets is
+expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
+table:
+- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
+- &quot;Licensed under the Apache License, Version 2.0&quot;
+- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
+
+
+Currently accepted licenses are Apache or Open Font License.
+For a small set of legacy families the Ubuntu Font License may be acceptable as
+well.
+
+When in doubt, please choose OFL for new font projects.
+
+
+</pre>
+
+* 🍞 **PASS** Licensing entry on name table is correctly set.
 
 </details>
 <details>
@@ -28701,28 +28795,6 @@ release files, but Google Fonts should only have OpenType tables.
 </pre>
 
 * 🍞 **PASS** There are no unwanted AAT tables.
-
-</details>
-<details>
-<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -29362,6 +29434,34 @@ the same x,y coordinates.
 <details>
 <summary><b>[158] Geologisk-MediumItalic.ttf</b></summary>
 <details>
+<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+<pre>--- Rationale ---
+
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
+
+
+</pre>
+
+* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
+
+This can be accomplished by using the 'gftools fix-hinting' command.
+
+# create virtualenvpython3 -m venv venv
+# activate virtualenvsource venv/bin/activate
+# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
 * [com.google.fonts/check/contour_count](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/contour_count)
@@ -29418,37 +29518,37 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: eogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1 [code: contour-count]
 
 </details>
 <details>
@@ -29696,55 +29796,6 @@ not placed on subdirectories.
 * [com.google.fonts/check/family/has_license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/family/has_license)
 
 * 💤 **SKIP** Unfulfilled Conditions: gfonts_repo_structure
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Check license file has good copyright string.</summary>
-
-* [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
-<pre>--- Rationale ---
-
-An OFL.txt file&#x27;s first line should be the font copyright e.g:
-&quot;Copyright 2019 The Montserrat Project Authors
-(https://github.com/julietaula/montserrat)&quot;
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: license_contents
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Check copyright namerecords match license file.</summary>
-
-* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
-<pre>--- Rationale ---
-
-A known licensing description must be provided in the NameID 14 (LICENSE
-DESCRIPTION) entries of the name table.
-
-The source of truth for this check (to determine which license is in use) is a
-file placed side-by-side to your font project including the licensing terms.
-
-Depending on the chosen license, one of the following string snippets is
-expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
-table:
-- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
-This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
-- &quot;Licensed under the Apache License, Version 2.0&quot;
-- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
-
-
-Currently accepted licenses are Apache or Open Font License.
-For a small set of legacy families the Ubuntu Font License may be acceptable as
-well.
-
-When in doubt, please choose OFL for new font projects.
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: license
 
 </details>
 <details>
@@ -30538,9 +30589,9 @@ of hinted versus unhinted font files.
 	|  | ../fonts/static/ttfs/Geologisk-MediumItalic.ttf |
 	|:--- | ---:|
 	| Dehinted Size | 87.3kb |
-	| Hinted Size | 118.2kb |
-	| Increase | 30.9kb |
-	| Change   | 35.5 % |
+	| Hinted Size | 118.0kb |
+	| Increase | 30.8kb |
+	| Change   | 35.2 % |
  [code: size-impact]
 
 </details>
@@ -30632,7 +30683,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [cvt , fpgm, prep, GPOS, DSIG, loca, gasp, GSUB]
+* ℹ **INFO** This font contains the following optional tables [loca, GSUB, prep, cvt , gasp, GPOS, fpgm, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -30757,6 +30808,55 @@ set of characters defined in the `GF-latin-core` glyph-set.
 * [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
 
 * 🍞 **PASS** OS/2 usWeightClass value looks good!
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check license file has good copyright string.</summary>
+
+* [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
+<pre>--- Rationale ---
+
+An OFL.txt file&#x27;s first line should be the font copyright e.g:
+&quot;Copyright 2019 The Montserrat Project Authors
+(https://github.com/julietaula/montserrat)&quot;
+
+
+</pre>
+
+* 🍞 **PASS** looks good
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check copyright namerecords match license file.</summary>
+
+* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
+<pre>--- Rationale ---
+
+A known licensing description must be provided in the NameID 14 (LICENSE
+DESCRIPTION) entries of the name table.
+
+The source of truth for this check (to determine which license is in use) is a
+file placed side-by-side to your font project including the licensing terms.
+
+Depending on the chosen license, one of the following string snippets is
+expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
+table:
+- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
+- &quot;Licensed under the Apache License, Version 2.0&quot;
+- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
+
+
+Currently accepted licenses are Apache or Open Font License.
+For a small set of legacy families the Ubuntu Font License may be acceptable as
+well.
+
+When in doubt, please choose OFL for new font projects.
+
+
+</pre>
+
+* 🍞 **PASS** Licensing entry on name table is correctly set.
 
 </details>
 <details>
@@ -31129,28 +31229,6 @@ release files, but Google Fonts should only have OpenType tables.
 </pre>
 
 * 🍞 **PASS** There are no unwanted AAT tables.
-
-</details>
-<details>
-<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -31790,6 +31868,34 @@ the same x,y coordinates.
 <details>
 <summary><b>[158] Geologisk-Regular.ttf</b></summary>
 <details>
+<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+<pre>--- Rationale ---
+
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
+
+
+</pre>
+
+* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
+
+This can be accomplished by using the 'gftools fix-hinting' command.
+
+# create virtualenvpython3 -m venv venv
+# activate virtualenvsource venv/bin/activate
+# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
 * [com.google.fonts/check/contour_count](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/contour_count)
@@ -31846,37 +31952,37 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: eogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1 [code: contour-count]
 
 </details>
 <details>
@@ -32124,55 +32230,6 @@ not placed on subdirectories.
 * [com.google.fonts/check/family/has_license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/family/has_license)
 
 * 💤 **SKIP** Unfulfilled Conditions: gfonts_repo_structure
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Check license file has good copyright string.</summary>
-
-* [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
-<pre>--- Rationale ---
-
-An OFL.txt file&#x27;s first line should be the font copyright e.g:
-&quot;Copyright 2019 The Montserrat Project Authors
-(https://github.com/julietaula/montserrat)&quot;
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: license_contents
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Check copyright namerecords match license file.</summary>
-
-* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
-<pre>--- Rationale ---
-
-A known licensing description must be provided in the NameID 14 (LICENSE
-DESCRIPTION) entries of the name table.
-
-The source of truth for this check (to determine which license is in use) is a
-file placed side-by-side to your font project including the licensing terms.
-
-Depending on the chosen license, one of the following string snippets is
-expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
-table:
-- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
-This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
-- &quot;Licensed under the Apache License, Version 2.0&quot;
-- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
-
-
-Currently accepted licenses are Apache or Open Font License.
-For a small set of legacy families the Ubuntu Font License may be acceptable as
-well.
-
-When in doubt, please choose OFL for new font projects.
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: license
 
 </details>
 <details>
@@ -32966,9 +33023,9 @@ of hinted versus unhinted font files.
 	|  | ../fonts/static/ttfs/Geologisk-Regular.ttf |
 	|:--- | ---:|
 	| Dehinted Size | 85.5kb |
-	| Hinted Size | 126.7kb |
-	| Increase | 41.2kb |
-	| Change   | 48.2 % |
+	| Hinted Size | 126.5kb |
+	| Increase | 41.0kb |
+	| Change   | 48.0 % |
  [code: size-impact]
 
 </details>
@@ -33060,7 +33117,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [cvt , fpgm, prep, GPOS, DSIG, loca, gasp, GSUB]
+* ℹ **INFO** This font contains the following optional tables [loca, GSUB, prep, cvt , gasp, GPOS, fpgm, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -33185,6 +33242,55 @@ set of characters defined in the `GF-latin-core` glyph-set.
 * [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
 
 * 🍞 **PASS** OS/2 usWeightClass value looks good!
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check license file has good copyright string.</summary>
+
+* [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
+<pre>--- Rationale ---
+
+An OFL.txt file&#x27;s first line should be the font copyright e.g:
+&quot;Copyright 2019 The Montserrat Project Authors
+(https://github.com/julietaula/montserrat)&quot;
+
+
+</pre>
+
+* 🍞 **PASS** looks good
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check copyright namerecords match license file.</summary>
+
+* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
+<pre>--- Rationale ---
+
+A known licensing description must be provided in the NameID 14 (LICENSE
+DESCRIPTION) entries of the name table.
+
+The source of truth for this check (to determine which license is in use) is a
+file placed side-by-side to your font project including the licensing terms.
+
+Depending on the chosen license, one of the following string snippets is
+expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
+table:
+- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
+- &quot;Licensed under the Apache License, Version 2.0&quot;
+- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
+
+
+Currently accepted licenses are Apache or Open Font License.
+For a small set of legacy families the Ubuntu Font License may be acceptable as
+well.
+
+When in doubt, please choose OFL for new font projects.
+
+
+</pre>
+
+* 🍞 **PASS** Licensing entry on name table is correctly set.
 
 </details>
 <details>
@@ -33557,28 +33663,6 @@ release files, but Google Fonts should only have OpenType tables.
 </pre>
 
 * 🍞 **PASS** There are no unwanted AAT tables.
-
-</details>
-<details>
-<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -34218,6 +34302,34 @@ the same x,y coordinates.
 <details>
 <summary><b>[158] Geologisk-SemiBold.ttf</b></summary>
 <details>
+<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+<pre>--- Rationale ---
+
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
+
+
+</pre>
+
+* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
+
+This can be accomplished by using the 'gftools fix-hinting' command.
+
+# create virtualenvpython3 -m venv venv
+# activate virtualenvsource venv/bin/activate
+# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
 * [com.google.fonts/check/contour_count](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/contour_count)
@@ -34275,38 +34387,38 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: eogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1 [code: contour-count]
 
 </details>
 <details>
@@ -34554,55 +34666,6 @@ not placed on subdirectories.
 * [com.google.fonts/check/family/has_license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/family/has_license)
 
 * 💤 **SKIP** Unfulfilled Conditions: gfonts_repo_structure
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Check license file has good copyright string.</summary>
-
-* [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
-<pre>--- Rationale ---
-
-An OFL.txt file&#x27;s first line should be the font copyright e.g:
-&quot;Copyright 2019 The Montserrat Project Authors
-(https://github.com/julietaula/montserrat)&quot;
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: license_contents
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Check copyright namerecords match license file.</summary>
-
-* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
-<pre>--- Rationale ---
-
-A known licensing description must be provided in the NameID 14 (LICENSE
-DESCRIPTION) entries of the name table.
-
-The source of truth for this check (to determine which license is in use) is a
-file placed side-by-side to your font project including the licensing terms.
-
-Depending on the chosen license, one of the following string snippets is
-expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
-table:
-- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
-This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
-- &quot;Licensed under the Apache License, Version 2.0&quot;
-- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
-
-
-Currently accepted licenses are Apache or Open Font License.
-For a small set of legacy families the Ubuntu Font License may be acceptable as
-well.
-
-When in doubt, please choose OFL for new font projects.
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: license
 
 </details>
 <details>
@@ -35396,9 +35459,9 @@ of hinted versus unhinted font files.
 	|  | ../fonts/static/ttfs/Geologisk-SemiBold.ttf |
 	|:--- | ---:|
 	| Dehinted Size | 85.6kb |
-	| Hinted Size | 116.5kb |
-	| Increase | 30.9kb |
-	| Change   | 36.0 % |
+	| Hinted Size | 116.3kb |
+	| Increase | 30.7kb |
+	| Change   | 35.8 % |
  [code: size-impact]
 
 </details>
@@ -35490,7 +35553,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [cvt , fpgm, prep, GPOS, DSIG, loca, gasp, GSUB]
+* ℹ **INFO** This font contains the following optional tables [loca, GSUB, prep, cvt , gasp, GPOS, fpgm, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -35615,6 +35678,55 @@ set of characters defined in the `GF-latin-core` glyph-set.
 * [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
 
 * 🍞 **PASS** OS/2 usWeightClass value looks good!
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check license file has good copyright string.</summary>
+
+* [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
+<pre>--- Rationale ---
+
+An OFL.txt file&#x27;s first line should be the font copyright e.g:
+&quot;Copyright 2019 The Montserrat Project Authors
+(https://github.com/julietaula/montserrat)&quot;
+
+
+</pre>
+
+* 🍞 **PASS** looks good
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check copyright namerecords match license file.</summary>
+
+* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
+<pre>--- Rationale ---
+
+A known licensing description must be provided in the NameID 14 (LICENSE
+DESCRIPTION) entries of the name table.
+
+The source of truth for this check (to determine which license is in use) is a
+file placed side-by-side to your font project including the licensing terms.
+
+Depending on the chosen license, one of the following string snippets is
+expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
+table:
+- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
+- &quot;Licensed under the Apache License, Version 2.0&quot;
+- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
+
+
+Currently accepted licenses are Apache or Open Font License.
+For a small set of legacy families the Ubuntu Font License may be acceptable as
+well.
+
+When in doubt, please choose OFL for new font projects.
+
+
+</pre>
+
+* 🍞 **PASS** Licensing entry on name table is correctly set.
 
 </details>
 <details>
@@ -35987,28 +36099,6 @@ release files, but Google Fonts should only have OpenType tables.
 </pre>
 
 * 🍞 **PASS** There are no unwanted AAT tables.
-
-</details>
-<details>
-<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -36648,6 +36738,34 @@ the same x,y coordinates.
 <details>
 <summary><b>[158] Geologisk-SemiBoldItalic.ttf</b></summary>
 <details>
+<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+<pre>--- Rationale ---
+
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
+
+
+</pre>
+
+* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
+
+This can be accomplished by using the 'gftools fix-hinting' command.
+
+# create virtualenvpython3 -m venv venv
+# activate virtualenvsource venv/bin/activate
+# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
 * [com.google.fonts/check/contour_count](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/contour_count)
@@ -36705,38 +36823,38 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: eogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1 [code: contour-count]
 
 </details>
 <details>
@@ -36984,55 +37102,6 @@ not placed on subdirectories.
 * [com.google.fonts/check/family/has_license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/family/has_license)
 
 * 💤 **SKIP** Unfulfilled Conditions: gfonts_repo_structure
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Check license file has good copyright string.</summary>
-
-* [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
-<pre>--- Rationale ---
-
-An OFL.txt file&#x27;s first line should be the font copyright e.g:
-&quot;Copyright 2019 The Montserrat Project Authors
-(https://github.com/julietaula/montserrat)&quot;
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: license_contents
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Check copyright namerecords match license file.</summary>
-
-* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
-<pre>--- Rationale ---
-
-A known licensing description must be provided in the NameID 14 (LICENSE
-DESCRIPTION) entries of the name table.
-
-The source of truth for this check (to determine which license is in use) is a
-file placed side-by-side to your font project including the licensing terms.
-
-Depending on the chosen license, one of the following string snippets is
-expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
-table:
-- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
-This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
-- &quot;Licensed under the Apache License, Version 2.0&quot;
-- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
-
-
-Currently accepted licenses are Apache or Open Font License.
-For a small set of legacy families the Ubuntu Font License may be acceptable as
-well.
-
-When in doubt, please choose OFL for new font projects.
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: license
 
 </details>
 <details>
@@ -37826,9 +37895,9 @@ of hinted versus unhinted font files.
 	|  | ../fonts/static/ttfs/Geologisk-SemiBoldItalic.ttf |
 	|:--- | ---:|
 	| Dehinted Size | 87.4kb |
-	| Hinted Size | 118.3kb |
-	| Increase | 31.0kb |
-	| Change   | 35.4 % |
+	| Hinted Size | 118.2kb |
+	| Increase | 30.8kb |
+	| Change   | 35.2 % |
  [code: size-impact]
 
 </details>
@@ -37920,7 +37989,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [cvt , fpgm, prep, GPOS, DSIG, loca, gasp, GSUB]
+* ℹ **INFO** This font contains the following optional tables [loca, GSUB, prep, cvt , gasp, GPOS, fpgm, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -38045,6 +38114,55 @@ set of characters defined in the `GF-latin-core` glyph-set.
 * [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
 
 * 🍞 **PASS** OS/2 usWeightClass value looks good!
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check license file has good copyright string.</summary>
+
+* [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
+<pre>--- Rationale ---
+
+An OFL.txt file&#x27;s first line should be the font copyright e.g:
+&quot;Copyright 2019 The Montserrat Project Authors
+(https://github.com/julietaula/montserrat)&quot;
+
+
+</pre>
+
+* 🍞 **PASS** looks good
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check copyright namerecords match license file.</summary>
+
+* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
+<pre>--- Rationale ---
+
+A known licensing description must be provided in the NameID 14 (LICENSE
+DESCRIPTION) entries of the name table.
+
+The source of truth for this check (to determine which license is in use) is a
+file placed side-by-side to your font project including the licensing terms.
+
+Depending on the chosen license, one of the following string snippets is
+expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
+table:
+- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
+- &quot;Licensed under the Apache License, Version 2.0&quot;
+- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
+
+
+Currently accepted licenses are Apache or Open Font License.
+For a small set of legacy families the Ubuntu Font License may be acceptable as
+well.
+
+When in doubt, please choose OFL for new font projects.
+
+
+</pre>
+
+* 🍞 **PASS** Licensing entry on name table is correctly set.
 
 </details>
 <details>
@@ -38417,28 +38535,6 @@ release files, but Google Fonts should only have OpenType tables.
 </pre>
 
 * 🍞 **PASS** There are no unwanted AAT tables.
-
-</details>
-<details>
-<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -39078,6 +39174,34 @@ the same x,y coordinates.
 <details>
 <summary><b>[158] Geologisk-Thin.ttf</b></summary>
 <details>
+<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+<pre>--- Rationale ---
+
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
+
+
+</pre>
+
+* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
+
+This can be accomplished by using the 'gftools fix-hinting' command.
+
+# create virtualenvpython3 -m venv venv
+# activate virtualenvsource venv/bin/activate
+# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Checking OS/2 usWeightClass.</summary>
 
 * [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
@@ -39142,37 +39266,37 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: eogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1 [code: contour-count]
 
 </details>
 <details>
@@ -39420,55 +39544,6 @@ not placed on subdirectories.
 * [com.google.fonts/check/family/has_license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/family/has_license)
 
 * 💤 **SKIP** Unfulfilled Conditions: gfonts_repo_structure
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Check license file has good copyright string.</summary>
-
-* [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
-<pre>--- Rationale ---
-
-An OFL.txt file&#x27;s first line should be the font copyright e.g:
-&quot;Copyright 2019 The Montserrat Project Authors
-(https://github.com/julietaula/montserrat)&quot;
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: license_contents
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Check copyright namerecords match license file.</summary>
-
-* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
-<pre>--- Rationale ---
-
-A known licensing description must be provided in the NameID 14 (LICENSE
-DESCRIPTION) entries of the name table.
-
-The source of truth for this check (to determine which license is in use) is a
-file placed side-by-side to your font project including the licensing terms.
-
-Depending on the chosen license, one of the following string snippets is
-expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
-table:
-- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
-This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
-- &quot;Licensed under the Apache License, Version 2.0&quot;
-- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
-
-
-Currently accepted licenses are Apache or Open Font License.
-For a small set of legacy families the Ubuntu Font License may be acceptable as
-well.
-
-When in doubt, please choose OFL for new font projects.
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: license
 
 </details>
 <details>
@@ -40262,9 +40337,9 @@ of hinted versus unhinted font files.
 	|  | ../fonts/static/ttfs/Geologisk-Thin.ttf |
 	|:--- | ---:|
 	| Dehinted Size | 86.0kb |
-	| Hinted Size | 113.8kb |
-	| Increase | 27.9kb |
-	| Change   | 32.4 % |
+	| Hinted Size | 113.6kb |
+	| Increase | 27.7kb |
+	| Change   | 32.2 % |
  [code: size-impact]
 
 </details>
@@ -40356,7 +40431,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [cvt , fpgm, prep, GPOS, DSIG, loca, gasp, GSUB]
+* ℹ **INFO** This font contains the following optional tables [loca, GSUB, prep, cvt , gasp, GPOS, fpgm, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -40473,6 +40548,55 @@ set of characters defined in the `GF-latin-core` glyph-set.
 * [com.google.fonts/check/name/unwanted_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars)
 
 * 🍞 **PASS** No need to substitute copyright, registered and trademark symbols in name table entries of this font.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check license file has good copyright string.</summary>
+
+* [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
+<pre>--- Rationale ---
+
+An OFL.txt file&#x27;s first line should be the font copyright e.g:
+&quot;Copyright 2019 The Montserrat Project Authors
+(https://github.com/julietaula/montserrat)&quot;
+
+
+</pre>
+
+* 🍞 **PASS** looks good
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check copyright namerecords match license file.</summary>
+
+* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
+<pre>--- Rationale ---
+
+A known licensing description must be provided in the NameID 14 (LICENSE
+DESCRIPTION) entries of the name table.
+
+The source of truth for this check (to determine which license is in use) is a
+file placed side-by-side to your font project including the licensing terms.
+
+Depending on the chosen license, one of the following string snippets is
+expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
+table:
+- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
+- &quot;Licensed under the Apache License, Version 2.0&quot;
+- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
+
+
+Currently accepted licenses are Apache or Open Font License.
+For a small set of legacy families the Ubuntu Font License may be acceptable as
+well.
+
+When in doubt, please choose OFL for new font projects.
+
+
+</pre>
+
+* 🍞 **PASS** Licensing entry on name table is correctly set.
 
 </details>
 <details>
@@ -40845,28 +40969,6 @@ release files, but Google Fonts should only have OpenType tables.
 </pre>
 
 * 🍞 **PASS** There are no unwanted AAT tables.
-
-</details>
-<details>
-<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -41506,6 +41608,34 @@ the same x,y coordinates.
 <details>
 <summary><b>[158] Geologisk-ThinItalic.ttf</b></summary>
 <details>
+<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+<pre>--- Rationale ---
+
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
+
+
+</pre>
+
+* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
+
+This can be accomplished by using the 'gftools fix-hinting' command.
+
+# create virtualenvpython3 -m venv venv
+# activate virtualenvsource venv/bin/activate
+# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Checking OS/2 usWeightClass.</summary>
 
 * [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
@@ -41569,36 +41699,36 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1 [code: contour-count]
 
 </details>
 <details>
@@ -41846,55 +41976,6 @@ not placed on subdirectories.
 * [com.google.fonts/check/family/has_license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/family/has_license)
 
 * 💤 **SKIP** Unfulfilled Conditions: gfonts_repo_structure
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Check license file has good copyright string.</summary>
-
-* [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
-<pre>--- Rationale ---
-
-An OFL.txt file&#x27;s first line should be the font copyright e.g:
-&quot;Copyright 2019 The Montserrat Project Authors
-(https://github.com/julietaula/montserrat)&quot;
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: license_contents
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Check copyright namerecords match license file.</summary>
-
-* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
-<pre>--- Rationale ---
-
-A known licensing description must be provided in the NameID 14 (LICENSE
-DESCRIPTION) entries of the name table.
-
-The source of truth for this check (to determine which license is in use) is a
-file placed side-by-side to your font project including the licensing terms.
-
-Depending on the chosen license, one of the following string snippets is
-expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
-table:
-- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
-This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
-- &quot;Licensed under the Apache License, Version 2.0&quot;
-- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
-
-
-Currently accepted licenses are Apache or Open Font License.
-For a small set of legacy families the Ubuntu Font License may be acceptable as
-well.
-
-When in doubt, please choose OFL for new font projects.
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: license
 
 </details>
 <details>
@@ -42688,9 +42769,9 @@ of hinted versus unhinted font files.
 	|  | ../fonts/static/ttfs/Geologisk-ThinItalic.ttf |
 	|:--- | ---:|
 	| Dehinted Size | 87.5kb |
-	| Hinted Size | 116.0kb |
-	| Increase | 28.5kb |
-	| Change   | 32.6 % |
+	| Hinted Size | 115.8kb |
+	| Increase | 28.3kb |
+	| Change   | 32.4 % |
  [code: size-impact]
 
 </details>
@@ -42782,7 +42863,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [cvt , fpgm, prep, GPOS, DSIG, loca, gasp, GSUB]
+* ℹ **INFO** This font contains the following optional tables [loca, GSUB, prep, cvt , gasp, GPOS, fpgm, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -42899,6 +42980,55 @@ set of characters defined in the `GF-latin-core` glyph-set.
 * [com.google.fonts/check/name/unwanted_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars)
 
 * 🍞 **PASS** No need to substitute copyright, registered and trademark symbols in name table entries of this font.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check license file has good copyright string.</summary>
+
+* [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
+<pre>--- Rationale ---
+
+An OFL.txt file&#x27;s first line should be the font copyright e.g:
+&quot;Copyright 2019 The Montserrat Project Authors
+(https://github.com/julietaula/montserrat)&quot;
+
+
+</pre>
+
+* 🍞 **PASS** looks good
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check copyright namerecords match license file.</summary>
+
+* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
+<pre>--- Rationale ---
+
+A known licensing description must be provided in the NameID 14 (LICENSE
+DESCRIPTION) entries of the name table.
+
+The source of truth for this check (to determine which license is in use) is a
+file placed side-by-side to your font project including the licensing terms.
+
+Depending on the chosen license, one of the following string snippets is
+expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
+table:
+- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
+- &quot;Licensed under the Apache License, Version 2.0&quot;
+- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
+
+
+Currently accepted licenses are Apache or Open Font License.
+For a small set of legacy families the Ubuntu Font License may be acceptable as
+well.
+
+When in doubt, please choose OFL for new font projects.
+
+
+</pre>
+
+* 🍞 **PASS** Licensing entry on name table is correctly set.
 
 </details>
 <details>
@@ -43271,28 +43401,6 @@ release files, but Google Fonts should only have OpenType tables.
 </pre>
 
 * 🍞 **PASS** There are no unwanted AAT tables.
-
-</details>
-<details>
-<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -43932,6 +44040,34 @@ the same x,y coordinates.
 <details>
 <summary><b>[158] GeologiskCut-Black.ttf</b></summary>
 <details>
+<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+<pre>--- Rationale ---
+
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
+
+
+</pre>
+
+* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
+
+This can be accomplished by using the 'gftools fix-hinting' command.
+
+# create virtualenvpython3 -m venv venv
+# activate virtualenvsource venv/bin/activate
+# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
 * [com.google.fonts/check/contour_count](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/contour_count)
@@ -43990,39 +44126,39 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni20A6	Contours detected: 2	Expected: 1, 3 or 5
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni20A6	Contours detected: 2	Expected: 1, 3 or 5
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: eogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1 [code: contour-count]
 
 </details>
 <details>
@@ -44270,55 +44406,6 @@ not placed on subdirectories.
 * [com.google.fonts/check/family/has_license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/family/has_license)
 
 * 💤 **SKIP** Unfulfilled Conditions: gfonts_repo_structure
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Check license file has good copyright string.</summary>
-
-* [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
-<pre>--- Rationale ---
-
-An OFL.txt file&#x27;s first line should be the font copyright e.g:
-&quot;Copyright 2019 The Montserrat Project Authors
-(https://github.com/julietaula/montserrat)&quot;
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: license_contents
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Check copyright namerecords match license file.</summary>
-
-* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
-<pre>--- Rationale ---
-
-A known licensing description must be provided in the NameID 14 (LICENSE
-DESCRIPTION) entries of the name table.
-
-The source of truth for this check (to determine which license is in use) is a
-file placed side-by-side to your font project including the licensing terms.
-
-Depending on the chosen license, one of the following string snippets is
-expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
-table:
-- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
-This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
-- &quot;Licensed under the Apache License, Version 2.0&quot;
-- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
-
-
-Currently accepted licenses are Apache or Open Font License.
-For a small set of legacy families the Ubuntu Font License may be acceptable as
-well.
-
-When in doubt, please choose OFL for new font projects.
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: license
 
 </details>
 <details>
@@ -45112,9 +45199,9 @@ of hinted versus unhinted font files.
 	|  | ../fonts/static/ttfs/GeologiskCut-Black.ttf |
 	|:--- | ---:|
 	| Dehinted Size | 85.2kb |
-	| Hinted Size | 114.7kb |
-	| Increase | 29.5kb |
-	| Change   | 34.7 % |
+	| Hinted Size | 114.6kb |
+	| Increase | 29.3kb |
+	| Change   | 34.4 % |
  [code: size-impact]
 
 </details>
@@ -45206,7 +45293,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [cvt , fpgm, prep, GPOS, DSIG, loca, gasp, GSUB]
+* ℹ **INFO** This font contains the following optional tables [loca, GSUB, prep, cvt , gasp, GPOS, fpgm, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -45331,6 +45418,55 @@ set of characters defined in the `GF-latin-core` glyph-set.
 * [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
 
 * 🍞 **PASS** OS/2 usWeightClass value looks good!
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check license file has good copyright string.</summary>
+
+* [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
+<pre>--- Rationale ---
+
+An OFL.txt file&#x27;s first line should be the font copyright e.g:
+&quot;Copyright 2019 The Montserrat Project Authors
+(https://github.com/julietaula/montserrat)&quot;
+
+
+</pre>
+
+* 🍞 **PASS** looks good
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check copyright namerecords match license file.</summary>
+
+* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
+<pre>--- Rationale ---
+
+A known licensing description must be provided in the NameID 14 (LICENSE
+DESCRIPTION) entries of the name table.
+
+The source of truth for this check (to determine which license is in use) is a
+file placed side-by-side to your font project including the licensing terms.
+
+Depending on the chosen license, one of the following string snippets is
+expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
+table:
+- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
+- &quot;Licensed under the Apache License, Version 2.0&quot;
+- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
+
+
+Currently accepted licenses are Apache or Open Font License.
+For a small set of legacy families the Ubuntu Font License may be acceptable as
+well.
+
+When in doubt, please choose OFL for new font projects.
+
+
+</pre>
+
+* 🍞 **PASS** Licensing entry on name table is correctly set.
 
 </details>
 <details>
@@ -45703,28 +45839,6 @@ release files, but Google Fonts should only have OpenType tables.
 </pre>
 
 * 🍞 **PASS** There are no unwanted AAT tables.
-
-</details>
-<details>
-<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -46364,6 +46478,34 @@ the same x,y coordinates.
 <details>
 <summary><b>[158] GeologiskCut-BlackItalic.ttf</b></summary>
 <details>
+<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+<pre>--- Rationale ---
+
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
+
+
+</pre>
+
+* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
+
+This can be accomplished by using the 'gftools fix-hinting' command.
+
+# create virtualenvpython3 -m venv venv
+# activate virtualenvsource venv/bin/activate
+# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
 * [com.google.fonts/check/contour_count](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/contour_count)
@@ -46422,39 +46564,39 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni20A6	Contours detected: 2	Expected: 1, 3 or 5
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni20A6	Contours detected: 2	Expected: 1, 3 or 5
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: eogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1 [code: contour-count]
 
 </details>
 <details>
@@ -46702,55 +46844,6 @@ not placed on subdirectories.
 * [com.google.fonts/check/family/has_license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/family/has_license)
 
 * 💤 **SKIP** Unfulfilled Conditions: gfonts_repo_structure
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Check license file has good copyright string.</summary>
-
-* [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
-<pre>--- Rationale ---
-
-An OFL.txt file&#x27;s first line should be the font copyright e.g:
-&quot;Copyright 2019 The Montserrat Project Authors
-(https://github.com/julietaula/montserrat)&quot;
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: license_contents
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Check copyright namerecords match license file.</summary>
-
-* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
-<pre>--- Rationale ---
-
-A known licensing description must be provided in the NameID 14 (LICENSE
-DESCRIPTION) entries of the name table.
-
-The source of truth for this check (to determine which license is in use) is a
-file placed side-by-side to your font project including the licensing terms.
-
-Depending on the chosen license, one of the following string snippets is
-expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
-table:
-- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
-This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
-- &quot;Licensed under the Apache License, Version 2.0&quot;
-- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
-
-
-Currently accepted licenses are Apache or Open Font License.
-For a small set of legacy families the Ubuntu Font License may be acceptable as
-well.
-
-When in doubt, please choose OFL for new font projects.
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: license
 
 </details>
 <details>
@@ -47544,9 +47637,9 @@ of hinted versus unhinted font files.
 	|  | ../fonts/static/ttfs/GeologiskCut-BlackItalic.ttf |
 	|:--- | ---:|
 	| Dehinted Size | 87.1kb |
-	| Hinted Size | 116.5kb |
-	| Increase | 29.4kb |
-	| Change   | 33.7 % |
+	| Hinted Size | 116.3kb |
+	| Increase | 29.2kb |
+	| Change   | 33.5 % |
  [code: size-impact]
 
 </details>
@@ -47638,7 +47731,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [cvt , fpgm, prep, GPOS, DSIG, loca, gasp, GSUB]
+* ℹ **INFO** This font contains the following optional tables [loca, GSUB, prep, cvt , gasp, GPOS, fpgm, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -47763,6 +47856,55 @@ set of characters defined in the `GF-latin-core` glyph-set.
 * [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
 
 * 🍞 **PASS** OS/2 usWeightClass value looks good!
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check license file has good copyright string.</summary>
+
+* [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
+<pre>--- Rationale ---
+
+An OFL.txt file&#x27;s first line should be the font copyright e.g:
+&quot;Copyright 2019 The Montserrat Project Authors
+(https://github.com/julietaula/montserrat)&quot;
+
+
+</pre>
+
+* 🍞 **PASS** looks good
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check copyright namerecords match license file.</summary>
+
+* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
+<pre>--- Rationale ---
+
+A known licensing description must be provided in the NameID 14 (LICENSE
+DESCRIPTION) entries of the name table.
+
+The source of truth for this check (to determine which license is in use) is a
+file placed side-by-side to your font project including the licensing terms.
+
+Depending on the chosen license, one of the following string snippets is
+expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
+table:
+- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
+- &quot;Licensed under the Apache License, Version 2.0&quot;
+- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
+
+
+Currently accepted licenses are Apache or Open Font License.
+For a small set of legacy families the Ubuntu Font License may be acceptable as
+well.
+
+When in doubt, please choose OFL for new font projects.
+
+
+</pre>
+
+* 🍞 **PASS** Licensing entry on name table is correctly set.
 
 </details>
 <details>
@@ -48135,28 +48277,6 @@ release files, but Google Fonts should only have OpenType tables.
 </pre>
 
 * 🍞 **PASS** There are no unwanted AAT tables.
-
-</details>
-<details>
-<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -48796,6 +48916,34 @@ the same x,y coordinates.
 <details>
 <summary><b>[158] GeologiskCut-Bold.ttf</b></summary>
 <details>
+<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+<pre>--- Rationale ---
+
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
+
+
+</pre>
+
+* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
+
+This can be accomplished by using the 'gftools fix-hinting' command.
+
+# create virtualenvpython3 -m venv venv
+# activate virtualenvsource venv/bin/activate
+# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
 * [com.google.fonts/check/contour_count](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/contour_count)
@@ -48853,38 +49001,38 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: eogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1 [code: contour-count]
 
 </details>
 <details>
@@ -49132,55 +49280,6 @@ not placed on subdirectories.
 * [com.google.fonts/check/family/has_license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/family/has_license)
 
 * 💤 **SKIP** Unfulfilled Conditions: gfonts_repo_structure
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Check license file has good copyright string.</summary>
-
-* [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
-<pre>--- Rationale ---
-
-An OFL.txt file&#x27;s first line should be the font copyright e.g:
-&quot;Copyright 2019 The Montserrat Project Authors
-(https://github.com/julietaula/montserrat)&quot;
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: license_contents
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Check copyright namerecords match license file.</summary>
-
-* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
-<pre>--- Rationale ---
-
-A known licensing description must be provided in the NameID 14 (LICENSE
-DESCRIPTION) entries of the name table.
-
-The source of truth for this check (to determine which license is in use) is a
-file placed side-by-side to your font project including the licensing terms.
-
-Depending on the chosen license, one of the following string snippets is
-expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
-table:
-- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
-This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
-- &quot;Licensed under the Apache License, Version 2.0&quot;
-- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
-
-
-Currently accepted licenses are Apache or Open Font License.
-For a small set of legacy families the Ubuntu Font License may be acceptable as
-well.
-
-When in doubt, please choose OFL for new font projects.
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: license
 
 </details>
 <details>
@@ -49974,9 +50073,9 @@ of hinted versus unhinted font files.
 	|  | ../fonts/static/ttfs/GeologiskCut-Bold.ttf |
 	|:--- | ---:|
 	| Dehinted Size | 85.7kb |
-	| Hinted Size | 121.1kb |
-	| Increase | 35.4kb |
-	| Change   | 41.4 % |
+	| Hinted Size | 120.9kb |
+	| Increase | 35.2kb |
+	| Change   | 41.1 % |
  [code: size-impact]
 
 </details>
@@ -50068,7 +50167,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [cvt , fpgm, prep, GPOS, DSIG, loca, gasp, GSUB]
+* ℹ **INFO** This font contains the following optional tables [loca, GSUB, prep, cvt , gasp, GPOS, fpgm, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -50193,6 +50292,55 @@ set of characters defined in the `GF-latin-core` glyph-set.
 * [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
 
 * 🍞 **PASS** OS/2 usWeightClass value looks good!
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check license file has good copyright string.</summary>
+
+* [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
+<pre>--- Rationale ---
+
+An OFL.txt file&#x27;s first line should be the font copyright e.g:
+&quot;Copyright 2019 The Montserrat Project Authors
+(https://github.com/julietaula/montserrat)&quot;
+
+
+</pre>
+
+* 🍞 **PASS** looks good
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check copyright namerecords match license file.</summary>
+
+* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
+<pre>--- Rationale ---
+
+A known licensing description must be provided in the NameID 14 (LICENSE
+DESCRIPTION) entries of the name table.
+
+The source of truth for this check (to determine which license is in use) is a
+file placed side-by-side to your font project including the licensing terms.
+
+Depending on the chosen license, one of the following string snippets is
+expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
+table:
+- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
+- &quot;Licensed under the Apache License, Version 2.0&quot;
+- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
+
+
+Currently accepted licenses are Apache or Open Font License.
+For a small set of legacy families the Ubuntu Font License may be acceptable as
+well.
+
+When in doubt, please choose OFL for new font projects.
+
+
+</pre>
+
+* 🍞 **PASS** Licensing entry on name table is correctly set.
 
 </details>
 <details>
@@ -50565,28 +50713,6 @@ release files, but Google Fonts should only have OpenType tables.
 </pre>
 
 * 🍞 **PASS** There are no unwanted AAT tables.
-
-</details>
-<details>
-<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -51226,6 +51352,34 @@ the same x,y coordinates.
 <details>
 <summary><b>[158] GeologiskCut-BoldItalic.ttf</b></summary>
 <details>
+<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+<pre>--- Rationale ---
+
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
+
+
+</pre>
+
+* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
+
+This can be accomplished by using the 'gftools fix-hinting' command.
+
+# create virtualenvpython3 -m venv venv
+# activate virtualenvsource venv/bin/activate
+# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
 * [com.google.fonts/check/contour_count](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/contour_count)
@@ -51283,38 +51437,38 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: eogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1 [code: contour-count]
 
 </details>
 <details>
@@ -51562,55 +51716,6 @@ not placed on subdirectories.
 * [com.google.fonts/check/family/has_license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/family/has_license)
 
 * 💤 **SKIP** Unfulfilled Conditions: gfonts_repo_structure
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Check license file has good copyright string.</summary>
-
-* [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
-<pre>--- Rationale ---
-
-An OFL.txt file&#x27;s first line should be the font copyright e.g:
-&quot;Copyright 2019 The Montserrat Project Authors
-(https://github.com/julietaula/montserrat)&quot;
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: license_contents
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Check copyright namerecords match license file.</summary>
-
-* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
-<pre>--- Rationale ---
-
-A known licensing description must be provided in the NameID 14 (LICENSE
-DESCRIPTION) entries of the name table.
-
-The source of truth for this check (to determine which license is in use) is a
-file placed side-by-side to your font project including the licensing terms.
-
-Depending on the chosen license, one of the following string snippets is
-expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
-table:
-- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
-This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
-- &quot;Licensed under the Apache License, Version 2.0&quot;
-- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
-
-
-Currently accepted licenses are Apache or Open Font License.
-For a small set of legacy families the Ubuntu Font License may be acceptable as
-well.
-
-When in doubt, please choose OFL for new font projects.
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: license
 
 </details>
 <details>
@@ -52404,9 +52509,9 @@ of hinted versus unhinted font files.
 	|  | ../fonts/static/ttfs/GeologiskCut-BoldItalic.ttf |
 	|:--- | ---:|
 	| Dehinted Size | 87.4kb |
-	| Hinted Size | 122.1kb |
-	| Increase | 34.7kb |
-	| Change   | 39.8 % |
+	| Hinted Size | 121.9kb |
+	| Increase | 34.6kb |
+	| Change   | 39.6 % |
  [code: size-impact]
 
 </details>
@@ -52498,7 +52603,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [cvt , fpgm, prep, GPOS, DSIG, loca, gasp, GSUB]
+* ℹ **INFO** This font contains the following optional tables [loca, GSUB, prep, cvt , gasp, GPOS, fpgm, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -52623,6 +52728,55 @@ set of characters defined in the `GF-latin-core` glyph-set.
 * [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
 
 * 🍞 **PASS** OS/2 usWeightClass value looks good!
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check license file has good copyright string.</summary>
+
+* [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
+<pre>--- Rationale ---
+
+An OFL.txt file&#x27;s first line should be the font copyright e.g:
+&quot;Copyright 2019 The Montserrat Project Authors
+(https://github.com/julietaula/montserrat)&quot;
+
+
+</pre>
+
+* 🍞 **PASS** looks good
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check copyright namerecords match license file.</summary>
+
+* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
+<pre>--- Rationale ---
+
+A known licensing description must be provided in the NameID 14 (LICENSE
+DESCRIPTION) entries of the name table.
+
+The source of truth for this check (to determine which license is in use) is a
+file placed side-by-side to your font project including the licensing terms.
+
+Depending on the chosen license, one of the following string snippets is
+expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
+table:
+- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
+- &quot;Licensed under the Apache License, Version 2.0&quot;
+- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
+
+
+Currently accepted licenses are Apache or Open Font License.
+For a small set of legacy families the Ubuntu Font License may be acceptable as
+well.
+
+When in doubt, please choose OFL for new font projects.
+
+
+</pre>
+
+* 🍞 **PASS** Licensing entry on name table is correctly set.
 
 </details>
 <details>
@@ -52995,28 +53149,6 @@ release files, but Google Fonts should only have OpenType tables.
 </pre>
 
 * 🍞 **PASS** There are no unwanted AAT tables.
-
-</details>
-<details>
-<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -53656,6 +53788,34 @@ the same x,y coordinates.
 <details>
 <summary><b>[158] GeologiskCut-ExtraBold.ttf</b></summary>
 <details>
+<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+<pre>--- Rationale ---
+
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
+
+
+</pre>
+
+* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
+
+This can be accomplished by using the 'gftools fix-hinting' command.
+
+# create virtualenvpython3 -m venv venv
+# activate virtualenvsource venv/bin/activate
+# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
 * [com.google.fonts/check/contour_count](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/contour_count)
@@ -53713,38 +53873,38 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: eogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1 [code: contour-count]
 
 </details>
 <details>
@@ -54020,55 +54180,6 @@ not placed on subdirectories.
 * [com.google.fonts/check/family/has_license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/family/has_license)
 
 * 💤 **SKIP** Unfulfilled Conditions: gfonts_repo_structure
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Check license file has good copyright string.</summary>
-
-* [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
-<pre>--- Rationale ---
-
-An OFL.txt file&#x27;s first line should be the font copyright e.g:
-&quot;Copyright 2019 The Montserrat Project Authors
-(https://github.com/julietaula/montserrat)&quot;
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: license_contents
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Check copyright namerecords match license file.</summary>
-
-* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
-<pre>--- Rationale ---
-
-A known licensing description must be provided in the NameID 14 (LICENSE
-DESCRIPTION) entries of the name table.
-
-The source of truth for this check (to determine which license is in use) is a
-file placed side-by-side to your font project including the licensing terms.
-
-Depending on the chosen license, one of the following string snippets is
-expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
-table:
-- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
-This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
-- &quot;Licensed under the Apache License, Version 2.0&quot;
-- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
-
-
-Currently accepted licenses are Apache or Open Font License.
-For a small set of legacy families the Ubuntu Font License may be acceptable as
-well.
-
-When in doubt, please choose OFL for new font projects.
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: license
 
 </details>
 <details>
@@ -54862,9 +54973,9 @@ of hinted versus unhinted font files.
 	|  | ../fonts/static/ttfs/GeologiskCut-ExtraBold.ttf |
 	|:--- | ---:|
 	| Dehinted Size | 85.7kb |
-	| Hinted Size | 121.5kb |
-	| Increase | 35.7kb |
-	| Change   | 41.7 % |
+	| Hinted Size | 121.3kb |
+	| Increase | 35.5kb |
+	| Change   | 41.4 % |
  [code: size-impact]
 
 </details>
@@ -54956,7 +55067,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [cvt , fpgm, prep, GPOS, DSIG, loca, gasp, GSUB]
+* ℹ **INFO** This font contains the following optional tables [loca, GSUB, prep, cvt , gasp, GPOS, fpgm, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -55081,6 +55192,55 @@ set of characters defined in the `GF-latin-core` glyph-set.
 * [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
 
 * 🍞 **PASS** OS/2 usWeightClass value looks good!
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check license file has good copyright string.</summary>
+
+* [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
+<pre>--- Rationale ---
+
+An OFL.txt file&#x27;s first line should be the font copyright e.g:
+&quot;Copyright 2019 The Montserrat Project Authors
+(https://github.com/julietaula/montserrat)&quot;
+
+
+</pre>
+
+* 🍞 **PASS** looks good
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check copyright namerecords match license file.</summary>
+
+* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
+<pre>--- Rationale ---
+
+A known licensing description must be provided in the NameID 14 (LICENSE
+DESCRIPTION) entries of the name table.
+
+The source of truth for this check (to determine which license is in use) is a
+file placed side-by-side to your font project including the licensing terms.
+
+Depending on the chosen license, one of the following string snippets is
+expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
+table:
+- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
+- &quot;Licensed under the Apache License, Version 2.0&quot;
+- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
+
+
+Currently accepted licenses are Apache or Open Font License.
+For a small set of legacy families the Ubuntu Font License may be acceptable as
+well.
+
+When in doubt, please choose OFL for new font projects.
+
+
+</pre>
+
+* 🍞 **PASS** Licensing entry on name table is correctly set.
 
 </details>
 <details>
@@ -55453,28 +55613,6 @@ release files, but Google Fonts should only have OpenType tables.
 </pre>
 
 * 🍞 **PASS** There are no unwanted AAT tables.
-
-</details>
-<details>
-<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -56089,6 +56227,34 @@ the same x,y coordinates.
 <details>
 <summary><b>[158] GeologiskCut-ExtraBoldItalic.ttf</b></summary>
 <details>
+<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+<pre>--- Rationale ---
+
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
+
+
+</pre>
+
+* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
+
+This can be accomplished by using the 'gftools fix-hinting' command.
+
+# create virtualenvpython3 -m venv venv
+# activate virtualenvsource venv/bin/activate
+# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
 * [com.google.fonts/check/contour_count](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/contour_count)
@@ -56146,38 +56312,38 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: eogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1 [code: contour-count]
 
 </details>
 <details>
@@ -56453,55 +56619,6 @@ not placed on subdirectories.
 * [com.google.fonts/check/family/has_license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/family/has_license)
 
 * 💤 **SKIP** Unfulfilled Conditions: gfonts_repo_structure
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Check license file has good copyright string.</summary>
-
-* [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
-<pre>--- Rationale ---
-
-An OFL.txt file&#x27;s first line should be the font copyright e.g:
-&quot;Copyright 2019 The Montserrat Project Authors
-(https://github.com/julietaula/montserrat)&quot;
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: license_contents
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Check copyright namerecords match license file.</summary>
-
-* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
-<pre>--- Rationale ---
-
-A known licensing description must be provided in the NameID 14 (LICENSE
-DESCRIPTION) entries of the name table.
-
-The source of truth for this check (to determine which license is in use) is a
-file placed side-by-side to your font project including the licensing terms.
-
-Depending on the chosen license, one of the following string snippets is
-expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
-table:
-- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
-This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
-- &quot;Licensed under the Apache License, Version 2.0&quot;
-- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
-
-
-Currently accepted licenses are Apache or Open Font License.
-For a small set of legacy families the Ubuntu Font License may be acceptable as
-well.
-
-When in doubt, please choose OFL for new font projects.
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: license
 
 </details>
 <details>
@@ -57295,9 +57412,9 @@ of hinted versus unhinted font files.
 	|  | ../fonts/static/ttfs/GeologiskCut-ExtraBoldItalic.ttf |
 	|:--- | ---:|
 	| Dehinted Size | 87.5kb |
-	| Hinted Size | 122.8kb |
-	| Increase | 35.3kb |
-	| Change   | 40.3 % |
+	| Hinted Size | 122.6kb |
+	| Increase | 35.1kb |
+	| Change   | 40.1 % |
  [code: size-impact]
 
 </details>
@@ -57389,7 +57506,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [cvt , fpgm, prep, GPOS, DSIG, loca, gasp, GSUB]
+* ℹ **INFO** This font contains the following optional tables [loca, GSUB, prep, cvt , gasp, GPOS, fpgm, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -57514,6 +57631,55 @@ set of characters defined in the `GF-latin-core` glyph-set.
 * [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
 
 * 🍞 **PASS** OS/2 usWeightClass value looks good!
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check license file has good copyright string.</summary>
+
+* [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
+<pre>--- Rationale ---
+
+An OFL.txt file&#x27;s first line should be the font copyright e.g:
+&quot;Copyright 2019 The Montserrat Project Authors
+(https://github.com/julietaula/montserrat)&quot;
+
+
+</pre>
+
+* 🍞 **PASS** looks good
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check copyright namerecords match license file.</summary>
+
+* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
+<pre>--- Rationale ---
+
+A known licensing description must be provided in the NameID 14 (LICENSE
+DESCRIPTION) entries of the name table.
+
+The source of truth for this check (to determine which license is in use) is a
+file placed side-by-side to your font project including the licensing terms.
+
+Depending on the chosen license, one of the following string snippets is
+expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
+table:
+- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
+- &quot;Licensed under the Apache License, Version 2.0&quot;
+- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
+
+
+Currently accepted licenses are Apache or Open Font License.
+For a small set of legacy families the Ubuntu Font License may be acceptable as
+well.
+
+When in doubt, please choose OFL for new font projects.
+
+
+</pre>
+
+* 🍞 **PASS** Licensing entry on name table is correctly set.
 
 </details>
 <details>
@@ -57886,28 +58052,6 @@ release files, but Google Fonts should only have OpenType tables.
 </pre>
 
 * 🍞 **PASS** There are no unwanted AAT tables.
-
-</details>
-<details>
-<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -58522,6 +58666,34 @@ the same x,y coordinates.
 <details>
 <summary><b>[158] GeologiskCut-ExtraLight.ttf</b></summary>
 <details>
+<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+<pre>--- Rationale ---
+
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
+
+
+</pre>
+
+* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
+
+This can be accomplished by using the 'gftools fix-hinting' command.
+
+# create virtualenvpython3 -m venv venv
+# activate virtualenvsource venv/bin/activate
+# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Checking OS/2 usWeightClass.</summary>
 
 * [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
@@ -58586,37 +58758,37 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: eogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1 [code: contour-count]
 
 </details>
 <details>
@@ -58892,55 +59064,6 @@ not placed on subdirectories.
 * [com.google.fonts/check/family/has_license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/family/has_license)
 
 * 💤 **SKIP** Unfulfilled Conditions: gfonts_repo_structure
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Check license file has good copyright string.</summary>
-
-* [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
-<pre>--- Rationale ---
-
-An OFL.txt file&#x27;s first line should be the font copyright e.g:
-&quot;Copyright 2019 The Montserrat Project Authors
-(https://github.com/julietaula/montserrat)&quot;
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: license_contents
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Check copyright namerecords match license file.</summary>
-
-* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
-<pre>--- Rationale ---
-
-A known licensing description must be provided in the NameID 14 (LICENSE
-DESCRIPTION) entries of the name table.
-
-The source of truth for this check (to determine which license is in use) is a
-file placed side-by-side to your font project including the licensing terms.
-
-Depending on the chosen license, one of the following string snippets is
-expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
-table:
-- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
-This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
-- &quot;Licensed under the Apache License, Version 2.0&quot;
-- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
-
-
-Currently accepted licenses are Apache or Open Font License.
-For a small set of legacy families the Ubuntu Font License may be acceptable as
-well.
-
-When in doubt, please choose OFL for new font projects.
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: license
 
 </details>
 <details>
@@ -59734,9 +59857,9 @@ of hinted versus unhinted font files.
 	|  | ../fonts/static/ttfs/GeologiskCut-ExtraLight.ttf |
 	|:--- | ---:|
 	| Dehinted Size | 86.1kb |
-	| Hinted Size | 114.4kb |
-	| Increase | 28.3kb |
-	| Change   | 32.9 % |
+	| Hinted Size | 114.3kb |
+	| Increase | 28.1kb |
+	| Change   | 32.6 % |
  [code: size-impact]
 
 </details>
@@ -59828,7 +59951,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [cvt , fpgm, prep, GPOS, DSIG, loca, gasp, GSUB]
+* ℹ **INFO** This font contains the following optional tables [loca, GSUB, prep, cvt , gasp, GPOS, fpgm, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -59945,6 +60068,55 @@ set of characters defined in the `GF-latin-core` glyph-set.
 * [com.google.fonts/check/name/unwanted_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars)
 
 * 🍞 **PASS** No need to substitute copyright, registered and trademark symbols in name table entries of this font.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check license file has good copyright string.</summary>
+
+* [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
+<pre>--- Rationale ---
+
+An OFL.txt file&#x27;s first line should be the font copyright e.g:
+&quot;Copyright 2019 The Montserrat Project Authors
+(https://github.com/julietaula/montserrat)&quot;
+
+
+</pre>
+
+* 🍞 **PASS** looks good
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check copyright namerecords match license file.</summary>
+
+* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
+<pre>--- Rationale ---
+
+A known licensing description must be provided in the NameID 14 (LICENSE
+DESCRIPTION) entries of the name table.
+
+The source of truth for this check (to determine which license is in use) is a
+file placed side-by-side to your font project including the licensing terms.
+
+Depending on the chosen license, one of the following string snippets is
+expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
+table:
+- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
+- &quot;Licensed under the Apache License, Version 2.0&quot;
+- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
+
+
+Currently accepted licenses are Apache or Open Font License.
+For a small set of legacy families the Ubuntu Font License may be acceptable as
+well.
+
+When in doubt, please choose OFL for new font projects.
+
+
+</pre>
+
+* 🍞 **PASS** Licensing entry on name table is correctly set.
 
 </details>
 <details>
@@ -60317,28 +60489,6 @@ release files, but Google Fonts should only have OpenType tables.
 </pre>
 
 * 🍞 **PASS** There are no unwanted AAT tables.
-
-</details>
-<details>
-<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -60953,6 +61103,34 @@ the same x,y coordinates.
 <details>
 <summary><b>[158] GeologiskCut-ExtraLightItalic.ttf</b></summary>
 <details>
+<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+<pre>--- Rationale ---
+
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
+
+
+</pre>
+
+* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
+
+This can be accomplished by using the 'gftools fix-hinting' command.
+
+# create virtualenvpython3 -m venv venv
+# activate virtualenvsource venv/bin/activate
+# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Checking OS/2 usWeightClass.</summary>
 
 * [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
@@ -61016,36 +61194,36 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1 [code: contour-count]
 
 </details>
 <details>
@@ -61321,55 +61499,6 @@ not placed on subdirectories.
 * [com.google.fonts/check/family/has_license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/family/has_license)
 
 * 💤 **SKIP** Unfulfilled Conditions: gfonts_repo_structure
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Check license file has good copyright string.</summary>
-
-* [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
-<pre>--- Rationale ---
-
-An OFL.txt file&#x27;s first line should be the font copyright e.g:
-&quot;Copyright 2019 The Montserrat Project Authors
-(https://github.com/julietaula/montserrat)&quot;
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: license_contents
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Check copyright namerecords match license file.</summary>
-
-* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
-<pre>--- Rationale ---
-
-A known licensing description must be provided in the NameID 14 (LICENSE
-DESCRIPTION) entries of the name table.
-
-The source of truth for this check (to determine which license is in use) is a
-file placed side-by-side to your font project including the licensing terms.
-
-Depending on the chosen license, one of the following string snippets is
-expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
-table:
-- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
-This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
-- &quot;Licensed under the Apache License, Version 2.0&quot;
-- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
-
-
-Currently accepted licenses are Apache or Open Font License.
-For a small set of legacy families the Ubuntu Font License may be acceptable as
-well.
-
-When in doubt, please choose OFL for new font projects.
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: license
 
 </details>
 <details>
@@ -62163,9 +62292,9 @@ of hinted versus unhinted font files.
 	|  | ../fonts/static/ttfs/GeologiskCut-ExtraLightItalic.ttf |
 	|:--- | ---:|
 	| Dehinted Size | 87.7kb |
-	| Hinted Size | 116.2kb |
-	| Increase | 28.5kb |
-	| Change   | 32.5 % |
+	| Hinted Size | 116.0kb |
+	| Increase | 28.3kb |
+	| Change   | 32.3 % |
  [code: size-impact]
 
 </details>
@@ -62257,7 +62386,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [cvt , fpgm, prep, GPOS, DSIG, loca, gasp, GSUB]
+* ℹ **INFO** This font contains the following optional tables [loca, GSUB, prep, cvt , gasp, GPOS, fpgm, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -62374,6 +62503,55 @@ set of characters defined in the `GF-latin-core` glyph-set.
 * [com.google.fonts/check/name/unwanted_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars)
 
 * 🍞 **PASS** No need to substitute copyright, registered and trademark symbols in name table entries of this font.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check license file has good copyright string.</summary>
+
+* [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
+<pre>--- Rationale ---
+
+An OFL.txt file&#x27;s first line should be the font copyright e.g:
+&quot;Copyright 2019 The Montserrat Project Authors
+(https://github.com/julietaula/montserrat)&quot;
+
+
+</pre>
+
+* 🍞 **PASS** looks good
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check copyright namerecords match license file.</summary>
+
+* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
+<pre>--- Rationale ---
+
+A known licensing description must be provided in the NameID 14 (LICENSE
+DESCRIPTION) entries of the name table.
+
+The source of truth for this check (to determine which license is in use) is a
+file placed side-by-side to your font project including the licensing terms.
+
+Depending on the chosen license, one of the following string snippets is
+expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
+table:
+- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
+- &quot;Licensed under the Apache License, Version 2.0&quot;
+- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
+
+
+Currently accepted licenses are Apache or Open Font License.
+For a small set of legacy families the Ubuntu Font License may be acceptable as
+well.
+
+When in doubt, please choose OFL for new font projects.
+
+
+</pre>
+
+* 🍞 **PASS** Licensing entry on name table is correctly set.
 
 </details>
 <details>
@@ -62746,28 +62924,6 @@ release files, but Google Fonts should only have OpenType tables.
 </pre>
 
 * 🍞 **PASS** There are no unwanted AAT tables.
-
-</details>
-<details>
-<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -63382,6 +63538,34 @@ the same x,y coordinates.
 <details>
 <summary><b>[158] GeologiskCut-Italic.ttf</b></summary>
 <details>
+<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+<pre>--- Rationale ---
+
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
+
+
+</pre>
+
+* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
+
+This can be accomplished by using the 'gftools fix-hinting' command.
+
+# create virtualenvpython3 -m venv venv
+# activate virtualenvsource venv/bin/activate
+# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
 * [com.google.fonts/check/contour_count](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/contour_count)
@@ -63437,36 +63621,36 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1 [code: contour-count]
 
 </details>
 <details>
@@ -63714,55 +63898,6 @@ not placed on subdirectories.
 * [com.google.fonts/check/family/has_license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/family/has_license)
 
 * 💤 **SKIP** Unfulfilled Conditions: gfonts_repo_structure
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Check license file has good copyright string.</summary>
-
-* [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
-<pre>--- Rationale ---
-
-An OFL.txt file&#x27;s first line should be the font copyright e.g:
-&quot;Copyright 2019 The Montserrat Project Authors
-(https://github.com/julietaula/montserrat)&quot;
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: license_contents
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Check copyright namerecords match license file.</summary>
-
-* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
-<pre>--- Rationale ---
-
-A known licensing description must be provided in the NameID 14 (LICENSE
-DESCRIPTION) entries of the name table.
-
-The source of truth for this check (to determine which license is in use) is a
-file placed side-by-side to your font project including the licensing terms.
-
-Depending on the chosen license, one of the following string snippets is
-expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
-table:
-- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
-This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
-- &quot;Licensed under the Apache License, Version 2.0&quot;
-- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
-
-
-Currently accepted licenses are Apache or Open Font License.
-For a small set of legacy families the Ubuntu Font License may be acceptable as
-well.
-
-When in doubt, please choose OFL for new font projects.
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: license
 
 </details>
 <details>
@@ -64556,9 +64691,9 @@ of hinted versus unhinted font files.
 	|  | ../fonts/static/ttfs/GeologiskCut-Italic.ttf |
 	|:--- | ---:|
 	| Dehinted Size | 87.1kb |
-	| Hinted Size | 128.0kb |
-	| Increase | 40.9kb |
-	| Change   | 46.9 % |
+	| Hinted Size | 127.8kb |
+	| Increase | 40.7kb |
+	| Change   | 46.7 % |
  [code: size-impact]
 
 </details>
@@ -64650,7 +64785,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [cvt , fpgm, prep, GPOS, DSIG, loca, gasp, GSUB]
+* ℹ **INFO** This font contains the following optional tables [loca, GSUB, prep, cvt , gasp, GPOS, fpgm, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -64775,6 +64910,55 @@ set of characters defined in the `GF-latin-core` glyph-set.
 * [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
 
 * 🍞 **PASS** OS/2 usWeightClass value looks good!
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check license file has good copyright string.</summary>
+
+* [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
+<pre>--- Rationale ---
+
+An OFL.txt file&#x27;s first line should be the font copyright e.g:
+&quot;Copyright 2019 The Montserrat Project Authors
+(https://github.com/julietaula/montserrat)&quot;
+
+
+</pre>
+
+* 🍞 **PASS** looks good
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check copyright namerecords match license file.</summary>
+
+* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
+<pre>--- Rationale ---
+
+A known licensing description must be provided in the NameID 14 (LICENSE
+DESCRIPTION) entries of the name table.
+
+The source of truth for this check (to determine which license is in use) is a
+file placed side-by-side to your font project including the licensing terms.
+
+Depending on the chosen license, one of the following string snippets is
+expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
+table:
+- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
+- &quot;Licensed under the Apache License, Version 2.0&quot;
+- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
+
+
+Currently accepted licenses are Apache or Open Font License.
+For a small set of legacy families the Ubuntu Font License may be acceptable as
+well.
+
+When in doubt, please choose OFL for new font projects.
+
+
+</pre>
+
+* 🍞 **PASS** Licensing entry on name table is correctly set.
 
 </details>
 <details>
@@ -65147,28 +65331,6 @@ release files, but Google Fonts should only have OpenType tables.
 </pre>
 
 * 🍞 **PASS** There are no unwanted AAT tables.
-
-</details>
-<details>
-<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -65808,6 +65970,34 @@ the same x,y coordinates.
 <details>
 <summary><b>[158] GeologiskCut-Light.ttf</b></summary>
 <details>
+<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+<pre>--- Rationale ---
+
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
+
+
+</pre>
+
+* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
+
+This can be accomplished by using the 'gftools fix-hinting' command.
+
+# create virtualenvpython3 -m venv venv
+# activate virtualenvsource venv/bin/activate
+# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
 * [com.google.fonts/check/contour_count](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/contour_count)
@@ -65864,37 +66054,37 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: eogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1 [code: contour-count]
 
 </details>
 <details>
@@ -66142,55 +66332,6 @@ not placed on subdirectories.
 * [com.google.fonts/check/family/has_license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/family/has_license)
 
 * 💤 **SKIP** Unfulfilled Conditions: gfonts_repo_structure
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Check license file has good copyright string.</summary>
-
-* [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
-<pre>--- Rationale ---
-
-An OFL.txt file&#x27;s first line should be the font copyright e.g:
-&quot;Copyright 2019 The Montserrat Project Authors
-(https://github.com/julietaula/montserrat)&quot;
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: license_contents
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Check copyright namerecords match license file.</summary>
-
-* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
-<pre>--- Rationale ---
-
-A known licensing description must be provided in the NameID 14 (LICENSE
-DESCRIPTION) entries of the name table.
-
-The source of truth for this check (to determine which license is in use) is a
-file placed side-by-side to your font project including the licensing terms.
-
-Depending on the chosen license, one of the following string snippets is
-expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
-table:
-- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
-This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
-- &quot;Licensed under the Apache License, Version 2.0&quot;
-- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
-
-
-Currently accepted licenses are Apache or Open Font License.
-For a small set of legacy families the Ubuntu Font License may be acceptable as
-well.
-
-When in doubt, please choose OFL for new font projects.
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: license
 
 </details>
 <details>
@@ -66984,9 +67125,9 @@ of hinted versus unhinted font files.
 	|  | ../fonts/static/ttfs/GeologiskCut-Light.ttf |
 	|:--- | ---:|
 	| Dehinted Size | 85.6kb |
-	| Hinted Size | 119.5kb |
-	| Increase | 33.9kb |
-	| Change   | 39.6 % |
+	| Hinted Size | 119.3kb |
+	| Increase | 33.7kb |
+	| Change   | 39.4 % |
  [code: size-impact]
 
 </details>
@@ -67078,7 +67219,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [cvt , fpgm, prep, GPOS, DSIG, loca, gasp, GSUB]
+* ℹ **INFO** This font contains the following optional tables [loca, GSUB, prep, cvt , gasp, GPOS, fpgm, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -67203,6 +67344,55 @@ set of characters defined in the `GF-latin-core` glyph-set.
 * [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
 
 * 🍞 **PASS** OS/2 usWeightClass value looks good!
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check license file has good copyright string.</summary>
+
+* [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
+<pre>--- Rationale ---
+
+An OFL.txt file&#x27;s first line should be the font copyright e.g:
+&quot;Copyright 2019 The Montserrat Project Authors
+(https://github.com/julietaula/montserrat)&quot;
+
+
+</pre>
+
+* 🍞 **PASS** looks good
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check copyright namerecords match license file.</summary>
+
+* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
+<pre>--- Rationale ---
+
+A known licensing description must be provided in the NameID 14 (LICENSE
+DESCRIPTION) entries of the name table.
+
+The source of truth for this check (to determine which license is in use) is a
+file placed side-by-side to your font project including the licensing terms.
+
+Depending on the chosen license, one of the following string snippets is
+expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
+table:
+- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
+- &quot;Licensed under the Apache License, Version 2.0&quot;
+- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
+
+
+Currently accepted licenses are Apache or Open Font License.
+For a small set of legacy families the Ubuntu Font License may be acceptable as
+well.
+
+When in doubt, please choose OFL for new font projects.
+
+
+</pre>
+
+* 🍞 **PASS** Licensing entry on name table is correctly set.
 
 </details>
 <details>
@@ -67575,28 +67765,6 @@ release files, but Google Fonts should only have OpenType tables.
 </pre>
 
 * 🍞 **PASS** There are no unwanted AAT tables.
-
-</details>
-<details>
-<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -68236,6 +68404,34 @@ the same x,y coordinates.
 <details>
 <summary><b>[158] GeologiskCut-LightItalic.ttf</b></summary>
 <details>
+<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+<pre>--- Rationale ---
+
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
+
+
+</pre>
+
+* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
+
+This can be accomplished by using the 'gftools fix-hinting' command.
+
+# create virtualenvpython3 -m venv venv
+# activate virtualenvsource venv/bin/activate
+# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
 * [com.google.fonts/check/contour_count](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/contour_count)
@@ -68291,36 +68487,36 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1 [code: contour-count]
 
 </details>
 <details>
@@ -68568,55 +68764,6 @@ not placed on subdirectories.
 * [com.google.fonts/check/family/has_license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/family/has_license)
 
 * 💤 **SKIP** Unfulfilled Conditions: gfonts_repo_structure
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Check license file has good copyright string.</summary>
-
-* [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
-<pre>--- Rationale ---
-
-An OFL.txt file&#x27;s first line should be the font copyright e.g:
-&quot;Copyright 2019 The Montserrat Project Authors
-(https://github.com/julietaula/montserrat)&quot;
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: license_contents
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Check copyright namerecords match license file.</summary>
-
-* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
-<pre>--- Rationale ---
-
-A known licensing description must be provided in the NameID 14 (LICENSE
-DESCRIPTION) entries of the name table.
-
-The source of truth for this check (to determine which license is in use) is a
-file placed side-by-side to your font project including the licensing terms.
-
-Depending on the chosen license, one of the following string snippets is
-expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
-table:
-- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
-This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
-- &quot;Licensed under the Apache License, Version 2.0&quot;
-- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
-
-
-Currently accepted licenses are Apache or Open Font License.
-For a small set of legacy families the Ubuntu Font License may be acceptable as
-well.
-
-When in doubt, please choose OFL for new font projects.
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: license
 
 </details>
 <details>
@@ -69410,9 +69557,9 @@ of hinted versus unhinted font files.
 	|  | ../fonts/static/ttfs/GeologiskCut-LightItalic.ttf |
 	|:--- | ---:|
 	| Dehinted Size | 87.4kb |
-	| Hinted Size | 121.6kb |
-	| Increase | 34.2kb |
-	| Change   | 39.1 % |
+	| Hinted Size | 121.4kb |
+	| Increase | 34.0kb |
+	| Change   | 38.9 % |
  [code: size-impact]
 
 </details>
@@ -69504,7 +69651,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [cvt , fpgm, prep, GPOS, DSIG, loca, gasp, GSUB]
+* ℹ **INFO** This font contains the following optional tables [loca, GSUB, prep, cvt , gasp, GPOS, fpgm, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -69629,6 +69776,55 @@ set of characters defined in the `GF-latin-core` glyph-set.
 * [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
 
 * 🍞 **PASS** OS/2 usWeightClass value looks good!
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check license file has good copyright string.</summary>
+
+* [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
+<pre>--- Rationale ---
+
+An OFL.txt file&#x27;s first line should be the font copyright e.g:
+&quot;Copyright 2019 The Montserrat Project Authors
+(https://github.com/julietaula/montserrat)&quot;
+
+
+</pre>
+
+* 🍞 **PASS** looks good
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check copyright namerecords match license file.</summary>
+
+* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
+<pre>--- Rationale ---
+
+A known licensing description must be provided in the NameID 14 (LICENSE
+DESCRIPTION) entries of the name table.
+
+The source of truth for this check (to determine which license is in use) is a
+file placed side-by-side to your font project including the licensing terms.
+
+Depending on the chosen license, one of the following string snippets is
+expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
+table:
+- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
+- &quot;Licensed under the Apache License, Version 2.0&quot;
+- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
+
+
+Currently accepted licenses are Apache or Open Font License.
+For a small set of legacy families the Ubuntu Font License may be acceptable as
+well.
+
+When in doubt, please choose OFL for new font projects.
+
+
+</pre>
+
+* 🍞 **PASS** Licensing entry on name table is correctly set.
 
 </details>
 <details>
@@ -70001,28 +70197,6 @@ release files, but Google Fonts should only have OpenType tables.
 </pre>
 
 * 🍞 **PASS** There are no unwanted AAT tables.
-
-</details>
-<details>
-<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -70662,6 +70836,34 @@ the same x,y coordinates.
 <details>
 <summary><b>[158] GeologiskCut-Medium.ttf</b></summary>
 <details>
+<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+<pre>--- Rationale ---
+
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
+
+
+</pre>
+
+* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
+
+This can be accomplished by using the 'gftools fix-hinting' command.
+
+# create virtualenvpython3 -m venv venv
+# activate virtualenvsource venv/bin/activate
+# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
 * [com.google.fonts/check/contour_count](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/contour_count)
@@ -70719,37 +70921,37 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: eogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1 [code: contour-count]
 
 </details>
 <details>
@@ -70997,55 +71199,6 @@ not placed on subdirectories.
 * [com.google.fonts/check/family/has_license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/family/has_license)
 
 * 💤 **SKIP** Unfulfilled Conditions: gfonts_repo_structure
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Check license file has good copyright string.</summary>
-
-* [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
-<pre>--- Rationale ---
-
-An OFL.txt file&#x27;s first line should be the font copyright e.g:
-&quot;Copyright 2019 The Montserrat Project Authors
-(https://github.com/julietaula/montserrat)&quot;
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: license_contents
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Check copyright namerecords match license file.</summary>
-
-* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
-<pre>--- Rationale ---
-
-A known licensing description must be provided in the NameID 14 (LICENSE
-DESCRIPTION) entries of the name table.
-
-The source of truth for this check (to determine which license is in use) is a
-file placed side-by-side to your font project including the licensing terms.
-
-Depending on the chosen license, one of the following string snippets is
-expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
-table:
-- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
-This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
-- &quot;Licensed under the Apache License, Version 2.0&quot;
-- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
-
-
-Currently accepted licenses are Apache or Open Font License.
-For a small set of legacy families the Ubuntu Font License may be acceptable as
-well.
-
-When in doubt, please choose OFL for new font projects.
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: license
 
 </details>
 <details>
@@ -71839,9 +71992,9 @@ of hinted versus unhinted font files.
 	|  | ../fonts/static/ttfs/GeologiskCut-Medium.ttf |
 	|:--- | ---:|
 	| Dehinted Size | 85.6kb |
-	| Hinted Size | 116.0kb |
-	| Increase | 30.4kb |
-	| Change   | 35.5 % |
+	| Hinted Size | 115.8kb |
+	| Increase | 30.2kb |
+	| Change   | 35.3 % |
  [code: size-impact]
 
 </details>
@@ -71933,7 +72086,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [cvt , fpgm, prep, GPOS, DSIG, loca, gasp, GSUB]
+* ℹ **INFO** This font contains the following optional tables [loca, GSUB, prep, cvt , gasp, GPOS, fpgm, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -72058,6 +72211,55 @@ set of characters defined in the `GF-latin-core` glyph-set.
 * [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
 
 * 🍞 **PASS** OS/2 usWeightClass value looks good!
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check license file has good copyright string.</summary>
+
+* [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
+<pre>--- Rationale ---
+
+An OFL.txt file&#x27;s first line should be the font copyright e.g:
+&quot;Copyright 2019 The Montserrat Project Authors
+(https://github.com/julietaula/montserrat)&quot;
+
+
+</pre>
+
+* 🍞 **PASS** looks good
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check copyright namerecords match license file.</summary>
+
+* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
+<pre>--- Rationale ---
+
+A known licensing description must be provided in the NameID 14 (LICENSE
+DESCRIPTION) entries of the name table.
+
+The source of truth for this check (to determine which license is in use) is a
+file placed side-by-side to your font project including the licensing terms.
+
+Depending on the chosen license, one of the following string snippets is
+expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
+table:
+- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
+- &quot;Licensed under the Apache License, Version 2.0&quot;
+- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
+
+
+Currently accepted licenses are Apache or Open Font License.
+For a small set of legacy families the Ubuntu Font License may be acceptable as
+well.
+
+When in doubt, please choose OFL for new font projects.
+
+
+</pre>
+
+* 🍞 **PASS** Licensing entry on name table is correctly set.
 
 </details>
 <details>
@@ -72430,28 +72632,6 @@ release files, but Google Fonts should only have OpenType tables.
 </pre>
 
 * 🍞 **PASS** There are no unwanted AAT tables.
-
-</details>
-<details>
-<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -73091,6 +73271,34 @@ the same x,y coordinates.
 <details>
 <summary><b>[158] GeologiskCut-MediumItalic.ttf</b></summary>
 <details>
+<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+<pre>--- Rationale ---
+
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
+
+
+</pre>
+
+* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
+
+This can be accomplished by using the 'gftools fix-hinting' command.
+
+# create virtualenvpython3 -m venv venv
+# activate virtualenvsource venv/bin/activate
+# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
 * [com.google.fonts/check/contour_count](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/contour_count)
@@ -73147,37 +73355,37 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: eogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1 [code: contour-count]
 
 </details>
 <details>
@@ -73425,55 +73633,6 @@ not placed on subdirectories.
 * [com.google.fonts/check/family/has_license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/family/has_license)
 
 * 💤 **SKIP** Unfulfilled Conditions: gfonts_repo_structure
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Check license file has good copyright string.</summary>
-
-* [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
-<pre>--- Rationale ---
-
-An OFL.txt file&#x27;s first line should be the font copyright e.g:
-&quot;Copyright 2019 The Montserrat Project Authors
-(https://github.com/julietaula/montserrat)&quot;
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: license_contents
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Check copyright namerecords match license file.</summary>
-
-* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
-<pre>--- Rationale ---
-
-A known licensing description must be provided in the NameID 14 (LICENSE
-DESCRIPTION) entries of the name table.
-
-The source of truth for this check (to determine which license is in use) is a
-file placed side-by-side to your font project including the licensing terms.
-
-Depending on the chosen license, one of the following string snippets is
-expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
-table:
-- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
-This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
-- &quot;Licensed under the Apache License, Version 2.0&quot;
-- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
-
-
-Currently accepted licenses are Apache or Open Font License.
-For a small set of legacy families the Ubuntu Font License may be acceptable as
-well.
-
-When in doubt, please choose OFL for new font projects.
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: license
 
 </details>
 <details>
@@ -74267,9 +74426,9 @@ of hinted versus unhinted font files.
 	|  | ../fonts/static/ttfs/GeologiskCut-MediumItalic.ttf |
 	|:--- | ---:|
 	| Dehinted Size | 87.4kb |
-	| Hinted Size | 117.9kb |
-	| Increase | 30.6kb |
-	| Change   | 35.0 % |
+	| Hinted Size | 117.8kb |
+	| Increase | 30.4kb |
+	| Change   | 34.7 % |
  [code: size-impact]
 
 </details>
@@ -74361,7 +74520,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [cvt , fpgm, prep, GPOS, DSIG, loca, gasp, GSUB]
+* ℹ **INFO** This font contains the following optional tables [loca, GSUB, prep, cvt , gasp, GPOS, fpgm, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -74486,6 +74645,55 @@ set of characters defined in the `GF-latin-core` glyph-set.
 * [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
 
 * 🍞 **PASS** OS/2 usWeightClass value looks good!
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check license file has good copyright string.</summary>
+
+* [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
+<pre>--- Rationale ---
+
+An OFL.txt file&#x27;s first line should be the font copyright e.g:
+&quot;Copyright 2019 The Montserrat Project Authors
+(https://github.com/julietaula/montserrat)&quot;
+
+
+</pre>
+
+* 🍞 **PASS** looks good
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check copyright namerecords match license file.</summary>
+
+* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
+<pre>--- Rationale ---
+
+A known licensing description must be provided in the NameID 14 (LICENSE
+DESCRIPTION) entries of the name table.
+
+The source of truth for this check (to determine which license is in use) is a
+file placed side-by-side to your font project including the licensing terms.
+
+Depending on the chosen license, one of the following string snippets is
+expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
+table:
+- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
+- &quot;Licensed under the Apache License, Version 2.0&quot;
+- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
+
+
+Currently accepted licenses are Apache or Open Font License.
+For a small set of legacy families the Ubuntu Font License may be acceptable as
+well.
+
+When in doubt, please choose OFL for new font projects.
+
+
+</pre>
+
+* 🍞 **PASS** Licensing entry on name table is correctly set.
 
 </details>
 <details>
@@ -74858,28 +75066,6 @@ release files, but Google Fonts should only have OpenType tables.
 </pre>
 
 * 🍞 **PASS** There are no unwanted AAT tables.
-
-</details>
-<details>
-<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -75519,6 +75705,34 @@ the same x,y coordinates.
 <details>
 <summary><b>[158] GeologiskCut-Regular.ttf</b></summary>
 <details>
+<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+<pre>--- Rationale ---
+
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
+
+
+</pre>
+
+* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
+
+This can be accomplished by using the 'gftools fix-hinting' command.
+
+# create virtualenvpython3 -m venv venv
+# activate virtualenvsource venv/bin/activate
+# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
 * [com.google.fonts/check/contour_count](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/contour_count)
@@ -75576,37 +75790,37 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: eogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1 [code: contour-count]
 
 </details>
 <details>
@@ -75854,55 +76068,6 @@ not placed on subdirectories.
 * [com.google.fonts/check/family/has_license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/family/has_license)
 
 * 💤 **SKIP** Unfulfilled Conditions: gfonts_repo_structure
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Check license file has good copyright string.</summary>
-
-* [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
-<pre>--- Rationale ---
-
-An OFL.txt file&#x27;s first line should be the font copyright e.g:
-&quot;Copyright 2019 The Montserrat Project Authors
-(https://github.com/julietaula/montserrat)&quot;
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: license_contents
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Check copyright namerecords match license file.</summary>
-
-* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
-<pre>--- Rationale ---
-
-A known licensing description must be provided in the NameID 14 (LICENSE
-DESCRIPTION) entries of the name table.
-
-The source of truth for this check (to determine which license is in use) is a
-file placed side-by-side to your font project including the licensing terms.
-
-Depending on the chosen license, one of the following string snippets is
-expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
-table:
-- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
-This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
-- &quot;Licensed under the Apache License, Version 2.0&quot;
-- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
-
-
-Currently accepted licenses are Apache or Open Font License.
-For a small set of legacy families the Ubuntu Font License may be acceptable as
-well.
-
-When in doubt, please choose OFL for new font projects.
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: license
 
 </details>
 <details>
@@ -76696,9 +76861,9 @@ of hinted versus unhinted font files.
 	|  | ../fonts/static/ttfs/GeologiskCut-Regular.ttf |
 	|:--- | ---:|
 	| Dehinted Size | 85.5kb |
-	| Hinted Size | 126.2kb |
-	| Increase | 40.7kb |
-	| Change   | 47.6 % |
+	| Hinted Size | 126.0kb |
+	| Increase | 40.5kb |
+	| Change   | 47.4 % |
  [code: size-impact]
 
 </details>
@@ -76790,7 +76955,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [cvt , fpgm, prep, GPOS, DSIG, loca, gasp, GSUB]
+* ℹ **INFO** This font contains the following optional tables [loca, GSUB, prep, cvt , gasp, GPOS, fpgm, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -76915,6 +77080,55 @@ set of characters defined in the `GF-latin-core` glyph-set.
 * [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
 
 * 🍞 **PASS** OS/2 usWeightClass value looks good!
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check license file has good copyright string.</summary>
+
+* [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
+<pre>--- Rationale ---
+
+An OFL.txt file&#x27;s first line should be the font copyright e.g:
+&quot;Copyright 2019 The Montserrat Project Authors
+(https://github.com/julietaula/montserrat)&quot;
+
+
+</pre>
+
+* 🍞 **PASS** looks good
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check copyright namerecords match license file.</summary>
+
+* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
+<pre>--- Rationale ---
+
+A known licensing description must be provided in the NameID 14 (LICENSE
+DESCRIPTION) entries of the name table.
+
+The source of truth for this check (to determine which license is in use) is a
+file placed side-by-side to your font project including the licensing terms.
+
+Depending on the chosen license, one of the following string snippets is
+expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
+table:
+- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
+- &quot;Licensed under the Apache License, Version 2.0&quot;
+- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
+
+
+Currently accepted licenses are Apache or Open Font License.
+For a small set of legacy families the Ubuntu Font License may be acceptable as
+well.
+
+When in doubt, please choose OFL for new font projects.
+
+
+</pre>
+
+* 🍞 **PASS** Licensing entry on name table is correctly set.
 
 </details>
 <details>
@@ -77287,28 +77501,6 @@ release files, but Google Fonts should only have OpenType tables.
 </pre>
 
 * 🍞 **PASS** There are no unwanted AAT tables.
-
-</details>
-<details>
-<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -77948,6 +78140,34 @@ the same x,y coordinates.
 <details>
 <summary><b>[158] GeologiskCut-SemiBold.ttf</b></summary>
 <details>
+<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+<pre>--- Rationale ---
+
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
+
+
+</pre>
+
+* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
+
+This can be accomplished by using the 'gftools fix-hinting' command.
+
+# create virtualenvpython3 -m venv venv
+# activate virtualenvsource venv/bin/activate
+# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
 * [com.google.fonts/check/contour_count](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/contour_count)
@@ -78006,38 +78226,38 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: eogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1 [code: contour-count]
 
 </details>
 <details>
@@ -78313,55 +78533,6 @@ not placed on subdirectories.
 * [com.google.fonts/check/family/has_license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/family/has_license)
 
 * 💤 **SKIP** Unfulfilled Conditions: gfonts_repo_structure
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Check license file has good copyright string.</summary>
-
-* [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
-<pre>--- Rationale ---
-
-An OFL.txt file&#x27;s first line should be the font copyright e.g:
-&quot;Copyright 2019 The Montserrat Project Authors
-(https://github.com/julietaula/montserrat)&quot;
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: license_contents
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Check copyright namerecords match license file.</summary>
-
-* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
-<pre>--- Rationale ---
-
-A known licensing description must be provided in the NameID 14 (LICENSE
-DESCRIPTION) entries of the name table.
-
-The source of truth for this check (to determine which license is in use) is a
-file placed side-by-side to your font project including the licensing terms.
-
-Depending on the chosen license, one of the following string snippets is
-expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
-table:
-- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
-This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
-- &quot;Licensed under the Apache License, Version 2.0&quot;
-- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
-
-
-Currently accepted licenses are Apache or Open Font License.
-For a small set of legacy families the Ubuntu Font License may be acceptable as
-well.
-
-When in doubt, please choose OFL for new font projects.
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: license
 
 </details>
 <details>
@@ -79155,9 +79326,9 @@ of hinted versus unhinted font files.
 	|  | ../fonts/static/ttfs/GeologiskCut-SemiBold.ttf |
 	|:--- | ---:|
 	| Dehinted Size | 85.7kb |
-	| Hinted Size | 116.6kb |
-	| Increase | 30.9kb |
-	| Change   | 36.1 % |
+	| Hinted Size | 116.4kb |
+	| Increase | 30.7kb |
+	| Change   | 35.8 % |
  [code: size-impact]
 
 </details>
@@ -79249,7 +79420,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [cvt , fpgm, prep, GPOS, DSIG, loca, gasp, GSUB]
+* ℹ **INFO** This font contains the following optional tables [loca, GSUB, prep, cvt , gasp, GPOS, fpgm, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -79374,6 +79545,55 @@ set of characters defined in the `GF-latin-core` glyph-set.
 * [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
 
 * 🍞 **PASS** OS/2 usWeightClass value looks good!
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check license file has good copyright string.</summary>
+
+* [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
+<pre>--- Rationale ---
+
+An OFL.txt file&#x27;s first line should be the font copyright e.g:
+&quot;Copyright 2019 The Montserrat Project Authors
+(https://github.com/julietaula/montserrat)&quot;
+
+
+</pre>
+
+* 🍞 **PASS** looks good
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check copyright namerecords match license file.</summary>
+
+* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
+<pre>--- Rationale ---
+
+A known licensing description must be provided in the NameID 14 (LICENSE
+DESCRIPTION) entries of the name table.
+
+The source of truth for this check (to determine which license is in use) is a
+file placed side-by-side to your font project including the licensing terms.
+
+Depending on the chosen license, one of the following string snippets is
+expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
+table:
+- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
+- &quot;Licensed under the Apache License, Version 2.0&quot;
+- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
+
+
+Currently accepted licenses are Apache or Open Font License.
+For a small set of legacy families the Ubuntu Font License may be acceptable as
+well.
+
+When in doubt, please choose OFL for new font projects.
+
+
+</pre>
+
+* 🍞 **PASS** Licensing entry on name table is correctly set.
 
 </details>
 <details>
@@ -79746,28 +79966,6 @@ release files, but Google Fonts should only have OpenType tables.
 </pre>
 
 * 🍞 **PASS** There are no unwanted AAT tables.
-
-</details>
-<details>
-<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -80382,6 +80580,34 @@ the same x,y coordinates.
 <details>
 <summary><b>[158] GeologiskCut-SemiBoldItalic.ttf</b></summary>
 <details>
+<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+<pre>--- Rationale ---
+
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
+
+
+</pre>
+
+* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
+
+This can be accomplished by using the 'gftools fix-hinting' command.
+
+# create virtualenvpython3 -m venv venv
+# activate virtualenvsource venv/bin/activate
+# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
 * [com.google.fonts/check/contour_count](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/contour_count)
@@ -80439,38 +80665,38 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: eogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1 [code: contour-count]
 
 </details>
 <details>
@@ -80746,55 +80972,6 @@ not placed on subdirectories.
 * [com.google.fonts/check/family/has_license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/family/has_license)
 
 * 💤 **SKIP** Unfulfilled Conditions: gfonts_repo_structure
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Check license file has good copyright string.</summary>
-
-* [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
-<pre>--- Rationale ---
-
-An OFL.txt file&#x27;s first line should be the font copyright e.g:
-&quot;Copyright 2019 The Montserrat Project Authors
-(https://github.com/julietaula/montserrat)&quot;
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: license_contents
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Check copyright namerecords match license file.</summary>
-
-* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
-<pre>--- Rationale ---
-
-A known licensing description must be provided in the NameID 14 (LICENSE
-DESCRIPTION) entries of the name table.
-
-The source of truth for this check (to determine which license is in use) is a
-file placed side-by-side to your font project including the licensing terms.
-
-Depending on the chosen license, one of the following string snippets is
-expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
-table:
-- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
-This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
-- &quot;Licensed under the Apache License, Version 2.0&quot;
-- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
-
-
-Currently accepted licenses are Apache or Open Font License.
-For a small set of legacy families the Ubuntu Font License may be acceptable as
-well.
-
-When in doubt, please choose OFL for new font projects.
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: license
 
 </details>
 <details>
@@ -81588,9 +81765,9 @@ of hinted versus unhinted font files.
 	|  | ../fonts/static/ttfs/GeologiskCut-SemiBoldItalic.ttf |
 	|:--- | ---:|
 	| Dehinted Size | 87.4kb |
-	| Hinted Size | 118.2kb |
-	| Increase | 30.8kb |
-	| Change   | 35.3 % |
+	| Hinted Size | 118.0kb |
+	| Increase | 30.6kb |
+	| Change   | 35.0 % |
  [code: size-impact]
 
 </details>
@@ -81682,7 +81859,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [cvt , fpgm, prep, GPOS, DSIG, loca, gasp, GSUB]
+* ℹ **INFO** This font contains the following optional tables [loca, GSUB, prep, cvt , gasp, GPOS, fpgm, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -81807,6 +81984,55 @@ set of characters defined in the `GF-latin-core` glyph-set.
 * [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
 
 * 🍞 **PASS** OS/2 usWeightClass value looks good!
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check license file has good copyright string.</summary>
+
+* [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
+<pre>--- Rationale ---
+
+An OFL.txt file&#x27;s first line should be the font copyright e.g:
+&quot;Copyright 2019 The Montserrat Project Authors
+(https://github.com/julietaula/montserrat)&quot;
+
+
+</pre>
+
+* 🍞 **PASS** looks good
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check copyright namerecords match license file.</summary>
+
+* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
+<pre>--- Rationale ---
+
+A known licensing description must be provided in the NameID 14 (LICENSE
+DESCRIPTION) entries of the name table.
+
+The source of truth for this check (to determine which license is in use) is a
+file placed side-by-side to your font project including the licensing terms.
+
+Depending on the chosen license, one of the following string snippets is
+expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
+table:
+- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
+- &quot;Licensed under the Apache License, Version 2.0&quot;
+- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
+
+
+Currently accepted licenses are Apache or Open Font License.
+For a small set of legacy families the Ubuntu Font License may be acceptable as
+well.
+
+When in doubt, please choose OFL for new font projects.
+
+
+</pre>
+
+* 🍞 **PASS** Licensing entry on name table is correctly set.
 
 </details>
 <details>
@@ -82179,28 +82405,6 @@ release files, but Google Fonts should only have OpenType tables.
 </pre>
 
 * 🍞 **PASS** There are no unwanted AAT tables.
-
-</details>
-<details>
-<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -82815,6 +83019,34 @@ the same x,y coordinates.
 <details>
 <summary><b>[158] GeologiskCut-Thin.ttf</b></summary>
 <details>
+<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+<pre>--- Rationale ---
+
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
+
+
+</pre>
+
+* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
+
+This can be accomplished by using the 'gftools fix-hinting' command.
+
+# create virtualenvpython3 -m venv venv
+# activate virtualenvsource venv/bin/activate
+# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Checking OS/2 usWeightClass.</summary>
 
 * [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
@@ -82878,36 +83110,36 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1 [code: contour-count]
 
 </details>
 <details>
@@ -83155,55 +83387,6 @@ not placed on subdirectories.
 * [com.google.fonts/check/family/has_license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/family/has_license)
 
 * 💤 **SKIP** Unfulfilled Conditions: gfonts_repo_structure
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Check license file has good copyright string.</summary>
-
-* [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
-<pre>--- Rationale ---
-
-An OFL.txt file&#x27;s first line should be the font copyright e.g:
-&quot;Copyright 2019 The Montserrat Project Authors
-(https://github.com/julietaula/montserrat)&quot;
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: license_contents
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Check copyright namerecords match license file.</summary>
-
-* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
-<pre>--- Rationale ---
-
-A known licensing description must be provided in the NameID 14 (LICENSE
-DESCRIPTION) entries of the name table.
-
-The source of truth for this check (to determine which license is in use) is a
-file placed side-by-side to your font project including the licensing terms.
-
-Depending on the chosen license, one of the following string snippets is
-expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
-table:
-- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
-This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
-- &quot;Licensed under the Apache License, Version 2.0&quot;
-- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
-
-
-Currently accepted licenses are Apache or Open Font License.
-For a small set of legacy families the Ubuntu Font License may be acceptable as
-well.
-
-When in doubt, please choose OFL for new font projects.
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: license
 
 </details>
 <details>
@@ -83997,9 +84180,9 @@ of hinted versus unhinted font files.
 	|  | ../fonts/static/ttfs/GeologiskCut-Thin.ttf |
 	|:--- | ---:|
 	| Dehinted Size | 86.0kb |
-	| Hinted Size | 113.9kb |
-	| Increase | 27.9kb |
-	| Change   | 32.4 % |
+	| Hinted Size | 113.7kb |
+	| Increase | 27.7kb |
+	| Change   | 32.2 % |
  [code: size-impact]
 
 </details>
@@ -84091,7 +84274,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [cvt , fpgm, prep, GPOS, DSIG, loca, gasp, GSUB]
+* ℹ **INFO** This font contains the following optional tables [loca, GSUB, prep, cvt , gasp, GPOS, fpgm, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -84208,6 +84391,55 @@ set of characters defined in the `GF-latin-core` glyph-set.
 * [com.google.fonts/check/name/unwanted_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars)
 
 * 🍞 **PASS** No need to substitute copyright, registered and trademark symbols in name table entries of this font.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check license file has good copyright string.</summary>
+
+* [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
+<pre>--- Rationale ---
+
+An OFL.txt file&#x27;s first line should be the font copyright e.g:
+&quot;Copyright 2019 The Montserrat Project Authors
+(https://github.com/julietaula/montserrat)&quot;
+
+
+</pre>
+
+* 🍞 **PASS** looks good
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check copyright namerecords match license file.</summary>
+
+* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
+<pre>--- Rationale ---
+
+A known licensing description must be provided in the NameID 14 (LICENSE
+DESCRIPTION) entries of the name table.
+
+The source of truth for this check (to determine which license is in use) is a
+file placed side-by-side to your font project including the licensing terms.
+
+Depending on the chosen license, one of the following string snippets is
+expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
+table:
+- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
+- &quot;Licensed under the Apache License, Version 2.0&quot;
+- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
+
+
+Currently accepted licenses are Apache or Open Font License.
+For a small set of legacy families the Ubuntu Font License may be acceptable as
+well.
+
+When in doubt, please choose OFL for new font projects.
+
+
+</pre>
+
+* 🍞 **PASS** Licensing entry on name table is correctly set.
 
 </details>
 <details>
@@ -84580,28 +84812,6 @@ release files, but Google Fonts should only have OpenType tables.
 </pre>
 
 * 🍞 **PASS** There are no unwanted AAT tables.
-
-</details>
-<details>
-<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -85241,6 +85451,34 @@ the same x,y coordinates.
 <details>
 <summary><b>[158] GeologiskCut-ThinItalic.ttf</b></summary>
 <details>
+<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+<pre>--- Rationale ---
+
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
+
+
+</pre>
+
+* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
+
+This can be accomplished by using the 'gftools fix-hinting' command.
+
+# create virtualenvpython3 -m venv venv
+# activate virtualenvsource venv/bin/activate
+# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Checking OS/2 usWeightClass.</summary>
 
 * [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
@@ -85304,36 +85542,36 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1 [code: contour-count]
 
 </details>
 <details>
@@ -85581,55 +85819,6 @@ not placed on subdirectories.
 * [com.google.fonts/check/family/has_license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/family/has_license)
 
 * 💤 **SKIP** Unfulfilled Conditions: gfonts_repo_structure
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Check license file has good copyright string.</summary>
-
-* [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
-<pre>--- Rationale ---
-
-An OFL.txt file&#x27;s first line should be the font copyright e.g:
-&quot;Copyright 2019 The Montserrat Project Authors
-(https://github.com/julietaula/montserrat)&quot;
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: license_contents
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Check copyright namerecords match license file.</summary>
-
-* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
-<pre>--- Rationale ---
-
-A known licensing description must be provided in the NameID 14 (LICENSE
-DESCRIPTION) entries of the name table.
-
-The source of truth for this check (to determine which license is in use) is a
-file placed side-by-side to your font project including the licensing terms.
-
-Depending on the chosen license, one of the following string snippets is
-expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
-table:
-- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
-This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
-- &quot;Licensed under the Apache License, Version 2.0&quot;
-- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
-
-
-Currently accepted licenses are Apache or Open Font License.
-For a small set of legacy families the Ubuntu Font License may be acceptable as
-well.
-
-When in doubt, please choose OFL for new font projects.
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: license
 
 </details>
 <details>
@@ -86423,9 +86612,9 @@ of hinted versus unhinted font files.
 	|  | ../fonts/static/ttfs/GeologiskCut-ThinItalic.ttf |
 	|:--- | ---:|
 	| Dehinted Size | 87.5kb |
-	| Hinted Size | 115.6kb |
-	| Increase | 28.1kb |
-	| Change   | 32.1 % |
+	| Hinted Size | 115.4kb |
+	| Increase | 27.9kb |
+	| Change   | 31.9 % |
  [code: size-impact]
 
 </details>
@@ -86517,7 +86706,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [cvt , fpgm, prep, GPOS, DSIG, loca, gasp, GSUB]
+* ℹ **INFO** This font contains the following optional tables [loca, GSUB, prep, cvt , gasp, GPOS, fpgm, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -86634,6 +86823,55 @@ set of characters defined in the `GF-latin-core` glyph-set.
 * [com.google.fonts/check/name/unwanted_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars)
 
 * 🍞 **PASS** No need to substitute copyright, registered and trademark symbols in name table entries of this font.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check license file has good copyright string.</summary>
+
+* [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
+<pre>--- Rationale ---
+
+An OFL.txt file&#x27;s first line should be the font copyright e.g:
+&quot;Copyright 2019 The Montserrat Project Authors
+(https://github.com/julietaula/montserrat)&quot;
+
+
+</pre>
+
+* 🍞 **PASS** looks good
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check copyright namerecords match license file.</summary>
+
+* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
+<pre>--- Rationale ---
+
+A known licensing description must be provided in the NameID 14 (LICENSE
+DESCRIPTION) entries of the name table.
+
+The source of truth for this check (to determine which license is in use) is a
+file placed side-by-side to your font project including the licensing terms.
+
+Depending on the chosen license, one of the following string snippets is
+expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
+table:
+- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
+- &quot;Licensed under the Apache License, Version 2.0&quot;
+- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
+
+
+Currently accepted licenses are Apache or Open Font License.
+For a small set of legacy families the Ubuntu Font License may be acceptable as
+well.
+
+When in doubt, please choose OFL for new font projects.
+
+
+</pre>
+
+* 🍞 **PASS** Licensing entry on name table is correctly set.
 
 </details>
 <details>
@@ -87006,28 +87244,6 @@ release files, but Google Fonts should only have OpenType tables.
 </pre>
 
 * 🍞 **PASS** There are no unwanted AAT tables.
-
-</details>
-<details>
-<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -87669,5 +87885,5 @@ the same x,y coordinates.
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 1 | 159 | 2809 | 217 | 2516 | 0 |
-| 0% | 0% | 3% | 49% | 4% | 44% | 0% |
+| 0 | 37 | 159 | 2737 | 217 | 2552 | 0 |
+| 0% | 1% | 3% | 48% | 4% | 45% | 0% |
