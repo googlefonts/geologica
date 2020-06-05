@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Sha-cy" format="2">
+  <anchor x="1842" y="0" name="descender"/>
+  <outline>
+    <contour>
+      <point x="200" y="0" type="line"/>
+      <point x="1842" y="0" type="line"/>
+      <point x="1842" y="1400" type="line"/>
+      <point x="1726" y="1400" type="line"/>
+      <point x="1726" y="108" type="line"/>
+      <point x="1080" y="108" type="line"/>
+      <point x="1080" y="1400" type="line"/>
+      <point x="964" y="1400" type="line"/>
+      <point x="964" y="108" type="line"/>
+      <point x="316" y="108" type="line"/>
+      <point x="316" y="1400" type="line"/>
+      <point x="200" y="1400" type="line"/>
+    </contour>
+  </outline>
+</glyph>

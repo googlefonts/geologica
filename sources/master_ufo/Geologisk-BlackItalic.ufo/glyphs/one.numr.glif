@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="one.numr" format="2">
+  <advance width="698"/>
+  <outline>
+    <contour>
+      <point x="332" y="490" type="line"/>
+      <point x="572" y="490" type="line"/>
+      <point x="768" y="1420" type="line"/>
+      <point x="750" y="1420" type="line"/>
+      <point x="194" y="1248" type="line"/>
+      <point x="256" y="1048" type="line"/>
+      <point x="466" y="1108" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>RMXScaler</key>
+      <dict>
+        <key>adjustSpace</key>
+        <integer>10</integer>
+        <key>height</key>
+        <integer>65</integer>
+        <key>verticalShift</key>
+        <integer>245</integer>
+        <key>weight</key>
+        <integer>-70</integer>
+        <key>width</key>
+        <integer>67</integer>
+      </dict>
+      <key>public.markColor</key>
+      <string>0.65,0.48,0.2,1</string>
+    </dict>
+  </lib>
+</glyph>

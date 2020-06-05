@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="shcha-cy" format="2">
+  <outline>
+    <contour>
+      <point x="1630" y="-300" type="line"/>
+      <point x="1734" y="-300" type="line"/>
+      <point x="1734" y="104" type="line"/>
+      <point x="1492" y="104" type="line"/>
+      <point x="1492" y="0" type="line"/>
+      <point x="1630" y="0" type="line"/>
+    </contour>
+    <component base="sha-cy"/>
+  </outline>
+</glyph>

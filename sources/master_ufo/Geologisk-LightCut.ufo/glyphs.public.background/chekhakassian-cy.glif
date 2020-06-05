@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="chekhakassian-cy" format="2">
+  <guideline x="388" y="52" angle="51.3402"/>
+  <guideline x="388" y="-150" angle="51.3402"/>
+  <outline>
+    <contour>
+      <point x="724" y="-364" type="line"/>
+      <point x="828" y="-236" type="line"/>
+      <point x="828" y="168" type="line"/>
+      <point x="724" y="40" type="line"/>
+    </contour>
+    <component base="che-cy"/>
+  </outline>
+</glyph>

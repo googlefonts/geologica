@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="aogonek.ss01" format="2">
+  <advance width="1254"/>
+  <anchor x="596" y="0" name="bottom"/>
+  <anchor x="1084" y="0" name="ogonek"/>
+  <anchor x="596" y="960" name="top"/>
+  <outline>
+    <component base="a.ss01"/>
+    <component base="_part.ogonek" xOffset="1580"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.componentsSmartComponentValues</key>
+      <array>
+        <dict/>
+        <dict>
+          <key>ConnectionWeight</key>
+          <integer>50</integer>
+        </dict>
+      </array>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

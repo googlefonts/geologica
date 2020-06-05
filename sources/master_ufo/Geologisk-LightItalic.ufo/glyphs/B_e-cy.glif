@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Be-cy" format="2">
+  <advance width="1217"/>
+  <unicode hex="0411"/>
+  <outline>
+    <contour>
+      <point x="100" y="0" type="line"/>
+      <point x="590" y="0" type="line" smooth="yes"/>
+      <point x="884" y="0"/>
+      <point x="1076" y="182"/>
+      <point x="1078" y="446" type="curve" smooth="yes"/>
+      <point x="1080" y="676"/>
+      <point x="920" y="796"/>
+      <point x="654" y="796" type="curve" smooth="yes"/>
+      <point x="384" y="796" type="line"/>
+      <point x="490" y="1292" type="line"/>
+      <point x="1182" y="1292" type="line"/>
+      <point x="1204" y="1400" type="line"/>
+      <point x="396" y="1400" type="line"/>
+    </contour>
+    <contour>
+      <point x="238" y="108" type="line"/>
+      <point x="362" y="688" type="line"/>
+      <point x="620" y="688" type="line" smooth="yes"/>
+      <point x="868" y="688"/>
+      <point x="966" y="596"/>
+      <point x="964" y="418" type="curve" smooth="yes"/>
+      <point x="962" y="236"/>
+      <point x="834" y="108"/>
+      <point x="574" y="108" type="curve" smooth="yes"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.leftMetricsKey</key>
+      <string>H</string>
+      <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
+      <string>B</string>
+      <key>public.markColor</key>
+      <string>0.67,0.95,0.38,1</string>
+    </dict>
+  </lib>
+</glyph>

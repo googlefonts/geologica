@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Yusbig-cy" format="2">
+  <advance width="1910"/>
+  <unicode hex="046A"/>
+  <anchor x="1732" y="0" name="descender"/>
+  <anchor x="956" y="1400" name="top"/>
+  <outline>
+    <contour>
+      <point x="78" y="0" type="line"/>
+      <point x="224" y="0" type="line"/>
+      <point x="738" y="742" type="line"/>
+      <point x="358" y="1292" type="line"/>
+      <point x="1560" y="1292" type="line"/>
+      <point x="1168" y="740" type="line"/>
+      <point x="1682" y="0" type="line"/>
+      <point x="1832" y="0" type="line"/>
+      <point x="1308" y="742" type="line"/>
+      <point x="1704" y="1302" type="line"/>
+      <point x="1704" y="1400" type="line"/>
+      <point x="206" y="1400" type="line"/>
+      <point x="206" y="1302" type="line"/>
+      <point x="600" y="736" type="line"/>
+    </contour>
+    <contour>
+      <point x="898" y="0" type="line"/>
+      <point x="1014" y="0" type="line"/>
+      <point x="1014" y="698" type="line"/>
+      <point x="1242" y="698" type="line"/>
+      <point x="1242" y="806" type="line"/>
+      <point x="668" y="806" type="line"/>
+      <point x="668" y="698" type="line"/>
+      <point x="898" y="698" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.leftMetricsKey</key>
+      <string>Zhe-cy</string>
+      <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
+      <string>Zhe-cy</string>
+      <key>public.markColor</key>
+      <string>0.67,0.95,0.38,1</string>
+    </dict>
+  </lib>
+</glyph>

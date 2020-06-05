@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="_part.cy-desc-lc-stem" format="2">
+  <advance width="1200"/>
+  <guideline x="563" y="-150" angle="51.3402"/>
+  <guideline x="563" y="-150" angle="0"/>
+  <anchor x="1074" y="0" name="_descender"/>
+  <outline>
+    <contour>
+      <point x="1074" y="-364" type="line"/>
+      <point x="1178" y="-236" type="line"/>
+      <point x="1178" y="104" type="line"/>
+      <point x="1074" y="104" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.67,0.95,0.38,1</string>
+    </dict>
+  </lib>
+</glyph>

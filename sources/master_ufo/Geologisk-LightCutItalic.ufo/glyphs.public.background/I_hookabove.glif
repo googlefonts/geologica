@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Ihookabove" format="2">
+  <anchor x="42" y="0" name="bottom"/>
+  <anchor x="100" y="0" name="ogonek"/>
+  <anchor x="340" y="1400" name="top"/>
+  <outline>
+    <contour>
+      <point x="-16" y="0" type="line"/>
+      <point x="100" y="0" type="line"/>
+      <point x="398" y="1400" type="line"/>
+      <point x="282" y="1400" type="line"/>
+    </contour>
+    <contour>
+      <point x="320" y="1592" type="curve"/>
+      <point x="414" y="1592" type="line"/>
+      <point x="392" y="1664"/>
+      <point x="414" y="1688"/>
+      <point x="512" y="1724" type="curve" smooth="yes"/>
+      <point x="636" y="1770"/>
+      <point x="676" y="1802"/>
+      <point x="692" y="1874" type="curve" smooth="yes"/>
+      <point x="710" y="1960"/>
+      <point x="618" y="2024"/>
+      <point x="476" y="2024" type="curve" smooth="yes"/>
+      <point x="392" y="2024"/>
+      <point x="306" y="2008"/>
+      <point x="232" y="1978" type="curve"/>
+      <point x="252" y="1904" type="line"/>
+      <point x="310" y="1928"/>
+      <point x="386" y="1942"/>
+      <point x="454" y="1942" type="curve" smooth="yes"/>
+      <point x="544" y="1942"/>
+      <point x="602" y="1908"/>
+      <point x="592" y="1856" type="curve" smooth="yes"/>
+      <point x="582" y="1814"/>
+      <point x="558" y="1802"/>
+      <point x="450" y="1768" type="curve" smooth="yes"/>
+      <point x="330" y="1730"/>
+      <point x="294" y="1676"/>
+    </contour>
+  </outline>
+</glyph>

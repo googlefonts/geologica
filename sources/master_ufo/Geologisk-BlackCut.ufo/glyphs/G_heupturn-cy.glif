@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Gheupturn-cy" format="2">
+  <advance width="1086"/>
+  <unicode hex="0490"/>
+  <anchor x="440" y="644" name="bar"/>
+  <anchor x="560" y="0" name="descender"/>
+  <anchor x="606" y="1400" name="top"/>
+  <outline>
+    <contour>
+      <point x="672" y="1032" type="line"/>
+      <point x="1056" y="1032" type="line"/>
+      <point x="1056" y="1840" type="line"/>
+      <point x="672" y="1660" type="line"/>
+    </contour>
+    <component base="Ge-cy"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.leftMetricsKey</key>
+      <string>H</string>
+      <key>com.schriftgestaltung.Glyphs.glyph.widthMetricsKey</key>
+      <string>Ge-cy</string>
+      <key>public.markColor</key>
+      <string>0.67,0.95,0.38,1</string>
+    </dict>
+  </lib>
+</glyph>

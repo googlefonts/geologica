@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Ocircumflexacute" format="2">
+  <anchor x="612" y="0" name="bottom"/>
+  <anchor x="1312" y="1400" name="horn"/>
+  <anchor x="824" y="0" name="ogonek"/>
+  <anchor x="1006" y="1848" name="top"/>
+  <anchor x="1278" y="1648" name="top_right"/>
+  <outline>
+    <contour>
+      <point x="606" y="-30" type="curve" smooth="yes"/>
+      <point x="1014" y="-30"/>
+      <point x="1400" y="286"/>
+      <point x="1488" y="700" type="curve" smooth="yes"/>
+      <point x="1574" y="1108"/>
+      <point x="1324" y="1430"/>
+      <point x="916" y="1430" type="curve" smooth="yes"/>
+      <point x="504" y="1430"/>
+      <point x="124" y="1116"/>
+      <point x="36" y="700" type="curve" smooth="yes"/>
+      <point x="-52" y="286"/>
+      <point x="194" y="-30"/>
+    </contour>
+    <contour>
+      <point x="630" y="82" type="curve" smooth="yes"/>
+      <point x="294" y="82"/>
+      <point x="76" y="328"/>
+      <point x="156" y="700" type="curve" smooth="yes"/>
+      <point x="234" y="1072"/>
+      <point x="556" y="1318"/>
+      <point x="892" y="1318" type="curve" smooth="yes"/>
+      <point x="1228" y="1318"/>
+      <point x="1446" y="1072"/>
+      <point x="1368" y="700" type="curve" smooth="yes"/>
+      <point x="1288" y="328"/>
+      <point x="966" y="82"/>
+    </contour>
+    <contour>
+      <point x="626" y="1592" type="line"/>
+      <point x="748" y="1592" type="line"/>
+      <point x="1000" y="1820" type="line"/>
+      <point x="1012" y="1820" type="line"/>
+      <point x="1152" y="1592" type="line"/>
+      <point x="1272" y="1592" type="line"/>
+      <point x="1088" y="1904" type="line"/>
+      <point x="964" y="1904" type="line"/>
+    </contour>
+    <contour>
+      <point x="1256" y="1840" type="line"/>
+      <point x="1364" y="1840" type="line"/>
+      <point x="1630" y="2152" type="line"/>
+      <point x="1510" y="2152" type="line"/>
+    </contour>
+  </outline>
+</glyph>

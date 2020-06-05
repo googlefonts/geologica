@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="tse-cy" format="2">
+  <outline>
+    <component base="_part.tse-cy"/>
+    <component base="_part.cy-desc-uc" xOffset="683"/>
+  </outline>
+</glyph>

@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="one" format="2">
+  <advance width="898"/>
+  <unicode hex="0031"/>
+  <outline>
+    <contour>
+      <point x="374" y="0" type="line"/>
+      <point x="742" y="0" type="line"/>
+      <point x="742" y="1430" type="line"/>
+      <point x="716" y="1430" type="line"/>
+      <point x="88" y="1214" type="line"/>
+      <point x="88" y="860" type="line"/>
+      <point x="374" y="958" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
+      <string>I</string>
+      <key>public.markColor</key>
+      <string>0,0.67,0.91,1</string>
+    </dict>
+  </lib>
+</glyph>

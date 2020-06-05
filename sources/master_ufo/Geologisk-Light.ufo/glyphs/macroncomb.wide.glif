@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="macroncomb.wide" format="2">
+  <anchor x="-588" y="960" name="_top"/>
+  <outline>
+    <contour>
+      <point x="-1000" y="1230" type="line"/>
+      <point x="-174" y="1230" type="line"/>
+      <point x="-174" y="1334" type="line"/>
+      <point x="-1000" y="1334" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>RMXScaler</key>
+      <dict>
+        <key>adjustSpace</key>
+        <integer>141</integer>
+        <key>width</key>
+        <integer>150</integer>
+      </dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.widthMetricsKey</key>
+      <string>dieresiscomb</string>
+      <key>public.markColor</key>
+      <string>0.65,0.48,0.2,1</string>
+    </dict>
+  </lib>
+</glyph>

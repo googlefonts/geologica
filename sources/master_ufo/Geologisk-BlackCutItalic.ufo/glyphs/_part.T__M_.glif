@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="_part.T_M" format="2">
+  <advance width="3100"/>
+  <anchor x="622" y="644" name="bar"/>
+  <anchor x="484" y="0" name="bottom"/>
+  <anchor x="780" y="1400" name="top"/>
+  <outline>
+    <component base="T"/>
+    <component base="M" xOffset="1188"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.leftMetricsKey</key>
+      <string>T</string>
+      <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
+      <string>M</string>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="N" format="2">
+  <advance width="1596"/>
+  <unicode hex="004E"/>
+  <anchor x="798" y="0" name="bottom"/>
+  <anchor x="798" y="1400" name="top"/>
+  <outline>
+    <contour>
+      <point x="156" y="0" type="line"/>
+      <point x="546" y="0" type="line"/>
+      <point x="546" y="764" type="line"/>
+      <point x="1036" y="0" type="line"/>
+      <point x="1440" y="0" type="line"/>
+      <point x="1440" y="1400" type="line"/>
+      <point x="1050" y="1400" type="line"/>
+      <point x="1050" y="648" type="line"/>
+      <point x="560" y="1400" type="line"/>
+      <point x="156" y="1400" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.leftMetricsKey</key>
+      <string>I</string>
+      <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
+      <string>I</string>
+      <key>public.markColor</key>
+      <string>0.67,0.95,0.38,1</string>
+    </dict>
+  </lib>
+</glyph>

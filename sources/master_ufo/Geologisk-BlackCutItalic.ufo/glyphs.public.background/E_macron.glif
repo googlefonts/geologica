@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Emacron" format="2">
+  <anchor x="478" y="0" name="bottom"/>
+  <anchor x="888" y="0" name="ogonek"/>
+  <anchor x="776" y="1400" name="top"/>
+  <outline>
+    <contour>
+      <point x="-36" y="0" type="line"/>
+      <point x="1010" y="0" type="line"/>
+      <point x="1086" y="352" type="line"/>
+      <point x="444" y="352" type="line"/>
+      <point x="486" y="552" type="line"/>
+      <point x="1006" y="552" type="line"/>
+      <point x="1074" y="870" type="line"/>
+      <point x="554" y="870" type="line"/>
+      <point x="592" y="1052" type="line"/>
+      <point x="1226" y="1052" type="line"/>
+      <point x="1300" y="1400" type="line"/>
+      <point x="262" y="1400" type="line"/>
+    </contour>
+    <contour>
+      <point x="412" y="1564" type="line"/>
+      <point x="1212" y="1564" type="line"/>
+      <point x="1262" y="1800" type="line"/>
+      <point x="462" y="1800" type="line"/>
+    </contour>
+  </outline>
+</glyph>

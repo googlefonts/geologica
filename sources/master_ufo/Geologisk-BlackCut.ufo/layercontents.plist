@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <array>
+    <array>
+      <string>public.default</string>
+      <string>glyphs</string>
+    </array>
+    <array>
+      <string>public.background</string>
+      <string>glyphs.public.background</string>
+    </array>
+    <array>
+      <string>May 6 20, 20:31</string>
+      <string>glyphs.M_ay 6 20, 20_31</string>
+    </array>
+    <array>
+      <string>May 6 20, 21:08</string>
+      <string>glyphs.M_ay 6 20, 21_08</string>
+    </array>
+    <array>
+      <string>May 6 20, 21:14</string>
+      <string>glyphs.M_ay 6 20, 21_14</string>
+    </array>
+    <array>
+      <string>May 6 20, 21:15</string>
+      <string>glyphs.M_ay 6 20, 21_15</string>
+    </array>
+    <array>
+      <string>May 7 20, 15:28</string>
+      <string>glyphs.M_ay 7 20, 15_28</string>
+    </array>
+    <array>
+      <string>ConnectionWeight</string>
+      <string>glyphs.C_onnectionW_eight</string>
+    </array>
+    <array>
+      <string>Depth</string>
+      <string>glyphs.D_epth</string>
+    </array>
+    <array>
+      <string>ConnectionPoint</string>
+      <string>glyphs.C_onnectionP_oint</string>
+    </array>
+    <array>
+      <string>[140].background</string>
+      <string>glyphs._140_.background</string>
+    </array>
+  </array>
+</plist>

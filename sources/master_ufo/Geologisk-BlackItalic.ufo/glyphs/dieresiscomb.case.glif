@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="dieresiscomb.case" format="2">
+  <anchor x="-834" y="1400" name="_top"/>
+  <anchor x="-746" y="1834" name="top"/>
+  <outline>
+    <contour>
+      <point x="-1070" y="1510" type="curve" smooth="yes"/>
+      <point x="-954" y="1510"/>
+      <point x="-832" y="1594"/>
+      <point x="-832" y="1736" type="curve" smooth="yes"/>
+      <point x="-832" y="1854"/>
+      <point x="-928" y="1926"/>
+      <point x="-1036" y="1926" type="curve" smooth="yes"/>
+      <point x="-1154" y="1926"/>
+      <point x="-1274" y="1840"/>
+      <point x="-1274" y="1698" type="curve" smooth="yes"/>
+      <point x="-1274" y="1580"/>
+      <point x="-1178" y="1510"/>
+    </contour>
+    <contour>
+      <point x="-502" y="1510" type="curve" smooth="yes"/>
+      <point x="-384" y="1510"/>
+      <point x="-264" y="1594"/>
+      <point x="-264" y="1736" type="curve" smooth="yes"/>
+      <point x="-264" y="1854"/>
+      <point x="-360" y="1926"/>
+      <point x="-468" y="1926" type="curve" smooth="yes"/>
+      <point x="-586" y="1926"/>
+      <point x="-706" y="1840"/>
+      <point x="-706" y="1698" type="curve" smooth="yes"/>
+      <point x="-706" y="1580"/>
+      <point x="-610" y="1510"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>RMXScaler</key>
+      <dict>
+        <key>adjustSpace</key>
+        <integer>-90</integer>
+        <key>height</key>
+        <integer>93</integer>
+        <key>verticalShift</key>
+        <integer>210</integer>
+        <key>weight</key>
+        <integer>10</integer>
+        <key>width</key>
+        <integer>102</integer>
+      </dict>
+      <key>public.markColor</key>
+      <string>0.65,0.48,0.2,1</string>
+    </dict>
+  </lib>
+</glyph>

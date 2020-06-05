@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="notequal" format="2">
+  <advance width="1298"/>
+  <unicode hex="2260"/>
+  <guideline x="211" y="67" angle="324.2371"/>
+  <guideline x="481" y="599" angle="324.2371"/>
+  <outline>
+    <contour>
+      <point x="382" y="158" type="line"/>
+      <point x="1076" y="1120" type="line"/>
+      <point x="1002" y="1174" type="line"/>
+      <point x="308" y="212" type="line"/>
+    </contour>
+    <contour>
+      <point x="246" y="780" type="line"/>
+      <point x="1182" y="780" type="line"/>
+      <point x="1202" y="876" type="line"/>
+      <point x="266" y="876" type="line"/>
+    </contour>
+    <contour>
+      <point x="174" y="452" type="line"/>
+      <point x="1110" y="452" type="line"/>
+      <point x="1130" y="548" type="line"/>
+      <point x="194" y="548" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.widthMetricsKey</key>
+      <string>plus</string>
+      <key>public.markColor</key>
+      <string>0.67,0.95,0.38,1</string>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="KaiSymbol" format="2">
+  <advance width="1524"/>
+  <unicode hex="03CF"/>
+  <outline>
+    <contour>
+      <point x="582" y="-420" type="line"/>
+      <point x="1062" y="-420" type="line"/>
+      <point x="1424" y="0" type="line"/>
+      <point x="988" y="736" type="line"/>
+      <point x="1658" y="1400" type="line"/>
+      <point x="1126" y="1400" type="line"/>
+      <point x="644" y="914" type="line"/>
+      <point x="748" y="1400" type="line"/>
+      <point x="344" y="1400" type="line"/>
+      <point x="48" y="0" type="line"/>
+      <point x="452" y="0" type="line"/>
+      <point x="520" y="314" type="line"/>
+      <point x="672" y="450" type="line"/>
+      <point x="934" y="-18" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.leftMetricsKey</key>
+      <string>H</string>
+      <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
+      <string>K</string>
+      <key>public.markColor</key>
+      <string>0.67,0.95,0.38,1</string>
+    </dict>
+  </lib>
+</glyph>

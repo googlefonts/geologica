@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="dcaron" format="2">
+  <advance width="1564"/>
+  <unicode hex="010F"/>
+  <anchor x="998" y="1224" name="bar"/>
+  <anchor x="1236" y="1440" name="caron"/>
+  <outline>
+    <component base="d"/>
+    <component base="caroncomb.alt" xOffset="1564"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
+      <string>=+20</string>
+      <key>com.schriftgestaltung.Glyphs.layer.rightMetricsKey</key>
+      <string>=+200</string>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

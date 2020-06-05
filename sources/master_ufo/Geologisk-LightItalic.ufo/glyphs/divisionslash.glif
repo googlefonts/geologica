@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="divisionslash" format="2">
+  <advance width="1298"/>
+  <unicode hex="2215"/>
+  <guideline x="602" y="715" angle="322.3219"/>
+  <guideline x="91" y="-15" angle="322.3219"/>
+  <outline>
+    <contour>
+      <point x="182" y="-30" type="line"/>
+      <point x="1266" y="1382" type="line"/>
+      <point x="1204" y="1430" type="line"/>
+      <point x="116" y="20" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.widthMetricsKey</key>
+      <string>plus</string>
+      <key>public.markColor</key>
+      <string>0.67,0.95,0.38,1</string>
+    </dict>
+  </lib>
+</glyph>

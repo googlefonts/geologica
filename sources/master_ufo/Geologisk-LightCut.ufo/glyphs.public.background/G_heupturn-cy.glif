@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Gheupturn-cy" format="2">
+  <guideline x="437" y="880" angle="0"/>
+  <guideline x="437" y="880" angle="51.3402"/>
+  <outline>
+    <contour>
+      <point x="832" y="1292" type="line"/>
+      <point x="928" y="1292" type="line"/>
+      <point x="928" y="1860" type="line"/>
+      <point x="832" y="1740" type="line"/>
+    </contour>
+    <component base="Ge-cy"/>
+  </outline>
+</glyph>

@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <array>
+    <array>
+      <string>public.default</string>
+      <string>glyphs</string>
+    </array>
+    <array>
+      <string>public.background</string>
+      <string>glyphs.public.background</string>
+    </array>
+    <array>
+      <string>May 6 20, 22:40</string>
+      <string>glyphs.M_ay 6 20, 22_40</string>
+    </array>
+    <array>
+      <string>ConnectionWeight</string>
+      <string>glyphs.C_onnectionW_eight</string>
+    </array>
+    <array>
+      <string>Depth</string>
+      <string>glyphs.D_epth</string>
+    </array>
+    <array>
+      <string>ConnectionPoint</string>
+      <string>glyphs.C_onnectionP_oint</string>
+    </array>
+  </array>
+</plist>

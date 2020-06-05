@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="cheverticalstroke-cy" format="2">
+  <advance width="1254"/>
+  <unicode hex="04B9"/>
+  <anchor x="592" y="486" name="center"/>
+  <anchor x="1126" y="0" name="descender"/>
+  <anchor x="726" y="0" name="descender_alt"/>
+  <anchor x="592" y="1040" name="top"/>
+  <outline>
+    <component base="che-cy"/>
+    <component base="_part.verticalstroke" xOffset="82" yOffset="-294"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

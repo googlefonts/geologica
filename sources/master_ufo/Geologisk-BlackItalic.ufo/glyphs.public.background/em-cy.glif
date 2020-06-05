@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="em-cy" format="2">
+  <outline>
+    <contour>
+      <point x="20" y="0" type="line"/>
+      <point x="366" y="0" type="line"/>
+      <point x="460" y="446" type="line"/>
+      <point x="580" y="156" type="line"/>
+      <point x="808" y="156" type="line"/>
+      <point x="1050" y="418" type="line"/>
+      <point x="952" y="0" type="line"/>
+      <point x="1298" y="0" type="line"/>
+      <point x="1518" y="1040" type="line"/>
+      <point x="1172" y="1040" type="line"/>
+      <point x="770" y="572" type="line"/>
+      <point x="588" y="1040" type="line"/>
+      <point x="240" y="1040" type="line"/>
+      <point x="174" y="728" type="line"/>
+    </contour>
+  </outline>
+</glyph>

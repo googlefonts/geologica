@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="che-cy" format="2">
+  <advance width="1058"/>
+  <unicode hex="0447"/>
+  <anchor x="496" y="448" name="center"/>
+  <anchor x="888" y="0" name="descender"/>
+  <anchor x="776" y="0" name="descender_alt"/>
+  <anchor x="494" y="960" name="top"/>
+  <outline>
+    <contour>
+      <point x="776" y="0" type="line"/>
+      <point x="888" y="0" type="line"/>
+      <point x="888" y="960" type="line"/>
+      <point x="776" y="960" type="line"/>
+      <point x="776" y="518" type="line"/>
+      <point x="694" y="500"/>
+      <point x="610" y="488"/>
+      <point x="494" y="488" type="curve" smooth="yes"/>
+      <point x="290" y="488"/>
+      <point x="214" y="574"/>
+      <point x="214" y="740" type="curve" smooth="yes"/>
+      <point x="214" y="960" type="line"/>
+      <point x="102" y="960" type="line"/>
+      <point x="102" y="722" type="line" smooth="yes"/>
+      <point x="102" y="504"/>
+      <point x="212" y="380"/>
+      <point x="488" y="380" type="curve" smooth="yes"/>
+      <point x="592" y="380"/>
+      <point x="676" y="392"/>
+      <point x="776" y="418" type="curve"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>RMXScaler</key>
+      <dict>
+        <key>adjustSpace</key>
+        <integer>9</integer>
+        <key>height</key>
+        <real>68.6</real>
+        <key>weight</key>
+        <integer>-2</integer>
+        <key>width</key>
+        <integer>78</integer>
+      </dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.leftMetricsKey</key>
+      <string>=u-60</string>
+      <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
+      <string>=|n</string>
+      <key>public.markColor</key>
+      <string>0,0.67,0.91,1</string>
+    </dict>
+  </lib>
+</glyph>

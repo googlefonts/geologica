@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="psi" format="2">
+  <advance width="1745"/>
+  <unicode hex="03C8"/>
+  <outline>
+    <contour>
+      <point x="666" y="-420" type="line"/>
+      <point x="1066" y="-420" type="line"/>
+      <point x="1066" y="-30" type="line"/>
+      <point x="1433" y="-28"/>
+      <point x="1640" y="161"/>
+      <point x="1640" y="526" type="curve" smooth="yes"/>
+      <point x="1640" y="701"/>
+      <point x="1602" y="898"/>
+      <point x="1541" y="1040" type="curve"/>
+      <point x="1143" y="1040" type="line"/>
+      <point x="1202" y="925"/>
+      <point x="1246" y="718"/>
+      <point x="1246" y="555" type="curve" smooth="yes"/>
+      <point x="1246" y="399"/>
+      <point x="1178" y="310"/>
+      <point x="1058" y="310" type="curve"/>
+      <point x="1058" y="1280" type="line"/>
+      <point x="674" y="1280" type="line"/>
+      <point x="674" y="310" type="line"/>
+      <point x="570" y="310"/>
+      <point x="506" y="358"/>
+      <point x="506" y="550" type="curve" smooth="yes"/>
+      <point x="506" y="1100" type="line"/>
+      <point x="120" y="914" type="line"/>
+      <point x="120" y="544" type="line" smooth="yes"/>
+      <point x="120" y="166"/>
+      <point x="264" y="-30"/>
+      <point x="666" y="-30" type="curve"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.leftMetricsKey</key>
+      <string>u</string>
+      <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
+      <string>upsilon</string>
+      <key>public.markColor</key>
+      <string>0,0.67,0.91,1</string>
+    </dict>
+  </lib>
+</glyph>

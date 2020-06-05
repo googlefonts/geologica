@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Yat-cy" format="2">
+  <outline>
+    <component base="Softsign-cy"/>
+    <component base="strokeshortcomb.case" xOffset="-112" yOffset="174"/>
+  </outline>
+</glyph>

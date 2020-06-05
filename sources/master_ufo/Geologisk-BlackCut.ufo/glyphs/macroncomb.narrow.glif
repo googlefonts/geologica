@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="macroncomb.narrow" format="2">
+  <anchor x="-638" y="1040" name="_top"/>
+  <outline>
+    <contour>
+      <point x="-988" y="1230" type="line"/>
+      <point x="-286" y="1230" type="line"/>
+      <point x="-286" y="1462" type="line"/>
+      <point x="-988" y="1462" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>RMXScaler</key>
+      <dict>
+        <key>adjustSpace</key>
+        <integer>-42</integer>
+        <key>width</key>
+        <integer>85</integer>
+      </dict>
+      <key>public.markColor</key>
+      <string>0.65,0.48,0.2,1</string>
+    </dict>
+  </lib>
+</glyph>

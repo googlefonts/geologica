@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="kaverticalstroke-cy" format="2">
+  <outline>
+    <component base="_part.kaverticalstroke-cy"/>
+    <component base="_part.verticalstroke" xOffset="-34" yOffset="-134"/>
+  </outline>
+</glyph>

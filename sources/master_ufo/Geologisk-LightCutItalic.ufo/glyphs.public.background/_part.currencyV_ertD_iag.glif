@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="_part.currencyVertDiag" format="2">
+  <anchor x="960" y="1400" name="_top"/>
+  <outline>
+    <contour>
+      <point x="538" y="-160" type="line"/>
+      <point x="632" y="-160" type="line"/>
+      <point x="1300" y="1560" type="line"/>
+      <point x="1202" y="1560" type="line"/>
+    </contour>
+    <contour>
+      <point x="232" y="-160" type="line"/>
+      <point x="330" y="-160" type="line"/>
+      <point x="994" y="1560" type="line"/>
+      <point x="900" y="1560" type="line"/>
+    </contour>
+  </outline>
+</glyph>

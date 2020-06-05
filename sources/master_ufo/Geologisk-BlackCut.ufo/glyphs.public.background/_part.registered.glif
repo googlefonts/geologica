@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="_part.registered" format="2">
+  <outline>
+    <component base="_part.ring" xOffset="-10"/>
+    <component base="_part.R" xOffset="215" yOffset="145"/>
+  </outline>
+</glyph>

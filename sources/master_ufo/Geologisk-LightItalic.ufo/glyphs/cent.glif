@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="cent" format="2">
+  <advance width="1298"/>
+  <unicode hex="00A2"/>
+  <outline>
+    <contour>
+      <point x="518" y="-160" type="line"/>
+      <point x="618" y="-160" type="line"/>
+      <point x="652" y="0" type="line"/>
+      <point x="774" y="-2"/>
+      <point x="884" y="34"/>
+      <point x="990" y="106" type="curve"/>
+      <point x="922" y="178" type="line"/>
+      <point x="866" y="130"/>
+      <point x="770" y="96"/>
+      <point x="672" y="98" type="curve"/>
+      <point x="832" y="852" type="line"/>
+      <point x="902" y="842"/>
+      <point x="958" y="816"/>
+      <point x="1002" y="776" type="curve"/>
+      <point x="1086" y="844" type="line"/>
+      <point x="1018" y="906"/>
+      <point x="946" y="936"/>
+      <point x="854" y="948" type="curve"/>
+      <point x="890" y="1120" type="line"/>
+      <point x="790" y="1120" type="line"/>
+      <point x="754" y="952" type="line"/>
+      <point x="452" y="940"/>
+      <point x="222" y="708"/>
+      <point x="222" y="416" type="curve" smooth="yes"/>
+      <point x="222" y="206"/>
+      <point x="356" y="54"/>
+      <point x="554" y="12" type="curve"/>
+    </contour>
+    <contour>
+      <point x="574" y="108" type="line"/>
+      <point x="416" y="144"/>
+      <point x="328" y="250"/>
+      <point x="328" y="418" type="curve" smooth="yes"/>
+      <point x="328" y="666"/>
+      <point x="480" y="852"/>
+      <point x="734" y="858" type="curve"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.widthMetricsKey</key>
+      <string>plus</string>
+      <key>public.markColor</key>
+      <string>0,0.67,0.91,1</string>
+    </dict>
+  </lib>
+</glyph>

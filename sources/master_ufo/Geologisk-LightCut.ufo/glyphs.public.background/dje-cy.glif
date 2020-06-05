@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="dje-cy" format="2">
+  <outline>
+    <component base="_part.heng"/>
+    <component base="strokeshortcomb" xOffset="-54" yOffset="342"/>
+  </outline>
+</glyph>

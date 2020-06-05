@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="bar" format="2">
+  <advance width="721"/>
+  <unicode hex="007C"/>
+  <outline>
+    <contour>
+      <point x="0" y="-420" type="line"/>
+      <point x="320" y="-420" type="line"/>
+      <point x="708" y="1400" type="line"/>
+      <point x="388" y="1400" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
+      <string>=|</string>
+      <key>public.markColor</key>
+      <string>0.67,0.95,0.38,1</string>
+    </dict>
+  </lib>
+</glyph>

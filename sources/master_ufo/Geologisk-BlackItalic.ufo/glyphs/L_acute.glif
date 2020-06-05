@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Lacute" format="2">
+  <advance width="1152"/>
+  <unicode hex="0139"/>
+  <anchor x="516" y="0" name="bottom"/>
+  <anchor x="758" y="1440" name="caron"/>
+  <anchor x="546" y="1400" name="top"/>
+  <outline>
+    <component base="L"/>
+    <component base="acutecomb.case" xOffset="1376"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

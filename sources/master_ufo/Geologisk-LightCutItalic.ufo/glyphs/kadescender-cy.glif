@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="kadescender-cy" format="2">
+  <advance width="1046"/>
+  <unicode hex="049B"/>
+  <anchor x="784" y="0" name="descender"/>
+  <anchor x="588" y="960" name="top"/>
+  <outline>
+    <component base="ka-cy"/>
+    <component base="_part.cy-desc-lc-stem" xOffset="-318"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
+      <string>=+20</string>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="_part.cy-desc-uc-reversed" format="2">
+  <anchor x="-120" y="0" name="_descender"/>
+  <outline>
+    <contour>
+      <point x="-340" y="-360" type="line"/>
+      <point x="-232" y="-360" type="line"/>
+      <point x="-232" y="0" type="line"/>
+      <point x="-72" y="0" type="line"/>
+      <point x="-72" y="108" type="line"/>
+      <point x="-340" y="108" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.widthMetricsKey</key>
+      <string>dieresiscomb</string>
+      <key>public.markColor</key>
+      <string>0.67,0.95,0.38,1</string>
+    </dict>
+  </lib>
+</glyph>

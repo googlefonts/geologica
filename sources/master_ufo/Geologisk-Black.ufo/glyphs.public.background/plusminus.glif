@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="plusminus" format="2">
+  <outline>
+    <component base="plus" yOffset="105"/>
+    <component base="minus" yOffset="-275"/>
+  </outline>
+</glyph>

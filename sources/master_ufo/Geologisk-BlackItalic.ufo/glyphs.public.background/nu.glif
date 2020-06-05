@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="nu" format="2">
+  <outline>
+    <contour>
+      <point x="878" y="1061" type="line"/>
+      <point x="806" y="849"/>
+      <point x="695" y="590"/>
+      <point x="570" y="408" type="curve"/>
+      <point x="540" y="1040" type="line"/>
+      <point x="120" y="1040" type="line"/>
+      <point x="246" y="0" type="line"/>
+      <point x="682" y="0" type="line"/>
+      <point x="965" y="300"/>
+      <point x="1165" y="656"/>
+      <point x="1282" y="995" type="curve"/>
+    </contour>
+  </outline>
+</glyph>

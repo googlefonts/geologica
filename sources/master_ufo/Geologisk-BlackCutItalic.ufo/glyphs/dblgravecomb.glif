@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="dblgravecomb" format="2">
+  <unicode hex="030F"/>
+  <anchor x="-706" y="1040" name="_top"/>
+  <outline>
+    <contour>
+      <point x="-558" y="1170" type="line"/>
+      <point x="-208" y="1170" type="line"/>
+      <point x="-338" y="1544" type="line"/>
+      <point x="-722" y="1544" type="line"/>
+    </contour>
+    <contour>
+      <point x="-1098" y="1170" type="line"/>
+      <point x="-748" y="1170" type="line"/>
+      <point x="-878" y="1544" type="line"/>
+      <point x="-1262" y="1544" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.widthMetricsKey</key>
+      <string>dieresiscomb</string>
+      <key>public.markColor</key>
+      <string>0.67,0.95,0.38,1</string>
+    </dict>
+  </lib>
+</glyph>

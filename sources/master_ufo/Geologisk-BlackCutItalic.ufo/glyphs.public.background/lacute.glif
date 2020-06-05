@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="lacute" format="2">
+  <anchor x="126" y="0" name="bottom"/>
+  <anchor x="632" y="1440" name="caron"/>
+  <anchor x="432" y="1440" name="top"/>
+  <outline>
+    <contour>
+      <point x="-74" y="0" type="line"/>
+      <point x="326" y="0" type="line"/>
+      <point x="632" y="1440" type="line"/>
+      <point x="232" y="1440" type="line"/>
+    </contour>
+    <contour>
+      <point x="244" y="1548" type="line"/>
+      <point x="620" y="1548" type="line"/>
+      <point x="936" y="1902" type="line"/>
+      <point x="522" y="1902" type="line"/>
+    </contour>
+  </outline>
+</glyph>

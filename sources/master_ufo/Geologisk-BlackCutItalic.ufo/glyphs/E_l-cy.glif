@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="El-cy" format="2">
+  <advance width="1612"/>
+  <unicode hex="041B"/>
+  <guideline x="11" y="180" angle="78.1113"/>
+  <guideline x="789" y="-63" angle="257.8378"/>
+  <outline>
+    <contour>
+      <point x="-10" y="-20" type="line"/>
+      <point x="310" y="-68"/>
+      <point x="610" y="62"/>
+      <point x="686" y="420" type="curve" smooth="yes"/>
+      <point x="816" y="1032" type="line"/>
+      <point x="1162" y="1032" type="line"/>
+      <point x="944" y="0" type="line"/>
+      <point x="1344" y="0" type="line"/>
+      <point x="1638" y="1400" type="line"/>
+      <point x="514" y="1400" type="line"/>
+      <point x="324" y="504" type="line" smooth="yes"/>
+      <point x="290" y="340"/>
+      <point x="162" y="304"/>
+      <point x="60" y="312" type="curve"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
+      <string>H</string>
+      <key>public.markColor</key>
+      <string>0,0.67,0.91,1</string>
+    </dict>
+  </lib>
+</glyph>

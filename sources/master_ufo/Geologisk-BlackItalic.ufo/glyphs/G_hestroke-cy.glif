@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Ghestroke-cy" format="2">
+  <advance width="1188"/>
+  <unicode hex="0492"/>
+  <anchor x="548" y="644" name="bar"/>
+  <anchor x="532" y="0" name="descender"/>
+  <anchor x="874" y="1400" name="top"/>
+  <outline>
+    <component base="Ge-cy" xOffset="80"/>
+    <component base="strokeshortcomb.case" xOffset="1352" yOffset="-68"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.leftMetricsKey</key>
+      <string>=+80</string>
+      <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
+      <string>=+20</string>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

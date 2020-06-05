@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="_part.verticalstroke.case" format="2">
+  <advance width="1200"/>
+  <anchor x="510" y="780" name="_center"/>
+  <outline>
+    <contour>
+      <point x="410" y="380" type="line"/>
+      <point x="610" y="380" type="line"/>
+      <point x="610" y="1180" type="line"/>
+      <point x="410" y="1180" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.67,0.95,0.38,1</string>
+    </dict>
+  </lib>
+</glyph>

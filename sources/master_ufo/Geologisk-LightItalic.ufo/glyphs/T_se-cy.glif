@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Tse-cy" format="2">
+  <advance width="1518"/>
+  <unicode hex="0426"/>
+  <anchor x="618" y="0" name="bottom"/>
+  <anchor x="1136" y="0" name="descender"/>
+  <outline>
+    <component base="_part.Tse-cy"/>
+    <component base="_part.cy-desc-uc" xOffset="1402"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
+      <string>=+80</string>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

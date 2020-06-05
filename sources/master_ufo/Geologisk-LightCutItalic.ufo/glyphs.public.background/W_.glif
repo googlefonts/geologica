@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="W" format="2">
+  <anchor x="1150" y="1400" name="top"/>
+  <outline>
+    <contour>
+      <point x="334" y="0" type="line"/>
+      <point x="482" y="0" type="line"/>
+      <point x="1114" y="1218" type="line"/>
+      <point x="1224" y="0" type="line"/>
+      <point x="1372" y="0" type="line"/>
+      <point x="2084" y="1400" type="line"/>
+      <point x="1962" y="1400" type="line"/>
+      <point x="1324" y="128" type="line"/>
+      <point x="1218" y="1400" type="line"/>
+      <point x="1084" y="1400" type="line"/>
+      <point x="436" y="126" type="line"/>
+      <point x="338" y="1400" type="line"/>
+      <point x="212" y="1400" type="line"/>
+    </contour>
+  </outline>
+</glyph>

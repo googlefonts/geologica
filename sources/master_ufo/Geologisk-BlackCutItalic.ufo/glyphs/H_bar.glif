@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Hbar" format="2">
+  <advance width="1627"/>
+  <unicode hex="0126"/>
+  <outline>
+    <contour>
+      <point x="938" y="0" type="line"/>
+      <point x="1342" y="0" type="line"/>
+      <point x="1638" y="1400" type="line"/>
+      <point x="1234" y="1400" type="line"/>
+    </contour>
+    <contour>
+      <point x="66" y="0" type="line"/>
+      <point x="470" y="0" type="line"/>
+      <point x="766" y="1400" type="line"/>
+      <point x="362" y="1400" type="line"/>
+    </contour>
+    <contour>
+      <point x="534" y="458" type="line"/>
+      <point x="1066" y="458" type="line"/>
+      <point x="1144" y="826" type="line"/>
+      <point x="612" y="826" type="line"/>
+    </contour>
+    <contour>
+      <point x="108" y="956" type="line"/>
+      <point x="1704" y="956" type="line"/>
+      <point x="1770" y="1264" type="line"/>
+      <point x="174" y="1264" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
+      <string>=|</string>
+      <key>public.markColor</key>
+      <string>0.67,0.95,0.38,1</string>
+    </dict>
+  </lib>
+</glyph>

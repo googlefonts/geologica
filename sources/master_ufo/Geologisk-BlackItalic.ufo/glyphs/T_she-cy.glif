@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Tshe-cy" format="2">
+  <advance width="1712"/>
+  <unicode hex="040B"/>
+  <outline>
+    <contour>
+      <point x="142" y="1040" type="line"/>
+      <point x="1464" y="1040" type="line"/>
+      <point x="1540" y="1400" type="line"/>
+      <point x="218" y="1400" type="line"/>
+    </contour>
+    <contour>
+      <point x="284" y="0" type="line"/>
+      <point x="688" y="0" type="line"/>
+      <point x="800" y="540" type="line"/>
+      <point x="866" y="558"/>
+      <point x="926" y="568"/>
+      <point x="1004" y="568" type="curve" smooth="yes"/>
+      <point x="1156" y="568"/>
+      <point x="1226" y="502"/>
+      <point x="1186" y="318" type="curve" smooth="yes"/>
+      <point x="1120" y="0" type="line"/>
+      <point x="1524" y="0" type="line"/>
+      <point x="1602" y="372" type="line" smooth="yes"/>
+      <point x="1686" y="764"/>
+      <point x="1492" y="920"/>
+      <point x="1162" y="920" type="curve" smooth="yes"/>
+      <point x="1064" y="920"/>
+      <point x="972" y="902"/>
+      <point x="870" y="870" type="curve"/>
+      <point x="984" y="1400" type="line"/>
+      <point x="580" y="1400" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.leftMetricsKey</key>
+      <string>T</string>
+      <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
+      <string>=|Che-cy</string>
+      <key>public.markColor</key>
+      <string>0,0.67,0.91,1</string>
+    </dict>
+  </lib>
+</glyph>

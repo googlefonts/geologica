@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Ge-cy" format="2">
+  <anchor x="504" y="722" name="bar"/>
+  <anchor x="316" y="0" name="descender"/>
+  <anchor x="604" y="1400" name="top"/>
+  <outline>
+    <contour>
+      <point x="200" y="0" type="line"/>
+      <point x="316" y="0" type="line"/>
+      <point x="316" y="1292" type="line"/>
+      <point x="1008" y="1292" type="line"/>
+      <point x="1008" y="1400" type="line"/>
+      <point x="200" y="1400" type="line"/>
+    </contour>
+  </outline>
+</glyph>

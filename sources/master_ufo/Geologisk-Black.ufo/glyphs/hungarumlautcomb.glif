@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="hungarumlautcomb" format="2">
+  <unicode hex="030B"/>
+  <anchor x="-638" y="1040" name="_top"/>
+  <outline>
+    <contour>
+      <point x="-566" y="1170" type="line"/>
+      <point x="-208" y="1170" type="line"/>
+      <point x="26" y="1544" type="line"/>
+      <point x="-368" y="1544" type="line"/>
+    </contour>
+    <contour>
+      <point x="-1106" y="1170" type="line"/>
+      <point x="-748" y="1170" type="line"/>
+      <point x="-514" y="1544" type="line"/>
+      <point x="-908" y="1544" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.widthMetricsKey</key>
+      <string>dieresiscomb</string>
+      <key>public.markColor</key>
+      <string>0.67,0.95,0.38,1</string>
+    </dict>
+  </lib>
+</glyph>

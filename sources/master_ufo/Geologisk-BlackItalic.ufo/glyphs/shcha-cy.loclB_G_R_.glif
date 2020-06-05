@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="shcha-cy.loclBGR" format="2">
+  <advance width="2188"/>
+  <anchor x="1768" y="0" name="descender"/>
+  <anchor x="1110" y="1040" name="top"/>
+  <outline>
+    <component base="sha-cy.loclBGR"/>
+    <component base="_part.cy-desc-lc" xOffset="682"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
+      <string>=+120</string>
+      <key>com.schriftgestaltung.Glyphs.layer.rightMetricsKey</key>
+      <string>=+180</string>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

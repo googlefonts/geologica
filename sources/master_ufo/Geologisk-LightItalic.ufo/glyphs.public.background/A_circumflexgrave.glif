@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Acircumflexgrave" format="2">
+  <anchor x="422" y="0" name="bottom"/>
+  <anchor x="1060" y="0" name="ogonek"/>
+  <anchor x="814" y="1848" name="top"/>
+  <anchor x="1088" y="1648" name="top_right"/>
+  <outline>
+    <contour>
+      <point x="-192" y="0" type="line"/>
+      <point x="-66" y="0" type="line"/>
+      <point x="166" y="384" type="line"/>
+      <point x="850" y="384" type="line"/>
+      <point x="930" y="0" type="line"/>
+      <point x="1060" y="0" type="line"/>
+      <point x="768" y="1400" type="line"/>
+      <point x="668" y="1400" type="line"/>
+    </contour>
+    <contour>
+      <point x="232" y="492" type="line"/>
+      <point x="678" y="1228" type="line"/>
+      <point x="830" y="492" type="line"/>
+    </contour>
+    <contour>
+      <point x="436" y="1592" type="line"/>
+      <point x="558" y="1592" type="line"/>
+      <point x="808" y="1820" type="line"/>
+      <point x="820" y="1820" type="line"/>
+      <point x="962" y="1592" type="line"/>
+      <point x="1082" y="1592" type="line"/>
+      <point x="896" y="1904" type="line"/>
+      <point x="772" y="1904" type="line"/>
+    </contour>
+    <contour>
+      <point x="1096" y="1840" type="line"/>
+      <point x="1208" y="1840" type="line"/>
+      <point x="1088" y="2152" type="line"/>
+      <point x="962" y="2152" type="line"/>
+    </contour>
+  </outline>
+</glyph>

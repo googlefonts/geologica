@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="foursuperior" format="2">
+  <advance width="846"/>
+  <unicode hex="2074"/>
+  <outline>
+    <contour>
+      <point x="580" y="722" type="line"/>
+      <point x="676" y="722" type="line"/>
+      <point x="718" y="918" type="line"/>
+      <point x="872" y="918" type="line"/>
+      <point x="892" y="1010" type="line"/>
+      <point x="736" y="1010" type="line"/>
+      <point x="782" y="1226" type="line"/>
+      <point x="686" y="1226" type="line"/>
+      <point x="640" y="1010" type="line"/>
+      <point x="278" y="1010" type="line"/>
+      <point x="768" y="1632" type="line"/>
+      <point x="652" y="1632" type="line"/>
+      <point x="158" y="1002" type="line"/>
+      <point x="142" y="918" type="line"/>
+      <point x="622" y="918" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>RMXScaler</key>
+      <dict>
+        <key>adjustSpace</key>
+        <integer>10</integer>
+        <key>height</key>
+        <integer>65</integer>
+        <key>verticalShift</key>
+        <integer>361</integer>
+        <key>weight</key>
+        <integer>-5</integer>
+        <key>width</key>
+        <integer>67</integer>
+      </dict>
+      <key>public.markColor</key>
+      <string>0.65,0.48,0.2,1</string>
+    </dict>
+  </lib>
+</glyph>

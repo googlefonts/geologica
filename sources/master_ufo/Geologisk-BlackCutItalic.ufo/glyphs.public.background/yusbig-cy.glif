@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="yusbig-cy" format="2">
+  <outline>
+    <contour>
+      <point x="-98" y="0" type="line"/>
+      <point x="370" y="0" type="line"/>
+      <point x="636" y="370" type="line"/>
+      <point x="640" y="370" type="line"/>
+      <point x="566" y="0" type="line"/>
+      <point x="966" y="0" type="line"/>
+      <point x="1040" y="370" type="line"/>
+      <point x="1058" y="370" type="line"/>
+      <point x="1176" y="0" type="line"/>
+      <point x="1628" y="0" type="line"/>
+      <point x="1426" y="540" type="line"/>
+      <point x="1842" y="1040" type="line"/>
+      <point x="134" y="1040" type="line"/>
+      <point x="338" y="560" type="line"/>
+    </contour>
+    <contour>
+      <point x="684" y="622" type="line"/>
+      <point x="616" y="788" type="line"/>
+      <point x="1244" y="788" type="line"/>
+      <point x="1110" y="622" type="line"/>
+    </contour>
+  </outline>
+</glyph>

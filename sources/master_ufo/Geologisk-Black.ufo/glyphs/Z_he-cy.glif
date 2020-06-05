@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Zhe-cy" format="2">
+  <advance width="2134"/>
+  <unicode hex="0416"/>
+  <anchor x="2000" y="0" name="descender"/>
+  <anchor x="1066" y="1400" name="top"/>
+  <outline>
+    <contour>
+      <point x="1678" y="0" type="line"/>
+      <point x="2144" y="0" type="line"/>
+      <point x="1620" y="720" type="line"/>
+      <point x="2090" y="1400" type="line"/>
+      <point x="1634" y="1400" type="line"/>
+      <point x="1176" y="720" type="line"/>
+    </contour>
+    <contour>
+      <point x="-10" y="0" type="line"/>
+      <point x="438" y="0" type="line"/>
+      <point x="954" y="714" type="line"/>
+      <point x="520" y="1400" type="line"/>
+      <point x="50" y="1400" type="line"/>
+      <point x="510" y="696" type="line"/>
+    </contour>
+    <contour>
+      <point x="864" y="0" type="line"/>
+      <point x="1268" y="0" type="line"/>
+      <point x="1268" y="560" type="line"/>
+      <point x="1510" y="560" type="line"/>
+      <point x="1510" y="892" type="line"/>
+      <point x="1268" y="892" type="line"/>
+      <point x="1268" y="1400" type="line"/>
+      <point x="864" y="1400" type="line"/>
+      <point x="864" y="892" type="line"/>
+      <point x="624" y="892" type="line"/>
+      <point x="624" y="560" type="line"/>
+      <point x="864" y="560" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>RMXScaler</key>
+      <dict>
+        <key>weight</key>
+        <integer>-20</integer>
+        <key>width</key>
+        <integer>90</integer>
+      </dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
+      <string>=|</string>
+      <key>public.markColor</key>
+      <string>0.67,0.95,0.38,1</string>
+    </dict>
+  </lib>
+</glyph>

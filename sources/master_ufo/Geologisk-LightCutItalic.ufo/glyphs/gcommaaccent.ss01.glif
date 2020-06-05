@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="gcommaaccent.ss01" format="2">
+  <advance width="1259"/>
+  <anchor x="657" y="960" name="top"/>
+  <outline>
+    <component base="g.ss01"/>
+    <component base="commaturnedabovecomb" xOffset="1343"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

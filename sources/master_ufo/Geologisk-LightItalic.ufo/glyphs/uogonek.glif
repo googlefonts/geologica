@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uogonek" format="2">
+  <advance width="1144"/>
+  <unicode hex="0173"/>
+  <anchor x="454" y="0" name="bottom"/>
+  <anchor x="872" y="0" name="descender"/>
+  <anchor x="1076" y="960" name="horn"/>
+  <anchor x="872" y="0" name="ogonek"/>
+  <anchor x="666" y="960" name="top"/>
+  <outline>
+    <component base="u"/>
+    <component base="_part.ogonek" xOffset="1328"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.componentsSmartComponentValues</key>
+      <array>
+        <dict/>
+        <dict>
+          <key>ConnectionWeight</key>
+          <integer>50</integer>
+        </dict>
+      </array>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

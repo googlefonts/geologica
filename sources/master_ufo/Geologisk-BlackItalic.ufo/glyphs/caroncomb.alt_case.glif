@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="caroncomb.alt_case" format="2">
+  <anchor x="-394" y="1440" name="_caron"/>
+  <outline>
+    <contour>
+      <point x="-360" y="1080" type="line"/>
+      <point x="-62" y="1080" type="line"/>
+      <point x="102" y="1440" type="line"/>
+      <point x="-284" y="1440" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.widthMetricsKey</key>
+      <string>dieresiscomb</string>
+      <key>public.markColor</key>
+      <string>0.67,0.95,0.38,1</string>
+    </dict>
+  </lib>
+</glyph>

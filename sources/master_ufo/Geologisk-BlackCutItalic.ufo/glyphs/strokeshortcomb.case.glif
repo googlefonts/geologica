@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="strokeshortcomb.case" format="2">
+  <anchor x="-804" y="712" name="_bar"/>
+  <outline>
+    <contour>
+      <point x="-1338" y="558" type="line"/>
+      <point x="-332" y="558" type="line"/>
+      <point x="-268" y="866" type="line"/>
+      <point x="-1274" y="866" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.widthMetricsKey</key>
+      <string>dieresiscomb</string>
+      <key>public.markColor</key>
+      <string>0.67,0.95,0.38,1</string>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="el-cy" format="2">
+  <advance width="1366"/>
+  <unicode hex="043B"/>
+  <guideline x="388" y="364" angle="180"/>
+  <guideline x="133" y="148" angle="0"/>
+  <guideline x="28" y="156" angle="0"/>
+  <guideline x="298" y="679" angle="77.9885"/>
+  <outline>
+    <contour>
+      <point x="-30" y="-20" type="line"/>
+      <point x="258" y="-66"/>
+      <point x="522" y="46"/>
+      <point x="590" y="360" type="curve" smooth="yes"/>
+      <point x="670" y="728" type="line"/>
+      <point x="882" y="728" type="line"/>
+      <point x="726" y="0" type="line"/>
+      <point x="1126" y="0" type="line"/>
+      <point x="1348" y="1040" type="line"/>
+      <point x="375" y="1040" type="line"/>
+      <point x="248" y="444" type="line" smooth="yes"/>
+      <point x="220" y="312"/>
+      <point x="122" y="284"/>
+      <point x="36" y="292" type="curve"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>RMXScaler</key>
+      <dict>
+        <key>adjustSpace</key>
+        <integer>10</integer>
+        <key>height</key>
+        <real>74.3</real>
+        <key>weight</key>
+        <integer>-2</integer>
+        <key>width</key>
+        <integer>78</integer>
+      </dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
+      <string>=|n</string>
+      <key>public.markColor</key>
+      <string>0,0.67,0.91,1</string>
+    </dict>
+  </lib>
+</glyph>

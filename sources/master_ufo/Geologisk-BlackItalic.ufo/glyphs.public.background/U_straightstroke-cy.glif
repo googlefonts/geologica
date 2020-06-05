@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Ustraightstroke-cy" format="2">
+  <outline>
+    <component base="Ustraight-cy"/>
+    <component base="strokeshortcomb.case" xOffset="47" yOffset="-46"/>
+  </outline>
+</glyph>

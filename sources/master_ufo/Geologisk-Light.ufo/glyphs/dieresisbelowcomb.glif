@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="dieresisbelowcomb" format="2">
+  <unicode hex="0324"/>
+  <anchor x="-586" y="0" name="_bottom"/>
+  <outline>
+    <contour>
+      <point x="-424" y="-390" type="curve" smooth="yes"/>
+      <point x="-372" y="-390"/>
+      <point x="-330" y="-348"/>
+      <point x="-330" y="-296" type="curve" smooth="yes"/>
+      <point x="-330" y="-244"/>
+      <point x="-372" y="-202"/>
+      <point x="-424" y="-202" type="curve" smooth="yes"/>
+      <point x="-476" y="-202"/>
+      <point x="-518" y="-244"/>
+      <point x="-518" y="-296" type="curve" smooth="yes"/>
+      <point x="-518" y="-348"/>
+      <point x="-476" y="-390"/>
+    </contour>
+    <contour>
+      <point x="-748" y="-390" type="curve" smooth="yes"/>
+      <point x="-696" y="-390"/>
+      <point x="-654" y="-348"/>
+      <point x="-654" y="-296" type="curve" smooth="yes"/>
+      <point x="-654" y="-244"/>
+      <point x="-696" y="-202"/>
+      <point x="-748" y="-202" type="curve" smooth="yes"/>
+      <point x="-800" y="-202"/>
+      <point x="-842" y="-244"/>
+      <point x="-842" y="-296" type="curve" smooth="yes"/>
+      <point x="-842" y="-348"/>
+      <point x="-800" y="-390"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.widthMetricsKey</key>
+      <string>dieresiscomb</string>
+      <key>public.markColor</key>
+      <string>0.67,0.95,0.38,1</string>
+    </dict>
+  </lib>
+</glyph>

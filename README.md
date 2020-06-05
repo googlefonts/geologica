@@ -1,9 +1,74 @@
-# Geologisk
+# Building the fonts
 
-*Geologisk* is an open source sans serif typeface. It is developed in the new OpenType variation font format and currently has three axes: weight, slant and a(n as of yet untitled) stylistic axis.
+## Step 1: Virtual environment & requirements
+### Set up a virtual environment in the root directory
 
-The stylistic extremes are 
-* 1: Terminals cut perpendicular to the stroke angle and rectangular stems.
-* 2: Terminals cut at 90 degree angles, introducing sharp details that are echoed in the diagonally sliced stems that loosely adheres to the traditional angle of broad nib calligraphy.
+```
+virtualenv -p python3 venv
+```
 
-![Geologisk typeface sample](Geologisk.png)
+### Activate the virtual environment
+
+```
+source venv/bin/activate
+```
+
+### Install requirements
+
+```
+pip install -U -r requirements.txt
+```
+
+You might also need to install ttfautohint
+
+```
+brew install ttfautohint
+```
+
+
+
+## Step 2: Build the fonts
+
+
+### Navigate to /sources:
+Assuming you are already in the root directory.
+
+```
+cd sources
+```
+
+### Build designspace file in /master_ufo
+The /helpers folder includes a file called axisActivatedFeatures.txt. If you rebuild the designspace, merge the contents of this file with your .designspace file.
+
+```
+sh build_ds.sh
+```
+
+### Build OTvar fonts
+
+```
+sh build_vf.sh
+```
+
+### Build static TTF fonts
+
+```
+sh build_statics.sh
+```
+
+### Build OTvar + static TTF fonts
+
+```
+sh build_all.sh
+```  
+
+### Weight Class Fix
+
+The usWeightClass for Thins and UltraLight are set to 100 and 200 consecutively. There is a debate on whether these values cause the fonts to get blurred on certain versions of Windows. (https://github.com/googlefonts/fontbakery/issues/2364) 
+
+If you want to change them to 250 and 275 copy the script `sources/fix_usWeightClass.py` to your fonts directory and run it as follows.
+
+```
+cd fontfolder # make sure to change to the directory that includes the ttf's or otf's
+python fix_usWeightClass.py
+```

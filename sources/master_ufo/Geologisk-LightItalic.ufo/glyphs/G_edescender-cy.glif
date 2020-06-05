@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Gedescender-cy" format="2">
+  <advance width="1000"/>
+  <unicode hex="04F6"/>
+  <anchor x="486" y="722" name="bar"/>
+  <anchor x="216" y="0" name="descender"/>
+  <anchor x="760" y="1400" name="top"/>
+  <outline>
+    <component base="Ge-cy"/>
+    <component base="_part.cy-desc-uc" xOffset="482"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

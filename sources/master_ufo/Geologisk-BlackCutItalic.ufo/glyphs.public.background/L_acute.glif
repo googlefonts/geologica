@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Lacute" format="2">
+  <anchor x="426" y="0" name="bottom"/>
+  <anchor x="668" y="1440" name="caron"/>
+  <anchor x="458" y="1400" name="top"/>
+  <outline>
+    <contour>
+      <point x="-42" y="0" type="line"/>
+      <point x="892" y="0" type="line"/>
+      <point x="970" y="368" type="line"/>
+      <point x="440" y="368" type="line"/>
+      <point x="660" y="1400" type="line"/>
+      <point x="256" y="1400" type="line"/>
+    </contour>
+    <contour>
+      <point x="270" y="1508" type="line"/>
+      <point x="646" y="1508" type="line"/>
+      <point x="962" y="1862" type="line"/>
+      <point x="548" y="1862" type="line"/>
+    </contour>
+  </outline>
+</glyph>

@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="hadescender-cy" format="2">
+  <advance width="1366"/>
+  <unicode hex="04B3"/>
+  <anchor x="1074" y="0" name="descender"/>
+  <outline>
+    <component base="ha-cy"/>
+    <component base="_part.cy-desc-lc-stem" xOffset="-114"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
+      <string>=+20</string>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="hbar" format="2">
+  <advance width="1368"/>
+  <unicode hex="0127"/>
+  <anchor x="556" y="1224" name="bar"/>
+  <anchor x="526" y="1440" name="top"/>
+  <outline>
+    <component base="h"/>
+    <component base="strokeshortcomb" xOffset="1194" yOffset="690"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

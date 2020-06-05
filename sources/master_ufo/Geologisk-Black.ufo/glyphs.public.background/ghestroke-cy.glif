@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="ghestroke-cy" format="2">
+  <outline>
+    <component base="ge-cy" xOffset="20"/>
+    <component base="strokeshortcomb" xOffset="-16" yOffset="-36"/>
+  </outline>
+</glyph>

@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="_part.cy-desc-uc-reversed-stem" format="2">
+  <guideline x="-141" y="-180" angle="77.9387"/>
+  <guideline x="-87" y="27" angle="257.4712"/>
+  <anchor x="-206" y="0" name="_descender"/>
+  <outline>
+    <contour>
+      <point x="-390" y="-360" type="line"/>
+      <point x="-282" y="-360" type="line"/>
+      <point x="-206" y="0" type="line"/>
+      <point x="-182" y="20" type="line"/>
+      <point x="-162" y="108" type="line"/>
+      <point x="-290" y="108" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.widthMetricsKey</key>
+      <string>dieresiscomb</string>
+      <key>public.markColor</key>
+      <string>0.67,0.95,0.38,1</string>
+    </dict>
+  </lib>
+</glyph>

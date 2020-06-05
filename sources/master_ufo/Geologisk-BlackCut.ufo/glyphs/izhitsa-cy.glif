@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="izhitsa-cy" format="2">
+  <advance width="1228"/>
+  <unicode hex="0475"/>
+  <outline>
+    <contour>
+      <point x="366" y="0" type="line"/>
+      <point x="812" y="0" type="line"/>
+      <point x="992" y="492" type="line" smooth="yes"/>
+      <point x="1070" y="706"/>
+      <point x="1140" y="730"/>
+      <point x="1254" y="706" type="curve"/>
+      <point x="1254" y="1060" type="line"/>
+      <point x="936" y="1124"/>
+      <point x="774" y="1054"/>
+      <point x="696" y="776" type="curve" smooth="yes"/>
+      <point x="604" y="448" type="line"/>
+      <point x="438" y="1040" type="line"/>
+      <point x="10" y="1040" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>RMXScaler</key>
+      <dict>
+        <key>adjustSpace</key>
+        <integer>10</integer>
+        <key>height</key>
+        <real>74.3</real>
+        <key>weight</key>
+        <integer>-2</integer>
+        <key>width</key>
+        <integer>78</integer>
+      </dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.leftMetricsKey</key>
+      <string>v</string>
+      <key>com.schriftgestaltung.Glyphs.glyph.widthMetricsKey</key>
+      <string>=v+50</string>
+      <key>public.markColor</key>
+      <string>0,0.67,0.91,1</string>
+    </dict>
+  </lib>
+</glyph>

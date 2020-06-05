@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="_part.currencyBar_Manat" format="2">
+  <advance width="1432"/>
+  <anchor x="782" y="1400" name="_top"/>
+  <outline>
+    <contour>
+      <point x="660" y="160" type="line"/>
+      <point x="902" y="160" type="line"/>
+      <point x="902" y="1400" type="line"/>
+      <point x="660" y="1400" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.67,0.95,0.38,1</string>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="brevebelowcomb" format="2">
+  <unicode hex="032E"/>
+  <anchor x="-504" y="0" name="_bottom"/>
+  <outline>
+    <contour>
+      <point x="-594" y="-554" type="curve" smooth="yes"/>
+      <point x="-406" y="-554"/>
+      <point x="-250" y="-410"/>
+      <point x="-234" y="-210" type="curve"/>
+      <point x="-336" y="-210" type="line"/>
+      <point x="-348" y="-360"/>
+      <point x="-446" y="-458"/>
+      <point x="-582" y="-458" type="curve" smooth="yes"/>
+      <point x="-728" y="-458"/>
+      <point x="-804" y="-362"/>
+      <point x="-784" y="-210" type="curve"/>
+      <point x="-886" y="-210" type="line"/>
+      <point x="-918" y="-404"/>
+      <point x="-796" y="-554"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.widthMetricsKey</key>
+      <string>dieresiscomb</string>
+      <key>public.markColor</key>
+      <string>0.67,0.95,0.38,1</string>
+    </dict>
+  </lib>
+</glyph>

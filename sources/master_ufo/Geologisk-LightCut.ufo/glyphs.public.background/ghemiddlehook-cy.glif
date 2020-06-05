@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="ghemiddlehook-cy" format="2">
+  <outline>
+    <contour>
+      <point x="680" y="-192" type="line"/>
+      <point x="894" y="-120"/>
+      <point x="996" y="54"/>
+      <point x="996" y="226" type="curve" smooth="yes"/>
+      <point x="996" y="462"/>
+      <point x="812" y="586"/>
+      <point x="552" y="586" type="curve" smooth="yes"/>
+      <point x="464" y="586"/>
+      <point x="364" y="572"/>
+      <point x="258" y="534" type="curve"/>
+      <point x="256" y="436" type="line"/>
+      <point x="352" y="470"/>
+      <point x="442" y="486"/>
+      <point x="544" y="486" type="curve" smooth="yes"/>
+      <point x="740" y="486"/>
+      <point x="884" y="408"/>
+      <point x="884" y="222" type="curve" smooth="yes"/>
+      <point x="884" y="90"/>
+      <point x="802" y="-48"/>
+      <point x="630" y="-110" type="curve"/>
+    </contour>
+    <component base="ge-cy"/>
+  </outline>
+</glyph>

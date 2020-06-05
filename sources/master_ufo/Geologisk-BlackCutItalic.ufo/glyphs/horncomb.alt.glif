@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="horncomb.alt" format="2">
+  <anchor x="-219" y="1040" name="_horn"/>
+  <outline>
+    <contour>
+      <point x="-175" y="720" type="curve" smooth="yes"/>
+      <point x="9" y="720"/>
+      <point x="143" y="862"/>
+      <point x="143" y="1038" type="curve" smooth="yes"/>
+      <point x="143" y="1124"/>
+      <point x="113" y="1220"/>
+      <point x="45" y="1298" type="curve"/>
+      <point x="-187" y="1182" type="line"/>
+      <point x="-153" y="1132"/>
+      <point x="-139" y="1084"/>
+      <point x="-139" y="1046" type="curve" smooth="yes"/>
+      <point x="-139" y="982"/>
+      <point x="-173" y="944"/>
+      <point x="-227" y="944" type="curve" smooth="yes"/>
+      <point x="-251" y="944"/>
+      <point x="-277" y="952"/>
+      <point x="-307" y="966" type="curve"/>
+      <point x="-353" y="756" type="line"/>
+      <point x="-293" y="736"/>
+      <point x="-235" y="720"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.originalWidth</key>
+      <integer>200</integer>
+      <key>public.markColor</key>
+      <string>0.97,1,0,1</string>
+    </dict>
+  </lib>
+</glyph>

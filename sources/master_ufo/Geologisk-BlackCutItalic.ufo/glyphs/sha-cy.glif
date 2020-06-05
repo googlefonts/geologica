@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="sha-cy" format="2">
+  <advance width="1911"/>
+  <unicode hex="0448"/>
+  <anchor x="1671" y="0" name="descender"/>
+  <outline>
+    <contour>
+      <point x="19" y="0" type="line"/>
+      <point x="1671" y="0" type="line"/>
+      <point x="1903" y="1100" type="line"/>
+      <point x="1487" y="924" type="line"/>
+      <point x="1357" y="312" type="line"/>
+      <point x="1101" y="312" type="line"/>
+      <point x="1267" y="1100" type="line"/>
+      <point x="851" y="924" type="line"/>
+      <point x="721" y="312" type="line"/>
+      <point x="465" y="312" type="line"/>
+      <point x="631" y="1100" type="line"/>
+      <point x="215" y="924" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>RMXScaler</key>
+      <dict>
+        <key>adjustSpace</key>
+        <integer>10</integer>
+        <key>height</key>
+        <real>74.3</real>
+        <key>weight</key>
+        <integer>-2</integer>
+        <key>width</key>
+        <integer>78</integer>
+      </dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.leftMetricsKey</key>
+      <string>n</string>
+      <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
+      <string>=|n</string>
+      <key>public.markColor</key>
+      <string>0,0.67,0.91,1</string>
+    </dict>
+  </lib>
+</glyph>

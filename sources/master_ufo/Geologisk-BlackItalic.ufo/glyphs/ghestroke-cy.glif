@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="ghestroke-cy" format="2">
+  <advance width="954"/>
+  <unicode hex="0493"/>
+  <anchor x="380" y="462" name="bar"/>
+  <anchor x="462" y="0" name="descender"/>
+  <anchor x="654" y="1040" name="top"/>
+  <outline>
+    <component base="ge-cy" xOffset="40"/>
+    <component base="strokeshortcomb" xOffset="1018" yOffset="-72"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>RMXScaler</key>
+      <dict>
+        <key>adjustSpace</key>
+        <integer>10</integer>
+        <key>height</key>
+        <real>74.3</real>
+        <key>weight</key>
+        <integer>-22</integer>
+        <key>width</key>
+        <integer>78</integer>
+      </dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.leftMetricsKey</key>
+      <string>=+40</string>
+      <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
+      <string>=+10</string>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

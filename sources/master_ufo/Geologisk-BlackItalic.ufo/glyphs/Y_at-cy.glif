@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Yat-cy" format="2">
+  <advance width="1462"/>
+  <unicode hex="0462"/>
+  <outline>
+    <contour>
+      <point x="145" y="0" type="line"/>
+      <point x="779" y="0" type="line" smooth="yes"/>
+      <point x="1195" y="0"/>
+      <point x="1397" y="240"/>
+      <point x="1395" y="494" type="curve" smooth="yes"/>
+      <point x="1391" y="701"/>
+      <point x="1227" y="888"/>
+      <point x="865" y="888" type="curve" smooth="yes"/>
+      <point x="705" y="888" type="line"/>
+      <point x="637" y="566" type="line"/>
+      <point x="797" y="566" type="line" smooth="yes"/>
+      <point x="911" y="566"/>
+      <point x="959" y="514"/>
+      <point x="961" y="442" type="curve" smooth="yes"/>
+      <point x="963" y="370"/>
+      <point x="911" y="294"/>
+      <point x="777" y="294" type="curve" smooth="yes"/>
+      <point x="613" y="294" type="line"/>
+      <point x="851" y="1440" type="line"/>
+      <point x="451" y="1440" type="line"/>
+    </contour>
+    <contour>
+      <point x="57" y="996" type="line"/>
+      <point x="1063" y="996" type="line"/>
+      <point x="1127" y="1304" type="line"/>
+      <point x="121" y="1304" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
+      <string>Softsign-cy</string>
+      <key>com.schriftgestaltung.Glyphs.glyph.widthMetricsKey</key>
+      <string>=Softsign-cy+100</string>
+      <key>public.markColor</key>
+      <string>0,0.67,0.91,1</string>
+    </dict>
+  </lib>
+</glyph>

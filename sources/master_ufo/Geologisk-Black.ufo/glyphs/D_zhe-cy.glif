@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Dzhe-cy" format="2">
+  <advance width="1568"/>
+  <unicode hex="040F"/>
+  <anchor x="794" y="0" name="bottom"/>
+  <anchor x="1412" y="0" name="descender"/>
+  <outline>
+    <component base="_part.Tse-cy"/>
+    <component base="_part.cy-descender-uc-center" xOffset="948"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.leftMetricsKey</key>
+      <string>H</string>
+      <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
+      <string>H</string>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

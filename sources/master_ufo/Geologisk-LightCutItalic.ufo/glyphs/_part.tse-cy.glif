@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="_part.tse-cy" format="2">
+  <advance width="1154"/>
+  <guideline x="238" y="0" angle="0"/>
+  <anchor x="476" y="0" name="bottom"/>
+  <anchor x="882" y="0" name="descender"/>
+  <outline>
+    <contour>
+      <point x="70" y="0" type="line"/>
+      <point x="882" y="0" type="line"/>
+      <point x="1092" y="1000" type="line"/>
+      <point x="950" y="858" type="line"/>
+      <point x="790" y="104" type="line"/>
+      <point x="202" y="104" type="line"/>
+      <point x="392" y="1000" type="line"/>
+      <point x="250" y="858" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>RMXScaler</key>
+      <dict>
+        <key>adjustSpace</key>
+        <integer>9</integer>
+        <key>height</key>
+        <real>68.6</real>
+        <key>weight</key>
+        <integer>-2</integer>
+        <key>width</key>
+        <integer>78</integer>
+      </dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.leftMetricsKey</key>
+      <string>n</string>
+      <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
+      <string>=|n</string>
+      <key>public.markColor</key>
+      <string>0,0.67,0.91,1</string>
+    </dict>
+  </lib>
+</glyph>

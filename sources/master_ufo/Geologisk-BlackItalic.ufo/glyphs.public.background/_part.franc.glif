@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="_part.franc" format="2">
+  <outline>
+    <contour>
+      <point x="10" y="0" type="line"/>
+      <point x="378" y="0" type="line"/>
+      <point x="484" y="500" type="line"/>
+      <point x="998" y="500" type="line"/>
+      <point x="1066" y="822" type="line"/>
+      <point x="552" y="822" type="line"/>
+      <point x="604" y="1066" type="line"/>
+      <point x="1180" y="1066" type="line"/>
+      <point x="1250" y="1400" type="line"/>
+      <point x="306" y="1400" type="line"/>
+    </contour>
+  </outline>
+</glyph>

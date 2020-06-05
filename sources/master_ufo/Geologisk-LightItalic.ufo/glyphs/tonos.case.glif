@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="tonos.case" format="2">
+  <anchor x="-1350" y="1400" name="_topleft"/>
+  <outline>
+    <contour>
+      <point x="-1670" y="1158" type="line"/>
+      <point x="-1562" y="1158" type="line"/>
+      <point x="-1374" y="1470" type="line"/>
+      <point x="-1494" y="1470" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.widthMetricsKey</key>
+      <string>dieresiscomb</string>
+      <key>public.markColor</key>
+      <string>0.67,0.95,0.38,1</string>
+    </dict>
+  </lib>
+</glyph>

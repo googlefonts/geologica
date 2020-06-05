@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Gheupturn-cy" format="2">
+  <outline>
+    <contour>
+      <point x="1392" y="1820" type="line"/>
+      <point x="1028" y="1820" type="line"/>
+      <point x="864" y="1032" type="line"/>
+      <point x="1228" y="1032" type="line"/>
+    </contour>
+    <component base="Ge-cy"/>
+  </outline>
+</glyph>

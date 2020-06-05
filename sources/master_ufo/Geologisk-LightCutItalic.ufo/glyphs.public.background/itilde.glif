@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="itilde" format="2">
+  <anchor x="70" y="0" name="bottom"/>
+  <anchor x="126" y="0" name="ogonek"/>
+  <anchor x="356" y="1344" name="top"/>
+  <outline>
+    <contour>
+      <point x="14" y="0" type="line"/>
+      <point x="126" y="0" type="line"/>
+      <point x="330" y="960" type="line"/>
+      <point x="218" y="960" type="line"/>
+    </contour>
+    <contour>
+      <point x="62" y="1216" type="line"/>
+      <point x="106" y="1296"/>
+      <point x="156" y="1340"/>
+      <point x="212" y="1340" type="curve" smooth="yes"/>
+      <point x="298" y="1340"/>
+      <point x="368" y="1236"/>
+      <point x="478" y="1236" type="curve" smooth="yes"/>
+      <point x="562" y="1236"/>
+      <point x="648" y="1302"/>
+      <point x="714" y="1414" type="curve"/>
+      <point x="650" y="1460" type="line"/>
+      <point x="606" y="1382"/>
+      <point x="554" y="1334"/>
+      <point x="498" y="1334" type="curve" smooth="yes"/>
+      <point x="412" y="1334"/>
+      <point x="342" y="1440"/>
+      <point x="232" y="1440" type="curve" smooth="yes"/>
+      <point x="142" y="1440"/>
+      <point x="60" y="1366"/>
+      <point x="-4" y="1260" type="curve"/>
+    </contour>
+  </outline>
+</glyph>

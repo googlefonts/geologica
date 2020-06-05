@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="chekhakassian-cy" format="2">
+  <advance width="1254"/>
+  <unicode hex="04CC"/>
+  <guideline x="454" y="184" angle="25.0341"/>
+  <guideline x="363" y="-150" angle="25.0341"/>
+  <guideline x="363" y="104" angle="25.0341"/>
+  <anchor x="726" y="0" name="_descender"/>
+  <anchor x="592" y="486" name="center"/>
+  <anchor x="1126" y="0" name="descender"/>
+  <anchor x="726" y="0" name="descender_alt"/>
+  <anchor x="592" y="1040" name="top"/>
+  <outline>
+    <contour>
+      <point x="442" y="-384" type="line"/>
+      <point x="806" y="-216" type="line"/>
+      <point x="806" y="0" type="line"/>
+      <point x="886" y="0" type="line"/>
+      <point x="886" y="232" type="line"/>
+      <point x="442" y="232" type="line"/>
+    </contour>
+    <component base="che-cy"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.leftMetricsKey</key>
+      <string>che-cy</string>
+      <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
+      <string>=|n</string>
+      <key>public.markColor</key>
+      <string>0.67,0.95,0.38,1</string>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="shcha-cy.loclBGR" format="2">
+  <outline>
+    <component base="sha-cy.loclBGR"/>
+    <component base="_part.cy-desc-lc-stem" xOffset="278"/>
+  </outline>
+</glyph>

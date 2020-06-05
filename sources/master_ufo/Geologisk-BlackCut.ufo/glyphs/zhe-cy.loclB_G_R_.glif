@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="zhe-cy.loclBGR" format="2">
+  <advance width="1808"/>
+  <outline>
+    <contour>
+      <point x="700" y="0" type="line"/>
+      <point x="1100" y="0" type="line"/>
+      <point x="1100" y="370" type="line"/>
+      <point x="1392" y="370" type="line"/>
+      <point x="1392" y="682" type="line"/>
+      <point x="1100" y="682" type="line"/>
+      <point x="1100" y="1480" type="line"/>
+      <point x="700" y="1294" type="line"/>
+      <point x="700" y="682" type="line"/>
+      <point x="406" y="682" type="line"/>
+      <point x="406" y="370" type="line"/>
+      <point x="700" y="370" type="line"/>
+    </contour>
+    <contour>
+      <point x="20" y="0" type="line"/>
+      <point x="466" y="0" type="line"/>
+      <point x="750" y="538" type="line"/>
+      <point x="448" y="1040" type="line"/>
+      <point x="14" y="1040" type="line"/>
+      <point x="324" y="542" type="line"/>
+    </contour>
+    <contour>
+      <point x="1326" y="0" type="line"/>
+      <point x="1794" y="0" type="line"/>
+      <point x="1476" y="560" type="line"/>
+      <point x="1786" y="1040" type="line"/>
+      <point x="1366" y="1040" type="line"/>
+      <point x="1050" y="538" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.leftMetricsKey</key>
+      <string>zhe-cy</string>
+      <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
+      <string>zhe-cy</string>
+      <key>public.markColor</key>
+      <string>0,0.67,0.91,1</string>
+    </dict>
+  </lib>
+</glyph>

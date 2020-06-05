@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="_part.currencyVertDiagAdjusted" format="2">
+  <advance width="1424"/>
+  <guideline x="520" y="165" angle="0"/>
+  <anchor x="812" y="1400" name="_top"/>
+  <outline>
+    <contour>
+      <point x="720" y="-160" type="line"/>
+      <point x="814" y="-160" type="line"/>
+      <point x="1118" y="1560" type="line"/>
+      <point x="1020" y="1560" type="line"/>
+    </contour>
+    <contour>
+      <point x="414" y="-160" type="line"/>
+      <point x="512" y="-160" type="line"/>
+      <point x="566" y="145" type="line"/>
+      <point x="468" y="145" type="line"/>
+    </contour>
+    <contour>
+      <point x="674" y="1335" type="line"/>
+      <point x="772" y="1335" type="line"/>
+      <point x="812" y="1560" type="line"/>
+      <point x="714" y="1560" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.67,0.95,0.38,1</string>
+    </dict>
+  </lib>
+</glyph>

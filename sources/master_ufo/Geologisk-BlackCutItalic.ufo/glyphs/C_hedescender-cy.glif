@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Chedescender-cy" format="2">
+  <advance width="1597"/>
+  <unicode hex="04B6"/>
+  <anchor x="725" y="636" name="center"/>
+  <anchor x="1209" y="0" name="descender"/>
+  <anchor x="805" y="0" name="descender_alt"/>
+  <anchor x="885" y="1400" name="top"/>
+  <outline>
+    <component base="Che-cy"/>
+    <component base="_part.cy-desc-uc" xOffset="1361"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
+      <string>=+80</string>
+      <key>com.schriftgestaltung.Glyphs.layer.rightMetricsKey</key>
+      <string>=+120</string>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

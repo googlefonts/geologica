@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Xi" format="2">
+  <advance width="1280"/>
+  <unicode hex="039E"/>
+  <guideline x="55" y="613" angle="257.1957"/>
+  <guideline x="55" y="613" angle="90"/>
+  <guideline x="591" y="88" angle="257.1957"/>
+  <outline>
+    <contour>
+      <point x="84" y="0" type="line"/>
+      <point x="1136" y="0" type="line"/>
+      <point x="1216" y="352" type="line"/>
+      <point x="84" y="352" type="line"/>
+    </contour>
+    <contour>
+      <point x="192" y="548" type="line"/>
+      <point x="1034" y="548" type="line"/>
+      <point x="1034" y="866" type="line"/>
+      <point x="262" y="866" type="line"/>
+    </contour>
+    <contour>
+      <point x="64" y="1052" type="line"/>
+      <point x="1156" y="1052" type="line"/>
+      <point x="1156" y="1400" type="line"/>
+      <point x="144" y="1400" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.leftMetricsKey</key>
+      <string>=|E</string>
+      <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
+      <string>E</string>
+      <key>public.markColor</key>
+      <string>0,0.67,0.91,1</string>
+    </dict>
+  </lib>
+</glyph>

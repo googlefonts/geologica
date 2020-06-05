@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="_part.cy-descender-lc-center" format="2">
+  <anchor x="-144" y="0" name="_bottom"/>
+  <outline>
+    <contour>
+      <point x="-408" y="-386" type="line"/>
+      <point x="-8" y="-214" type="line"/>
+      <point x="82" y="208" type="line"/>
+      <point x="-280" y="208" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.widthMetricsKey</key>
+      <string>dieresiscomb</string>
+      <key>public.markColor</key>
+      <string>0.67,0.95,0.38,1</string>
+    </dict>
+  </lib>
+</glyph>

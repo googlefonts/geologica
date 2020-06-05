@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="kip" format="2">
+  <outline>
+    <contour>
+      <point x="710" y="2" type="line"/>
+      <point x="1110" y="2" type="line"/>
+      <point x="976" y="696" type="line"/>
+      <point x="1398" y="1402" type="line"/>
+      <point x="1008" y="1402" type="line"/>
+      <point x="598" y="692" type="line"/>
+    </contour>
+    <contour>
+      <point x="50" y="2" type="line"/>
+      <point x="410" y="2" type="line"/>
+      <point x="706" y="1402" type="line"/>
+      <point x="346" y="1402" type="line"/>
+    </contour>
+    <contour>
+      <point x="-24" y="562" type="line"/>
+      <point x="1256" y="562" type="line"/>
+      <point x="1310" y="812" type="line"/>
+      <point x="30" y="812" type="line"/>
+    </contour>
+  </outline>
+</glyph>

@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="commaturnedabovecomb" format="2">
+  <unicode hex="0312"/>
+  <anchor x="-732" y="1040" name="_top"/>
+  <outline>
+    <contour>
+      <point x="-670" y="1174" type="curve" smooth="yes"/>
+      <point x="-546" y="1174"/>
+      <point x="-438" y="1260"/>
+      <point x="-438" y="1374" type="curve" smooth="yes"/>
+      <point x="-438" y="1446"/>
+      <point x="-494" y="1512"/>
+      <point x="-570" y="1538" type="curve"/>
+      <point x="-510" y="1586"/>
+      <point x="-424" y="1632"/>
+      <point x="-350" y="1652" type="curve"/>
+      <point x="-452" y="1784" type="line"/>
+      <point x="-678" y="1692"/>
+      <point x="-870" y="1544"/>
+      <point x="-870" y="1352" type="curve" smooth="yes"/>
+      <point x="-870" y="1246"/>
+      <point x="-792" y="1174"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.widthMetricsKey</key>
+      <string>dieresiscomb</string>
+      <key>public.markColor</key>
+      <string>0.67,0.95,0.38,1</string>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="nine" format="2">
+  <advance width="1241"/>
+  <unicode hex="0039"/>
+  <outline>
+    <contour>
+      <point x="190" y="-30" type="line"/>
+      <point x="730" y="36"/>
+      <point x="1216" y="396"/>
+      <point x="1216" y="972" type="curve" smooth="yes"/>
+      <point x="1216" y="1260"/>
+      <point x="1028" y="1430"/>
+      <point x="744" y="1430" type="curve" smooth="yes"/>
+      <point x="460" y="1430"/>
+      <point x="214" y="1204"/>
+      <point x="214" y="932" type="curve" smooth="yes"/>
+      <point x="214" y="710"/>
+      <point x="400" y="546"/>
+      <point x="658" y="546" type="curve" smooth="yes"/>
+      <point x="830" y="546"/>
+      <point x="980" y="630"/>
+      <point x="1074" y="758" type="curve"/>
+      <point x="980" y="396"/>
+      <point x="644" y="144"/>
+      <point x="164" y="94" type="curve"/>
+    </contour>
+    <contour>
+      <point x="690" y="648" type="curve" smooth="yes"/>
+      <point x="488" y="648"/>
+      <point x="342" y="782"/>
+      <point x="342" y="956" type="curve" smooth="yes"/>
+      <point x="342" y="1154"/>
+      <point x="514" y="1316"/>
+      <point x="736" y="1316" type="curve" smooth="yes"/>
+      <point x="952" y="1316"/>
+      <point x="1090" y="1190"/>
+      <point x="1090" y="1018" type="curve" smooth="yes"/>
+      <point x="1090" y="806"/>
+      <point x="906" y="648"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.leftMetricsKey</key>
+      <string>=|six</string>
+      <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
+      <string>=|six</string>
+      <key>public.markColor</key>
+      <string>0,0.67,0.91,1</string>
+    </dict>
+  </lib>
+</glyph>

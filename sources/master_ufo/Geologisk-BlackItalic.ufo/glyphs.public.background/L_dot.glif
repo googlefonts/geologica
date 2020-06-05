@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Ldot" format="2">
+  <anchor x="476" y="0" name="bottom"/>
+  <anchor x="718" y="1440" name="caron"/>
+  <anchor x="506" y="1400" name="top"/>
+  <outline>
+    <contour>
+      <point x="8" y="0" type="line"/>
+      <point x="942" y="0" type="line"/>
+      <point x="1020" y="368" type="line"/>
+      <point x="490" y="368" type="line"/>
+      <point x="708" y="1400" type="line"/>
+      <point x="304" y="1400" type="line"/>
+    </contour>
+    <contour>
+      <point x="902" y="572" type="curve" smooth="yes"/>
+      <point x="1028" y="572"/>
+      <point x="1154" y="656"/>
+      <point x="1184" y="794" type="curve" smooth="yes"/>
+      <point x="1214" y="934"/>
+      <point x="1124" y="1018"/>
+      <point x="998" y="1018" type="curve" smooth="yes"/>
+      <point x="872" y="1018"/>
+      <point x="746" y="934"/>
+      <point x="716" y="794" type="curve" smooth="yes"/>
+      <point x="686" y="656"/>
+      <point x="776" y="572"/>
+    </contour>
+  </outline>
+</glyph>

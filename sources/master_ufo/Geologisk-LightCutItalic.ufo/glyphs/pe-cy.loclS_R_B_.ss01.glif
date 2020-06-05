@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="pe-cy.loclSRB.ss01" format="2">
+  <advance width="1144"/>
+  <anchor x="454" y="0" name="bottom"/>
+  <anchor x="872" y="0" name="descender"/>
+  <anchor x="1076" y="960" name="horn"/>
+  <anchor x="872" y="0" name="ogonek"/>
+  <anchor x="666" y="960" name="top"/>
+  <outline>
+    <component base="u"/>
+    <component base="macroncomb" xOffset="1148"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.5,0.09,0.79,1</string>
+    </dict>
+  </lib>
+</glyph>

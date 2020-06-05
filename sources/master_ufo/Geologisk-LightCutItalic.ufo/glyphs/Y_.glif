@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Y" format="2">
+  <advance width="1180"/>
+  <unicode hex="0059"/>
+  <anchor x="488" y="0" name="bottom"/>
+  <anchor x="784" y="1400" name="top"/>
+  <anchor x="176" y="1400" name="topleft"/>
+  <outline>
+    <contour>
+      <point x="430" y="0" type="line"/>
+      <point x="546" y="0" type="line"/>
+      <point x="678" y="624" type="line"/>
+      <point x="1342" y="1400" type="line"/>
+      <point x="1200" y="1400" type="line"/>
+      <point x="642" y="740" type="line"/>
+      <point x="364" y="1400" type="line"/>
+      <point x="230" y="1400" type="line"/>
+      <point x="562" y="624" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
+      <string>=|</string>
+      <key>public.markColor</key>
+      <string>0.67,0.95,0.38,1</string>
+    </dict>
+  </lib>
+</glyph>

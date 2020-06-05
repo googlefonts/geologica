@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="leftanglebracket-math" format="2">
+  <advance width="1296"/>
+  <unicode hex="27E8"/>
+  <guideline x="509" y="814" angle="55.5267"/>
+  <outline>
+    <contour>
+      <point x="1026" y="-440" type="line"/>
+      <point x="1026" y="-282" type="line"/>
+      <point x="366" y="664" type="line"/>
+      <point x="1026" y="1610" type="line"/>
+      <point x="1026" y="1768" type="line"/>
+      <point x="254" y="664" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.widthMetricsKey</key>
+      <string>plus</string>
+      <key>public.markColor</key>
+      <string>0.67,0.95,0.38,1</string>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="oogonek" format="2">
+  <advance width="1276"/>
+  <unicode hex="01EB"/>
+  <outline>
+    <contour>
+      <point x="634" y="-450" type="curve" smooth="yes"/>
+      <point x="736" y="-450"/>
+      <point x="832" y="-424"/>
+      <point x="908" y="-360" type="curve"/>
+      <point x="816" y="-174" type="line"/>
+      <point x="784" y="-208"/>
+      <point x="734" y="-230"/>
+      <point x="686" y="-230" type="curve" smooth="yes"/>
+      <point x="622" y="-230"/>
+      <point x="592" y="-200"/>
+      <point x="592" y="-154" type="curve" smooth="yes"/>
+      <point x="592" y="-82"/>
+      <point x="676" y="-26"/>
+      <point x="816" y="0" type="curve"/>
+      <point x="766" y="122" type="line"/>
+      <point x="520" y="100"/>
+      <point x="330" y="-12"/>
+      <point x="330" y="-198" type="curve" smooth="yes"/>
+      <point x="330" y="-348"/>
+      <point x="454" y="-450"/>
+    </contour>
+    <component base="o"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.leftMetricsKey</key>
+      <string>o</string>
+      <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
+      <string>o</string>
+      <key>public.markColor</key>
+      <string>0,0.67,0.91,1</string>
+    </dict>
+  </lib>
+</glyph>

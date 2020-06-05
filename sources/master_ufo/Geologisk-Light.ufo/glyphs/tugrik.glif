@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="tugrik" format="2">
+  <advance width="1296"/>
+  <unicode hex="20AE"/>
+  <anchor x="648" y="722" name="bar"/>
+  <anchor x="648" y="0" name="bottom"/>
+  <anchor x="648" y="1400" name="top"/>
+  <outline>
+    <contour>
+      <point x="236" y="584" type="line"/>
+      <point x="648" y="804" type="line"/>
+      <point x="648" y="794" type="line"/>
+      <point x="1060" y="1014" type="line"/>
+      <point x="1060" y="1112" type="line"/>
+      <point x="648" y="892" type="line"/>
+      <point x="648" y="902" type="line"/>
+      <point x="236" y="682" type="line"/>
+    </contour>
+    <contour>
+      <point x="236" y="286" type="line"/>
+      <point x="648" y="506" type="line"/>
+      <point x="648" y="496" type="line"/>
+      <point x="1060" y="716" type="line"/>
+      <point x="1060" y="814" type="line"/>
+      <point x="648" y="594" type="line"/>
+      <point x="648" y="604" type="line"/>
+      <point x="236" y="384" type="line"/>
+    </contour>
+    <component base="T" xOffset="106"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.widthMetricsKey</key>
+      <string>plus</string>
+      <key>public.markColor</key>
+      <string>0.67,0.95,0.38,1</string>
+    </dict>
+  </lib>
+</glyph>

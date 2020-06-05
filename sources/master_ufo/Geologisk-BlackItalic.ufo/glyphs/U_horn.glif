@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Uhorn" format="2">
+  <advance width="1785"/>
+  <unicode hex="01AF"/>
+  <anchor x="697" y="0" name="bottom"/>
+  <anchor x="1581" y="1400" name="horn"/>
+  <anchor x="1077" y="0" name="ogonek"/>
+  <anchor x="959" y="1400" name="top"/>
+  <outline>
+    <component base="U"/>
+    <component base="horncomb.alt_case" xOffset="1786"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
+      <string>=+200</string>
+      <key>com.schriftgestaltung.Glyphs.layer.rightMetricsKey</key>
+      <string>=+240</string>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

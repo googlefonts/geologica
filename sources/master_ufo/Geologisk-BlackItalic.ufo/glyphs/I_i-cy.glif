@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Ii-cy" format="2">
+  <advance width="1598"/>
+  <unicode hex="0418"/>
+  <anchor x="690" y="0" name="bottom"/>
+  <anchor x="986" y="1400" name="top"/>
+  <outline>
+    <contour>
+      <point x="48" y="0" type="line"/>
+      <point x="448" y="0" type="line"/>
+      <point x="1092" y="760" type="line"/>
+      <point x="930" y="0" type="line"/>
+      <point x="1330" y="0" type="line"/>
+      <point x="1626" y="1400" type="line"/>
+      <point x="1224" y="1400" type="line"/>
+      <point x="586" y="654" type="line"/>
+      <point x="744" y="1400" type="line"/>
+      <point x="344" y="1400" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.leftMetricsKey</key>
+      <string>H</string>
+      <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
+      <string>H</string>
+      <key>public.markColor</key>
+      <string>0.67,0.95,0.38,1</string>
+    </dict>
+  </lib>
+</glyph>

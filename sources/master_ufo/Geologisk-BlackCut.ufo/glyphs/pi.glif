@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="pi" format="2">
+  <advance width="1414"/>
+  <unicode hex="03C0"/>
+  <outline>
+    <contour>
+      <point x="1130" y="-30" type="curve" smooth="yes"/>
+      <point x="1190" y="-30"/>
+      <point x="1256" y="-22"/>
+      <point x="1328" y="-4" type="curve"/>
+      <point x="1328" y="316" type="line"/>
+      <point x="1294" y="308"/>
+      <point x="1264" y="302"/>
+      <point x="1238" y="302" type="curve" smooth="yes"/>
+      <point x="1184" y="302"/>
+      <point x="1142" y="334"/>
+      <point x="1142" y="408" type="curve" smooth="yes"/>
+      <point x="1142" y="712" type="line"/>
+      <point x="1328" y="712" type="line"/>
+      <point x="1328" y="1040" type="line"/>
+      <point x="80" y="1040" type="line"/>
+      <point x="0" y="712" type="line"/>
+      <point x="196" y="712" type="line"/>
+      <point x="176" y="0" type="line"/>
+      <point x="572" y="0" type="line"/>
+      <point x="592" y="712" type="line"/>
+      <point x="760" y="712" type="line"/>
+      <point x="760" y="378" type="line" smooth="yes"/>
+      <point x="760" y="90"/>
+      <point x="904" y="-30"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.leftMetricsKey</key>
+      <string>=t+20</string>
+      <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
+      <string>=t-10</string>
+      <key>public.markColor</key>
+      <string>0,0.67,0.91,1</string>
+    </dict>
+  </lib>
+</glyph>

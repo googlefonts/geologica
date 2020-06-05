@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="lcommaaccent" format="2">
+  <advance width="454"/>
+  <unicode hex="013C"/>
+  <anchor x="124" y="0" name="bottom"/>
+  <anchor x="488" y="1440" name="caron"/>
+  <anchor x="432" y="1440" name="top"/>
+  <outline>
+    <component base="l"/>
+    <component base="commaaccentcomb" xOffset="610"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

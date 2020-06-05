@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="ordmasculine" format="2">
+  <advance width="834"/>
+  <unicode hex="00BA"/>
+  <anchor x="416" y="722" name="bottom"/>
+  <anchor x="678" y="1354" name="horn"/>
+  <anchor x="536" y="722" name="ogonek"/>
+  <anchor x="416" y="1354" name="top"/>
+  <outline>
+    <contour>
+      <point x="416" y="702" type="curve" smooth="yes"/>
+      <point x="616" y="702"/>
+      <point x="764" y="856"/>
+      <point x="764" y="1038" type="curve" smooth="yes"/>
+      <point x="764" y="1220"/>
+      <point x="616" y="1374"/>
+      <point x="416" y="1374" type="curve" smooth="yes"/>
+      <point x="218" y="1374"/>
+      <point x="70" y="1220"/>
+      <point x="70" y="1038" type="curve" smooth="yes"/>
+      <point x="70" y="856"/>
+      <point x="218" y="702"/>
+    </contour>
+    <contour>
+      <point x="416" y="796" type="curve" smooth="yes"/>
+      <point x="276" y="796"/>
+      <point x="176" y="890"/>
+      <point x="176" y="1038" type="curve" smooth="yes"/>
+      <point x="176" y="1186"/>
+      <point x="276" y="1280"/>
+      <point x="416" y="1280" type="curve" smooth="yes"/>
+      <point x="556" y="1280"/>
+      <point x="658" y="1186"/>
+      <point x="658" y="1038" type="curve" smooth="yes"/>
+      <point x="658" y="890"/>
+      <point x="556" y="796"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>RMXScaler</key>
+      <dict>
+        <key>adjustSpace</key>
+        <integer>10</integer>
+        <key>height</key>
+        <integer>65</integer>
+        <key>verticalShift</key>
+        <integer>361</integer>
+        <key>weight</key>
+        <integer>-5</integer>
+        <key>width</key>
+        <integer>67</integer>
+      </dict>
+      <key>public.markColor</key>
+      <string>0.65,0.48,0.2,1</string>
+    </dict>
+  </lib>
+</glyph>

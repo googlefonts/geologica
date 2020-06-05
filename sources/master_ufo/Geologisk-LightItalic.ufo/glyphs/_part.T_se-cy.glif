@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="_part.Tse-cy" format="2">
+  <advance width="1438"/>
+  <guideline x="309" y="0" angle="0"/>
+  <anchor x="618" y="0" name="bottom"/>
+  <anchor x="1136" y="0" name="descender"/>
+  <outline>
+    <contour>
+      <point x="100" y="0" type="line"/>
+      <point x="1136" y="0" type="line"/>
+      <point x="1432" y="1400" type="line"/>
+      <point x="1316" y="1400" type="line"/>
+      <point x="1042" y="108" type="line"/>
+      <point x="238" y="108" type="line"/>
+      <point x="512" y="1400" type="line"/>
+      <point x="396" y="1400" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.leftMetricsKey</key>
+      <string>H</string>
+      <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
+      <string>H</string>
+      <key>public.markColor</key>
+      <string>0.67,0.95,0.38,1</string>
+    </dict>
+  </lib>
+</glyph>

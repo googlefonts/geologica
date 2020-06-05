@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="yusbig-cy" format="2">
+  <advance width="1802"/>
+  <unicode hex="046B"/>
+  <anchor x="1668" y="0" name="descender"/>
+  <outline>
+    <contour>
+      <point x="14" y="0" type="line"/>
+      <point x="460" y="0" type="line"/>
+      <point x="726" y="504" type="line"/>
+      <point x="564" y="770" type="line"/>
+      <point x="1230" y="770" type="line"/>
+      <point x="1062" y="504" type="line"/>
+      <point x="1320" y="0" type="line"/>
+      <point x="1788" y="0" type="line"/>
+      <point x="1488" y="528" type="line"/>
+      <point x="1652" y="780" type="line"/>
+      <point x="1652" y="1040" type="line"/>
+      <point x="130" y="1040" type="line"/>
+      <point x="130" y="780" type="line"/>
+      <point x="300" y="508" type="line"/>
+    </contour>
+    <contour>
+      <point x="694" y="0" type="line"/>
+      <point x="1094" y="0" type="line"/>
+      <point x="1094" y="370" type="line"/>
+      <point x="1386" y="370" type="line"/>
+      <point x="1386" y="602" type="line"/>
+      <point x="400" y="602" type="line"/>
+      <point x="400" y="370" type="line"/>
+      <point x="694" y="370" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>RMXScaler</key>
+      <dict>
+        <key>adjustSpace</key>
+        <integer>10</integer>
+        <key>height</key>
+        <real>74.3</real>
+        <key>weight</key>
+        <integer>-22</integer>
+        <key>width</key>
+        <integer>78</integer>
+      </dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.leftMetricsKey</key>
+      <string>=|ka-cy</string>
+      <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
+      <string>ka-cy</string>
+      <key>public.markColor</key>
+      <string>0.67,0.95,0.38,1</string>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="_part.franc" format="2">
+  <advance width="1204"/>
+  <outline>
+    <contour>
+      <point x="50" y="0" type="line"/>
+      <point x="418" y="0" type="line"/>
+      <point x="524" y="500" type="line"/>
+      <point x="1038" y="500" type="line"/>
+      <point x="1106" y="822" type="line"/>
+      <point x="592" y="822" type="line"/>
+      <point x="644" y="1066" type="line"/>
+      <point x="1220" y="1066" type="line"/>
+      <point x="1290" y="1400" type="line"/>
+      <point x="346" y="1400" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>RMXScaler</key>
+      <dict>
+        <key>weight</key>
+        <integer>-22</integer>
+      </dict>
+      <key>public.markColor</key>
+      <string>0.67,0.95,0.38,1</string>
+    </dict>
+  </lib>
+</glyph>

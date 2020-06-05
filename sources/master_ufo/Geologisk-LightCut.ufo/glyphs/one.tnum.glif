@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="one.tnum" format="2">
+  <advance width="1296"/>
+  <outline>
+    <contour>
+      <point x="210" y="0" type="line"/>
+      <point x="1154" y="0" type="line"/>
+      <point x="1154" y="108" type="line"/>
+      <point x="760" y="108" type="line"/>
+      <point x="760" y="1430" type="line"/>
+      <point x="750" y="1430" type="line"/>
+      <point x="240" y="1234" type="line"/>
+      <point x="240" y="1134" type="line"/>
+      <point x="648" y="1288" type="line"/>
+      <point x="648" y="108" type="line"/>
+      <point x="210" y="108" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.widthMetricsKey</key>
+      <string>plus</string>
+      <key>public.markColor</key>
+      <string>0,0.67,0.91,1</string>
+    </dict>
+  </lib>
+</glyph>

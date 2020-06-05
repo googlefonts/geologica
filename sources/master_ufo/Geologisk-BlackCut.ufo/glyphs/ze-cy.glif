@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="ze-cy" format="2">
+  <advance width="1042"/>
+  <unicode hex="0437"/>
+  <guideline x="134" y="264" angle="90"/>
+  <guideline x="134" y="264" angle="78.0349"/>
+  <anchor x="494" y="0" name="bottom"/>
+  <anchor x="474" y="1040" name="top"/>
+  <outline>
+    <contour>
+      <point x="468" y="-30" type="curve" smooth="yes"/>
+      <point x="792" y="-30"/>
+      <point x="982" y="118"/>
+      <point x="982" y="326" type="curve" smooth="yes"/>
+      <point x="982" y="456"/>
+      <point x="912" y="534"/>
+      <point x="778" y="576" type="curve"/>
+      <point x="882" y="606"/>
+      <point x="936" y="696"/>
+      <point x="936" y="784" type="curve" smooth="yes"/>
+      <point x="936" y="968"/>
+      <point x="768" y="1076"/>
+      <point x="468" y="1076" type="curve" smooth="yes"/>
+      <point x="348" y="1076"/>
+      <point x="218" y="1052"/>
+      <point x="104" y="994" type="curve"/>
+      <point x="104" y="684" type="line"/>
+      <point x="184" y="752"/>
+      <point x="304" y="784"/>
+      <point x="430" y="784" type="curve" smooth="yes"/>
+      <point x="528" y="784"/>
+      <point x="586" y="766"/>
+      <point x="586" y="722" type="curve" smooth="yes"/>
+      <point x="586" y="680"/>
+      <point x="552" y="662"/>
+      <point x="446" y="662" type="curve" smooth="yes"/>
+      <point x="296" y="662" type="line"/>
+      <point x="240" y="394" type="line"/>
+      <point x="458" y="394" type="line" smooth="yes"/>
+      <point x="570" y="394"/>
+      <point x="620" y="384"/>
+      <point x="620" y="334" type="curve" smooth="yes"/>
+      <point x="620" y="284"/>
+      <point x="560" y="262"/>
+      <point x="450" y="262" type="curve" smooth="yes"/>
+      <point x="312" y="262"/>
+      <point x="182" y="296"/>
+      <point x="100" y="364" type="curve"/>
+      <point x="100" y="42" type="line"/>
+      <point x="208" y="-8"/>
+      <point x="338" y="-30"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>RMXScaler</key>
+      <dict>
+        <key>adjustSpace</key>
+        <integer>10</integer>
+        <key>height</key>
+        <real>74.3</real>
+        <key>weight</key>
+        <integer>-30</integer>
+        <key>width</key>
+        <integer>85</integer>
+      </dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.leftMetricsKey</key>
+      <string>=|c+10</string>
+      <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
+      <string>=|epsilon</string>
+      <key>com.schriftgestaltung.Glyphs.layer.leftMetricsKey</key>
+      <string>=|c+20</string>
+      <key>public.markColor</key>
+      <string>0,0.67,0.91,1</string>
+    </dict>
+  </lib>
+</glyph>

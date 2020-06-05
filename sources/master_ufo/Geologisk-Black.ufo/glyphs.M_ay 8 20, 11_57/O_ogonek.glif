@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Oogonek" format="2">
+  <advance width="1668"/>
+  <unicode hex="01EA"/>
+  <outline>
+    <contour>
+      <point x="834" y="-30" type="curve" smooth="yes"/>
+      <point x="1270" y="-30"/>
+      <point x="1588" y="286"/>
+      <point x="1588" y="700" type="curve" smooth="yes"/>
+      <point x="1588" y="1108"/>
+      <point x="1270" y="1430"/>
+      <point x="834" y="1430" type="curve" smooth="yes"/>
+      <point x="396" y="1430"/>
+      <point x="80" y="1116"/>
+      <point x="80" y="700" type="curve" smooth="yes"/>
+      <point x="80" y="286"/>
+      <point x="396" y="-30"/>
+    </contour>
+    <contour>
+      <point x="834" y="348" type="curve" smooth="yes"/>
+      <point x="640" y="348"/>
+      <point x="504" y="484"/>
+      <point x="504" y="700" type="curve" smooth="yes"/>
+      <point x="504" y="916"/>
+      <point x="640" y="1052"/>
+      <point x="834" y="1052" type="curve" smooth="yes"/>
+      <point x="1028" y="1052"/>
+      <point x="1164" y="916"/>
+      <point x="1164" y="700" type="curve" smooth="yes"/>
+      <point x="1164" y="484"/>
+      <point x="1028" y="348"/>
+    </contour>
+    <contour>
+      <point x="876" y="-450" type="curve" smooth="yes"/>
+      <point x="978" y="-450"/>
+      <point x="1074" y="-424"/>
+      <point x="1150" y="-360" type="curve"/>
+      <point x="1058" y="-174" type="line"/>
+      <point x="1026" y="-208"/>
+      <point x="976" y="-230"/>
+      <point x="928" y="-230" type="curve" smooth="yes"/>
+      <point x="864" y="-230"/>
+      <point x="834" y="-200"/>
+      <point x="834" y="-154" type="curve" smooth="yes"/>
+      <point x="834" y="-82"/>
+      <point x="918" y="-26"/>
+      <point x="1058" y="0" type="curve"/>
+      <point x="1008" y="122" type="line"/>
+      <point x="762" y="100"/>
+      <point x="572" y="-12"/>
+      <point x="572" y="-198" type="curve" smooth="yes"/>
+      <point x="572" y="-348"/>
+      <point x="696" y="-450"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.leftMetricsKey</key>
+      <string>O</string>
+      <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
+      <string>O</string>
+      <key>public.markColor</key>
+      <string>0,0.67,0.91,1</string>
+    </dict>
+  </lib>
+</glyph>

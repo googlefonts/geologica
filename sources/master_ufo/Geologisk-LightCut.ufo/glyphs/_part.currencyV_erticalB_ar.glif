@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="_part.currencyVerticalBar" format="2">
+  <advance width="1424"/>
+  <anchor x="786" y="1400" name="_top"/>
+  <outline>
+    <contour>
+      <point x="736" y="-160" type="line"/>
+      <point x="836" y="-160" type="line"/>
+      <point x="836" y="1560" type="line"/>
+      <point x="736" y="1560" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.67,0.95,0.38,1</string>
+    </dict>
+  </lib>
+</glyph>

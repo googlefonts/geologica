@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="commaturnedabovecomb.case" format="2">
+  <anchor x="-788" y="1398" name="_top"/>
+  <outline>
+    <contour>
+      <point x="-786" y="1660" type="curve" smooth="yes"/>
+      <point x="-734" y="1660"/>
+      <point x="-692" y="1696"/>
+      <point x="-692" y="1742" type="curve" smooth="yes"/>
+      <point x="-692" y="1796"/>
+      <point x="-736" y="1832"/>
+      <point x="-792" y="1832" type="curve"/>
+      <point x="-786" y="1874"/>
+      <point x="-710" y="1924"/>
+      <point x="-640" y="1962" type="curve"/>
+      <point x="-692" y="2016" type="line"/>
+      <point x="-818" y="1942"/>
+      <point x="-888" y="1856"/>
+      <point x="-888" y="1766" type="curve" smooth="yes"/>
+      <point x="-888" y="1702"/>
+      <point x="-848" y="1660"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>RMXScaler</key>
+      <dict>
+        <key>adjustSpace</key>
+        <integer>-90</integer>
+        <key>height</key>
+        <integer>93</integer>
+        <key>verticalShift</key>
+        <integer>252</integer>
+        <key>width</key>
+        <integer>104</integer>
+      </dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.widthMetricsKey</key>
+      <string>dieresiscomb</string>
+      <key>public.markColor</key>
+      <string>0.65,0.48,0.2,1</string>
+    </dict>
+  </lib>
+</glyph>

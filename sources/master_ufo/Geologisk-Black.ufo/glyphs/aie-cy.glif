@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="aie-cy" format="2">
+  <advance width="1894"/>
+  <unicode hex="04D5"/>
+  <anchor x="952" y="1040" name="top"/>
+  <outline>
+    <component base="ae"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>
