@@ -49,14 +49,14 @@ brew install ttfautohint
 
 
 ### Navigate to /sources
-Assuming you are already in the root directory.
+Assuming you are already in the root directory
 
 ```
 cd sources
 ```
 
 ### Build designspace file in /master_ufo
-The /helpers folder includes a file called axisActivatedFeatures.txt. If you rebuild the designspace, merge the contents of this file with your .designspace file.
+The `/helpers` folder includes a file called `axisActivatedFeatures.txt`. If you rebuild the designspace, merge the contents of this file with your .designspace file.
 
 ```
 sh build_ds.sh
@@ -80,7 +80,7 @@ sh build_statics.sh
 sh build_all.sh
 ```  
 
-### Weight Class Fix
+### usWeightClass patch
 
 The usWeightClass for Thins and UltraLight are set to 100 and 200 consecutively. There is a debate on whether these values cause the fonts to get blurred on certain versions of Windows. (https://github.com/googlefonts/fontbakery/issues/2364) 
 

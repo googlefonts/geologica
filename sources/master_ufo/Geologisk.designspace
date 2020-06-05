@@ -3,13 +3,13 @@
   <axes>
     <axis tag="wght" name="Weight" minimum="100" maximum="900" default="100">
       <map input="100" output="56"/>
-      <map input="200" output="66"/>
-      <map input="300" output="76"/>
-      <map input="400" output="86"/>
-      <map input="500" output="96"/>
-      <map input="600" output="106"/>
-      <map input="700" output="116"/>
-      <map input="800" output="126"/>
+      <map input="200" output="74"/>
+      <map input="300" output="92"/>
+      <map input="400" output="110"/>
+      <map input="500" output="128"/>
+      <map input="600" output="146"/>
+      <map input="700" output="164"/>
+      <map input="800" output="182"/>
       <map input="900" output="200"/>
     </axis>
     <axis tag="ital" name="Italic" minimum="0" maximum="1" default="0"/>
@@ -271,7 +271,7 @@
     </instance>
     <instance name="Geologisk ExtraLight" familyname="Geologisk" stylename="ExtraLight" filename="../instance_ufo/Geologisk-ExtraLight.ufo" stylemapfamilyname="Geologisk ExtraLight" stylemapstylename="regular">
       <location>
-        <dimension name="Weight" xvalue="66"/>
+        <dimension name="Weight" xvalue="74"/>
         <dimension name="Italic" xvalue="0"/>
         <dimension name="Slant" xvalue="0"/>
         <dimension name="Diagonal Cuts" xvalue="0"/>
@@ -300,7 +300,7 @@
     </instance>
     <instance name="Geologisk Cut ExtraLight" familyname="Geologisk Cut" stylename="ExtraLight" filename="../instance_ufo/GeologiskCut-ExtraLight.ufo" stylemapfamilyname="Geologisk Cut ExtraLight" stylemapstylename="regular">
       <location>
-        <dimension name="Weight" xvalue="66"/>
+        <dimension name="Weight" xvalue="74"/>
         <dimension name="Italic" xvalue="0"/>
         <dimension name="Slant" xvalue="0"/>
         <dimension name="Diagonal Cuts" xvalue="100"/>
@@ -329,7 +329,7 @@
     </instance>
     <instance name="Geologisk ExtraLight Italic" familyname="Geologisk" stylename="ExtraLight Italic" filename="../instance_ufo/Geologisk-ExtraLightItalic.ufo" stylemapfamilyname="Geologisk ExtraLight" stylemapstylename="italic">
       <location>
-        <dimension name="Weight" xvalue="66"/>
+        <dimension name="Weight" xvalue="74"/>
         <dimension name="Italic" xvalue="1"/>
         <dimension name="Slant" xvalue="-12"/>
         <dimension name="Diagonal Cuts" xvalue="0"/>
@@ -358,7 +358,7 @@
     </instance>
     <instance name="Geologisk Cut ExtraLight Italic" familyname="Geologisk Cut" stylename="ExtraLight Italic" filename="../instance_ufo/GeologiskCut-ExtraLightItalic.ufo" stylemapfamilyname="Geologisk Cut ExtraLight" stylemapstylename="italic">
       <location>
-        <dimension name="Weight" xvalue="66"/>
+        <dimension name="Weight" xvalue="74"/>
         <dimension name="Italic" xvalue="1"/>
         <dimension name="Slant" xvalue="-12"/>
         <dimension name="Diagonal Cuts" xvalue="100"/>
@@ -387,7 +387,7 @@
     </instance>
     <instance name="Geologisk Light" familyname="Geologisk" stylename="Light" filename="../instance_ufo/Geologisk-Light.ufo" stylemapfamilyname="Geologisk Light" stylemapstylename="regular">
       <location>
-        <dimension name="Weight" xvalue="76"/>
+        <dimension name="Weight" xvalue="92"/>
         <dimension name="Italic" xvalue="0"/>
         <dimension name="Slant" xvalue="0"/>
         <dimension name="Diagonal Cuts" xvalue="0"/>
@@ -416,7 +416,7 @@
     </instance>
     <instance name="Geologisk Cut Light" familyname="Geologisk Cut" stylename="Light" filename="../instance_ufo/GeologiskCut-Light.ufo" stylemapfamilyname="Geologisk Cut Light" stylemapstylename="regular">
       <location>
-        <dimension name="Weight" xvalue="76"/>
+        <dimension name="Weight" xvalue="92"/>
         <dimension name="Italic" xvalue="0"/>
         <dimension name="Slant" xvalue="0"/>
         <dimension name="Diagonal Cuts" xvalue="100"/>
@@ -445,7 +445,7 @@
     </instance>
     <instance name="Geologisk Light Italic" familyname="Geologisk" stylename="Light Italic" filename="../instance_ufo/Geologisk-LightItalic.ufo" stylemapfamilyname="Geologisk Light" stylemapstylename="italic">
       <location>
-        <dimension name="Weight" xvalue="76"/>
+        <dimension name="Weight" xvalue="92"/>
         <dimension name="Italic" xvalue="1"/>
         <dimension name="Slant" xvalue="-12"/>
         <dimension name="Diagonal Cuts" xvalue="0"/>
@@ -474,7 +474,7 @@
     </instance>
     <instance name="Geologisk Cut Light Italic" familyname="Geologisk Cut" stylename="Light Italic" filename="../instance_ufo/GeologiskCut-LightItalic.ufo" stylemapfamilyname="Geologisk Cut Light" stylemapstylename="italic">
       <location>
-        <dimension name="Weight" xvalue="76"/>
+        <dimension name="Weight" xvalue="92"/>
         <dimension name="Italic" xvalue="1"/>
         <dimension name="Slant" xvalue="-12"/>
         <dimension name="Diagonal Cuts" xvalue="100"/>
@@ -503,7 +503,7 @@
     </instance>
     <instance name="Geologisk Regular" familyname="Geologisk" stylename="Regular" filename="../instance_ufo/Geologisk-Regular.ufo" stylemapfamilyname="Geologisk" stylemapstylename="regular">
       <location>
-        <dimension name="Weight" xvalue="86"/>
+        <dimension name="Weight" xvalue="110"/>
         <dimension name="Italic" xvalue="0"/>
         <dimension name="Slant" xvalue="0"/>
         <dimension name="Diagonal Cuts" xvalue="0"/>
@@ -532,7 +532,7 @@
     </instance>
     <instance name="Geologisk Cut Regular" familyname="Geologisk Cut" stylename="Regular" filename="../instance_ufo/GeologiskCut-Regular.ufo" stylemapfamilyname="Geologisk Cut" stylemapstylename="regular">
       <location>
-        <dimension name="Weight" xvalue="86"/>
+        <dimension name="Weight" xvalue="110"/>
         <dimension name="Italic" xvalue="0"/>
         <dimension name="Slant" xvalue="0"/>
         <dimension name="Diagonal Cuts" xvalue="100"/>
@@ -561,7 +561,7 @@
     </instance>
     <instance name="Geologisk Italic" familyname="Geologisk" stylename="Italic" filename="../instance_ufo/Geologisk-Italic.ufo" stylemapfamilyname="Geologisk" stylemapstylename="italic">
       <location>
-        <dimension name="Weight" xvalue="86"/>
+        <dimension name="Weight" xvalue="110"/>
         <dimension name="Italic" xvalue="1"/>
         <dimension name="Slant" xvalue="-12"/>
         <dimension name="Diagonal Cuts" xvalue="0"/>
@@ -590,7 +590,7 @@
     </instance>
     <instance name="Geologisk Cut Italic" familyname="Geologisk Cut" stylename="Italic" filename="../instance_ufo/GeologiskCut-Italic.ufo" stylemapfamilyname="Geologisk Cut" stylemapstylename="italic">
       <location>
-        <dimension name="Weight" xvalue="86"/>
+        <dimension name="Weight" xvalue="110"/>
         <dimension name="Italic" xvalue="1"/>
         <dimension name="Slant" xvalue="-12"/>
         <dimension name="Diagonal Cuts" xvalue="100"/>
@@ -619,7 +619,7 @@
     </instance>
     <instance name="Geologisk Medium" familyname="Geologisk" stylename="Medium" filename="../instance_ufo/Geologisk-Medium.ufo" stylemapfamilyname="Geologisk Medium" stylemapstylename="regular">
       <location>
-        <dimension name="Weight" xvalue="96"/>
+        <dimension name="Weight" xvalue="128"/>
         <dimension name="Italic" xvalue="0"/>
         <dimension name="Slant" xvalue="0"/>
         <dimension name="Diagonal Cuts" xvalue="0"/>
@@ -648,7 +648,7 @@
     </instance>
     <instance name="Geologisk Cut Medium" familyname="Geologisk Cut" stylename="Medium" filename="../instance_ufo/GeologiskCut-Medium.ufo" stylemapfamilyname="Geologisk Cut Medium" stylemapstylename="regular">
       <location>
-        <dimension name="Weight" xvalue="96"/>
+        <dimension name="Weight" xvalue="128"/>
         <dimension name="Italic" xvalue="0"/>
         <dimension name="Slant" xvalue="0"/>
         <dimension name="Diagonal Cuts" xvalue="100"/>
@@ -677,7 +677,7 @@
     </instance>
     <instance name="Geologisk Medium Italic" familyname="Geologisk" stylename="Medium Italic" filename="../instance_ufo/Geologisk-MediumItalic.ufo" stylemapfamilyname="Geologisk Medium" stylemapstylename="italic">
       <location>
-        <dimension name="Weight" xvalue="96"/>
+        <dimension name="Weight" xvalue="128"/>
         <dimension name="Italic" xvalue="1"/>
         <dimension name="Slant" xvalue="-12"/>
         <dimension name="Diagonal Cuts" xvalue="0"/>
@@ -706,7 +706,7 @@
     </instance>
     <instance name="Geologisk Cut Medium Italic" familyname="Geologisk Cut" stylename="Medium Italic" filename="../instance_ufo/GeologiskCut-MediumItalic.ufo" stylemapfamilyname="Geologisk Cut Medium" stylemapstylename="italic">
       <location>
-        <dimension name="Weight" xvalue="96"/>
+        <dimension name="Weight" xvalue="128"/>
         <dimension name="Italic" xvalue="1"/>
         <dimension name="Slant" xvalue="-12"/>
         <dimension name="Diagonal Cuts" xvalue="100"/>
@@ -735,7 +735,7 @@
     </instance>
     <instance name="Geologisk SemiBold" familyname="Geologisk" stylename="SemiBold" filename="../instance_ufo/Geologisk-SemiBold.ufo" stylemapfamilyname="Geologisk SemiBold" stylemapstylename="regular">
       <location>
-        <dimension name="Weight" xvalue="106"/>
+        <dimension name="Weight" xvalue="146"/>
         <dimension name="Italic" xvalue="0"/>
         <dimension name="Slant" xvalue="0"/>
         <dimension name="Diagonal Cuts" xvalue="0"/>
@@ -764,7 +764,7 @@
     </instance>
     <instance name="Geologisk Cut SemiBold" familyname="Geologisk Cut" stylename="SemiBold" filename="../instance_ufo/GeologiskCut-SemiBold.ufo" stylemapfamilyname="Geologisk Cut SemiBold" stylemapstylename="regular">
       <location>
-        <dimension name="Weight" xvalue="106"/>
+        <dimension name="Weight" xvalue="146"/>
         <dimension name="Italic" xvalue="0"/>
         <dimension name="Slant" xvalue="0"/>
         <dimension name="Diagonal Cuts" xvalue="100"/>
@@ -793,7 +793,7 @@
     </instance>
     <instance name="Geologisk SemiBold Italic" familyname="Geologisk" stylename="SemiBold Italic" filename="../instance_ufo/Geologisk-SemiBoldItalic.ufo" stylemapfamilyname="Geologisk SemiBold" stylemapstylename="italic">
       <location>
-        <dimension name="Weight" xvalue="106"/>
+        <dimension name="Weight" xvalue="146"/>
         <dimension name="Italic" xvalue="1"/>
         <dimension name="Slant" xvalue="-12"/>
         <dimension name="Diagonal Cuts" xvalue="0"/>
@@ -822,7 +822,7 @@
     </instance>
     <instance name="Geologisk Cut SemiBold Italic" familyname="Geologisk Cut" stylename="SemiBold Italic" filename="../instance_ufo/GeologiskCut-SemiBoldItalic.ufo" stylemapfamilyname="Geologisk Cut SemiBold" stylemapstylename="italic">
       <location>
-        <dimension name="Weight" xvalue="106"/>
+        <dimension name="Weight" xvalue="146"/>
         <dimension name="Italic" xvalue="1"/>
         <dimension name="Slant" xvalue="-12"/>
         <dimension name="Diagonal Cuts" xvalue="100"/>
@@ -851,7 +851,7 @@
     </instance>
     <instance name="Geologisk Bold" familyname="Geologisk" stylename="Bold" filename="../instance_ufo/Geologisk-Bold.ufo" stylemapfamilyname="Geologisk" stylemapstylename="bold">
       <location>
-        <dimension name="Weight" xvalue="116"/>
+        <dimension name="Weight" xvalue="164"/>
         <dimension name="Italic" xvalue="0"/>
         <dimension name="Slant" xvalue="0"/>
         <dimension name="Diagonal Cuts" xvalue="0"/>
@@ -880,7 +880,7 @@
     </instance>
     <instance name="Geologisk Cut Bold" familyname="Geologisk Cut" stylename="Bold" filename="../instance_ufo/GeologiskCut-Bold.ufo" stylemapfamilyname="Geologisk Cut" stylemapstylename="bold">
       <location>
-        <dimension name="Weight" xvalue="116"/>
+        <dimension name="Weight" xvalue="164"/>
         <dimension name="Italic" xvalue="0"/>
         <dimension name="Slant" xvalue="0"/>
         <dimension name="Diagonal Cuts" xvalue="100"/>
@@ -909,7 +909,7 @@
     </instance>
     <instance name="Geologisk Bold Italic" familyname="Geologisk" stylename="Bold Italic" filename="../instance_ufo/Geologisk-BoldItalic.ufo" stylemapfamilyname="Geologisk" stylemapstylename="bold italic">
       <location>
-        <dimension name="Weight" xvalue="116"/>
+        <dimension name="Weight" xvalue="164"/>
         <dimension name="Italic" xvalue="1"/>
         <dimension name="Slant" xvalue="-12"/>
         <dimension name="Diagonal Cuts" xvalue="0"/>
@@ -938,7 +938,7 @@
     </instance>
     <instance name="Geologisk Cut Bold Italic" familyname="Geologisk Cut" stylename="Bold Italic" filename="../instance_ufo/GeologiskCut-BoldItalic.ufo" stylemapfamilyname="Geologisk Cut" stylemapstylename="bold italic">
       <location>
-        <dimension name="Weight" xvalue="116"/>
+        <dimension name="Weight" xvalue="164"/>
         <dimension name="Italic" xvalue="1"/>
         <dimension name="Slant" xvalue="-12"/>
         <dimension name="Diagonal Cuts" xvalue="100"/>
@@ -967,7 +967,7 @@
     </instance>
     <instance name="Geologisk ExtraBold" familyname="Geologisk" stylename="ExtraBold" filename="../instance_ufo/Geologisk-ExtraBold.ufo" stylemapfamilyname="Geologisk ExtraBold" stylemapstylename="regular">
       <location>
-        <dimension name="Weight" xvalue="126"/>
+        <dimension name="Weight" xvalue="182"/>
         <dimension name="Italic" xvalue="0"/>
         <dimension name="Slant" xvalue="0"/>
         <dimension name="Diagonal Cuts" xvalue="0"/>
@@ -996,7 +996,7 @@
     </instance>
     <instance name="Geologisk Cut ExtraBold" familyname="Geologisk Cut" stylename="ExtraBold" filename="../instance_ufo/GeologiskCut-ExtraBold.ufo" stylemapfamilyname="Geologisk Cut ExtraBold" stylemapstylename="regular">
       <location>
-        <dimension name="Weight" xvalue="126"/>
+        <dimension name="Weight" xvalue="182"/>
         <dimension name="Italic" xvalue="0"/>
         <dimension name="Slant" xvalue="0"/>
         <dimension name="Diagonal Cuts" xvalue="100"/>
@@ -1025,7 +1025,7 @@
     </instance>
     <instance name="Geologisk ExtraBold Italic" familyname="Geologisk" stylename="ExtraBold Italic" filename="../instance_ufo/Geologisk-ExtraBoldItalic.ufo" stylemapfamilyname="Geologisk ExtraBold" stylemapstylename="italic">
       <location>
-        <dimension name="Weight" xvalue="126"/>
+        <dimension name="Weight" xvalue="182"/>
         <dimension name="Italic" xvalue="1"/>
         <dimension name="Slant" xvalue="-12"/>
         <dimension name="Diagonal Cuts" xvalue="0"/>
@@ -1054,7 +1054,7 @@
     </instance>
     <instance name="Geologisk Cut ExtraBold Italic" familyname="Geologisk Cut" stylename="ExtraBold Italic" filename="../instance_ufo/GeologiskCut-ExtraBoldItalic.ufo" stylemapfamilyname="Geologisk Cut ExtraBold" stylemapstylename="italic">
       <location>
-        <dimension name="Weight" xvalue="126"/>
+        <dimension name="Weight" xvalue="182"/>
         <dimension name="Italic" xvalue="1"/>
         <dimension name="Slant" xvalue="-12"/>
         <dimension name="Diagonal Cuts" xvalue="100"/>
