@@ -1,3 +1,21 @@
+# Geologisk 
+
+Bla bla bla.
+
+## Basic information
+
+Bla bla bla.
+
+### Variable axis
+
+Bla bla bla.
+
+
+
+
+
+
+
 # Building the fonts
 
 ## Step 1: Virtual environment & requirements
@@ -30,7 +48,7 @@ brew install ttfautohint
 ## Step 2: Build the fonts
 
 
-### Navigate to /sources:
+### Navigate to /sources
 Assuming you are already in the root directory.
 
 ```
