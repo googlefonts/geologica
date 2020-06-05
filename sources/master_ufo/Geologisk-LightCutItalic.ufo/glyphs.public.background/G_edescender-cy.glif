@@ -1,7 +1,21 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Gedescender-cy" format="2">
   <outline>
-    <component base="Ge-cy"/>
-    <component base="_part.cy-desc-uc-stem" xOffset="181"/>
+    <contour>
+      <point x="100" y="0" type="line"/>
+      <point x="216" y="0" type="line"/>
+      <point x="490" y="1292" type="line"/>
+      <point x="1102" y="1292" type="line"/>
+      <point x="1124" y="1400" type="line"/>
+      <point x="396" y="1400" type="line"/>
+    </contour>
+    <contour>
+      <point x="-55" y="-428" type="line"/>
+      <point x="81" y="-292" type="line"/>
+      <point x="165" y="108" type="line"/>
+      <point x="17" y="108" type="line"/>
+      <point x="-5" y="0" type="line"/>
+      <point x="35" y="0" type="line"/>
+    </contour>
   </outline>
 </glyph>

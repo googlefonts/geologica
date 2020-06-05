@@ -1,7 +1,35 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Yat-cy" format="2">
   <outline>
-    <component base="Softsign-cy" xOffset="-100"/>
-    <component base="strokeshortcomb.case" xOffset="-212" yOffset="174"/>
+    <contour>
+      <point x="100" y="0" type="line"/>
+      <point x="550" y="0" type="line" smooth="yes"/>
+      <point x="858" y="0"/>
+      <point x="1030" y="138"/>
+      <point x="1030" y="396" type="curve" smooth="yes"/>
+      <point x="1030" y="646"/>
+      <point x="836" y="796"/>
+      <point x="552" y="796" type="curve" smooth="yes"/>
+      <point x="216" y="796" type="line"/>
+      <point x="216" y="1400" type="line"/>
+      <point x="100" y="1400" type="line"/>
+    </contour>
+    <contour>
+      <point x="216" y="108" type="line"/>
+      <point x="216" y="688" type="line"/>
+      <point x="566" y="688" type="line" smooth="yes"/>
+      <point x="782" y="688"/>
+      <point x="914" y="572"/>
+      <point x="914" y="392" type="curve" smooth="yes"/>
+      <point x="914" y="206"/>
+      <point x="786" y="108"/>
+      <point x="564" y="108" type="curve" smooth="yes"/>
+    </contour>
+    <contour>
+      <point x="-1462" y="872" type="line"/>
+      <point x="-638" y="872" type="line"/>
+      <point x="-638" y="960" type="line"/>
+      <point x="-1462" y="960" type="line"/>
+    </contour>
   </outline>
 </glyph>

@@ -1,7 +1,19 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="gedescender-cy" format="2">
   <outline>
-    <component base="ge-cy"/>
-    <component base="_part.cy-desc-lc-stem" xOffset="-390"/>
+    <contour>
+      <point x="22" y="0" type="line"/>
+      <point x="422" y="0" type="line"/>
+      <point x="576" y="728" type="line"/>
+      <point x="908" y="728" type="line"/>
+      <point x="974" y="1040" type="line"/>
+      <point x="240" y="1040" type="line"/>
+    </contour>
+    <contour>
+      <point x="544" y="-384" type="line"/>
+      <point x="944" y="-216" type="line"/>
+      <point x="1056" y="312" type="line"/>
+      <point x="692" y="312" type="line"/>
+    </contour>
   </outline>
 </glyph>

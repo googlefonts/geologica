@@ -1,7 +1,29 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Kje-cy" format="2">
   <outline>
-    <component base="Ka-cy"/>
-    <component base="acutecomb.case" xOffset="714" yOffset="1"/>
+    <contour>
+      <point x="1072" y="0" type="line"/>
+      <point x="1224" y="0" type="line"/>
+      <point x="630" y="756" type="line"/>
+      <point x="1136" y="1400" type="line"/>
+      <point x="998" y="1400" type="line"/>
+      <point x="488" y="754" type="line"/>
+    </contour>
+    <contour>
+      <point x="200" y="0" type="line"/>
+      <point x="316" y="0" type="line"/>
+      <point x="316" y="698" type="line"/>
+      <point x="570" y="698" type="line"/>
+      <point x="570" y="806" type="line"/>
+      <point x="316" y="806" type="line"/>
+      <point x="316" y="1400" type="line"/>
+      <point x="200" y="1400" type="line"/>
+    </contour>
+    <contour>
+      <point x="-140" y="1593" type="line"/>
+      <point x="-32" y="1593" type="line"/>
+      <point x="170" y="1905" type="line"/>
+      <point x="50" y="1905" type="line"/>
+    </contour>
   </outline>
 </glyph>

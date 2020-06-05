@@ -1,6 +1,16 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="downArrow" format="2">
   <outline>
-    <component base="upArrow" yScale="-1" yOffset="700"/>
+    <contour>
+      <point x="852" y="820" type="line"/>
+      <point x="948" y="820" type="line"/>
+      <point x="950" y="-678" type="line"/>
+      <point x="1394" y="-232" type="line"/>
+      <point x="1462" y="-300" type="line"/>
+      <point x="900" y="-862" type="line"/>
+      <point x="338" y="-300" type="line"/>
+      <point x="406" y="-232" type="line"/>
+      <point x="850" y="-678" type="line"/>
+    </contour>
   </outline>
 </glyph>

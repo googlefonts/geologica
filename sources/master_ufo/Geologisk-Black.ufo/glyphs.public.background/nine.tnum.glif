@@ -1,6 +1,40 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="nine.tnum" format="2">
   <outline>
-    <component base="nine" xOffset="6"/>
+    <contour>
+      <point x="306" y="-30" type="line"/>
+      <point x="794" y="50"/>
+      <point x="1194" y="386"/>
+      <point x="1194" y="864" type="curve" smooth="yes"/>
+      <point x="1194" y="1206"/>
+      <point x="960" y="1430"/>
+      <point x="638" y="1430" type="curve" smooth="yes"/>
+      <point x="316" y="1430"/>
+      <point x="98" y="1218"/>
+      <point x="98" y="952" type="curve" smooth="yes"/>
+      <point x="98" y="698"/>
+      <point x="290" y="512"/>
+      <point x="558" y="512" type="curve" smooth="yes"/>
+      <point x="618" y="512"/>
+      <point x="678" y="522"/>
+      <point x="732" y="542" type="curve"/>
+      <point x="634" y="400"/>
+      <point x="458" y="310"/>
+      <point x="172" y="262" type="curve"/>
+    </contour>
+    <contour>
+      <point x="638" y="808" type="curve" smooth="yes"/>
+      <point x="540" y="808"/>
+      <point x="468" y="872"/>
+      <point x="468" y="960" type="curve" smooth="yes"/>
+      <point x="468" y="1050"/>
+      <point x="542" y="1114"/>
+      <point x="638" y="1114" type="curve" smooth="yes"/>
+      <point x="736" y="1114"/>
+      <point x="808" y="1048"/>
+      <point x="808" y="960" type="curve" smooth="yes"/>
+      <point x="808" y="872"/>
+      <point x="736" y="808"/>
+    </contour>
   </outline>
 </glyph>

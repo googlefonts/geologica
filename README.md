@@ -19,6 +19,12 @@ Bla bla bla.
 # Building the fonts
 
 ## Step 1: Virtual environment & requirements
+
+### Navigate to the root directory
+```
+cd [folder location]
+```
+
 ### Set up a virtual environment in the root directory
 
 ```
@@ -56,7 +62,7 @@ cd sources
 ```
 
 ### Build designspace file in /master_ufo
-The `/helpers` folder includes a file called `axisActivatedFeatures.txt`. If you rebuild the designspace, merge the contents of this file with your .designspace file.
+**Note:** The `/helpers` folder includes a file called `axisActivatedFeatures.txt`. If you rebuild the existing designspace after making changes to the sources, merge the contents of this file with your .designspace file. See details in the file.
 
 ```
 sh build_ds.sh

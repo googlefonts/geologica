@@ -1,6 +1,28 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Aie-cy" format="2">
   <outline>
-    <component base="AE"/>
+    <contour>
+      <point x="-100" y="0" type="line"/>
+      <point x="328" y="0" type="line"/>
+      <point x="430" y="250" type="line"/>
+      <point x="780" y="250" type="line"/>
+      <point x="780" y="0" type="line"/>
+      <point x="1702" y="0" type="line"/>
+      <point x="1782" y="352" type="line"/>
+      <point x="1184" y="352" type="line"/>
+      <point x="1184" y="550" type="line"/>
+      <point x="1652" y="550" type="line"/>
+      <point x="1652" y="870" type="line"/>
+      <point x="1184" y="870" type="line"/>
+      <point x="1184" y="1052" type="line"/>
+      <point x="1734" y="1052" type="line"/>
+      <point x="1734" y="1400" type="line"/>
+      <point x="506" y="1400" type="line"/>
+    </contour>
+    <contour>
+      <point x="558" y="566" type="line"/>
+      <point x="780" y="1114" type="line"/>
+      <point x="780" y="566" type="line"/>
+    </contour>
   </outline>
 </glyph>

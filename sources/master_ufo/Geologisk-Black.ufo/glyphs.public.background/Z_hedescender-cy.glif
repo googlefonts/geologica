@@ -1,7 +1,43 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Zhedescender-cy" format="2">
   <outline>
-    <component base="Zhe-cy"/>
-    <component base="_part.cy-desc-uc" xOffset="1058"/>
+    <contour>
+      <point x="1678" y="0" type="line"/>
+      <point x="2144" y="0" type="line"/>
+      <point x="1620" y="720" type="line"/>
+      <point x="2090" y="1400" type="line"/>
+      <point x="1634" y="1400" type="line"/>
+      <point x="1176" y="720" type="line"/>
+    </contour>
+    <contour>
+      <point x="-10" y="0" type="line"/>
+      <point x="438" y="0" type="line"/>
+      <point x="954" y="714" type="line"/>
+      <point x="520" y="1400" type="line"/>
+      <point x="50" y="1400" type="line"/>
+      <point x="510" y="696" type="line"/>
+    </contour>
+    <contour>
+      <point x="864" y="0" type="line"/>
+      <point x="1268" y="0" type="line"/>
+      <point x="1268" y="560" type="line"/>
+      <point x="1510" y="560" type="line"/>
+      <point x="1510" y="892" type="line"/>
+      <point x="1268" y="892" type="line"/>
+      <point x="1268" y="1400" type="line"/>
+      <point x="864" y="1400" type="line"/>
+      <point x="864" y="892" type="line"/>
+      <point x="624" y="892" type="line"/>
+      <point x="624" y="560" type="line"/>
+      <point x="864" y="560" type="line"/>
+    </contour>
+    <contour>
+      <point x="742" y="-350" type="line"/>
+      <point x="1126" y="-350" type="line"/>
+      <point x="1126" y="368" type="line"/>
+      <point x="642" y="368" type="line"/>
+      <point x="642" y="0" type="line"/>
+      <point x="742" y="0" type="line"/>
+    </contour>
   </outline>
 </glyph>

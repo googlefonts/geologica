@@ -1,7 +1,25 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="endescender-cy" format="2">
   <outline>
-    <component base="en-cy"/>
-    <component base="_part.cy-desc-lc-stem" xOffset="-25"/>
+    <contour>
+      <point x="20" y="0" type="line"/>
+      <point x="420" y="0" type="line"/>
+      <point x="498" y="370" type="line"/>
+      <point x="818" y="370" type="line"/>
+      <point x="740" y="0" type="line"/>
+      <point x="1140" y="0" type="line"/>
+      <point x="1360" y="1040" type="line"/>
+      <point x="960" y="1040" type="line"/>
+      <point x="884" y="682" type="line"/>
+      <point x="564" y="682" type="line"/>
+      <point x="640" y="1040" type="line"/>
+      <point x="240" y="1040" type="line"/>
+    </contour>
+    <contour>
+      <point x="917" y="-300" type="line"/>
+      <point x="1281" y="-300" type="line"/>
+      <point x="1413" y="312" type="line"/>
+      <point x="1049" y="312" type="line"/>
+    </contour>
   </outline>
 </glyph>

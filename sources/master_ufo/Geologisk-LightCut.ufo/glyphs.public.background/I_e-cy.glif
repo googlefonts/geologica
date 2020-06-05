@@ -1,6 +1,19 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Ie-cy" format="2">
   <outline>
-    <component base="E"/>
+    <contour>
+      <point x="200" y="0" type="line"/>
+      <point x="1018" y="0" type="line"/>
+      <point x="1042" y="108" type="line"/>
+      <point x="316" y="108" type="line"/>
+      <point x="316" y="688" type="line"/>
+      <point x="944" y="688" type="line"/>
+      <point x="944" y="796" type="line"/>
+      <point x="316" y="796" type="line"/>
+      <point x="316" y="1292" type="line"/>
+      <point x="1024" y="1292" type="line"/>
+      <point x="1024" y="1400" type="line"/>
+      <point x="200" y="1400" type="line"/>
+    </contour>
   </outline>
 </glyph>

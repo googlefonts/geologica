@@ -1,7 +1,23 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="imacron-cy" format="2">
   <outline>
-    <component base="ii-cy"/>
-    <component base="macroncomb" xOffset="662"/>
+    <contour>
+      <point x="18" y="0" type="line"/>
+      <point x="378" y="0" type="line"/>
+      <point x="848" y="460" type="line"/>
+      <point x="750" y="0" type="line"/>
+      <point x="1132" y="0" type="line"/>
+      <point x="1354" y="1040" type="line"/>
+      <point x="992" y="1040" type="line"/>
+      <point x="522" y="590" type="line"/>
+      <point x="630" y="1100" type="line"/>
+      <point x="214" y="922" type="line"/>
+    </contour>
+    <contour>
+      <point x="-212" y="1230" type="line"/>
+      <point x="564" y="1230" type="line"/>
+      <point x="612" y="1462" type="line"/>
+      <point x="-164" y="1462" type="line"/>
+    </contour>
   </outline>
 </glyph>

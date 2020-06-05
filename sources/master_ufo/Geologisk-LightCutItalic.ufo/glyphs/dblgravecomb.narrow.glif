@@ -24,6 +24,10 @@
         <key>width</key>
         <integer>75</integer>
       </dict>
+      <key>com.schriftgestaltung.Glyphs.category</key>
+      <string>Mark</string>
+      <key>com.schriftgestaltung.Glyphs.glyph.widthMetricsKey</key>
+      <string>dieresiscomb</string>
       <key>public.markColor</key>
       <string>0.65,0.48,0.2,1</string>
     </dict>

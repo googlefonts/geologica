@@ -1,7 +1,29 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Kaverticalstroke-cy" format="2">
   <outline>
-    <component base="_part.Kaverticalstroke-cy"/>
-    <component base="_part.verticalstroke.case" xOffset="93" yOffset="-29"/>
+    <contour>
+      <point x="1152" y="0" type="line"/>
+      <point x="1670" y="0" type="line"/>
+      <point x="1148" y="714" type="line"/>
+      <point x="1610" y="1400" type="line"/>
+      <point x="1104" y="1400" type="line"/>
+      <point x="656" y="714" type="line"/>
+    </contour>
+    <contour>
+      <point x="156" y="0" type="line"/>
+      <point x="560" y="0" type="line"/>
+      <point x="560" y="538" type="line"/>
+      <point x="988" y="538" type="line"/>
+      <point x="988" y="906" type="line"/>
+      <point x="560" y="906" type="line"/>
+      <point x="560" y="1400" type="line"/>
+      <point x="156" y="1400" type="line"/>
+    </contour>
+    <contour>
+      <point x="503" y="351" type="line"/>
+      <point x="703" y="351" type="line"/>
+      <point x="703" y="1151" type="line"/>
+      <point x="503" y="1151" type="line"/>
+    </contour>
   </outline>
 </glyph>

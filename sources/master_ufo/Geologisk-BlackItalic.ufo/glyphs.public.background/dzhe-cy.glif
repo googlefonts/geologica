@@ -1,7 +1,21 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="dzhe-cy" format="2">
   <outline>
-    <component base="_part.tse-cy"/>
-    <component base="_part.cy-descender-uc-center" xOffset="412"/>
+    <contour>
+      <point x="20" y="0" type="line"/>
+      <point x="1098" y="0" type="line"/>
+      <point x="1320" y="1040" type="line"/>
+      <point x="920" y="1040" type="line"/>
+      <point x="766" y="312" type="line"/>
+      <point x="486" y="312" type="line"/>
+      <point x="640" y="1040" type="line"/>
+      <point x="240" y="1040" type="line"/>
+    </contour>
+    <contour>
+      <point x="-2" y="-350" type="line"/>
+      <point x="382" y="-350" type="line"/>
+      <point x="518" y="288" type="line"/>
+      <point x="134" y="288" type="line"/>
+    </contour>
   </outline>
 </glyph>

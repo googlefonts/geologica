@@ -7,6 +7,19 @@
       <point x="1784" y="1400" type="line"/>
       <point x="1024" y="1400" type="line"/>
     </contour>
-    <component base="En-cy"/>
+    <contour>
+      <point x="156" y="0" type="line"/>
+      <point x="560" y="0" type="line"/>
+      <point x="560" y="538" type="line"/>
+      <point x="1028" y="538" type="line"/>
+      <point x="1028" y="0" type="line"/>
+      <point x="1432" y="0" type="line"/>
+      <point x="1432" y="1400" type="line"/>
+      <point x="1028" y="1400" type="line"/>
+      <point x="1028" y="906" type="line"/>
+      <point x="560" y="906" type="line"/>
+      <point x="560" y="1400" type="line"/>
+      <point x="156" y="1400" type="line"/>
+    </contour>
   </outline>
 </glyph>

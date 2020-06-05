@@ -10,6 +10,15 @@
       <point x="1640" y="-350" type="line"/>
       <point x="1640" y="368" type="line"/>
     </contour>
-    <component base="_part.Tse-cy"/>
+    <contour>
+      <point x="156" y="0" type="line"/>
+      <point x="1412" y="0" type="line"/>
+      <point x="1412" y="1400" type="line"/>
+      <point x="1008" y="1400" type="line"/>
+      <point x="1008" y="368" type="line"/>
+      <point x="560" y="368" type="line"/>
+      <point x="560" y="1400" type="line"/>
+      <point x="156" y="1400" type="line"/>
+    </contour>
   </outline>
 </glyph>

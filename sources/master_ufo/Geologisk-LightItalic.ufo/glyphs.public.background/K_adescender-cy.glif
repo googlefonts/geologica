@@ -1,7 +1,31 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Kadescender-cy" format="2">
   <outline>
-    <component base="Ka-cy"/>
-    <component base="_part.cy-desc-uc" xOffset="666"/>
+    <contour>
+      <point x="980" y="0" type="line"/>
+      <point x="1124" y="0" type="line"/>
+      <point x="690" y="752" type="line"/>
+      <point x="1330" y="1400" type="line"/>
+      <point x="1186" y="1400" type="line"/>
+      <point x="548" y="758" type="line"/>
+    </contour>
+    <contour>
+      <point x="100" y="0" type="line"/>
+      <point x="216" y="0" type="line"/>
+      <point x="364" y="698" type="line"/>
+      <point x="618" y="698" type="line"/>
+      <point x="640" y="806" type="line"/>
+      <point x="386" y="806" type="line"/>
+      <point x="512" y="1400" type="line"/>
+      <point x="396" y="1400" type="line"/>
+    </contour>
+    <contour>
+      <point x="436" y="-360" type="line"/>
+      <point x="544" y="-360" type="line"/>
+      <point x="644" y="108" type="line"/>
+      <point x="376" y="108" type="line"/>
+      <point x="352" y="0" type="line"/>
+      <point x="512" y="0" type="line"/>
+    </contour>
   </outline>
 </glyph>

@@ -1,7 +1,22 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Ustraightstroke-cy" format="2">
   <outline>
-    <component base="Ustraight-cy"/>
-    <component base="strokeshortcomb.case" xOffset="62" yOffset="-46"/>
+    <contour>
+      <point x="468" y="0" type="line"/>
+      <point x="874" y="0" type="line"/>
+      <point x="874" y="568" type="line"/>
+      <point x="1362" y="1400" type="line"/>
+      <point x="924" y="1400" type="line"/>
+      <point x="678" y="958" type="line"/>
+      <point x="430" y="1400" type="line"/>
+      <point x="-20" y="1400" type="line"/>
+      <point x="468" y="572" type="line"/>
+    </contour>
+    <contour>
+      <point x="-1274" y="512" type="line"/>
+      <point x="-268" y="512" type="line"/>
+      <point x="-268" y="820" type="line"/>
+      <point x="-1274" y="820" type="line"/>
+    </contour>
   </outline>
 </glyph>

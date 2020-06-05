@@ -1,6 +1,19 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="leftanglebracket-math" format="2">
   <outline>
-    <component base="plus"/>
+    <contour>
+      <point x="598" y="220" type="line"/>
+      <point x="698" y="220" type="line"/>
+      <point x="698" y="616" type="line"/>
+      <point x="1116" y="616" type="line"/>
+      <point x="1116" y="712" type="line"/>
+      <point x="698" y="712" type="line"/>
+      <point x="698" y="1108" type="line"/>
+      <point x="598" y="1108" type="line"/>
+      <point x="598" y="712" type="line"/>
+      <point x="180" y="712" type="line"/>
+      <point x="180" y="616" type="line"/>
+      <point x="598" y="616" type="line"/>
+    </contour>
   </outline>
 </glyph>

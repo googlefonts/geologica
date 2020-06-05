@@ -1,22 +1,35 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Chekhakassian-cy" format="2">
   <outline>
-    <component base="Che-cy"/>
-    <component base="_part.cy-desc-uc-reversed-stem" xOffset="641"/>
+    <contour>
+      <point x="910" y="0" type="line"/>
+      <point x="1026" y="0" type="line"/>
+      <point x="1322" y="1400" type="line"/>
+      <point x="1206" y="1400" type="line"/>
+      <point x="1062" y="720" type="line"/>
+      <point x="946" y="690"/>
+      <point x="832" y="672"/>
+      <point x="684" y="672" type="curve" smooth="yes"/>
+      <point x="422" y="672"/>
+      <point x="304" y="782"/>
+      <point x="364" y="1082" type="curve" smooth="yes"/>
+      <point x="432" y="1400" type="line"/>
+      <point x="316" y="1400" type="line"/>
+      <point x="244" y="1062" type="line" smooth="yes"/>
+      <point x="172" y="706"/>
+      <point x="320" y="554"/>
+      <point x="660" y="554" type="curve" smooth="yes"/>
+      <point x="798" y="554"/>
+      <point x="916" y="574"/>
+      <point x="1038" y="610" type="curve"/>
+    </contour>
+    <contour>
+      <point x="235" y="-428" type="line"/>
+      <point x="371" y="-292" type="line"/>
+      <point x="433" y="0" type="line"/>
+      <point x="459" y="20" type="line"/>
+      <point x="489" y="194" type="line"/>
+      <point x="335" y="40" type="line"/>
+    </contour>
   </outline>
-  <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
-      <array>
-        <dict>
-          <key>anchor</key>
-          <string>descender_alt</string>
-          <key>index</key>
-          <integer>1</integer>
-          <key>name</key>
-          <string>_part.cy-desc-uc-reversed-stem</string>
-        </dict>
-      </array>
-    </dict>
-  </lib>
 </glyph>

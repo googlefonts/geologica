@@ -1,21 +1,15 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="bracketright" format="2">
   <outline>
-    <component base="bracketleft" xScale="-1" xOffset="366"/>
+    <contour>
+      <point x="216" y="-420" type="line"/>
+      <point x="-300" y="-420" type="line"/>
+      <point x="-300" y="-154" type="line"/>
+      <point x="-100" y="-154" type="line"/>
+      <point x="-100" y="1134" type="line"/>
+      <point x="-300" y="1134" type="line"/>
+      <point x="-300" y="1400" type="line"/>
+      <point x="216" y="1400" type="line"/>
+    </contour>
   </outline>
-  <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
-      <array>
-        <dict>
-          <key>alignment</key>
-          <integer>1</integer>
-          <key>index</key>
-          <integer>0</integer>
-          <key>name</key>
-          <string>bracketleft</string>
-        </dict>
-      </array>
-    </dict>
-  </lib>
 </glyph>

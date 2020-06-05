@@ -1,7 +1,21 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="guillemetleft" format="2">
   <outline>
-    <component base="guilsinglleft" xOffset="260"/>
-    <component base="guilsinglleft"/>
+    <contour>
+      <point x="534" y="140" type="line"/>
+      <point x="900" y="140" type="line"/>
+      <point x="668" y="528" type="line"/>
+      <point x="900" y="918" type="line"/>
+      <point x="534" y="918" type="line"/>
+      <point x="300" y="528" type="line"/>
+    </contour>
+    <contour>
+      <point x="274" y="140" type="line"/>
+      <point x="640" y="140" type="line"/>
+      <point x="408" y="528" type="line"/>
+      <point x="640" y="918" type="line"/>
+      <point x="274" y="918" type="line"/>
+      <point x="40" y="528" type="line"/>
+    </contour>
   </outline>
 </glyph>

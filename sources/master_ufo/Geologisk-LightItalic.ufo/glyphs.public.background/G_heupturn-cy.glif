@@ -7,6 +7,13 @@
       <point x="1086" y="1292" type="line"/>
       <point x="1182" y="1292" type="line"/>
     </contour>
-    <component base="Ge-cy"/>
+    <contour>
+      <point x="100" y="0" type="line"/>
+      <point x="216" y="0" type="line"/>
+      <point x="490" y="1292" type="line"/>
+      <point x="1102" y="1292" type="line"/>
+      <point x="1124" y="1400" type="line"/>
+      <point x="396" y="1400" type="line"/>
+    </contour>
   </outline>
 </glyph>

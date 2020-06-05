@@ -1,7 +1,25 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="plusminus" format="2">
   <outline>
-    <component base="plus" yOffset="105"/>
-    <component base="minus" yOffset="-275"/>
+    <contour>
+      <point x="508" y="215" type="line"/>
+      <point x="788" y="215" type="line"/>
+      <point x="788" y="641" type="line"/>
+      <point x="1228" y="641" type="line"/>
+      <point x="1228" y="909" type="line"/>
+      <point x="788" y="909" type="line"/>
+      <point x="788" y="1335" type="line"/>
+      <point x="508" y="1335" type="line"/>
+      <point x="508" y="909" type="line"/>
+      <point x="68" y="909" type="line"/>
+      <point x="68" y="641" type="line"/>
+      <point x="508" y="641" type="line"/>
+    </contour>
+    <contour>
+      <point x="68" y="261" type="line"/>
+      <point x="1228" y="261" type="line"/>
+      <point x="1228" y="529" type="line"/>
+      <point x="68" y="529" type="line"/>
+    </contour>
   </outline>
 </glyph>

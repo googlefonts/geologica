@@ -1,7 +1,29 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Umacron-cy" format="2">
   <outline>
-    <component base="U-cy"/>
-    <component base="macroncomb.case" xOffset="768"/>
+    <contour>
+      <point x="-18" y="-30" type="line"/>
+      <point x="392" y="-56"/>
+      <point x="638" y="94"/>
+      <point x="1000" y="598" type="curve" smooth="yes"/>
+      <point x="1576" y="1400" type="line"/>
+      <point x="1092" y="1400" type="line"/>
+      <point x="720" y="826" type="line" smooth="yes"/>
+      <point x="510" y="500"/>
+      <point x="312" y="328"/>
+      <point x="66" y="368" type="curve"/>
+    </contour>
+    <contour>
+      <point x="534" y="380" type="line"/>
+      <point x="878" y="688" type="line"/>
+      <point x="688" y="1400" type="line"/>
+      <point x="202" y="1400" type="line"/>
+    </contour>
+    <contour>
+      <point x="-242" y="1564" type="line"/>
+      <point x="558" y="1564" type="line"/>
+      <point x="602" y="1800" type="line"/>
+      <point x="-196" y="1800" type="line"/>
+    </contour>
   </outline>
 </glyph>

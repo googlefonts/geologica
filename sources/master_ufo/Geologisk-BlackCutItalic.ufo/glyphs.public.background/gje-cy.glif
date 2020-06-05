@@ -1,7 +1,19 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="gje-cy" format="2">
   <outline>
-    <component base="ge-cy"/>
-    <component base="acutecomb" xOffset="671"/>
+    <contour>
+      <point x="22" y="0" type="line"/>
+      <point x="422" y="0" type="line"/>
+      <point x="576" y="728" type="line"/>
+      <point x="908" y="728" type="line"/>
+      <point x="974" y="1040" type="line"/>
+      <point x="240" y="1040" type="line"/>
+    </contour>
+    <contour>
+      <point x="-207" y="1170" type="line"/>
+      <point x="163" y="1170" type="line"/>
+      <point x="465" y="1544" type="line"/>
+      <point x="57" y="1544" type="line"/>
+    </contour>
   </outline>
 </glyph>

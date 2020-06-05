@@ -2,6 +2,19 @@
 <glyph name="Ha-cy" format="2">
   <anchor x="1164" y="0" name="descender"/>
   <outline>
-    <component base="X"/>
+    <contour>
+      <point x="-96" y="0" type="line"/>
+      <point x="408" y="0" type="line"/>
+      <point x="696" y="402" type="line"/>
+      <point x="830" y="0" type="line"/>
+      <point x="1304" y="0" type="line"/>
+      <point x="1040" y="684" type="line"/>
+      <point x="1602" y="1400" type="line"/>
+      <point x="1102" y="1400" type="line"/>
+      <point x="824" y="1022" type="line"/>
+      <point x="694" y="1400" type="line"/>
+      <point x="222" y="1400" type="line"/>
+      <point x="482" y="730" type="line"/>
+    </contour>
   </outline>
 </glyph>

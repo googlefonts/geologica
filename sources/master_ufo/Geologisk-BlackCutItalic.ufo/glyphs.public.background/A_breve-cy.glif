@@ -1,7 +1,36 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Abreve-cy" format="2">
   <outline>
-    <component base="A-cy"/>
-    <component base="brevecomb-cy" xOffset="824" yOffset="180"/>
+    <contour>
+      <point x="-110" y="0" type="line"/>
+      <point x="354" y="0" type="line"/>
+      <point x="486" y="250" type="line"/>
+      <point x="918" y="250" type="line"/>
+      <point x="944" y="0" type="line"/>
+      <point x="1390" y="0" type="line"/>
+      <point x="1184" y="1400" type="line"/>
+      <point x="706" y="1400" type="line"/>
+    </contour>
+    <contour>
+      <point x="642" y="584" type="line"/>
+      <point x="858" y="974" type="line"/>
+      <point x="904" y="584" type="line"/>
+    </contour>
+    <contour>
+      <point x="194" y="1340" type="curve" smooth="yes"/>
+      <point x="448" y="1340"/>
+      <point x="640" y="1494"/>
+      <point x="660" y="1724" type="curve"/>
+      <point x="340" y="1724" type="line"/>
+      <point x="334" y="1642"/>
+      <point x="282" y="1590"/>
+      <point x="208" y="1590" type="curve" smooth="yes"/>
+      <point x="126" y="1590"/>
+      <point x="88" y="1652"/>
+      <point x="102" y="1724" type="curve"/>
+      <point x="-220" y="1724" type="line"/>
+      <point x="-250" y="1490"/>
+      <point x="-72" y="1340"/>
+    </contour>
   </outline>
 </glyph>

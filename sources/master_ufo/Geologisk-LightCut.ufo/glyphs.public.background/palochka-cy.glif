@@ -1,6 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="palochka-cy" format="2">
   <outline>
-    <component base="l"/>
+    <contour>
+      <point x="170" y="0" type="line"/>
+      <point x="282" y="0" type="line"/>
+      <point x="282" y="1480" type="line"/>
+      <point x="170" y="1338" type="line"/>
+    </contour>
   </outline>
 </glyph>

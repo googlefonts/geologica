@@ -35,6 +35,8 @@
   </outline>
   <lib>
     <dict>
+      <key>com.schriftgestaltung.Glyphs.category</key>
+      <string>Mark</string>
       <key>public.markColor</key>
       <string>0.67,0.95,0.38,1</string>
     </dict>

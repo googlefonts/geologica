@@ -1,7 +1,35 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Uhungarumlaut-cy" format="2">
   <outline>
-    <component base="U-cy"/>
-    <component base="hungarumlautcomb.case" xOffset="718" yOffset="1"/>
+    <contour>
+      <point x="104" y="0" type="line"/>
+      <point x="336" y="-18"/>
+      <point x="514" y="130"/>
+      <point x="688" y="470" type="curve" smooth="yes"/>
+      <point x="1166" y="1400" type="line"/>
+      <point x="1032" y="1400" type="line"/>
+      <point x="606" y="546" type="line" smooth="yes"/>
+      <point x="440" y="214"/>
+      <point x="300" y="102"/>
+      <point x="104" y="108" type="curve"/>
+    </contour>
+    <contour>
+      <point x="604" y="492" type="line"/>
+      <point x="680" y="608" type="line"/>
+      <point x="222" y="1400" type="line"/>
+      <point x="78" y="1400" type="line"/>
+    </contour>
+    <contour>
+      <point x="50" y="1593" type="line"/>
+      <point x="158" y="1593" type="line"/>
+      <point x="360" y="1905" type="line"/>
+      <point x="240" y="1905" type="line"/>
+    </contour>
+    <contour>
+      <point x="-300" y="1593" type="line"/>
+      <point x="-192" y="1593" type="line"/>
+      <point x="10" y="1905" type="line"/>
+      <point x="-110" y="1905" type="line"/>
+    </contour>
   </outline>
 </glyph>

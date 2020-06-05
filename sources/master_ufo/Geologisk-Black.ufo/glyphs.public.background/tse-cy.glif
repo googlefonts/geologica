@@ -14,6 +14,11 @@
       <point x="528" y="1040" type="line"/>
       <point x="128" y="1040" type="line"/>
     </contour>
-    <component base="_part.cy-desc-lc-stem"/>
+    <contour>
+      <point x="1008" y="-300" type="line"/>
+      <point x="1372" y="-300" type="line"/>
+      <point x="1372" y="312" type="line"/>
+      <point x="1008" y="312" type="line"/>
+    </contour>
   </outline>
 </glyph>

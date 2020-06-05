@@ -1,6 +1,15 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Te-cy" format="2">
   <outline>
-    <component base="T"/>
+    <contour>
+      <point x="484" y="0" type="line"/>
+      <point x="600" y="0" type="line"/>
+      <point x="600" y="1292" type="line"/>
+      <point x="1014" y="1292" type="line"/>
+      <point x="1014" y="1400" type="line"/>
+      <point x="70" y="1400" type="line"/>
+      <point x="70" y="1292" type="line"/>
+      <point x="484" y="1292" type="line"/>
+    </contour>
   </outline>
 </glyph>

@@ -1,6 +1,6 @@
 ## Fontbakery report
 
-Fontbakery version: 0.7.24
+Fontbakery version: 0.7.26
 
 <details>
 <summary><b>[14] Family checks</b></summary>
@@ -10,8 +10,7 @@ Fontbakery version: 0.7.24
 * [com.google.fonts/check/fontbakery_version](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/fontbakery_version)
 
 * ℹ **INFO** fontbakery (0.7.26)  - Well designed Font QA tool, written in Python 3
-  INSTALLED: 0.7.24
-  LATEST:    0.7.26
+  INSTALLED: 0.7.26 (latest)
 
 * 🍞 **PASS** Font Bakery is up-to-date
 
@@ -216,22 +215,136 @@ https://github.com/googlefonts/fontbakery/blob/master/prebuilt/workarounds
 <br>
 </details>
 <details>
-<summary><b>[153] Geologisk[DIAG,ital,slnt,wght].ttf</b></summary>
+<summary><b>[158] Geologisk[DIAG,ital,slnt,wght].ttf</b></summary>
 <details>
-<summary>🔥 <b>FAIL:</b> A static fonts directory with at least two fonts must accompany variable fonts</summary>
+<summary>💔 <b>ERROR:</b> Check correctness of STAT table strings </summary>
 
-* [com.google.fonts/check/repo/vf_has_static_fonts](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/vf_has_static_fonts)
+* [com.google.fonts/check/STAT_strings](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/STAT_strings)
 <pre>--- Rationale ---
 
-Variable font family directories kept in the google/fonts git repo must include
-a static/ subdir containing static fonts.
-These files are meant to be served for users that still lack support for
-variable fonts in their web browsers.
+On the STAT table, the &quot;Italic&quot; keyword must not be used on AxisValues for
+variation axes other than &#x27;ital&#x27;.
 
 
 </pre>
 
-* 🔥 **FAIL** Please create a subdirectory called "static/" and include in it static font files. [code: missing]
+* 💔 **ERROR** Failed with AttributeError: AxisIndex
+
+</details>
+<details>
+<summary>🔥 <b>FAIL:</b> Check variable font instances have correct coordinate values</summary>
+
+* [com.google.fonts/check/varfont_instance_coordinates](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont_instance_coordinates)
+
+* 🔥 **FAIL** Instance "Thin Italic" wght value is "200.0". It should be "100.0" [code: bad-coordinate]
+* 🔥 **FAIL** Instance "Thin Italic" wght value is "200.0". It should be "100.0" [code: bad-coordinate]
+* 🔥 **FAIL** Instance "Cut Thin Italic" wght value is "200.0". It should be "100.0" [code: bad-coordinate]
+* 🔥 **FAIL** Instance "Cut Thin Italic" wght value is "200.0". It should be "100.0" [code: bad-coordinate]
+* 🔥 **FAIL** Instance "ExtraLight" wght value is "300.0". It should be "200.0" [code: bad-coordinate]
+* 🔥 **FAIL** Instance "ExtraLight" wght value is "300.0". It should be "200.0" [code: bad-coordinate]
+* 🔥 **FAIL** Instance "Cut ExtraLight" wght value is "300.0". It should be "200.0" [code: bad-coordinate]
+* 🔥 **FAIL** Instance "Cut ExtraLight" wght value is "300.0". It should be "200.0" [code: bad-coordinate]
+* 🔥 **FAIL** Instance "ExtraLight Italic" wght value is "400.0". It should be "200.0" [code: bad-coordinate]
+* 🔥 **FAIL** Instance "ExtraLight Italic" wght value is "400.0". It should be "200.0" [code: bad-coordinate]
+* 🔥 **FAIL** Instance "Cut ExtraLight Italic" wght value is "500.0". It should be "200.0" [code: bad-coordinate]
+* 🔥 **FAIL** Instance "Cut ExtraLight Italic" wght value is "500.0". It should be "200.0" [code: bad-coordinate]
+* 🔥 **FAIL** Instance "Light" wght value is "500.0". It should be "300.0" [code: bad-coordinate]
+* 🔥 **FAIL** Instance "Light" wght value is "500.0". It should be "300.0" [code: bad-coordinate]
+* 🔥 **FAIL** Instance "Cut Light" wght value is "600.0". It should be "300.0" [code: bad-coordinate]
+* 🔥 **FAIL** Instance "Cut Light" wght value is "600.0". It should be "300.0" [code: bad-coordinate]
+* 🔥 **FAIL** Instance "Light Italic" wght value is "600.0". It should be "300.0" [code: bad-coordinate]
+* 🔥 **FAIL** Instance "Light Italic" wght value is "600.0". It should be "300.0" [code: bad-coordinate]
+* 🔥 **FAIL** Instance "Cut Light Italic" wght value is "700.0". It should be "300.0" [code: bad-coordinate]
+* 🔥 **FAIL** Instance "Cut Light Italic" wght value is "700.0". It should be "300.0" [code: bad-coordinate]
+* 🔥 **FAIL** Instance "Regular" wght value is "700.0". It should be "400.0" [code: bad-coordinate]
+* 🔥 **FAIL** Instance "Regular" wght value is "700.0". It should be "400.0" [code: bad-coordinate]
+* 🔥 **FAIL** Instance "Cut Regular" wght value is "800.0". It should be "400.0" [code: bad-coordinate]
+* 🔥 **FAIL** Instance "Cut Regular" wght value is "800.0". It should be "400.0" [code: bad-coordinate]
+* 🔥 **FAIL** Instance "Italic" wght value is "800.0". It should be "400.0" [code: bad-coordinate]
+* 🔥 **FAIL** Instance "Italic" wght value is "800.0". It should be "400.0" [code: bad-coordinate]
+* 🔥 **FAIL** Instance "Cut Italic" wght value is "900.0". It should be "400.0" [code: bad-coordinate]
+* 🔥 **FAIL** Instance "Cut Italic" wght value is "900.0". It should be "400.0" [code: bad-coordinate]
+* 🔥 **FAIL** Instance "Medium" wght value is "900.0". It should be "500.0" [code: bad-coordinate]
+* 🔥 **FAIL** Instance "Medium" wght value is "900.0". It should be "500.0" [code: bad-coordinate]
+* 🔥 **FAIL** Check has either failed or produced a warning. See our wip spec for further info https://gist.github.com/m4rc1e/8f4c4498519e8a36cd54e16a004275cb
+
+</details>
+<details>
+<summary>🔥 <b>FAIL:</b> Ensure VFs do not contain opsz or ital axes. </summary>
+
+* [com.google.fonts/check/varfont/unsupported_axes](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont/unsupported_axes)
+<pre>--- Rationale ---
+
+The &#x27;ital&#x27; axis is not supported yet in Google Chrome. The &#x27;opsz&#x27; axis also has
+patchy support.
+
+For the time being, we need to ensure that VFs do not contain either of these
+axes. Once browser support is better, we can deprecate this check.
+
+For more info regarding ital and opsz browser support, see:
+https://arrowtype.github.io/vf-slnt-test/
+
+
+</pre>
+
+* 🔥 **FAIL** The "ital" axis is not yet well supported on Google Chrome. [code: unsupported-ital]
+
+</details>
+<details>
+<summary>🔥 <b>FAIL:</b> The variable font 'wght' (Weight) axis coordinate must be 400 on the 'Regular' instance.</summary>
+
+* [com.google.fonts/check/varfont/regular_wght_coord](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/fvar.html#com.google.fonts/check/varfont/regular_wght_coord)
+<pre>--- Rationale ---
+
+According to the Open-Type spec&#x27;s registered design-variation tag &#x27;wght&#x27;
+available at
+https://docs.microsoft.com/en-gb/typography/opentype/spec/dvaraxistag_wght
+
+If a variable font has a &#x27;wght&#x27; (Weight) axis, then the coordinate of its
+&#x27;Regular&#x27; instance is required to be 400.
+
+
+</pre>
+
+* 🔥 **FAIL** The "wght" axis coordinate of the "Regular" instance must be 400. Got 700.0 instead. [code: not-400]
+
+</details>
+<details>
+<summary>🔥 <b>FAIL:</b> The variable font 'slnt' (Slant) axis coordinate must be zero on the 'Regular' instance.</summary>
+
+* [com.google.fonts/check/varfont/regular_slnt_coord](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/fvar.html#com.google.fonts/check/varfont/regular_slnt_coord)
+<pre>--- Rationale ---
+
+According to the Open-Type spec&#x27;s registered design-variation tag &#x27;slnt&#x27;
+available at
+https://docs.microsoft.com/en-gb/typography/opentype/spec/dvaraxistag_slnt
+
+If a variable font has a &#x27;slnt&#x27; (Slant) axis, then the coordinate of its
+&#x27;Regular&#x27; instance is required to be zero.
+
+
+</pre>
+
+* 🔥 **FAIL** The "slnt" coordinate of the "Regular" instance must be zero. Got -12.0 as a default value instead. [code: non-zero]
+
+</details>
+<details>
+<summary>🔥 <b>FAIL:</b> The variable font 'ital' (Italic) axis coordinate must be zero on the 'Regular' instance.</summary>
+
+* [com.google.fonts/check/varfont/regular_ital_coord](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/fvar.html#com.google.fonts/check/varfont/regular_ital_coord)
+<pre>--- Rationale ---
+
+According to the Open-Type spec&#x27;s registered design-variation tag &#x27;ital&#x27;
+available at
+https://docs.microsoft.com/en-gb/typography/opentype/spec/dvaraxistag_ital
+
+If a variable font has a &#x27;ital&#x27; (Italic) axis, then the coordinate of its
+&#x27;Regular&#x27; instance is required to be zero.
+
+
+</pre>
+
+* 🔥 **FAIL** The "ital" coordinate of the "Regular" instance must be zero. Got 1.0 as a default value instead. [code: non-zero]
 
 </details>
 <details>
@@ -276,7 +389,7 @@ When in doubt, please choose OFL for new font projects.
 * ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
 * ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=14] [code: http-in-license-info]
 * ⚠ **WARN** For now we're still accepting http URLs, but you should consider using https instead.
-
+ [code: http]
 
 </details>
 <details>
@@ -310,41 +423,70 @@ https://github.com/impallari/Raleway/issues/14).
 
 * ⚠ **WARN** Instance "Cut Thin": contains the following unparsable tokens "['Cut']"
 * ⚠ **WARN** Instance "Cut Thin": cannot determine instance name due to unparsable tokens
+* ⚠ **WARN** Instance "Cut Thin": contains the following unparsable tokens "['Cut']"
+* ⚠ **WARN** Instance "Cut Thin": cannot determine instance name due to unparsable tokens
+* ⚠ **WARN** Instance "Cut Thin Italic": contains the following unparsable tokens "['Cut']"
+* ⚠ **WARN** Instance "Cut Thin Italic": cannot determine instance name due to unparsable tokens
 * ⚠ **WARN** Instance "Cut Thin Italic": contains the following unparsable tokens "['Cut']"
 * ⚠ **WARN** Instance "Cut Thin Italic": cannot determine instance name due to unparsable tokens
 * ⚠ **WARN** Instance "Cut ExtraLight": contains the following unparsable tokens "['Cut']"
 * ⚠ **WARN** Instance "Cut ExtraLight": cannot determine instance name due to unparsable tokens
+* ⚠ **WARN** Instance "Cut ExtraLight": contains the following unparsable tokens "['Cut']"
+* ⚠ **WARN** Instance "Cut ExtraLight": cannot determine instance name due to unparsable tokens
+* ⚠ **WARN** Instance "Cut ExtraLight Italic": contains the following unparsable tokens "['Cut']"
+* ⚠ **WARN** Instance "Cut ExtraLight Italic": cannot determine instance name due to unparsable tokens
 * ⚠ **WARN** Instance "Cut ExtraLight Italic": contains the following unparsable tokens "['Cut']"
 * ⚠ **WARN** Instance "Cut ExtraLight Italic": cannot determine instance name due to unparsable tokens
 * ⚠ **WARN** Instance "Cut Light": contains the following unparsable tokens "['Cut']"
 * ⚠ **WARN** Instance "Cut Light": cannot determine instance name due to unparsable tokens
+* ⚠ **WARN** Instance "Cut Light": contains the following unparsable tokens "['Cut']"
+* ⚠ **WARN** Instance "Cut Light": cannot determine instance name due to unparsable tokens
+* ⚠ **WARN** Instance "Cut Light Italic": contains the following unparsable tokens "['Cut']"
+* ⚠ **WARN** Instance "Cut Light Italic": cannot determine instance name due to unparsable tokens
 * ⚠ **WARN** Instance "Cut Light Italic": contains the following unparsable tokens "['Cut']"
 * ⚠ **WARN** Instance "Cut Light Italic": cannot determine instance name due to unparsable tokens
 * ⚠ **WARN** Instance "Cut Regular": contains the following unparsable tokens "['Cut']"
 * ⚠ **WARN** Instance "Cut Regular": cannot determine instance name due to unparsable tokens
+* ⚠ **WARN** Instance "Cut Regular": contains the following unparsable tokens "['Cut']"
+* ⚠ **WARN** Instance "Cut Regular": cannot determine instance name due to unparsable tokens
 * ⚠ **WARN** Instance "Cut Italic": contains the following unparsable tokens "['Cut']"
 * ⚠ **WARN** Instance "Cut Italic": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Cut Medium": contains the following unparsable tokens "['Cut']"
-* ⚠ **WARN** Instance "Cut Medium": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Cut Medium Italic": contains the following unparsable tokens "['Cut']"
-* ⚠ **WARN** Instance "Cut Medium Italic": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Cut SemiBold": contains the following unparsable tokens "['Cut']"
-* ⚠ **WARN** Instance "Cut SemiBold": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Cut SemiBold Italic": contains the following unparsable tokens "['Cut']"
-* ⚠ **WARN** Instance "Cut SemiBold Italic": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Cut Bold": contains the following unparsable tokens "['Cut']"
-* ⚠ **WARN** Instance "Cut Bold": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Cut Bold Italic": contains the following unparsable tokens "['Cut']"
-* ⚠ **WARN** Instance "Cut Bold Italic": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Cut ExtraBold": contains the following unparsable tokens "['Cut']"
-* ⚠ **WARN** Instance "Cut ExtraBold": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Cut ExtraBold Italic": contains the following unparsable tokens "['Cut']"
-* ⚠ **WARN** Instance "Cut ExtraBold Italic": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Cut Black": contains the following unparsable tokens "['Cut']"
-* ⚠ **WARN** Instance "Cut Black": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Cut Black Italic": contains the following unparsable tokens "['Cut']"
-* ⚠ **WARN** Instance "Cut Black Italic": cannot determine instance name due to unparsable tokens
+* ⚠ **WARN** Instance "Cut Italic": contains the following unparsable tokens "['Cut']"
+* ⚠ **WARN** Instance "Cut Italic": cannot determine instance name due to unparsable tokens
 * ⚠ **WARN** Check has either failed or produced a warning. See our wip spec for further info https://gist.github.com/m4rc1e/8f4c4498519e8a36cd54e16a004275cb
+
+</details>
+<details>
+<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class)</summary>
+
+* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
+<pre>--- Rationale ---
+
+Glyphs in the GDEF mark glyph class should be non-spacing.
+Spacing glyphs in the GDEF mark glyph class may have incorrect
+anchor positioning that was only intended for building composite glyphs
+during design.
+
+
+</pre>
+
+* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
+	 acutecomb, acutecomb.case, acutecomb.narrow, brevecombcy, dotbelowcomb, gravecomb, gravecomb.case, gravecomb.narrow, hookabovecomb, hookabovecomb.case and 55 more. [code: spacing-mark-glyphs]
+
+</details>
+<details>
+<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class</summary>
+
+* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
+<pre>--- Rationale ---
+
+Mark characters should be in the GDEF mark glyph class.
+
+
+</pre>
+
+* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
+	 U+0300, U+0301, U+0302, U+0303, U+0304, U+0306, U+0307, U+0308, U+0309, U+030A, U+030B, U+030C, U+030F, U+0311, U+0312, U+031B, U+0323, U+0324, U+0326, U+0327, U+0328, U+032E, U+0331 and U+0335 [code: mark-chars]
 
 </details>
 <details>
@@ -387,23 +529,6 @@ any other git-based version control service.
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Does DESCRIPTION file mention when a family is available as variable font?</summary>
-
-* [com.google.fonts/check/description/variable_font](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/variable_font)
-<pre>--- Rationale ---
-
-Families with variable fonts do not always mention that in their descriptions.
-Therefore, this check ensures that a standard boilerplate sentence is present
-in the DESCRIPTION.en_us.html files for all those families which are available
-as variable fonts.
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: description
-
-</details>
-<details>
 <summary>💤 <b>SKIP:</b> Is this a proper HTML snippet?</summary>
 
 * [com.google.fonts/check/description/valid_html](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/valid_html)
@@ -434,6 +559,26 @@ edited by hand.
 <summary>💤 <b>SKIP:</b> DESCRIPTION.en_us.html must have less than 1000 bytes.</summary>
 
 * [com.google.fonts/check/description/max_length](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/max_length)
+
+* 💤 **SKIP** Unfulfilled Conditions: description
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> DESCRIPTION.en_us.html should end in a linebreak.</summary>
+
+* [com.google.fonts/check/description/eof_linebreak](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/eof_linebreak)
+<pre>--- Rationale ---
+
+Some older text-handling tools sometimes misbehave if the last line of data in
+a text file is not terminated with a newline character (also known as &#x27;\n&#x27;).
+
+We know that this is a very small detail, but for the sake of keeping all
+DESCRIPTION.en_us.html files uniformly formatted throughout the GFonts
+collection, we chose to adopt the practice of placing this final linebreak char
+on them.
+
+
+</pre>
 
 * 💤 **SKIP** Unfulfilled Conditions: description
 
@@ -758,7 +903,8 @@ When in doubt, please choose OFL for new font projects.
 <pre>--- Rationale ---
 
 The expected pattern for the copyright string adheres to the following rules:
-* It must say &quot;Copyright&quot; followed by a 4 digit year
+* It must say &quot;Copyright&quot; followed by a 4 digit year (optionally followed by a
+hyphen and another 4 digit year)
 * Then it must say &quot;The &lt;familyname&gt; Project Authors&quot;
 * And within parentheses, a URL for a git repository must be provided
 * The check is case insensitive and does not validate whether the familyname is
@@ -1054,6 +1200,23 @@ Bit 3 = Force ppem to integer values for all internal scaler math;
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> A static fonts directory with at least two fonts must accompany variable fonts</summary>
+
+* [com.google.fonts/check/repo/vf_has_static_fonts](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/vf_has_static_fonts)
+<pre>--- Rationale ---
+
+Variable font family directories kept in the google/fonts git repo must include
+a static/ subdir containing static fonts.
+These files are meant to be served for users that still lack support for
+variable fonts in their web browsers.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: gfonts_repo_structure
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Check if the vertical metrics of a family are similar to the same family hosted on Google Fonts.</summary>
 
 * [com.google.fonts/check/vertical_metrics_regressions](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics_regressions)
@@ -1178,44 +1341,6 @@ If a variable font has a &#x27;wdth&#x27; (Width) axis, then the coordinate of i
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> The variable font 'slnt' (Slant) axis coordinate must be zero on the 'Regular' instance.</summary>
-
-* [com.google.fonts/check/varfont/regular_slnt_coord](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/fvar.html#com.google.fonts/check/varfont/regular_slnt_coord)
-<pre>--- Rationale ---
-
-According to the Open-Type spec&#x27;s registered design-variation tag &#x27;slnt&#x27;
-available at
-https://docs.microsoft.com/en-gb/typography/opentype/spec/dvaraxistag_slnt
-
-If a variable font has a &#x27;slnt&#x27; (Slant) axis, then the coordinate of its
-&#x27;Regular&#x27; instance is required to be zero.
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: regular_slnt_coord
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> The variable font 'ital' (Italic) axis coordinate must be zero on the 'Regular' instance.</summary>
-
-* [com.google.fonts/check/varfont/regular_ital_coord](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/fvar.html#com.google.fonts/check/varfont/regular_ital_coord)
-<pre>--- Rationale ---
-
-According to the Open-Type spec&#x27;s registered design-variation tag &#x27;ital&#x27;
-available at
-https://docs.microsoft.com/en-gb/typography/opentype/spec/dvaraxistag_ital
-
-If a variable font has a &#x27;ital&#x27; (Italic) axis, then the coordinate of its
-&#x27;Regular&#x27; instance is required to be zero.
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: regular_ital_coord
-
-</details>
-<details>
 <summary>💤 <b>SKIP:</b> The variable font 'opsz' (Optical Size) axis coordinate should be between 9 and 13 on the 'Regular' instance.</summary>
 
 * [com.google.fonts/check/varfont/regular_opsz_coord](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/fvar.html#com.google.fonts/check/varfont/regular_opsz_coord)
@@ -1235,6 +1360,25 @@ If a variable font has a &#x27;opsz&#x27; (Optical Size) axis, then the coordina
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> The variable font 'wght' (Weight) axis coordinate must be 700 on the 'Bold' instance.</summary>
+
+* [com.google.fonts/check/varfont/bold_wght_coord](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/fvar.html#com.google.fonts/check/varfont/bold_wght_coord)
+<pre>--- Rationale ---
+
+The Open-Type spec&#x27;s registered design-variation tag &#x27;wght&#x27; available at
+https://docs.microsoft.com/en-gb/typography/opentype/spec/dvaraxistag_wght does
+not specify a required value for the &#x27;Bold&#x27; instance of a variable font.
+
+But Dave Crossland suggested that we should enforce a required value of 700 in
+this case.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: bold_wght_coord
+
+</details>
+<details>
 <summary>ℹ <b>INFO:</b> Show hinting filesize impact.</summary>
 
 * [com.google.fonts/check/hinting_impact](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/hinting_impact)
@@ -1250,8 +1394,8 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/variable/Geologisk[DIAG,ital,slnt,wght].ttf |
 	|:--- | ---:|
-	| Dehinted Size | 242.2kb |
-	| Hinted Size | 241.7kb |
+	| Dehinted Size | 242.1kb |
+	| Hinted Size | 241.6kb |
 	| Increase | -592 bytes |
 	| Change   | -0.2 % |
  [code: size-impact]
@@ -1361,7 +1505,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [GPOS, DSIG, loca, prep, GSUB, gasp]
+* ℹ **INFO** This font contains the following optional tables [GPOS, loca, GSUB, DSIG, gasp, prep]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -1431,6 +1575,28 @@ https://docs.microsoft.com/en-us/typography/opentype/spec/os2#fstype
 <summary>🍞 <b>PASS:</b> Checking OS/2 achVendID.</summary>
 
 * [com.google.fonts/check/vendor_id](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id)
+<pre>--- Rationale ---
+
+Microsoft keeps a list of font vendors and their respective contact info. This
+list is updated regularly and is indexed by a 4-char &quot;Vendor ID&quot; which is
+stored in the achVendID field of the OS/2 table.
+
+Registering your ID is not mandatory, but it is a good practice since some
+applications may display the type designer / type foundry contact info on some
+dialog and also because that info will be visible on Microsoft&#x27;s website:
+
+https://docs.microsoft.com/en-us/typography/vendors/
+
+This check verifies whether or not a given font&#x27;s vendor ID is registered in
+that list or if it has some of the default values used by the most common font
+editors.
+
+Each new FontBakery release includes a cached copy of that list of vendor IDs.
+If you registered recently, you&#x27;re safe to ignore warnings emitted by this
+check, since your ID will soon be included in one of our upcoming releases.
+
+
+</pre>
 
 * 🍞 **PASS** OS/2 VendorID 'MNKR' looks good!
 
@@ -1551,7 +1717,7 @@ power of two is most likely negligible nowadays.
 
 Another acceptable value is 2000. Since TT outlines are all integers (no
 floats), then instances in a VF suffer rounding compromises, and therefore a
-1000 UPM is to small because it forces too many such compromises.
+1000 UPM is too small because it forces too many such compromises.
 
 Therefore 2000 is a good &#x27;new VF standard&#x27;, because 2000 is a simple 2x
 conversion from existing fonts drawn on a 1000 UPM, and anyone who knows what
@@ -1869,14 +2035,6 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 </pre>
 
 * 🍞 **PASS** None of the name table strings contain "Reserved Font Name".
-
-</details>
-<details>
-<summary>🍞 <b>PASS:</b> Check variable font instances have correct coordinate values</summary>
-
-* [com.google.fonts/check/varfont_instance_coordinates](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont_instance_coordinates)
-
-* 🍞 **PASS** Instance coordinates are correct
 
 </details>
 <details>
@@ -2336,6 +2494,23 @@ Reference: https://github.com/googlefonts/fontbakery/issues/1845
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> Check GDEF mark glyph class doesn't have characters that are not marks)</summary>
+
+* [com.google.fonts/check/gdef_non_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars)
+<pre>--- Rationale ---
+
+Glyphs in the GDEF mark glyph class become non-spacing and may be
+repositioned if they have mark anchors. Only combining mark glyphs
+should be in that class. Any non-mark glyph must not be in that class,
+in particular spacing glyphs.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not have non-mark characters in the GDEF mark glyph class.
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Does GPOS table have kerning information?</summary>
 
 * [com.google.fonts/check/gpos_kerning_info](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gpos.html#com.google.fonts/check/gpos_kerning_info)
@@ -2409,44 +2584,6 @@ the same x,y coordinates.
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> The variable font 'wght' (Weight) axis coordinate must be 400 on the 'Regular' instance.</summary>
-
-* [com.google.fonts/check/varfont/regular_wght_coord](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/fvar.html#com.google.fonts/check/varfont/regular_wght_coord)
-<pre>--- Rationale ---
-
-According to the Open-Type spec&#x27;s registered design-variation tag &#x27;wght&#x27;
-available at
-https://docs.microsoft.com/en-gb/typography/opentype/spec/dvaraxistag_wght
-
-If a variable font has a &#x27;wght&#x27; (Weight) axis, then the coordinate of its
-&#x27;Regular&#x27; instance is required to be 400.
-
-
-</pre>
-
-* 🍞 **PASS** Regular:wght is 400.
-
-</details>
-<details>
-<summary>🍞 <b>PASS:</b> The variable font 'wght' (Weight) axis coordinate must be 700 on the 'Bold' instance.</summary>
-
-* [com.google.fonts/check/varfont/bold_wght_coord](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/fvar.html#com.google.fonts/check/varfont/bold_wght_coord)
-<pre>--- Rationale ---
-
-The Open-Type spec&#x27;s registered design-variation tag &#x27;wght&#x27; available at
-https://docs.microsoft.com/en-gb/typography/opentype/spec/dvaraxistag_wght does
-not specify a required value for the &#x27;Bold&#x27; instance of a variable font.
-
-But Dave Crossland suggested that we should enforce a required value of 700 in
-this case.
-
-
-</pre>
-
-* 🍞 **PASS** Bold:wght is 700.
-
-</details>
-<details>
 <summary>🍞 <b>PASS:</b> The variable font 'wght' (Weight) axis coordinate must be within spec range of 1 to 1000 on all instances.</summary>
 
 * [com.google.fonts/check/varfont/wght_valid_range](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/fvar.html#com.google.fonts/check/varfont/wght_valid_range)
@@ -2510,5 +2647,5 @@ scale used for the italicAngle field in the post table.
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 1 | 5 | 75 | 8 | 78 | 0 |
-| 0% | 1% | 3% | 45% | 5% | 47% | 0% |
+| 1 | 5 | 7 | 75 | 8 | 76 | 0 |
+| 1% | 3% | 4% | 44% | 5% | 44% | 0% |

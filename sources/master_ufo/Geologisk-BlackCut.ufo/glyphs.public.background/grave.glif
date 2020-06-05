@@ -1,6 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="grave" format="2">
   <outline>
-    <component base="gravecomb" xOffset="589"/>
+    <contour>
+      <point x="-217" y="1170" type="line"/>
+      <point x="151" y="1170" type="line"/>
+      <point x="-43" y="1544" type="line"/>
+      <point x="-445" y="1544" type="line"/>
+    </contour>
   </outline>
 </glyph>

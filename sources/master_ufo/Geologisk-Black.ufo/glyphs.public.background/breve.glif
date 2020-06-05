@@ -1,6 +1,21 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="breve" format="2">
   <outline>
-    <component base="brevecomb" xOffset="589"/>
+    <contour>
+      <point x="-49" y="1160" type="curve" smooth="yes"/>
+      <point x="213" y="1160"/>
+      <point x="393" y="1318"/>
+      <point x="389" y="1544" type="curve"/>
+      <point x="69" y="1544" type="line"/>
+      <point x="73" y="1462"/>
+      <point x="27" y="1410"/>
+      <point x="-49" y="1410" type="curve" smooth="yes"/>
+      <point x="-125" y="1410"/>
+      <point x="-171" y="1462"/>
+      <point x="-167" y="1544" type="curve"/>
+      <point x="-487" y="1544" type="line"/>
+      <point x="-491" y="1314"/>
+      <point x="-317" y="1160"/>
+    </contour>
   </outline>
 </glyph>

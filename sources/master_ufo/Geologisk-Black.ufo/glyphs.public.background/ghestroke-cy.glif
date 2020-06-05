@@ -1,7 +1,19 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="ghestroke-cy" format="2">
   <outline>
-    <component base="ge-cy" xOffset="20"/>
-    <component base="strokeshortcomb" xOffset="-16" yOffset="-36"/>
+    <contour>
+      <point x="148" y="0" type="line"/>
+      <point x="548" y="0" type="line"/>
+      <point x="548" y="728" type="line"/>
+      <point x="882" y="728" type="line"/>
+      <point x="882" y="1040" type="line"/>
+      <point x="148" y="1040" type="line"/>
+    </contour>
+    <contour>
+      <point x="-1054" y="392" type="line"/>
+      <point x="-254" y="392" type="line"/>
+      <point x="-254" y="604" type="line"/>
+      <point x="-1054" y="604" type="line"/>
+    </contour>
   </outline>
 </glyph>

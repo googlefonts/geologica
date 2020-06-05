@@ -7,6 +7,23 @@
       <point x="30" y="1400" type="line"/>
       <point x="30" y="1032" type="line"/>
     </contour>
-    <component base="Ka-cy" xOffset="115"/>
+    <contour>
+      <point x="1129" y="0" type="line"/>
+      <point x="1647" y="0" type="line"/>
+      <point x="1065" y="714" type="line"/>
+      <point x="1587" y="1400" type="line"/>
+      <point x="1081" y="1400" type="line"/>
+      <point x="573" y="714" type="line"/>
+    </contour>
+    <contour>
+      <point x="271" y="0" type="line"/>
+      <point x="675" y="0" type="line"/>
+      <point x="675" y="538" type="line"/>
+      <point x="943" y="538" type="line"/>
+      <point x="943" y="906" type="line"/>
+      <point x="675" y="906" type="line"/>
+      <point x="675" y="1400" type="line"/>
+      <point x="271" y="1400" type="line"/>
+    </contour>
   </outline>
 </glyph>

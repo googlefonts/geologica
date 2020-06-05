@@ -1,7 +1,27 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Hadescender-cy" format="2">
   <outline>
-    <component base="Ha-cy"/>
-    <component base="_part.cy-desc-uc" xOffset="713"/>
+    <contour>
+      <point x="14" y="0" type="line"/>
+      <point x="494" y="0" type="line"/>
+      <point x="706" y="402" type="line"/>
+      <point x="918" y="0" type="line"/>
+      <point x="1410" y="0" type="line"/>
+      <point x="998" y="704" type="line"/>
+      <point x="1404" y="1400" type="line"/>
+      <point x="928" y="1400" type="line"/>
+      <point x="722" y="1020" type="line"/>
+      <point x="516" y="1400" type="line"/>
+      <point x="28" y="1400" type="line"/>
+      <point x="434" y="710" type="line"/>
+    </contour>
+    <contour>
+      <point x="397" y="-440" type="line"/>
+      <point x="781" y="-260" type="line"/>
+      <point x="781" y="368" type="line"/>
+      <point x="297" y="368" type="line"/>
+      <point x="297" y="0" type="line"/>
+      <point x="397" y="0" type="line"/>
+    </contour>
   </outline>
 </glyph>

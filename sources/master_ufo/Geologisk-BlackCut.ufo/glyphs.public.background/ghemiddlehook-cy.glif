@@ -23,6 +23,13 @@
       <point x="756" y="68"/>
       <point x="658" y="8" type="curve"/>
     </contour>
-    <component base="ge-cy"/>
+    <contour>
+      <point x="128" y="0" type="line"/>
+      <point x="528" y="0" type="line"/>
+      <point x="528" y="728" type="line"/>
+      <point x="862" y="728" type="line"/>
+      <point x="862" y="1040" type="line"/>
+      <point x="128" y="1040" type="line"/>
+    </contour>
   </outline>
 </glyph>

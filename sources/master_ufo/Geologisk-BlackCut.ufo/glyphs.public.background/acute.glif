@@ -1,6 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="acute" format="2">
   <outline>
-    <component base="acutecomb" xOffset="589"/>
+    <contour>
+      <point x="-249" y="1170" type="line"/>
+      <point x="109" y="1170" type="line"/>
+      <point x="343" y="1544" type="line"/>
+      <point x="-51" y="1544" type="line"/>
+    </contour>
   </outline>
 </glyph>

@@ -1,6 +1,16 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="southWestArrow" format="2">
   <outline>
-    <component base="northEastArrow" xScale="-1" yScale="-1" xOffset="900" yOffset="700"/>
+    <contour>
+      <point x="516" y="764" type="line"/>
+      <point x="-458" y="-208" type="line"/>
+      <point x="-458" y="264" type="line"/>
+      <point x="-738" y="264" type="line"/>
+      <point x="-740" y="-700" type="line"/>
+      <point x="224" y="-700" type="line"/>
+      <point x="224" y="-420" type="line"/>
+      <point x="-250" y="-420" type="line"/>
+      <point x="726" y="554" type="line"/>
+    </contour>
   </outline>
 </glyph>

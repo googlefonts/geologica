@@ -1,7 +1,20 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="lessequal" format="2">
   <outline>
-    <component base="less" yOffset="105"/>
-    <component base="minus" yOffset="-275"/>
+    <contour>
+      <point x="1134" y="197" type="line"/>
+      <point x="1236" y="453" type="line"/>
+      <point x="508" y="733" type="line"/>
+      <point x="1236" y="1015" type="line"/>
+      <point x="1136" y="1271" type="line"/>
+      <point x="68" y="849" type="line"/>
+      <point x="68" y="619" type="line"/>
+    </contour>
+    <contour>
+      <point x="68" y="261" type="line"/>
+      <point x="1228" y="261" type="line"/>
+      <point x="1228" y="529" type="line"/>
+      <point x="68" y="529" type="line"/>
+    </contour>
   </outline>
 </glyph>

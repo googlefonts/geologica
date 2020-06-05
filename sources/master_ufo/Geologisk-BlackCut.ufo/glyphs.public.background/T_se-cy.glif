@@ -1,7 +1,23 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Tse-cy" format="2">
   <outline>
-    <component base="_part.Tse-cy"/>
-    <component base="_part.cy-desc-uc" xOffset="794"/>
+    <contour>
+      <point x="156" y="0" type="line"/>
+      <point x="1432" y="0" type="line"/>
+      <point x="1432" y="1400" type="line"/>
+      <point x="1028" y="1400" type="line"/>
+      <point x="1028" y="368" type="line"/>
+      <point x="560" y="368" type="line"/>
+      <point x="560" y="1400" type="line"/>
+      <point x="156" y="1400" type="line"/>
+    </contour>
+    <contour>
+      <point x="478" y="-440" type="line"/>
+      <point x="862" y="-260" type="line"/>
+      <point x="862" y="368" type="line"/>
+      <point x="378" y="368" type="line"/>
+      <point x="378" y="0" type="line"/>
+      <point x="478" y="0" type="line"/>
+    </contour>
   </outline>
 </glyph>

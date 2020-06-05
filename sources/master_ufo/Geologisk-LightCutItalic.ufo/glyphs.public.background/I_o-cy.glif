@@ -1,7 +1,47 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Io-cy" format="2">
   <outline>
-    <component base="Ie-cy"/>
-    <component base="dieresiscomb.case" xOffset="781" yOffset="1"/>
+    <contour>
+      <point x="100" y="0" type="line"/>
+      <point x="918" y="0" type="line"/>
+      <point x="964" y="108" type="line"/>
+      <point x="238" y="108" type="line"/>
+      <point x="362" y="688" type="line"/>
+      <point x="990" y="688" type="line"/>
+      <point x="1012" y="796" type="line"/>
+      <point x="384" y="796" type="line"/>
+      <point x="490" y="1292" type="line"/>
+      <point x="1198" y="1292" type="line"/>
+      <point x="1220" y="1400" type="line"/>
+      <point x="396" y="1400" type="line"/>
+    </contour>
+    <contour>
+      <point x="-103" y="1585" type="curve" smooth="yes"/>
+      <point x="-49" y="1585"/>
+      <point x="5" y="1631"/>
+      <point x="5" y="1683" type="curve" smooth="yes"/>
+      <point x="5" y="1731"/>
+      <point x="-37" y="1767"/>
+      <point x="-83" y="1767" type="curve" smooth="yes"/>
+      <point x="-137" y="1767"/>
+      <point x="-191" y="1721"/>
+      <point x="-191" y="1669" type="curve" smooth="yes"/>
+      <point x="-191" y="1625"/>
+      <point x="-153" y="1585"/>
+    </contour>
+    <contour>
+      <point x="231" y="1585" type="curve" smooth="yes"/>
+      <point x="285" y="1585"/>
+      <point x="339" y="1631"/>
+      <point x="339" y="1683" type="curve" smooth="yes"/>
+      <point x="339" y="1729"/>
+      <point x="299" y="1767"/>
+      <point x="251" y="1767" type="curve" smooth="yes"/>
+      <point x="195" y="1767"/>
+      <point x="143" y="1721"/>
+      <point x="143" y="1669" type="curve" smooth="yes"/>
+      <point x="143" y="1625"/>
+      <point x="181" y="1585"/>
+    </contour>
   </outline>
 </glyph>

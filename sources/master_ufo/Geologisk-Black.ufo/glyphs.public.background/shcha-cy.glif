@@ -9,6 +9,19 @@
       <point x="1944" y="312" type="line"/>
       <point x="1580" y="312" type="line"/>
     </contour>
-    <component base="sha-cy"/>
+    <contour>
+      <point x="128" y="0" type="line"/>
+      <point x="1780" y="0" type="line"/>
+      <point x="1780" y="1040" type="line"/>
+      <point x="1400" y="1040" type="line"/>
+      <point x="1400" y="312" type="line"/>
+      <point x="1144" y="312" type="line"/>
+      <point x="1144" y="1040" type="line"/>
+      <point x="764" y="1040" type="line"/>
+      <point x="764" y="312" type="line"/>
+      <point x="508" y="312" type="line"/>
+      <point x="508" y="1040" type="line"/>
+      <point x="128" y="1040" type="line"/>
+    </contour>
   </outline>
 </glyph>

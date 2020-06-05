@@ -1,7 +1,39 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Oacute" format="2">
   <outline>
-    <component base="O"/>
-    <component base="acutecomb.case" xOffset="834"/>
+    <contour>
+      <point x="834" y="-30" type="curve" smooth="yes"/>
+      <point x="1270" y="-30"/>
+      <point x="1588" y="286"/>
+      <point x="1588" y="700" type="curve" smooth="yes"/>
+      <point x="1588" y="1108"/>
+      <point x="1270" y="1430"/>
+      <point x="834" y="1430" type="curve" smooth="yes"/>
+      <point x="396" y="1430"/>
+      <point x="80" y="1116"/>
+      <point x="80" y="700" type="curve" smooth="yes"/>
+      <point x="80" y="286"/>
+      <point x="396" y="-30"/>
+    </contour>
+    <contour>
+      <point x="834" y="348" type="curve" smooth="yes"/>
+      <point x="640" y="348"/>
+      <point x="504" y="484"/>
+      <point x="504" y="700" type="curve" smooth="yes"/>
+      <point x="504" y="916"/>
+      <point x="640" y="1052"/>
+      <point x="834" y="1052" type="curve" smooth="yes"/>
+      <point x="1028" y="1052"/>
+      <point x="1164" y="916"/>
+      <point x="1164" y="700" type="curve" smooth="yes"/>
+      <point x="1164" y="484"/>
+      <point x="1028" y="348"/>
+    </contour>
+    <contour>
+      <point x="-208" y="1508" type="line"/>
+      <point x="168" y="1508" type="line"/>
+      <point x="408" y="1862" type="line"/>
+      <point x="-6" y="1862" type="line"/>
+    </contour>
   </outline>
 </glyph>

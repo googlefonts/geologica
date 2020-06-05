@@ -1,7 +1,23 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Iigrave-cy" format="2">
   <outline>
-    <component base="Ii-cy"/>
-    <component base="gravecomb.case" xOffset="758" yOffset="1"/>
+    <contour>
+      <point x="200" y="0" type="line"/>
+      <point x="300" y="0" type="line"/>
+      <point x="1136" y="1196" type="line"/>
+      <point x="1136" y="0" type="line"/>
+      <point x="1252" y="0" type="line"/>
+      <point x="1252" y="1400" type="line"/>
+      <point x="1150" y="1400" type="line"/>
+      <point x="316" y="208" type="line"/>
+      <point x="316" y="1400" type="line"/>
+      <point x="200" y="1400" type="line"/>
+    </contour>
+    <contour>
+      <point x="-62" y="1593" type="line"/>
+      <point x="50" y="1593" type="line"/>
+      <point x="-138" y="1905" type="line"/>
+      <point x="-264" y="1905" type="line"/>
+    </contour>
   </outline>
 </glyph>

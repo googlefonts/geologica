@@ -1,6 +1,27 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="u-cy" format="2">
   <outline>
-    <component base="y"/>
+    <contour>
+      <point x="30" y="-450" type="curve" smooth="yes"/>
+      <point x="152" y="-450"/>
+      <point x="244" y="-394"/>
+      <point x="352" y="-204" type="curve" smooth="yes"/>
+      <point x="1006" y="960" type="line"/>
+      <point x="884" y="960" type="line"/>
+      <point x="398" y="94" type="line"/>
+      <point x="248" y="960" type="line"/>
+      <point x="124" y="960" type="line"/>
+      <point x="306" y="-58" type="line"/>
+      <point x="240" y="-186" type="line" smooth="yes"/>
+      <point x="186" y="-288"/>
+      <point x="132" y="-342"/>
+      <point x="30" y="-342" type="curve" smooth="yes"/>
+      <point x="-20" y="-342"/>
+      <point x="-80" y="-322"/>
+      <point x="-120" y="-276" type="curve"/>
+      <point x="-146" y="-396" type="line"/>
+      <point x="-84" y="-444"/>
+      <point x="-29" y="-450"/>
+    </contour>
   </outline>
 </glyph>

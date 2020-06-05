@@ -1,7 +1,63 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Zhedieresis-cy" format="2">
   <outline>
-    <component base="Zhe-cy"/>
-    <component base="dieresiscomb.case" xOffset="873" yOffset="1"/>
+    <contour>
+      <point x="1682" y="0" type="line"/>
+      <point x="1832" y="0" type="line"/>
+      <point x="1298" y="756" type="line"/>
+      <point x="1754" y="1400" type="line"/>
+      <point x="1616" y="1400" type="line"/>
+      <point x="1158" y="754" type="line"/>
+    </contour>
+    <contour>
+      <point x="78" y="0" type="line"/>
+      <point x="224" y="0" type="line"/>
+      <point x="750" y="756" type="line"/>
+      <point x="300" y="1400" type="line"/>
+      <point x="158" y="1400" type="line"/>
+      <point x="610" y="752" type="line"/>
+    </contour>
+    <contour>
+      <point x="898" y="0" type="line"/>
+      <point x="1014" y="0" type="line"/>
+      <point x="1014" y="698" type="line"/>
+      <point x="1242" y="698" type="line"/>
+      <point x="1242" y="806" type="line"/>
+      <point x="1014" y="806" type="line"/>
+      <point x="1014" y="1400" type="line"/>
+      <point x="898" y="1400" type="line"/>
+      <point x="898" y="806" type="line"/>
+      <point x="668" y="806" type="line"/>
+      <point x="668" y="698" type="line"/>
+      <point x="898" y="698" type="line"/>
+    </contour>
+    <contour>
+      <point x="-83" y="1585" type="curve" smooth="yes"/>
+      <point x="-29" y="1585"/>
+      <point x="13" y="1627"/>
+      <point x="13" y="1677" type="curve" smooth="yes"/>
+      <point x="13" y="1727"/>
+      <point x="-31" y="1767"/>
+      <point x="-83" y="1767" type="curve" smooth="yes"/>
+      <point x="-135" y="1767"/>
+      <point x="-179" y="1727"/>
+      <point x="-179" y="1677" type="curve" smooth="yes"/>
+      <point x="-179" y="1627"/>
+      <point x="-137" y="1585"/>
+    </contour>
+    <contour>
+      <point x="251" y="1585" type="curve" smooth="yes"/>
+      <point x="303" y="1585"/>
+      <point x="347" y="1627"/>
+      <point x="347" y="1677" type="curve" smooth="yes"/>
+      <point x="347" y="1727"/>
+      <point x="303" y="1767"/>
+      <point x="251" y="1767" type="curve" smooth="yes"/>
+      <point x="197" y="1767"/>
+      <point x="155" y="1725"/>
+      <point x="155" y="1677" type="curve" smooth="yes"/>
+      <point x="155" y="1627"/>
+      <point x="197" y="1585"/>
+    </contour>
   </outline>
 </glyph>

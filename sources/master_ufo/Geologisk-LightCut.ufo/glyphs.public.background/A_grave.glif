@@ -1,7 +1,26 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Agrave" format="2">
   <outline>
-    <component base="A"/>
-    <component base="gravecomb.case" xOffset="744"/>
+    <contour>
+      <point x="36" y="0" type="line"/>
+      <point x="162" y="0" type="line"/>
+      <point x="314" y="384" type="line"/>
+      <point x="998" y="384" type="line"/>
+      <point x="1158" y="0" type="line"/>
+      <point x="1288" y="0" type="line"/>
+      <point x="700" y="1400" type="line"/>
+      <point x="600" y="1400" type="line"/>
+    </contour>
+    <contour>
+      <point x="356" y="492" type="line"/>
+      <point x="646" y="1228" type="line"/>
+      <point x="954" y="492" type="line"/>
+    </contour>
+    <contour>
+      <point x="-76" y="1592" type="line"/>
+      <point x="36" y="1592" type="line"/>
+      <point x="-152" y="1904" type="line"/>
+      <point x="-278" y="1904" type="line"/>
+    </contour>
   </outline>
 </glyph>

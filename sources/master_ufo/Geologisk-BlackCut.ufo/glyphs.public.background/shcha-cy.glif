@@ -1,7 +1,27 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="shcha-cy" format="2">
   <outline>
-    <component base="sha-cy"/>
-    <component base="_part.cy-desc-uc" xOffset="908"/>
+    <contour>
+      <point x="128" y="0" type="line"/>
+      <point x="1780" y="0" type="line"/>
+      <point x="1780" y="1100" type="line"/>
+      <point x="1400" y="924" type="line"/>
+      <point x="1400" y="312" type="line"/>
+      <point x="1144" y="312" type="line"/>
+      <point x="1144" y="1100" type="line"/>
+      <point x="764" y="924" type="line"/>
+      <point x="764" y="312" type="line"/>
+      <point x="508" y="312" type="line"/>
+      <point x="508" y="1100" type="line"/>
+      <point x="128" y="924" type="line"/>
+    </contour>
+    <contour>
+      <point x="592" y="-440" type="line"/>
+      <point x="976" y="-260" type="line"/>
+      <point x="976" y="368" type="line"/>
+      <point x="492" y="368" type="line"/>
+      <point x="492" y="0" type="line"/>
+      <point x="592" y="0" type="line"/>
+    </contour>
   </outline>
 </glyph>

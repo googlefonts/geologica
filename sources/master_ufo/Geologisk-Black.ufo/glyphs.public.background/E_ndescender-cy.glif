@@ -1,7 +1,27 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Endescender-cy" format="2">
   <outline>
-    <component base="En-cy"/>
-    <component base="_part.cy-desc-uc-stem" xOffset="708"/>
+    <contour>
+      <point x="156" y="0" type="line"/>
+      <point x="560" y="0" type="line"/>
+      <point x="560" y="538" type="line"/>
+      <point x="1028" y="538" type="line"/>
+      <point x="1028" y="0" type="line"/>
+      <point x="1432" y="0" type="line"/>
+      <point x="1432" y="1400" type="line"/>
+      <point x="1028" y="1400" type="line"/>
+      <point x="1028" y="906" type="line"/>
+      <point x="560" y="906" type="line"/>
+      <point x="560" y="1400" type="line"/>
+      <point x="156" y="1400" type="line"/>
+    </contour>
+    <contour>
+      <point x="392" y="-350" type="line"/>
+      <point x="776" y="-350" type="line"/>
+      <point x="776" y="368" type="line"/>
+      <point x="292" y="368" type="line"/>
+      <point x="292" y="0" type="line"/>
+      <point x="392" y="0" type="line"/>
+    </contour>
   </outline>
 </glyph>
