@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="shha-cy" format="2">
-  <advance width="1156"/>
+  <advance width="1155"/>
   <unicode hex="04BB"/>
   <anchor x="496" y="1204" name="bar"/>
   <anchor x="432" y="1440" name="top"/>

@@ -689,8 +689,9 @@
     </array>
     <key>com.schriftgestaltung.customParameter.GSFont.DisplayStrings</key>
     <array>
-      <string>/_part.currencyVertDiag/_part.currencyVertDiagAdjusted/colonsign</string>
-      <string>/Ge-cy/O-cy/Er-cy/Be-cy/A-cy/Te-cy/O-cy/Iishort-cy  /Ge-cy/Er-cy/Ii-cy/Ve-cy/A-cy/Em-cy/Ii-cy  /De-cy/Ve-cy/Ii-cy/Ge-cy/A-cy/Ve-cy/Sha-cy/A-cy/Ia-cy/Es-cy/Ia-cy  /De-cy/O-cy/Ge-cy/A-cy/De-cy/A-cy/Ve-cy/Sha-cy/Ii-cy/Es-cy/Softsign-cy  /En-cy/Ie-cy/Er-cy/Ie-cy/A-cy/El-cy/Softsign-cy/En-cy/Yeru-cy/Iishort-cy  /En-cy/O-cy/Zhe-cy/A-cy/Em-cy/Ii-cy  /O-cy/Be-cy/Ve-cy/Ia-cy/Ze-cy/A-cy/En-cy/En-cy/Yeru-cy/Iishort-cy  /O-cy/Ef-cy/Ii-cy/Tse-cy/Ii-cy/A-cy/El-cy/Softsign-cy/En-cy/O-cy  /Pe-cy/A-cy/El-cy/Ka-cy/A-cy/Em-cy/Ii-cy  /Pe-cy/A-cy/Es-cy/El-cy/A-cy/Es-cy/Softsign-cy  /Pe-cy/El-cy/Iu-cy/Em-cy/A-cy/Zhe-cy/Ii-cy  /Pe-cy/O-cy/Ge-cy/En-cy/A-cy/El-cy/Es-cy/Ia-cy  /Ka-cy/El-cy/O-cy/A-cy/Ka-cy/A-cy  /Ka-cy/O-cy/Em-cy/Pe-cy/A-cy/En-cy/Ii-cy/Ie-cy/Iishort-cy  /Ka-cy/O-cy/En-cy/Te-cy/Er-cy/A-cy/Es-cy/Te-cy/U-cy  /Ka-cy/U-cy/Es-cy/A-cy/Ie-cy/Te-cy  /Ka-cy/U-cy/Es-cy/Te-cy/A-cy/Em-cy/Ii-cy  /Ve-cy/U-cy/A-cy/El-cy/Softsign-cy  /Sha-cy/A-cy/Er-cy/Ef-cy/A-cy/Em-cy/Ii-cy  /Be-cy/Ie-cy/Ze-cy/De-cy/Yeru-cy/Ha-cy/A-cy/En-cy/En-cy/O-cy/Ie-cy  /Be-cy/Er-cy/Ia-cy/Tse-cy/A-cy/Iu-cy/Shcha-cy/Ii-cy/Ie-cy  /Be-cy/U-cy/Er-cy/Che-cy/A-cy/En-cy/Ii-cy/Ia-cy  /Ve-cy/Em-cy/Ie-cy/Sha-cy/A-cy/El-cy/Es-cy/Ia-cy  /Ve-cy/Er-cy/A-cy/Shcha-cy/A-cy/Ia-cy/Es-cy/Softsign-cy</string>
+      <string>/schwa e/es-cy</string>
+      <string>/hadescender-cy 
+</string>
     </array>
     <key>com.schriftgestaltung.customParameter.GSFont.Family Alignment Zones</key>
     <array>
@@ -1467,8 +1468,6 @@
       <string>seven</string>
       <string>eight</string>
       <string>nine</string>
-      <string>six.ss02</string>
-      <string>nine.ss02</string>
       <string>zero.tnum</string>
       <string>one.tnum</string>
       <string>two.tnum</string>
@@ -1479,6 +1478,8 @@
       <string>seven.tnum</string>
       <string>eight.tnum</string>
       <string>nine.tnum</string>
+      <string>six.ss02</string>
+      <string>nine.ss02</string>
       <string>onesuperior</string>
       <string>twosuperior</string>
       <string>threesuperior</string>
@@ -2800,8 +2801,10 @@
       <string>_part.won</string>
       <string>four.dnom</string>
       <string>four.numr</string>
+      <string>nine.ss02</string>
       <string>one.dnom</string>
       <string>one.numr</string>
+      <string>six.ss02</string>
       <string>three.dnom</string>
       <string>three.numr</string>
       <string>two.dnom</string>

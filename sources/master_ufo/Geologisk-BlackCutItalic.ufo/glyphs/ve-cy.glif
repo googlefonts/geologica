@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="ve-cy" format="2">
-  <advance width="1204"/>
+  <advance width="1210"/>
   <unicode hex="0432"/>
   <guideline x="116" y="457" angle="78.0166"/>
   <outline>
@@ -48,7 +48,7 @@
       <key>com.schriftgestaltung.Glyphs.glyph.leftMetricsKey</key>
       <string>n</string>
       <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
-      <string>=B*0.9</string>
+      <string>B</string>
       <key>public.markColor</key>
       <string>0.67,0.95,0.38,1</string>
     </dict>

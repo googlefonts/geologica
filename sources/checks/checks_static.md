@@ -303,38 +303,38 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni20A6	Contours detected: 2	Expected: 1, 3 or 5
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni20A6	Contours detected: 2	Expected: 1, 3 or 5
 Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1 [code: contour-count]
+Glyph name: ohorn	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -1374,10 +1374,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/Geologisk-Black.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 85.5kb |
-	| Hinted Size | 115.2kb |
+	| Dehinted Size | 86.7kb |
+	| Hinted Size | 116.3kb |
 	| Increase | 29.6kb |
-	| Change   | 34.7 % |
+	| Change   | 34.2 % |
  [code: size-impact]
 
 </details>
@@ -1469,7 +1469,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, GSUB, prep, cvt , gasp, GPOS, fpgm, DSIG]
+* ℹ **INFO** This font contains the following optional tables [DSIG, loca, cvt , fpgm, prep, GSUB, gasp, GPOS]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -2739,38 +2739,38 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni20A6	Contours detected: 2	Expected: 1, 3 or 5
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni20A6	Contours detected: 2	Expected: 1, 3 or 5
 Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1 [code: contour-count]
+Glyph name: ohorn	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -3810,10 +3810,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/Geologisk-BlackItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 87.3kb |
-	| Hinted Size | 117.4kb |
+	| Dehinted Size | 88.5kb |
+	| Hinted Size | 118.6kb |
 	| Increase | 30.1kb |
-	| Change   | 34.4 % |
+	| Change   | 34.0 % |
  [code: size-impact]
 
 </details>
@@ -3905,7 +3905,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, GSUB, prep, cvt , gasp, GPOS, fpgm, DSIG]
+* ℹ **INFO** This font contains the following optional tables [DSIG, loca, cvt , fpgm, prep, GSUB, gasp, GPOS]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -5175,38 +5175,38 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: eogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1 [code: contour-count]
+Glyph name: ohorn	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -6246,10 +6246,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/Geologisk-Bold.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 85.6kb |
-	| Hinted Size | 117.0kb |
+	| Dehinted Size | 86.8kb |
+	| Hinted Size | 118.2kb |
 	| Increase | 31.3kb |
-	| Change   | 36.6 % |
+	| Change   | 36.1 % |
  [code: size-impact]
 
 </details>
@@ -6341,7 +6341,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, GSUB, prep, cvt , gasp, GPOS, fpgm, DSIG]
+* ℹ **INFO** This font contains the following optional tables [DSIG, loca, cvt , fpgm, prep, GSUB, gasp, GPOS]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -7611,38 +7611,38 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: eogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1 [code: contour-count]
+Glyph name: ohorn	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -8682,10 +8682,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/Geologisk-BoldItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 87.3kb |
-	| Hinted Size | 118.2kb |
+	| Dehinted Size | 88.5kb |
+	| Hinted Size | 119.4kb |
 	| Increase | 30.9kb |
-	| Change   | 35.5 % |
+	| Change   | 35.0 % |
  [code: size-impact]
 
 </details>
@@ -8777,7 +8777,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, GSUB, prep, cvt , gasp, GPOS, fpgm, DSIG]
+* ℹ **INFO** This font contains the following optional tables [DSIG, loca, cvt , fpgm, prep, GSUB, gasp, GPOS]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -10046,37 +10046,37 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1 [code: contour-count]
+Glyph name: ohorn	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -11116,10 +11116,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/Geologisk-ExtraBold.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 85.7kb |
-	| Hinted Size | 126.5kb |
+	| Dehinted Size | 86.9kb |
+	| Hinted Size | 127.7kb |
 	| Increase | 40.8kb |
-	| Change   | 47.6 % |
+	| Change   | 47.0 % |
  [code: size-impact]
 
 </details>
@@ -11211,7 +11211,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, GSUB, prep, cvt , gasp, GPOS, fpgm, DSIG]
+* ℹ **INFO** This font contains the following optional tables [DSIG, loca, cvt , fpgm, prep, GSUB, gasp, GPOS]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -12480,37 +12480,37 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1 [code: contour-count]
+Glyph name: ohorn	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -13550,10 +13550,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/Geologisk-ExtraBoldItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 87.5kb |
-	| Hinted Size | 128.4kb |
+	| Dehinted Size | 88.7kb |
+	| Hinted Size | 129.6kb |
 	| Increase | 40.9kb |
-	| Change   | 46.8 % |
+	| Change   | 46.1 % |
  [code: size-impact]
 
 </details>
@@ -13645,7 +13645,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, GSUB, prep, cvt , gasp, GPOS, fpgm, DSIG]
+* ℹ **INFO** This font contains the following optional tables [DSIG, loca, cvt , fpgm, prep, GSUB, gasp, GPOS]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -14922,37 +14922,37 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: eogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1 [code: contour-count]
+Glyph name: ohorn	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -15992,10 +15992,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/Geologisk-ExtraLight.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 86.1kb |
-	| Hinted Size | 115.1kb |
+	| Dehinted Size | 87.3kb |
+	| Hinted Size | 116.3kb |
 	| Increase | 29.0kb |
-	| Change   | 33.7 % |
+	| Change   | 33.2 % |
  [code: size-impact]
 
 </details>
@@ -16087,7 +16087,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, GSUB, prep, cvt , gasp, GPOS, fpgm, DSIG]
+* ℹ **INFO** This font contains the following optional tables [DSIG, loca, cvt , fpgm, prep, GSUB, gasp, GPOS]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -17356,37 +17356,37 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: eogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1 [code: contour-count]
+Glyph name: ohorn	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -18426,10 +18426,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/Geologisk-ExtraLightItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 87.6kb |
-	| Hinted Size | 117.2kb |
+	| Dehinted Size | 88.8kb |
+	| Hinted Size | 118.4kb |
 	| Increase | 29.6kb |
-	| Change   | 33.7 % |
+	| Change   | 33.3 % |
  [code: size-impact]
 
 </details>
@@ -18521,7 +18521,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, GSUB, prep, cvt , gasp, GPOS, fpgm, DSIG]
+* ℹ **INFO** This font contains the following optional tables [DSIG, loca, cvt , fpgm, prep, GSUB, gasp, GPOS]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -19782,37 +19782,37 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: eogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1 [code: contour-count]
+Glyph name: ohorn	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -20852,10 +20852,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/Geologisk-Italic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 87.1kb |
-	| Hinted Size | 128.7kb |
-	| Increase | 41.5kb |
-	| Change   | 47.7 % |
+	| Dehinted Size | 88.3kb |
+	| Hinted Size | 129.8kb |
+	| Increase | 41.6kb |
+	| Change   | 47.1 % |
  [code: size-impact]
 
 </details>
@@ -20947,7 +20947,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, GSUB, prep, cvt , gasp, GPOS, fpgm, DSIG]
+* ℹ **INFO** This font contains the following optional tables [DSIG, loca, cvt , fpgm, prep, GSUB, gasp, GPOS]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -22216,37 +22216,37 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: eogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1 [code: contour-count]
+Glyph name: ohorn	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -23286,10 +23286,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/Geologisk-Light.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 85.6kb |
-	| Hinted Size | 114.9kb |
+	| Dehinted Size | 86.7kb |
+	| Hinted Size | 116.1kb |
 	| Increase | 29.4kb |
-	| Change   | 34.3 % |
+	| Change   | 33.8 % |
  [code: size-impact]
 
 </details>
@@ -23381,7 +23381,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, GSUB, prep, cvt , gasp, GPOS, fpgm, DSIG]
+* ℹ **INFO** This font contains the following optional tables [DSIG, loca, cvt , fpgm, prep, GSUB, gasp, GPOS]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -24650,37 +24650,37 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: eogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1 [code: contour-count]
+Glyph name: ohorn	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -25720,10 +25720,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/Geologisk-LightItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 87.3kb |
-	| Hinted Size | 117.0kb |
+	| Dehinted Size | 88.5kb |
+	| Hinted Size | 118.2kb |
 	| Increase | 29.7kb |
-	| Change   | 34.0 % |
+	| Change   | 33.5 % |
  [code: size-impact]
 
 </details>
@@ -25815,7 +25815,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, GSUB, prep, cvt , gasp, GPOS, fpgm, DSIG]
+* ℹ **INFO** This font contains the following optional tables [DSIG, loca, cvt , fpgm, prep, GSUB, gasp, GPOS]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -27084,37 +27084,37 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: eogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1 [code: contour-count]
+Glyph name: ohorn	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -28154,10 +28154,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/Geologisk-Medium.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 85.6kb |
-	| Hinted Size | 116.1kb |
+	| Dehinted Size | 86.8kb |
+	| Hinted Size | 117.3kb |
 	| Increase | 30.6kb |
-	| Change   | 35.7 % |
+	| Change   | 35.2 % |
  [code: size-impact]
 
 </details>
@@ -28249,7 +28249,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, GSUB, prep, cvt , gasp, GPOS, fpgm, DSIG]
+* ℹ **INFO** This font contains the following optional tables [DSIG, loca, cvt , fpgm, prep, GSUB, gasp, GPOS]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -29518,37 +29518,37 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: eogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1 [code: contour-count]
+Glyph name: ohorn	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -30588,10 +30588,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/Geologisk-MediumItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 87.3kb |
-	| Hinted Size | 118.0kb |
+	| Dehinted Size | 88.4kb |
+	| Hinted Size | 119.2kb |
 	| Increase | 30.8kb |
-	| Change   | 35.2 % |
+	| Change   | 34.8 % |
  [code: size-impact]
 
 </details>
@@ -30683,7 +30683,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, GSUB, prep, cvt , gasp, GPOS, fpgm, DSIG]
+* ℹ **INFO** This font contains the following optional tables [DSIG, loca, cvt , fpgm, prep, GSUB, gasp, GPOS]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -31952,37 +31952,37 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: eogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1 [code: contour-count]
+Glyph name: ohorn	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -33022,10 +33022,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/Geologisk-Regular.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 85.5kb |
-	| Hinted Size | 126.5kb |
+	| Dehinted Size | 86.6kb |
+	| Hinted Size | 127.7kb |
 	| Increase | 41.0kb |
-	| Change   | 48.0 % |
+	| Change   | 47.3 % |
  [code: size-impact]
 
 </details>
@@ -33117,7 +33117,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, GSUB, prep, cvt , gasp, GPOS, fpgm, DSIG]
+* ℹ **INFO** This font contains the following optional tables [DSIG, loca, cvt , fpgm, prep, GSUB, gasp, GPOS]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -34387,38 +34387,38 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: eogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1 [code: contour-count]
+Glyph name: ohorn	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -35458,10 +35458,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/Geologisk-SemiBold.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 85.6kb |
-	| Hinted Size | 116.3kb |
+	| Dehinted Size | 86.8kb |
+	| Hinted Size | 117.5kb |
 	| Increase | 30.7kb |
-	| Change   | 35.8 % |
+	| Change   | 35.3 % |
  [code: size-impact]
 
 </details>
@@ -35553,7 +35553,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, GSUB, prep, cvt , gasp, GPOS, fpgm, DSIG]
+* ℹ **INFO** This font contains the following optional tables [DSIG, loca, cvt , fpgm, prep, GSUB, gasp, GPOS]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -36823,38 +36823,38 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: eogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1 [code: contour-count]
+Glyph name: ohorn	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -37894,10 +37894,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/Geologisk-SemiBoldItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 87.4kb |
-	| Hinted Size | 118.2kb |
+	| Dehinted Size | 88.5kb |
+	| Hinted Size | 119.3kb |
 	| Increase | 30.8kb |
-	| Change   | 35.2 % |
+	| Change   | 34.8 % |
  [code: size-impact]
 
 </details>
@@ -37989,7 +37989,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, GSUB, prep, cvt , gasp, GPOS, fpgm, DSIG]
+* ℹ **INFO** This font contains the following optional tables [DSIG, loca, cvt , fpgm, prep, GSUB, gasp, GPOS]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -39266,37 +39266,37 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: eogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1 [code: contour-count]
+Glyph name: ohorn	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -40336,10 +40336,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/Geologisk-Thin.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 86.0kb |
-	| Hinted Size | 113.6kb |
+	| Dehinted Size | 87.3kb |
+	| Hinted Size | 115.0kb |
 	| Increase | 27.7kb |
-	| Change   | 32.2 % |
+	| Change   | 31.7 % |
  [code: size-impact]
 
 </details>
@@ -40431,7 +40431,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, GSUB, prep, cvt , gasp, GPOS, fpgm, DSIG]
+* ℹ **INFO** This font contains the following optional tables [DSIG, loca, cvt , fpgm, prep, GSUB, gasp, GPOS]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -41699,36 +41699,36 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1 [code: contour-count]
+Glyph name: ohorn	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -42768,10 +42768,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/Geologisk-ThinItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 87.5kb |
-	| Hinted Size | 115.8kb |
+	| Dehinted Size | 88.6kb |
+	| Hinted Size | 117.0kb |
 	| Increase | 28.3kb |
-	| Change   | 32.4 % |
+	| Change   | 32.0 % |
  [code: size-impact]
 
 </details>
@@ -42863,7 +42863,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, GSUB, prep, cvt , gasp, GPOS, fpgm, DSIG]
+* ℹ **INFO** This font contains the following optional tables [DSIG, loca, cvt , fpgm, prep, GSUB, gasp, GPOS]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -44126,39 +44126,39 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni20A6	Contours detected: 2	Expected: 1, 3 or 5
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: eogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni20A6	Contours detected: 2	Expected: 1, 3 or 5
 Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1 [code: contour-count]
+Glyph name: ohorn	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -45198,10 +45198,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/GeologiskCut-Black.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 85.2kb |
-	| Hinted Size | 114.6kb |
+	| Dehinted Size | 86.5kb |
+	| Hinted Size | 115.9kb |
 	| Increase | 29.3kb |
-	| Change   | 34.4 % |
+	| Change   | 33.9 % |
  [code: size-impact]
 
 </details>
@@ -45293,7 +45293,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, GSUB, prep, cvt , gasp, GPOS, fpgm, DSIG]
+* ℹ **INFO** This font contains the following optional tables [DSIG, loca, cvt , fpgm, prep, GSUB, gasp, GPOS]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -46564,39 +46564,39 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni20A6	Contours detected: 2	Expected: 1, 3 or 5
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: eogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni20A6	Contours detected: 2	Expected: 1, 3 or 5
 Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1 [code: contour-count]
+Glyph name: ohorn	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -47636,10 +47636,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/GeologiskCut-BlackItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 87.1kb |
-	| Hinted Size | 116.3kb |
+	| Dehinted Size | 88.4kb |
+	| Hinted Size | 117.6kb |
 	| Increase | 29.2kb |
-	| Change   | 33.5 % |
+	| Change   | 33.0 % |
  [code: size-impact]
 
 </details>
@@ -47731,7 +47731,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, GSUB, prep, cvt , gasp, GPOS, fpgm, DSIG]
+* ℹ **INFO** This font contains the following optional tables [DSIG, loca, cvt , fpgm, prep, GSUB, gasp, GPOS]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -49001,38 +49001,38 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: eogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1 [code: contour-count]
+Glyph name: ohorn	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -50072,10 +50072,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/GeologiskCut-Bold.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 85.7kb |
-	| Hinted Size | 120.9kb |
+	| Dehinted Size | 87.0kb |
+	| Hinted Size | 122.2kb |
 	| Increase | 35.2kb |
-	| Change   | 41.1 % |
+	| Change   | 40.5 % |
  [code: size-impact]
 
 </details>
@@ -50167,7 +50167,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, GSUB, prep, cvt , gasp, GPOS, fpgm, DSIG]
+* ℹ **INFO** This font contains the following optional tables [DSIG, loca, cvt , fpgm, prep, GSUB, gasp, GPOS]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -51437,38 +51437,38 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: eogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1 [code: contour-count]
+Glyph name: ohorn	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -52508,10 +52508,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/GeologiskCut-BoldItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 87.4kb |
-	| Hinted Size | 121.9kb |
-	| Increase | 34.6kb |
-	| Change   | 39.6 % |
+	| Dehinted Size | 88.7kb |
+	| Hinted Size | 123.2kb |
+	| Increase | 34.5kb |
+	| Change   | 39.0 % |
  [code: size-impact]
 
 </details>
@@ -52603,7 +52603,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, GSUB, prep, cvt , gasp, GPOS, fpgm, DSIG]
+* ℹ **INFO** This font contains the following optional tables [DSIG, loca, cvt , fpgm, prep, GSUB, gasp, GPOS]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -53873,38 +53873,38 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: eogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1 [code: contour-count]
+Glyph name: ohorn	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -54972,10 +54972,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/GeologiskCut-ExtraBold.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 85.7kb |
-	| Hinted Size | 121.3kb |
+	| Dehinted Size | 87.1kb |
+	| Hinted Size | 122.6kb |
 	| Increase | 35.5kb |
-	| Change   | 41.4 % |
+	| Change   | 40.8 % |
  [code: size-impact]
 
 </details>
@@ -55067,7 +55067,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, GSUB, prep, cvt , gasp, GPOS, fpgm, DSIG]
+* ℹ **INFO** This font contains the following optional tables [DSIG, loca, cvt , fpgm, prep, GSUB, gasp, GPOS]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -56312,38 +56312,38 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: eogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1 [code: contour-count]
+Glyph name: ohorn	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -57411,10 +57411,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/GeologiskCut-ExtraBoldItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 87.5kb |
-	| Hinted Size | 122.6kb |
+	| Dehinted Size | 88.9kb |
+	| Hinted Size | 124.0kb |
 	| Increase | 35.1kb |
-	| Change   | 40.1 % |
+	| Change   | 39.5 % |
  [code: size-impact]
 
 </details>
@@ -57506,7 +57506,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, GSUB, prep, cvt , gasp, GPOS, fpgm, DSIG]
+* ℹ **INFO** This font contains the following optional tables [DSIG, loca, cvt , fpgm, prep, GSUB, gasp, GPOS]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -58758,37 +58758,37 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: eogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1 [code: contour-count]
+Glyph name: ohorn	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -59856,10 +59856,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/GeologiskCut-ExtraLight.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 86.1kb |
-	| Hinted Size | 114.3kb |
+	| Dehinted Size | 87.4kb |
+	| Hinted Size | 115.6kb |
 	| Increase | 28.1kb |
-	| Change   | 32.6 % |
+	| Change   | 32.2 % |
  [code: size-impact]
 
 </details>
@@ -59951,7 +59951,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, GSUB, prep, cvt , gasp, GPOS, fpgm, DSIG]
+* ℹ **INFO** This font contains the following optional tables [DSIG, loca, cvt , fpgm, prep, GSUB, gasp, GPOS]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -61194,36 +61194,36 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1 [code: contour-count]
+Glyph name: ohorn	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -62291,10 +62291,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/GeologiskCut-ExtraLightItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 87.7kb |
-	| Hinted Size | 116.0kb |
+	| Dehinted Size | 89.0kb |
+	| Hinted Size | 117.3kb |
 	| Increase | 28.3kb |
-	| Change   | 32.3 % |
+	| Change   | 31.8 % |
  [code: size-impact]
 
 </details>
@@ -62386,7 +62386,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, GSUB, prep, cvt , gasp, GPOS, fpgm, DSIG]
+* ℹ **INFO** This font contains the following optional tables [DSIG, loca, cvt , fpgm, prep, GSUB, gasp, GPOS]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -63621,36 +63621,36 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1 [code: contour-count]
+Glyph name: ohorn	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -64690,10 +64690,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/GeologiskCut-Italic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 87.1kb |
-	| Hinted Size | 127.8kb |
+	| Dehinted Size | 88.5kb |
+	| Hinted Size | 129.1kb |
 	| Increase | 40.7kb |
-	| Change   | 46.7 % |
+	| Change   | 46.0 % |
  [code: size-impact]
 
 </details>
@@ -64785,7 +64785,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, GSUB, prep, cvt , gasp, GPOS, fpgm, DSIG]
+* ℹ **INFO** This font contains the following optional tables [DSIG, loca, cvt , fpgm, prep, GSUB, gasp, GPOS]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -66054,37 +66054,37 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: eogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1 [code: contour-count]
+Glyph name: ohorn	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -67124,10 +67124,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/GeologiskCut-Light.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 85.6kb |
-	| Hinted Size | 119.3kb |
+	| Dehinted Size | 86.9kb |
+	| Hinted Size | 120.7kb |
 	| Increase | 33.7kb |
-	| Change   | 39.4 % |
+	| Change   | 38.8 % |
  [code: size-impact]
 
 </details>
@@ -67219,7 +67219,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, GSUB, prep, cvt , gasp, GPOS, fpgm, DSIG]
+* ℹ **INFO** This font contains the following optional tables [DSIG, loca, cvt , fpgm, prep, GSUB, gasp, GPOS]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -68487,36 +68487,36 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1 [code: contour-count]
+Glyph name: ohorn	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -69556,10 +69556,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/GeologiskCut-LightItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 87.4kb |
-	| Hinted Size | 121.4kb |
+	| Dehinted Size | 88.7kb |
+	| Hinted Size | 122.8kb |
 	| Increase | 34.0kb |
-	| Change   | 38.9 % |
+	| Change   | 38.4 % |
  [code: size-impact]
 
 </details>
@@ -69651,7 +69651,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, GSUB, prep, cvt , gasp, GPOS, fpgm, DSIG]
+* ℹ **INFO** This font contains the following optional tables [DSIG, loca, cvt , fpgm, prep, GSUB, gasp, GPOS]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -70921,37 +70921,37 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: eogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1 [code: contour-count]
+Glyph name: ohorn	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -71991,10 +71991,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/GeologiskCut-Medium.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 85.6kb |
-	| Hinted Size | 115.8kb |
+	| Dehinted Size | 87.0kb |
+	| Hinted Size | 117.2kb |
 	| Increase | 30.2kb |
-	| Change   | 35.3 % |
+	| Change   | 34.7 % |
  [code: size-impact]
 
 </details>
@@ -72086,7 +72086,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, GSUB, prep, cvt , gasp, GPOS, fpgm, DSIG]
+* ℹ **INFO** This font contains the following optional tables [DSIG, loca, cvt , fpgm, prep, GSUB, gasp, GPOS]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -73355,37 +73355,37 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: eogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1 [code: contour-count]
+Glyph name: ohorn	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -74425,10 +74425,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/GeologiskCut-MediumItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 87.4kb |
-	| Hinted Size | 117.8kb |
+	| Dehinted Size | 88.7kb |
+	| Hinted Size | 119.1kb |
 	| Increase | 30.4kb |
-	| Change   | 34.7 % |
+	| Change   | 34.2 % |
  [code: size-impact]
 
 </details>
@@ -74520,7 +74520,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, GSUB, prep, cvt , gasp, GPOS, fpgm, DSIG]
+* ℹ **INFO** This font contains the following optional tables [DSIG, loca, cvt , fpgm, prep, GSUB, gasp, GPOS]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -75790,37 +75790,37 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: eogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1 [code: contour-count]
+Glyph name: ohorn	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -76860,10 +76860,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/GeologiskCut-Regular.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 85.5kb |
-	| Hinted Size | 126.0kb |
+	| Dehinted Size | 86.8kb |
+	| Hinted Size | 127.3kb |
 	| Increase | 40.5kb |
-	| Change   | 47.4 % |
+	| Change   | 46.6 % |
  [code: size-impact]
 
 </details>
@@ -76955,7 +76955,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, GSUB, prep, cvt , gasp, GPOS, fpgm, DSIG]
+* ℹ **INFO** This font contains the following optional tables [DSIG, loca, cvt , fpgm, prep, GSUB, gasp, GPOS]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -78226,38 +78226,38 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: eogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1 [code: contour-count]
+Glyph name: ohorn	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -79325,10 +79325,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/GeologiskCut-SemiBold.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 85.7kb |
-	| Hinted Size | 116.4kb |
+	| Dehinted Size | 87.0kb |
+	| Hinted Size | 117.7kb |
 	| Increase | 30.7kb |
-	| Change   | 35.8 % |
+	| Change   | 35.3 % |
  [code: size-impact]
 
 </details>
@@ -79420,7 +79420,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, GSUB, prep, cvt , gasp, GPOS, fpgm, DSIG]
+* ℹ **INFO** This font contains the following optional tables [DSIG, loca, cvt , fpgm, prep, GSUB, gasp, GPOS]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -80665,38 +80665,38 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: eogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: uogonek	Contours detected: 2	Expected: 1
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1 [code: contour-count]
+Glyph name: ohorn	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -81764,10 +81764,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/GeologiskCut-SemiBoldItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 87.4kb |
-	| Hinted Size | 118.0kb |
+	| Dehinted Size | 88.7kb |
+	| Hinted Size | 119.3kb |
 	| Increase | 30.6kb |
-	| Change   | 35.0 % |
+	| Change   | 34.5 % |
  [code: size-impact]
 
 </details>
@@ -81859,7 +81859,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, GSUB, prep, cvt , gasp, GPOS, fpgm, DSIG]
+* ℹ **INFO** This font contains the following optional tables [DSIG, loca, cvt , fpgm, prep, GSUB, gasp, GPOS]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -83110,36 +83110,36 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1 [code: contour-count]
+Glyph name: ohorn	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -84179,10 +84179,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/GeologiskCut-Thin.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 86.0kb |
-	| Hinted Size | 113.7kb |
+	| Dehinted Size | 87.3kb |
+	| Hinted Size | 115.0kb |
 	| Increase | 27.7kb |
-	| Change   | 32.2 % |
+	| Change   | 31.7 % |
  [code: size-impact]
 
 </details>
@@ -84274,7 +84274,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, GSUB, prep, cvt , gasp, GPOS, fpgm, DSIG]
+* ℹ **INFO** This font contains the following optional tables [DSIG, loca, cvt , fpgm, prep, GSUB, gasp, GPOS]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -85542,36 +85542,36 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1 [code: contour-count]
+Glyph name: ohorn	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -86611,10 +86611,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/GeologiskCut-ThinItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 87.5kb |
-	| Hinted Size | 115.4kb |
+	| Dehinted Size | 88.8kb |
+	| Hinted Size | 116.7kb |
 	| Increase | 27.9kb |
-	| Change   | 31.9 % |
+	| Change   | 31.4 % |
  [code: size-impact]
 
 </details>
@@ -86706,7 +86706,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, GSUB, prep, cvt , gasp, GPOS, fpgm, DSIG]
+* ℹ **INFO** This font contains the following optional tables [DSIG, loca, cvt , fpgm, prep, GSUB, gasp, GPOS]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>

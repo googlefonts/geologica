@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="shcha-cy.loclBGR" format="2">
-  <advance width="1920"/>
-  <anchor x="1528" y="0" name="descender"/>
-  <anchor x="998" y="960" name="top"/>
+  <advance width="1919"/>
+  <anchor x="1527" y="0" name="descender"/>
+  <anchor x="997" y="960" name="top"/>
   <outline>
     <component base="sha-cy.loclBGR"/>
-    <component base="_part.cy-desc-lc" xOffset="558"/>
+    <component base="_part.cy-desc-lc" xOffset="557"/>
   </outline>
   <lib>
     <dict>

@@ -1,14 +1,14 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="pe-cy.loclSRB.ss01" format="2">
-  <advance width="1144"/>
-  <anchor x="556" y="0" name="bottom"/>
-  <anchor x="974" y="0" name="descender"/>
-  <anchor x="974" y="960" name="horn"/>
-  <anchor x="974" y="0" name="ogonek"/>
-  <anchor x="564" y="960" name="top"/>
+  <advance width="1142"/>
+  <anchor x="554" y="0" name="bottom"/>
+  <anchor x="972" y="0" name="descender"/>
+  <anchor x="972" y="960" name="horn"/>
+  <anchor x="972" y="0" name="ogonek"/>
+  <anchor x="562" y="960" name="top"/>
   <outline>
     <component base="u"/>
-    <component base="macroncomb" xOffset="1150"/>
+    <component base="macroncomb" xOffset="1148"/>
   </outline>
   <lib>
     <dict>

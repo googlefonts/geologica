@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="te-cy.loclSRB.ss01" format="2">
-  <advance width="1800"/>
-  <anchor x="1630" y="0" name="descender"/>
-  <anchor x="896" y="960" name="top"/>
+  <advance width="1798"/>
+  <anchor x="1628" y="0" name="descender"/>
+  <anchor x="894" y="960" name="top"/>
   <outline>
     <component base="sha-cy.loclBGR"/>
-    <component base="macroncomb.wide" xOffset="1484"/>
+    <component base="macroncomb.wide" xOffset="1482"/>
   </outline>
   <lib>
     <dict>

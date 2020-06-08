@@ -1,26 +1,26 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="iota" format="2">
-  <advance width="552"/>
+  <advance width="550"/>
   <unicode hex="03B9"/>
-  <anchor x="218" y="960" name="top"/>
+  <anchor x="216" y="960" name="top"/>
   <outline>
     <contour>
-      <point x="370" y="-28" type="curve" smooth="yes"/>
-      <point x="402" y="-28"/>
-      <point x="464" y="-22"/>
-      <point x="498" y="-12" type="curve"/>
-      <point x="498" y="100" type="line"/>
-      <point x="446" y="84"/>
-      <point x="412" y="80"/>
-      <point x="386" y="80" type="curve" smooth="yes"/>
-      <point x="304" y="80"/>
-      <point x="274" y="124"/>
-      <point x="274" y="256" type="curve" smooth="yes"/>
-      <point x="274" y="1000" type="line"/>
-      <point x="162" y="860" type="line"/>
-      <point x="162" y="176" type="line" smooth="yes"/>
-      <point x="162" y="36"/>
-      <point x="258" y="-28"/>
+      <point x="368" y="-28" type="curve" smooth="yes"/>
+      <point x="400" y="-28"/>
+      <point x="462" y="-22"/>
+      <point x="496" y="-12" type="curve"/>
+      <point x="496" y="100" type="line"/>
+      <point x="444" y="84"/>
+      <point x="410" y="80"/>
+      <point x="384" y="80" type="curve" smooth="yes"/>
+      <point x="302" y="80"/>
+      <point x="272" y="124"/>
+      <point x="272" y="256" type="curve" smooth="yes"/>
+      <point x="272" y="1000" type="line"/>
+      <point x="160" y="860" type="line"/>
+      <point x="160" y="176" type="line" smooth="yes"/>
+      <point x="160" y="36"/>
+      <point x="256" y="-28"/>
     </contour>
   </outline>
   <lib>

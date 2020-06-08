@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="hardsign-cy" format="2">
-  <advance width="1392"/>
+  <advance width="1403"/>
   <unicode hex="044A"/>
   <guideline x="312" y="520" angle="180"/>
   <anchor x="624" y="1040" name="top"/>

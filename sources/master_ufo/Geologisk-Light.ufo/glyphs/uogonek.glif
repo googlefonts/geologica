@@ -1,15 +1,15 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="uogonek" format="2">
-  <advance width="1144"/>
+  <advance width="1142"/>
   <unicode hex="0173"/>
-  <anchor x="556" y="0" name="bottom"/>
-  <anchor x="974" y="0" name="descender"/>
-  <anchor x="974" y="960" name="horn"/>
-  <anchor x="974" y="0" name="ogonek"/>
-  <anchor x="564" y="960" name="top"/>
+  <anchor x="554" y="0" name="bottom"/>
+  <anchor x="972" y="0" name="descender"/>
+  <anchor x="972" y="960" name="horn"/>
+  <anchor x="972" y="0" name="ogonek"/>
+  <anchor x="562" y="960" name="top"/>
   <outline>
     <component base="u"/>
-    <component base="_part.ogonek" xOffset="1470"/>
+    <component base="_part.ogonek" xOffset="1468"/>
   </outline>
   <lib>
     <dict>

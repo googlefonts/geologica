@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="etatonos" format="2">
-  <advance width="1368"/>
+  <advance width="1366"/>
   <unicode hex="03AE"/>
   <anchor x="684" y="1040" name="top"/>
   <outline>

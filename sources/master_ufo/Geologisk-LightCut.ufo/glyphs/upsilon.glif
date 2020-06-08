@@ -1,32 +1,32 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="upsilon" format="2">
-  <advance width="1099"/>
+  <advance width="1095"/>
   <unicode hex="03C5"/>
-  <anchor x="510" y="960" name="top"/>
+  <anchor x="508" y="960" name="top"/>
   <outline>
     <contour>
-      <point x="524" y="-30" type="curve" smooth="yes"/>
-      <point x="804" y="-30"/>
-      <point x="952" y="186"/>
-      <point x="952" y="456" type="curve" smooth="yes"/>
-      <point x="952" y="644"/>
-      <point x="903" y="818"/>
-      <point x="811" y="960" type="curve"/>
-      <point x="679" y="960" type="line"/>
-      <point x="779" y="824"/>
-      <point x="832" y="653"/>
-      <point x="832" y="456" type="curve" smooth="yes"/>
-      <point x="832" y="238"/>
-      <point x="735" y="82"/>
-      <point x="522" y="80" type="curve" smooth="yes"/>
-      <point x="370" y="80"/>
-      <point x="274" y="166"/>
-      <point x="274" y="348" type="curve" smooth="yes"/>
-      <point x="274" y="1000" type="line"/>
-      <point x="162" y="860" type="line"/>
-      <point x="162" y="314" type="line" smooth="yes"/>
-      <point x="162" y="128"/>
-      <point x="284" y="-30"/>
+      <point x="522" y="-30" type="curve" smooth="yes"/>
+      <point x="802" y="-30"/>
+      <point x="950" y="186"/>
+      <point x="950" y="456" type="curve" smooth="yes"/>
+      <point x="950" y="644"/>
+      <point x="901" y="818"/>
+      <point x="809" y="960" type="curve"/>
+      <point x="677" y="960" type="line"/>
+      <point x="777" y="824"/>
+      <point x="830" y="653"/>
+      <point x="830" y="456" type="curve" smooth="yes"/>
+      <point x="830" y="238"/>
+      <point x="733" y="82"/>
+      <point x="520" y="80" type="curve" smooth="yes"/>
+      <point x="368" y="80"/>
+      <point x="272" y="166"/>
+      <point x="272" y="348" type="curve" smooth="yes"/>
+      <point x="272" y="1000" type="line"/>
+      <point x="160" y="860" type="line"/>
+      <point x="160" y="314" type="line" smooth="yes"/>
+      <point x="160" y="128"/>
+      <point x="282" y="-30"/>
     </contour>
   </outline>
   <lib>

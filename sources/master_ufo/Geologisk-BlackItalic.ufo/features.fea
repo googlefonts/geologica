@@ -138,8 +138,6 @@ six
 seven
 eight
 nine
-six.ss02
-nine.ss02
 zero.tnum
 one.tnum
 two.tnum
@@ -530,12 +528,6 @@ sub pe-cy.loclSRB by pe-cy.loclSRB.ss01;
 sub te-cy.loclSRB by te-cy.loclSRB.ss01;
 
 } ss01;
-
-feature ss02 {
-# automatic
-sub six by six.ss02;
-sub nine by nine.ss02;
-} ss02;
 
 feature calt {
 lookup grek_anoteleia {

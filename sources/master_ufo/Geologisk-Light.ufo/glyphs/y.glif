@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="y" format="2">
-  <advance width="964"/>
+  <advance width="954"/>
   <unicode hex="0079"/>
   <anchor x="722" y="0" name="bottom"/>
   <anchor x="472" y="960" name="top"/>
@@ -33,7 +33,7 @@
       <key>com.schriftgestaltung.Glyphs.glyph.leftMetricsKey</key>
       <string>=v-20</string>
       <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
-      <string>v</string>
+      <string>=v-10</string>
       <key>public.markColor</key>
       <string>0,0.67,0.91,1</string>
     </dict>

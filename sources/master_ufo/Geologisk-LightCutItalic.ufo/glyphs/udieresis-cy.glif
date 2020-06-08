@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="udieresis-cy" format="2">
-  <advance width="946"/>
+  <advance width="936"/>
   <unicode hex="04F1"/>
   <anchor x="602" y="0" name="bottom"/>
   <anchor x="624" y="1284" name="top"/>

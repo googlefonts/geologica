@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="ytilde" format="2">
-  <advance width="964"/>
+  <advance width="954"/>
   <unicode hex="1EF9"/>
   <anchor x="722" y="0" name="bottom"/>
   <anchor x="472" y="1344" name="top"/>

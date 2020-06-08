@@ -63,14 +63,6 @@
       <sub name="gje-cy.loclMKD" with="gje-cy.loclMKD.ss01"/>
       <sub name="pe-cy.loclSRB" with="pe-cy.loclSRB.ss01"/>
       <sub name="te-cy.loclSRB" with="te-cy.loclSRB.ss01"/>
-
-    </rule>
-    <rule name="ss02">
-      <conditionset>
-        <condition name="Diagonal Cuts" minimum="100" maximum="100"/>
-      </conditionset>
-      <sub name="six" with="six.ss02"/>
-      <sub name="nine" with="nine.ss02"/>
     </rule>
   </rules>
   
@@ -1587,8 +1579,10 @@
         <string>_part.won</string>
         <string>four.dnom</string>
         <string>four.numr</string>
+        <string>nine.ss02</string>
         <string>one.dnom</string>
         <string>one.numr</string>
+        <string>six.ss02</string>
         <string>three.dnom</string>
         <string>three.numr</string>
         <string>two.dnom</string>

@@ -1381,9 +1381,9 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/variable/Geologisk[DIAG,ital,slnt,wght].ttf |
 	|:--- | ---:|
-	| Dehinted Size | 242.1kb |
-	| Hinted Size | 241.6kb |
-	| Increase | -592 bytes |
+	| Dehinted Size | 243.4kb |
+	| Hinted Size | 242.8kb |
+	| Increase | -588 bytes |
 	| Change   | -0.2 % |
  [code: size-impact]
 
@@ -1492,7 +1492,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [DSIG, prep, GPOS, loca, GSUB, gasp]
+* ℹ **INFO** This font contains the following optional tables [DSIG, GPOS, loca, gasp, GSUB, prep]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>

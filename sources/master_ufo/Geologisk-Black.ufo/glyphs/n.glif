@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="n" format="2">
-  <advance width="1368"/>
+  <advance width="1366"/>
   <unicode hex="006E"/>
   <anchor x="688" y="0" name="bottom"/>
   <anchor x="690" y="1040" name="top"/>
@@ -32,6 +32,8 @@
     <dict>
       <key>com.schriftgestaltung.Glyphs.glyph.leftMetricsKey</key>
       <string>l</string>
+      <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
+      <string>=|-10</string>
       <key>public.markColor</key>
       <string>0,0.67,0.91,1</string>
     </dict>

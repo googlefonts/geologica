@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="ghemiddlehook-cy" format="2">
-  <advance width="1044"/>
+  <advance width="1056"/>
   <unicode hex="0495"/>
   <anchor x="342" y="486" name="bar"/>
   <anchor x="282" y="0" name="descender"/>

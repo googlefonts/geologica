@@ -540,10 +540,6 @@
       <string>aie-cy</string>
       <string>aie-cy.ss01</string>
     </array>
-    <key>public.kern1.eaccent</key>
-    <array>
-      <string>io-cy</string>
-    </array>
     <key>public.kern1.eight</key>
     <array>
       <string>eight</string>
@@ -845,7 +841,6 @@
       <string>hcircumflex</string>
       <string>m</string>
       <string>n</string>
-      <string>nacute</string>
       <string>ncommaaccent</string>
       <string>eng</string>
       <string>a-cy</string>
@@ -877,6 +872,7 @@
       <string>aring</string>
       <string>aringacute</string>
       <string>atilde</string>
+      <string>nacute</string>
       <string>ncaron</string>
       <string>ntilde</string>
       <string>abreve-cy</string>
@@ -886,6 +882,9 @@
     <key>public.kern1.nine</key>
     <array>
       <string>nine</string>
+    </array>
+    <key>public.kern1.nine.ss02</key>
+    <array>
       <string>nine.ss02</string>
     </array>
     <key>public.kern1.numbersign</key>
@@ -966,6 +965,7 @@
       <string>otilde</string>
       <string>otildemacron</string>
       <string>be-cy</string>
+      <string>io-cy</string>
       <string>iebreve-cy</string>
       <string>odieresis-cy</string>
       <string>be-cy.loclSRB</string>
@@ -1098,6 +1098,9 @@
     <key>public.kern1.six</key>
     <array>
       <string>six</string>
+    </array>
+    <key>public.kern1.six.ss02</key>
+    <array>
       <string>six.ss02</string>
     </array>
     <key>public.kern1.slash</key>
@@ -2226,6 +2229,9 @@
     <key>public.kern2.nine</key>
     <array>
       <string>nine</string>
+    </array>
+    <key>public.kern2.nine.ss02</key>
+    <array>
       <string>nine.ss02</string>
     </array>
     <key>public.kern2.numbersign</key>
@@ -2462,6 +2468,9 @@
     <key>public.kern2.six</key>
     <array>
       <string>six</string>
+    </array>
+    <key>public.kern2.six.ss02</key>
+    <array>
       <string>six.ss02</string>
     </array>
     <key>public.kern2.slash</key>

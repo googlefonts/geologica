@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="hadescender-cy" format="2">
-  <advance width="914"/>
+  <advance width="934"/>
   <unicode hex="04B3"/>
   <anchor x="776" y="0" name="descender"/>
   <outline>

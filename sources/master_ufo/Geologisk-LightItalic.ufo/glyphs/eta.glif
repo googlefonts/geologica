@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="eta" format="2">
-  <advance width="1156"/>
+  <advance width="1155"/>
   <unicode hex="03B7"/>
   <anchor x="680" y="960" name="top"/>
   <outline>
