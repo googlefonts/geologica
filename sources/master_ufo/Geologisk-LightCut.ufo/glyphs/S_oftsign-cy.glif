@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Softsign-cy" format="2">
-  <advance width="1230"/>
+  <advance width="1220"/>
   <unicode hex="042C"/>
   <anchor x="258" y="1090" name="bar"/>
   <outline>
@@ -34,7 +34,7 @@
       <key>com.schriftgestaltung.Glyphs.glyph.leftMetricsKey</key>
       <string>H</string>
       <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
-      <string>=o+20</string>
+      <string>P</string>
       <key>public.markColor</key>
       <string>0.67,0.95,0.38,1</string>
     </dict>

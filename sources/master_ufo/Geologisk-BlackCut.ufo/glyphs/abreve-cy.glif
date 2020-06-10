@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="abreve-cy" format="2">
-  <advance width="1211"/>
+  <advance width="1203"/>
   <unicode hex="04D1"/>
-  <anchor x="578" y="0" name="bottom"/>
-  <anchor x="1096" y="0" name="ogonek"/>
-  <anchor x="578" y="1040" name="top"/>
+  <anchor x="570" y="0" name="bottom"/>
+  <anchor x="1088" y="0" name="ogonek"/>
+  <anchor x="570" y="1040" name="top"/>
   <outline>
     <component base="a-cy"/>
-    <component base="brevecomb-cy" xOffset="1216"/>
+    <component base="brevecomb-cy" xOffset="1208"/>
   </outline>
   <lib>
     <dict>

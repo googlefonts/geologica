@@ -2,11 +2,11 @@
 <glyph name="zedescender-cy" format="2">
   <advance width="1095"/>
   <unicode hex="0499"/>
-  <anchor x="547" y="0" name="bottom"/>
-  <anchor x="527" y="1040" name="top"/>
+  <anchor x="537" y="0" name="bottom"/>
+  <anchor x="517" y="1040" name="top"/>
   <outline>
     <component base="ze-cy"/>
-    <component base="cedillacomb" xOffset="1205"/>
+    <component base="cedillacomb" xOffset="1195"/>
   </outline>
   <lib>
     <dict>

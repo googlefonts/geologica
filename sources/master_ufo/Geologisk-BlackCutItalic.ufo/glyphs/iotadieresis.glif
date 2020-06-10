@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="iotadieresis" format="2">
-  <advance width="762"/>
+  <advance width="767"/>
   <unicode hex="03CA"/>
   <anchor x="525" y="1484" name="top"/>
   <outline>

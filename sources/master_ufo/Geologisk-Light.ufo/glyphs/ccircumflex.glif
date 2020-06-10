@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="ccircumflex" format="2">
-  <advance width="1000"/>
+  <advance width="990"/>
   <unicode hex="0109"/>
   <anchor x="554" y="0" name="bottom"/>
   <anchor x="566" y="1444" name="top"/>

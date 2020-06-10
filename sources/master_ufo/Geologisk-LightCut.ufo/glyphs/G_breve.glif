@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Gbreve" format="2">
-  <advance width="1510"/>
+  <advance width="1500"/>
   <unicode hex="011E"/>
   <anchor x="860" y="0" name="bottom"/>
   <anchor x="800" y="1814" name="top"/>

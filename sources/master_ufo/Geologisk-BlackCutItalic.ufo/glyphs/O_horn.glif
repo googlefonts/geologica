@@ -10,7 +10,7 @@
   <anchor x="286" y="1400" name="topleft"/>
   <outline>
     <component base="O"/>
-    <component base="horncomb.case" xOffset="1684"/>
+    <component base="horncomb.case" xOffset="1692"/>
   </outline>
   <lib>
     <dict>

@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="fraction" format="2">
-  <advance width="394"/>
+  <advance width="391"/>
   <unicode hex="2044"/>
   <outline>
     <contour>
-      <point x="-160" y="-30" type="line"/>
-      <point x="630" y="1390" type="line"/>
-      <point x="554" y="1430" type="line"/>
-      <point x="-236" y="16" type="line"/>
+      <point x="-144" y="0" type="line"/>
+      <point x="636" y="1400" type="line"/>
+      <point x="538" y="1400" type="line"/>
+      <point x="-245" y="0" type="line"/>
     </contour>
   </outline>
   <lib>
@@ -15,7 +15,7 @@
       <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
       <string>=|</string>
       <key>public.markColor</key>
-      <string>0.67,0.95,0.38,1</string>
+      <string>0,0.67,0.91,1</string>
     </dict>
   </lib>
 </glyph>

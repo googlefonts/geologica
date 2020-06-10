@@ -1,14 +1,14 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="fi" format="2">
-  <advance width="1520"/>
+  <advance width="1544"/>
   <unicode hex="FB01"/>
   <anchor x="758" y="0" name="caret_1"/>
-  <anchor x="1080" y="0" name="bottom"/>
-  <anchor x="1280" y="0" name="ogonek"/>
-  <anchor x="1394" y="1484" name="top"/>
+  <anchor x="1104" y="0" name="bottom"/>
+  <anchor x="1304" y="0" name="ogonek"/>
+  <anchor x="1418" y="1484" name="top"/>
   <outline>
     <component base="f"/>
-    <component base="i" xOffset="860"/>
+    <component base="i" xOffset="884"/>
   </outline>
   <lib>
     <dict>

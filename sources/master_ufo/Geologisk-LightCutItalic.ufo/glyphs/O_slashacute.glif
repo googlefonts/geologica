@@ -2,10 +2,10 @@
 <glyph name="Oslashacute" format="2">
   <advance width="1696"/>
   <unicode hex="01FE"/>
-  <anchor x="1006" y="1400" name="top"/>
+  <anchor x="1007" y="1400" name="top"/>
   <outline>
     <component base="Oslash"/>
-    <component base="acutecomb.case" xOffset="1788" yOffset="2"/>
+    <component base="acutecomb.case" xOffset="1789" yOffset="2"/>
   </outline>
   <lib>
     <dict>

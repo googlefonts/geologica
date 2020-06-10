@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="upsilon" format="2">
-  <advance width="1095"/>
+  <advance width="1065"/>
   <unicode hex="03C5"/>
   <anchor x="508" y="960" name="top"/>
   <outline>
@@ -34,7 +34,7 @@
       <key>com.schriftgestaltung.Glyphs.glyph.leftMetricsKey</key>
       <string>u</string>
       <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
-      <string>=|u-15</string>
+      <string>=o+35</string>
       <key>public.markColor</key>
       <string>0,0.67,0.91,1</string>
     </dict>

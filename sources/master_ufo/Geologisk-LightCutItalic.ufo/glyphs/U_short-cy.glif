@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Ushort-cy" format="2">
-  <advance width="1194"/>
+  <advance width="1214"/>
   <unicode hex="040E"/>
-  <anchor x="844" y="1400" name="top"/>
+  <anchor x="874" y="1400" name="top"/>
   <outline>
     <component base="U-cy"/>
-    <component base="brevecomb-cy" xOffset="1510" yOffset="440"/>
+    <component base="brevecomb-cy" xOffset="1540" yOffset="440"/>
   </outline>
   <lib>
     <dict>

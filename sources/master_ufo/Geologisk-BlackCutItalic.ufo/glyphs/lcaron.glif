@@ -12,6 +12,8 @@
   <lib>
     <dict>
       <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
+      <string>=+20</string>
+      <key>com.schriftgestaltung.Glyphs.layer.rightMetricsKey</key>
       <string>=+200</string>
       <key>public.markColor</key>
       <string>0.04,0.57,0.04,1</string>

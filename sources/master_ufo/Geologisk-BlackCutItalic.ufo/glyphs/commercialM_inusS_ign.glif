@@ -4,10 +4,10 @@
   <unicode hex="2052"/>
   <outline>
     <contour>
-      <point x="260" y="-48" type="line"/>
-      <point x="1302" y="1320" type="line"/>
-      <point x="1120" y="1446" type="line"/>
-      <point x="80" y="82" type="line"/>
+      <point x="297" y="0" type="line"/>
+      <point x="1363" y="1400" type="line"/>
+      <point x="1085" y="1400" type="line"/>
+      <point x="18" y="0" type="line"/>
     </contour>
     <contour>
       <point x="886" y="-20" type="curve" smooth="yes"/>
@@ -43,7 +43,7 @@
       <key>com.schriftgestaltung.Glyphs.glyph.widthMetricsKey</key>
       <string>plus</string>
       <key>public.markColor</key>
-      <string>0.67,0.95,0.38,1</string>
+      <string>0,0.67,0.91,1</string>
     </dict>
   </lib>
 </glyph>

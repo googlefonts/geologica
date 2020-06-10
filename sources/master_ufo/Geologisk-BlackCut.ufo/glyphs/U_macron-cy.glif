@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Umacron-cy" format="2">
-  <advance width="1372"/>
+  <advance width="1392"/>
   <unicode hex="04EE"/>
-  <anchor x="710" y="1400" name="top"/>
+  <anchor x="740" y="1400" name="top"/>
   <outline>
     <component base="U-cy"/>
-    <component base="macroncomb.case" xOffset="1542"/>
+    <component base="macroncomb.case" xOffset="1572"/>
   </outline>
   <lib>
     <dict>

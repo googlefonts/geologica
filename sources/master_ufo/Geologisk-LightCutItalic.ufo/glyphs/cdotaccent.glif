@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="cdotaccent" format="2">
-  <advance width="980"/>
+  <advance width="970"/>
   <unicode hex="010B"/>
   <anchor x="486" y="0" name="bottom"/>
   <anchor x="718" y="1284" name="top"/>

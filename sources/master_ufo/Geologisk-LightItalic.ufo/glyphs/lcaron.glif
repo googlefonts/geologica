@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="lcaron" format="2">
-  <advance width="654"/>
+  <advance width="474"/>
   <unicode hex="013E"/>
   <anchor x="124" y="0" name="bottom"/>
   <anchor x="488" y="1440" name="caron"/>
@@ -12,7 +12,7 @@
   <lib>
     <dict>
       <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
-      <string>=+200</string>
+      <string>=+20</string>
       <key>public.markColor</key>
       <string>0.04,0.57,0.04,1</string>
     </dict>

@@ -7,12 +7,12 @@
       <point x="-120" y="1188"/>
       <point x="-52" y="1278"/>
       <point x="-52" y="1382" type="curve" smooth="yes"/>
-      <point x="-52" y="1444"/>
-      <point x="-78" y="1516"/>
-      <point x="-130" y="1580" type="curve"/>
-      <point x="-224" y="1540" type="line"/>
-      <point x="-174" y="1472"/>
-      <point x="-160" y="1414"/>
+      <point x="-52" y="1438"/>
+      <point x="-73" y="1502"/>
+      <point x="-115" y="1560" type="curve"/>
+      <point x="-224" y="1560" type="line"/>
+      <point x="-174" y="1484"/>
+      <point x="-160" y="1418"/>
       <point x="-160" y="1380" type="curve" smooth="yes"/>
       <point x="-160" y="1316"/>
       <point x="-192" y="1270"/>
@@ -32,7 +32,7 @@
       <key>com.schriftgestaltung.Glyphs.originalWidth</key>
       <integer>100</integer>
       <key>public.markColor</key>
-      <string>0.67,0.95,0.38,1</string>
+      <string>0,0.67,0.91,1</string>
     </dict>
   </lib>
 </glyph>

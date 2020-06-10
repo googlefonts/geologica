@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="upsilondieresis" format="2">
-  <advance width="1095"/>
+  <advance width="1065"/>
   <unicode hex="03CB"/>
   <anchor x="508" y="1284" name="top"/>
   <outline>

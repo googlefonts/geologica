@@ -2,20 +2,22 @@
 <glyph name="guilsinglleft" format="2">
   <advance width="710"/>
   <unicode hex="2039"/>
+  <guideline x="367" y="-14" angle="31.1035"/>
+  <guideline x="367" y="1072" angle="328.9898"/>
   <outline>
     <contour>
-      <point x="274" y="140" type="line"/>
-      <point x="640" y="140" type="line"/>
+      <point x="323" y="59" type="line"/>
+      <point x="591" y="221" type="line"/>
       <point x="408" y="528" type="line"/>
-      <point x="640" y="918" type="line"/>
-      <point x="274" y="918" type="line"/>
+      <point x="592" y="837" type="line"/>
+      <point x="323" y="998" type="line"/>
       <point x="40" y="528" type="line"/>
     </contour>
   </outline>
   <lib>
     <dict>
       <key>public.markColor</key>
-      <string>0.67,0.95,0.38,1</string>
+      <string>0,0.67,0.91,1</string>
     </dict>
   </lib>
 </glyph>

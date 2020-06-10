@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="epsilontonos" format="2">
-  <advance width="1095"/>
+  <advance width="1100"/>
   <unicode hex="03AD"/>
-  <anchor x="670" y="1040" name="top"/>
+  <anchor x="680" y="1040" name="top"/>
   <outline>
     <component base="epsilon"/>
-    <component base="tonos" xOffset="1308"/>
+    <component base="tonos" xOffset="1318"/>
   </outline>
   <lib>
     <dict>

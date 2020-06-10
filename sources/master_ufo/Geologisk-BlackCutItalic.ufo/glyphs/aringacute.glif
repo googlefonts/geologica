@@ -1,14 +1,14 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="aringacute" format="2">
-  <advance width="1227"/>
+  <advance width="1219"/>
   <unicode hex="01FB"/>
-  <anchor x="482" y="0" name="bottom"/>
-  <anchor x="1000" y="0" name="ogonek"/>
-  <anchor x="816" y="1584" name="top"/>
+  <anchor x="474" y="0" name="bottom"/>
+  <anchor x="992" y="0" name="ogonek"/>
+  <anchor x="808" y="1584" name="top"/>
   <outline>
     <component base="a"/>
-    <component base="ringcomb" xOffset="1412"/>
-    <component base="acutecomb" xOffset="1522" yOffset="544"/>
+    <component base="ringcomb" xOffset="1404"/>
+    <component base="acutecomb" xOffset="1514" yOffset="544"/>
   </outline>
   <lib>
     <dict>

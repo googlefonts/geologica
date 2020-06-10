@@ -1,22 +1,22 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="lslash" format="2">
-  <advance width="736"/>
+  <advance width="776"/>
   <unicode hex="0142"/>
-  <anchor x="254.0" y="0" name="bottom"/>
-  <anchor x="765.384" y="1440" name="caron"/>
-  <anchor x="565.384" y="1440" name="top"/>
+  <anchor x="274.0" y="0" name="bottom"/>
+  <anchor x="785.384" y="1440" name="caron"/>
+  <anchor x="585.384" y="1440" name="top"/>
   <outline>
     <contour>
-      <point x="-62" y="340" type="line"/>
-      <point x="382" y="530" type="line"/>
-      <point x="376" y="490" type="line"/>
-      <point x="790" y="660" type="line"/>
-      <point x="866" y="1020" type="line"/>
-      <point x="424" y="838" type="line"/>
-      <point x="428" y="878" type="line"/>
-      <point x="14" y="700" type="line"/>
+      <point x="-42" y="340" type="line"/>
+      <point x="402" y="530" type="line"/>
+      <point x="396" y="490" type="line"/>
+      <point x="810" y="660" type="line"/>
+      <point x="886" y="1020" type="line"/>
+      <point x="444" y="838" type="line"/>
+      <point x="448" y="878" type="line"/>
+      <point x="34" y="700" type="line"/>
     </contour>
-    <component base="l" yxScale="0.00235" xOffset="36"/>
+    <component base="l" yxScale="0.00235" xOffset="56"/>
   </outline>
   <lib>
     <dict>

@@ -5,15 +5,16 @@
   <guideline x="99" y="489" angle="67.7944"/>
   <guideline x="152" y="515" angle="66.1706"/>
   <guideline x="75" y="151" angle="110.9415"/>
+  <guideline x="321" y="1152" angle="78.1288"/>
   <outline>
     <contour>
-      <point x="171" y="248" type="line"/>
+      <point x="131" y="232" type="line"/>
       <point x="1147" y="620" type="line"/>
       <point x="1165" y="712" type="line"/>
-      <point x="329" y="1082" type="line"/>
-      <point x="285" y="982" type="line"/>
+      <point x="311" y="1090" type="line"/>
+      <point x="288" y="981" type="line"/>
       <point x="1003" y="672" type="line"/>
-      <point x="133" y="352" type="line"/>
+      <point x="158" y="362" type="line"/>
     </contour>
   </outline>
   <lib>
@@ -23,7 +24,7 @@
       <key>com.schriftgestaltung.Glyphs.glyph.widthMetricsKey</key>
       <string>plus</string>
       <key>public.markColor</key>
-      <string>0.67,0.95,0.38,1</string>
+      <string>0,0.67,0.91,1</string>
     </dict>
   </lib>
 </glyph>

@@ -2,11 +2,11 @@
 <glyph name="zedieresis-cy" format="2">
   <advance width="1106"/>
   <unicode hex="04DF"/>
-  <anchor x="435" y="0" name="bottom"/>
-  <anchor x="727" y="1484" name="top"/>
+  <anchor x="425" y="0" name="bottom"/>
+  <anchor x="717" y="1484" name="top"/>
   <outline>
     <component base="ze-cy"/>
-    <component base="dieresiscomb" xOffset="1341"/>
+    <component base="dieresiscomb" xOffset="1331"/>
   </outline>
   <lib>
     <dict>

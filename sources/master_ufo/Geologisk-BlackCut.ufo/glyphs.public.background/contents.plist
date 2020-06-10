@@ -36,6 +36,8 @@
     <string>D_e-cy.glif</string>
     <key>De-cy.loclBGR</key>
     <string>D_e-cy.loclB_G_R_.glif</string>
+    <key>Delta</key>
+    <string>D_elta.glif</string>
     <key>Dje-cy</key>
     <string>D_je-cy.glif</string>
     <key>Dze-cy</key>
@@ -174,6 +176,8 @@
     <string>S_hcha-cy.glif</string>
     <key>Shha-cy</key>
     <string>S_hha-cy.glif</string>
+    <key>Sigma</key>
+    <string>S_igma.glif</string>
     <key>Softsign-cy</key>
     <string>S_oftsign-cy.glif</string>
     <key>Tbar</key>
@@ -554,6 +558,8 @@
     <string>lje-cy.glif</string>
     <key>logicalnot</key>
     <string>logicalnot.glif</string>
+    <key>lowernumeral-greek</key>
+    <string>lowernumeral-greek.glif</string>
     <key>lozenge</key>
     <string>lozenge.glif</string>
     <key>macron</key>

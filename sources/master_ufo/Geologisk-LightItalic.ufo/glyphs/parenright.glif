@@ -3,27 +3,16 @@
   <advance width="686"/>
   <unicode hex="0029"/>
   <outline>
-    <contour>
-      <point x="40" y="-430" type="line"/>
-      <point x="350" y="-92"/>
-      <point x="530" y="390"/>
-      <point x="530" y="852" type="curve" smooth="yes"/>
-      <point x="530" y="1048"/>
-      <point x="498" y="1238"/>
-      <point x="430" y="1410" type="curve"/>
-      <point x="344" y="1370" type="line"/>
-      <point x="400" y="1218"/>
-      <point x="430" y="1048"/>
-      <point x="430" y="868" type="curve" smooth="yes"/>
-      <point x="430" y="432"/>
-      <point x="264" y="-72"/>
-      <point x="-40" y="-384" type="curve"/>
-    </contour>
+    <component base="parenleft" xScale="-1" yScale="-1" xOffset="775" yOffset="1380"/>
   </outline>
   <lib>
     <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.leftMetricsKey</key>
+      <string>=|parenleft</string>
+      <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
+      <string>=|parenleft</string>
       <key>public.markColor</key>
-      <string>0.67,0.95,0.38,1</string>
+      <string>0.04,0.57,0.04,1</string>
     </dict>
   </lib>
 </glyph>

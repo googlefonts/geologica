@@ -2,14 +2,14 @@
 <glyph name="Ograve" format="2">
   <advance width="1696"/>
   <unicode hex="00D2"/>
-  <anchor x="782" y="0" name="bottom"/>
-  <anchor x="1408" y="1400" name="horn"/>
-  <anchor x="994" y="0" name="ogonek"/>
-  <anchor x="1006" y="1400" name="top"/>
-  <anchor x="346" y="1400" name="topleft"/>
+  <anchor x="783" y="0" name="bottom"/>
+  <anchor x="1409" y="1400" name="horn"/>
+  <anchor x="995" y="0" name="ogonek"/>
+  <anchor x="1007" y="1400" name="top"/>
+  <anchor x="347" y="1400" name="topleft"/>
   <outline>
     <component base="O"/>
-    <component base="gravecomb.case" xOffset="1790" yOffset="2"/>
+    <component base="gravecomb.case" xOffset="1791" yOffset="2"/>
   </outline>
   <lib>
     <dict>

@@ -8,7 +8,7 @@
   <anchor x="918" y="1400" name="top"/>
   <outline>
     <component base="U"/>
-    <component base="horncomb.alt_case" xOffset="1604"/>
+    <component base="horncomb.alt_case" xOffset="1602"/>
   </outline>
   <lib>
     <dict>

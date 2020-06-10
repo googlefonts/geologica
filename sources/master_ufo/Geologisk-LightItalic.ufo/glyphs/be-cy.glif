@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="be-cy" format="2">
-  <advance width="1181"/>
+  <advance width="1191"/>
   <unicode hex="0431"/>
   <outline>
     <contour>
@@ -44,9 +44,11 @@
   <lib>
     <dict>
       <key>com.schriftgestaltung.Glyphs.glyph.leftMetricsKey</key>
-      <string>=o+15</string>
+      <string>=o+25</string>
       <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
-      <string>o</string>
+      <string>=o+10</string>
+      <key>com.schriftgestaltung.Glyphs.layer.leftMetricsKey</key>
+      <string>=o+15</string>
       <key>public.markColor</key>
       <string>0.67,0.95,0.38,1</string>
     </dict>

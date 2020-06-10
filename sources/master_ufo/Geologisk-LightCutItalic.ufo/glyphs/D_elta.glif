@@ -2,11 +2,12 @@
 <glyph name="Delta" format="2">
   <advance width="1323"/>
   <unicode hex="0394"/>
+  <guideline x="1190" y="49" angle="258.4654"/>
   <outline>
     <contour>
       <point x="-60" y="0" type="line"/>
-      <point x="1180" y="0" type="line"/>
-      <point x="1200" y="98" type="line"/>
+      <point x="1169" y="0" type="line"/>
+      <point x="1204" y="82" type="line"/>
       <point x="894" y="1400" type="line"/>
       <point x="794" y="1400" type="line"/>
       <point x="-40" y="98" type="line"/>
@@ -19,10 +20,8 @@
   </outline>
   <lib>
     <dict>
-      <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
-      <string>=|</string>
       <key>public.markColor</key>
-      <string>0.67,0.95,0.38,1</string>
+      <string>0,0.67,0.91,1</string>
     </dict>
   </lib>
 </glyph>

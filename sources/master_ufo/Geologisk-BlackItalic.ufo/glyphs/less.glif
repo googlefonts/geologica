@@ -3,15 +3,7 @@
   <advance width="1297"/>
   <unicode hex="003C"/>
   <outline>
-    <contour>
-      <point x="1065" y="76" type="line"/>
-      <point x="1171" y="330" type="line"/>
-      <point x="509" y="618" type="line"/>
-      <point x="1347" y="934" type="line"/>
-      <point x="1253" y="1188" type="line"/>
-      <point x="121" y="770" type="line"/>
-      <point x="65" y="500" type="line"/>
-    </contour>
+    <component base="greater" xScale="-1" yScale="-1" xOffset="1343" yOffset="1258"/>
   </outline>
   <lib>
     <dict>
@@ -20,7 +12,7 @@
       <key>com.schriftgestaltung.Glyphs.glyph.widthMetricsKey</key>
       <string>plus</string>
       <key>public.markColor</key>
-      <string>0.67,0.95,0.38,1</string>
+      <string>0.04,0.57,0.04,1</string>
     </dict>
   </lib>
 </glyph>

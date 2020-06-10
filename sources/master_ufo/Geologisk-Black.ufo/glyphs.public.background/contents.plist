@@ -536,6 +536,8 @@
     <string>lje-cy.glif</string>
     <key>logicalnot</key>
     <string>logicalnot.glif</string>
+    <key>lowernumeral-greek</key>
+    <string>lowernumeral-greek.glif</string>
     <key>lozenge</key>
     <string>lozenge.glif</string>
     <key>macron</key>

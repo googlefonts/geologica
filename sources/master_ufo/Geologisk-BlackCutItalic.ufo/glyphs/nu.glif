@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="nu" format="2">
-  <advance width="1255"/>
+  <advance width="1235"/>
   <unicode hex="03BD"/>
   <outline>
     <contour>
@@ -23,7 +23,7 @@
       <key>com.schriftgestaltung.Glyphs.glyph.leftMetricsKey</key>
       <string>v</string>
       <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
-      <string>=v+55</string>
+      <string>=v+35</string>
       <key>public.markColor</key>
       <string>0,0.67,0.91,1</string>
     </dict>

@@ -2,10 +2,10 @@
 <glyph name="backslash" format="2">
   <outline>
     <contour>
-      <point x="326" y="-430" type="line"/>
-      <point x="-426" y="1370" type="line"/>
-      <point x="-326" y="1410" type="line"/>
-      <point x="426" y="-390" type="line"/>
+      <point x="326" y="-230" type="line"/>
+      <point x="-426" y="1570" type="line"/>
+      <point x="-326" y="1610" type="line"/>
+      <point x="426" y="-190" type="line"/>
     </contour>
   </outline>
 </glyph>
