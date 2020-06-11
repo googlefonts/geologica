@@ -2,28 +2,28 @@
 <glyph name="psi" format="2">
   <outline>
     <contour>
-      <point x="622" y="0" type="curve"/>
-      <point x="622" y="-420" type="line"/>
-      <point x="734" y="-420" type="line"/>
-      <point x="734" y="0" type="line"/>
-      <point x="1288" y="0"/>
-      <point x="1306" y="474"/>
-      <point x="1164" y="960" type="curve"/>
-      <point x="1048" y="960" type="line"/>
-      <point x="1190" y="472"/>
-      <point x="1168" y="112"/>
-      <point x="734" y="108" type="curve"/>
-      <point x="734" y="1280" type="line"/>
-      <point x="622" y="1280" type="line"/>
-      <point x="622" y="108" type="line"/>
-      <point x="348" y="108"/>
-      <point x="262" y="208"/>
-      <point x="262" y="528" type="curve" smooth="yes"/>
-      <point x="262" y="960" type="line"/>
-      <point x="150" y="960" type="line"/>
-      <point x="150" y="494" type="line" smooth="yes"/>
-      <point x="150" y="172"/>
-      <point x="250" y="0"/>
+      <point x="612" y="0" type="curve"/>
+      <point x="612" y="-420" type="line"/>
+      <point x="724" y="-420" type="line"/>
+      <point x="724" y="0" type="line"/>
+      <point x="1278" y="0"/>
+      <point x="1296" y="474"/>
+      <point x="1154" y="960" type="curve"/>
+      <point x="1038" y="960" type="line"/>
+      <point x="1180" y="472"/>
+      <point x="1158" y="112"/>
+      <point x="724" y="108" type="curve"/>
+      <point x="724" y="1280" type="line"/>
+      <point x="612" y="1280" type="line"/>
+      <point x="612" y="108" type="line"/>
+      <point x="338" y="108"/>
+      <point x="252" y="208"/>
+      <point x="252" y="528" type="curve" smooth="yes"/>
+      <point x="252" y="960" type="line"/>
+      <point x="140" y="960" type="line"/>
+      <point x="140" y="494" type="line" smooth="yes"/>
+      <point x="140" y="172"/>
+      <point x="240" y="0"/>
     </contour>
   </outline>
 </glyph>

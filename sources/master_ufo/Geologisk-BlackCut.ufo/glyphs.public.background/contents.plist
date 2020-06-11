@@ -352,6 +352,8 @@
     <string>colonsign.glif</string>
     <key>comma</key>
     <string>comma.glif</string>
+    <key>commaturnedabovecomb</key>
+    <string>commaturnedabovecomb.glif</string>
     <key>copyright</key>
     <string>copyright.glif</string>
     <key>currency</key>
@@ -766,6 +768,8 @@
     <string>ve-cy.glif</string>
     <key>we-cy</key>
     <string>we-cy.glif</string>
+    <key>xi</key>
+    <string>xi.glif</string>
     <key>yat-cy</key>
     <string>yat-cy.glif</string>
     <key>yen</key>

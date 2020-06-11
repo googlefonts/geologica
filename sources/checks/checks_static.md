@@ -246,6 +246,34 @@ This can be accomplished by using the 'gftools fix-hinting' command.
 
 </details>
 <details>
+<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+<pre>--- Rationale ---
+
+A font&#x27;s winAscent and winDescent values should be greater than the head
+table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
+can occur on Windows platforms
+(https://github.com/RedHatBrand/Overpass/issues/33).
+
+If the font includes tall/deep writing systems such as Arabic or Devanagari,
+the winAscent and winDescent can be greater than the yMax and abs(yMin) to
+accommodate vowel marks.
+
+When the win Metrics are significantly greater than the upm, the linespacing
+can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
+(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
+This means the font developer can control the linespacing with the typo values,
+whilst avoiding clipping by setting the win values to values greater than the
+yMax and abs(yMin).
+
+
+</pre>
+
+* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 895, but got 746 instead [code: descent]
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
 * [com.google.fonts/check/contour_count](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/contour_count)
@@ -303,38 +331,38 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni20A6	Contours detected: 2	Expected: 1, 3 or 5
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
 Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni20A6	Contours detected: 2	Expected: 1, 3 or 5
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3 [code: contour-count]
+Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
 
 </details>
 <details>
@@ -1374,10 +1402,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/Geologisk-Black.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 89.7kb |
-	| Hinted Size | 119.3kb |
-	| Increase | 29.5kb |
-	| Change   | 32.9 % |
+	| Dehinted Size | 92.1kb |
+	| Hinted Size | 121.5kb |
+	| Increase | 29.4kb |
+	| Change   | 31.9 % |
  [code: size-impact]
 
 </details>
@@ -1469,7 +1497,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, GSUB, gasp, DSIG, prep, fpgm, GPOS, cvt ]
+* ℹ **INFO** This font contains the following optional tables [gasp, prep, loca, fpgm, DSIG, GPOS, GSUB, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -2112,34 +2140,6 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-
-A font&#x27;s winAscent and winDescent values should be greater than the head
-table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
-can occur on Windows platforms
-(https://github.com/RedHatBrand/Overpass/issues/33).
-
-If the font includes tall/deep writing systems such as Arabic or Devanagari,
-the winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-
-When the win Metrics are significantly greater than the upm, the linespacing
-can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
-This means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).
-
-
-</pre>
-
-* 🍞 **PASS** OS/2 usWinAscent & usWinDescent values look good!
-
-</details>
-<details>
 <summary>🍞 <b>PASS:</b> Checking OS/2 Metrics match hhea Metrics.</summary>
 
 * [com.google.fonts/check/os2_metrics_match_hhea](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea)
@@ -2682,6 +2682,34 @@ This can be accomplished by using the 'gftools fix-hinting' command.
 
 </details>
 <details>
+<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+<pre>--- Rationale ---
+
+A font&#x27;s winAscent and winDescent values should be greater than the head
+table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
+can occur on Windows platforms
+(https://github.com/RedHatBrand/Overpass/issues/33).
+
+If the font includes tall/deep writing systems such as Arabic or Devanagari,
+the winAscent and winDescent can be greater than the yMax and abs(yMin) to
+accommodate vowel marks.
+
+When the win Metrics are significantly greater than the upm, the linespacing
+can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
+(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
+This means the font developer can control the linespacing with the typo values,
+whilst avoiding clipping by setting the win values to values greater than the
+yMax and abs(yMin).
+
+
+</pre>
+
+* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 895, but got 746 instead [code: descent]
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
 * [com.google.fonts/check/contour_count](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/contour_count)
@@ -2739,38 +2767,38 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni20A6	Contours detected: 2	Expected: 1, 3 or 5
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
 Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni20A6	Contours detected: 2	Expected: 1, 3 or 5
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3 [code: contour-count]
+Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
 
 </details>
 <details>
@@ -3810,10 +3838,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/Geologisk-BlackItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 91.6kb |
-	| Hinted Size | 121.5kb |
-	| Increase | 29.9kb |
-	| Change   | 32.7 % |
+	| Dehinted Size | 94.0kb |
+	| Hinted Size | 123.8kb |
+	| Increase | 29.7kb |
+	| Change   | 31.6 % |
  [code: size-impact]
 
 </details>
@@ -3905,7 +3933,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, GSUB, gasp, DSIG, prep, fpgm, GPOS, cvt ]
+* ℹ **INFO** This font contains the following optional tables [gasp, prep, loca, fpgm, DSIG, GPOS, GSUB, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -4548,34 +4576,6 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-
-A font&#x27;s winAscent and winDescent values should be greater than the head
-table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
-can occur on Windows platforms
-(https://github.com/RedHatBrand/Overpass/issues/33).
-
-If the font includes tall/deep writing systems such as Arabic or Devanagari,
-the winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-
-When the win Metrics are significantly greater than the upm, the linespacing
-can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
-This means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).
-
-
-</pre>
-
-* 🍞 **PASS** OS/2 usWinAscent & usWinDescent values look good!
-
-</details>
-<details>
 <summary>🍞 <b>PASS:</b> Checking OS/2 Metrics match hhea Metrics.</summary>
 
 * [com.google.fonts/check/os2_metrics_match_hhea](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea)
@@ -5118,6 +5118,34 @@ This can be accomplished by using the 'gftools fix-hinting' command.
 
 </details>
 <details>
+<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+<pre>--- Rationale ---
+
+A font&#x27;s winAscent and winDescent values should be greater than the head
+table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
+can occur on Windows platforms
+(https://github.com/RedHatBrand/Overpass/issues/33).
+
+If the font includes tall/deep writing systems such as Arabic or Devanagari,
+the winAscent and winDescent can be greater than the yMax and abs(yMin) to
+accommodate vowel marks.
+
+When the win Metrics are significantly greater than the upm, the linespacing
+can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
+(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
+This means the font developer can control the linespacing with the typo values,
+whilst avoiding clipping by setting the win values to values greater than the
+yMax and abs(yMin).
+
+
+</pre>
+
+* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 895, but got 746 instead [code: descent]
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
 * [com.google.fonts/check/contour_count](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/contour_count)
@@ -5175,38 +5203,38 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: eogonek	Contours detected: 3	Expected: 2
 Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: eogonek	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
 
 </details>
 <details>
@@ -6246,10 +6274,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/Geologisk-Bold.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 89.9kb |
-	| Hinted Size | 121.2kb |
-	| Increase | 31.3kb |
-	| Change   | 34.8 % |
+	| Dehinted Size | 92.2kb |
+	| Hinted Size | 123.4kb |
+	| Increase | 31.1kb |
+	| Change   | 33.7 % |
  [code: size-impact]
 
 </details>
@@ -6341,7 +6369,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, GSUB, gasp, DSIG, prep, fpgm, GPOS, cvt ]
+* ℹ **INFO** This font contains the following optional tables [gasp, prep, loca, fpgm, DSIG, GPOS, GSUB, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -6984,34 +7012,6 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-
-A font&#x27;s winAscent and winDescent values should be greater than the head
-table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
-can occur on Windows platforms
-(https://github.com/RedHatBrand/Overpass/issues/33).
-
-If the font includes tall/deep writing systems such as Arabic or Devanagari,
-the winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-
-When the win Metrics are significantly greater than the upm, the linespacing
-can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
-This means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).
-
-
-</pre>
-
-* 🍞 **PASS** OS/2 usWinAscent & usWinDescent values look good!
-
-</details>
-<details>
 <summary>🍞 <b>PASS:</b> Checking OS/2 Metrics match hhea Metrics.</summary>
 
 * [com.google.fonts/check/os2_metrics_match_hhea](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea)
@@ -7554,6 +7554,34 @@ This can be accomplished by using the 'gftools fix-hinting' command.
 
 </details>
 <details>
+<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+<pre>--- Rationale ---
+
+A font&#x27;s winAscent and winDescent values should be greater than the head
+table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
+can occur on Windows platforms
+(https://github.com/RedHatBrand/Overpass/issues/33).
+
+If the font includes tall/deep writing systems such as Arabic or Devanagari,
+the winAscent and winDescent can be greater than the yMax and abs(yMin) to
+accommodate vowel marks.
+
+When the win Metrics are significantly greater than the upm, the linespacing
+can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
+(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
+This means the font developer can control the linespacing with the typo values,
+whilst avoiding clipping by setting the win values to values greater than the
+yMax and abs(yMin).
+
+
+</pre>
+
+* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 895, but got 746 instead [code: descent]
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
 * [com.google.fonts/check/contour_count](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/contour_count)
@@ -7611,38 +7639,38 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: eogonek	Contours detected: 3	Expected: 2
 Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: eogonek	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
 
 </details>
 <details>
@@ -8682,10 +8710,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/Geologisk-BoldItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 91.5kb |
-	| Hinted Size | 122.4kb |
-	| Increase | 30.9kb |
-	| Change   | 33.8 % |
+	| Dehinted Size | 94.0kb |
+	| Hinted Size | 124.7kb |
+	| Increase | 30.7kb |
+	| Change   | 32.7 % |
  [code: size-impact]
 
 </details>
@@ -8777,7 +8805,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, GSUB, gasp, DSIG, prep, fpgm, GPOS, cvt ]
+* ℹ **INFO** This font contains the following optional tables [gasp, prep, loca, fpgm, DSIG, GPOS, GSUB, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -9420,34 +9448,6 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-
-A font&#x27;s winAscent and winDescent values should be greater than the head
-table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
-can occur on Windows platforms
-(https://github.com/RedHatBrand/Overpass/issues/33).
-
-If the font includes tall/deep writing systems such as Arabic or Devanagari,
-the winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-
-When the win Metrics are significantly greater than the upm, the linespacing
-can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
-This means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).
-
-
-</pre>
-
-* 🍞 **PASS** OS/2 usWinAscent & usWinDescent values look good!
-
-</details>
-<details>
 <summary>🍞 <b>PASS:</b> Checking OS/2 Metrics match hhea Metrics.</summary>
 
 * [com.google.fonts/check/os2_metrics_match_hhea](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea)
@@ -9990,6 +9990,34 @@ This can be accomplished by using the 'gftools fix-hinting' command.
 
 </details>
 <details>
+<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+<pre>--- Rationale ---
+
+A font&#x27;s winAscent and winDescent values should be greater than the head
+table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
+can occur on Windows platforms
+(https://github.com/RedHatBrand/Overpass/issues/33).
+
+If the font includes tall/deep writing systems such as Arabic or Devanagari,
+the winAscent and winDescent can be greater than the yMax and abs(yMin) to
+accommodate vowel marks.
+
+When the win Metrics are significantly greater than the upm, the linespacing
+can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
+(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
+This means the font developer can control the linespacing with the typo values,
+whilst avoiding clipping by setting the win values to values greater than the
+yMax and abs(yMin).
+
+
+</pre>
+
+* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 895, but got 746 instead [code: descent]
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
 * [com.google.fonts/check/contour_count](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/contour_count)
@@ -10046,37 +10074,37 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
 Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3 [code: contour-count]
+Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
 
 </details>
 <details>
@@ -11116,10 +11144,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/Geologisk-ExtraBold.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 90.0kb |
-	| Hinted Size | 130.5kb |
-	| Increase | 40.5kb |
-	| Change   | 45.0 % |
+	| Dehinted Size | 92.3kb |
+	| Hinted Size | 132.7kb |
+	| Increase | 40.4kb |
+	| Change   | 43.7 % |
  [code: size-impact]
 
 </details>
@@ -11211,7 +11239,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, GSUB, gasp, DSIG, prep, fpgm, GPOS, cvt ]
+* ℹ **INFO** This font contains the following optional tables [gasp, prep, loca, fpgm, DSIG, GPOS, GSUB, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -11854,34 +11882,6 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-
-A font&#x27;s winAscent and winDescent values should be greater than the head
-table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
-can occur on Windows platforms
-(https://github.com/RedHatBrand/Overpass/issues/33).
-
-If the font includes tall/deep writing systems such as Arabic or Devanagari,
-the winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-
-When the win Metrics are significantly greater than the upm, the linespacing
-can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
-This means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).
-
-
-</pre>
-
-* 🍞 **PASS** OS/2 usWinAscent & usWinDescent values look good!
-
-</details>
-<details>
 <summary>🍞 <b>PASS:</b> Checking OS/2 Metrics match hhea Metrics.</summary>
 
 * [com.google.fonts/check/os2_metrics_match_hhea](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea)
@@ -12424,6 +12424,34 @@ This can be accomplished by using the 'gftools fix-hinting' command.
 
 </details>
 <details>
+<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+<pre>--- Rationale ---
+
+A font&#x27;s winAscent and winDescent values should be greater than the head
+table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
+can occur on Windows platforms
+(https://github.com/RedHatBrand/Overpass/issues/33).
+
+If the font includes tall/deep writing systems such as Arabic or Devanagari,
+the winAscent and winDescent can be greater than the yMax and abs(yMin) to
+accommodate vowel marks.
+
+When the win Metrics are significantly greater than the upm, the linespacing
+can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
+(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
+This means the font developer can control the linespacing with the typo values,
+whilst avoiding clipping by setting the win values to values greater than the
+yMax and abs(yMin).
+
+
+</pre>
+
+* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 895, but got 746 instead [code: descent]
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
 * [com.google.fonts/check/contour_count](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/contour_count)
@@ -12480,37 +12508,37 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
 Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3 [code: contour-count]
+Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
 
 </details>
 <details>
@@ -13550,10 +13578,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/Geologisk-ExtraBoldItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 91.8kb |
-	| Hinted Size | 132.3kb |
-	| Increase | 40.6kb |
-	| Change   | 44.2 % |
+	| Dehinted Size | 94.2kb |
+	| Hinted Size | 134.7kb |
+	| Increase | 40.5kb |
+	| Change   | 43.0 % |
  [code: size-impact]
 
 </details>
@@ -13645,7 +13673,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, GSUB, gasp, DSIG, prep, fpgm, GPOS, cvt ]
+* ℹ **INFO** This font contains the following optional tables [gasp, prep, loca, fpgm, DSIG, GPOS, GSUB, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -14288,34 +14316,6 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-
-A font&#x27;s winAscent and winDescent values should be greater than the head
-table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
-can occur on Windows platforms
-(https://github.com/RedHatBrand/Overpass/issues/33).
-
-If the font includes tall/deep writing systems such as Arabic or Devanagari,
-the winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-
-When the win Metrics are significantly greater than the upm, the linespacing
-can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
-This means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).
-
-
-</pre>
-
-* 🍞 **PASS** OS/2 usWinAscent & usWinDescent values look good!
-
-</details>
-<details>
 <summary>🍞 <b>PASS:</b> Checking OS/2 Metrics match hhea Metrics.</summary>
 
 * [com.google.fonts/check/os2_metrics_match_hhea](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea)
@@ -14858,6 +14858,34 @@ This can be accomplished by using the 'gftools fix-hinting' command.
 
 </details>
 <details>
+<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+<pre>--- Rationale ---
+
+A font&#x27;s winAscent and winDescent values should be greater than the head
+table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
+can occur on Windows platforms
+(https://github.com/RedHatBrand/Overpass/issues/33).
+
+If the font includes tall/deep writing systems such as Arabic or Devanagari,
+the winAscent and winDescent can be greater than the yMax and abs(yMin) to
+accommodate vowel marks.
+
+When the win Metrics are significantly greater than the upm, the linespacing
+can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
+(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
+This means the font developer can control the linespacing with the typo values,
+whilst avoiding clipping by setting the win values to values greater than the
+yMax and abs(yMin).
+
+
+</pre>
+
+* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 895, but got 746 instead [code: descent]
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Checking OS/2 usWeightClass.</summary>
 
 * [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
@@ -14922,37 +14950,37 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: eogonek	Contours detected: 3	Expected: 2
 Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: eogonek	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
 
 </details>
 <details>
@@ -15992,10 +16020,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/Geologisk-ExtraLight.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 90.3kb |
-	| Hinted Size | 119.3kb |
-	| Increase | 29.0kb |
-	| Change   | 32.1 % |
+	| Dehinted Size | 92.6kb |
+	| Hinted Size | 121.4kb |
+	| Increase | 28.8kb |
+	| Change   | 31.1 % |
  [code: size-impact]
 
 </details>
@@ -16087,7 +16115,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, GSUB, gasp, DSIG, prep, fpgm, GPOS, cvt ]
+* ℹ **INFO** This font contains the following optional tables [gasp, prep, loca, fpgm, DSIG, GPOS, GSUB, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -16722,34 +16750,6 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-
-A font&#x27;s winAscent and winDescent values should be greater than the head
-table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
-can occur on Windows platforms
-(https://github.com/RedHatBrand/Overpass/issues/33).
-
-If the font includes tall/deep writing systems such as Arabic or Devanagari,
-the winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-
-When the win Metrics are significantly greater than the upm, the linespacing
-can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
-This means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).
-
-
-</pre>
-
-* 🍞 **PASS** OS/2 usWinAscent & usWinDescent values look good!
-
-</details>
-<details>
 <summary>🍞 <b>PASS:</b> Checking OS/2 Metrics match hhea Metrics.</summary>
 
 * [com.google.fonts/check/os2_metrics_match_hhea](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea)
@@ -17292,6 +17292,34 @@ This can be accomplished by using the 'gftools fix-hinting' command.
 
 </details>
 <details>
+<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+<pre>--- Rationale ---
+
+A font&#x27;s winAscent and winDescent values should be greater than the head
+table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
+can occur on Windows platforms
+(https://github.com/RedHatBrand/Overpass/issues/33).
+
+If the font includes tall/deep writing systems such as Arabic or Devanagari,
+the winAscent and winDescent can be greater than the yMax and abs(yMin) to
+accommodate vowel marks.
+
+When the win Metrics are significantly greater than the upm, the linespacing
+can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
+(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
+This means the font developer can control the linespacing with the typo values,
+whilst avoiding clipping by setting the win values to values greater than the
+yMax and abs(yMin).
+
+
+</pre>
+
+* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 895, but got 746 instead [code: descent]
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Checking OS/2 usWeightClass.</summary>
 
 * [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
@@ -17356,37 +17384,37 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: eogonek	Contours detected: 3	Expected: 2
 Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: eogonek	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
 
 </details>
 <details>
@@ -18426,10 +18454,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/Geologisk-ExtraLightItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 91.9kb |
-	| Hinted Size | 121.4kb |
-	| Increase | 29.5kb |
-	| Change   | 32.1 % |
+	| Dehinted Size | 94.3kb |
+	| Hinted Size | 123.7kb |
+	| Increase | 29.3kb |
+	| Change   | 31.1 % |
  [code: size-impact]
 
 </details>
@@ -18521,7 +18549,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, GSUB, gasp, DSIG, prep, fpgm, GPOS, cvt ]
+* ℹ **INFO** This font contains the following optional tables [gasp, prep, loca, fpgm, DSIG, GPOS, GSUB, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -19156,34 +19184,6 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-
-A font&#x27;s winAscent and winDescent values should be greater than the head
-table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
-can occur on Windows platforms
-(https://github.com/RedHatBrand/Overpass/issues/33).
-
-If the font includes tall/deep writing systems such as Arabic or Devanagari,
-the winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-
-When the win Metrics are significantly greater than the upm, the linespacing
-can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
-This means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).
-
-
-</pre>
-
-* 🍞 **PASS** OS/2 usWinAscent & usWinDescent values look good!
-
-</details>
-<details>
 <summary>🍞 <b>PASS:</b> Checking OS/2 Metrics match hhea Metrics.</summary>
 
 * [com.google.fonts/check/os2_metrics_match_hhea](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea)
@@ -19726,6 +19726,34 @@ This can be accomplished by using the 'gftools fix-hinting' command.
 
 </details>
 <details>
+<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+<pre>--- Rationale ---
+
+A font&#x27;s winAscent and winDescent values should be greater than the head
+table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
+can occur on Windows platforms
+(https://github.com/RedHatBrand/Overpass/issues/33).
+
+If the font includes tall/deep writing systems such as Arabic or Devanagari,
+the winAscent and winDescent can be greater than the yMax and abs(yMin) to
+accommodate vowel marks.
+
+When the win Metrics are significantly greater than the upm, the linespacing
+can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
+(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
+This means the font developer can control the linespacing with the typo values,
+whilst avoiding clipping by setting the win values to values greater than the
+yMax and abs(yMin).
+
+
+</pre>
+
+* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 895, but got 746 instead [code: descent]
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
 * [com.google.fonts/check/contour_count](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/contour_count)
@@ -19782,37 +19810,37 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: eogonek	Contours detected: 3	Expected: 2
 Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: eogonek	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
 
 </details>
 <details>
@@ -20852,10 +20880,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/Geologisk-Italic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 91.3kb |
-	| Hinted Size | 132.5kb |
-	| Increase | 41.2kb |
-	| Change   | 45.1 % |
+	| Dehinted Size | 93.8kb |
+	| Hinted Size | 134.9kb |
+	| Increase | 41.1kb |
+	| Change   | 43.8 % |
  [code: size-impact]
 
 </details>
@@ -20947,7 +20975,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, GSUB, gasp, DSIG, prep, fpgm, GPOS, cvt ]
+* ℹ **INFO** This font contains the following optional tables [gasp, prep, loca, fpgm, DSIG, GPOS, GSUB, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -21590,34 +21618,6 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-
-A font&#x27;s winAscent and winDescent values should be greater than the head
-table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
-can occur on Windows platforms
-(https://github.com/RedHatBrand/Overpass/issues/33).
-
-If the font includes tall/deep writing systems such as Arabic or Devanagari,
-the winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-
-When the win Metrics are significantly greater than the upm, the linespacing
-can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
-This means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).
-
-
-</pre>
-
-* 🍞 **PASS** OS/2 usWinAscent & usWinDescent values look good!
-
-</details>
-<details>
 <summary>🍞 <b>PASS:</b> Checking OS/2 Metrics match hhea Metrics.</summary>
 
 * [com.google.fonts/check/os2_metrics_match_hhea](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea)
@@ -22160,6 +22160,34 @@ This can be accomplished by using the 'gftools fix-hinting' command.
 
 </details>
 <details>
+<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+<pre>--- Rationale ---
+
+A font&#x27;s winAscent and winDescent values should be greater than the head
+table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
+can occur on Windows platforms
+(https://github.com/RedHatBrand/Overpass/issues/33).
+
+If the font includes tall/deep writing systems such as Arabic or Devanagari,
+the winAscent and winDescent can be greater than the yMax and abs(yMin) to
+accommodate vowel marks.
+
+When the win Metrics are significantly greater than the upm, the linespacing
+can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
+(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
+This means the font developer can control the linespacing with the typo values,
+whilst avoiding clipping by setting the win values to values greater than the
+yMax and abs(yMin).
+
+
+</pre>
+
+* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 895, but got 746 instead [code: descent]
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
 * [com.google.fonts/check/contour_count](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/contour_count)
@@ -22216,37 +22244,37 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: eogonek	Contours detected: 3	Expected: 2
 Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: eogonek	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
 
 </details>
 <details>
@@ -23286,10 +23314,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/Geologisk-Light.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 89.8kb |
-	| Hinted Size | 119.1kb |
-	| Increase | 29.3kb |
-	| Change   | 32.6 % |
+	| Dehinted Size | 92.1kb |
+	| Hinted Size | 121.4kb |
+	| Increase | 29.2kb |
+	| Change   | 31.7 % |
  [code: size-impact]
 
 </details>
@@ -23381,7 +23409,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, GSUB, gasp, DSIG, prep, fpgm, GPOS, cvt ]
+* ℹ **INFO** This font contains the following optional tables [gasp, prep, loca, fpgm, DSIG, GPOS, GSUB, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -24024,34 +24052,6 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-
-A font&#x27;s winAscent and winDescent values should be greater than the head
-table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
-can occur on Windows platforms
-(https://github.com/RedHatBrand/Overpass/issues/33).
-
-If the font includes tall/deep writing systems such as Arabic or Devanagari,
-the winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-
-When the win Metrics are significantly greater than the upm, the linespacing
-can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
-This means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).
-
-
-</pre>
-
-* 🍞 **PASS** OS/2 usWinAscent & usWinDescent values look good!
-
-</details>
-<details>
 <summary>🍞 <b>PASS:</b> Checking OS/2 Metrics match hhea Metrics.</summary>
 
 * [com.google.fonts/check/os2_metrics_match_hhea](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea)
@@ -24594,6 +24594,34 @@ This can be accomplished by using the 'gftools fix-hinting' command.
 
 </details>
 <details>
+<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+<pre>--- Rationale ---
+
+A font&#x27;s winAscent and winDescent values should be greater than the head
+table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
+can occur on Windows platforms
+(https://github.com/RedHatBrand/Overpass/issues/33).
+
+If the font includes tall/deep writing systems such as Arabic or Devanagari,
+the winAscent and winDescent can be greater than the yMax and abs(yMin) to
+accommodate vowel marks.
+
+When the win Metrics are significantly greater than the upm, the linespacing
+can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
+(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
+This means the font developer can control the linespacing with the typo values,
+whilst avoiding clipping by setting the win values to values greater than the
+yMax and abs(yMin).
+
+
+</pre>
+
+* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 895, but got 746 instead [code: descent]
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
 * [com.google.fonts/check/contour_count](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/contour_count)
@@ -24650,37 +24678,37 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: eogonek	Contours detected: 3	Expected: 2
 Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: eogonek	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
 
 </details>
 <details>
@@ -25720,10 +25748,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/Geologisk-LightItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 91.6kb |
-	| Hinted Size | 121.2kb |
-	| Increase | 29.6kb |
-	| Change   | 32.4 % |
+	| Dehinted Size | 94.0kb |
+	| Hinted Size | 123.6kb |
+	| Increase | 29.5kb |
+	| Change   | 31.4 % |
  [code: size-impact]
 
 </details>
@@ -25815,7 +25843,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, GSUB, gasp, DSIG, prep, fpgm, GPOS, cvt ]
+* ℹ **INFO** This font contains the following optional tables [gasp, prep, loca, fpgm, DSIG, GPOS, GSUB, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -26458,34 +26486,6 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-
-A font&#x27;s winAscent and winDescent values should be greater than the head
-table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
-can occur on Windows platforms
-(https://github.com/RedHatBrand/Overpass/issues/33).
-
-If the font includes tall/deep writing systems such as Arabic or Devanagari,
-the winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-
-When the win Metrics are significantly greater than the upm, the linespacing
-can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
-This means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).
-
-
-</pre>
-
-* 🍞 **PASS** OS/2 usWinAscent & usWinDescent values look good!
-
-</details>
-<details>
 <summary>🍞 <b>PASS:</b> Checking OS/2 Metrics match hhea Metrics.</summary>
 
 * [com.google.fonts/check/os2_metrics_match_hhea](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea)
@@ -27028,6 +27028,34 @@ This can be accomplished by using the 'gftools fix-hinting' command.
 
 </details>
 <details>
+<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+<pre>--- Rationale ---
+
+A font&#x27;s winAscent and winDescent values should be greater than the head
+table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
+can occur on Windows platforms
+(https://github.com/RedHatBrand/Overpass/issues/33).
+
+If the font includes tall/deep writing systems such as Arabic or Devanagari,
+the winAscent and winDescent can be greater than the yMax and abs(yMin) to
+accommodate vowel marks.
+
+When the win Metrics are significantly greater than the upm, the linespacing
+can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
+(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
+This means the font developer can control the linespacing with the typo values,
+whilst avoiding clipping by setting the win values to values greater than the
+yMax and abs(yMin).
+
+
+</pre>
+
+* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 895, but got 746 instead [code: descent]
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
 * [com.google.fonts/check/contour_count](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/contour_count)
@@ -27084,37 +27112,37 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: eogonek	Contours detected: 3	Expected: 2
 Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: eogonek	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
 
 </details>
 <details>
@@ -28154,10 +28182,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/Geologisk-Medium.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 89.8kb |
-	| Hinted Size | 120.4kb |
-	| Increase | 30.5kb |
-	| Change   | 34.0 % |
+	| Dehinted Size | 92.2kb |
+	| Hinted Size | 122.5kb |
+	| Increase | 30.3kb |
+	| Change   | 32.9 % |
  [code: size-impact]
 
 </details>
@@ -28249,7 +28277,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, GSUB, gasp, DSIG, prep, fpgm, GPOS, cvt ]
+* ℹ **INFO** This font contains the following optional tables [gasp, prep, loca, fpgm, DSIG, GPOS, GSUB, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -28892,34 +28920,6 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-
-A font&#x27;s winAscent and winDescent values should be greater than the head
-table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
-can occur on Windows platforms
-(https://github.com/RedHatBrand/Overpass/issues/33).
-
-If the font includes tall/deep writing systems such as Arabic or Devanagari,
-the winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-
-When the win Metrics are significantly greater than the upm, the linespacing
-can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
-This means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).
-
-
-</pre>
-
-* 🍞 **PASS** OS/2 usWinAscent & usWinDescent values look good!
-
-</details>
-<details>
 <summary>🍞 <b>PASS:</b> Checking OS/2 Metrics match hhea Metrics.</summary>
 
 * [com.google.fonts/check/os2_metrics_match_hhea](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea)
@@ -29462,6 +29462,34 @@ This can be accomplished by using the 'gftools fix-hinting' command.
 
 </details>
 <details>
+<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+<pre>--- Rationale ---
+
+A font&#x27;s winAscent and winDescent values should be greater than the head
+table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
+can occur on Windows platforms
+(https://github.com/RedHatBrand/Overpass/issues/33).
+
+If the font includes tall/deep writing systems such as Arabic or Devanagari,
+the winAscent and winDescent can be greater than the yMax and abs(yMin) to
+accommodate vowel marks.
+
+When the win Metrics are significantly greater than the upm, the linespacing
+can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
+(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
+This means the font developer can control the linespacing with the typo values,
+whilst avoiding clipping by setting the win values to values greater than the
+yMax and abs(yMin).
+
+
+</pre>
+
+* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 895, but got 746 instead [code: descent]
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
 * [com.google.fonts/check/contour_count](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/contour_count)
@@ -29518,37 +29546,37 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: eogonek	Contours detected: 3	Expected: 2
 Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: eogonek	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
 
 </details>
 <details>
@@ -30588,10 +30616,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/Geologisk-MediumItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 91.5kb |
-	| Hinted Size | 122.2kb |
-	| Increase | 30.7kb |
-	| Change   | 33.6 % |
+	| Dehinted Size | 94.0kb |
+	| Hinted Size | 124.6kb |
+	| Increase | 30.6kb |
+	| Change   | 32.5 % |
  [code: size-impact]
 
 </details>
@@ -30683,7 +30711,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, GSUB, gasp, DSIG, prep, fpgm, GPOS, cvt ]
+* ℹ **INFO** This font contains the following optional tables [gasp, prep, loca, fpgm, DSIG, GPOS, GSUB, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -31326,34 +31354,6 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-
-A font&#x27;s winAscent and winDescent values should be greater than the head
-table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
-can occur on Windows platforms
-(https://github.com/RedHatBrand/Overpass/issues/33).
-
-If the font includes tall/deep writing systems such as Arabic or Devanagari,
-the winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-
-When the win Metrics are significantly greater than the upm, the linespacing
-can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
-This means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).
-
-
-</pre>
-
-* 🍞 **PASS** OS/2 usWinAscent & usWinDescent values look good!
-
-</details>
-<details>
 <summary>🍞 <b>PASS:</b> Checking OS/2 Metrics match hhea Metrics.</summary>
 
 * [com.google.fonts/check/os2_metrics_match_hhea](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea)
@@ -31896,6 +31896,34 @@ This can be accomplished by using the 'gftools fix-hinting' command.
 
 </details>
 <details>
+<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+<pre>--- Rationale ---
+
+A font&#x27;s winAscent and winDescent values should be greater than the head
+table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
+can occur on Windows platforms
+(https://github.com/RedHatBrand/Overpass/issues/33).
+
+If the font includes tall/deep writing systems such as Arabic or Devanagari,
+the winAscent and winDescent can be greater than the yMax and abs(yMin) to
+accommodate vowel marks.
+
+When the win Metrics are significantly greater than the upm, the linespacing
+can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
+(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
+This means the font developer can control the linespacing with the typo values,
+whilst avoiding clipping by setting the win values to values greater than the
+yMax and abs(yMin).
+
+
+</pre>
+
+* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 895, but got 746 instead [code: descent]
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
 * [com.google.fonts/check/contour_count](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/contour_count)
@@ -31952,37 +31980,37 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: eogonek	Contours detected: 3	Expected: 2
 Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: eogonek	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
 
 </details>
 <details>
@@ -33022,10 +33050,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/Geologisk-Regular.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 89.7kb |
-	| Hinted Size | 130.4kb |
-	| Increase | 40.7kb |
-	| Change   | 45.3 % |
+	| Dehinted Size | 92.0kb |
+	| Hinted Size | 132.7kb |
+	| Increase | 40.6kb |
+	| Change   | 44.1 % |
  [code: size-impact]
 
 </details>
@@ -33117,7 +33145,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, GSUB, gasp, DSIG, prep, fpgm, GPOS, cvt ]
+* ℹ **INFO** This font contains the following optional tables [gasp, prep, loca, fpgm, DSIG, GPOS, GSUB, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -33760,34 +33788,6 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-
-A font&#x27;s winAscent and winDescent values should be greater than the head
-table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
-can occur on Windows platforms
-(https://github.com/RedHatBrand/Overpass/issues/33).
-
-If the font includes tall/deep writing systems such as Arabic or Devanagari,
-the winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-
-When the win Metrics are significantly greater than the upm, the linespacing
-can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
-This means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).
-
-
-</pre>
-
-* 🍞 **PASS** OS/2 usWinAscent & usWinDescent values look good!
-
-</details>
-<details>
 <summary>🍞 <b>PASS:</b> Checking OS/2 Metrics match hhea Metrics.</summary>
 
 * [com.google.fonts/check/os2_metrics_match_hhea](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea)
@@ -34330,6 +34330,34 @@ This can be accomplished by using the 'gftools fix-hinting' command.
 
 </details>
 <details>
+<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+<pre>--- Rationale ---
+
+A font&#x27;s winAscent and winDescent values should be greater than the head
+table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
+can occur on Windows platforms
+(https://github.com/RedHatBrand/Overpass/issues/33).
+
+If the font includes tall/deep writing systems such as Arabic or Devanagari,
+the winAscent and winDescent can be greater than the yMax and abs(yMin) to
+accommodate vowel marks.
+
+When the win Metrics are significantly greater than the upm, the linespacing
+can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
+(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
+This means the font developer can control the linespacing with the typo values,
+whilst avoiding clipping by setting the win values to values greater than the
+yMax and abs(yMin).
+
+
+</pre>
+
+* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 895, but got 746 instead [code: descent]
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
 * [com.google.fonts/check/contour_count](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/contour_count)
@@ -34387,38 +34415,38 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: eogonek	Contours detected: 3	Expected: 2
 Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: eogonek	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
 
 </details>
 <details>
@@ -35458,10 +35486,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/Geologisk-SemiBold.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 89.9kb |
-	| Hinted Size | 120.5kb |
-	| Increase | 30.6kb |
-	| Change   | 34.1 % |
+	| Dehinted Size | 92.2kb |
+	| Hinted Size | 122.6kb |
+	| Increase | 30.4kb |
+	| Change   | 33.0 % |
  [code: size-impact]
 
 </details>
@@ -35553,7 +35581,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, GSUB, gasp, DSIG, prep, fpgm, GPOS, cvt ]
+* ℹ **INFO** This font contains the following optional tables [gasp, prep, loca, fpgm, DSIG, GPOS, GSUB, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -36196,34 +36224,6 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-
-A font&#x27;s winAscent and winDescent values should be greater than the head
-table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
-can occur on Windows platforms
-(https://github.com/RedHatBrand/Overpass/issues/33).
-
-If the font includes tall/deep writing systems such as Arabic or Devanagari,
-the winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-
-When the win Metrics are significantly greater than the upm, the linespacing
-can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
-This means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).
-
-
-</pre>
-
-* 🍞 **PASS** OS/2 usWinAscent & usWinDescent values look good!
-
-</details>
-<details>
 <summary>🍞 <b>PASS:</b> Checking OS/2 Metrics match hhea Metrics.</summary>
 
 * [com.google.fonts/check/os2_metrics_match_hhea](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea)
@@ -36766,6 +36766,34 @@ This can be accomplished by using the 'gftools fix-hinting' command.
 
 </details>
 <details>
+<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+<pre>--- Rationale ---
+
+A font&#x27;s winAscent and winDescent values should be greater than the head
+table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
+can occur on Windows platforms
+(https://github.com/RedHatBrand/Overpass/issues/33).
+
+If the font includes tall/deep writing systems such as Arabic or Devanagari,
+the winAscent and winDescent can be greater than the yMax and abs(yMin) to
+accommodate vowel marks.
+
+When the win Metrics are significantly greater than the upm, the linespacing
+can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
+(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
+This means the font developer can control the linespacing with the typo values,
+whilst avoiding clipping by setting the win values to values greater than the
+yMax and abs(yMin).
+
+
+</pre>
+
+* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 895, but got 746 instead [code: descent]
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
 * [com.google.fonts/check/contour_count](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/contour_count)
@@ -36823,38 +36851,38 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: eogonek	Contours detected: 3	Expected: 2
 Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: eogonek	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
 
 </details>
 <details>
@@ -37894,10 +37922,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/Geologisk-SemiBoldItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 91.6kb |
-	| Hinted Size | 122.3kb |
-	| Increase | 30.7kb |
-	| Change   | 33.5 % |
+	| Dehinted Size | 94.1kb |
+	| Hinted Size | 124.6kb |
+	| Increase | 30.6kb |
+	| Change   | 32.5 % |
  [code: size-impact]
 
 </details>
@@ -37989,7 +38017,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, GSUB, gasp, DSIG, prep, fpgm, GPOS, cvt ]
+* ℹ **INFO** This font contains the following optional tables [gasp, prep, loca, fpgm, DSIG, GPOS, GSUB, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -38632,34 +38660,6 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-
-A font&#x27;s winAscent and winDescent values should be greater than the head
-table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
-can occur on Windows platforms
-(https://github.com/RedHatBrand/Overpass/issues/33).
-
-If the font includes tall/deep writing systems such as Arabic or Devanagari,
-the winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-
-When the win Metrics are significantly greater than the upm, the linespacing
-can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
-This means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).
-
-
-</pre>
-
-* 🍞 **PASS** OS/2 usWinAscent & usWinDescent values look good!
-
-</details>
-<details>
 <summary>🍞 <b>PASS:</b> Checking OS/2 Metrics match hhea Metrics.</summary>
 
 * [com.google.fonts/check/os2_metrics_match_hhea](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea)
@@ -39202,6 +39202,34 @@ This can be accomplished by using the 'gftools fix-hinting' command.
 
 </details>
 <details>
+<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+<pre>--- Rationale ---
+
+A font&#x27;s winAscent and winDescent values should be greater than the head
+table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
+can occur on Windows platforms
+(https://github.com/RedHatBrand/Overpass/issues/33).
+
+If the font includes tall/deep writing systems such as Arabic or Devanagari,
+the winAscent and winDescent can be greater than the yMax and abs(yMin) to
+accommodate vowel marks.
+
+When the win Metrics are significantly greater than the upm, the linespacing
+can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
+(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
+This means the font developer can control the linespacing with the typo values,
+whilst avoiding clipping by setting the win values to values greater than the
+yMax and abs(yMin).
+
+
+</pre>
+
+* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 895, but got 746 instead [code: descent]
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Checking OS/2 usWeightClass.</summary>
 
 * [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
@@ -39266,37 +39294,37 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: eogonek	Contours detected: 3	Expected: 2
 Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: eogonek	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
 
 </details>
 <details>
@@ -40336,10 +40364,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/Geologisk-Thin.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 89.3kb |
-	| Hinted Size | 116.9kb |
-	| Increase | 27.5kb |
-	| Change   | 30.8 % |
+	| Dehinted Size | 91.4kb |
+	| Hinted Size | 118.8kb |
+	| Increase | 27.4kb |
+	| Change   | 30.0 % |
  [code: size-impact]
 
 </details>
@@ -40431,7 +40459,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, GSUB, gasp, DSIG, prep, fpgm, GPOS, cvt ]
+* ℹ **INFO** This font contains the following optional tables [gasp, prep, loca, fpgm, DSIG, GPOS, GSUB, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -41066,34 +41094,6 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-
-A font&#x27;s winAscent and winDescent values should be greater than the head
-table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
-can occur on Windows platforms
-(https://github.com/RedHatBrand/Overpass/issues/33).
-
-If the font includes tall/deep writing systems such as Arabic or Devanagari,
-the winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-
-When the win Metrics are significantly greater than the upm, the linespacing
-can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
-This means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).
-
-
-</pre>
-
-* 🍞 **PASS** OS/2 usWinAscent & usWinDescent values look good!
-
-</details>
-<details>
 <summary>🍞 <b>PASS:</b> Checking OS/2 Metrics match hhea Metrics.</summary>
 
 * [com.google.fonts/check/os2_metrics_match_hhea](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea)
@@ -41636,6 +41636,34 @@ This can be accomplished by using the 'gftools fix-hinting' command.
 
 </details>
 <details>
+<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+<pre>--- Rationale ---
+
+A font&#x27;s winAscent and winDescent values should be greater than the head
+table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
+can occur on Windows platforms
+(https://github.com/RedHatBrand/Overpass/issues/33).
+
+If the font includes tall/deep writing systems such as Arabic or Devanagari,
+the winAscent and winDescent can be greater than the yMax and abs(yMin) to
+accommodate vowel marks.
+
+When the win Metrics are significantly greater than the upm, the linespacing
+can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
+(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
+This means the font developer can control the linespacing with the typo values,
+whilst avoiding clipping by setting the win values to values greater than the
+yMax and abs(yMin).
+
+
+</pre>
+
+* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 895, but got 746 instead [code: descent]
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Checking OS/2 usWeightClass.</summary>
 
 * [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
@@ -41699,36 +41727,36 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
 Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3 [code: contour-count]
+Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
 
 </details>
 <details>
@@ -42768,10 +42796,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/Geologisk-ThinItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 90.6kb |
-	| Hinted Size | 118.8kb |
-	| Increase | 28.2kb |
-	| Change   | 31.1 % |
+	| Dehinted Size | 93.1kb |
+	| Hinted Size | 121.1kb |
+	| Increase | 28.0kb |
+	| Change   | 30.1 % |
  [code: size-impact]
 
 </details>
@@ -42863,7 +42891,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, GSUB, gasp, DSIG, prep, fpgm, GPOS, cvt ]
+* ℹ **INFO** This font contains the following optional tables [gasp, prep, loca, fpgm, DSIG, GPOS, GSUB, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -43498,34 +43526,6 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-
-A font&#x27;s winAscent and winDescent values should be greater than the head
-table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
-can occur on Windows platforms
-(https://github.com/RedHatBrand/Overpass/issues/33).
-
-If the font includes tall/deep writing systems such as Arabic or Devanagari,
-the winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-
-When the win Metrics are significantly greater than the upm, the linespacing
-can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
-This means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).
-
-
-</pre>
-
-* 🍞 **PASS** OS/2 usWinAscent & usWinDescent values look good!
-
-</details>
-<details>
 <summary>🍞 <b>PASS:</b> Checking OS/2 Metrics match hhea Metrics.</summary>
 
 * [com.google.fonts/check/os2_metrics_match_hhea](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea)
@@ -44068,6 +44068,34 @@ This can be accomplished by using the 'gftools fix-hinting' command.
 
 </details>
 <details>
+<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+<pre>--- Rationale ---
+
+A font&#x27;s winAscent and winDescent values should be greater than the head
+table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
+can occur on Windows platforms
+(https://github.com/RedHatBrand/Overpass/issues/33).
+
+If the font includes tall/deep writing systems such as Arabic or Devanagari,
+the winAscent and winDescent can be greater than the yMax and abs(yMin) to
+accommodate vowel marks.
+
+When the win Metrics are significantly greater than the upm, the linespacing
+can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
+(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
+This means the font developer can control the linespacing with the typo values,
+whilst avoiding clipping by setting the win values to values greater than the
+yMax and abs(yMin).
+
+
+</pre>
+
+* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 895, but got 746 instead [code: descent]
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
 * [com.google.fonts/check/contour_count](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/contour_count)
@@ -44126,39 +44154,39 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni20A6	Contours detected: 2	Expected: 1, 3 or 5
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: eogonek	Contours detected: 3	Expected: 2
 Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: eogonek	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni20A6	Contours detected: 2	Expected: 1, 3 or 5
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
 
 </details>
 <details>
@@ -45198,10 +45226,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/GeologiskCut-Black.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 89.6kb |
-	| Hinted Size | 118.8kb |
-	| Increase | 29.2kb |
-	| Change   | 32.6 % |
+	| Dehinted Size | 91.9kb |
+	| Hinted Size | 121.3kb |
+	| Increase | 29.4kb |
+	| Change   | 32.0 % |
  [code: size-impact]
 
 </details>
@@ -45293,7 +45321,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, GSUB, gasp, DSIG, prep, fpgm, GPOS, cvt ]
+* ℹ **INFO** This font contains the following optional tables [gasp, prep, loca, fpgm, DSIG, GPOS, GSUB, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -45936,34 +45964,6 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-
-A font&#x27;s winAscent and winDescent values should be greater than the head
-table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
-can occur on Windows platforms
-(https://github.com/RedHatBrand/Overpass/issues/33).
-
-If the font includes tall/deep writing systems such as Arabic or Devanagari,
-the winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-
-When the win Metrics are significantly greater than the upm, the linespacing
-can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
-This means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).
-
-
-</pre>
-
-* 🍞 **PASS** OS/2 usWinAscent & usWinDescent values look good!
-
-</details>
-<details>
 <summary>🍞 <b>PASS:</b> Checking OS/2 Metrics match hhea Metrics.</summary>
 
 * [com.google.fonts/check/os2_metrics_match_hhea](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea)
@@ -46506,6 +46506,34 @@ This can be accomplished by using the 'gftools fix-hinting' command.
 
 </details>
 <details>
+<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+<pre>--- Rationale ---
+
+A font&#x27;s winAscent and winDescent values should be greater than the head
+table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
+can occur on Windows platforms
+(https://github.com/RedHatBrand/Overpass/issues/33).
+
+If the font includes tall/deep writing systems such as Arabic or Devanagari,
+the winAscent and winDescent can be greater than the yMax and abs(yMin) to
+accommodate vowel marks.
+
+When the win Metrics are significantly greater than the upm, the linespacing
+can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
+(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
+This means the font developer can control the linespacing with the typo values,
+whilst avoiding clipping by setting the win values to values greater than the
+yMax and abs(yMin).
+
+
+</pre>
+
+* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 895, but got 746 instead [code: descent]
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
 * [com.google.fonts/check/contour_count](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/contour_count)
@@ -46564,39 +46592,39 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni20A6	Contours detected: 2	Expected: 1, 3 or 5
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: eogonek	Contours detected: 3	Expected: 2
 Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: eogonek	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni20A6	Contours detected: 2	Expected: 1, 3 or 5
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
 
 </details>
 <details>
@@ -47636,10 +47664,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/GeologiskCut-BlackItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 91.5kb |
-	| Hinted Size | 120.6kb |
+	| Dehinted Size | 94.0kb |
+	| Hinted Size | 123.1kb |
 	| Increase | 29.1kb |
-	| Change   | 31.7 % |
+	| Change   | 31.0 % |
  [code: size-impact]
 
 </details>
@@ -47731,7 +47759,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, GSUB, gasp, DSIG, prep, fpgm, GPOS, cvt ]
+* ℹ **INFO** This font contains the following optional tables [gasp, prep, loca, fpgm, DSIG, GPOS, GSUB, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -48374,34 +48402,6 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-
-A font&#x27;s winAscent and winDescent values should be greater than the head
-table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
-can occur on Windows platforms
-(https://github.com/RedHatBrand/Overpass/issues/33).
-
-If the font includes tall/deep writing systems such as Arabic or Devanagari,
-the winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-
-When the win Metrics are significantly greater than the upm, the linespacing
-can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
-This means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).
-
-
-</pre>
-
-* 🍞 **PASS** OS/2 usWinAscent & usWinDescent values look good!
-
-</details>
-<details>
 <summary>🍞 <b>PASS:</b> Checking OS/2 Metrics match hhea Metrics.</summary>
 
 * [com.google.fonts/check/os2_metrics_match_hhea](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea)
@@ -48944,6 +48944,34 @@ This can be accomplished by using the 'gftools fix-hinting' command.
 
 </details>
 <details>
+<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+<pre>--- Rationale ---
+
+A font&#x27;s winAscent and winDescent values should be greater than the head
+table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
+can occur on Windows platforms
+(https://github.com/RedHatBrand/Overpass/issues/33).
+
+If the font includes tall/deep writing systems such as Arabic or Devanagari,
+the winAscent and winDescent can be greater than the yMax and abs(yMin) to
+accommodate vowel marks.
+
+When the win Metrics are significantly greater than the upm, the linespacing
+can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
+(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
+This means the font developer can control the linespacing with the typo values,
+whilst avoiding clipping by setting the win values to values greater than the
+yMax and abs(yMin).
+
+
+</pre>
+
+* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 895, but got 746 instead [code: descent]
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
 * [com.google.fonts/check/contour_count](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/contour_count)
@@ -49001,38 +49029,38 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: eogonek	Contours detected: 3	Expected: 2
 Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: eogonek	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
 
 </details>
 <details>
@@ -50072,10 +50100,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/GeologiskCut-Bold.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 89.9kb |
-	| Hinted Size | 125.0kb |
-	| Increase | 35.1kb |
-	| Change   | 39.0 % |
+	| Dehinted Size | 92.3kb |
+	| Hinted Size | 127.5kb |
+	| Increase | 35.3kb |
+	| Change   | 38.2 % |
  [code: size-impact]
 
 </details>
@@ -50167,7 +50195,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, GSUB, gasp, DSIG, prep, fpgm, GPOS, cvt ]
+* ℹ **INFO** This font contains the following optional tables [gasp, prep, loca, fpgm, DSIG, GPOS, GSUB, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -50810,34 +50838,6 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-
-A font&#x27;s winAscent and winDescent values should be greater than the head
-table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
-can occur on Windows platforms
-(https://github.com/RedHatBrand/Overpass/issues/33).
-
-If the font includes tall/deep writing systems such as Arabic or Devanagari,
-the winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-
-When the win Metrics are significantly greater than the upm, the linespacing
-can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
-This means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).
-
-
-</pre>
-
-* 🍞 **PASS** OS/2 usWinAscent & usWinDescent values look good!
-
-</details>
-<details>
 <summary>🍞 <b>PASS:</b> Checking OS/2 Metrics match hhea Metrics.</summary>
 
 * [com.google.fonts/check/os2_metrics_match_hhea](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea)
@@ -51380,6 +51380,34 @@ This can be accomplished by using the 'gftools fix-hinting' command.
 
 </details>
 <details>
+<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+<pre>--- Rationale ---
+
+A font&#x27;s winAscent and winDescent values should be greater than the head
+table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
+can occur on Windows platforms
+(https://github.com/RedHatBrand/Overpass/issues/33).
+
+If the font includes tall/deep writing systems such as Arabic or Devanagari,
+the winAscent and winDescent can be greater than the yMax and abs(yMin) to
+accommodate vowel marks.
+
+When the win Metrics are significantly greater than the upm, the linespacing
+can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
+(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
+This means the font developer can control the linespacing with the typo values,
+whilst avoiding clipping by setting the win values to values greater than the
+yMax and abs(yMin).
+
+
+</pre>
+
+* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 895, but got 746 instead [code: descent]
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
 * [com.google.fonts/check/contour_count](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/contour_count)
@@ -51437,38 +51465,38 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: eogonek	Contours detected: 3	Expected: 2
 Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: eogonek	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
 
 </details>
 <details>
@@ -52508,10 +52536,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/GeologiskCut-BoldItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 91.7kb |
-	| Hinted Size | 126.1kb |
-	| Increase | 34.4kb |
-	| Change   | 37.6 % |
+	| Dehinted Size | 94.2kb |
+	| Hinted Size | 128.7kb |
+	| Increase | 34.5kb |
+	| Change   | 36.7 % |
  [code: size-impact]
 
 </details>
@@ -52603,7 +52631,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, GSUB, gasp, DSIG, prep, fpgm, GPOS, cvt ]
+* ℹ **INFO** This font contains the following optional tables [gasp, prep, loca, fpgm, DSIG, GPOS, GSUB, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -53246,34 +53274,6 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-
-A font&#x27;s winAscent and winDescent values should be greater than the head
-table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
-can occur on Windows platforms
-(https://github.com/RedHatBrand/Overpass/issues/33).
-
-If the font includes tall/deep writing systems such as Arabic or Devanagari,
-the winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-
-When the win Metrics are significantly greater than the upm, the linespacing
-can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
-This means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).
-
-
-</pre>
-
-* 🍞 **PASS** OS/2 usWinAscent & usWinDescent values look good!
-
-</details>
-<details>
 <summary>🍞 <b>PASS:</b> Checking OS/2 Metrics match hhea Metrics.</summary>
 
 * [com.google.fonts/check/os2_metrics_match_hhea](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea)
@@ -53816,6 +53816,34 @@ This can be accomplished by using the 'gftools fix-hinting' command.
 
 </details>
 <details>
+<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+<pre>--- Rationale ---
+
+A font&#x27;s winAscent and winDescent values should be greater than the head
+table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
+can occur on Windows platforms
+(https://github.com/RedHatBrand/Overpass/issues/33).
+
+If the font includes tall/deep writing systems such as Arabic or Devanagari,
+the winAscent and winDescent can be greater than the yMax and abs(yMin) to
+accommodate vowel marks.
+
+When the win Metrics are significantly greater than the upm, the linespacing
+can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
+(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
+This means the font developer can control the linespacing with the typo values,
+whilst avoiding clipping by setting the win values to values greater than the
+yMax and abs(yMin).
+
+
+</pre>
+
+* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 895, but got 746 instead [code: descent]
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
 * [com.google.fonts/check/contour_count](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/contour_count)
@@ -53873,38 +53901,38 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: eogonek	Contours detected: 3	Expected: 2
 Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: eogonek	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
 
 </details>
 <details>
@@ -54972,10 +55000,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/GeologiskCut-ExtraBold.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 90.0kb |
-	| Hinted Size | 125.3kb |
-	| Increase | 35.3kb |
-	| Change   | 39.2 % |
+	| Dehinted Size | 92.3kb |
+	| Hinted Size | 127.8kb |
+	| Increase | 35.5kb |
+	| Change   | 38.4 % |
  [code: size-impact]
 
 </details>
@@ -55067,7 +55095,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, GSUB, gasp, DSIG, prep, fpgm, GPOS, cvt ]
+* ℹ **INFO** This font contains the following optional tables [gasp, prep, loca, fpgm, DSIG, GPOS, GSUB, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -55685,34 +55713,6 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-
-A font&#x27;s winAscent and winDescent values should be greater than the head
-table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
-can occur on Windows platforms
-(https://github.com/RedHatBrand/Overpass/issues/33).
-
-If the font includes tall/deep writing systems such as Arabic or Devanagari,
-the winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-
-When the win Metrics are significantly greater than the upm, the linespacing
-can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
-This means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).
-
-
-</pre>
-
-* 🍞 **PASS** OS/2 usWinAscent & usWinDescent values look good!
-
-</details>
-<details>
 <summary>🍞 <b>PASS:</b> Checking OS/2 Metrics match hhea Metrics.</summary>
 
 * [com.google.fonts/check/os2_metrics_match_hhea](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea)
@@ -56255,6 +56255,34 @@ This can be accomplished by using the 'gftools fix-hinting' command.
 
 </details>
 <details>
+<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+<pre>--- Rationale ---
+
+A font&#x27;s winAscent and winDescent values should be greater than the head
+table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
+can occur on Windows platforms
+(https://github.com/RedHatBrand/Overpass/issues/33).
+
+If the font includes tall/deep writing systems such as Arabic or Devanagari,
+the winAscent and winDescent can be greater than the yMax and abs(yMin) to
+accommodate vowel marks.
+
+When the win Metrics are significantly greater than the upm, the linespacing
+can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
+(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
+This means the font developer can control the linespacing with the typo values,
+whilst avoiding clipping by setting the win values to values greater than the
+yMax and abs(yMin).
+
+
+</pre>
+
+* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 895, but got 746 instead [code: descent]
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
 * [com.google.fonts/check/contour_count](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/contour_count)
@@ -56312,38 +56340,38 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: eogonek	Contours detected: 3	Expected: 2
 Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: eogonek	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
 
 </details>
 <details>
@@ -57411,10 +57439,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/GeologiskCut-ExtraBoldItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 91.9kb |
-	| Hinted Size | 126.7kb |
-	| Increase | 34.8kb |
-	| Change   | 37.9 % |
+	| Dehinted Size | 94.4kb |
+	| Hinted Size | 129.4kb |
+	| Increase | 35.0kb |
+	| Change   | 37.1 % |
  [code: size-impact]
 
 </details>
@@ -57506,7 +57534,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, GSUB, gasp, DSIG, prep, fpgm, GPOS, cvt ]
+* ℹ **INFO** This font contains the following optional tables [gasp, prep, loca, fpgm, DSIG, GPOS, GSUB, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -58124,34 +58152,6 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-
-A font&#x27;s winAscent and winDescent values should be greater than the head
-table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
-can occur on Windows platforms
-(https://github.com/RedHatBrand/Overpass/issues/33).
-
-If the font includes tall/deep writing systems such as Arabic or Devanagari,
-the winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-
-When the win Metrics are significantly greater than the upm, the linespacing
-can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
-This means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).
-
-
-</pre>
-
-* 🍞 **PASS** OS/2 usWinAscent & usWinDescent values look good!
-
-</details>
-<details>
 <summary>🍞 <b>PASS:</b> Checking OS/2 Metrics match hhea Metrics.</summary>
 
 * [com.google.fonts/check/os2_metrics_match_hhea](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea)
@@ -58694,6 +58694,34 @@ This can be accomplished by using the 'gftools fix-hinting' command.
 
 </details>
 <details>
+<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+<pre>--- Rationale ---
+
+A font&#x27;s winAscent and winDescent values should be greater than the head
+table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
+can occur on Windows platforms
+(https://github.com/RedHatBrand/Overpass/issues/33).
+
+If the font includes tall/deep writing systems such as Arabic or Devanagari,
+the winAscent and winDescent can be greater than the yMax and abs(yMin) to
+accommodate vowel marks.
+
+When the win Metrics are significantly greater than the upm, the linespacing
+can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
+(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
+This means the font developer can control the linespacing with the typo values,
+whilst avoiding clipping by setting the win values to values greater than the
+yMax and abs(yMin).
+
+
+</pre>
+
+* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 895, but got 746 instead [code: descent]
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Checking OS/2 usWeightClass.</summary>
 
 * [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
@@ -58758,37 +58786,37 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: eogonek	Contours detected: 3	Expected: 2
 Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: eogonek	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
 
 </details>
 <details>
@@ -59856,10 +59884,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/GeologiskCut-ExtraLight.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 90.4kb |
-	| Hinted Size | 118.4kb |
-	| Increase | 28.1kb |
-	| Change   | 31.1 % |
+	| Dehinted Size | 92.6kb |
+	| Hinted Size | 120.9kb |
+	| Increase | 28.3kb |
+	| Change   | 30.6 % |
  [code: size-impact]
 
 </details>
@@ -59951,7 +59979,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, GSUB, gasp, DSIG, prep, fpgm, GPOS, cvt ]
+* ℹ **INFO** This font contains the following optional tables [gasp, prep, loca, fpgm, DSIG, GPOS, GSUB, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -60561,34 +60589,6 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-
-A font&#x27;s winAscent and winDescent values should be greater than the head
-table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
-can occur on Windows platforms
-(https://github.com/RedHatBrand/Overpass/issues/33).
-
-If the font includes tall/deep writing systems such as Arabic or Devanagari,
-the winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-
-When the win Metrics are significantly greater than the upm, the linespacing
-can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
-This means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).
-
-
-</pre>
-
-* 🍞 **PASS** OS/2 usWinAscent & usWinDescent values look good!
-
-</details>
-<details>
 <summary>🍞 <b>PASS:</b> Checking OS/2 Metrics match hhea Metrics.</summary>
 
 * [com.google.fonts/check/os2_metrics_match_hhea](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea)
@@ -61131,6 +61131,34 @@ This can be accomplished by using the 'gftools fix-hinting' command.
 
 </details>
 <details>
+<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+<pre>--- Rationale ---
+
+A font&#x27;s winAscent and winDescent values should be greater than the head
+table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
+can occur on Windows platforms
+(https://github.com/RedHatBrand/Overpass/issues/33).
+
+If the font includes tall/deep writing systems such as Arabic or Devanagari,
+the winAscent and winDescent can be greater than the yMax and abs(yMin) to
+accommodate vowel marks.
+
+When the win Metrics are significantly greater than the upm, the linespacing
+can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
+(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
+This means the font developer can control the linespacing with the typo values,
+whilst avoiding clipping by setting the win values to values greater than the
+yMax and abs(yMin).
+
+
+</pre>
+
+* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 895, but got 746 instead [code: descent]
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Checking OS/2 usWeightClass.</summary>
 
 * [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
@@ -61194,36 +61222,36 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
 Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3 [code: contour-count]
+Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
 
 </details>
 <details>
@@ -62291,10 +62319,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/GeologiskCut-ExtraLightItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 92.0kb |
-	| Hinted Size | 120.2kb |
-	| Increase | 28.2kb |
-	| Change   | 30.7 % |
+	| Dehinted Size | 94.4kb |
+	| Hinted Size | 122.9kb |
+	| Increase | 28.5kb |
+	| Change   | 30.2 % |
  [code: size-impact]
 
 </details>
@@ -62386,7 +62414,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, GSUB, gasp, DSIG, prep, fpgm, GPOS, cvt ]
+* ℹ **INFO** This font contains the following optional tables [gasp, prep, loca, fpgm, DSIG, GPOS, GSUB, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -62996,34 +63024,6 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-
-A font&#x27;s winAscent and winDescent values should be greater than the head
-table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
-can occur on Windows platforms
-(https://github.com/RedHatBrand/Overpass/issues/33).
-
-If the font includes tall/deep writing systems such as Arabic or Devanagari,
-the winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-
-When the win Metrics are significantly greater than the upm, the linespacing
-can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
-This means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).
-
-
-</pre>
-
-* 🍞 **PASS** OS/2 usWinAscent & usWinDescent values look good!
-
-</details>
-<details>
 <summary>🍞 <b>PASS:</b> Checking OS/2 Metrics match hhea Metrics.</summary>
 
 * [com.google.fonts/check/os2_metrics_match_hhea](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea)
@@ -63566,6 +63566,34 @@ This can be accomplished by using the 'gftools fix-hinting' command.
 
 </details>
 <details>
+<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+<pre>--- Rationale ---
+
+A font&#x27;s winAscent and winDescent values should be greater than the head
+table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
+can occur on Windows platforms
+(https://github.com/RedHatBrand/Overpass/issues/33).
+
+If the font includes tall/deep writing systems such as Arabic or Devanagari,
+the winAscent and winDescent can be greater than the yMax and abs(yMin) to
+accommodate vowel marks.
+
+When the win Metrics are significantly greater than the upm, the linespacing
+can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
+(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
+This means the font developer can control the linespacing with the typo values,
+whilst avoiding clipping by setting the win values to values greater than the
+yMax and abs(yMin).
+
+
+</pre>
+
+* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 895, but got 746 instead [code: descent]
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
 * [com.google.fonts/check/contour_count](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/contour_count)
@@ -63621,36 +63649,36 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
 Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3 [code: contour-count]
+Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
 
 </details>
 <details>
@@ -64690,10 +64718,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/GeologiskCut-Italic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 91.4kb |
-	| Hinted Size | 131.7kb |
-	| Increase | 40.3kb |
-	| Change   | 44.1 % |
+	| Dehinted Size | 93.9kb |
+	| Hinted Size | 134.4kb |
+	| Increase | 40.6kb |
+	| Change   | 43.2 % |
  [code: size-impact]
 
 </details>
@@ -64785,7 +64813,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, GSUB, gasp, DSIG, prep, fpgm, GPOS, cvt ]
+* ℹ **INFO** This font contains the following optional tables [gasp, prep, loca, fpgm, DSIG, GPOS, GSUB, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -65428,34 +65456,6 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-
-A font&#x27;s winAscent and winDescent values should be greater than the head
-table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
-can occur on Windows platforms
-(https://github.com/RedHatBrand/Overpass/issues/33).
-
-If the font includes tall/deep writing systems such as Arabic or Devanagari,
-the winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-
-When the win Metrics are significantly greater than the upm, the linespacing
-can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
-This means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).
-
-
-</pre>
-
-* 🍞 **PASS** OS/2 usWinAscent & usWinDescent values look good!
-
-</details>
-<details>
 <summary>🍞 <b>PASS:</b> Checking OS/2 Metrics match hhea Metrics.</summary>
 
 * [com.google.fonts/check/os2_metrics_match_hhea](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea)
@@ -65998,6 +65998,34 @@ This can be accomplished by using the 'gftools fix-hinting' command.
 
 </details>
 <details>
+<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+<pre>--- Rationale ---
+
+A font&#x27;s winAscent and winDescent values should be greater than the head
+table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
+can occur on Windows platforms
+(https://github.com/RedHatBrand/Overpass/issues/33).
+
+If the font includes tall/deep writing systems such as Arabic or Devanagari,
+the winAscent and winDescent can be greater than the yMax and abs(yMin) to
+accommodate vowel marks.
+
+When the win Metrics are significantly greater than the upm, the linespacing
+can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
+(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
+This means the font developer can control the linespacing with the typo values,
+whilst avoiding clipping by setting the win values to values greater than the
+yMax and abs(yMin).
+
+
+</pre>
+
+* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 895, but got 746 instead [code: descent]
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
 * [com.google.fonts/check/contour_count](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/contour_count)
@@ -66054,37 +66082,37 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: eogonek	Contours detected: 3	Expected: 2
 Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: eogonek	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
 
 </details>
 <details>
@@ -67124,10 +67152,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/GeologiskCut-Light.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 89.9kb |
-	| Hinted Size | 123.5kb |
-	| Increase | 33.6kb |
-	| Change   | 37.4 % |
+	| Dehinted Size | 92.1kb |
+	| Hinted Size | 126.0kb |
+	| Increase | 33.8kb |
+	| Change   | 36.7 % |
  [code: size-impact]
 
 </details>
@@ -67219,7 +67247,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, GSUB, gasp, DSIG, prep, fpgm, GPOS, cvt ]
+* ℹ **INFO** This font contains the following optional tables [gasp, prep, loca, fpgm, DSIG, GPOS, GSUB, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -67862,34 +67890,6 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-
-A font&#x27;s winAscent and winDescent values should be greater than the head
-table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
-can occur on Windows platforms
-(https://github.com/RedHatBrand/Overpass/issues/33).
-
-If the font includes tall/deep writing systems such as Arabic or Devanagari,
-the winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-
-When the win Metrics are significantly greater than the upm, the linespacing
-can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
-This means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).
-
-
-</pre>
-
-* 🍞 **PASS** OS/2 usWinAscent & usWinDescent values look good!
-
-</details>
-<details>
 <summary>🍞 <b>PASS:</b> Checking OS/2 Metrics match hhea Metrics.</summary>
 
 * [com.google.fonts/check/os2_metrics_match_hhea](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea)
@@ -68432,6 +68432,34 @@ This can be accomplished by using the 'gftools fix-hinting' command.
 
 </details>
 <details>
+<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+<pre>--- Rationale ---
+
+A font&#x27;s winAscent and winDescent values should be greater than the head
+table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
+can occur on Windows platforms
+(https://github.com/RedHatBrand/Overpass/issues/33).
+
+If the font includes tall/deep writing systems such as Arabic or Devanagari,
+the winAscent and winDescent can be greater than the yMax and abs(yMin) to
+accommodate vowel marks.
+
+When the win Metrics are significantly greater than the upm, the linespacing
+can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
+(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
+This means the font developer can control the linespacing with the typo values,
+whilst avoiding clipping by setting the win values to values greater than the
+yMax and abs(yMin).
+
+
+</pre>
+
+* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 895, but got 746 instead [code: descent]
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
 * [com.google.fonts/check/contour_count](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/contour_count)
@@ -68487,36 +68515,36 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
 Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3 [code: contour-count]
+Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
 
 </details>
 <details>
@@ -69556,10 +69584,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/GeologiskCut-LightItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 91.7kb |
-	| Hinted Size | 125.7kb |
-	| Increase | 34.0kb |
-	| Change   | 37.0 % |
+	| Dehinted Size | 94.1kb |
+	| Hinted Size | 128.3kb |
+	| Increase | 34.2kb |
+	| Change   | 36.3 % |
  [code: size-impact]
 
 </details>
@@ -69651,7 +69679,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, GSUB, gasp, DSIG, prep, fpgm, GPOS, cvt ]
+* ℹ **INFO** This font contains the following optional tables [gasp, prep, loca, fpgm, DSIG, GPOS, GSUB, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -70294,34 +70322,6 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-
-A font&#x27;s winAscent and winDescent values should be greater than the head
-table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
-can occur on Windows platforms
-(https://github.com/RedHatBrand/Overpass/issues/33).
-
-If the font includes tall/deep writing systems such as Arabic or Devanagari,
-the winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-
-When the win Metrics are significantly greater than the upm, the linespacing
-can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
-This means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).
-
-
-</pre>
-
-* 🍞 **PASS** OS/2 usWinAscent & usWinDescent values look good!
-
-</details>
-<details>
 <summary>🍞 <b>PASS:</b> Checking OS/2 Metrics match hhea Metrics.</summary>
 
 * [com.google.fonts/check/os2_metrics_match_hhea](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea)
@@ -70864,6 +70864,34 @@ This can be accomplished by using the 'gftools fix-hinting' command.
 
 </details>
 <details>
+<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+<pre>--- Rationale ---
+
+A font&#x27;s winAscent and winDescent values should be greater than the head
+table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
+can occur on Windows platforms
+(https://github.com/RedHatBrand/Overpass/issues/33).
+
+If the font includes tall/deep writing systems such as Arabic or Devanagari,
+the winAscent and winDescent can be greater than the yMax and abs(yMin) to
+accommodate vowel marks.
+
+When the win Metrics are significantly greater than the upm, the linespacing
+can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
+(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
+This means the font developer can control the linespacing with the typo values,
+whilst avoiding clipping by setting the win values to values greater than the
+yMax and abs(yMin).
+
+
+</pre>
+
+* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 895, but got 746 instead [code: descent]
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
 * [com.google.fonts/check/contour_count](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/contour_count)
@@ -70921,37 +70949,37 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: eogonek	Contours detected: 3	Expected: 2
 Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: eogonek	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
 
 </details>
 <details>
@@ -71991,10 +72019,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/GeologiskCut-Medium.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 89.9kb |
-	| Hinted Size | 120.0kb |
-	| Increase | 30.1kb |
-	| Change   | 33.5 % |
+	| Dehinted Size | 92.2kb |
+	| Hinted Size | 122.5kb |
+	| Increase | 30.3kb |
+	| Change   | 32.9 % |
  [code: size-impact]
 
 </details>
@@ -72086,7 +72114,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, GSUB, gasp, DSIG, prep, fpgm, GPOS, cvt ]
+* ℹ **INFO** This font contains the following optional tables [gasp, prep, loca, fpgm, DSIG, GPOS, GSUB, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -72729,34 +72757,6 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-
-A font&#x27;s winAscent and winDescent values should be greater than the head
-table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
-can occur on Windows platforms
-(https://github.com/RedHatBrand/Overpass/issues/33).
-
-If the font includes tall/deep writing systems such as Arabic or Devanagari,
-the winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-
-When the win Metrics are significantly greater than the upm, the linespacing
-can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
-This means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).
-
-
-</pre>
-
-* 🍞 **PASS** OS/2 usWinAscent & usWinDescent values look good!
-
-</details>
-<details>
 <summary>🍞 <b>PASS:</b> Checking OS/2 Metrics match hhea Metrics.</summary>
 
 * [com.google.fonts/check/os2_metrics_match_hhea](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea)
@@ -73299,6 +73299,34 @@ This can be accomplished by using the 'gftools fix-hinting' command.
 
 </details>
 <details>
+<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+<pre>--- Rationale ---
+
+A font&#x27;s winAscent and winDescent values should be greater than the head
+table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
+can occur on Windows platforms
+(https://github.com/RedHatBrand/Overpass/issues/33).
+
+If the font includes tall/deep writing systems such as Arabic or Devanagari,
+the winAscent and winDescent can be greater than the yMax and abs(yMin) to
+accommodate vowel marks.
+
+When the win Metrics are significantly greater than the upm, the linespacing
+can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
+(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
+This means the font developer can control the linespacing with the typo values,
+whilst avoiding clipping by setting the win values to values greater than the
+yMax and abs(yMin).
+
+
+</pre>
+
+* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 895, but got 746 instead [code: descent]
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
 * [com.google.fonts/check/contour_count](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/contour_count)
@@ -73355,37 +73383,37 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: eogonek	Contours detected: 3	Expected: 2
 Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: eogonek	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
 
 </details>
 <details>
@@ -74425,10 +74453,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/GeologiskCut-MediumItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 91.7kb |
-	| Hinted Size | 122.0kb |
-	| Increase | 30.3kb |
-	| Change   | 33.0 % |
+	| Dehinted Size | 94.1kb |
+	| Hinted Size | 124.7kb |
+	| Increase | 30.5kb |
+	| Change   | 32.4 % |
  [code: size-impact]
 
 </details>
@@ -74520,7 +74548,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, GSUB, gasp, DSIG, prep, fpgm, GPOS, cvt ]
+* ℹ **INFO** This font contains the following optional tables [gasp, prep, loca, fpgm, DSIG, GPOS, GSUB, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -75163,34 +75191,6 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-
-A font&#x27;s winAscent and winDescent values should be greater than the head
-table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
-can occur on Windows platforms
-(https://github.com/RedHatBrand/Overpass/issues/33).
-
-If the font includes tall/deep writing systems such as Arabic or Devanagari,
-the winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-
-When the win Metrics are significantly greater than the upm, the linespacing
-can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
-This means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).
-
-
-</pre>
-
-* 🍞 **PASS** OS/2 usWinAscent & usWinDescent values look good!
-
-</details>
-<details>
 <summary>🍞 <b>PASS:</b> Checking OS/2 Metrics match hhea Metrics.</summary>
 
 * [com.google.fonts/check/os2_metrics_match_hhea](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea)
@@ -75733,6 +75733,34 @@ This can be accomplished by using the 'gftools fix-hinting' command.
 
 </details>
 <details>
+<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+<pre>--- Rationale ---
+
+A font&#x27;s winAscent and winDescent values should be greater than the head
+table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
+can occur on Windows platforms
+(https://github.com/RedHatBrand/Overpass/issues/33).
+
+If the font includes tall/deep writing systems such as Arabic or Devanagari,
+the winAscent and winDescent can be greater than the yMax and abs(yMin) to
+accommodate vowel marks.
+
+When the win Metrics are significantly greater than the upm, the linespacing
+can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
+(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
+This means the font developer can control the linespacing with the typo values,
+whilst avoiding clipping by setting the win values to values greater than the
+yMax and abs(yMin).
+
+
+</pre>
+
+* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 895, but got 746 instead [code: descent]
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
 * [com.google.fonts/check/contour_count](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/contour_count)
@@ -75790,37 +75818,37 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: eogonek	Contours detected: 3	Expected: 2
 Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: eogonek	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
 
 </details>
 <details>
@@ -76860,10 +76888,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/GeologiskCut-Regular.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 89.8kb |
-	| Hinted Size | 129.9kb |
-	| Increase | 40.1kb |
-	| Change   | 44.7 % |
+	| Dehinted Size | 92.1kb |
+	| Hinted Size | 132.4kb |
+	| Increase | 40.4kb |
+	| Change   | 43.8 % |
  [code: size-impact]
 
 </details>
@@ -76955,7 +76983,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, GSUB, gasp, DSIG, prep, fpgm, GPOS, cvt ]
+* ℹ **INFO** This font contains the following optional tables [gasp, prep, loca, fpgm, DSIG, GPOS, GSUB, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -77598,34 +77626,6 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-
-A font&#x27;s winAscent and winDescent values should be greater than the head
-table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
-can occur on Windows platforms
-(https://github.com/RedHatBrand/Overpass/issues/33).
-
-If the font includes tall/deep writing systems such as Arabic or Devanagari,
-the winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-
-When the win Metrics are significantly greater than the upm, the linespacing
-can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
-This means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).
-
-
-</pre>
-
-* 🍞 **PASS** OS/2 usWinAscent & usWinDescent values look good!
-
-</details>
-<details>
 <summary>🍞 <b>PASS:</b> Checking OS/2 Metrics match hhea Metrics.</summary>
 
 * [com.google.fonts/check/os2_metrics_match_hhea](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea)
@@ -78168,6 +78168,34 @@ This can be accomplished by using the 'gftools fix-hinting' command.
 
 </details>
 <details>
+<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+<pre>--- Rationale ---
+
+A font&#x27;s winAscent and winDescent values should be greater than the head
+table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
+can occur on Windows platforms
+(https://github.com/RedHatBrand/Overpass/issues/33).
+
+If the font includes tall/deep writing systems such as Arabic or Devanagari,
+the winAscent and winDescent can be greater than the yMax and abs(yMin) to
+accommodate vowel marks.
+
+When the win Metrics are significantly greater than the upm, the linespacing
+can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
+(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
+This means the font developer can control the linespacing with the typo values,
+whilst avoiding clipping by setting the win values to values greater than the
+yMax and abs(yMin).
+
+
+</pre>
+
+* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 895, but got 746 instead [code: descent]
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
 * [com.google.fonts/check/contour_count](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/contour_count)
@@ -78226,38 +78254,38 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: eogonek	Contours detected: 3	Expected: 2
 Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: eogonek	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
 
 </details>
 <details>
@@ -79325,10 +79353,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/GeologiskCut-SemiBold.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 89.9kb |
-	| Hinted Size | 120.6kb |
-	| Increase | 30.6kb |
-	| Change   | 34.1 % |
+	| Dehinted Size | 92.3kb |
+	| Hinted Size | 123.1kb |
+	| Increase | 30.8kb |
+	| Change   | 33.4 % |
  [code: size-impact]
 
 </details>
@@ -79420,7 +79448,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, GSUB, gasp, DSIG, prep, fpgm, GPOS, cvt ]
+* ℹ **INFO** This font contains the following optional tables [gasp, prep, loca, fpgm, DSIG, GPOS, GSUB, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -80038,34 +80066,6 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-
-A font&#x27;s winAscent and winDescent values should be greater than the head
-table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
-can occur on Windows platforms
-(https://github.com/RedHatBrand/Overpass/issues/33).
-
-If the font includes tall/deep writing systems such as Arabic or Devanagari,
-the winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-
-When the win Metrics are significantly greater than the upm, the linespacing
-can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
-This means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).
-
-
-</pre>
-
-* 🍞 **PASS** OS/2 usWinAscent & usWinDescent values look good!
-
-</details>
-<details>
 <summary>🍞 <b>PASS:</b> Checking OS/2 Metrics match hhea Metrics.</summary>
 
 * [com.google.fonts/check/os2_metrics_match_hhea](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea)
@@ -80608,6 +80608,34 @@ This can be accomplished by using the 'gftools fix-hinting' command.
 
 </details>
 <details>
+<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+<pre>--- Rationale ---
+
+A font&#x27;s winAscent and winDescent values should be greater than the head
+table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
+can occur on Windows platforms
+(https://github.com/RedHatBrand/Overpass/issues/33).
+
+If the font includes tall/deep writing systems such as Arabic or Devanagari,
+the winAscent and winDescent can be greater than the yMax and abs(yMin) to
+accommodate vowel marks.
+
+When the win Metrics are significantly greater than the upm, the linespacing
+can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
+(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
+This means the font developer can control the linespacing with the typo values,
+whilst avoiding clipping by setting the win values to values greater than the
+yMax and abs(yMin).
+
+
+</pre>
+
+* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 895, but got 746 instead [code: descent]
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
 * [com.google.fonts/check/contour_count](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/contour_count)
@@ -80665,38 +80693,38 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: eogonek	Contours detected: 3	Expected: 2
 Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: eogonek	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
 
 </details>
 <details>
@@ -81764,10 +81792,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/GeologiskCut-SemiBoldItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 91.7kb |
-	| Hinted Size | 122.2kb |
-	| Increase | 30.5kb |
-	| Change   | 33.3 % |
+	| Dehinted Size | 94.2kb |
+	| Hinted Size | 125.0kb |
+	| Increase | 30.8kb |
+	| Change   | 32.7 % |
  [code: size-impact]
 
 </details>
@@ -81859,7 +81887,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, GSUB, gasp, DSIG, prep, fpgm, GPOS, cvt ]
+* ℹ **INFO** This font contains the following optional tables [gasp, prep, loca, fpgm, DSIG, GPOS, GSUB, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -82477,34 +82505,6 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-
-A font&#x27;s winAscent and winDescent values should be greater than the head
-table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
-can occur on Windows platforms
-(https://github.com/RedHatBrand/Overpass/issues/33).
-
-If the font includes tall/deep writing systems such as Arabic or Devanagari,
-the winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-
-When the win Metrics are significantly greater than the upm, the linespacing
-can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
-This means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).
-
-
-</pre>
-
-* 🍞 **PASS** OS/2 usWinAscent & usWinDescent values look good!
-
-</details>
-<details>
 <summary>🍞 <b>PASS:</b> Checking OS/2 Metrics match hhea Metrics.</summary>
 
 * [com.google.fonts/check/os2_metrics_match_hhea](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea)
@@ -83047,6 +83047,34 @@ This can be accomplished by using the 'gftools fix-hinting' command.
 
 </details>
 <details>
+<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+<pre>--- Rationale ---
+
+A font&#x27;s winAscent and winDescent values should be greater than the head
+table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
+can occur on Windows platforms
+(https://github.com/RedHatBrand/Overpass/issues/33).
+
+If the font includes tall/deep writing systems such as Arabic or Devanagari,
+the winAscent and winDescent can be greater than the yMax and abs(yMin) to
+accommodate vowel marks.
+
+When the win Metrics are significantly greater than the upm, the linespacing
+can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
+(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
+This means the font developer can control the linespacing with the typo values,
+whilst avoiding clipping by setting the win values to values greater than the
+yMax and abs(yMin).
+
+
+</pre>
+
+* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 895, but got 746 instead [code: descent]
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Checking OS/2 usWeightClass.</summary>
 
 * [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
@@ -83110,36 +83138,36 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
 Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3 [code: contour-count]
+Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
 
 </details>
 <details>
@@ -84179,10 +84207,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/GeologiskCut-Thin.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 89.4kb |
-	| Hinted Size | 116.9kb |
-	| Increase | 27.6kb |
-	| Change   | 30.8 % |
+	| Dehinted Size | 91.4kb |
+	| Hinted Size | 119.3kb |
+	| Increase | 28.0kb |
+	| Change   | 30.6 % |
  [code: size-impact]
 
 </details>
@@ -84274,7 +84302,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, GSUB, gasp, DSIG, prep, fpgm, GPOS, cvt ]
+* ℹ **INFO** This font contains the following optional tables [gasp, prep, loca, fpgm, DSIG, GPOS, GSUB, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -84909,34 +84937,6 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-
-A font&#x27;s winAscent and winDescent values should be greater than the head
-table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
-can occur on Windows platforms
-(https://github.com/RedHatBrand/Overpass/issues/33).
-
-If the font includes tall/deep writing systems such as Arabic or Devanagari,
-the winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-
-When the win Metrics are significantly greater than the upm, the linespacing
-can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
-This means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).
-
-
-</pre>
-
-* 🍞 **PASS** OS/2 usWinAscent & usWinDescent values look good!
-
-</details>
-<details>
 <summary>🍞 <b>PASS:</b> Checking OS/2 Metrics match hhea Metrics.</summary>
 
 * [com.google.fonts/check/os2_metrics_match_hhea](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea)
@@ -85479,6 +85479,34 @@ This can be accomplished by using the 'gftools fix-hinting' command.
 
 </details>
 <details>
+<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+<pre>--- Rationale ---
+
+A font&#x27;s winAscent and winDescent values should be greater than the head
+table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
+can occur on Windows platforms
+(https://github.com/RedHatBrand/Overpass/issues/33).
+
+If the font includes tall/deep writing systems such as Arabic or Devanagari,
+the winAscent and winDescent can be greater than the yMax and abs(yMin) to
+accommodate vowel marks.
+
+When the win Metrics are significantly greater than the upm, the linespacing
+can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
+(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
+This means the font developer can control the linespacing with the typo values,
+whilst avoiding clipping by setting the win values to values greater than the
+yMax and abs(yMin).
+
+
+</pre>
+
+* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 895, but got 746 instead [code: descent]
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Checking OS/2 usWeightClass.</summary>
 
 * [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
@@ -85542,36 +85570,36 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
 Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni04D9	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3 [code: contour-count]
+Glyph name: uni0259	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: aogonek	Contours detected: 3	Expected: 2
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
 
 </details>
 <details>
@@ -86611,10 +86639,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/GeologiskCut-ThinItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 90.7kb |
-	| Hinted Size | 118.5kb |
-	| Increase | 27.8kb |
-	| Change   | 30.6 % |
+	| Dehinted Size | 93.1kb |
+	| Hinted Size | 121.2kb |
+	| Increase | 28.1kb |
+	| Change   | 30.2 % |
  [code: size-impact]
 
 </details>
@@ -86706,7 +86734,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, GSUB, gasp, DSIG, prep, fpgm, GPOS, cvt ]
+* ℹ **INFO** This font contains the following optional tables [gasp, prep, loca, fpgm, DSIG, GPOS, GSUB, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -87341,34 +87369,6 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-
-A font&#x27;s winAscent and winDescent values should be greater than the head
-table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
-can occur on Windows platforms
-(https://github.com/RedHatBrand/Overpass/issues/33).
-
-If the font includes tall/deep writing systems such as Arabic or Devanagari,
-the winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-
-When the win Metrics are significantly greater than the upm, the linespacing
-can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
-This means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).
-
-
-</pre>
-
-* 🍞 **PASS** OS/2 usWinAscent & usWinDescent values look good!
-
-</details>
-<details>
 <summary>🍞 <b>PASS:</b> Checking OS/2 Metrics match hhea Metrics.</summary>
 
 * [com.google.fonts/check/os2_metrics_match_hhea](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea)
@@ -87885,5 +87885,5 @@ the same x,y coordinates.
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 37 | 159 | 2737 | 217 | 2552 | 0 |
-| 0% | 1% | 3% | 48% | 4% | 45% | 0% |
+| 0 | 73 | 159 | 2737 | 217 | 2516 | 0 |
+| 0% | 1% | 3% | 48% | 4% | 44% | 0% |

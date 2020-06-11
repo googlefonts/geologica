@@ -1,30 +1,30 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="upsilon" format="2">
-  <anchor x="622" y="1040" name="top"/>
+  <anchor x="612" y="1040" name="top"/>
   <outline>
     <contour>
-      <point x="654" y="-30" type="curve" smooth="yes"/>
-      <point x="962" y="-30"/>
-      <point x="1206" y="112"/>
-      <point x="1206" y="530" type="curve" smooth="yes"/>
-      <point x="1206" y="672"/>
-      <point x="1180" y="832"/>
-      <point x="1126" y="1040" type="curve"/>
-      <point x="716" y="1040" type="line"/>
-      <point x="770" y="828"/>
-      <point x="804" y="666"/>
-      <point x="804" y="542" type="curve" smooth="yes"/>
-      <point x="804" y="408"/>
-      <point x="764" y="330"/>
-      <point x="656" y="330" type="curve" smooth="yes"/>
-      <point x="566" y="330"/>
-      <point x="518" y="384"/>
-      <point x="518" y="480" type="curve" smooth="yes"/>
-      <point x="518" y="1100" type="line"/>
-      <point x="118" y="914" type="line"/>
-      <point x="118" y="468" type="line" smooth="yes"/>
-      <point x="118" y="182"/>
-      <point x="260" y="-30"/>
+      <point x="644" y="-30" type="curve" smooth="yes"/>
+      <point x="952" y="-30"/>
+      <point x="1196" y="112"/>
+      <point x="1196" y="530" type="curve" smooth="yes"/>
+      <point x="1196" y="672"/>
+      <point x="1170" y="832"/>
+      <point x="1116" y="1040" type="curve"/>
+      <point x="706" y="1040" type="line"/>
+      <point x="760" y="828"/>
+      <point x="794" y="666"/>
+      <point x="794" y="542" type="curve" smooth="yes"/>
+      <point x="794" y="408"/>
+      <point x="754" y="330"/>
+      <point x="646" y="330" type="curve" smooth="yes"/>
+      <point x="556" y="330"/>
+      <point x="508" y="384"/>
+      <point x="508" y="480" type="curve" smooth="yes"/>
+      <point x="508" y="1100" type="line"/>
+      <point x="108" y="914" type="line"/>
+      <point x="108" y="468" type="line" smooth="yes"/>
+      <point x="108" y="182"/>
+      <point x="250" y="-30"/>
     </contour>
   </outline>
 </glyph>

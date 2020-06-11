@@ -1474,6 +1474,8 @@
     <string>shha-cy.glif</string>
     <key>sigma</key>
     <string>sigma.glif</string>
+    <key>sigmafinal</key>
+    <string>sigmafinal.glif</string>
     <key>six</key>
     <string>six.glif</string>
     <key>six.ss02</key>
@@ -1626,6 +1628,8 @@
     <string>won.glif</string>
     <key>x</key>
     <string>x.glif</string>
+    <key>xi</key>
+    <string>xi.glif</string>
     <key>y</key>
     <string>y.glif</string>
     <key>yacute</key>

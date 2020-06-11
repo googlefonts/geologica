@@ -4,21 +4,21 @@
   <anchor x="-638" y="1040" name="_top"/>
   <outline>
     <contour>
-      <point x="-636" y="1174" type="curve" smooth="yes"/>
-      <point x="-512" y="1174"/>
-      <point x="-424" y="1252"/>
-      <point x="-424" y="1362" type="curve" smooth="yes"/>
-      <point x="-424" y="1444"/>
-      <point x="-494" y="1520"/>
-      <point x="-584" y="1544" type="curve"/>
-      <point x="-534" y="1592"/>
-      <point x="-464" y="1636"/>
-      <point x="-396" y="1662" type="curve"/>
-      <point x="-520" y="1786" type="line"/>
-      <point x="-740" y="1674"/>
-      <point x="-854" y="1534"/>
-      <point x="-854" y="1378" type="curve" smooth="yes"/>
-      <point x="-854" y="1258"/>
+      <point x="-626" y="1174" type="curve" smooth="yes"/>
+      <point x="-501" y="1174"/>
+      <point x="-415" y="1254"/>
+      <point x="-415" y="1380" type="curve" smooth="yes"/>
+      <point x="-415" y="1509"/>
+      <point x="-538" y="1584"/>
+      <point x="-652" y="1560" type="curve"/>
+      <point x="-627" y="1645"/>
+      <point x="-529" y="1675"/>
+      <point x="-410" y="1685" type="curve"/>
+      <point x="-410" y="1882" type="line"/>
+      <point x="-734" y="1854"/>
+      <point x="-885" y="1675"/>
+      <point x="-885" y="1438" type="curve" smooth="yes"/>
+      <point x="-885" y="1270"/>
       <point x="-764" y="1174"/>
     </contour>
   </outline>
@@ -29,7 +29,7 @@
       <key>com.schriftgestaltung.Glyphs.glyph.widthMetricsKey</key>
       <string>dieresiscomb</string>
       <key>public.markColor</key>
-      <string>0.97,1,0,1</string>
+      <string>0,0.67,0.91,1</string>
     </dict>
   </lib>
 </glyph>

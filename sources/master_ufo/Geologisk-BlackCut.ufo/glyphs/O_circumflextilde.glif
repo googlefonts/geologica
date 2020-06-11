@@ -10,7 +10,7 @@
   <outline>
     <component base="O"/>
     <component base="circumflexcomb.case" xOffset="1668"/>
-    <component base="tildecomb.case" xOffset="1666" yOffset="406"/>
+    <component base="tildecomb.case" xOffset="1668" yOffset="406"/>
   </outline>
   <lib>
     <dict>

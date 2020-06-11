@@ -1516,6 +1516,8 @@
     <string>tildecomb.glif</string>
     <key>tildecomb.case</key>
     <string>tildecomb.case.glif</string>
+    <key>tildecomb.narrow</key>
+    <string>tildecomb.narrow.glif</string>
     <key>trademark</key>
     <string>trademark.glif</string>
     <key>tse-cy</key>
@@ -1610,6 +1612,8 @@
     <string>won.glif</string>
     <key>x</key>
     <string>x.glif</string>
+    <key>xi</key>
+    <string>xi.glif</string>
     <key>y</key>
     <string>y.glif</string>
     <key>yacute</key>

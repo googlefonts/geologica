@@ -1,3 +1,5 @@
+![Geologisk type specimen](specimen.gif)
+
 # Geologisk 
 
 Bla bla bla.

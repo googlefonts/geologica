@@ -37,6 +37,7 @@
       <string>Alpha</string>
       <string>Delta</string>
       <string>Lambda</string>
+      <string>Alphatonos</string>
     </array>
     <key>public.kern1.B</key>
     <array>
@@ -104,6 +105,7 @@
       <string>Epsilon</string>
       <string>Xi</string>
       <string>Sigma</string>
+      <string>Epsilontonos</string>
     </array>
     <key>public.kern1.Ef</key>
     <array>
@@ -176,6 +178,8 @@
       <string>Mu</string>
       <string>Nu</string>
       <string>Pi</string>
+      <string>Etatonos</string>
+      <string>Iotatonos</string>
       <string>Iotadieresis</string>
     </array>
     <key>public.kern1.K</key>
@@ -251,7 +255,7 @@
       <string>Qa-cy</string>
       <string>Theta</string>
       <string>Omicron</string>
-      <string>Omega</string>
+      <string>Omicrontonos</string>
       <string>at</string>
       <string>copyright</string>
     </array>
@@ -263,6 +267,11 @@
       <string>Ohorngrave</string>
       <string>Ohornhookabove</string>
       <string>Ohorntilde</string>
+    </array>
+    <key>public.kern1.Omega</key>
+    <array>
+      <string>Omega</string>
+      <string>Omegatonos</string>
     </array>
     <key>public.kern1.P</key>
     <array>
@@ -399,6 +408,7 @@
       <string>Ustraight-cy</string>
       <string>Ustraightstroke-cy</string>
       <string>Upsilon</string>
+      <string>Upsilontonos</string>
       <string>Upsilondieresis</string>
     </array>
     <key>public.kern1.Z</key>
@@ -1425,6 +1435,7 @@
       <string>Alpha</string>
       <string>Delta</string>
       <string>Lambda</string>
+      <string>Alphatonos</string>
     </array>
     <key>public.kern2.AE</key>
     <array>
@@ -1576,6 +1587,9 @@
       <string>Nu</string>
       <string>Pi</string>
       <string>Rho</string>
+      <string>Epsilontonos</string>
+      <string>Etatonos</string>
+      <string>Iotatonos</string>
       <string>Iotadieresis</string>
       <string>KaiSymbol</string>
       <string>numero</string>
@@ -1652,9 +1666,14 @@
       <string>Qa-cy</string>
       <string>Theta</string>
       <string>Omicron</string>
-      <string>Omega</string>
+      <string>Omicrontonos</string>
       <string>at</string>
       <string>copyright</string>
+    </array>
+    <key>public.kern2.Omega</key>
+    <array>
+      <string>Omega</string>
+      <string>Omegatonos</string>
     </array>
     <key>public.kern2.Psi</key>
     <array>
@@ -1749,6 +1768,7 @@
       <string>Ustraight-cy</string>
       <string>Ustraightstroke-cy</string>
       <string>Upsilon</string>
+      <string>Upsilontonos</string>
       <string>Upsilondieresis</string>
     </array>
     <key>public.kern2.Yat</key>

@@ -9,7 +9,7 @@
   <anchor x="100" y="1400" name="topleft"/>
   <outline>
     <component base="Ohorn"/>
-    <component base="tildecomb.case" xOffset="1666"/>
+    <component base="tildecomb.case" xOffset="1668"/>
   </outline>
   <lib>
     <dict>
