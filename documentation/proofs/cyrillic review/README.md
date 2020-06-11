@@ -106,10 +106,12 @@ https://medium.com/@boomtown.cowboy/design-guides-for-cyrillic-letter-%D1%9A-nje
 – Yes, maybe some diagonals as well? (just a suggestion, I understand that it might be too frivolous for the system you have)  
 
 ![](Screen Shot 2020-04-07 at 21.15.39.png)
+
 Concerning the cuts on the straights in п н etc., – if you don’t mind loosing weight they might become more pronounced:
 
 
 ![](Screen Shot 2020-04-07 at 21.51.12.png)
+
 Or you can just get rid of them, since you don’t chip off the B. 
 
 Looking forward to see an update!
@@ -134,6 +136,7 @@ Hi Daria. Please look at this instead. Forgot about Ҥ ҥ (following Г г width
 I was not quite satisfied with the hard top left corners in the lowercase Cyrillic, and tried instead this solution – echoing the angle from lowercase ‘n’. Here’s a screenshot from Axis Praxis. 
 
 ![](Screenshot 2020-04-08 at 22.11.13.png)
+
 ![](Screenshot 2020-04-08 at 22.10.38.png)
 
 […]
@@ -160,19 +163,26 @@ I’m not a big fan of these (п в г д etc) cuts in general, but it’s the b
 Here are a few remarks:
 
 1. I think the horizontal strokes in CYR lack consistency in weight ant how far they extend (in both weights). 
- Yat-cy can be a little taller than other upper case letters.  
+ Yat-cy can be a little taller than other upper case letters.
+  
 ![](Screen Shot 2020-04-10 at 22.06.32.png)
 
 2. I would make the triangle of the Bulgarian Д same as A or even narrower in both weights.
 
 ![](Screen Shot 2020-04-10 at 22.24.39.png)
+
 3. The ascending stroke of the м seems a bit too heavy.
 
 ![](Screen Shot 2020-04-10 at 22.27.25.png)
+
 4. I would make the left part of ЋЂ same as T, in both weights. Maybe lower the middle stroke of the ghemiddlehook-cy to redistribute white space?
+
 ![](Screen Shot 2020-04-10 at 22.33.40.png)
+
 5. I thin Лл in the 5&6th masters lack some weight at the bottom. I would align them to the horizontal of Дд. And maybe make the curvature more energetic like in the f t?
+
 ![](Screen Shot 2020-04-10 at 22.50.35.png)
+
 6. Not dramatic, but I think in light ge-cy.loclBGR there is something wrong with the curvature of the middle part, it also can be a bit thinner than the middle stroke of the s. In the black I would make both verticals same as those of o (after the broad nib pen logic) Not sure why did you make it a bit wider, just curious. 
 
 
