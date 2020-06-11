@@ -10,8 +10,12 @@ Bla bla bla.
 
 ### Variable axis
 
-Bla bla bla.
-
+| Axes | Tag | Range | Default | Description |
+| ---- | --- | ----- | ------- | ----------- | 
+| Weight | wght | 100 to 900  | 100 | Light to Black |
+| Slant | slnt | 0 to -12 | 100 | Upright to right-leaning |
+| Italic | ital | 0 to 1 | 100 | Swaps roman for cursive variants of certain characters |
+| Diagonal cuts | DIAG)  | 0 to 100  | 0 | Calligraphic detailing and terminal treatment |
 
 
 
