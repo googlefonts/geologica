@@ -12,4 +12,5 @@
 Frode Helland <frode@monokrom.no>
 Sindre Bremnes <sindre@monokrom.no>
 Kostas Bartsokas <kosbarts@gmail.com>
+Daria Petrova <petrovada@gmail.com>
 
