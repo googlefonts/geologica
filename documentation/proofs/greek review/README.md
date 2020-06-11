@@ -136,355 +136,318 @@ K.
 
 # Chatlog
 
-Kostas Bartsokas
+## Kostas Bartsokas
+*12. mar. 2020, 13:30*
 so I was looking at the new Geologisk greek
-12. mar. 2020, 13:30
 
-Kostas Bartsokas
+*12. mar. 2020, 13:31*
 in the version you sent me, without the italics, the black weight had spacing issues
-12. mar. 2020, 13:31
 
-Kostas Bartsokas
+*12. mar. 2020, 13:32*
 shapes are good now
-12. mar. 2020, 13:32
 
-Kostas Bartsokas
+*12. mar. 2020, 13:33*
 the lc alpha is way too loose on the right side
-12. mar. 2020, 13:33
 
-Kostas Bartsokas
+*12. mar. 2020, 13:33*
 it creates large gaps with most of the other letters
-12. mar. 2020, 13:33
 
-Frode Konstantin Helland
+
+## Frode Konstantin Helland
+*12. mar. 2020, 13:45*
 You wanna see the glyphs file? Easier to make notes there.
-12. mar. 2020, 13:45
 
-Kostas Bartsokas
+## Kostas Bartsokas
+*12. mar. 2020, 13:45*
 it's just the fitting of alpha in the heavier weight
-12. mar. 2020, 13:45
 
-Kostas Bartsokas
+*12. mar. 2020, 13:46*
 that definitely needs adressing
-12. mar. 2020, 13:46
 
-Kostas Bartsokas
+*12. mar. 2020, 13:46*
 and the stroke of the alpha in the light weight that looks a bit heavy on the right side (upstroke mostly)
-12. mar. 2020, 13:46
 
-Frode Konstantin Helland
+## Frode Konstantin Helland
+*12. mar. 2020, 13:47*
 ![](89775046_2782405601794676_7695680696840355840_n_2782405595128010.png)
-12. mar. 2020, 13:47
 
-Kostas Bartsokas
+## Kostas Bartsokas
+*12. mar. 2020, 13:48*
 yes
-12. mar. 2020, 13:48
 
-Frode Konstantin Helland
+## Frode Konstantin Helland
+*12. mar. 2020, 13:49*
 This one?
-12. mar. 2020, 13:49
 
-Frode Konstantin Helland
+*12. mar. 2020, 13:49*
 ![](89750914_645884939510693_249769863139033088_n_645884936177360)
 
-12. mar. 2020, 13:49
-
-Kostas Bartsokas
+## Kostas Bartsokas
+*12. mar. 2020, 13:50*
 yes
-12. mar. 2020, 13:50
 
-Frode Konstantin Helland
+## Frode Konstantin Helland
+*12. mar. 2020, 13:52*
 I think this spacing is a little choppy still …
-12. mar. 2020, 13:52
 
-Frode Konstantin Helland
+*12. mar. 2020, 13:52*
 ![](89847373_668091147065316_8312692099401121792_n_668091140398650)
-12. mar. 2020, 13:52
 
+*12. mar. 2020, 13:52*
 Frode Konstantin Helland
 maybe just the kerns agains chi and lambda
-12. mar. 2020, 13:52
 
-Kostas Bartsokas
+## Kostas Bartsokas
+*12. mar. 2020, 13:54*
 yes that's better
-12. mar. 2020, 13:54
 
-Kostas Bartsokas
+*12. mar. 2020, 13:54*
 and you will have to add these kerning pairs
-12. mar. 2020, 13:54
 
-Kostas Bartsokas
+*12. mar. 2020, 13:54*
 I think greek is a little bit more wobbly and tricky to fit across all letters, if you want it to work with as few possible kerning pairs
-12. mar. 2020, 13:54
 
-Kostas Bartsokas
+*12. mar. 2020, 13:55*
 lots of irregularities
-12. mar. 2020, 13:55
 
-Frode Konstantin Helland
+## Frode Konstantin Helland
+*12. mar. 2020, 13:55*
 upstroke minus 5 units
-12. mar. 2020, 13:55
 
-Frode Konstantin Helland
+*12. mar. 2020, 13:55*
 ![](89781706_1467075050126239_8071200489372385280_n_1467075046792906)
-12. mar. 2020, 13:55
 
-Kostas Bartsokas
+
+## Kostas Bartsokas
+*12. mar. 2020, 13:56*
 yeah
-12. mar. 2020, 13:56
 
-Kostas Bartsokas
+*12. mar. 2020, 13:56*
 better
-12. mar. 2020, 13:56
 
-Frode Konstantin Helland
+## Frode Konstantin Helland
+*12. mar. 2020, 14:17*
 good
-12. mar. 2020, 14:17
 
-Frode Konstantin Helland
+## Frode Konstantin Helland
+*12. mar. 2020, 14:17*
 this is also no kerning
-12. mar. 2020, 14:17
 
-Frode Konstantin Helland
+## Frode Konstantin Helland
+*12. mar. 2020, 14:17*
 so maybe the fitting of diagonals in black weights needs another look
-12. mar. 2020, 14:17
 
-Kostas Bartsokas
+## Kostas Bartsokas
+*12. mar. 2020, 14:18*
 could be, yes
-12. mar. 2020, 14:18
 
-Frode Konstantin Helland
+## Frode Konstantin Helland
+*29. mai 2020, 17:42*
 Hey …
-29. mai 2020, 17:42
 
-Kostas Bartsokas
+## Kostas Bartsokas
+*29. mai 2020, 17:42*
 hey mate
-29. mai 2020, 17:42
 
-Frode Konstantin Helland
+## Frode Konstantin Helland
+*29. mai 2020, 17:42*
 Left side of phi
-29. mai 2020, 17:42
 
-Kostas Bartsokas
+## Kostas Bartsokas
+*29. mai 2020, 17:42*
 yes
-29. mai 2020, 17:42
 
-Frode Konstantin Helland
+## Frode Konstantin Helland
+*29. mai 2020, 17:42*
 ![](101429622_253934282709279_8377174517885173760_n_253934279375946)
-29. mai 2020, 17:42
 
-Frode Konstantin Helland
+*29. mai 2020, 17:42*
 should it relate to any of the others here?
-29. mai 2020, 17:42
 
-Kostas Bartsokas
+## Kostas Bartsokas
+*29. mai 2020, 17:43*
 yes. the cut should follow the omega
-29. mai 2020, 17:43
 
-Frode Konstantin Helland
+## Frode Konstantin Helland
+*29. mai 2020, 17:43*
 Wonder if I should slice the other “vertical” terminals similarly
-29. mai 2020, 17:43
 
-Kostas Bartsokas
+## Kostas Bartsokas
+*29. mai 2020, 17:43*
 or vice versa
-29. mai 2020, 17:43
 
-Frode Konstantin Helland
+## Frode Konstantin Helland
+*29. mai 2020, 17:43*
 … yes
-29. mai 2020, 17:43
 
-Kostas Bartsokas
+## Kostas Bartsokas
+*29. mai 2020, 17:43*
 look at your latin too
-29. mai 2020, 17:43
 
-Frode Konstantin Helland
+## Frode Konstantin Helland
+*29. mai 2020, 17:43*
 that is the question
-29. mai 2020, 17:43
 
-Kostas Bartsokas
+## Kostas Bartsokas
+*29. mai 2020, 17:44*
 given the rest of the set I think the cut should be flat and on the meanline
-29. mai 2020, 17:44
 
-Frode Konstantin Helland
+## Frode Konstantin Helland
+*29. mai 2020, 17:44*
 but in the latin, the comparable details are kinda more the terminals of c
-29. mai 2020, 17:44
 
-Frode Konstantin Helland
+*29. mai 2020, 17:44*
 different direction
-29. mai 2020, 17:44
 
-Kostas Bartsokas
+## Kostas Bartsokas
+*29. mai 2020, 17:45*
 but then the right terminals of upsilon and psi should also follow the same principal
-29. mai 2020, 17:45
 
-Frode Konstantin Helland
+## Frode Konstantin Helland
+*29. mai 2020, 17:45*
 yes!
-29. mai 2020, 17:45
 
-Kostas Bartsokas
+## Kostas Bartsokas
+*29. mai 2020, 17:45*
 and the omega
-29. mai 2020, 17:45
 
-Frode Konstantin Helland
+## Frode Konstantin Helland
+*29. mai 2020, 17:45*
 I think maybe they should :)
-29. mai 2020, 17:45
 
-Kostas Bartsokas
+## Kostas Bartsokas
+*29. mai 2020, 17:45*
 haha
-29. mai 2020, 17:45
 
-Kostas Bartsokas
+*29. mai 2020, 17:46*
 show me the c and u
-29. mai 2020, 17:46
 
-Kostas Bartsokas
+*29. mai 2020, 17:47*
 hmm but if you choose to cut terminals at an angle to the stroke like you have done in phi, then it should also apply to the chi as well and others too
-29. mai 2020, 17:47
 
-Frode Konstantin Helland
+## Frode Konstantin Helland
+*29. mai 2020, 17:47*
 “diagonal cut” masters on the rihgt
-29. mai 2020, 17:47
 
-Frode Konstantin Helland
+*29. mai 2020, 17:47*
 ![](100715113_591143638500865_577769068061261824_n_591143631834199)
-29. mai 2020, 17:47
 
-Kostas Bartsokas
+## Kostas Bartsokas
+*29. mai 2020, 17:48*
 OK. I see where you are coming from
-29. mai 2020, 17:48
 
-Kostas Bartsokas
+*29. mai 2020, 17:48*
 it might make an intersting interpretation of the c to have a curved terminal and a flat for the phi, etc
-29. mai 2020, 17:48
 
-Frode Konstantin Helland
+## Frode Konstantin Helland
+*29. mai 2020, 17:49*
 psi straight/cut
-29. mai 2020, 17:49
 
-Frode Konstantin Helland
+*29. mai 2020, 17:49*
 ![](100757104_529989931008992_2665800666353500160_n_529989924342326)
-29. mai 2020, 17:49
 
-Kostas Bartsokas
+## Kostas Bartsokas
+*29. mai 2020, 17:50*
 hmmm. the diagonal cut is not implicit of any relationship to a change of the angle of the tool...
-29. mai 2020, 17:50
 
-Kostas Bartsokas
+*29. mai 2020, 17:50*
 it feels like it is more of a showstopper so I guess you can interpret it more freely in the greek
-29. mai 2020, 17:50
 
-Kostas Bartsokas
+*29. mai 2020, 17:51*
 the psi you just showed me work well
-29. mai 2020, 17:51
 
-Kostas Bartsokas
+*29. mai 2020, 17:51*
 but I guess it might work equally well with the left terminal at an angle to the stroke
-29. mai 2020, 17:51
 
-Kostas Bartsokas
+*29. mai 2020, 17:52*
 however, you still would want to preserve that "sharpness". And in the case of the phi you showed me first, I think you are loosing the sharpness and it becomes a very humanistic detail
-29. mai 2020, 17:52
 
-Frode Konstantin Helland
+## Frode Konstantin Helland
+*29. mai 2020, 17:54*
 so, the logic is that in the regular master, all strokes terminate perpendicular to the stroke direction
-29. mai 2020, 17:54
 
-Frode Konstantin Helland
+*29. mai 2020, 17:55*
 in the diagonal master, I introduce sharp details
-29. mai 2020, 17:55
 
-Frode Konstantin Helland
+*29. mai 2020, 17:55*
 x-height of straight stems (n, u) triangular cut, terminals of curved strokes (c, s) sliced vertically, so the inside forms a sharp point
-29. mai 2020, 17:55
 
-Kostas Bartsokas
+## Kostas Bartsokas
+*29. mai 2020, 17:59*
 so in that phi you showed me first you are kind of missing that sharp point
-29. mai 2020, 17:59
 
-Kostas Bartsokas
+*29. mai 2020, 17:59*
 what if it was facing the other direction? the point being on the top left and a cut towards the baseline
-29. mai 2020, 17:59
 
-Kostas Bartsokas
+*29. mai 2020, 18:00*
 (I hope that makes sense)
-29. mai 2020, 18:00
 
-Frode Konstantin Helland
+## Frode Konstantin Helland
+*29. mai 2020, 18:00*
 I’ll try to do it the way it makes sense to me :) and show you after!
-29. mai 2020, 18:00
 
-Kostas Bartsokas
+## Kostas Bartsokas
+*29. mai 2020, 18:00*
 OK. Show me when you do it
-29. mai 2020, 18:00
 
-Frode Konstantin Helland
+## Frode Konstantin Helland
+*29. mai 2020, 18:07*
 logical connection here, at least to me :)
-29. mai 2020, 18:07
 
-Frode Konstantin Helland
+*29. mai 2020, 18:07*
 ![](100945183_284240105941655_3003343846953189376_n_284240102608322)
-29. mai 2020, 18:07
 
-Kostas Bartsokas
+## Kostas Bartsokas
+*29. mai 2020, 18:11*
 isolated in these two it makes sense
-29. mai 2020, 18:11
 
-Frode Konstantin Helland
+## Frode Konstantin Helland
+*30. mai 2020, 13:40*
 ![](101400766_2786188324841792_8019989588552450048_n_2786188318175126)
-30. mai 2020, 13:40
 
-Kostas Bartsokas
+## Kostas Bartsokas
+*30. mai 2020, 13:42*
 it works
-30. mai 2020, 13:42
 
-Kostas Bartsokas
+*30. mai 2020, 13:42*
 how about the descenders?
-30. mai 2020, 13:42
 
-Kostas Bartsokas
+*30. mai 2020, 13:42*
 do you have a cut in the p? should there be one in the rho and mu?
-30. mai 2020, 13:42
 
-Frode Konstantin Helland
+## Frode Konstantin Helland
+*30. mai 2020, 13:48*
 the straight descender are not sliced
-30. mai 2020, 13:48
 
-Frode Konstantin Helland
+*30. mai 2020, 13:49*
 only the tops of ascenders and along the x-height
-30. mai 2020, 13:49
 
-Kostas Bartsokas
+## Kostas Bartsokas
+*30. mai 2020, 13:49*
 ok. then the top and bottom combinations check
-30. mai 2020, 13:49
 
-Frode Konstantin Helland
+## Frode Konstantin Helland
+*10. jun. 2020, 15:27*
 redrew my zeta, xi and final sigma
-10. jun. 2020, 15:27
 
-Frode Konstantin Helland
+*10. jun. 2020, 15:27*
 those are HARD!
-10. jun. 2020, 15:27
 
-Frode Konstantin Helland
+*10. jun. 2020, 15:29*
 that chi corner is also a real challenge!
-10. jun. 2020, 15:29
 
-Frode Konstantin Helland
+*10. jun. 2020, 15:29*
 soo tight in heavy styles
-10. jun. 2020, 15:29
 
-Frode Konstantin Helland
+*10. jun. 2020, 15:33*
 anyway, the rhythm is more solid now
-10. jun. 2020, 15:33
 
-Frode Konstantin Helland
+*10. jun. 2020, 15:33*
 ![](103361229_2815691065208730_5508853129801786851_n_2815691058542064)
-10. jun. 2020, 15:33
 
-Kostas Bartsokas
+## Kostas Bartsokas
+*10. jun. 2020, 15:41*
 Yes the chi is a pain when it has the curve
-10. jun. 2020, 15:41
 
-Kostas Bartsokas
+*10. jun. 2020, 15:41*
 But I think you look good
-10. jun. 2020, 15:41

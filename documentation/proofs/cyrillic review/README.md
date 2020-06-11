@@ -206,7 +206,7 @@ Good luck!
 
 
 ## April 15 2020
-* Frode Helland <frode@monokrom.no> to Daria*
+*Frode Helland <frode@monokrom.no> to Daria*
 
 Thanks Daria,
 
