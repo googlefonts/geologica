@@ -8,7 +8,7 @@
   <anchor x="120" y="1400" name="topleft"/>
   <outline>
     <component base="Iota"/>
-    <component base="tonos.case" xOffset="1644"/>
+    <component base="tonos.case" xOffset="-286"/>
   </outline>
   <lib>
     <dict>

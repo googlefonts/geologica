@@ -2,11 +2,11 @@
 <glyph name="omegatonos" format="2">
   <advance width="1542"/>
   <unicode hex="03CE"/>
-  <anchor x="671" y="0" name="bottom"/>
-  <anchor x="873" y="960" name="top"/>
+  <anchor x="670" y="0" name="bottom"/>
+  <anchor x="872" y="960" name="top"/>
   <outline>
     <component base="omega"/>
-    <component base="tonos" xOffset="1459"/>
+    <component base="tonos" xOffset="570"/>
   </outline>
   <lib>
     <dict>

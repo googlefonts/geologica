@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Ccedilla" format="2">
-  <advance width="1320"/>
+  <advance width="1310"/>
   <unicode hex="00C7"/>
-  <anchor x="703" y="0" name="bottom"/>
-  <anchor x="929" y="1400" name="top"/>
+  <anchor x="693" y="0" name="bottom"/>
+  <anchor x="919" y="1400" name="top"/>
   <outline>
     <component base="C"/>
-    <component base="cedillacomb" xOffset="1317"/>
+    <component base="cedillacomb" xOffset="1307"/>
   </outline>
   <lib>
     <dict>

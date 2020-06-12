@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Ereversed-cy" format="2">
-  <advance width="1412"/>
+  <advance width="1402"/>
   <unicode hex="042D"/>
   <guideline x="97" y="237" angle="90"/>
   <anchor x="632" y="0" name="bottom"/>

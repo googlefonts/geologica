@@ -8,7 +8,7 @@
   <anchor x="638" y="1040" name="top"/>
   <outline>
     <component base="omicron"/>
-    <component base="tonos" xOffset="1276"/>
+    <component base="tonos" xOffset="388"/>
   </outline>
   <lib>
     <dict>

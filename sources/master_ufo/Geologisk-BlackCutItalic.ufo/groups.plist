@@ -815,8 +815,6 @@
       <string>hookabovecomb.narrow</string>
       <string>dblgravecomb.narrow</string>
       <string>breveinvertedcomb.narrow</string>
-      <string>tonos</string>
-      <string>tonos.case</string>
       <string>dieresistonos</string>
       <string>brevecomb-cy</string>
       <string>brevecomb_acutecomb</string>
@@ -1075,6 +1073,8 @@
       <string>apostrophemod</string>
       <string>doubleprimemod</string>
       <string>primemod</string>
+      <string>tonos</string>
+      <string>tonos.case</string>
     </array>
     <key>public.kern1.r</key>
     <array>
@@ -2165,8 +2165,6 @@
       <string>hookabovecomb.narrow</string>
       <string>dblgravecomb.narrow</string>
       <string>breveinvertedcomb.narrow</string>
-      <string>tonos</string>
-      <string>tonos.case</string>
       <string>dieresistonos</string>
       <string>brevecomb-cy</string>
       <string>brevecomb_acutecomb</string>
@@ -2484,6 +2482,8 @@
       <string>apostrophemod</string>
       <string>doubleprimemod</string>
       <string>primemod</string>
+      <string>tonos</string>
+      <string>tonos.case</string>
     </array>
     <key>public.kern2.rho</key>
     <array>

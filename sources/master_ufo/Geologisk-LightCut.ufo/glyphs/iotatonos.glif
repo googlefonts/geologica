@@ -5,7 +5,7 @@
   <anchor x="216" y="960" name="top"/>
   <outline>
     <component base="iota"/>
-    <component base="tonos" xOffset="802"/>
+    <component base="tonos" xOffset="16"/>
   </outline>
   <lib>
     <dict>

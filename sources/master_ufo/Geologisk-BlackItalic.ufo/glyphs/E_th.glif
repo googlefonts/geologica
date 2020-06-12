@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Eth" format="2">
-  <advance width="1541"/>
+  <advance width="1531"/>
   <unicode hex="00D0"/>
   <anchor x="522" y="712" name="bar"/>
   <anchor x="952" y="1400" name="top"/>

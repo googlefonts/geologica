@@ -16,7 +16,8 @@
     <axis tag="slnt" name="Slant" minimum="-12" maximum="0" default="0"/>
     <axis tag="DIAG" name="Diagonal Cuts" minimum="0" maximum="100" default="0"/>
   </axes>
-    <rules>
+  
+  <rules>
     <rule name="ss01">
       <conditionset>
         <condition name="Italic" minimum="1" maximum="1"/>
@@ -64,6 +65,7 @@
       <sub name="te-cy.loclSRB" with="te-cy.loclSRB.ss01"/>
     </rule>
   </rules>
+  
   <rules>
     <rule name="BRACKET.140.200">
       <conditionset>

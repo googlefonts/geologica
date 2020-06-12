@@ -2,7 +2,7 @@
 <glyph name="aie-cy" format="2">
   <advance width="1860"/>
   <unicode hex="04D5"/>
-  <anchor x="1004" y="1040" name="top"/>
+  <anchor x="1003" y="1040" name="top"/>
   <outline>
     <component base="ae"/>
   </outline>

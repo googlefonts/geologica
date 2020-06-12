@@ -1743,13 +1743,6 @@
       <string>_part.cy-desc-uc-stem</string>
       <string>_part.cy-desc-lc</string>
       <string>_part.cy-desc-uc-reversed</string>
-      <string>newGlyph</string>
-      <string>newGlyph.001</string>
-      <string>newGlyph.002</string>
-      <string>newGlyph.003</string>
-      <string>newGlyph.004</string>
-      <string>newGlyph.005</string>
-      <string>newGlyph.006</string>
     </array>
     <key>public.postscriptNames</key>
     <dict>

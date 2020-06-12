@@ -1506,20 +1506,6 @@
     <string>ncaron.glif</string>
     <key>ncommaaccent</key>
     <string>ncommaaccent.glif</string>
-    <key>newGlyph</key>
-    <string>newG_lyph.glif</string>
-    <key>newGlyph.001</key>
-    <string>newG_lyph.001.glif</string>
-    <key>newGlyph.002</key>
-    <string>newG_lyph.002.glif</string>
-    <key>newGlyph.003</key>
-    <string>newG_lyph.003.glif</string>
-    <key>newGlyph.004</key>
-    <string>newG_lyph.004.glif</string>
-    <key>newGlyph.005</key>
-    <string>newG_lyph.005.glif</string>
-    <key>newGlyph.006</key>
-    <string>newG_lyph.006.glif</string>
     <key>nine</key>
     <string>nine.glif</string>
     <key>nine.ss02</key>

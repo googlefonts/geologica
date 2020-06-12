@@ -9,7 +9,7 @@
   <anchor x="152" y="1400" name="topleft"/>
   <outline>
     <component base="Omicron"/>
-    <component base="tonos.case" xOffset="1676"/>
+    <component base="tonos.case" xOffset="-254"/>
   </outline>
   <lib>
     <dict>

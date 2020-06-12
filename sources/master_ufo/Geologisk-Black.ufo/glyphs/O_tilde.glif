@@ -1,15 +1,15 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Otilde" format="2">
-  <advance width="1668"/>
+  <advance width="1648"/>
   <unicode hex="00D5"/>
-  <anchor x="834" y="0" name="bottom"/>
-  <anchor x="1238" y="1400" name="horn"/>
-  <anchor x="1094" y="0" name="ogonek"/>
-  <anchor x="834" y="1802" name="top"/>
-  <anchor x="100" y="1400" name="topleft"/>
+  <anchor x="824" y="0" name="bottom"/>
+  <anchor x="1228" y="1400" name="horn"/>
+  <anchor x="1084" y="0" name="ogonek"/>
+  <anchor x="824" y="1802" name="top"/>
+  <anchor x="90" y="1400" name="topleft"/>
   <outline>
     <component base="O"/>
-    <component base="tildecomb.case" xOffset="1666"/>
+    <component base="tildecomb.case" xOffset="1656"/>
   </outline>
   <lib>
     <dict>

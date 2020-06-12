@@ -8,7 +8,7 @@
   <anchor x="332" y="1400" name="topleft"/>
   <outline>
     <component base="Alpha"/>
-    <component base="tonos.case" xOffset="1856"/>
+    <component base="tonos.case" xOffset="-74"/>
   </outline>
   <lib>
     <dict>
