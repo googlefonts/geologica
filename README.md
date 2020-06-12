@@ -17,7 +17,7 @@ Bla bla bla.
 | Italic        | ital | 0 to 1     | 0        | Swaps roman for cursive variants of certain characters |
 | Diagonal cuts | DIAG | 0 to 100   | 0        | Calligraphic detailing and terminal treatment          |
 
-
+![Stylistic axis: The default style of the Geologisk typeface is a sober humanist sans serif with a rational finish. The terminals are perpendicular to the direction of the pen stroke, emphasizing the monolinearity of the letterforms. The alternate “Cut” style introduces details derived from writing with a broad-nib pen. Sharp points arise where the imagined pen is set to the paper. These details are echoed in the rational Carthesian terminal treatment that causes curved shapes to form sharp points as they terminate.](home2.png)
 
 
 

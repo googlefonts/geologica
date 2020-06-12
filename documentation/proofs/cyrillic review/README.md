@@ -220,7 +220,7 @@ Good luck!
 
 Thanks Daria,
 
-I’m sorry about the apparent chaos in my character set. This is opposite to how I normally work, and very frustrating to me too.  It is my understanding some of the localized characters should differ in sans/serif (something localfonts.eu doesn’t get into much). Another thing is that these are poorly supported in many environments, and I have doubts about locl as a solution in the first place. 
+I’m sorry about the apparent chaos in my character set. This is opposite to how I normally work.  It is my understanding some of the localized characters should differ in sans/serif (something localfonts.eu doesn’t get into much). Another thing is that these are poorly supported in many environments, and I have doubts about locl as a solution in the first place. 
 
 Anyway, I pulled info from localfonts.eu, Google Fonts, Fontsmith and some Typedrawers/Typophile discussions.
 
