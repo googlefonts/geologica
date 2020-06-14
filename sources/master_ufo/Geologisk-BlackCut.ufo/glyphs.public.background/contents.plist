@@ -226,6 +226,8 @@
     <string>Y_i-cy.glif</string>
     <key>Yusbig-cy</key>
     <string>Y_usbig-cy.glif</string>
+    <key>Z</key>
+    <string>Z_.glif</string>
     <key>Ze-cy</key>
     <string>Z_e-cy.glif</string>
     <key>Zedescender-cy</key>
@@ -782,6 +784,8 @@
     <string>yi-cy.glif</string>
     <key>yusbig-cy</key>
     <string>yusbig-cy.glif</string>
+    <key>z</key>
+    <string>z.glif</string>
     <key>ze-cy</key>
     <string>ze-cy.glif</string>
     <key>zedescender-cy</key>

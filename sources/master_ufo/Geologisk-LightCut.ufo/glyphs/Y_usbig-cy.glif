@@ -2,6 +2,8 @@
 <glyph name="Yusbig-cy" format="2">
   <advance width="1910"/>
   <unicode hex="046A"/>
+  <guideline x="363" y="1019" angle="129.9447"/>
+  <guideline x="126" y="1351" angle="257.7639"/>
   <anchor x="1732" y="0" name="descender"/>
   <anchor x="956" y="1400" name="top"/>
   <outline>
@@ -9,16 +11,16 @@
       <point x="78" y="0" type="line"/>
       <point x="224" y="0" type="line"/>
       <point x="738" y="742" type="line"/>
-      <point x="278" y="1292" type="line"/>
-      <point x="1640" y="1292" type="line"/>
+      <point x="358" y="1292" type="line"/>
+      <point x="1560" y="1292" type="line"/>
       <point x="1168" y="740" type="line"/>
       <point x="1682" y="0" type="line"/>
       <point x="1832" y="0" type="line"/>
       <point x="1308" y="742" type="line"/>
-      <point x="1784" y="1302" type="line"/>
-      <point x="1784" y="1400" type="line"/>
-      <point x="126" y="1400" type="line"/>
-      <point x="126" y="1302" type="line"/>
+      <point x="1704" y="1302" type="line"/>
+      <point x="1704" y="1400" type="line"/>
+      <point x="206" y="1400" type="line"/>
+      <point x="206" y="1302" type="line"/>
       <point x="600" y="736" type="line"/>
     </contour>
     <contour>

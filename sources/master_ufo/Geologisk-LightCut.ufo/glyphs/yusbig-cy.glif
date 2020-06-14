@@ -2,6 +2,8 @@
 <glyph name="yusbig-cy" format="2">
   <advance width="1466"/>
   <unicode hex="046B"/>
+  <guideline x="156" y="912" angle="90"/>
+  <guideline x="156" y="912" angle="257.7639"/>
   <anchor x="1326" y="0" name="descender"/>
   <outline>
     <contour>

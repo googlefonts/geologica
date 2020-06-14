@@ -182,6 +182,14 @@
       <string>Iotatonos</string>
       <string>Iotadieresis</string>
     </array>
+    <key>public.kern1.Hadescender</key>
+    <array>
+      <string>Hadescender-cy</string>
+    </array>
+    <key>public.kern1.Izhitsa</key>
+    <array>
+      <string>Izhitsa-cy</string>
+    </array>
     <key>public.kern1.K</key>
     <array>
       <string>K</string>
@@ -190,13 +198,16 @@
       <string>Ka-cy</string>
       <string>Kje-cy</string>
       <string>Zhedescender-cy</string>
-      <string>Kadescender-cy</string>
       <string>Kaverticalstroke-cy</string>
       <string>Kabashkir-cy</string>
       <string>Zhebreve-cy</string>
       <string>Zhedieresis-cy</string>
       <string>Kappa</string>
       <string>KaiSymbol</string>
+    </array>
+    <key>public.kern1.Kadescender</key>
+    <array>
+      <string>Kadescender-cy</string>
     </array>
     <key>public.kern1.L</key>
     <array>
@@ -380,7 +391,6 @@
       <string>Wdieresis</string>
       <string>Wgrave</string>
       <string>Ushort-cy</string>
-      <string>Izhitsa-cy</string>
       <string>Umacron-cy</string>
       <string>Udieresis-cy</string>
       <string>Uhungarumlaut-cy</string>
@@ -391,7 +401,6 @@
       <string>X</string>
       <string>Ha-cy</string>
       <string>Yusbig-cy</string>
-      <string>Hadescender-cy</string>
       <string>Chi</string>
     </array>
     <key>public.kern1.Y</key>
@@ -457,6 +466,10 @@
     <array>
       <string>ve-cy.loclBGR</string>
       <string>beta</string>
+    </array>
+    <key>public.kern1.braceright</key>
+    <array>
+      <string>braceright</string>
     </array>
     <key>public.kern1.bullet</key>
     <array>
@@ -558,7 +571,6 @@
     <key>public.kern1.e</key>
     <array>
       <string>aeacute</string>
-      <string>ie-cy</string>
       <string>iegrave-cy</string>
       <string>aie-cy</string>
       <string>aie-cy.ss01</string>
@@ -645,7 +657,6 @@
     <key>public.kern1.hyphen</key>
     <array>
       <string>periodcentered</string>
-      <string>braceright</string>
       <string>hyphen</string>
       <string>softhyphen</string>
       <string>endash</string>
@@ -709,6 +720,10 @@
     <array>
       <string>iotadieresistonos</string>
     </array>
+    <key>public.kern1.izhitsa</key>
+    <array>
+      <string>izhitsa-cy</string>
+    </array>
     <key>public.kern1.jdotless</key>
     <array>
       <string>de-cy.loclBGR</string>
@@ -723,7 +738,6 @@
       <string>ka-cy</string>
       <string>yusbig-cy</string>
       <string>zhedescender-cy</string>
-      <string>kadescender-cy</string>
       <string>kaverticalstroke-cy</string>
       <string>kabashkir-cy</string>
       <string>zhebreve-cy</string>
@@ -736,6 +750,10 @@
     <key>public.kern1.kaccent</key>
     <array>
       <string>kje-cy</string>
+    </array>
+    <key>public.kern1.kadescender</key>
+    <array>
+      <string>kadescender-cy</string>
     </array>
     <key>public.kern1.lambda</key>
     <array>
@@ -936,6 +954,7 @@
       <string>thorn</string>
       <string>ae.ss01</string>
       <string>aeacute.ss01</string>
+      <string>ie-cy</string>
       <string>o-cy</string>
       <string>er-cy</string>
       <string>ef-cy</string>
@@ -1331,7 +1350,6 @@
       <string>ydotbelow</string>
       <string>ygrave</string>
       <string>u-cy</string>
-      <string>izhitsa-cy</string>
       <string>ustraight-cy</string>
       <string>ustraightstroke-cy</string>
       <string>we-cy</string>
@@ -1865,6 +1883,10 @@
     <array>
       <string>be-cy</string>
     </array>
+    <key>public.kern2.braceleft</key>
+    <array>
+      <string>braceleft</string>
+    </array>
     <key>public.kern2.bullet</key>
     <array>
       <string>bullet</string>
@@ -2026,7 +2048,6 @@
       <string>dje-cy</string>
       <string>shha-cy</string>
       <string>palochka-cy</string>
-      <string>ve-cy.loclBGR</string>
       <string>ka-cy.loclBGR</string>
       <string>iu-cy.loclBGR</string>
       <string>beta</string>
@@ -2035,7 +2056,6 @@
     <key>public.kern2.hyphen</key>
     <array>
       <string>periodcentered</string>
-      <string>braceleft</string>
       <string>hyphen</string>
       <string>softhyphen</string>
       <string>endash</string>
@@ -2655,6 +2675,10 @@
       <string>ge-cy</string>
       <string>em-cy</string>
       <string>pe-cy</string>
+    </array>
+    <key>public.kern2.ve-cy</key>
+    <array>
+      <string>ve-cy.loclBGR</string>
     </array>
     <key>public.kern2.x</key>
     <array>

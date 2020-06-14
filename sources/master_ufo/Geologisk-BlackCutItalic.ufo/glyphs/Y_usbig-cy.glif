@@ -2,6 +2,7 @@
 <glyph name="Yusbig-cy" format="2">
   <advance width="2136"/>
   <unicode hex="046A"/>
+  <guideline x="347" y="1231" angle="246.8858"/>
   <anchor x="1892" y="0" name="descender"/>
   <anchor x="1254" y="1400" name="top"/>
   <outline>

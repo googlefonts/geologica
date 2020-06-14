@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="izhitsa-cy" format="2">
-  <advance width="1012"/>
+  <advance width="1042"/>
   <unicode hex="0475"/>
   <outline>
     <contour>
@@ -35,7 +35,7 @@
       <key>com.schriftgestaltung.Glyphs.glyph.leftMetricsKey</key>
       <string>v</string>
       <key>com.schriftgestaltung.Glyphs.glyph.widthMetricsKey</key>
-      <string>=v+50</string>
+      <string>=v+80</string>
       <key>public.markColor</key>
       <string>0,0.67,0.91,1</string>
     </dict>

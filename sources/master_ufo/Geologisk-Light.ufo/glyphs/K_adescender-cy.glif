@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Kadescender-cy" format="2">
-  <advance width="1314"/>
+  <advance width="1354"/>
   <unicode hex="049A"/>
   <anchor x="1132" y="0" name="descender"/>
   <anchor x="638" y="1400" name="top"/>
@@ -10,6 +10,8 @@
   </outline>
   <lib>
     <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
+      <string>=+40</string>
       <key>public.markColor</key>
       <string>0.04,0.57,0.04,1</string>
     </dict>

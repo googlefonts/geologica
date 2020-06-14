@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="_part.T_M" format="2">
-  <advance width="2868"/>
+  <advance width="2788"/>
   <anchor x="542" y="722" name="bar"/>
   <anchor x="542" y="0" name="bottom"/>
   <anchor x="542" y="1400" name="top"/>
   <outline>
     <component base="T"/>
-    <component base="M" xOffset="1084"/>
+    <component base="M" xOffset="1004"/>
   </outline>
   <lib>
     <dict>

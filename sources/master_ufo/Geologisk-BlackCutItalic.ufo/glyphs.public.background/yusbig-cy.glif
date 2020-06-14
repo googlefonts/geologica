@@ -1,27 +1,32 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="yusbig-cy" format="2">
+  <anchor x="1556" y="0" name="descender"/>
   <outline>
     <contour>
       <point x="-98" y="0" type="line"/>
-      <point x="370" y="0" type="line"/>
-      <point x="636" y="370" type="line"/>
-      <point x="640" y="370" type="line"/>
-      <point x="566" y="0" type="line"/>
-      <point x="966" y="0" type="line"/>
-      <point x="1040" y="370" type="line"/>
-      <point x="1058" y="370" type="line"/>
-      <point x="1176" y="0" type="line"/>
-      <point x="1628" y="0" type="line"/>
-      <point x="1426" y="540" type="line"/>
-      <point x="1842" y="1040" type="line"/>
-      <point x="134" y="1040" type="line"/>
-      <point x="338" y="560" type="line"/>
+      <point x="362" y="0" type="line"/>
+      <point x="718" y="504" type="line"/>
+      <point x="610" y="770" type="line"/>
+      <point x="1276" y="770" type="line"/>
+      <point x="1060" y="504" type="line"/>
+      <point x="1224" y="0" type="line"/>
+      <point x="1676" y="0" type="line"/>
+      <point x="1486" y="506" type="line"/>
+      <point x="1716" y="780" type="line"/>
+      <point x="1770" y="1040" type="line"/>
+      <point x="275" y="1040" type="line"/>
+      <point x="178" y="812" type="line"/>
+      <point x="298" y="530" type="line"/>
     </contour>
     <contour>
-      <point x="684" y="622" type="line"/>
-      <point x="616" y="788" type="line"/>
-      <point x="1244" y="788" type="line"/>
-      <point x="1110" y="622" type="line"/>
+      <point x="582" y="0" type="line"/>
+      <point x="982" y="0" type="line"/>
+      <point x="1056" y="370" type="line"/>
+      <point x="1350" y="370" type="line"/>
+      <point x="1402" y="602" type="line"/>
+      <point x="416" y="602" type="line"/>
+      <point x="364" y="370" type="line"/>
+      <point x="656" y="370" type="line"/>
     </contour>
   </outline>
 </glyph>
