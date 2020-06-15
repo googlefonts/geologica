@@ -1,9 +1,15 @@
+# Greek tonos OT feature
+
+* https://github.com/irenevl/Polytonic-tutorial/issues/2
+
+
+
 # Email review
 
 ## February 6 2020
 *Frode Helland <frode@monokrom> to Kostas*
 
-<Glyphs file enclosed>
+Glyphs file enclosed: 2020-06-02 Geogresk_SB_060220 (1).glyphs
 
 
 

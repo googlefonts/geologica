@@ -433,6 +433,10 @@
     <array>
       <string>aring</string>
     </array>
+    <key>public.kern1.anoteleia</key>
+    <array>
+      <string>anoteleia</string>
+    </array>
     <key>public.kern1.aogonek</key>
     <array>
       <string>aogonek</string>
@@ -662,7 +666,6 @@
       <string>endash</string>
       <string>emdash</string>
       <string>hyphentwo</string>
-      <string>anoteleia</string>
     </array>
     <key>public.kern1.i</key>
     <array>
@@ -1855,6 +1858,10 @@
     <array>
       <string>ampersand</string>
     </array>
+    <key>public.kern2.anoteleia</key>
+    <array>
+      <string>anoteleia</string>
+    </array>
     <key>public.kern2.asterisk</key>
     <array>
       <string>ordfeminine</string>
@@ -2061,7 +2068,6 @@
       <string>endash</string>
       <string>emdash</string>
       <string>hyphentwo</string>
-      <string>anoteleia</string>
     </array>
     <key>public.kern2.i</key>
     <array>
