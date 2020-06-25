@@ -29,8 +29,9 @@ https://www.typography.com/techniques/fonts-for-financials/#tabular-figs
 
 * [com.google.fonts/check/fontbakery_version](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/fontbakery_version)
 
-* ℹ **INFO** fontbakery (0.7.26)  - Well designed Font QA tool, written in Python 3
-  INSTALLED: 0.7.26 (latest)
+* ℹ **INFO** fontbakery (0.7.27)  - Well designed Font QA tool, written in Python 3
+  INSTALLED: 0.7.26
+  LATEST:    0.7.27
 
 * 🍞 **PASS** Font Bakery is up-to-date
 
@@ -218,34 +219,6 @@ https://github.com/googlefonts/fontbakery/blob/master/prebuilt/workarounds
 <details>
 <summary><b>[158] Geologisk-Black.ttf</b></summary>
 <details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
-
-This can be accomplished by using the 'gftools fix-hinting' command.
-
-# create virtualenvpython3 -m venv venv
-# activate virtualenvsource venv/bin/activate
-# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
-
-</details>
-<details>
 <summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
 
 * [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
@@ -301,21 +274,17 @@ The following glyphs do not have the recommended number of contours:
 
 Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
 Glyph name: uni20A6	Contours detected: 2	Expected: 1, 3 or 5
-Glyph name: aogonek	Contours detected: 3	Expected: 2
 Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: ohorn	Contours detected: 3	Expected: 2
 Glyph name: Uhorn	Contours detected: 2	Expected: 1
 Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
 Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni04B0	Contours detected: 2	Expected: 1
 Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
@@ -331,62 +300,34 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
 Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni20A6	Contours detected: 2	Expected: 1, 3 or 5
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni20A6	Contours detected: 2	Expected: 1, 3 or 5
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Is there kerning info for non-ligated sequences?</summary>
-
-* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
-<pre>--- Rationale ---
-
-Fonts with ligatures should have kerning on the corresponding non-ligated
-sequences for text where ligatures aren&#x27;t used (eg
-https://github.com/impallari/Raleway/issues/14).
-
-
-</pre>
-
-* ⚠ **WARN** GPOS table lacks kerning info for the following non-ligated sequences:
-	- f + f
-	- f + i
-	- i + f
-	- f + l
-	- l + f
-	- i + l
-
-   [code: lacks-kern-info]
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -1034,6 +975,38 @@ that are multiples of 100 on the design space.
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Are there caret positions declared for every ligature?</summary>
+
+* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+<pre>--- Rationale ---
+
+All ligatures in a font must have corresponding caret (text cursor) positions
+defined in the GDEF table, otherwhise, users may experience issues with caret
+rendering.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligature_glyphs
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Is there kerning info for non-ligated sequences?</summary>
+
+* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
+<pre>--- Rationale ---
+
+Fonts with ligatures should have kerning on the corresponding non-ligated
+sequences for text where ligatures aren&#x27;t used (eg
+https://github.com/impallari/Raleway/issues/14).
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligatures
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Directory name in GFonts repo structure must match NameID 1 of the regular.</summary>
 
 * [com.google.fonts/check/repo/dirname_matches_nameid_1](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/dirname_matches_nameid_1)
@@ -1402,10 +1375,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/Geologisk-Black.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 92.1kb |
-	| Hinted Size | 121.5kb |
-	| Increase | 29.4kb |
-	| Change   | 31.9 % |
+	| Dehinted Size | 124.9kb |
+	| Hinted Size | 154.1kb |
+	| Increase | 29.2kb |
+	| Change   | 23.4 % |
  [code: size-impact]
 
 </details>
@@ -1497,7 +1470,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [gasp, prep, loca, fpgm, DSIG, GPOS, GSUB, cvt ]
+* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, prep, GPOS, gasp, DSIG, cvt , loca]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -2046,19 +2019,25 @@ release files, but Google Fonts should only have OpenType tables.
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Are there caret positions declared for every ligature?</summary>
+<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
 
-* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
 <pre>--- Rationale ---
 
-All ligatures in a font must have corresponding caret (text cursor) positions
-defined in the GDEF table, otherwhise, users may experience issues with caret
-rendering.
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
 
 
 </pre>
 
-* 🍞 **PASS** Looks good!
+* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -2654,34 +2633,6 @@ the same x,y coordinates.
 <details>
 <summary><b>[158] Geologisk-BlackItalic.ttf</b></summary>
 <details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
-
-This can be accomplished by using the 'gftools fix-hinting' command.
-
-# create virtualenvpython3 -m venv venv
-# activate virtualenvsource venv/bin/activate
-# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
-
-</details>
-<details>
 <summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
 
 * [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
@@ -2737,21 +2688,17 @@ The following glyphs do not have the recommended number of contours:
 
 Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
 Glyph name: uni20A6	Contours detected: 2	Expected: 1, 3 or 5
-Glyph name: aogonek	Contours detected: 3	Expected: 2
 Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: ohorn	Contours detected: 3	Expected: 2
 Glyph name: Uhorn	Contours detected: 2	Expected: 1
 Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
 Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni04B0	Contours detected: 2	Expected: 1
 Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
@@ -2767,62 +2714,34 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
 Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni20A6	Contours detected: 2	Expected: 1, 3 or 5
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni20A6	Contours detected: 2	Expected: 1, 3 or 5
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Is there kerning info for non-ligated sequences?</summary>
-
-* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
-<pre>--- Rationale ---
-
-Fonts with ligatures should have kerning on the corresponding non-ligated
-sequences for text where ligatures aren&#x27;t used (eg
-https://github.com/impallari/Raleway/issues/14).
-
-
-</pre>
-
-* ⚠ **WARN** GPOS table lacks kerning info for the following non-ligated sequences:
-	- f + f
-	- f + i
-	- i + f
-	- f + l
-	- l + f
-	- i + l
-
-   [code: lacks-kern-info]
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -3470,6 +3389,38 @@ that are multiples of 100 on the design space.
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Are there caret positions declared for every ligature?</summary>
+
+* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+<pre>--- Rationale ---
+
+All ligatures in a font must have corresponding caret (text cursor) positions
+defined in the GDEF table, otherwhise, users may experience issues with caret
+rendering.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligature_glyphs
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Is there kerning info for non-ligated sequences?</summary>
+
+* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
+<pre>--- Rationale ---
+
+Fonts with ligatures should have kerning on the corresponding non-ligated
+sequences for text where ligatures aren&#x27;t used (eg
+https://github.com/impallari/Raleway/issues/14).
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligatures
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Directory name in GFonts repo structure must match NameID 1 of the regular.</summary>
 
 * [com.google.fonts/check/repo/dirname_matches_nameid_1](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/dirname_matches_nameid_1)
@@ -3838,10 +3789,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/Geologisk-BlackItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 94.0kb |
-	| Hinted Size | 123.8kb |
+	| Dehinted Size | 126.8kb |
+	| Hinted Size | 156.5kb |
 	| Increase | 29.7kb |
-	| Change   | 31.6 % |
+	| Change   | 23.4 % |
  [code: size-impact]
 
 </details>
@@ -3933,7 +3884,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [gasp, prep, loca, fpgm, DSIG, GPOS, GSUB, cvt ]
+* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, prep, GPOS, gasp, DSIG, cvt , loca]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -4482,19 +4433,25 @@ release files, but Google Fonts should only have OpenType tables.
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Are there caret positions declared for every ligature?</summary>
+<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
 
-* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
 <pre>--- Rationale ---
 
-All ligatures in a font must have corresponding caret (text cursor) positions
-defined in the GDEF table, otherwhise, users may experience issues with caret
-rendering.
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
 
 
 </pre>
 
-* 🍞 **PASS** Looks good!
+* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -5090,34 +5047,6 @@ the same x,y coordinates.
 <details>
 <summary><b>[158] Geologisk-Bold.ttf</b></summary>
 <details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
-
-This can be accomplished by using the 'gftools fix-hinting' command.
-
-# create virtualenvpython3 -m venv venv
-# activate virtualenvsource venv/bin/activate
-# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
-
-</details>
-<details>
 <summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
 
 * [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
@@ -5172,22 +5101,17 @@ optimized for the typical construction of glyphs in static fonts.
 The following glyphs do not have the recommended number of contours:
 
 Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
 Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: ohorn	Contours detected: 3	Expected: 2
 Glyph name: Uhorn	Contours detected: 2	Expected: 1
 Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
 Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni04B0	Contours detected: 2	Expected: 1
 Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
@@ -5203,62 +5127,33 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
 Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Is there kerning info for non-ligated sequences?</summary>
-
-* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
-<pre>--- Rationale ---
-
-Fonts with ligatures should have kerning on the corresponding non-ligated
-sequences for text where ligatures aren&#x27;t used (eg
-https://github.com/impallari/Raleway/issues/14).
-
-
-</pre>
-
-* ⚠ **WARN** GPOS table lacks kerning info for the following non-ligated sequences:
-	- f + f
-	- f + i
-	- i + f
-	- f + l
-	- l + f
-	- i + l
-
-   [code: lacks-kern-info]
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -5906,6 +5801,38 @@ that are multiples of 100 on the design space.
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Are there caret positions declared for every ligature?</summary>
+
+* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+<pre>--- Rationale ---
+
+All ligatures in a font must have corresponding caret (text cursor) positions
+defined in the GDEF table, otherwhise, users may experience issues with caret
+rendering.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligature_glyphs
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Is there kerning info for non-ligated sequences?</summary>
+
+* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
+<pre>--- Rationale ---
+
+Fonts with ligatures should have kerning on the corresponding non-ligated
+sequences for text where ligatures aren&#x27;t used (eg
+https://github.com/impallari/Raleway/issues/14).
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligatures
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Directory name in GFonts repo structure must match NameID 1 of the regular.</summary>
 
 * [com.google.fonts/check/repo/dirname_matches_nameid_1](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/dirname_matches_nameid_1)
@@ -6274,10 +6201,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/Geologisk-Bold.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 92.2kb |
-	| Hinted Size | 123.4kb |
-	| Increase | 31.1kb |
-	| Change   | 33.7 % |
+	| Dehinted Size | 125.1kb |
+	| Hinted Size | 155.8kb |
+	| Increase | 30.7kb |
+	| Change   | 24.5 % |
  [code: size-impact]
 
 </details>
@@ -6369,7 +6296,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [gasp, prep, loca, fpgm, DSIG, GPOS, GSUB, cvt ]
+* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, prep, GPOS, gasp, DSIG, cvt , loca]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -6918,19 +6845,25 @@ release files, but Google Fonts should only have OpenType tables.
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Are there caret positions declared for every ligature?</summary>
+<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
 
-* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
 <pre>--- Rationale ---
 
-All ligatures in a font must have corresponding caret (text cursor) positions
-defined in the GDEF table, otherwhise, users may experience issues with caret
-rendering.
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
 
 
 </pre>
 
-* 🍞 **PASS** Looks good!
+* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -7526,34 +7459,6 @@ the same x,y coordinates.
 <details>
 <summary><b>[158] Geologisk-BoldItalic.ttf</b></summary>
 <details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
-
-This can be accomplished by using the 'gftools fix-hinting' command.
-
-# create virtualenvpython3 -m venv venv
-# activate virtualenvsource venv/bin/activate
-# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
-
-</details>
-<details>
 <summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
 
 * [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
@@ -7608,22 +7513,17 @@ optimized for the typical construction of glyphs in static fonts.
 The following glyphs do not have the recommended number of contours:
 
 Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
 Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: ohorn	Contours detected: 3	Expected: 2
 Glyph name: Uhorn	Contours detected: 2	Expected: 1
 Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
 Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni04B0	Contours detected: 2	Expected: 1
 Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
@@ -7639,62 +7539,33 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
 Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Is there kerning info for non-ligated sequences?</summary>
-
-* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
-<pre>--- Rationale ---
-
-Fonts with ligatures should have kerning on the corresponding non-ligated
-sequences for text where ligatures aren&#x27;t used (eg
-https://github.com/impallari/Raleway/issues/14).
-
-
-</pre>
-
-* ⚠ **WARN** GPOS table lacks kerning info for the following non-ligated sequences:
-	- f + f
-	- f + i
-	- i + f
-	- f + l
-	- l + f
-	- i + l
-
-   [code: lacks-kern-info]
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -8342,6 +8213,38 @@ that are multiples of 100 on the design space.
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Are there caret positions declared for every ligature?</summary>
+
+* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+<pre>--- Rationale ---
+
+All ligatures in a font must have corresponding caret (text cursor) positions
+defined in the GDEF table, otherwhise, users may experience issues with caret
+rendering.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligature_glyphs
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Is there kerning info for non-ligated sequences?</summary>
+
+* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
+<pre>--- Rationale ---
+
+Fonts with ligatures should have kerning on the corresponding non-ligated
+sequences for text where ligatures aren&#x27;t used (eg
+https://github.com/impallari/Raleway/issues/14).
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligatures
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Directory name in GFonts repo structure must match NameID 1 of the regular.</summary>
 
 * [com.google.fonts/check/repo/dirname_matches_nameid_1](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/dirname_matches_nameid_1)
@@ -8710,10 +8613,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/Geologisk-BoldItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 94.0kb |
-	| Hinted Size | 124.7kb |
-	| Increase | 30.7kb |
-	| Change   | 32.7 % |
+	| Dehinted Size | 126.8kb |
+	| Hinted Size | 157.3kb |
+	| Increase | 30.5kb |
+	| Change   | 24.0 % |
  [code: size-impact]
 
 </details>
@@ -8805,7 +8708,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [gasp, prep, loca, fpgm, DSIG, GPOS, GSUB, cvt ]
+* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, prep, GPOS, gasp, DSIG, cvt , loca]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -9354,19 +9257,25 @@ release files, but Google Fonts should only have OpenType tables.
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Are there caret positions declared for every ligature?</summary>
+<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
 
-* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
 <pre>--- Rationale ---
 
-All ligatures in a font must have corresponding caret (text cursor) positions
-defined in the GDEF table, otherwhise, users may experience issues with caret
-rendering.
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
 
 
 </pre>
 
-* 🍞 **PASS** Looks good!
+* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -9962,34 +9871,6 @@ the same x,y coordinates.
 <details>
 <summary><b>[158] Geologisk-ExtraBold.ttf</b></summary>
 <details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
-
-This can be accomplished by using the 'gftools fix-hinting' command.
-
-# create virtualenvpython3 -m venv venv
-# activate virtualenvsource venv/bin/activate
-# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
-
-</details>
-<details>
 <summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
 
 * [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
@@ -10044,21 +9925,17 @@ optimized for the typical construction of glyphs in static fonts.
 The following glyphs do not have the recommended number of contours:
 
 Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: aogonek	Contours detected: 3	Expected: 2
 Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: ohorn	Contours detected: 3	Expected: 2
 Glyph name: Uhorn	Contours detected: 2	Expected: 1
 Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
 Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni04B0	Contours detected: 2	Expected: 1
 Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
@@ -10074,61 +9951,33 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
 Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Is there kerning info for non-ligated sequences?</summary>
-
-* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
-<pre>--- Rationale ---
-
-Fonts with ligatures should have kerning on the corresponding non-ligated
-sequences for text where ligatures aren&#x27;t used (eg
-https://github.com/impallari/Raleway/issues/14).
-
-
-</pre>
-
-* ⚠ **WARN** GPOS table lacks kerning info for the following non-ligated sequences:
-	- f + f
-	- f + i
-	- i + f
-	- f + l
-	- l + f
-	- i + l
-
-   [code: lacks-kern-info]
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -10776,6 +10625,38 @@ that are multiples of 100 on the design space.
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Are there caret positions declared for every ligature?</summary>
+
+* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+<pre>--- Rationale ---
+
+All ligatures in a font must have corresponding caret (text cursor) positions
+defined in the GDEF table, otherwhise, users may experience issues with caret
+rendering.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligature_glyphs
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Is there kerning info for non-ligated sequences?</summary>
+
+* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
+<pre>--- Rationale ---
+
+Fonts with ligatures should have kerning on the corresponding non-ligated
+sequences for text where ligatures aren&#x27;t used (eg
+https://github.com/impallari/Raleway/issues/14).
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligatures
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Directory name in GFonts repo structure must match NameID 1 of the regular.</summary>
 
 * [com.google.fonts/check/repo/dirname_matches_nameid_1](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/dirname_matches_nameid_1)
@@ -11144,10 +11025,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/Geologisk-ExtraBold.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 92.3kb |
-	| Hinted Size | 132.7kb |
-	| Increase | 40.4kb |
-	| Change   | 43.7 % |
+	| Dehinted Size | 125.2kb |
+	| Hinted Size | 165.3kb |
+	| Increase | 40.1kb |
+	| Change   | 32.1 % |
  [code: size-impact]
 
 </details>
@@ -11239,7 +11120,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [gasp, prep, loca, fpgm, DSIG, GPOS, GSUB, cvt ]
+* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, prep, GPOS, gasp, DSIG, cvt , loca]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -11788,19 +11669,25 @@ release files, but Google Fonts should only have OpenType tables.
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Are there caret positions declared for every ligature?</summary>
+<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
 
-* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
 <pre>--- Rationale ---
 
-All ligatures in a font must have corresponding caret (text cursor) positions
-defined in the GDEF table, otherwhise, users may experience issues with caret
-rendering.
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
 
 
 </pre>
 
-* 🍞 **PASS** Looks good!
+* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -12396,34 +12283,6 @@ the same x,y coordinates.
 <details>
 <summary><b>[158] Geologisk-ExtraBoldItalic.ttf</b></summary>
 <details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
-
-This can be accomplished by using the 'gftools fix-hinting' command.
-
-# create virtualenvpython3 -m venv venv
-# activate virtualenvsource venv/bin/activate
-# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
-
-</details>
-<details>
 <summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
 
 * [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
@@ -12478,21 +12337,17 @@ optimized for the typical construction of glyphs in static fonts.
 The following glyphs do not have the recommended number of contours:
 
 Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: aogonek	Contours detected: 3	Expected: 2
 Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: ohorn	Contours detected: 3	Expected: 2
 Glyph name: Uhorn	Contours detected: 2	Expected: 1
 Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
 Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni04B0	Contours detected: 2	Expected: 1
 Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
@@ -12508,61 +12363,33 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
 Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Is there kerning info for non-ligated sequences?</summary>
-
-* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
-<pre>--- Rationale ---
-
-Fonts with ligatures should have kerning on the corresponding non-ligated
-sequences for text where ligatures aren&#x27;t used (eg
-https://github.com/impallari/Raleway/issues/14).
-
-
-</pre>
-
-* ⚠ **WARN** GPOS table lacks kerning info for the following non-ligated sequences:
-	- f + f
-	- f + i
-	- i + f
-	- f + l
-	- l + f
-	- i + l
-
-   [code: lacks-kern-info]
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -13210,6 +13037,38 @@ that are multiples of 100 on the design space.
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Are there caret positions declared for every ligature?</summary>
+
+* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+<pre>--- Rationale ---
+
+All ligatures in a font must have corresponding caret (text cursor) positions
+defined in the GDEF table, otherwhise, users may experience issues with caret
+rendering.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligature_glyphs
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Is there kerning info for non-ligated sequences?</summary>
+
+* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
+<pre>--- Rationale ---
+
+Fonts with ligatures should have kerning on the corresponding non-ligated
+sequences for text where ligatures aren&#x27;t used (eg
+https://github.com/impallari/Raleway/issues/14).
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligatures
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Directory name in GFonts repo structure must match NameID 1 of the regular.</summary>
 
 * [com.google.fonts/check/repo/dirname_matches_nameid_1](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/dirname_matches_nameid_1)
@@ -13578,10 +13437,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/Geologisk-ExtraBoldItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 94.2kb |
-	| Hinted Size | 134.7kb |
-	| Increase | 40.5kb |
-	| Change   | 43.0 % |
+	| Dehinted Size | 127.0kb |
+	| Hinted Size | 167.4kb |
+	| Increase | 40.4kb |
+	| Change   | 31.8 % |
  [code: size-impact]
 
 </details>
@@ -13673,7 +13532,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [gasp, prep, loca, fpgm, DSIG, GPOS, GSUB, cvt ]
+* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, prep, GPOS, gasp, DSIG, cvt , loca]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -14222,19 +14081,25 @@ release files, but Google Fonts should only have OpenType tables.
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Are there caret positions declared for every ligature?</summary>
+<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
 
-* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
 <pre>--- Rationale ---
 
-All ligatures in a font must have corresponding caret (text cursor) positions
-defined in the GDEF table, otherwhise, users may experience issues with caret
-rendering.
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
 
 
 </pre>
 
-* 🍞 **PASS** Looks good!
+* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -14830,34 +14695,6 @@ the same x,y coordinates.
 <details>
 <summary><b>[158] Geologisk-ExtraLight.ttf</b></summary>
 <details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
-
-This can be accomplished by using the 'gftools fix-hinting' command.
-
-# create virtualenvpython3 -m venv venv
-# activate virtualenvsource venv/bin/activate
-# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
-
-</details>
-<details>
 <summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
 
 * [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
@@ -14919,22 +14756,17 @@ optimized for the typical construction of glyphs in static fonts.
 
 The following glyphs do not have the recommended number of contours:
 
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
 Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: ohorn	Contours detected: 3	Expected: 2
 Glyph name: Uhorn	Contours detected: 2	Expected: 1
 Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
 Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni04B0	Contours detected: 2	Expected: 1
 Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
@@ -14950,61 +14782,32 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
 Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Is there kerning info for non-ligated sequences?</summary>
-
-* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
-<pre>--- Rationale ---
-
-Fonts with ligatures should have kerning on the corresponding non-ligated
-sequences for text where ligatures aren&#x27;t used (eg
-https://github.com/impallari/Raleway/issues/14).
-
-
-</pre>
-
-* ⚠ **WARN** GPOS table lacks kerning info for the following non-ligated sequences:
-	- f + f
-	- f + i
-	- i + f
-	- f + l
-	- l + f
-	- i + l
-
-   [code: lacks-kern-info]
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -15652,6 +15455,38 @@ that are multiples of 100 on the design space.
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Are there caret positions declared for every ligature?</summary>
+
+* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+<pre>--- Rationale ---
+
+All ligatures in a font must have corresponding caret (text cursor) positions
+defined in the GDEF table, otherwhise, users may experience issues with caret
+rendering.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligature_glyphs
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Is there kerning info for non-ligated sequences?</summary>
+
+* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
+<pre>--- Rationale ---
+
+Fonts with ligatures should have kerning on the corresponding non-ligated
+sequences for text where ligatures aren&#x27;t used (eg
+https://github.com/impallari/Raleway/issues/14).
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligatures
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Directory name in GFonts repo structure must match NameID 1 of the regular.</summary>
 
 * [com.google.fonts/check/repo/dirname_matches_nameid_1](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/dirname_matches_nameid_1)
@@ -16020,10 +15855,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/Geologisk-ExtraLight.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 92.6kb |
-	| Hinted Size | 121.4kb |
+	| Dehinted Size | 125.5kb |
+	| Hinted Size | 154.3kb |
 	| Increase | 28.8kb |
-	| Change   | 31.1 % |
+	| Change   | 23.0 % |
  [code: size-impact]
 
 </details>
@@ -16115,7 +15950,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [gasp, prep, loca, fpgm, DSIG, GPOS, GSUB, cvt ]
+* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, prep, GPOS, gasp, DSIG, cvt , loca]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -16656,19 +16491,25 @@ release files, but Google Fonts should only have OpenType tables.
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Are there caret positions declared for every ligature?</summary>
+<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
 
-* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
 <pre>--- Rationale ---
 
-All ligatures in a font must have corresponding caret (text cursor) positions
-defined in the GDEF table, otherwhise, users may experience issues with caret
-rendering.
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
 
 
 </pre>
 
-* 🍞 **PASS** Looks good!
+* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -17264,34 +17105,6 @@ the same x,y coordinates.
 <details>
 <summary><b>[158] Geologisk-ExtraLightItalic.ttf</b></summary>
 <details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
-
-This can be accomplished by using the 'gftools fix-hinting' command.
-
-# create virtualenvpython3 -m venv venv
-# activate virtualenvsource venv/bin/activate
-# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
-
-</details>
-<details>
 <summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
 
 * [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
@@ -17353,22 +17166,17 @@ optimized for the typical construction of glyphs in static fonts.
 
 The following glyphs do not have the recommended number of contours:
 
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
 Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: ohorn	Contours detected: 3	Expected: 2
 Glyph name: Uhorn	Contours detected: 2	Expected: 1
 Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
 Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni04B0	Contours detected: 2	Expected: 1
 Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
@@ -17384,61 +17192,32 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
 Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Is there kerning info for non-ligated sequences?</summary>
-
-* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
-<pre>--- Rationale ---
-
-Fonts with ligatures should have kerning on the corresponding non-ligated
-sequences for text where ligatures aren&#x27;t used (eg
-https://github.com/impallari/Raleway/issues/14).
-
-
-</pre>
-
-* ⚠ **WARN** GPOS table lacks kerning info for the following non-ligated sequences:
-	- f + f
-	- f + i
-	- i + f
-	- f + l
-	- l + f
-	- i + l
-
-   [code: lacks-kern-info]
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -18086,6 +17865,38 @@ that are multiples of 100 on the design space.
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Are there caret positions declared for every ligature?</summary>
+
+* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+<pre>--- Rationale ---
+
+All ligatures in a font must have corresponding caret (text cursor) positions
+defined in the GDEF table, otherwhise, users may experience issues with caret
+rendering.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligature_glyphs
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Is there kerning info for non-ligated sequences?</summary>
+
+* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
+<pre>--- Rationale ---
+
+Fonts with ligatures should have kerning on the corresponding non-ligated
+sequences for text where ligatures aren&#x27;t used (eg
+https://github.com/impallari/Raleway/issues/14).
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligatures
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Directory name in GFonts repo structure must match NameID 1 of the regular.</summary>
 
 * [com.google.fonts/check/repo/dirname_matches_nameid_1](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/dirname_matches_nameid_1)
@@ -18454,10 +18265,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/Geologisk-ExtraLightItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 94.3kb |
-	| Hinted Size | 123.7kb |
+	| Dehinted Size | 127.2kb |
+	| Hinted Size | 156.5kb |
 	| Increase | 29.3kb |
-	| Change   | 31.1 % |
+	| Change   | 23.1 % |
  [code: size-impact]
 
 </details>
@@ -18549,7 +18360,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [gasp, prep, loca, fpgm, DSIG, GPOS, GSUB, cvt ]
+* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, prep, GPOS, gasp, DSIG, cvt , loca]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -19090,19 +18901,25 @@ release files, but Google Fonts should only have OpenType tables.
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Are there caret positions declared for every ligature?</summary>
+<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
 
-* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
 <pre>--- Rationale ---
 
-All ligatures in a font must have corresponding caret (text cursor) positions
-defined in the GDEF table, otherwhise, users may experience issues with caret
-rendering.
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
 
 
 </pre>
 
-* 🍞 **PASS** Looks good!
+* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -19698,34 +19515,6 @@ the same x,y coordinates.
 <details>
 <summary><b>[158] Geologisk-Italic.ttf</b></summary>
 <details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
-
-This can be accomplished by using the 'gftools fix-hinting' command.
-
-# create virtualenvpython3 -m venv venv
-# activate virtualenvsource venv/bin/activate
-# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
-
-</details>
-<details>
 <summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
 
 * [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
@@ -19779,22 +19568,17 @@ optimized for the typical construction of glyphs in static fonts.
 
 The following glyphs do not have the recommended number of contours:
 
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
 Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: ohorn	Contours detected: 3	Expected: 2
 Glyph name: Uhorn	Contours detected: 2	Expected: 1
 Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
 Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni04B0	Contours detected: 2	Expected: 1
 Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
@@ -19810,61 +19594,32 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
 Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Is there kerning info for non-ligated sequences?</summary>
-
-* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
-<pre>--- Rationale ---
-
-Fonts with ligatures should have kerning on the corresponding non-ligated
-sequences for text where ligatures aren&#x27;t used (eg
-https://github.com/impallari/Raleway/issues/14).
-
-
-</pre>
-
-* ⚠ **WARN** GPOS table lacks kerning info for the following non-ligated sequences:
-	- f + f
-	- f + i
-	- i + f
-	- f + l
-	- l + f
-	- i + l
-
-   [code: lacks-kern-info]
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -20512,6 +20267,38 @@ that are multiples of 100 on the design space.
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Are there caret positions declared for every ligature?</summary>
+
+* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+<pre>--- Rationale ---
+
+All ligatures in a font must have corresponding caret (text cursor) positions
+defined in the GDEF table, otherwhise, users may experience issues with caret
+rendering.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligature_glyphs
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Is there kerning info for non-ligated sequences?</summary>
+
+* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
+<pre>--- Rationale ---
+
+Fonts with ligatures should have kerning on the corresponding non-ligated
+sequences for text where ligatures aren&#x27;t used (eg
+https://github.com/impallari/Raleway/issues/14).
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligatures
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Directory name in GFonts repo structure must match NameID 1 of the regular.</summary>
 
 * [com.google.fonts/check/repo/dirname_matches_nameid_1](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/dirname_matches_nameid_1)
@@ -20880,10 +20667,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/Geologisk-Italic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 93.8kb |
-	| Hinted Size | 134.9kb |
+	| Dehinted Size | 126.6kb |
+	| Hinted Size | 167.8kb |
 	| Increase | 41.1kb |
-	| Change   | 43.8 % |
+	| Change   | 32.5 % |
  [code: size-impact]
 
 </details>
@@ -20975,7 +20762,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [gasp, prep, loca, fpgm, DSIG, GPOS, GSUB, cvt ]
+* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, prep, GPOS, gasp, DSIG, cvt , loca]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -21524,19 +21311,25 @@ release files, but Google Fonts should only have OpenType tables.
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Are there caret positions declared for every ligature?</summary>
+<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
 
-* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
 <pre>--- Rationale ---
 
-All ligatures in a font must have corresponding caret (text cursor) positions
-defined in the GDEF table, otherwhise, users may experience issues with caret
-rendering.
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
 
 
 </pre>
 
-* 🍞 **PASS** Looks good!
+* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -22132,34 +21925,6 @@ the same x,y coordinates.
 <details>
 <summary><b>[158] Geologisk-Light.ttf</b></summary>
 <details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
-
-This can be accomplished by using the 'gftools fix-hinting' command.
-
-# create virtualenvpython3 -m venv venv
-# activate virtualenvsource venv/bin/activate
-# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
-
-</details>
-<details>
 <summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
 
 * [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
@@ -22213,22 +21978,17 @@ optimized for the typical construction of glyphs in static fonts.
 
 The following glyphs do not have the recommended number of contours:
 
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
 Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: ohorn	Contours detected: 3	Expected: 2
 Glyph name: Uhorn	Contours detected: 2	Expected: 1
 Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
 Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni04B0	Contours detected: 2	Expected: 1
 Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
@@ -22244,61 +22004,32 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
 Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Is there kerning info for non-ligated sequences?</summary>
-
-* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
-<pre>--- Rationale ---
-
-Fonts with ligatures should have kerning on the corresponding non-ligated
-sequences for text where ligatures aren&#x27;t used (eg
-https://github.com/impallari/Raleway/issues/14).
-
-
-</pre>
-
-* ⚠ **WARN** GPOS table lacks kerning info for the following non-ligated sequences:
-	- f + f
-	- f + i
-	- i + f
-	- f + l
-	- l + f
-	- i + l
-
-   [code: lacks-kern-info]
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -22946,6 +22677,38 @@ that are multiples of 100 on the design space.
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Are there caret positions declared for every ligature?</summary>
+
+* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+<pre>--- Rationale ---
+
+All ligatures in a font must have corresponding caret (text cursor) positions
+defined in the GDEF table, otherwhise, users may experience issues with caret
+rendering.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligature_glyphs
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Is there kerning info for non-ligated sequences?</summary>
+
+* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
+<pre>--- Rationale ---
+
+Fonts with ligatures should have kerning on the corresponding non-ligated
+sequences for text where ligatures aren&#x27;t used (eg
+https://github.com/impallari/Raleway/issues/14).
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligatures
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Directory name in GFonts repo structure must match NameID 1 of the regular.</summary>
 
 * [com.google.fonts/check/repo/dirname_matches_nameid_1](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/dirname_matches_nameid_1)
@@ -23314,10 +23077,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/Geologisk-Light.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 92.1kb |
-	| Hinted Size | 121.4kb |
-	| Increase | 29.2kb |
-	| Change   | 31.7 % |
+	| Dehinted Size | 125.0kb |
+	| Hinted Size | 154.3kb |
+	| Increase | 29.3kb |
+	| Change   | 23.5 % |
  [code: size-impact]
 
 </details>
@@ -23409,7 +23172,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [gasp, prep, loca, fpgm, DSIG, GPOS, GSUB, cvt ]
+* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, prep, GPOS, gasp, DSIG, cvt , loca]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -23958,19 +23721,25 @@ release files, but Google Fonts should only have OpenType tables.
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Are there caret positions declared for every ligature?</summary>
+<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
 
-* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
 <pre>--- Rationale ---
 
-All ligatures in a font must have corresponding caret (text cursor) positions
-defined in the GDEF table, otherwhise, users may experience issues with caret
-rendering.
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
 
 
 </pre>
 
-* 🍞 **PASS** Looks good!
+* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -24566,34 +24335,6 @@ the same x,y coordinates.
 <details>
 <summary><b>[158] Geologisk-LightItalic.ttf</b></summary>
 <details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
-
-This can be accomplished by using the 'gftools fix-hinting' command.
-
-# create virtualenvpython3 -m venv venv
-# activate virtualenvsource venv/bin/activate
-# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
-
-</details>
-<details>
 <summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
 
 * [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
@@ -24647,22 +24388,17 @@ optimized for the typical construction of glyphs in static fonts.
 
 The following glyphs do not have the recommended number of contours:
 
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
 Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: ohorn	Contours detected: 3	Expected: 2
 Glyph name: Uhorn	Contours detected: 2	Expected: 1
 Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
 Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni04B0	Contours detected: 2	Expected: 1
 Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
@@ -24678,61 +24414,32 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
 Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Is there kerning info for non-ligated sequences?</summary>
-
-* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
-<pre>--- Rationale ---
-
-Fonts with ligatures should have kerning on the corresponding non-ligated
-sequences for text where ligatures aren&#x27;t used (eg
-https://github.com/impallari/Raleway/issues/14).
-
-
-</pre>
-
-* ⚠ **WARN** GPOS table lacks kerning info for the following non-ligated sequences:
-	- f + f
-	- f + i
-	- i + f
-	- f + l
-	- l + f
-	- i + l
-
-   [code: lacks-kern-info]
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -25380,6 +25087,38 @@ that are multiples of 100 on the design space.
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Are there caret positions declared for every ligature?</summary>
+
+* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+<pre>--- Rationale ---
+
+All ligatures in a font must have corresponding caret (text cursor) positions
+defined in the GDEF table, otherwhise, users may experience issues with caret
+rendering.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligature_glyphs
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Is there kerning info for non-ligated sequences?</summary>
+
+* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
+<pre>--- Rationale ---
+
+Fonts with ligatures should have kerning on the corresponding non-ligated
+sequences for text where ligatures aren&#x27;t used (eg
+https://github.com/impallari/Raleway/issues/14).
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligatures
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Directory name in GFonts repo structure must match NameID 1 of the regular.</summary>
 
 * [com.google.fonts/check/repo/dirname_matches_nameid_1](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/dirname_matches_nameid_1)
@@ -25748,10 +25487,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/Geologisk-LightItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 94.0kb |
-	| Hinted Size | 123.6kb |
-	| Increase | 29.5kb |
-	| Change   | 31.4 % |
+	| Dehinted Size | 126.8kb |
+	| Hinted Size | 156.5kb |
+	| Increase | 29.7kb |
+	| Change   | 23.4 % |
  [code: size-impact]
 
 </details>
@@ -25843,7 +25582,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [gasp, prep, loca, fpgm, DSIG, GPOS, GSUB, cvt ]
+* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, prep, GPOS, gasp, DSIG, cvt , loca]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -26392,19 +26131,25 @@ release files, but Google Fonts should only have OpenType tables.
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Are there caret positions declared for every ligature?</summary>
+<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
 
-* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
 <pre>--- Rationale ---
 
-All ligatures in a font must have corresponding caret (text cursor) positions
-defined in the GDEF table, otherwhise, users may experience issues with caret
-rendering.
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
 
 
 </pre>
 
-* 🍞 **PASS** Looks good!
+* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -27000,34 +26745,6 @@ the same x,y coordinates.
 <details>
 <summary><b>[158] Geologisk-Medium.ttf</b></summary>
 <details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
-
-This can be accomplished by using the 'gftools fix-hinting' command.
-
-# create virtualenvpython3 -m venv venv
-# activate virtualenvsource venv/bin/activate
-# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
-
-</details>
-<details>
 <summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
 
 * [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
@@ -27081,22 +26798,17 @@ optimized for the typical construction of glyphs in static fonts.
 
 The following glyphs do not have the recommended number of contours:
 
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
 Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: ohorn	Contours detected: 3	Expected: 2
 Glyph name: Uhorn	Contours detected: 2	Expected: 1
 Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
 Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni04B0	Contours detected: 2	Expected: 1
 Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
@@ -27112,61 +26824,32 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
 Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Is there kerning info for non-ligated sequences?</summary>
-
-* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
-<pre>--- Rationale ---
-
-Fonts with ligatures should have kerning on the corresponding non-ligated
-sequences for text where ligatures aren&#x27;t used (eg
-https://github.com/impallari/Raleway/issues/14).
-
-
-</pre>
-
-* ⚠ **WARN** GPOS table lacks kerning info for the following non-ligated sequences:
-	- f + f
-	- f + i
-	- i + f
-	- f + l
-	- l + f
-	- i + l
-
-   [code: lacks-kern-info]
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -27814,6 +27497,38 @@ that are multiples of 100 on the design space.
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Are there caret positions declared for every ligature?</summary>
+
+* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+<pre>--- Rationale ---
+
+All ligatures in a font must have corresponding caret (text cursor) positions
+defined in the GDEF table, otherwhise, users may experience issues with caret
+rendering.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligature_glyphs
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Is there kerning info for non-ligated sequences?</summary>
+
+* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
+<pre>--- Rationale ---
+
+Fonts with ligatures should have kerning on the corresponding non-ligated
+sequences for text where ligatures aren&#x27;t used (eg
+https://github.com/impallari/Raleway/issues/14).
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligatures
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Directory name in GFonts repo structure must match NameID 1 of the regular.</summary>
 
 * [com.google.fonts/check/repo/dirname_matches_nameid_1](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/dirname_matches_nameid_1)
@@ -28182,10 +27897,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/Geologisk-Medium.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 92.2kb |
-	| Hinted Size | 122.5kb |
-	| Increase | 30.3kb |
-	| Change   | 32.9 % |
+	| Dehinted Size | 125.0kb |
+	| Hinted Size | 155.1kb |
+	| Increase | 30.1kb |
+	| Change   | 24.1 % |
  [code: size-impact]
 
 </details>
@@ -28277,7 +27992,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [gasp, prep, loca, fpgm, DSIG, GPOS, GSUB, cvt ]
+* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, prep, GPOS, gasp, DSIG, cvt , loca]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -28826,19 +28541,25 @@ release files, but Google Fonts should only have OpenType tables.
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Are there caret positions declared for every ligature?</summary>
+<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
 
-* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
 <pre>--- Rationale ---
 
-All ligatures in a font must have corresponding caret (text cursor) positions
-defined in the GDEF table, otherwhise, users may experience issues with caret
-rendering.
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
 
 
 </pre>
 
-* 🍞 **PASS** Looks good!
+* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -29434,34 +29155,6 @@ the same x,y coordinates.
 <details>
 <summary><b>[158] Geologisk-MediumItalic.ttf</b></summary>
 <details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
-
-This can be accomplished by using the 'gftools fix-hinting' command.
-
-# create virtualenvpython3 -m venv venv
-# activate virtualenvsource venv/bin/activate
-# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
-
-</details>
-<details>
 <summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
 
 * [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
@@ -29515,22 +29208,17 @@ optimized for the typical construction of glyphs in static fonts.
 
 The following glyphs do not have the recommended number of contours:
 
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
 Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: ohorn	Contours detected: 3	Expected: 2
 Glyph name: Uhorn	Contours detected: 2	Expected: 1
 Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
 Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni04B0	Contours detected: 2	Expected: 1
 Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
@@ -29546,61 +29234,32 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
 Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Is there kerning info for non-ligated sequences?</summary>
-
-* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
-<pre>--- Rationale ---
-
-Fonts with ligatures should have kerning on the corresponding non-ligated
-sequences for text where ligatures aren&#x27;t used (eg
-https://github.com/impallari/Raleway/issues/14).
-
-
-</pre>
-
-* ⚠ **WARN** GPOS table lacks kerning info for the following non-ligated sequences:
-	- f + f
-	- f + i
-	- i + f
-	- f + l
-	- l + f
-	- i + l
-
-   [code: lacks-kern-info]
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -30248,6 +29907,38 @@ that are multiples of 100 on the design space.
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Are there caret positions declared for every ligature?</summary>
+
+* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+<pre>--- Rationale ---
+
+All ligatures in a font must have corresponding caret (text cursor) positions
+defined in the GDEF table, otherwhise, users may experience issues with caret
+rendering.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligature_glyphs
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Is there kerning info for non-ligated sequences?</summary>
+
+* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
+<pre>--- Rationale ---
+
+Fonts with ligatures should have kerning on the corresponding non-ligated
+sequences for text where ligatures aren&#x27;t used (eg
+https://github.com/impallari/Raleway/issues/14).
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligatures
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Directory name in GFonts repo structure must match NameID 1 of the regular.</summary>
 
 * [com.google.fonts/check/repo/dirname_matches_nameid_1](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/dirname_matches_nameid_1)
@@ -30616,10 +30307,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/Geologisk-MediumItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 94.0kb |
-	| Hinted Size | 124.6kb |
-	| Increase | 30.6kb |
-	| Change   | 32.5 % |
+	| Dehinted Size | 126.8kb |
+	| Hinted Size | 157.3kb |
+	| Increase | 30.5kb |
+	| Change   | 24.1 % |
  [code: size-impact]
 
 </details>
@@ -30711,7 +30402,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [gasp, prep, loca, fpgm, DSIG, GPOS, GSUB, cvt ]
+* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, prep, GPOS, gasp, DSIG, cvt , loca]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -31260,19 +30951,25 @@ release files, but Google Fonts should only have OpenType tables.
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Are there caret positions declared for every ligature?</summary>
+<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
 
-* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
 <pre>--- Rationale ---
 
-All ligatures in a font must have corresponding caret (text cursor) positions
-defined in the GDEF table, otherwhise, users may experience issues with caret
-rendering.
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
 
 
 </pre>
 
-* 🍞 **PASS** Looks good!
+* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -31868,34 +31565,6 @@ the same x,y coordinates.
 <details>
 <summary><b>[158] Geologisk-Regular.ttf</b></summary>
 <details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
-
-This can be accomplished by using the 'gftools fix-hinting' command.
-
-# create virtualenvpython3 -m venv venv
-# activate virtualenvsource venv/bin/activate
-# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
-
-</details>
-<details>
 <summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
 
 * [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
@@ -31949,22 +31618,17 @@ optimized for the typical construction of glyphs in static fonts.
 
 The following glyphs do not have the recommended number of contours:
 
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
 Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: ohorn	Contours detected: 3	Expected: 2
 Glyph name: Uhorn	Contours detected: 2	Expected: 1
 Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
 Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni04B0	Contours detected: 2	Expected: 1
 Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
@@ -31980,61 +31644,32 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
 Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Is there kerning info for non-ligated sequences?</summary>
-
-* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
-<pre>--- Rationale ---
-
-Fonts with ligatures should have kerning on the corresponding non-ligated
-sequences for text where ligatures aren&#x27;t used (eg
-https://github.com/impallari/Raleway/issues/14).
-
-
-</pre>
-
-* ⚠ **WARN** GPOS table lacks kerning info for the following non-ligated sequences:
-	- f + f
-	- f + i
-	- i + f
-	- f + l
-	- l + f
-	- i + l
-
-   [code: lacks-kern-info]
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -32682,6 +32317,38 @@ that are multiples of 100 on the design space.
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Are there caret positions declared for every ligature?</summary>
+
+* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+<pre>--- Rationale ---
+
+All ligatures in a font must have corresponding caret (text cursor) positions
+defined in the GDEF table, otherwhise, users may experience issues with caret
+rendering.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligature_glyphs
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Is there kerning info for non-ligated sequences?</summary>
+
+* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
+<pre>--- Rationale ---
+
+Fonts with ligatures should have kerning on the corresponding non-ligated
+sequences for text where ligatures aren&#x27;t used (eg
+https://github.com/impallari/Raleway/issues/14).
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligatures
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Directory name in GFonts repo structure must match NameID 1 of the regular.</summary>
 
 * [com.google.fonts/check/repo/dirname_matches_nameid_1](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/dirname_matches_nameid_1)
@@ -33050,10 +32717,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/Geologisk-Regular.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 92.0kb |
-	| Hinted Size | 132.7kb |
-	| Increase | 40.6kb |
-	| Change   | 44.1 % |
+	| Dehinted Size | 124.9kb |
+	| Hinted Size | 165.2kb |
+	| Increase | 40.3kb |
+	| Change   | 32.3 % |
  [code: size-impact]
 
 </details>
@@ -33145,7 +32812,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [gasp, prep, loca, fpgm, DSIG, GPOS, GSUB, cvt ]
+* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, prep, GPOS, gasp, DSIG, cvt , loca]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -33694,19 +33361,25 @@ release files, but Google Fonts should only have OpenType tables.
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Are there caret positions declared for every ligature?</summary>
+<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
 
-* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
 <pre>--- Rationale ---
 
-All ligatures in a font must have corresponding caret (text cursor) positions
-defined in the GDEF table, otherwhise, users may experience issues with caret
-rendering.
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
 
 
 </pre>
 
-* 🍞 **PASS** Looks good!
+* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -34302,34 +33975,6 @@ the same x,y coordinates.
 <details>
 <summary><b>[158] Geologisk-SemiBold.ttf</b></summary>
 <details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
-
-This can be accomplished by using the 'gftools fix-hinting' command.
-
-# create virtualenvpython3 -m venv venv
-# activate virtualenvsource venv/bin/activate
-# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
-
-</details>
-<details>
 <summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
 
 * [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
@@ -34384,22 +34029,17 @@ optimized for the typical construction of glyphs in static fonts.
 The following glyphs do not have the recommended number of contours:
 
 Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
 Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: ohorn	Contours detected: 3	Expected: 2
 Glyph name: Uhorn	Contours detected: 2	Expected: 1
 Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
 Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni04B0	Contours detected: 2	Expected: 1
 Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
@@ -34415,62 +34055,33 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
 Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Is there kerning info for non-ligated sequences?</summary>
-
-* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
-<pre>--- Rationale ---
-
-Fonts with ligatures should have kerning on the corresponding non-ligated
-sequences for text where ligatures aren&#x27;t used (eg
-https://github.com/impallari/Raleway/issues/14).
-
-
-</pre>
-
-* ⚠ **WARN** GPOS table lacks kerning info for the following non-ligated sequences:
-	- f + f
-	- f + i
-	- i + f
-	- f + l
-	- l + f
-	- i + l
-
-   [code: lacks-kern-info]
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -35118,6 +34729,38 @@ that are multiples of 100 on the design space.
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Are there caret positions declared for every ligature?</summary>
+
+* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+<pre>--- Rationale ---
+
+All ligatures in a font must have corresponding caret (text cursor) positions
+defined in the GDEF table, otherwhise, users may experience issues with caret
+rendering.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligature_glyphs
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Is there kerning info for non-ligated sequences?</summary>
+
+* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
+<pre>--- Rationale ---
+
+Fonts with ligatures should have kerning on the corresponding non-ligated
+sequences for text where ligatures aren&#x27;t used (eg
+https://github.com/impallari/Raleway/issues/14).
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligatures
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Directory name in GFonts repo structure must match NameID 1 of the regular.</summary>
 
 * [com.google.fonts/check/repo/dirname_matches_nameid_1](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/dirname_matches_nameid_1)
@@ -35486,10 +35129,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/Geologisk-SemiBold.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 92.2kb |
-	| Hinted Size | 122.6kb |
-	| Increase | 30.4kb |
-	| Change   | 33.0 % |
+	| Dehinted Size | 125.1kb |
+	| Hinted Size | 155.1kb |
+	| Increase | 30.1kb |
+	| Change   | 24.0 % |
  [code: size-impact]
 
 </details>
@@ -35581,7 +35224,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [gasp, prep, loca, fpgm, DSIG, GPOS, GSUB, cvt ]
+* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, prep, GPOS, gasp, DSIG, cvt , loca]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -36130,19 +35773,25 @@ release files, but Google Fonts should only have OpenType tables.
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Are there caret positions declared for every ligature?</summary>
+<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
 
-* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
 <pre>--- Rationale ---
 
-All ligatures in a font must have corresponding caret (text cursor) positions
-defined in the GDEF table, otherwhise, users may experience issues with caret
-rendering.
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
 
 
 </pre>
 
-* 🍞 **PASS** Looks good!
+* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -36738,34 +36387,6 @@ the same x,y coordinates.
 <details>
 <summary><b>[158] Geologisk-SemiBoldItalic.ttf</b></summary>
 <details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
-
-This can be accomplished by using the 'gftools fix-hinting' command.
-
-# create virtualenvpython3 -m venv venv
-# activate virtualenvsource venv/bin/activate
-# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
-
-</details>
-<details>
 <summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
 
 * [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
@@ -36820,22 +36441,17 @@ optimized for the typical construction of glyphs in static fonts.
 The following glyphs do not have the recommended number of contours:
 
 Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
 Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: ohorn	Contours detected: 3	Expected: 2
 Glyph name: Uhorn	Contours detected: 2	Expected: 1
 Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
 Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni04B0	Contours detected: 2	Expected: 1
 Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
@@ -36851,62 +36467,33 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
 Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Is there kerning info for non-ligated sequences?</summary>
-
-* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
-<pre>--- Rationale ---
-
-Fonts with ligatures should have kerning on the corresponding non-ligated
-sequences for text where ligatures aren&#x27;t used (eg
-https://github.com/impallari/Raleway/issues/14).
-
-
-</pre>
-
-* ⚠ **WARN** GPOS table lacks kerning info for the following non-ligated sequences:
-	- f + f
-	- f + i
-	- i + f
-	- f + l
-	- l + f
-	- i + l
-
-   [code: lacks-kern-info]
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -37554,6 +37141,38 @@ that are multiples of 100 on the design space.
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Are there caret positions declared for every ligature?</summary>
+
+* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+<pre>--- Rationale ---
+
+All ligatures in a font must have corresponding caret (text cursor) positions
+defined in the GDEF table, otherwhise, users may experience issues with caret
+rendering.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligature_glyphs
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Is there kerning info for non-ligated sequences?</summary>
+
+* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
+<pre>--- Rationale ---
+
+Fonts with ligatures should have kerning on the corresponding non-ligated
+sequences for text where ligatures aren&#x27;t used (eg
+https://github.com/impallari/Raleway/issues/14).
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligatures
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Directory name in GFonts repo structure must match NameID 1 of the regular.</summary>
 
 * [com.google.fonts/check/repo/dirname_matches_nameid_1](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/dirname_matches_nameid_1)
@@ -37922,10 +37541,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/Geologisk-SemiBoldItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 94.1kb |
-	| Hinted Size | 124.6kb |
-	| Increase | 30.6kb |
-	| Change   | 32.5 % |
+	| Dehinted Size | 126.9kb |
+	| Hinted Size | 157.3kb |
+	| Increase | 30.4kb |
+	| Change   | 24.0 % |
  [code: size-impact]
 
 </details>
@@ -38017,7 +37636,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [gasp, prep, loca, fpgm, DSIG, GPOS, GSUB, cvt ]
+* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, prep, GPOS, gasp, DSIG, cvt , loca]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -38566,19 +38185,25 @@ release files, but Google Fonts should only have OpenType tables.
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Are there caret positions declared for every ligature?</summary>
+<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
 
-* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
 <pre>--- Rationale ---
 
-All ligatures in a font must have corresponding caret (text cursor) positions
-defined in the GDEF table, otherwhise, users may experience issues with caret
-rendering.
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
 
 
 </pre>
 
-* 🍞 **PASS** Looks good!
+* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -39174,34 +38799,6 @@ the same x,y coordinates.
 <details>
 <summary><b>[158] Geologisk-Thin.ttf</b></summary>
 <details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
-
-This can be accomplished by using the 'gftools fix-hinting' command.
-
-# create virtualenvpython3 -m venv venv
-# activate virtualenvsource venv/bin/activate
-# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
-
-</details>
-<details>
 <summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
 
 * [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
@@ -39263,22 +38860,17 @@ optimized for the typical construction of glyphs in static fonts.
 
 The following glyphs do not have the recommended number of contours:
 
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
 Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: ohorn	Contours detected: 3	Expected: 2
 Glyph name: Uhorn	Contours detected: 2	Expected: 1
 Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
 Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni04B0	Contours detected: 2	Expected: 1
 Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
@@ -39294,61 +38886,32 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
 Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Is there kerning info for non-ligated sequences?</summary>
-
-* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
-<pre>--- Rationale ---
-
-Fonts with ligatures should have kerning on the corresponding non-ligated
-sequences for text where ligatures aren&#x27;t used (eg
-https://github.com/impallari/Raleway/issues/14).
-
-
-</pre>
-
-* ⚠ **WARN** GPOS table lacks kerning info for the following non-ligated sequences:
-	- f + f
-	- f + i
-	- i + f
-	- f + l
-	- l + f
-	- i + l
-
-   [code: lacks-kern-info]
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -39996,6 +39559,38 @@ that are multiples of 100 on the design space.
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Are there caret positions declared for every ligature?</summary>
+
+* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+<pre>--- Rationale ---
+
+All ligatures in a font must have corresponding caret (text cursor) positions
+defined in the GDEF table, otherwhise, users may experience issues with caret
+rendering.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligature_glyphs
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Is there kerning info for non-ligated sequences?</summary>
+
+* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
+<pre>--- Rationale ---
+
+Fonts with ligatures should have kerning on the corresponding non-ligated
+sequences for text where ligatures aren&#x27;t used (eg
+https://github.com/impallari/Raleway/issues/14).
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligatures
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Directory name in GFonts repo structure must match NameID 1 of the regular.</summary>
 
 * [com.google.fonts/check/repo/dirname_matches_nameid_1](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/dirname_matches_nameid_1)
@@ -40364,10 +39959,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/Geologisk-Thin.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 91.4kb |
-	| Hinted Size | 118.8kb |
-	| Increase | 27.4kb |
-	| Change   | 30.0 % |
+	| Dehinted Size | 119.6kb |
+	| Hinted Size | 147.1kb |
+	| Increase | 27.5kb |
+	| Change   | 23.0 % |
  [code: size-impact]
 
 </details>
@@ -40459,7 +40054,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [gasp, prep, loca, fpgm, DSIG, GPOS, GSUB, cvt ]
+* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, prep, GPOS, gasp, DSIG, cvt , loca]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -41000,19 +40595,25 @@ release files, but Google Fonts should only have OpenType tables.
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Are there caret positions declared for every ligature?</summary>
+<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
 
-* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
 <pre>--- Rationale ---
 
-All ligatures in a font must have corresponding caret (text cursor) positions
-defined in the GDEF table, otherwhise, users may experience issues with caret
-rendering.
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
 
 
 </pre>
 
-* 🍞 **PASS** Looks good!
+* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -41608,34 +41209,6 @@ the same x,y coordinates.
 <details>
 <summary><b>[158] Geologisk-ThinItalic.ttf</b></summary>
 <details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
-
-This can be accomplished by using the 'gftools fix-hinting' command.
-
-# create virtualenvpython3 -m venv venv
-# activate virtualenvsource venv/bin/activate
-# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
-
-</details>
-<details>
 <summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
 
 * [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
@@ -41697,21 +41270,17 @@ optimized for the typical construction of glyphs in static fonts.
 
 The following glyphs do not have the recommended number of contours:
 
-Glyph name: aogonek	Contours detected: 3	Expected: 2
 Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: ohorn	Contours detected: 3	Expected: 2
 Glyph name: Uhorn	Contours detected: 2	Expected: 1
 Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
 Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni04B0	Contours detected: 2	Expected: 1
 Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
@@ -41727,60 +41296,32 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
 Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Is there kerning info for non-ligated sequences?</summary>
-
-* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
-<pre>--- Rationale ---
-
-Fonts with ligatures should have kerning on the corresponding non-ligated
-sequences for text where ligatures aren&#x27;t used (eg
-https://github.com/impallari/Raleway/issues/14).
-
-
-</pre>
-
-* ⚠ **WARN** GPOS table lacks kerning info for the following non-ligated sequences:
-	- f + f
-	- f + i
-	- i + f
-	- f + l
-	- l + f
-	- i + l
-
-   [code: lacks-kern-info]
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -42428,6 +41969,38 @@ that are multiples of 100 on the design space.
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Are there caret positions declared for every ligature?</summary>
+
+* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+<pre>--- Rationale ---
+
+All ligatures in a font must have corresponding caret (text cursor) positions
+defined in the GDEF table, otherwhise, users may experience issues with caret
+rendering.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligature_glyphs
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Is there kerning info for non-ligated sequences?</summary>
+
+* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
+<pre>--- Rationale ---
+
+Fonts with ligatures should have kerning on the corresponding non-ligated
+sequences for text where ligatures aren&#x27;t used (eg
+https://github.com/impallari/Raleway/issues/14).
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligatures
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Directory name in GFonts repo structure must match NameID 1 of the regular.</summary>
 
 * [com.google.fonts/check/repo/dirname_matches_nameid_1](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/dirname_matches_nameid_1)
@@ -42796,10 +42369,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/Geologisk-ThinItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 93.1kb |
-	| Hinted Size | 121.1kb |
-	| Increase | 28.0kb |
-	| Change   | 30.1 % |
+	| Dehinted Size | 120.9kb |
+	| Hinted Size | 149.0kb |
+	| Increase | 28.1kb |
+	| Change   | 23.2 % |
  [code: size-impact]
 
 </details>
@@ -42891,7 +42464,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [gasp, prep, loca, fpgm, DSIG, GPOS, GSUB, cvt ]
+* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, prep, GPOS, gasp, DSIG, cvt , loca]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -43432,19 +43005,25 @@ release files, but Google Fonts should only have OpenType tables.
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Are there caret positions declared for every ligature?</summary>
+<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
 
-* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
 <pre>--- Rationale ---
 
-All ligatures in a font must have corresponding caret (text cursor) positions
-defined in the GDEF table, otherwhise, users may experience issues with caret
-rendering.
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
 
 
 </pre>
 
-* 🍞 **PASS** Looks good!
+* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -44040,34 +43619,6 @@ the same x,y coordinates.
 <details>
 <summary><b>[158] GeologiskCut-Black.ttf</b></summary>
 <details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
-
-This can be accomplished by using the 'gftools fix-hinting' command.
-
-# create virtualenvpython3 -m venv venv
-# activate virtualenvsource venv/bin/activate
-# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
-
-</details>
-<details>
 <summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
 
 * [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
@@ -44123,22 +43674,17 @@ The following glyphs do not have the recommended number of contours:
 
 Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
 Glyph name: uni20A6	Contours detected: 2	Expected: 1, 3 or 5
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
 Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: ohorn	Contours detected: 3	Expected: 2
 Glyph name: Uhorn	Contours detected: 2	Expected: 1
 Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
 Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni04B0	Contours detected: 2	Expected: 1
 Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
@@ -44154,63 +43700,34 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
 Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni20A6	Contours detected: 2	Expected: 1, 3 or 5
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni20A6	Contours detected: 2	Expected: 1, 3 or 5
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Is there kerning info for non-ligated sequences?</summary>
-
-* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
-<pre>--- Rationale ---
-
-Fonts with ligatures should have kerning on the corresponding non-ligated
-sequences for text where ligatures aren&#x27;t used (eg
-https://github.com/impallari/Raleway/issues/14).
-
-
-</pre>
-
-* ⚠ **WARN** GPOS table lacks kerning info for the following non-ligated sequences:
-	- f + f
-	- f + i
-	- i + f
-	- f + l
-	- l + f
-	- i + l
-
-   [code: lacks-kern-info]
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -44858,6 +44375,38 @@ that are multiples of 100 on the design space.
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Are there caret positions declared for every ligature?</summary>
+
+* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+<pre>--- Rationale ---
+
+All ligatures in a font must have corresponding caret (text cursor) positions
+defined in the GDEF table, otherwhise, users may experience issues with caret
+rendering.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligature_glyphs
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Is there kerning info for non-ligated sequences?</summary>
+
+* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
+<pre>--- Rationale ---
+
+Fonts with ligatures should have kerning on the corresponding non-ligated
+sequences for text where ligatures aren&#x27;t used (eg
+https://github.com/impallari/Raleway/issues/14).
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligatures
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Directory name in GFonts repo structure must match NameID 1 of the regular.</summary>
 
 * [com.google.fonts/check/repo/dirname_matches_nameid_1](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/dirname_matches_nameid_1)
@@ -45226,10 +44775,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/GeologiskCut-Black.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 91.9kb |
-	| Hinted Size | 121.3kb |
-	| Increase | 29.4kb |
-	| Change   | 32.0 % |
+	| Dehinted Size | 124.9kb |
+	| Hinted Size | 154.4kb |
+	| Increase | 29.5kb |
+	| Change   | 23.6 % |
  [code: size-impact]
 
 </details>
@@ -45321,7 +44870,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [gasp, prep, loca, fpgm, DSIG, GPOS, GSUB, cvt ]
+* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, prep, GPOS, gasp, DSIG, cvt , loca]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -45870,19 +45419,25 @@ release files, but Google Fonts should only have OpenType tables.
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Are there caret positions declared for every ligature?</summary>
+<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
 
-* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
 <pre>--- Rationale ---
 
-All ligatures in a font must have corresponding caret (text cursor) positions
-defined in the GDEF table, otherwhise, users may experience issues with caret
-rendering.
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
 
 
 </pre>
 
-* 🍞 **PASS** Looks good!
+* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -46478,34 +46033,6 @@ the same x,y coordinates.
 <details>
 <summary><b>[158] GeologiskCut-BlackItalic.ttf</b></summary>
 <details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
-
-This can be accomplished by using the 'gftools fix-hinting' command.
-
-# create virtualenvpython3 -m venv venv
-# activate virtualenvsource venv/bin/activate
-# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
-
-</details>
-<details>
 <summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
 
 * [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
@@ -46561,22 +46088,17 @@ The following glyphs do not have the recommended number of contours:
 
 Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
 Glyph name: uni20A6	Contours detected: 2	Expected: 1, 3 or 5
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
 Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: ohorn	Contours detected: 3	Expected: 2
 Glyph name: Uhorn	Contours detected: 2	Expected: 1
 Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
 Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni04B0	Contours detected: 2	Expected: 1
 Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
@@ -46592,63 +46114,34 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
 Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni20A6	Contours detected: 2	Expected: 1, 3 or 5
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni20A6	Contours detected: 2	Expected: 1, 3 or 5
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Is there kerning info for non-ligated sequences?</summary>
-
-* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
-<pre>--- Rationale ---
-
-Fonts with ligatures should have kerning on the corresponding non-ligated
-sequences for text where ligatures aren&#x27;t used (eg
-https://github.com/impallari/Raleway/issues/14).
-
-
-</pre>
-
-* ⚠ **WARN** GPOS table lacks kerning info for the following non-ligated sequences:
-	- f + f
-	- f + i
-	- i + f
-	- f + l
-	- l + f
-	- i + l
-
-   [code: lacks-kern-info]
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -47296,6 +46789,38 @@ that are multiples of 100 on the design space.
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Are there caret positions declared for every ligature?</summary>
+
+* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+<pre>--- Rationale ---
+
+All ligatures in a font must have corresponding caret (text cursor) positions
+defined in the GDEF table, otherwhise, users may experience issues with caret
+rendering.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligature_glyphs
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Is there kerning info for non-ligated sequences?</summary>
+
+* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
+<pre>--- Rationale ---
+
+Fonts with ligatures should have kerning on the corresponding non-ligated
+sequences for text where ligatures aren&#x27;t used (eg
+https://github.com/impallari/Raleway/issues/14).
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligatures
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Directory name in GFonts repo structure must match NameID 1 of the regular.</summary>
 
 * [com.google.fonts/check/repo/dirname_matches_nameid_1](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/dirname_matches_nameid_1)
@@ -47664,10 +47189,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/GeologiskCut-BlackItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 94.0kb |
-	| Hinted Size | 123.1kb |
-	| Increase | 29.1kb |
-	| Change   | 31.0 % |
+	| Dehinted Size | 126.9kb |
+	| Hinted Size | 156.3kb |
+	| Increase | 29.4kb |
+	| Change   | 23.2 % |
  [code: size-impact]
 
 </details>
@@ -47759,7 +47284,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [gasp, prep, loca, fpgm, DSIG, GPOS, GSUB, cvt ]
+* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, prep, GPOS, gasp, DSIG, cvt , loca]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -48308,19 +47833,25 @@ release files, but Google Fonts should only have OpenType tables.
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Are there caret positions declared for every ligature?</summary>
+<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
 
-* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
 <pre>--- Rationale ---
 
-All ligatures in a font must have corresponding caret (text cursor) positions
-defined in the GDEF table, otherwhise, users may experience issues with caret
-rendering.
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
 
 
 </pre>
 
-* 🍞 **PASS** Looks good!
+* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -48916,34 +48447,6 @@ the same x,y coordinates.
 <details>
 <summary><b>[158] GeologiskCut-Bold.ttf</b></summary>
 <details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
-
-This can be accomplished by using the 'gftools fix-hinting' command.
-
-# create virtualenvpython3 -m venv venv
-# activate virtualenvsource venv/bin/activate
-# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
-
-</details>
-<details>
 <summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
 
 * [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
@@ -48998,22 +48501,17 @@ optimized for the typical construction of glyphs in static fonts.
 The following glyphs do not have the recommended number of contours:
 
 Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
 Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: ohorn	Contours detected: 3	Expected: 2
 Glyph name: Uhorn	Contours detected: 2	Expected: 1
 Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
 Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni04B0	Contours detected: 2	Expected: 1
 Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
@@ -49029,62 +48527,33 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
 Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Is there kerning info for non-ligated sequences?</summary>
-
-* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
-<pre>--- Rationale ---
-
-Fonts with ligatures should have kerning on the corresponding non-ligated
-sequences for text where ligatures aren&#x27;t used (eg
-https://github.com/impallari/Raleway/issues/14).
-
-
-</pre>
-
-* ⚠ **WARN** GPOS table lacks kerning info for the following non-ligated sequences:
-	- f + f
-	- f + i
-	- i + f
-	- f + l
-	- l + f
-	- i + l
-
-   [code: lacks-kern-info]
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -49732,6 +49201,38 @@ that are multiples of 100 on the design space.
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Are there caret positions declared for every ligature?</summary>
+
+* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+<pre>--- Rationale ---
+
+All ligatures in a font must have corresponding caret (text cursor) positions
+defined in the GDEF table, otherwhise, users may experience issues with caret
+rendering.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligature_glyphs
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Is there kerning info for non-ligated sequences?</summary>
+
+* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
+<pre>--- Rationale ---
+
+Fonts with ligatures should have kerning on the corresponding non-ligated
+sequences for text where ligatures aren&#x27;t used (eg
+https://github.com/impallari/Raleway/issues/14).
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligatures
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Directory name in GFonts repo structure must match NameID 1 of the regular.</summary>
 
 * [com.google.fonts/check/repo/dirname_matches_nameid_1](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/dirname_matches_nameid_1)
@@ -50100,10 +49601,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/GeologiskCut-Bold.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 92.3kb |
-	| Hinted Size | 127.5kb |
-	| Increase | 35.3kb |
-	| Change   | 38.2 % |
+	| Dehinted Size | 125.7kb |
+	| Hinted Size | 160.8kb |
+	| Increase | 35.1kb |
+	| Change   | 27.9 % |
  [code: size-impact]
 
 </details>
@@ -50195,7 +49696,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [gasp, prep, loca, fpgm, DSIG, GPOS, GSUB, cvt ]
+* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, prep, GPOS, gasp, DSIG, cvt , loca]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -50744,19 +50245,25 @@ release files, but Google Fonts should only have OpenType tables.
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Are there caret positions declared for every ligature?</summary>
+<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
 
-* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
 <pre>--- Rationale ---
 
-All ligatures in a font must have corresponding caret (text cursor) positions
-defined in the GDEF table, otherwhise, users may experience issues with caret
-rendering.
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
 
 
 </pre>
 
-* 🍞 **PASS** Looks good!
+* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -51352,34 +50859,6 @@ the same x,y coordinates.
 <details>
 <summary><b>[158] GeologiskCut-BoldItalic.ttf</b></summary>
 <details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
-
-This can be accomplished by using the 'gftools fix-hinting' command.
-
-# create virtualenvpython3 -m venv venv
-# activate virtualenvsource venv/bin/activate
-# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
-
-</details>
-<details>
 <summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
 
 * [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
@@ -51434,22 +50913,17 @@ optimized for the typical construction of glyphs in static fonts.
 The following glyphs do not have the recommended number of contours:
 
 Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
 Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: ohorn	Contours detected: 3	Expected: 2
 Glyph name: Uhorn	Contours detected: 2	Expected: 1
 Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
 Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni04B0	Contours detected: 2	Expected: 1
 Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
@@ -51465,62 +50939,33 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
 Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Is there kerning info for non-ligated sequences?</summary>
-
-* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
-<pre>--- Rationale ---
-
-Fonts with ligatures should have kerning on the corresponding non-ligated
-sequences for text where ligatures aren&#x27;t used (eg
-https://github.com/impallari/Raleway/issues/14).
-
-
-</pre>
-
-* ⚠ **WARN** GPOS table lacks kerning info for the following non-ligated sequences:
-	- f + f
-	- f + i
-	- i + f
-	- f + l
-	- l + f
-	- i + l
-
-   [code: lacks-kern-info]
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -52168,6 +51613,38 @@ that are multiples of 100 on the design space.
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Are there caret positions declared for every ligature?</summary>
+
+* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+<pre>--- Rationale ---
+
+All ligatures in a font must have corresponding caret (text cursor) positions
+defined in the GDEF table, otherwhise, users may experience issues with caret
+rendering.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligature_glyphs
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Is there kerning info for non-ligated sequences?</summary>
+
+* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
+<pre>--- Rationale ---
+
+Fonts with ligatures should have kerning on the corresponding non-ligated
+sequences for text where ligatures aren&#x27;t used (eg
+https://github.com/impallari/Raleway/issues/14).
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligatures
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Directory name in GFonts repo structure must match NameID 1 of the regular.</summary>
 
 * [com.google.fonts/check/repo/dirname_matches_nameid_1](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/dirname_matches_nameid_1)
@@ -52536,10 +52013,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/GeologiskCut-BoldItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 94.2kb |
-	| Hinted Size | 128.7kb |
+	| Dehinted Size | 127.0kb |
+	| Hinted Size | 161.4kb |
 	| Increase | 34.5kb |
-	| Change   | 36.7 % |
+	| Change   | 27.1 % |
  [code: size-impact]
 
 </details>
@@ -52631,7 +52108,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [gasp, prep, loca, fpgm, DSIG, GPOS, GSUB, cvt ]
+* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, prep, GPOS, gasp, DSIG, cvt , loca]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -53180,19 +52657,25 @@ release files, but Google Fonts should only have OpenType tables.
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Are there caret positions declared for every ligature?</summary>
+<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
 
-* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
 <pre>--- Rationale ---
 
-All ligatures in a font must have corresponding caret (text cursor) positions
-defined in the GDEF table, otherwhise, users may experience issues with caret
-rendering.
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
 
 
 </pre>
 
-* 🍞 **PASS** Looks good!
+* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -53788,34 +53271,6 @@ the same x,y coordinates.
 <details>
 <summary><b>[158] GeologiskCut-ExtraBold.ttf</b></summary>
 <details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
-
-This can be accomplished by using the 'gftools fix-hinting' command.
-
-# create virtualenvpython3 -m venv venv
-# activate virtualenvsource venv/bin/activate
-# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
-
-</details>
-<details>
 <summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
 
 * [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
@@ -53870,22 +53325,17 @@ optimized for the typical construction of glyphs in static fonts.
 The following glyphs do not have the recommended number of contours:
 
 Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
 Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: ohorn	Contours detected: 3	Expected: 2
 Glyph name: Uhorn	Contours detected: 2	Expected: 1
 Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
 Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni04B0	Contours detected: 2	Expected: 1
 Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
@@ -53901,62 +53351,33 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
 Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Is there kerning info for non-ligated sequences?</summary>
-
-* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
-<pre>--- Rationale ---
-
-Fonts with ligatures should have kerning on the corresponding non-ligated
-sequences for text where ligatures aren&#x27;t used (eg
-https://github.com/impallari/Raleway/issues/14).
-
-
-</pre>
-
-* ⚠ **WARN** GPOS table lacks kerning info for the following non-ligated sequences:
-	- f + f
-	- f + i
-	- i + f
-	- f + l
-	- l + f
-	- i + l
-
-   [code: lacks-kern-info]
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -54632,6 +54053,38 @@ that are multiples of 100 on the design space.
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Are there caret positions declared for every ligature?</summary>
+
+* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+<pre>--- Rationale ---
+
+All ligatures in a font must have corresponding caret (text cursor) positions
+defined in the GDEF table, otherwhise, users may experience issues with caret
+rendering.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligature_glyphs
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Is there kerning info for non-ligated sequences?</summary>
+
+* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
+<pre>--- Rationale ---
+
+Fonts with ligatures should have kerning on the corresponding non-ligated
+sequences for text where ligatures aren&#x27;t used (eg
+https://github.com/impallari/Raleway/issues/14).
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligatures
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Directory name in GFonts repo structure must match NameID 1 of the regular.</summary>
 
 * [com.google.fonts/check/repo/dirname_matches_nameid_1](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/dirname_matches_nameid_1)
@@ -55000,10 +54453,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/GeologiskCut-ExtraBold.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 92.3kb |
-	| Hinted Size | 127.8kb |
-	| Increase | 35.5kb |
-	| Change   | 38.4 % |
+	| Dehinted Size | 125.8kb |
+	| Hinted Size | 161.3kb |
+	| Increase | 35.6kb |
+	| Change   | 28.3 % |
  [code: size-impact]
 
 </details>
@@ -55095,7 +54548,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [gasp, prep, loca, fpgm, DSIG, GPOS, GSUB, cvt ]
+* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, prep, GPOS, gasp, DSIG, cvt , loca]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -55644,19 +55097,25 @@ release files, but Google Fonts should only have OpenType tables.
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Are there caret positions declared for every ligature?</summary>
+<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
 
-* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
 <pre>--- Rationale ---
 
-All ligatures in a font must have corresponding caret (text cursor) positions
-defined in the GDEF table, otherwhise, users may experience issues with caret
-rendering.
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
 
 
 </pre>
 
-* 🍞 **PASS** Looks good!
+* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -56227,34 +55686,6 @@ the same x,y coordinates.
 <details>
 <summary><b>[158] GeologiskCut-ExtraBoldItalic.ttf</b></summary>
 <details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
-
-This can be accomplished by using the 'gftools fix-hinting' command.
-
-# create virtualenvpython3 -m venv venv
-# activate virtualenvsource venv/bin/activate
-# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
-
-</details>
-<details>
 <summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
 
 * [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
@@ -56309,22 +55740,17 @@ optimized for the typical construction of glyphs in static fonts.
 The following glyphs do not have the recommended number of contours:
 
 Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
 Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: ohorn	Contours detected: 3	Expected: 2
 Glyph name: Uhorn	Contours detected: 2	Expected: 1
 Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
 Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni04B0	Contours detected: 2	Expected: 1
 Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
@@ -56340,62 +55766,33 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
 Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Is there kerning info for non-ligated sequences?</summary>
-
-* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
-<pre>--- Rationale ---
-
-Fonts with ligatures should have kerning on the corresponding non-ligated
-sequences for text where ligatures aren&#x27;t used (eg
-https://github.com/impallari/Raleway/issues/14).
-
-
-</pre>
-
-* ⚠ **WARN** GPOS table lacks kerning info for the following non-ligated sequences:
-	- f + f
-	- f + i
-	- i + f
-	- f + l
-	- l + f
-	- i + l
-
-   [code: lacks-kern-info]
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -57071,6 +56468,38 @@ that are multiples of 100 on the design space.
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Are there caret positions declared for every ligature?</summary>
+
+* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+<pre>--- Rationale ---
+
+All ligatures in a font must have corresponding caret (text cursor) positions
+defined in the GDEF table, otherwhise, users may experience issues with caret
+rendering.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligature_glyphs
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Is there kerning info for non-ligated sequences?</summary>
+
+* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
+<pre>--- Rationale ---
+
+Fonts with ligatures should have kerning on the corresponding non-ligated
+sequences for text where ligatures aren&#x27;t used (eg
+https://github.com/impallari/Raleway/issues/14).
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligatures
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Directory name in GFonts repo structure must match NameID 1 of the regular.</summary>
 
 * [com.google.fonts/check/repo/dirname_matches_nameid_1](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/dirname_matches_nameid_1)
@@ -57439,10 +56868,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/GeologiskCut-ExtraBoldItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 94.4kb |
-	| Hinted Size | 129.4kb |
-	| Increase | 35.0kb |
-	| Change   | 37.1 % |
+	| Dehinted Size | 127.2kb |
+	| Hinted Size | 162.4kb |
+	| Increase | 35.3kb |
+	| Change   | 27.7 % |
  [code: size-impact]
 
 </details>
@@ -57534,7 +56963,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [gasp, prep, loca, fpgm, DSIG, GPOS, GSUB, cvt ]
+* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, prep, GPOS, gasp, DSIG, cvt , loca]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -58083,19 +57512,25 @@ release files, but Google Fonts should only have OpenType tables.
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Are there caret positions declared for every ligature?</summary>
+<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
 
-* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
 <pre>--- Rationale ---
 
-All ligatures in a font must have corresponding caret (text cursor) positions
-defined in the GDEF table, otherwhise, users may experience issues with caret
-rendering.
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
 
 
 </pre>
 
-* 🍞 **PASS** Looks good!
+* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -58666,34 +58101,6 @@ the same x,y coordinates.
 <details>
 <summary><b>[158] GeologiskCut-ExtraLight.ttf</b></summary>
 <details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
-
-This can be accomplished by using the 'gftools fix-hinting' command.
-
-# create virtualenvpython3 -m venv venv
-# activate virtualenvsource venv/bin/activate
-# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
-
-</details>
-<details>
 <summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
 
 * [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
@@ -58755,22 +58162,17 @@ optimized for the typical construction of glyphs in static fonts.
 
 The following glyphs do not have the recommended number of contours:
 
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
 Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: ohorn	Contours detected: 3	Expected: 2
 Glyph name: Uhorn	Contours detected: 2	Expected: 1
 Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
 Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni04B0	Contours detected: 2	Expected: 1
 Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
@@ -58786,61 +58188,32 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
 Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Is there kerning info for non-ligated sequences?</summary>
-
-* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
-<pre>--- Rationale ---
-
-Fonts with ligatures should have kerning on the corresponding non-ligated
-sequences for text where ligatures aren&#x27;t used (eg
-https://github.com/impallari/Raleway/issues/14).
-
-
-</pre>
-
-* ⚠ **WARN** GPOS table lacks kerning info for the following non-ligated sequences:
-	- f + f
-	- f + i
-	- i + f
-	- f + l
-	- l + f
-	- i + l
-
-   [code: lacks-kern-info]
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -59516,6 +58889,38 @@ that are multiples of 100 on the design space.
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Are there caret positions declared for every ligature?</summary>
+
+* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+<pre>--- Rationale ---
+
+All ligatures in a font must have corresponding caret (text cursor) positions
+defined in the GDEF table, otherwhise, users may experience issues with caret
+rendering.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligature_glyphs
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Is there kerning info for non-ligated sequences?</summary>
+
+* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
+<pre>--- Rationale ---
+
+Fonts with ligatures should have kerning on the corresponding non-ligated
+sequences for text where ligatures aren&#x27;t used (eg
+https://github.com/impallari/Raleway/issues/14).
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligatures
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Directory name in GFonts repo structure must match NameID 1 of the regular.</summary>
 
 * [com.google.fonts/check/repo/dirname_matches_nameid_1](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/dirname_matches_nameid_1)
@@ -59884,10 +59289,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/GeologiskCut-ExtraLight.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 92.6kb |
-	| Hinted Size | 120.9kb |
-	| Increase | 28.3kb |
-	| Change   | 30.6 % |
+	| Dehinted Size | 126.1kb |
+	| Hinted Size | 154.5kb |
+	| Increase | 28.5kb |
+	| Change   | 22.6 % |
  [code: size-impact]
 
 </details>
@@ -59979,7 +59384,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [gasp, prep, loca, fpgm, DSIG, GPOS, GSUB, cvt ]
+* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, prep, GPOS, gasp, DSIG, cvt , loca]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -60520,19 +59925,25 @@ release files, but Google Fonts should only have OpenType tables.
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Are there caret positions declared for every ligature?</summary>
+<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
 
-* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
 <pre>--- Rationale ---
 
-All ligatures in a font must have corresponding caret (text cursor) positions
-defined in the GDEF table, otherwhise, users may experience issues with caret
-rendering.
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
 
 
 </pre>
 
-* 🍞 **PASS** Looks good!
+* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -61103,34 +60514,6 @@ the same x,y coordinates.
 <details>
 <summary><b>[158] GeologiskCut-ExtraLightItalic.ttf</b></summary>
 <details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
-
-This can be accomplished by using the 'gftools fix-hinting' command.
-
-# create virtualenvpython3 -m venv venv
-# activate virtualenvsource venv/bin/activate
-# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
-
-</details>
-<details>
 <summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
 
 * [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
@@ -61192,21 +60575,17 @@ optimized for the typical construction of glyphs in static fonts.
 
 The following glyphs do not have the recommended number of contours:
 
-Glyph name: aogonek	Contours detected: 3	Expected: 2
 Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: ohorn	Contours detected: 3	Expected: 2
 Glyph name: Uhorn	Contours detected: 2	Expected: 1
 Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
 Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni04B0	Contours detected: 2	Expected: 1
 Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
@@ -61222,60 +60601,32 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
 Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Is there kerning info for non-ligated sequences?</summary>
-
-* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
-<pre>--- Rationale ---
-
-Fonts with ligatures should have kerning on the corresponding non-ligated
-sequences for text where ligatures aren&#x27;t used (eg
-https://github.com/impallari/Raleway/issues/14).
-
-
-</pre>
-
-* ⚠ **WARN** GPOS table lacks kerning info for the following non-ligated sequences:
-	- f + f
-	- f + i
-	- i + f
-	- f + l
-	- l + f
-	- i + l
-
-   [code: lacks-kern-info]
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -61951,6 +61302,38 @@ that are multiples of 100 on the design space.
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Are there caret positions declared for every ligature?</summary>
+
+* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+<pre>--- Rationale ---
+
+All ligatures in a font must have corresponding caret (text cursor) positions
+defined in the GDEF table, otherwhise, users may experience issues with caret
+rendering.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligature_glyphs
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Is there kerning info for non-ligated sequences?</summary>
+
+* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
+<pre>--- Rationale ---
+
+Fonts with ligatures should have kerning on the corresponding non-ligated
+sequences for text where ligatures aren&#x27;t used (eg
+https://github.com/impallari/Raleway/issues/14).
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligatures
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Directory name in GFonts repo structure must match NameID 1 of the regular.</summary>
 
 * [com.google.fonts/check/repo/dirname_matches_nameid_1](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/dirname_matches_nameid_1)
@@ -62319,10 +61702,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/GeologiskCut-ExtraLightItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 94.4kb |
-	| Hinted Size | 122.9kb |
-	| Increase | 28.5kb |
-	| Change   | 30.2 % |
+	| Dehinted Size | 127.2kb |
+	| Hinted Size | 155.8kb |
+	| Increase | 28.6kb |
+	| Change   | 22.5 % |
  [code: size-impact]
 
 </details>
@@ -62414,7 +61797,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [gasp, prep, loca, fpgm, DSIG, GPOS, GSUB, cvt ]
+* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, prep, GPOS, gasp, DSIG, cvt , loca]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -62955,19 +62338,25 @@ release files, but Google Fonts should only have OpenType tables.
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Are there caret positions declared for every ligature?</summary>
+<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
 
-* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
 <pre>--- Rationale ---
 
-All ligatures in a font must have corresponding caret (text cursor) positions
-defined in the GDEF table, otherwhise, users may experience issues with caret
-rendering.
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
 
 
 </pre>
 
-* 🍞 **PASS** Looks good!
+* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -63538,34 +62927,6 @@ the same x,y coordinates.
 <details>
 <summary><b>[158] GeologiskCut-Italic.ttf</b></summary>
 <details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
-
-This can be accomplished by using the 'gftools fix-hinting' command.
-
-# create virtualenvpython3 -m venv venv
-# activate virtualenvsource venv/bin/activate
-# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
-
-</details>
-<details>
 <summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
 
 * [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
@@ -63619,21 +62980,17 @@ optimized for the typical construction of glyphs in static fonts.
 
 The following glyphs do not have the recommended number of contours:
 
-Glyph name: aogonek	Contours detected: 3	Expected: 2
 Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: ohorn	Contours detected: 3	Expected: 2
 Glyph name: Uhorn	Contours detected: 2	Expected: 1
 Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
 Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni04B0	Contours detected: 2	Expected: 1
 Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
@@ -63649,60 +63006,32 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
 Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Is there kerning info for non-ligated sequences?</summary>
-
-* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
-<pre>--- Rationale ---
-
-Fonts with ligatures should have kerning on the corresponding non-ligated
-sequences for text where ligatures aren&#x27;t used (eg
-https://github.com/impallari/Raleway/issues/14).
-
-
-</pre>
-
-* ⚠ **WARN** GPOS table lacks kerning info for the following non-ligated sequences:
-	- f + f
-	- f + i
-	- i + f
-	- f + l
-	- l + f
-	- i + l
-
-   [code: lacks-kern-info]
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -64350,6 +63679,38 @@ that are multiples of 100 on the design space.
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Are there caret positions declared for every ligature?</summary>
+
+* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+<pre>--- Rationale ---
+
+All ligatures in a font must have corresponding caret (text cursor) positions
+defined in the GDEF table, otherwhise, users may experience issues with caret
+rendering.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligature_glyphs
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Is there kerning info for non-ligated sequences?</summary>
+
+* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
+<pre>--- Rationale ---
+
+Fonts with ligatures should have kerning on the corresponding non-ligated
+sequences for text where ligatures aren&#x27;t used (eg
+https://github.com/impallari/Raleway/issues/14).
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligatures
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Directory name in GFonts repo structure must match NameID 1 of the regular.</summary>
 
 * [com.google.fonts/check/repo/dirname_matches_nameid_1](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/dirname_matches_nameid_1)
@@ -64718,10 +64079,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/GeologiskCut-Italic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 93.9kb |
-	| Hinted Size | 134.4kb |
-	| Increase | 40.6kb |
-	| Change   | 43.2 % |
+	| Dehinted Size | 126.7kb |
+	| Hinted Size | 167.2kb |
+	| Increase | 40.5kb |
+	| Change   | 32.0 % |
  [code: size-impact]
 
 </details>
@@ -64813,7 +64174,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [gasp, prep, loca, fpgm, DSIG, GPOS, GSUB, cvt ]
+* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, prep, GPOS, gasp, DSIG, cvt , loca]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -65362,19 +64723,25 @@ release files, but Google Fonts should only have OpenType tables.
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Are there caret positions declared for every ligature?</summary>
+<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
 
-* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
 <pre>--- Rationale ---
 
-All ligatures in a font must have corresponding caret (text cursor) positions
-defined in the GDEF table, otherwhise, users may experience issues with caret
-rendering.
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
 
 
 </pre>
 
-* 🍞 **PASS** Looks good!
+* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -65970,34 +65337,6 @@ the same x,y coordinates.
 <details>
 <summary><b>[158] GeologiskCut-Light.ttf</b></summary>
 <details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
-
-This can be accomplished by using the 'gftools fix-hinting' command.
-
-# create virtualenvpython3 -m venv venv
-# activate virtualenvsource venv/bin/activate
-# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
-
-</details>
-<details>
 <summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
 
 * [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
@@ -66051,22 +65390,17 @@ optimized for the typical construction of glyphs in static fonts.
 
 The following glyphs do not have the recommended number of contours:
 
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
 Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: ohorn	Contours detected: 3	Expected: 2
 Glyph name: Uhorn	Contours detected: 2	Expected: 1
 Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
 Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni04B0	Contours detected: 2	Expected: 1
 Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
@@ -66082,61 +65416,32 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
 Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Is there kerning info for non-ligated sequences?</summary>
-
-* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
-<pre>--- Rationale ---
-
-Fonts with ligatures should have kerning on the corresponding non-ligated
-sequences for text where ligatures aren&#x27;t used (eg
-https://github.com/impallari/Raleway/issues/14).
-
-
-</pre>
-
-* ⚠ **WARN** GPOS table lacks kerning info for the following non-ligated sequences:
-	- f + f
-	- f + i
-	- i + f
-	- f + l
-	- l + f
-	- i + l
-
-   [code: lacks-kern-info]
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -66784,6 +66089,38 @@ that are multiples of 100 on the design space.
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Are there caret positions declared for every ligature?</summary>
+
+* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+<pre>--- Rationale ---
+
+All ligatures in a font must have corresponding caret (text cursor) positions
+defined in the GDEF table, otherwhise, users may experience issues with caret
+rendering.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligature_glyphs
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Is there kerning info for non-ligated sequences?</summary>
+
+* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
+<pre>--- Rationale ---
+
+Fonts with ligatures should have kerning on the corresponding non-ligated
+sequences for text where ligatures aren&#x27;t used (eg
+https://github.com/impallari/Raleway/issues/14).
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligatures
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Directory name in GFonts repo structure must match NameID 1 of the regular.</summary>
 
 * [com.google.fonts/check/repo/dirname_matches_nameid_1](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/dirname_matches_nameid_1)
@@ -67152,10 +66489,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/GeologiskCut-Light.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 92.1kb |
-	| Hinted Size | 126.0kb |
-	| Increase | 33.8kb |
-	| Change   | 36.7 % |
+	| Dehinted Size | 125.6kb |
+	| Hinted Size | 159.9kb |
+	| Increase | 34.3kb |
+	| Change   | 27.3 % |
  [code: size-impact]
 
 </details>
@@ -67247,7 +66584,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [gasp, prep, loca, fpgm, DSIG, GPOS, GSUB, cvt ]
+* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, prep, GPOS, gasp, DSIG, cvt , loca]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -67796,19 +67133,25 @@ release files, but Google Fonts should only have OpenType tables.
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Are there caret positions declared for every ligature?</summary>
+<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
 
-* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
 <pre>--- Rationale ---
 
-All ligatures in a font must have corresponding caret (text cursor) positions
-defined in the GDEF table, otherwhise, users may experience issues with caret
-rendering.
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
 
 
 </pre>
 
-* 🍞 **PASS** Looks good!
+* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -68404,34 +67747,6 @@ the same x,y coordinates.
 <details>
 <summary><b>[158] GeologiskCut-LightItalic.ttf</b></summary>
 <details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
-
-This can be accomplished by using the 'gftools fix-hinting' command.
-
-# create virtualenvpython3 -m venv venv
-# activate virtualenvsource venv/bin/activate
-# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
-
-</details>
-<details>
 <summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
 
 * [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
@@ -68485,21 +67800,17 @@ optimized for the typical construction of glyphs in static fonts.
 
 The following glyphs do not have the recommended number of contours:
 
-Glyph name: aogonek	Contours detected: 3	Expected: 2
 Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: ohorn	Contours detected: 3	Expected: 2
 Glyph name: Uhorn	Contours detected: 2	Expected: 1
 Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
 Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni04B0	Contours detected: 2	Expected: 1
 Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
@@ -68515,60 +67826,32 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
 Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Is there kerning info for non-ligated sequences?</summary>
-
-* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
-<pre>--- Rationale ---
-
-Fonts with ligatures should have kerning on the corresponding non-ligated
-sequences for text where ligatures aren&#x27;t used (eg
-https://github.com/impallari/Raleway/issues/14).
-
-
-</pre>
-
-* ⚠ **WARN** GPOS table lacks kerning info for the following non-ligated sequences:
-	- f + f
-	- f + i
-	- i + f
-	- f + l
-	- l + f
-	- i + l
-
-   [code: lacks-kern-info]
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -69216,6 +68499,38 @@ that are multiples of 100 on the design space.
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Are there caret positions declared for every ligature?</summary>
+
+* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+<pre>--- Rationale ---
+
+All ligatures in a font must have corresponding caret (text cursor) positions
+defined in the GDEF table, otherwhise, users may experience issues with caret
+rendering.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligature_glyphs
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Is there kerning info for non-ligated sequences?</summary>
+
+* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
+<pre>--- Rationale ---
+
+Fonts with ligatures should have kerning on the corresponding non-ligated
+sequences for text where ligatures aren&#x27;t used (eg
+https://github.com/impallari/Raleway/issues/14).
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligatures
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Directory name in GFonts repo structure must match NameID 1 of the regular.</summary>
 
 * [com.google.fonts/check/repo/dirname_matches_nameid_1](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/dirname_matches_nameid_1)
@@ -69584,10 +68899,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/GeologiskCut-LightItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 94.1kb |
-	| Hinted Size | 128.3kb |
-	| Increase | 34.2kb |
-	| Change   | 36.3 % |
+	| Dehinted Size | 126.9kb |
+	| Hinted Size | 161.3kb |
+	| Increase | 34.3kb |
+	| Change   | 27.0 % |
  [code: size-impact]
 
 </details>
@@ -69679,7 +68994,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [gasp, prep, loca, fpgm, DSIG, GPOS, GSUB, cvt ]
+* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, prep, GPOS, gasp, DSIG, cvt , loca]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -70228,19 +69543,25 @@ release files, but Google Fonts should only have OpenType tables.
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Are there caret positions declared for every ligature?</summary>
+<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
 
-* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
 <pre>--- Rationale ---
 
-All ligatures in a font must have corresponding caret (text cursor) positions
-defined in the GDEF table, otherwhise, users may experience issues with caret
-rendering.
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
 
 
 </pre>
 
-* 🍞 **PASS** Looks good!
+* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -70836,34 +70157,6 @@ the same x,y coordinates.
 <details>
 <summary><b>[158] GeologiskCut-Medium.ttf</b></summary>
 <details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
-
-This can be accomplished by using the 'gftools fix-hinting' command.
-
-# create virtualenvpython3 -m venv venv
-# activate virtualenvsource venv/bin/activate
-# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
-
-</details>
-<details>
 <summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
 
 * [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
@@ -70917,23 +70210,18 @@ optimized for the typical construction of glyphs in static fonts.
 
 The following glyphs do not have the recommended number of contours:
 
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
 Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: ohorn	Contours detected: 3	Expected: 2
 Glyph name: Uhorn	Contours detected: 2	Expected: 1
 Glyph name: uhorn	Contours detected: 2	Expected: 1
 Glyph name: uni01EA	Contours detected: 3	Expected: 2
-Glyph name: uni0259	Contours detected: 3	Expected: 2
 Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni04B0	Contours detected: 2	Expected: 1
 Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
@@ -70949,61 +70237,32 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
 Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Is there kerning info for non-ligated sequences?</summary>
-
-* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
-<pre>--- Rationale ---
-
-Fonts with ligatures should have kerning on the corresponding non-ligated
-sequences for text where ligatures aren&#x27;t used (eg
-https://github.com/impallari/Raleway/issues/14).
-
-
-</pre>
-
-* ⚠ **WARN** GPOS table lacks kerning info for the following non-ligated sequences:
-	- f + f
-	- f + i
-	- i + f
-	- f + l
-	- l + f
-	- i + l
-
-   [code: lacks-kern-info]
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -71651,6 +70910,38 @@ that are multiples of 100 on the design space.
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Are there caret positions declared for every ligature?</summary>
+
+* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+<pre>--- Rationale ---
+
+All ligatures in a font must have corresponding caret (text cursor) positions
+defined in the GDEF table, otherwhise, users may experience issues with caret
+rendering.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligature_glyphs
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Is there kerning info for non-ligated sequences?</summary>
+
+* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
+<pre>--- Rationale ---
+
+Fonts with ligatures should have kerning on the corresponding non-ligated
+sequences for text where ligatures aren&#x27;t used (eg
+https://github.com/impallari/Raleway/issues/14).
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligatures
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Directory name in GFonts repo structure must match NameID 1 of the regular.</summary>
 
 * [com.google.fonts/check/repo/dirname_matches_nameid_1](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/dirname_matches_nameid_1)
@@ -72019,10 +71310,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/GeologiskCut-Medium.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 92.2kb |
-	| Hinted Size | 122.5kb |
-	| Increase | 30.3kb |
-	| Change   | 32.9 % |
+	| Dehinted Size | 125.6kb |
+	| Hinted Size | 155.7kb |
+	| Increase | 30.1kb |
+	| Change   | 24.0 % |
  [code: size-impact]
 
 </details>
@@ -72114,7 +71405,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [gasp, prep, loca, fpgm, DSIG, GPOS, GSUB, cvt ]
+* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, prep, GPOS, gasp, DSIG, cvt , loca]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -72663,19 +71954,25 @@ release files, but Google Fonts should only have OpenType tables.
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Are there caret positions declared for every ligature?</summary>
+<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
 
-* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
 <pre>--- Rationale ---
 
-All ligatures in a font must have corresponding caret (text cursor) positions
-defined in the GDEF table, otherwhise, users may experience issues with caret
-rendering.
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
 
 
 </pre>
 
-* 🍞 **PASS** Looks good!
+* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -73271,34 +72568,6 @@ the same x,y coordinates.
 <details>
 <summary><b>[158] GeologiskCut-MediumItalic.ttf</b></summary>
 <details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
-
-This can be accomplished by using the 'gftools fix-hinting' command.
-
-# create virtualenvpython3 -m venv venv
-# activate virtualenvsource venv/bin/activate
-# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
-
-</details>
-<details>
 <summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
 
 * [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
@@ -73352,22 +72621,17 @@ optimized for the typical construction of glyphs in static fonts.
 
 The following glyphs do not have the recommended number of contours:
 
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
 Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: ohorn	Contours detected: 3	Expected: 2
 Glyph name: Uhorn	Contours detected: 2	Expected: 1
 Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
 Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni04B0	Contours detected: 2	Expected: 1
 Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
@@ -73383,61 +72647,32 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
 Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Is there kerning info for non-ligated sequences?</summary>
-
-* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
-<pre>--- Rationale ---
-
-Fonts with ligatures should have kerning on the corresponding non-ligated
-sequences for text where ligatures aren&#x27;t used (eg
-https://github.com/impallari/Raleway/issues/14).
-
-
-</pre>
-
-* ⚠ **WARN** GPOS table lacks kerning info for the following non-ligated sequences:
-	- f + f
-	- f + i
-	- i + f
-	- f + l
-	- l + f
-	- i + l
-
-   [code: lacks-kern-info]
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -74085,6 +73320,38 @@ that are multiples of 100 on the design space.
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Are there caret positions declared for every ligature?</summary>
+
+* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+<pre>--- Rationale ---
+
+All ligatures in a font must have corresponding caret (text cursor) positions
+defined in the GDEF table, otherwhise, users may experience issues with caret
+rendering.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligature_glyphs
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Is there kerning info for non-ligated sequences?</summary>
+
+* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
+<pre>--- Rationale ---
+
+Fonts with ligatures should have kerning on the corresponding non-ligated
+sequences for text where ligatures aren&#x27;t used (eg
+https://github.com/impallari/Raleway/issues/14).
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligatures
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Directory name in GFonts repo structure must match NameID 1 of the regular.</summary>
 
 * [com.google.fonts/check/repo/dirname_matches_nameid_1](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/dirname_matches_nameid_1)
@@ -74453,10 +73720,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/GeologiskCut-MediumItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 94.1kb |
-	| Hinted Size | 124.7kb |
-	| Increase | 30.5kb |
-	| Change   | 32.4 % |
+	| Dehinted Size | 126.9kb |
+	| Hinted Size | 157.2kb |
+	| Increase | 30.3kb |
+	| Change   | 23.8 % |
  [code: size-impact]
 
 </details>
@@ -74548,7 +73815,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [gasp, prep, loca, fpgm, DSIG, GPOS, GSUB, cvt ]
+* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, prep, GPOS, gasp, DSIG, cvt , loca]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -75097,19 +74364,25 @@ release files, but Google Fonts should only have OpenType tables.
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Are there caret positions declared for every ligature?</summary>
+<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
 
-* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
 <pre>--- Rationale ---
 
-All ligatures in a font must have corresponding caret (text cursor) positions
-defined in the GDEF table, otherwhise, users may experience issues with caret
-rendering.
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
 
 
 </pre>
 
-* 🍞 **PASS** Looks good!
+* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -75705,34 +74978,6 @@ the same x,y coordinates.
 <details>
 <summary><b>[158] GeologiskCut-Regular.ttf</b></summary>
 <details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
-
-This can be accomplished by using the 'gftools fix-hinting' command.
-
-# create virtualenvpython3 -m venv venv
-# activate virtualenvsource venv/bin/activate
-# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
-
-</details>
-<details>
 <summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
 
 * [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
@@ -75786,23 +75031,18 @@ optimized for the typical construction of glyphs in static fonts.
 
 The following glyphs do not have the recommended number of contours:
 
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
 Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: ohorn	Contours detected: 3	Expected: 2
 Glyph name: Uhorn	Contours detected: 2	Expected: 1
 Glyph name: uhorn	Contours detected: 2	Expected: 1
 Glyph name: uni01EA	Contours detected: 3	Expected: 2
-Glyph name: uni0259	Contours detected: 3	Expected: 2
 Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni04B0	Contours detected: 2	Expected: 1
 Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
@@ -75818,61 +75058,32 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
 Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Is there kerning info for non-ligated sequences?</summary>
-
-* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
-<pre>--- Rationale ---
-
-Fonts with ligatures should have kerning on the corresponding non-ligated
-sequences for text where ligatures aren&#x27;t used (eg
-https://github.com/impallari/Raleway/issues/14).
-
-
-</pre>
-
-* ⚠ **WARN** GPOS table lacks kerning info for the following non-ligated sequences:
-	- f + f
-	- f + i
-	- i + f
-	- f + l
-	- l + f
-	- i + l
-
-   [code: lacks-kern-info]
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -76520,6 +75731,38 @@ that are multiples of 100 on the design space.
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Are there caret positions declared for every ligature?</summary>
+
+* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+<pre>--- Rationale ---
+
+All ligatures in a font must have corresponding caret (text cursor) positions
+defined in the GDEF table, otherwhise, users may experience issues with caret
+rendering.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligature_glyphs
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Is there kerning info for non-ligated sequences?</summary>
+
+* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
+<pre>--- Rationale ---
+
+Fonts with ligatures should have kerning on the corresponding non-ligated
+sequences for text where ligatures aren&#x27;t used (eg
+https://github.com/impallari/Raleway/issues/14).
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligatures
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Directory name in GFonts repo structure must match NameID 1 of the regular.</summary>
 
 * [com.google.fonts/check/repo/dirname_matches_nameid_1](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/dirname_matches_nameid_1)
@@ -76888,10 +76131,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/GeologiskCut-Regular.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 92.1kb |
-	| Hinted Size | 132.4kb |
-	| Increase | 40.4kb |
-	| Change   | 43.8 % |
+	| Dehinted Size | 125.5kb |
+	| Hinted Size | 165.8kb |
+	| Increase | 40.3kb |
+	| Change   | 32.1 % |
  [code: size-impact]
 
 </details>
@@ -76983,7 +76226,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [gasp, prep, loca, fpgm, DSIG, GPOS, GSUB, cvt ]
+* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, prep, GPOS, gasp, DSIG, cvt , loca]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -77532,19 +76775,25 @@ release files, but Google Fonts should only have OpenType tables.
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Are there caret positions declared for every ligature?</summary>
+<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
 
-* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
 <pre>--- Rationale ---
 
-All ligatures in a font must have corresponding caret (text cursor) positions
-defined in the GDEF table, otherwhise, users may experience issues with caret
-rendering.
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
 
 
 </pre>
 
-* 🍞 **PASS** Looks good!
+* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -78140,34 +77389,6 @@ the same x,y coordinates.
 <details>
 <summary><b>[158] GeologiskCut-SemiBold.ttf</b></summary>
 <details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
-
-This can be accomplished by using the 'gftools fix-hinting' command.
-
-# create virtualenvpython3 -m venv venv
-# activate virtualenvsource venv/bin/activate
-# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
-
-</details>
-<details>
 <summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
 
 * [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
@@ -78222,23 +77443,18 @@ optimized for the typical construction of glyphs in static fonts.
 The following glyphs do not have the recommended number of contours:
 
 Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
 Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: ohorn	Contours detected: 3	Expected: 2
 Glyph name: Uhorn	Contours detected: 2	Expected: 1
 Glyph name: uhorn	Contours detected: 2	Expected: 1
 Glyph name: uni01EA	Contours detected: 3	Expected: 2
-Glyph name: uni0259	Contours detected: 3	Expected: 2
 Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni04B0	Contours detected: 2	Expected: 1
 Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
@@ -78254,62 +77470,33 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
 Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Is there kerning info for non-ligated sequences?</summary>
-
-* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
-<pre>--- Rationale ---
-
-Fonts with ligatures should have kerning on the corresponding non-ligated
-sequences for text where ligatures aren&#x27;t used (eg
-https://github.com/impallari/Raleway/issues/14).
-
-
-</pre>
-
-* ⚠ **WARN** GPOS table lacks kerning info for the following non-ligated sequences:
-	- f + f
-	- f + i
-	- i + f
-	- f + l
-	- l + f
-	- i + l
-
-   [code: lacks-kern-info]
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -78985,6 +78172,38 @@ that are multiples of 100 on the design space.
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Are there caret positions declared for every ligature?</summary>
+
+* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+<pre>--- Rationale ---
+
+All ligatures in a font must have corresponding caret (text cursor) positions
+defined in the GDEF table, otherwhise, users may experience issues with caret
+rendering.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligature_glyphs
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Is there kerning info for non-ligated sequences?</summary>
+
+* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
+<pre>--- Rationale ---
+
+Fonts with ligatures should have kerning on the corresponding non-ligated
+sequences for text where ligatures aren&#x27;t used (eg
+https://github.com/impallari/Raleway/issues/14).
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligatures
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Directory name in GFonts repo structure must match NameID 1 of the regular.</summary>
 
 * [com.google.fonts/check/repo/dirname_matches_nameid_1](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/dirname_matches_nameid_1)
@@ -79353,10 +78572,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/GeologiskCut-SemiBold.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 92.3kb |
-	| Hinted Size | 123.1kb |
-	| Increase | 30.8kb |
-	| Change   | 33.4 % |
+	| Dehinted Size | 125.7kb |
+	| Hinted Size | 155.9kb |
+	| Increase | 30.2kb |
+	| Change   | 24.0 % |
  [code: size-impact]
 
 </details>
@@ -79448,7 +78667,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [gasp, prep, loca, fpgm, DSIG, GPOS, GSUB, cvt ]
+* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, prep, GPOS, gasp, DSIG, cvt , loca]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -79997,19 +79216,25 @@ release files, but Google Fonts should only have OpenType tables.
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Are there caret positions declared for every ligature?</summary>
+<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
 
-* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
 <pre>--- Rationale ---
 
-All ligatures in a font must have corresponding caret (text cursor) positions
-defined in the GDEF table, otherwhise, users may experience issues with caret
-rendering.
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
 
 
 </pre>
 
-* 🍞 **PASS** Looks good!
+* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -80580,34 +79805,6 @@ the same x,y coordinates.
 <details>
 <summary><b>[158] GeologiskCut-SemiBoldItalic.ttf</b></summary>
 <details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
-
-This can be accomplished by using the 'gftools fix-hinting' command.
-
-# create virtualenvpython3 -m venv venv
-# activate virtualenvsource venv/bin/activate
-# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
-
-</details>
-<details>
 <summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
 
 * [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
@@ -80662,22 +79859,17 @@ optimized for the typical construction of glyphs in static fonts.
 The following glyphs do not have the recommended number of contours:
 
 Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
 Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: ohorn	Contours detected: 3	Expected: 2
 Glyph name: Uhorn	Contours detected: 2	Expected: 1
 Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
 Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni04B0	Contours detected: 2	Expected: 1
 Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
@@ -80693,62 +79885,33 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: eogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
 Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Is there kerning info for non-ligated sequences?</summary>
-
-* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
-<pre>--- Rationale ---
-
-Fonts with ligatures should have kerning on the corresponding non-ligated
-sequences for text where ligatures aren&#x27;t used (eg
-https://github.com/impallari/Raleway/issues/14).
-
-
-</pre>
-
-* ⚠ **WARN** GPOS table lacks kerning info for the following non-ligated sequences:
-	- f + f
-	- f + i
-	- i + f
-	- f + l
-	- l + f
-	- i + l
-
-   [code: lacks-kern-info]
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -81424,6 +80587,38 @@ that are multiples of 100 on the design space.
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Are there caret positions declared for every ligature?</summary>
+
+* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+<pre>--- Rationale ---
+
+All ligatures in a font must have corresponding caret (text cursor) positions
+defined in the GDEF table, otherwhise, users may experience issues with caret
+rendering.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligature_glyphs
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Is there kerning info for non-ligated sequences?</summary>
+
+* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
+<pre>--- Rationale ---
+
+Fonts with ligatures should have kerning on the corresponding non-ligated
+sequences for text where ligatures aren&#x27;t used (eg
+https://github.com/impallari/Raleway/issues/14).
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligatures
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Directory name in GFonts repo structure must match NameID 1 of the regular.</summary>
 
 * [com.google.fonts/check/repo/dirname_matches_nameid_1](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/dirname_matches_nameid_1)
@@ -81792,10 +80987,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/GeologiskCut-SemiBoldItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 94.2kb |
-	| Hinted Size | 125.0kb |
-	| Increase | 30.8kb |
-	| Change   | 32.7 % |
+	| Dehinted Size | 127.0kb |
+	| Hinted Size | 157.1kb |
+	| Increase | 30.1kb |
+	| Change   | 23.7 % |
  [code: size-impact]
 
 </details>
@@ -81887,7 +81082,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [gasp, prep, loca, fpgm, DSIG, GPOS, GSUB, cvt ]
+* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, prep, GPOS, gasp, DSIG, cvt , loca]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -82436,19 +81631,25 @@ release files, but Google Fonts should only have OpenType tables.
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Are there caret positions declared for every ligature?</summary>
+<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
 
-* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
 <pre>--- Rationale ---
 
-All ligatures in a font must have corresponding caret (text cursor) positions
-defined in the GDEF table, otherwhise, users may experience issues with caret
-rendering.
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
 
 
 </pre>
 
-* 🍞 **PASS** Looks good!
+* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -83019,34 +82220,6 @@ the same x,y coordinates.
 <details>
 <summary><b>[158] GeologiskCut-Thin.ttf</b></summary>
 <details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
-
-This can be accomplished by using the 'gftools fix-hinting' command.
-
-# create virtualenvpython3 -m venv venv
-# activate virtualenvsource venv/bin/activate
-# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
-
-</details>
-<details>
 <summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
 
 * [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
@@ -83108,21 +82281,17 @@ optimized for the typical construction of glyphs in static fonts.
 
 The following glyphs do not have the recommended number of contours:
 
-Glyph name: aogonek	Contours detected: 3	Expected: 2
 Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: ohorn	Contours detected: 3	Expected: 2
 Glyph name: Uhorn	Contours detected: 2	Expected: 1
 Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
 Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni04B0	Contours detected: 2	Expected: 1
 Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
@@ -83138,60 +82307,32 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
 Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Is there kerning info for non-ligated sequences?</summary>
-
-* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
-<pre>--- Rationale ---
-
-Fonts with ligatures should have kerning on the corresponding non-ligated
-sequences for text where ligatures aren&#x27;t used (eg
-https://github.com/impallari/Raleway/issues/14).
-
-
-</pre>
-
-* ⚠ **WARN** GPOS table lacks kerning info for the following non-ligated sequences:
-	- f + f
-	- f + i
-	- i + f
-	- f + l
-	- l + f
-	- i + l
-
-   [code: lacks-kern-info]
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -83839,6 +82980,38 @@ that are multiples of 100 on the design space.
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Are there caret positions declared for every ligature?</summary>
+
+* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+<pre>--- Rationale ---
+
+All ligatures in a font must have corresponding caret (text cursor) positions
+defined in the GDEF table, otherwhise, users may experience issues with caret
+rendering.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligature_glyphs
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Is there kerning info for non-ligated sequences?</summary>
+
+* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
+<pre>--- Rationale ---
+
+Fonts with ligatures should have kerning on the corresponding non-ligated
+sequences for text where ligatures aren&#x27;t used (eg
+https://github.com/impallari/Raleway/issues/14).
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligatures
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Directory name in GFonts repo structure must match NameID 1 of the regular.</summary>
 
 * [com.google.fonts/check/repo/dirname_matches_nameid_1](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/dirname_matches_nameid_1)
@@ -84207,10 +83380,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/GeologiskCut-Thin.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 91.4kb |
-	| Hinted Size | 119.3kb |
-	| Increase | 28.0kb |
-	| Change   | 30.6 % |
+	| Dehinted Size | 120.1kb |
+	| Hinted Size | 148.3kb |
+	| Increase | 28.1kb |
+	| Change   | 23.4 % |
  [code: size-impact]
 
 </details>
@@ -84302,7 +83475,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [gasp, prep, loca, fpgm, DSIG, GPOS, GSUB, cvt ]
+* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, prep, GPOS, gasp, DSIG, cvt , loca]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -84843,19 +84016,25 @@ release files, but Google Fonts should only have OpenType tables.
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Are there caret positions declared for every ligature?</summary>
+<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
 
-* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
 <pre>--- Rationale ---
 
-All ligatures in a font must have corresponding caret (text cursor) positions
-defined in the GDEF table, otherwhise, users may experience issues with caret
-rendering.
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
 
 
 </pre>
 
-* 🍞 **PASS** Looks good!
+* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -85451,34 +84630,6 @@ the same x,y coordinates.
 <details>
 <summary><b>[158] GeologiskCut-ThinItalic.ttf</b></summary>
 <details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
-
-This can be accomplished by using the 'gftools fix-hinting' command.
-
-# create virtualenvpython3 -m venv venv
-# activate virtualenvsource venv/bin/activate
-# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
-
-</details>
-<details>
 <summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
 
 * [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
@@ -85540,21 +84691,17 @@ optimized for the typical construction of glyphs in static fonts.
 
 The following glyphs do not have the recommended number of contours:
 
-Glyph name: aogonek	Contours detected: 3	Expected: 2
 Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uogonek	Contours detected: 2	Expected: 1
 Glyph name: ohorn	Contours detected: 3	Expected: 2
 Glyph name: Uhorn	Contours detected: 2	Expected: 1
 Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
 Glyph name: uni045B	Contours detected: 2	Expected: 1
 Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni04B0	Contours detected: 2	Expected: 1
 Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
@@ -85570,60 +84717,32 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uogonek	Contours detected: 2	Expected: 1
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni04D9	Contours detected: 3	Expected: 2
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
 Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
 Glyph name: uni1EDD	Contours detected: 4	Expected: 3
 Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni0259	Contours detected: 3	Expected: 2
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: aogonek	Contours detected: 3	Expected: 2
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Is there kerning info for non-ligated sequences?</summary>
-
-* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
-<pre>--- Rationale ---
-
-Fonts with ligatures should have kerning on the corresponding non-ligated
-sequences for text where ligatures aren&#x27;t used (eg
-https://github.com/impallari/Raleway/issues/14).
-
-
-</pre>
-
-* ⚠ **WARN** GPOS table lacks kerning info for the following non-ligated sequences:
-	- f + f
-	- f + i
-	- i + f
-	- f + l
-	- l + f
-	- i + l
-
-   [code: lacks-kern-info]
+Glyph name: uni0492	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -86271,6 +85390,38 @@ that are multiples of 100 on the design space.
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Are there caret positions declared for every ligature?</summary>
+
+* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+<pre>--- Rationale ---
+
+All ligatures in a font must have corresponding caret (text cursor) positions
+defined in the GDEF table, otherwhise, users may experience issues with caret
+rendering.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligature_glyphs
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Is there kerning info for non-ligated sequences?</summary>
+
+* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
+<pre>--- Rationale ---
+
+Fonts with ligatures should have kerning on the corresponding non-ligated
+sequences for text where ligatures aren&#x27;t used (eg
+https://github.com/impallari/Raleway/issues/14).
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligatures
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Directory name in GFonts repo structure must match NameID 1 of the regular.</summary>
 
 * [com.google.fonts/check/repo/dirname_matches_nameid_1](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/dirname_matches_nameid_1)
@@ -86639,10 +85790,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/GeologiskCut-ThinItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 93.1kb |
-	| Hinted Size | 121.2kb |
-	| Increase | 28.1kb |
-	| Change   | 30.2 % |
+	| Dehinted Size | 121.0kb |
+	| Hinted Size | 149.2kb |
+	| Increase | 28.2kb |
+	| Change   | 23.3 % |
  [code: size-impact]
 
 </details>
@@ -86734,7 +85885,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [gasp, prep, loca, fpgm, DSIG, GPOS, GSUB, cvt ]
+* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, prep, GPOS, gasp, DSIG, cvt , loca]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -87275,19 +86426,25 @@ release files, but Google Fonts should only have OpenType tables.
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Are there caret positions declared for every ligature?</summary>
+<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
 
-* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
 <pre>--- Rationale ---
 
-All ligatures in a font must have corresponding caret (text cursor) positions
-defined in the GDEF table, otherwhise, users may experience issues with caret
-rendering.
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
 
 
 </pre>
 
-* 🍞 **PASS** Looks good!
+* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -87885,5 +87042,5 @@ the same x,y coordinates.
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 73 | 159 | 2737 | 217 | 2516 | 0 |
-| 0% | 1% | 3% | 48% | 4% | 44% | 0% |
+| 0 | 37 | 123 | 2809 | 217 | 2516 | 0 |
+| 0% | 1% | 2% | 49% | 4% | 44% | 0% |

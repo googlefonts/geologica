@@ -91,8 +91,8 @@ rm -f ../fonts/variable/*backup*.ttf
 ############### font bake ##################
 
 
-#fontbakery check-googlefonts ../fonts/static/ttfs/*.ttf --ghmarkdown ../sources/checks/checks_static.md
-#fontbakery check-googlefonts ../fonts/variable/*.ttf --ghmarkdown ../sources/checks/checks_variable.md
+fontbakery check-googlefonts ../fonts/static/ttfs/*.ttf --ghmarkdown ../sources/checks/checks_static.md
+fontbakery check-googlefonts ../fonts/variable/*.ttf --ghmarkdown ../sources/checks/checks_variable.md
 
 
 ############### font bake ##################
