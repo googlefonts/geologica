@@ -16,8 +16,13 @@
     <axis tag="slnt" name="Slant" minimum="-12" maximum="0" default="0"/>
     <axis tag="DIAG" name="Diagonal Cuts" minimum="0" maximum="100" default="0"/>
   </axes>
-  
-    <rules>
+  <rules>
+    <rule name="BRACKET.140.200">
+      <conditionset>
+        <condition name="Weight" minimum="140" maximum="200"/>
+      </conditionset>
+      <sub name="colonsign" with="colonsign.BRACKET.140"/>
+    </rule>
     <rule name="ss01">
       <conditionset>
         <condition name="Italic" minimum="1" maximum="1"/>
@@ -63,7 +68,6 @@
       <sub name="gje-cy.loclMKD" with="gje-cy.loclMKD.ss01"/>
       <sub name="pe-cy.loclSRB" with="pe-cy.loclSRB.ss01"/>
       <sub name="te-cy.loclSRB" with="te-cy.loclSRB.ss01"/>
-
     </rule>
     <rule name="ss02">
       <conditionset>
@@ -71,16 +75,7 @@
       </conditionset>
       <sub name="six" with="six.ss02"/>
       <sub name="nine" with="nine.ss02"/>
-    </rule>
-  </rules>
-  
-  <rules>
-    <rule name="BRACKET.140.200">
-      <conditionset>
-        <condition name="Weight" minimum="140" maximum="200"/>
-      </conditionset>
-      <sub name="colonsign" with="colonsign.BRACKET.140"/>
-    </rule>
+    </rule>	
   </rules>
   <sources>
     <source filename="Geologisk-Light.ufo" name="Geologisk Light" familyname="Geologisk" stylename="Light">
