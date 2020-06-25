@@ -16,7 +16,8 @@
     <axis tag="slnt" name="Slant" minimum="-12" maximum="0" default="0"/>
     <axis tag="DIAG" name="Diagonal Cuts" minimum="0" maximum="100" default="0"/>
   </axes>
-  <rules>
+  
+    <rules>
     <rule name="ss01">
       <conditionset>
         <condition name="Italic" minimum="1" maximum="1"/>
@@ -64,6 +65,55 @@
       <sub name="te-cy.loclSRB" with="te-cy.loclSRB.ss01"/>
     </rule>
   </rules>
+  
+  <rules>
+    <rule name="ss01">
+      <conditionset>
+        <condition name="Italic" minimum="1" maximum="1"/>
+      </conditionset>
+      <sub name="a" with="a.ss01"/>
+      <sub name="a-cy" with="a-cy.ss01"/>
+      <sub name="aacute" with="aacute.ss01"/>
+      <sub name="abreve" with="abreve.ss01"/>
+      <sub name="abreve-cy" with="abreve-cy.ss01"/>
+      <sub name="abreveacute" with="abreveacute.ss01"/>
+      <sub name="abrevedotbelow" with="abrevedotbelow.ss01"/>
+      <sub name="abrevegrave" with="abrevegrave.ss01"/>
+      <sub name="abrevehookabove" with="abrevehookabove.ss01"/>
+      <sub name="abrevetilde" with="abrevetilde.ss01"/>
+      <sub name="acircumflex" with="acircumflex.ss01"/>
+      <sub name="acircumflexacute" with="acircumflexacute.ss01"/>
+      <sub name="acircumflexdotbelow" with="acircumflexdotbelow.ss01"/>
+      <sub name="acircumflexgrave" with="acircumflexgrave.ss01"/>
+      <sub name="acircumflexhookabove" with="acircumflexhookabove.ss01"/>
+      <sub name="acircumflextilde" with="acircumflextilde.ss01"/>
+      <sub name="adblgrave" with="adblgrave.ss01"/>
+      <sub name="adieresis" with="adieresis.ss01"/>
+      <sub name="adieresis-cy" with="adieresis-cy.ss01"/>
+      <sub name="adotbelow" with="adotbelow.ss01"/>
+      <sub name="ae" with="ae.ss01"/>
+      <sub name="aeacute" with="aeacute.ss01"/>
+      <sub name="agrave" with="agrave.ss01"/>
+      <sub name="ahookabove" with="ahookabove.ss01"/>
+      <sub name="aie-cy" with="aie-cy.ss01"/>
+      <sub name="ainvertedbreve" with="ainvertedbreve.ss01"/>
+      <sub name="amacron" with="amacron.ss01"/>
+      <sub name="aogonek" with="aogonek.ss01"/>
+      <sub name="aring" with="aring.ss01"/>
+      <sub name="aringacute" with="aringacute.ss01"/>
+      <sub name="atilde" with="atilde.ss01"/>
+      <sub name="g" with="g.ss01"/>
+      <sub name="gbreve" with="gbreve.ss01"/>
+      <sub name="gcaron" with="gcaron.ss01"/>
+      <sub name="gcircumflex" with="gcircumflex.ss01"/>
+      <sub name="gcommaaccent" with="gcommaaccent.ss01"/>
+      <sub name="gdotaccent" with="gdotaccent.ss01"/>
+      <sub name="ordfeminine" with="ordfeminine.ss01"/>
+      <sub name="gje-cy.loclMKD" with="gje-cy.loclMKD.ss01"/>
+      <sub name="pe-cy.loclSRB" with="pe-cy.loclSRB.ss01"/>
+      <sub name="te-cy.loclSRB" with="te-cy.loclSRB.ss01"/>
+    </rule>
+  </rules>  
   
   <rules>
     <rule name="BRACKET.140.200">

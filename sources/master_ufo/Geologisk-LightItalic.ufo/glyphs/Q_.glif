@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Q" format="2">
-  <advance width="1692"/>
+  <advance width="1696"/>
   <unicode hex="0051"/>
   <guideline x="638" y="-42" angle="32.9322"/>
   <guideline x="527" y="272" angle="33.7775"/>
@@ -50,10 +50,10 @@
     <dict>
       <key>com.schriftgestaltung.Glyphs.glyph.leftMetricsKey</key>
       <string>O</string>
-      <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
+      <key>com.schriftgestaltung.Glyphs.glyph.widthMetricsKey</key>
       <string>O</string>
       <key>public.markColor</key>
-      <string>0.67,0.95,0.38,1</string>
+      <string>0,0.67,0.91,1</string>
     </dict>
   </lib>
 </glyph>

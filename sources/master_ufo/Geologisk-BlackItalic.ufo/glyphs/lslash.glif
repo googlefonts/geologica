@@ -1,29 +1,29 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="lslash" format="2">
-  <advance width="776"/>
+  <advance width="836"/>
   <unicode hex="0142"/>
-  <anchor x="274.0" y="0" name="bottom"/>
-  <anchor x="785.384" y="1440" name="caron"/>
-  <anchor x="585.384" y="1440" name="top"/>
+  <anchor x="304.0" y="0" name="bottom"/>
+  <anchor x="815.384" y="1440" name="caron"/>
+  <anchor x="615.384" y="1440" name="top"/>
   <outline>
     <contour>
-      <point x="-42" y="340" type="line"/>
-      <point x="402" y="530" type="line"/>
-      <point x="396" y="490" type="line"/>
-      <point x="810" y="660" type="line"/>
-      <point x="886" y="1020" type="line"/>
-      <point x="444" y="838" type="line"/>
-      <point x="448" y="878" type="line"/>
-      <point x="34" y="700" type="line"/>
+      <point x="102" y="389" type="line"/>
+      <point x="432" y="530" type="line"/>
+      <point x="426" y="490" type="line"/>
+      <point x="915" y="691" type="line"/>
+      <point x="800" y="973" type="line"/>
+      <point x="474" y="838" type="line"/>
+      <point x="478" y="878" type="line"/>
+      <point x="-12" y="667" type="line"/>
     </contour>
-    <component base="l" yxScale="0.00235" xOffset="56"/>
+    <component base="l" yxScale="0.00235" xOffset="86"/>
   </outline>
   <lib>
     <dict>
       <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
       <string>=|</string>
       <key>public.markColor</key>
-      <string>0.67,0.95,0.38,1</string>
+      <string>0,0.67,0.91,1</string>
     </dict>
   </lib>
 </glyph>

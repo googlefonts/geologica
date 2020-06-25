@@ -862,6 +862,8 @@
     <string>dieresiscomb.glif</string>
     <key>dieresiscomb.case</key>
     <string>dieresiscomb.case.glif</string>
+    <key>dieresistonos</key>
+    <string>dieresistonos.glif</string>
     <key>divide</key>
     <string>divide.glif</string>
     <key>divisionslash</key>

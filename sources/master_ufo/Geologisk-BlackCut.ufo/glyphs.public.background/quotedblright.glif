@@ -2,8 +2,8 @@
 <glyph name="quotedblright" format="2">
   <outline>
     <contour>
-      <point x="35" y="608" type="line"/>
-      <point x="397" y="635"/>
+      <point x="65" y="608" type="line"/>
+      <point x="406" y="635"/>
       <point x="561" y="858"/>
       <point x="561" y="1124" type="curve" smooth="yes"/>
       <point x="561" y="1310"/>
@@ -15,13 +15,13 @@
       <point x="57" y="1052"/>
       <point x="190" y="967"/>
       <point x="318" y="995" type="curve"/>
-      <point x="295" y="886"/>
-      <point x="181" y="823"/>
-      <point x="35" y="816" type="curve"/>
+      <point x="297" y="886"/>
+      <point x="196" y="823"/>
+      <point x="65" y="816" type="curve"/>
     </contour>
     <contour>
-      <point x="309" y="608" type="line"/>
-      <point x="671" y="635"/>
+      <point x="339" y="608" type="line"/>
+      <point x="680" y="635"/>
       <point x="835" y="858"/>
       <point x="835" y="1124" type="curve" smooth="yes"/>
       <point x="835" y="1310"/>
@@ -33,9 +33,9 @@
       <point x="331" y="1052"/>
       <point x="464" y="967"/>
       <point x="592" y="995" type="curve"/>
-      <point x="569" y="886"/>
-      <point x="455" y="823"/>
-      <point x="309" y="816" type="curve"/>
+      <point x="571" y="886"/>
+      <point x="470" y="823"/>
+      <point x="339" y="816" type="curve"/>
     </contour>
   </outline>
 </glyph>

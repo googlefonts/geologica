@@ -1,29 +1,32 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="lslash" format="2">
-  <advance width="776"/>
+  <advance width="836"/>
   <unicode hex="0142"/>
-  <anchor x="388" y="0" name="bottom"/>
-  <anchor x="588" y="1440" name="caron"/>
-  <anchor x="388" y="1440" name="top"/>
+  <guideline x="810" y="846" angle="270"/>
+  <guideline x="810" y="846" angle="115.8592"/>
+  <guideline x="26" y="514" angle="115.8592"/>
+  <anchor x="418" y="0" name="bottom"/>
+  <anchor x="618" y="1440" name="caron"/>
+  <anchor x="418" y="1440" name="top"/>
   <outline>
     <contour>
-      <point x="-4" y="340" type="line"/>
-      <point x="388" y="530" type="line"/>
-      <point x="388" y="490" type="line"/>
-      <point x="780" y="672" type="line"/>
-      <point x="780" y="1020" type="line"/>
-      <point x="388" y="838" type="line"/>
-      <point x="388" y="878" type="line"/>
-      <point x="-4" y="688" type="line"/>
+      <point x="95" y="373" type="line"/>
+      <point x="418" y="530" type="line"/>
+      <point x="418" y="490" type="line"/>
+      <point x="879" y="704" type="line"/>
+      <point x="741" y="988" type="line"/>
+      <point x="418" y="838" type="line"/>
+      <point x="418" y="878" type="line"/>
+      <point x="-43" y="655" type="line"/>
     </contour>
-    <component base="l" xOffset="60"/>
+    <component base="l" xOffset="90"/>
   </outline>
   <lib>
     <dict>
       <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
       <string>=|</string>
       <key>public.markColor</key>
-      <string>0.67,0.95,0.38,1</string>
+      <string>0,0.67,0.91,1</string>
     </dict>
   </lib>
 </glyph>

@@ -5,7 +5,7 @@
   <anchor x="824" y="1400" name="top"/>
   <outline>
     <contour>
-      <point x="326" y="-124" type="line"/>
+      <point x="428" y="0" type="line"/>
       <point x="472" y="54" type="line"/>
       <point x="576" y="0"/>
       <point x="696" y="-30"/>
@@ -16,8 +16,8 @@
       <point x="1578" y="884"/>
       <point x="1516" y="1056"/>
       <point x="1404" y="1184" type="curve"/>
-      <point x="1530" y="1334" type="line"/>
-      <point x="1296" y="1540" type="line"/>
+      <point x="1586" y="1400" type="line"/>
+      <point x="1180" y="1400" type="line"/>
       <point x="1146" y="1358" type="line"/>
       <point x="1058" y="1402"/>
       <point x="950" y="1430"/>
@@ -28,7 +28,7 @@
       <point x="70" y="524"/>
       <point x="124" y="366"/>
       <point x="222" y="240" type="curve"/>
-      <point x="92" y="84" type="line"/>
+      <point x="22" y="0" type="line"/>
     </contour>
     <contour>
       <point x="506" y="572" type="line"/>
@@ -57,12 +57,10 @@
   </outline>
   <lib>
     <dict>
-      <key>com.schriftgestaltung.Glyphs.glyph.leftMetricsKey</key>
-      <string>O</string>
-      <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
+      <key>com.schriftgestaltung.Glyphs.glyph.widthMetricsKey</key>
       <string>O</string>
       <key>public.markColor</key>
-      <string>0.67,0.95,0.38,1</string>
+      <string>0,0.67,0.91,1</string>
     </dict>
   </lib>
 </glyph>

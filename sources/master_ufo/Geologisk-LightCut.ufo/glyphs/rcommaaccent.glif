@@ -2,11 +2,11 @@
 <glyph name="rcommaaccent" format="2">
   <advance width="756"/>
   <unicode hex="0157"/>
-  <anchor x="282" y="0" name="bottom"/>
+  <anchor x="226" y="0" name="bottom"/>
   <anchor x="442" y="960" name="top"/>
   <outline>
     <component base="r"/>
-    <component base="commaaccentcomb" xOffset="868"/>
+    <component base="commaaccentcomb" xOffset="812"/>
   </outline>
   <lib>
     <dict>

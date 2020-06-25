@@ -4,11 +4,11 @@
   <unicode hex="03AA"/>
   <anchor x="158" y="0" name="bottom"/>
   <anchor x="216" y="0" name="ogonek"/>
-  <anchor x="516" y="1706" name="top"/>
+  <anchor x="522" y="1724" name="top"/>
   <anchor x="316" y="1400" name="topleft"/>
   <outline>
     <component base="Iota"/>
-    <component base="dieresiscomb.case" xOffset="1218" yOffset="2"/>
+    <component base="dieresiscomb.narrow" xOffset="1102" yOffset="440"/>
   </outline>
   <lib>
     <dict>

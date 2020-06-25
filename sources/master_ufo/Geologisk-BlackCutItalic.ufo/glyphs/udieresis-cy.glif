@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="udieresis-cy" format="2">
-  <advance width="1222"/>
+  <advance width="1232"/>
   <unicode hex="04F1"/>
-  <anchor x="994" y="0" name="bottom"/>
-  <anchor x="812" y="1484" name="top"/>
+  <anchor x="1004" y="0" name="bottom"/>
+  <anchor x="822" y="1484" name="top"/>
   <outline>
     <component base="u-cy"/>
-    <component base="dieresiscomb" xOffset="1426"/>
+    <component base="dieresiscomb" xOffset="1436"/>
   </outline>
   <lib>
     <dict>

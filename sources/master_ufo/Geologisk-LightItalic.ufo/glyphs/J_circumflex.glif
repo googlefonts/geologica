@@ -2,10 +2,10 @@
 <glyph name="Jcircumflex" format="2">
   <advance width="945"/>
   <unicode hex="0134"/>
-  <anchor x="980" y="1850" name="top"/>
+  <anchor x="986" y="1884" name="top"/>
   <outline>
     <component base="J"/>
-    <component base="circumflexcomb.case" xOffset="1668" yOffset="2"/>
+    <component base="circumflexcomb.narrow" xOffset="1520" yOffset="440"/>
   </outline>
   <lib>
     <dict>

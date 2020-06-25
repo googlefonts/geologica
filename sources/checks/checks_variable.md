@@ -9,8 +9,9 @@ Fontbakery version: 0.7.26
 
 * [com.google.fonts/check/fontbakery_version](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/fontbakery_version)
 
-* ℹ **INFO** fontbakery (0.7.26)  - Well designed Font QA tool, written in Python 3
-  INSTALLED: 0.7.26 (latest)
+* ℹ **INFO** fontbakery (0.7.27)  - Well designed Font QA tool, written in Python 3
+  INSTALLED: 0.7.26
+  LATEST:    0.7.27
 
 * 🍞 **PASS** Font Bakery is up-to-date
 
@@ -236,37 +237,85 @@ variation axes other than &#x27;ital&#x27;.
 
 * [com.google.fonts/check/varfont_instance_coordinates](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont_instance_coordinates)
 
-* 🔥 **FAIL** Instance "Thin Italic" wght value is "200.0". It should be "100.0" [code: bad-coordinate]
-* 🔥 **FAIL** Instance "Thin Italic" wght value is "200.0". It should be "100.0" [code: bad-coordinate]
 * 🔥 **FAIL** Instance "Cut Thin Italic" wght value is "200.0". It should be "100.0" [code: bad-coordinate]
 * 🔥 **FAIL** Instance "Cut Thin Italic" wght value is "200.0". It should be "100.0" [code: bad-coordinate]
-* 🔥 **FAIL** Instance "ExtraLight" wght value is "300.0". It should be "200.0" [code: bad-coordinate]
-* 🔥 **FAIL** Instance "ExtraLight" wght value is "300.0". It should be "200.0" [code: bad-coordinate]
 * 🔥 **FAIL** Instance "Cut ExtraLight" wght value is "300.0". It should be "200.0" [code: bad-coordinate]
 * 🔥 **FAIL** Instance "Cut ExtraLight" wght value is "300.0". It should be "200.0" [code: bad-coordinate]
-* 🔥 **FAIL** Instance "ExtraLight Italic" wght value is "400.0". It should be "200.0" [code: bad-coordinate]
-* 🔥 **FAIL** Instance "ExtraLight Italic" wght value is "400.0". It should be "200.0" [code: bad-coordinate]
-* 🔥 **FAIL** Instance "Cut ExtraLight Italic" wght value is "500.0". It should be "200.0" [code: bad-coordinate]
-* 🔥 **FAIL** Instance "Cut ExtraLight Italic" wght value is "500.0". It should be "200.0" [code: bad-coordinate]
+* 🔥 **FAIL** Instance "ExtraLight Italic" wght value is "300.0". It should be "200.0" [code: bad-coordinate]
+* 🔥 **FAIL** Instance "ExtraLight Italic" wght value is "300.0". It should be "200.0" [code: bad-coordinate]
+* 🔥 **FAIL** Instance "Cut ExtraLight Italic" wght value is "400.0". It should be "200.0" [code: bad-coordinate]
+* 🔥 **FAIL** Instance "Cut ExtraLight Italic" wght value is "400.0". It should be "200.0" [code: bad-coordinate]
 * 🔥 **FAIL** Instance "Light" wght value is "500.0". It should be "300.0" [code: bad-coordinate]
 * 🔥 **FAIL** Instance "Light" wght value is "500.0". It should be "300.0" [code: bad-coordinate]
-* 🔥 **FAIL** Instance "Cut Light" wght value is "600.0". It should be "300.0" [code: bad-coordinate]
-* 🔥 **FAIL** Instance "Cut Light" wght value is "600.0". It should be "300.0" [code: bad-coordinate]
+* 🔥 **FAIL** Instance "Cut Light" wght value is "500.0". It should be "300.0" [code: bad-coordinate]
+* 🔥 **FAIL** Instance "Cut Light" wght value is "500.0". It should be "300.0" [code: bad-coordinate]
 * 🔥 **FAIL** Instance "Light Italic" wght value is "600.0". It should be "300.0" [code: bad-coordinate]
 * 🔥 **FAIL** Instance "Light Italic" wght value is "600.0". It should be "300.0" [code: bad-coordinate]
-* 🔥 **FAIL** Instance "Cut Light Italic" wght value is "700.0". It should be "300.0" [code: bad-coordinate]
-* 🔥 **FAIL** Instance "Cut Light Italic" wght value is "700.0". It should be "300.0" [code: bad-coordinate]
+* 🔥 **FAIL** Instance "Cut Light Italic" wght value is "600.0". It should be "300.0" [code: bad-coordinate]
+* 🔥 **FAIL** Instance "Cut Light Italic" wght value is "600.0". It should be "300.0" [code: bad-coordinate]
 * 🔥 **FAIL** Instance "Regular" wght value is "700.0". It should be "400.0" [code: bad-coordinate]
 * 🔥 **FAIL** Instance "Regular" wght value is "700.0". It should be "400.0" [code: bad-coordinate]
-* 🔥 **FAIL** Instance "Cut Regular" wght value is "800.0". It should be "400.0" [code: bad-coordinate]
-* 🔥 **FAIL** Instance "Cut Regular" wght value is "800.0". It should be "400.0" [code: bad-coordinate]
+* 🔥 **FAIL** Instance "Cut Regular" wght value is "700.0". It should be "400.0" [code: bad-coordinate]
+* 🔥 **FAIL** Instance "Cut Regular" wght value is "700.0". It should be "400.0" [code: bad-coordinate]
 * 🔥 **FAIL** Instance "Italic" wght value is "800.0". It should be "400.0" [code: bad-coordinate]
 * 🔥 **FAIL** Instance "Italic" wght value is "800.0". It should be "400.0" [code: bad-coordinate]
-* 🔥 **FAIL** Instance "Cut Italic" wght value is "900.0". It should be "400.0" [code: bad-coordinate]
-* 🔥 **FAIL** Instance "Cut Italic" wght value is "900.0". It should be "400.0" [code: bad-coordinate]
+* 🔥 **FAIL** Instance "Cut Italic" wght value is "800.0". It should be "400.0" [code: bad-coordinate]
+* 🔥 **FAIL** Instance "Cut Italic" wght value is "800.0". It should be "400.0" [code: bad-coordinate]
 * 🔥 **FAIL** Instance "Medium" wght value is "900.0". It should be "500.0" [code: bad-coordinate]
 * 🔥 **FAIL** Instance "Medium" wght value is "900.0". It should be "500.0" [code: bad-coordinate]
+* 🔥 **FAIL** Instance "Cut Medium" wght value is "900.0". It should be "500.0" [code: bad-coordinate]
+* 🔥 **FAIL** Instance "Cut Medium" wght value is "900.0". It should be "500.0" [code: bad-coordinate]
 * 🔥 **FAIL** Check has either failed or produced a warning. See our wip spec for further info https://gist.github.com/m4rc1e/8f4c4498519e8a36cd54e16a004275cb
+
+</details>
+<details>
+<summary>🔥 <b>FAIL:</b> Check variable font instances have correct names</summary>
+
+* [com.google.fonts/check/varfont_instance_names](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont_instance_names)
+
+* 🔥 **FAIL** Instance "Slant": is missing the following name tokens [wght]
+* 🔥 **FAIL** Instance "Slant": is missing the following name tokens [wght]
+* 🔥 **FAIL** Check has either failed or produced a warning. See our wip spec for further info https://gist.github.com/m4rc1e/8f4c4498519e8a36cd54e16a004275cb [code: bad-instance-names]
+* ⚠ **WARN** Instance "Cut Thin": contains the following unparsable tokens "['Cut']"
+* ⚠ **WARN** Instance "Cut Thin": cannot determine instance name due to unparsable tokens
+* ⚠ **WARN** Instance "Cut Thin": contains the following unparsable tokens "['Cut']"
+* ⚠ **WARN** Instance "Cut Thin": cannot determine instance name due to unparsable tokens
+* ⚠ **WARN** Instance "Cut Thin Italic": contains the following unparsable tokens "['Cut']"
+* ⚠ **WARN** Instance "Cut Thin Italic": cannot determine instance name due to unparsable tokens
+* ⚠ **WARN** Instance "Cut Thin Italic": contains the following unparsable tokens "['Cut']"
+* ⚠ **WARN** Instance "Cut Thin Italic": cannot determine instance name due to unparsable tokens
+* ⚠ **WARN** Instance "Cut ExtraLight": contains the following unparsable tokens "['Cut']"
+* ⚠ **WARN** Instance "Cut ExtraLight": cannot determine instance name due to unparsable tokens
+* ⚠ **WARN** Instance "Cut ExtraLight": contains the following unparsable tokens "['Cut']"
+* ⚠ **WARN** Instance "Cut ExtraLight": cannot determine instance name due to unparsable tokens
+* ⚠ **WARN** Instance "Cut ExtraLight Italic": contains the following unparsable tokens "['Cut']"
+* ⚠ **WARN** Instance "Cut ExtraLight Italic": cannot determine instance name due to unparsable tokens
+* ⚠ **WARN** Instance "Cut ExtraLight Italic": contains the following unparsable tokens "['Cut']"
+* ⚠ **WARN** Instance "Cut ExtraLight Italic": cannot determine instance name due to unparsable tokens
+* ⚠ **WARN** Instance "Slant": contains the following unparsable tokens "['Slant']"
+* ⚠ **WARN** Instance "Slant": cannot determine instance name due to unparsable tokens
+* ⚠ **WARN** Instance "Slant": contains the following unparsable tokens "['Slant']"
+* ⚠ **WARN** Instance "Slant": cannot determine instance name due to unparsable tokens
+* ⚠ **WARN** Instance "Cut Light": contains the following unparsable tokens "['Cut']"
+* ⚠ **WARN** Instance "Cut Light": cannot determine instance name due to unparsable tokens
+* ⚠ **WARN** Instance "Cut Light": contains the following unparsable tokens "['Cut']"
+* ⚠ **WARN** Instance "Cut Light": cannot determine instance name due to unparsable tokens
+* ⚠ **WARN** Instance "Cut Light Italic": contains the following unparsable tokens "['Cut']"
+* ⚠ **WARN** Instance "Cut Light Italic": cannot determine instance name due to unparsable tokens
+* ⚠ **WARN** Instance "Cut Light Italic": contains the following unparsable tokens "['Cut']"
+* ⚠ **WARN** Instance "Cut Light Italic": cannot determine instance name due to unparsable tokens
+* ⚠ **WARN** Instance "Cut Regular": contains the following unparsable tokens "['Cut']"
+* ⚠ **WARN** Instance "Cut Regular": cannot determine instance name due to unparsable tokens
+* ⚠ **WARN** Instance "Cut Regular": contains the following unparsable tokens "['Cut']"
+* ⚠ **WARN** Instance "Cut Regular": cannot determine instance name due to unparsable tokens
+* ⚠ **WARN** Instance "Cut Italic": contains the following unparsable tokens "['Cut']"
+* ⚠ **WARN** Instance "Cut Italic": cannot determine instance name due to unparsable tokens
+* ⚠ **WARN** Instance "Cut Italic": contains the following unparsable tokens "['Cut']"
+* ⚠ **WARN** Instance "Cut Italic": cannot determine instance name due to unparsable tokens
+* ⚠ **WARN** Instance "Cut Medium": contains the following unparsable tokens "['Cut']"
+* ⚠ **WARN** Instance "Cut Medium": cannot determine instance name due to unparsable tokens
+* ⚠ **WARN** Instance "Cut Medium": contains the following unparsable tokens "['Cut']"
+* ⚠ **WARN** Instance "Cut Medium": cannot determine instance name due to unparsable tokens
 
 </details>
 <details>
@@ -307,44 +356,6 @@ If a variable font has a &#x27;wght&#x27; (Weight) axis, then the coordinate of 
 </pre>
 
 * 🔥 **FAIL** The "wght" axis coordinate of the "Regular" instance must be 400. Got 700.0 instead. [code: not-400]
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> The variable font 'slnt' (Slant) axis coordinate must be zero on the 'Regular' instance.</summary>
-
-* [com.google.fonts/check/varfont/regular_slnt_coord](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/fvar.html#com.google.fonts/check/varfont/regular_slnt_coord)
-<pre>--- Rationale ---
-
-According to the Open-Type spec&#x27;s registered design-variation tag &#x27;slnt&#x27;
-available at
-https://docs.microsoft.com/en-gb/typography/opentype/spec/dvaraxistag_slnt
-
-If a variable font has a &#x27;slnt&#x27; (Slant) axis, then the coordinate of its
-&#x27;Regular&#x27; instance is required to be zero.
-
-
-</pre>
-
-* 🔥 **FAIL** The "slnt" coordinate of the "Regular" instance must be zero. Got -12.0 as a default value instead. [code: non-zero]
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> The variable font 'ital' (Italic) axis coordinate must be zero on the 'Regular' instance.</summary>
-
-* [com.google.fonts/check/varfont/regular_ital_coord](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/fvar.html#com.google.fonts/check/varfont/regular_ital_coord)
-<pre>--- Rationale ---
-
-According to the Open-Type spec&#x27;s registered design-variation tag &#x27;ital&#x27;
-available at
-https://docs.microsoft.com/en-gb/typography/opentype/spec/dvaraxistag_ital
-
-If a variable font has a &#x27;ital&#x27; (Italic) axis, then the coordinate of its
-&#x27;Regular&#x27; instance is required to be zero.
-
-
-</pre>
-
-* 🔥 **FAIL** The "ital" coordinate of the "Regular" instance must be zero. Got 1.0 as a default value instead. [code: non-zero]
 
 </details>
 <details>
@@ -426,70 +437,6 @@ When in doubt, please choose OFL for new font projects.
 * ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=14] [code: http-in-license-info]
 * ⚠ **WARN** For now we're still accepting http URLs, but you should consider using https instead.
  [code: http]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Is there kerning info for non-ligated sequences?</summary>
-
-* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
-<pre>--- Rationale ---
-
-Fonts with ligatures should have kerning on the corresponding non-ligated
-sequences for text where ligatures aren&#x27;t used (eg
-https://github.com/impallari/Raleway/issues/14).
-
-
-</pre>
-
-* ⚠ **WARN** GPOS table lacks kerning info for the following non-ligated sequences:
-	- f + f
-	- f + i
-	- i + f
-	- f + l
-	- l + f
-	- i + l
-
-   [code: lacks-kern-info]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Check variable font instances have correct names</summary>
-
-* [com.google.fonts/check/varfont_instance_names](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont_instance_names)
-
-* ⚠ **WARN** Instance "Cut Thin": contains the following unparsable tokens "['Cut']"
-* ⚠ **WARN** Instance "Cut Thin": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Cut Thin": contains the following unparsable tokens "['Cut']"
-* ⚠ **WARN** Instance "Cut Thin": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Cut Thin Italic": contains the following unparsable tokens "['Cut']"
-* ⚠ **WARN** Instance "Cut Thin Italic": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Cut Thin Italic": contains the following unparsable tokens "['Cut']"
-* ⚠ **WARN** Instance "Cut Thin Italic": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Cut ExtraLight": contains the following unparsable tokens "['Cut']"
-* ⚠ **WARN** Instance "Cut ExtraLight": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Cut ExtraLight": contains the following unparsable tokens "['Cut']"
-* ⚠ **WARN** Instance "Cut ExtraLight": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Cut ExtraLight Italic": contains the following unparsable tokens "['Cut']"
-* ⚠ **WARN** Instance "Cut ExtraLight Italic": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Cut ExtraLight Italic": contains the following unparsable tokens "['Cut']"
-* ⚠ **WARN** Instance "Cut ExtraLight Italic": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Cut Light": contains the following unparsable tokens "['Cut']"
-* ⚠ **WARN** Instance "Cut Light": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Cut Light": contains the following unparsable tokens "['Cut']"
-* ⚠ **WARN** Instance "Cut Light": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Cut Light Italic": contains the following unparsable tokens "['Cut']"
-* ⚠ **WARN** Instance "Cut Light Italic": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Cut Light Italic": contains the following unparsable tokens "['Cut']"
-* ⚠ **WARN** Instance "Cut Light Italic": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Cut Regular": contains the following unparsable tokens "['Cut']"
-* ⚠ **WARN** Instance "Cut Regular": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Cut Regular": contains the following unparsable tokens "['Cut']"
-* ⚠ **WARN** Instance "Cut Regular": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Cut Italic": contains the following unparsable tokens "['Cut']"
-* ⚠ **WARN** Instance "Cut Italic": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Cut Italic": contains the following unparsable tokens "['Cut']"
-* ⚠ **WARN** Instance "Cut Italic": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Check has either failed or produced a warning. See our wip spec for further info https://gist.github.com/m4rc1e/8f4c4498519e8a36cd54e16a004275cb
 
 </details>
 <details>
@@ -1179,6 +1126,38 @@ Bit 3 = Force ppem to integer values for all internal scaler math;
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Are there caret positions declared for every ligature?</summary>
+
+* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+<pre>--- Rationale ---
+
+All ligatures in a font must have corresponding caret (text cursor) positions
+defined in the GDEF table, otherwhise, users may experience issues with caret
+rendering.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligature_glyphs
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Is there kerning info for non-ligated sequences?</summary>
+
+* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
+<pre>--- Rationale ---
+
+Fonts with ligatures should have kerning on the corresponding non-ligated
+sequences for text where ligatures aren&#x27;t used (eg
+https://github.com/impallari/Raleway/issues/14).
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligatures
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Directory name in GFonts repo structure must match NameID 1 of the regular.</summary>
 
 * [com.google.fonts/check/repo/dirname_matches_nameid_1](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/dirname_matches_nameid_1)
@@ -1328,6 +1307,44 @@ If a variable font has a &#x27;wdth&#x27; (Width) axis, then the coordinate of i
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> The variable font 'slnt' (Slant) axis coordinate must be zero on the 'Regular' instance.</summary>
+
+* [com.google.fonts/check/varfont/regular_slnt_coord](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/fvar.html#com.google.fonts/check/varfont/regular_slnt_coord)
+<pre>--- Rationale ---
+
+According to the Open-Type spec&#x27;s registered design-variation tag &#x27;slnt&#x27;
+available at
+https://docs.microsoft.com/en-gb/typography/opentype/spec/dvaraxistag_slnt
+
+If a variable font has a &#x27;slnt&#x27; (Slant) axis, then the coordinate of its
+&#x27;Regular&#x27; instance is required to be zero.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: regular_slnt_coord
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> The variable font 'ital' (Italic) axis coordinate must be zero on the 'Regular' instance.</summary>
+
+* [com.google.fonts/check/varfont/regular_ital_coord](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/fvar.html#com.google.fonts/check/varfont/regular_ital_coord)
+<pre>--- Rationale ---
+
+According to the Open-Type spec&#x27;s registered design-variation tag &#x27;ital&#x27;
+available at
+https://docs.microsoft.com/en-gb/typography/opentype/spec/dvaraxistag_ital
+
+If a variable font has a &#x27;ital&#x27; (Italic) axis, then the coordinate of its
+&#x27;Regular&#x27; instance is required to be zero.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: regular_ital_coord
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> The variable font 'opsz' (Optical Size) axis coordinate should be between 9 and 13 on the 'Regular' instance.</summary>
 
 * [com.google.fonts/check/varfont/regular_opsz_coord](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/fvar.html#com.google.fonts/check/varfont/regular_opsz_coord)
@@ -1381,9 +1398,9 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/variable/Geologisk[DIAG,ital,slnt,wght].ttf |
 	|:--- | ---:|
-	| Dehinted Size | 258.9kb |
-	| Hinted Size | 258.3kb |
-	| Increase | -584 bytes |
+	| Dehinted Size | 327.8kb |
+	| Hinted Size | 327.3kb |
+	| Increase | -576 bytes |
 	| Change   | -0.2 % |
  [code: size-impact]
 
@@ -1492,7 +1509,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [GSUB, GPOS, loca, DSIG, gasp, prep]
+* ℹ **INFO** This font contains the following optional tables [GPOS, DSIG, gasp, loca, GSUB, prep]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -1952,22 +1969,6 @@ that are multiples of 100 on the design space.
 </pre>
 
 * 🍞 **PASS** OK
-
-</details>
-<details>
-<summary>🍞 <b>PASS:</b> Are there caret positions declared for every ligature?</summary>
-
-* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
-<pre>--- Rationale ---
-
-All ligatures in a font must have corresponding caret (text cursor) positions
-defined in the GDEF table, otherwhise, users may experience issues with caret
-rendering.
-
-
-</pre>
-
-* 🍞 **PASS** Looks good!
 
 </details>
 <details>
@@ -2650,5 +2651,5 @@ scale used for the italicAngle field in the post table.
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 1 | 5 | 8 | 73 | 8 | 77 | 0 |
-| 1% | 3% | 5% | 42% | 5% | 45% | 0% |
+| 1 | 4 | 6 | 77 | 8 | 76 | 0 |
+| 1% | 2% | 3% | 45% | 5% | 44% | 0% |

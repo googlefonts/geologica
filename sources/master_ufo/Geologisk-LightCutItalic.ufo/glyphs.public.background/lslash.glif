@@ -1,24 +1,24 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="lslash" format="2">
-  <anchor x="184" y="0" name="bottom"/>
-  <anchor x="548" y="1440" name="caron"/>
-  <anchor x="492" y="1440" name="top"/>
+  <anchor x="194" y="0" name="bottom"/>
+  <anchor x="558" y="1440" name="caron"/>
+  <anchor x="502" y="1440" name="top"/>
   <outline>
     <contour>
-      <point x="60" y="494" type="line"/>
-      <point x="312" y="602" type="line"/>
-      <point x="310" y="592" type="line"/>
-      <point x="564" y="700" type="line"/>
-      <point x="584" y="798" type="line"/>
-      <point x="332" y="690" type="line"/>
-      <point x="334" y="700" type="line"/>
-      <point x="80" y="592" type="line"/>
+      <point x="70" y="494" type="line"/>
+      <point x="322" y="602" type="line"/>
+      <point x="320" y="592" type="line"/>
+      <point x="574" y="700" type="line"/>
+      <point x="594" y="798" type="line"/>
+      <point x="342" y="690" type="line"/>
+      <point x="344" y="700" type="line"/>
+      <point x="90" y="592" type="line"/>
     </contour>
     <contour>
-      <point x="128" y="0" type="line"/>
-      <point x="240" y="0" type="line"/>
-      <point x="548" y="1440" type="line"/>
-      <point x="436" y="1440" type="line"/>
+      <point x="138" y="0" type="line"/>
+      <point x="250" y="0" type="line"/>
+      <point x="558" y="1440" type="line"/>
+      <point x="446" y="1440" type="line"/>
     </contour>
   </outline>
 </glyph>

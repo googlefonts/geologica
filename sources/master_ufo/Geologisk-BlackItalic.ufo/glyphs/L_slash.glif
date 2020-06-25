@@ -2,19 +2,23 @@
 <glyph name="Lslash" format="2">
   <advance width="1192"/>
   <unicode hex="0141"/>
+  <guideline x="1127" y="978" angle="257.9952"/>
+  <guideline x="-15" y="530" angle="77.9952"/>
+  <guideline x="1127" y="978" angle="113.0829"/>
+  <guideline x="-15" y="530" angle="113.0829"/>
   <anchor x="556.0" y="0" name="bottom"/>
   <anchor x="801.384" y="1440" name="caron"/>
   <anchor x="589.29" y="1400" name="top"/>
   <outline>
     <contour>
-      <point x="-52" y="356" type="line"/>
+      <point x="42" y="396" type="line"/>
       <point x="380" y="538" type="line"/>
       <point x="372" y="498" type="line"/>
-      <point x="1090" y="804" type="line"/>
-      <point x="1164" y="1152" type="line"/>
+      <point x="1184" y="844" type="line"/>
+      <point x="1070" y="1112" type="line"/>
       <point x="446" y="846" type="line"/>
       <point x="454" y="886" type="line"/>
-      <point x="22" y="704" type="line"/>
+      <point x="-72" y="664" type="line"/>
     </contour>
     <component base="L" yxScale="0.00235" xOffset="40"/>
   </outline>
@@ -25,7 +29,7 @@
       <key>com.schriftgestaltung.Glyphs.glyph.widthMetricsKey</key>
       <string>=L+40</string>
       <key>public.markColor</key>
-      <string>0.67,0.95,0.38,1</string>
+      <string>0,0.67,0.91,1</string>
     </dict>
   </lib>
 </glyph>

@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="u-cy" format="2">
-  <advance width="1222"/>
+  <advance width="1232"/>
   <unicode hex="0443"/>
-  <anchor x="994" y="0" name="bottom"/>
-  <anchor x="718" y="1040" name="top"/>
+  <anchor x="1004" y="0" name="bottom"/>
+  <anchor x="728" y="1040" name="top"/>
   <outline>
     <component base="y"/>
   </outline>

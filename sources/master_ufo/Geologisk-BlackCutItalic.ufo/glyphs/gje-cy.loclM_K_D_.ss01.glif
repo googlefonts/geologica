@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="gje-cy.loclMKD.ss01" format="2">
-  <advance width="1079"/>
-  <anchor x="417" y="0" name="bottom"/>
-  <anchor x="683" y="1040" name="top"/>
+  <advance width="1059"/>
+  <anchor x="397" y="0" name="bottom"/>
+  <anchor x="663" y="1040" name="top"/>
   <outline>
     <component base="ge-cy.loclBGR"/>
-    <component base="macroncomb" xOffset="1211"/>
+    <component base="macroncomb" xOffset="1191"/>
   </outline>
   <lib>
     <dict>

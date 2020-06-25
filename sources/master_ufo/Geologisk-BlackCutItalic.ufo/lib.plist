@@ -1131,6 +1131,9 @@
       <string>zacute</string>
       <string>zcaron</string>
       <string>zdotaccent</string>
+      <string>j.calt</string>
+      <string>jdotless.calt</string>
+      <string>jcircumflex.calt</string>
       <string>a.ss01</string>
       <string>aacute.ss01</string>
       <string>abreve.ss01</string>
@@ -1356,6 +1359,7 @@
       <string>yerudieresis-cy</string>
       <string>qa-cy</string>
       <string>we-cy</string>
+      <string>je-cy.calt</string>
       <string>ve-cy.loclBGR</string>
       <string>ge-cy.loclBGR</string>
       <string>de-cy.loclBGR</string>
@@ -2462,8 +2466,12 @@
       <string>uni0475</string>
       <key>jdotless</key>
       <string>uni0237</string>
+      <key>jdotless.calt</key>
+      <string>uni0237.calt</string>
       <key>je-cy</key>
       <string>uni0458</string>
+      <key>je-cy.calt</key>
+      <string>uni0458.calt</string>
       <key>ka-cy</key>
       <string>uni043A</string>
       <key>ka-cy.loclBGR</key>

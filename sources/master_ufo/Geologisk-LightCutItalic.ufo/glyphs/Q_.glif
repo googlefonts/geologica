@@ -1,13 +1,14 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Q" format="2">
-  <advance width="1692"/>
+  <advance width="1696"/>
   <unicode hex="0051"/>
   <guideline x="638" y="-42" angle="32.9322"/>
   <guideline x="527" y="272" angle="33.7775"/>
+  <guideline x="1007" y="519" angle="33.9965"/>
   <outline>
     <contour>
-      <point x="1320" y="-50" type="line"/>
-      <point x="1408" y="8" type="line"/>
+      <point x="1288" y="0" type="line"/>
+      <point x="1414" y="0" type="line"/>
       <point x="1316" y="148" type="line"/>
       <point x="1502" y="300"/>
       <point x="1628" y="534"/>
@@ -39,8 +40,8 @@
       <point x="1508" y="584"/>
       <point x="1418" y="376"/>
       <point x="1258" y="240" type="curve"/>
-      <point x="1050" y="548" type="line"/>
-      <point x="964" y="490" type="line"/>
+      <point x="1070" y="519" type="line"/>
+      <point x="945" y="519" type="line"/>
       <point x="1172" y="178" type="line"/>
       <point x="1070" y="116"/>
       <point x="954" y="82"/>
@@ -50,10 +51,10 @@
     <dict>
       <key>com.schriftgestaltung.Glyphs.glyph.leftMetricsKey</key>
       <string>O</string>
-      <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
+      <key>com.schriftgestaltung.Glyphs.glyph.widthMetricsKey</key>
       <string>O</string>
       <key>public.markColor</key>
-      <string>0.67,0.95,0.38,1</string>
+      <string>0,0.67,0.91,1</string>
     </dict>
   </lib>
 </glyph>

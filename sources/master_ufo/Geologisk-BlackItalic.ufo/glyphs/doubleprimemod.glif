@@ -3,7 +3,7 @@
   <advance width="976"/>
   <unicode hex="02BA"/>
   <outline>
-    <component base="quotedbl" yxScale="0.21256" xOffset="-248"/>
+    <component base="second"/>
   </outline>
   <lib>
     <dict>
@@ -15,7 +15,7 @@
           <key>index</key>
           <integer>0</integer>
           <key>name</key>
-          <string>quotedbl</string>
+          <string>second</string>
         </dict>
       </array>
       <key>public.markColor</key>

@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="dze-cy" format="2">
-  <advance width="1088"/>
+  <advance width="1068"/>
   <unicode hex="0455"/>
   <anchor x="544" y="0" name="bottom"/>
   <anchor x="550" y="1040" name="top"/>

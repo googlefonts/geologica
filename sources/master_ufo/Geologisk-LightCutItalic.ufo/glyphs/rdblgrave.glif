@@ -2,7 +2,7 @@
 <glyph name="rdblgrave" format="2">
   <advance width="756"/>
   <unicode hex="0211"/>
-  <anchor x="180" y="0" name="bottom"/>
+  <anchor x="124" y="0" name="bottom"/>
   <anchor x="544" y="960" name="top"/>
   <outline>
     <component base="r"/>

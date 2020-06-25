@@ -8,7 +8,7 @@
   <anchor x="120" y="1400" name="topleft"/>
   <outline>
     <component base="I"/>
-    <component base="dblgravecomb.case" xOffset="1048" yOffset="2"/>
+    <component base="dblgravecomb.narrow" xOffset="844" yOffset="440"/>
   </outline>
   <lib>
     <dict>

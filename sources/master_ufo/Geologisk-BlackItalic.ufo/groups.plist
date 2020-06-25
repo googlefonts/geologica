@@ -13,10 +13,7 @@
       <string>Abrevehookabove</string>
       <string>Abrevetilde</string>
       <string>Acircumflex</string>
-      <string>Acircumflexacute</string>
       <string>Acircumflexdotbelow</string>
-      <string>Acircumflexgrave</string>
-      <string>Acircumflexhookabove</string>
       <string>Acircumflextilde</string>
       <string>Adblgrave</string>
       <string>Adieresis</string>
@@ -25,19 +22,27 @@
       <string>Ahookabove</string>
       <string>Ainvertedbreve</string>
       <string>Amacron</string>
-      <string>Aogonek</string>
       <string>Aring</string>
       <string>Aringacute</string>
       <string>Atilde</string>
       <string>A-cy</string>
       <string>Abreve-cy</string>
       <string>Adieresis-cy</string>
-      <string>De-cy.loclBGR</string>
       <string>El-cy.loclBGR</string>
       <string>Alpha</string>
       <string>Delta</string>
       <string>Lambda</string>
       <string>Alphatonos</string>
+    </array>
+    <key>public.kern1.Aogonek</key>
+    <array>
+      <string>Aogonek</string>
+    </array>
+    <key>public.kern1.Aviet</key>
+    <array>
+      <string>Acircumflexacute</string>
+      <string>Acircumflexgrave</string>
+      <string>Acircumflexhookabove</string>
     </array>
     <key>public.kern1.B</key>
     <array>
@@ -55,14 +60,17 @@
     <key>public.kern1.C</key>
     <array>
       <string>C</string>
-      <string>Cacute</string>
-      <string>Ccaron</string>
       <string>Ccedilla</string>
-      <string>Ccircumflex</string>
       <string>Cdotaccent</string>
       <string>Es-cy</string>
       <string>E-cy</string>
       <string>Esdescender-cy</string>
+    </array>
+    <key>public.kern1.Caccent</key>
+    <array>
+      <string>Cacute</string>
+      <string>Ccaron</string>
+      <string>Ccircumflex</string>
     </array>
     <key>public.kern1.De</key>
     <array>
@@ -72,6 +80,10 @@
       <string>Endescender-cy</string>
       <string>Chedescender-cy</string>
     </array>
+    <key>public.kern1.DeBGR</key>
+    <array>
+      <string>De-cy.loclBGR</string>
+    </array>
     <key>public.kern1.E</key>
     <array>
       <string>AE</string>
@@ -79,13 +91,8 @@
       <string>E</string>
       <string>Eacute</string>
       <string>Ebreve</string>
-      <string>Ecaron</string>
       <string>Ecircumflex</string>
-      <string>Ecircumflexacute</string>
       <string>Ecircumflexdotbelow</string>
-      <string>Ecircumflexgrave</string>
-      <string>Ecircumflexhookabove</string>
-      <string>Ecircumflextilde</string>
       <string>Edblgrave</string>
       <string>Edieresis</string>
       <string>Edotaccent</string>
@@ -94,7 +101,6 @@
       <string>Ehookabove</string>
       <string>Einvertedbreve</string>
       <string>Emacron</string>
-      <string>Eogonek</string>
       <string>Etilde</string>
       <string>OE</string>
       <string>Ie-cy</string>
@@ -107,10 +113,25 @@
       <string>Sigma</string>
       <string>Epsilontonos</string>
     </array>
+    <key>public.kern1.Ecaron</key>
+    <array>
+      <string>Ecaron</string>
+    </array>
     <key>public.kern1.Ef</key>
     <array>
       <string>Ef-cy</string>
       <string>Phi</string>
+    </array>
+    <key>public.kern1.Eogonek</key>
+    <array>
+      <string>Eogonek</string>
+    </array>
+    <key>public.kern1.Eviet</key>
+    <array>
+      <string>Ecircumflexacute</string>
+      <string>Ecircumflexgrave</string>
+      <string>Ecircumflexhookabove</string>
+      <string>Ecircumflextilde</string>
     </array>
     <key>public.kern1.F</key>
     <array>
@@ -126,25 +147,15 @@
       <string>Gcommaaccent</string>
       <string>Gdotaccent</string>
     </array>
+    <key>public.kern1.Gheupturn</key>
+    <array>
+      <string>Gheupturn-cy</string>
+    </array>
     <key>public.kern1.H</key>
     <array>
       <string>H</string>
-      <string>Hbar</string>
       <string>Hcircumflex</string>
       <string>I</string>
-      <string>Iacute</string>
-      <string>Ibreve</string>
-      <string>Icircumflex</string>
-      <string>Idblgrave</string>
-      <string>Idieresis</string>
-      <string>Idotaccent</string>
-      <string>Idotbelow</string>
-      <string>Igrave</string>
-      <string>Ihookabove</string>
-      <string>Iinvertedbreve</string>
-      <string>Imacron</string>
-      <string>Iogonek</string>
-      <string>Itilde</string>
       <string>M</string>
       <string>N</string>
       <string>Nacute</string>
@@ -164,7 +175,6 @@
       <string>Dzhe-cy</string>
       <string>Yeru-cy</string>
       <string>I-cy</string>
-      <string>Yi-cy</string>
       <string>Ia-cy</string>
       <string>Cheverticalstroke-cy</string>
       <string>Palochka-cy</string>
@@ -180,15 +190,49 @@
       <string>Pi</string>
       <string>Etatonos</string>
       <string>Iotatonos</string>
-      <string>Iotadieresis</string>
     </array>
     <key>public.kern1.Hadescender</key>
     <array>
       <string>Hadescender-cy</string>
     </array>
+    <key>public.kern1.Hbar</key>
+    <array>
+      <string>Hbar</string>
+    </array>
+    <key>public.kern1.Iaccent</key>
+    <array>
+      <string>Iacute</string>
+      <string>Ibreve</string>
+      <string>Icircumflex</string>
+      <string>Idblgrave</string>
+      <string>Idieresis</string>
+      <string>Ihookabove</string>
+      <string>Iinvertedbreve</string>
+      <string>Imacron</string>
+      <string>Itilde</string>
+      <string>Yi-cy</string>
+      <string>Iotadieresis</string>
+    </array>
+    <key>public.kern1.Iaccentbelow</key>
+    <array>
+      <string>Idotbelow</string>
+    </array>
+    <key>public.kern1.Idot</key>
+    <array>
+      <string>Idotaccent</string>
+      <string>Igrave</string>
+    </array>
+    <key>public.kern1.Iogonek</key>
+    <array>
+      <string>Iogonek</string>
+    </array>
     <key>public.kern1.Izhitsa</key>
     <array>
       <string>Izhitsa-cy</string>
+    </array>
+    <key>public.kern1.Jaccent</key>
+    <array>
+      <string>Jcircumflex</string>
     </array>
     <key>public.kern1.K</key>
     <array>
@@ -197,24 +241,26 @@
       <string>Zhe-cy</string>
       <string>Ka-cy</string>
       <string>Kje-cy</string>
-      <string>Zhedescender-cy</string>
+      <string>Yusbig-cy</string>
       <string>Kaverticalstroke-cy</string>
       <string>Kabashkir-cy</string>
       <string>Zhebreve-cy</string>
       <string>Zhedieresis-cy</string>
       <string>Kappa</string>
-      <string>KaiSymbol</string>
     </array>
-    <key>public.kern1.Kadescender</key>
+    <key>public.kern1.Kai</key>
     <array>
-      <string>Kadescender-cy</string>
+      <string>KaiSymbol</string>
     </array>
     <key>public.kern1.L</key>
     <array>
       <string>L</string>
       <string>Lacute</string>
-      <string>Lcaron</string>
       <string>Lcommaaccent</string>
+    </array>
+    <key>public.kern1.Lcaron</key>
+    <array>
+      <string>Lcaron</string>
     </array>
     <key>public.kern1.Ldot</key>
     <array>
@@ -234,9 +280,7 @@
       <string>Oacute</string>
       <string>Obreve</string>
       <string>Ocircumflex</string>
-      <string>Ocircumflexacute</string>
       <string>Ocircumflexdotbelow</string>
-      <string>Ocircumflexgrave</string>
       <string>Ocircumflexhookabove</string>
       <string>Ocircumflextilde</string>
       <string>Odblgrave</string>
@@ -246,15 +290,11 @@
       <string>Odotbelow</string>
       <string>Ograve</string>
       <string>Ohookabove</string>
-      <string>Ohungarumlaut</string>
       <string>Oinvertedbreve</string>
       <string>Omacron</string>
       <string>Oogonek</string>
-      <string>Oslash</string>
-      <string>Oslashacute</string>
       <string>Otilde</string>
       <string>Otildemacron</string>
-      <string>Q</string>
       <string>Schwa</string>
       <string>O-cy</string>
       <string>Ereversed-cy</string>
@@ -267,8 +307,10 @@
       <string>Theta</string>
       <string>Omicron</string>
       <string>Omicrontonos</string>
-      <string>at</string>
-      <string>copyright</string>
+    </array>
+    <key>public.kern1.Oaccent</key>
+    <array>
+      <string>Ohungarumlaut</string>
     </array>
     <key>public.kern1.Ohorn</key>
     <array>
@@ -284,6 +326,16 @@
       <string>Omega</string>
       <string>Omegatonos</string>
     </array>
+    <key>public.kern1.Oslash</key>
+    <array>
+      <string>Oslash</string>
+      <string>Oslashacute</string>
+    </array>
+    <key>public.kern1.Oviet</key>
+    <array>
+      <string>Ocircumflexacute</string>
+      <string>Ocircumflexgrave</string>
+    </array>
     <key>public.kern1.P</key>
     <array>
       <string>P</string>
@@ -293,6 +345,10 @@
     <key>public.kern1.Psi</key>
     <array>
       <string>Psi</string>
+    </array>
+    <key>public.kern1.Q</key>
+    <array>
+      <string>Q</string>
     </array>
     <key>public.kern1.R</key>
     <array>
@@ -307,12 +363,15 @@
     <array>
       <string>S</string>
       <string>Sacute</string>
-      <string>Scaron</string>
       <string>Scedilla</string>
-      <string>Scircumflex</string>
       <string>Scommaaccent</string>
       <string>Germandbls</string>
       <string>Dze-cy</string>
+    </array>
+    <key>public.kern1.Saccent</key>
+    <array>
+      <string>Scaron</string>
+      <string>Scircumflex</string>
     </array>
     <key>public.kern1.Shha</key>
     <array>
@@ -329,18 +388,23 @@
     <key>public.kern1.T</key>
     <array>
       <string>T</string>
-      <string>Tbar</string>
-      <string>Tcaron</string>
       <string>Tcedilla</string>
       <string>Tcommaaccent</string>
       <string>Ge-cy</string>
-      <string>Gje-cy</string>
-      <string>Gheupturn-cy</string>
       <string>Te-cy</string>
       <string>Enghe-cy</string>
       <string>Gedescender-cy</string>
       <string>Gamma</string>
       <string>Tau</string>
+    </array>
+    <key>public.kern1.Taccent</key>
+    <array>
+      <string>Tcaron</string>
+      <string>Gje-cy</string>
+    </array>
+    <key>public.kern1.Tbar</key>
+    <array>
+      <string>Tbar</string>
     </array>
     <key>public.kern1.Thorn</key>
     <array>
@@ -349,7 +413,6 @@
     <key>public.kern1.U</key>
     <array>
       <string>J</string>
-      <string>Jcircumflex</string>
       <string>LJ</string>
       <string>NJ</string>
       <string>U</string>
@@ -361,7 +424,6 @@
       <string>Udotbelow</string>
       <string>Ugrave</string>
       <string>Uhookabove</string>
-      <string>Uhungarumlaut</string>
       <string>Uinvertedbreve</string>
       <string>Umacron</string>
       <string>Uogonek</string>
@@ -372,6 +434,10 @@
     <key>public.kern1.U-cy</key>
     <array>
       <string>U-cy</string>
+    </array>
+    <key>public.kern1.Uaccent</key>
+    <array>
+      <string>Uhungarumlaut</string>
     </array>
     <key>public.kern1.Uhorn</key>
     <array>
@@ -393,14 +459,16 @@
       <string>Ushort-cy</string>
       <string>Umacron-cy</string>
       <string>Udieresis-cy</string>
-      <string>Uhungarumlaut-cy</string>
       <string>We-cy</string>
+    </array>
+    <key>public.kern1.Vaccent</key>
+    <array>
+      <string>Uhungarumlaut-cy</string>
     </array>
     <key>public.kern1.X</key>
     <array>
       <string>X</string>
       <string>Ha-cy</string>
-      <string>Yusbig-cy</string>
       <string>Chi</string>
     </array>
     <key>public.kern1.Y</key>
@@ -422,12 +490,20 @@
     </array>
     <key>public.kern1.Z</key>
     <array>
-      <string>DZcaron</string>
       <string>Z</string>
-      <string>Zacute</string>
-      <string>Zcaron</string>
       <string>Zdotaccent</string>
       <string>Zeta</string>
+    </array>
+    <key>public.kern1.Zcaron</key>
+    <array>
+      <string>DZcaron</string>
+      <string>Zacute</string>
+      <string>Zcaron</string>
+    </array>
+    <key>public.kern1.Zhedescender</key>
+    <array>
+      <string>Zhedescender-cy</string>
+      <string>Kadescender-cy</string>
     </array>
     <key>public.kern1.a</key>
     <array>
@@ -455,6 +531,11 @@
       <string>trademark</string>
       <string>degree</string>
       <string>numero</string>
+    </array>
+    <key>public.kern1.at</key>
+    <array>
+      <string>at</string>
+      <string>copyright</string>
     </array>
     <key>public.kern1.backslash</key>
     <array>
@@ -541,13 +622,15 @@
     <key>public.kern1.d</key>
     <array>
       <string>d</string>
-      <string>dcroat</string>
       <string>l</string>
-      <string>lacute</string>
       <string>f_f_l</string>
       <string>fl</string>
       <string>palochka-cy</string>
       <string>exclam</string>
+    </array>
+    <key>public.kern1.daccent</key>
+    <array>
+      <string>lacute</string>
     </array>
     <key>public.kern1.dagger</key>
     <array>
@@ -556,6 +639,10 @@
     <key>public.kern1.daggerdbl</key>
     <array>
       <string>daggerdbl</string>
+    </array>
+    <key>public.kern1.dbar</key>
+    <array>
+      <string>dcroat</string>
     </array>
     <key>public.kern1.dcaron</key>
     <array>
@@ -572,13 +659,6 @@
       <string>tse-cy.loclBGR</string>
       <string>shcha-cy.loclBGR</string>
     </array>
-    <key>public.kern1.e</key>
-    <array>
-      <string>aeacute</string>
-      <string>iegrave-cy</string>
-      <string>aie-cy</string>
-      <string>aie-cy.ss01</string>
-    </array>
     <key>public.kern1.eight</key>
     <array>
       <string>eight</string>
@@ -587,13 +667,18 @@
     <array>
       <string>el-cy.loclBGR</string>
     </array>
+    <key>public.kern1.eogonek</key>
+    <array>
+      <string>eogonek</string>
+    </array>
     <key>public.kern1.epsilonaccent</key>
     <array>
       <string>epsilontonos</string>
     </array>
-    <key>public.kern1.eth</key>
+    <key>public.kern1.eta</key>
     <array>
-      <string>eth</string>
+      <string>eta</string>
+      <string>etatonos</string>
     </array>
     <key>public.kern1.f</key>
     <array>
@@ -634,19 +719,19 @@
       <string>gcaron</string>
       <string>gcircumflex</string>
     </array>
-    <key>public.kern1.ge</key>
+    <key>public.kern1.geSRB</key>
+    <array>
+      <string>ge-cy.loclBGR</string>
+      <string>ge-cy.loclSRB</string>
+      <string>gje-cy.loclMKD.ss01</string>
+    </array>
+    <key>public.kern1.gedescender</key>
     <array>
       <string>gedescender-cy</string>
     </array>
-    <key>public.kern1.geBGR</key>
+    <key>public.kern1.gheupturn</key>
     <array>
-      <string>ge-cy.loclBGR</string>
-    </array>
-    <key>public.kern1.geSRB</key>
-    <array>
-      <string>gje-cy.loclMKD</string>
-      <string>ge-cy.loclSRB</string>
-      <string>gje-cy.loclMKD.ss01</string>
+      <string>gheupturn-cy</string>
     </array>
     <key>public.kern1.guilsinglleft</key>
     <array>
@@ -657,6 +742,12 @@
     <array>
       <string>guillemetright</string>
       <string>guilsinglright</string>
+    </array>
+    <key>public.kern1.hadescender</key>
+    <array>
+      <string>zhedescender-cy</string>
+      <string>kadescender-cy</string>
+      <string>hadescender-cy</string>
     </array>
     <key>public.kern1.hyphen</key>
     <array>
@@ -673,7 +764,6 @@
       <string>Nj</string>
       <string>i</string>
       <string>idotaccent</string>
-      <string>idotbelow</string>
       <string>igrave</string>
       <string>j</string>
       <string>lj</string>
@@ -682,6 +772,7 @@
       <string>fi</string>
       <string>i-cy</string>
       <string>je-cy</string>
+      <string>je-cy.calt</string>
     </array>
     <key>public.kern1.iaccent</key>
     <array>
@@ -694,6 +785,7 @@
       <string>imacron</string>
       <string>itilde</string>
       <string>jcircumflex</string>
+      <string>jcircumflex.calt</string>
       <string>yi-cy</string>
     </array>
     <key>public.kern1.iacute</key>
@@ -706,18 +798,19 @@
     </array>
     <key>public.kern1.iogonek</key>
     <array>
+      <string>idotbelow</string>
       <string>iogonek</string>
     </array>
     <key>public.kern1.iota</key>
     <array>
       <string>alpha</string>
       <string>iota</string>
+      <string>alphatonos</string>
     </array>
     <key>public.kern1.iotaaccent</key>
     <array>
       <string>iotatonos</string>
       <string>iotadieresis</string>
-      <string>alphatonos</string>
     </array>
     <key>public.kern1.iotadieresistonos</key>
     <array>
@@ -726,6 +819,10 @@
     <key>public.kern1.izhitsa</key>
     <array>
       <string>izhitsa-cy</string>
+    </array>
+    <key>public.kern1.j</key>
+    <array>
+      <string>j.calt</string>
     </array>
     <key>public.kern1.jdotless</key>
     <array>
@@ -740,7 +837,6 @@
       <string>zhe-cy</string>
       <string>ka-cy</string>
       <string>yusbig-cy</string>
-      <string>zhedescender-cy</string>
       <string>kaverticalstroke-cy</string>
       <string>kabashkir-cy</string>
       <string>zhebreve-cy</string>
@@ -748,15 +844,14 @@
       <string>zhe-cy.loclBGR</string>
       <string>ka-cy.loclBGR</string>
       <string>kappa</string>
-      <string>kaiSymbol</string>
     </array>
     <key>public.kern1.kaccent</key>
     <array>
       <string>kje-cy</string>
     </array>
-    <key>public.kern1.kadescender</key>
+    <key>public.kern1.kai</key>
     <array>
-      <string>kadescender-cy</string>
+      <string>kaiSymbol</string>
     </array>
     <key>public.kern1.lambda</key>
     <array>
@@ -882,7 +977,6 @@
     <key>public.kern1.n</key>
     <array>
       <string>a</string>
-      <string>acircumflex</string>
       <string>acircumflexdotbelow</string>
       <string>adblgrave</string>
       <string>adotbelow</string>
@@ -900,8 +994,6 @@
       <string>shha-cy</string>
       <string>pe-cy.loclBGR</string>
       <string>te-cy.loclBGR</string>
-      <string>eta</string>
-      <string>_part.heng</string>
     </array>
     <key>public.kern1.naccent</key>
     <array>
@@ -912,9 +1004,7 @@
       <string>abrevegrave</string>
       <string>abrevehookabove</string>
       <string>abrevetilde</string>
-      <string>acircumflexacute</string>
-      <string>acircumflexgrave</string>
-      <string>acircumflexhookabove</string>
+      <string>acircumflex</string>
       <string>acircumflextilde</string>
       <string>adieresis</string>
       <string>ahookabove</string>
@@ -927,7 +1017,6 @@
       <string>ntilde</string>
       <string>abreve-cy</string>
       <string>adieresis-cy</string>
-      <string>etatonos</string>
     </array>
     <key>public.kern1.nine.ss02</key>
     <array>
@@ -937,36 +1026,44 @@
     <array>
       <string>numbersign</string>
     </array>
+    <key>public.kern1.nviet</key>
+    <array>
+      <string>acircumflexacute</string>
+      <string>acircumflexgrave</string>
+      <string>acircumflexhookabove</string>
+    </array>
     <key>public.kern1.o</key>
     <array>
       <string>ae</string>
+      <string>aeacute</string>
       <string>b</string>
       <string>e</string>
       <string>edotaccent</string>
       <string>edotbelow</string>
       <string>egrave</string>
-      <string>eogonek</string>
       <string>schwa</string>
       <string>o</string>
       <string>odotbelow</string>
       <string>ograve</string>
       <string>oogonek</string>
-      <string>oslash</string>
       <string>oe</string>
       <string>p</string>
       <string>thorn</string>
       <string>ae.ss01</string>
       <string>aeacute.ss01</string>
       <string>ie-cy</string>
+      <string>iegrave-cy</string>
       <string>o-cy</string>
       <string>er-cy</string>
       <string>ef-cy</string>
       <string>ereversed-cy</string>
       <string>iu-cy</string>
       <string>fita-cy</string>
+      <string>aie-cy</string>
       <string>schwa-cy</string>
       <string>obarred-cy</string>
       <string>iu-cy.loclBGR</string>
+      <string>aie-cy.ss01</string>
       <string>omicron</string>
       <string>rho</string>
       <string>upsilon</string>
@@ -977,14 +1074,12 @@
     </array>
     <key>public.kern1.oaccent</key>
     <array>
+      <string>eth</string>
       <string>eacute</string>
       <string>ebreve</string>
       <string>ecaron</string>
       <string>ecircumflex</string>
-      <string>ecircumflexacute</string>
       <string>ecircumflexdotbelow</string>
-      <string>ecircumflexgrave</string>
-      <string>ecircumflexhookabove</string>
       <string>ecircumflextilde</string>
       <string>edblgrave</string>
       <string>edieresis</string>
@@ -995,10 +1090,7 @@
       <string>oacute</string>
       <string>obreve</string>
       <string>ocircumflex</string>
-      <string>ocircumflexacute</string>
       <string>ocircumflexdotbelow</string>
-      <string>ocircumflexgrave</string>
-      <string>ocircumflexhookabove</string>
       <string>ocircumflextilde</string>
       <string>odblgrave</string>
       <string>odieresis</string>
@@ -1008,7 +1100,6 @@
       <string>ohungarumlaut</string>
       <string>oinvertedbreve</string>
       <string>omacron</string>
-      <string>oslashacute</string>
       <string>otilde</string>
       <string>otildemacron</string>
       <string>be-cy</string>
@@ -1019,18 +1110,14 @@
       <string>delta</string>
       <string>upsilontonos</string>
       <string>upsilondieresis</string>
-      <string>upsilondieresistonos</string>
       <string>omicrontonos</string>
     </array>
     <key>public.kern1.ohorn</key>
     <array>
       <string>ohorn</string>
+      <string>ohornacute</string>
       <string>ohorndotbelow</string>
       <string>ohorngrave</string>
-    </array>
-    <key>public.kern1.ohornaccent</key>
-    <array>
-      <string>ohornacute</string>
       <string>ohornhookabove</string>
       <string>ohorntilde</string>
     </array>
@@ -1045,6 +1132,20 @@
     <key>public.kern1.one.numr</key>
     <array>
       <string>one.numr</string>
+    </array>
+    <key>public.kern1.oslash</key>
+    <array>
+      <string>oslash</string>
+      <string>oslashacute</string>
+    </array>
+    <key>public.kern1.oviet</key>
+    <array>
+      <string>ecircumflexacute</string>
+      <string>ecircumflexgrave</string>
+      <string>ecircumflexhookabove</string>
+      <string>ocircumflexacute</string>
+      <string>ocircumflexgrave</string>
+      <string>ocircumflexhookabove</string>
     </array>
     <key>public.kern1.paragraph</key>
     <array>
@@ -1072,6 +1173,11 @@
       <string>ellipsis</string>
       <string>quotesinglbase</string>
       <string>quotedblbase</string>
+    </array>
+    <key>public.kern1.q</key>
+    <array>
+      <string>q</string>
+      <string>qa-cy</string>
     </array>
     <key>public.kern1.question</key>
     <array>
@@ -1171,6 +1277,22 @@
       <string>space</string>
       <string>nbspace</string>
     </array>
+    <key>public.kern1.spacingmark</key>
+    <array>
+      <string>dieresis</string>
+      <string>dotaccent</string>
+      <string>grave</string>
+      <string>acute</string>
+      <string>hungarumlaut</string>
+      <string>circumflex</string>
+      <string>caron</string>
+      <string>breve</string>
+      <string>ring</string>
+      <string>tilde</string>
+      <string>macron</string>
+      <string>cedilla</string>
+      <string>ogonek</string>
+    </array>
     <key>public.kern1.symbol</key>
     <array>
       <string>upArrow</string>
@@ -1186,9 +1308,12 @@
     <array>
       <string>t</string>
       <string>tbar</string>
+      <string>pi</string>
+    </array>
+    <key>public.kern1.taccentbelow</key>
+    <array>
       <string>tcedilla</string>
       <string>tcommaaccent</string>
-      <string>pi</string>
     </array>
     <key>public.kern1.tau</key>
     <array>
@@ -1201,12 +1326,15 @@
     <key>public.kern1.te</key>
     <array>
       <string>ge-cy</string>
-      <string>gje-cy</string>
-      <string>gheupturn-cy</string>
       <string>te-cy</string>
       <string>ghestroke-cy</string>
       <string>enghe-cy</string>
       <string>te-cy.loclSRB</string>
+    </array>
+    <key>public.kern1.teaccent</key>
+    <array>
+      <string>gje-cy</string>
+      <string>gje-cy.loclMKD</string>
     </array>
     <key>public.kern1.theta</key>
     <array>
@@ -1241,14 +1369,13 @@
     <array>
       <string>idotless</string>
       <string>jdotless</string>
-      <string>q</string>
       <string>u</string>
       <string>udotbelow</string>
       <string>ugrave</string>
+      <string>jdotless.calt</string>
       <string>a.ss01</string>
       <string>adotbelow.ss01</string>
       <string>agrave.ss01</string>
-      <string>aogonek.ss01</string>
       <string>g.ss01</string>
       <string>gcommaaccent.ss01</string>
       <string>gdotaccent.ss01</string>
@@ -1257,17 +1384,13 @@
       <string>el-cy</string>
       <string>em-cy</string>
       <string>en-cy</string>
-      <string>pe-cy</string>
       <string>che-cy</string>
       <string>sha-cy</string>
       <string>dzhe-cy</string>
       <string>yeru-cy</string>
-      <string>ia-cy</string>
       <string>cheverticalstroke-cy</string>
       <string>chekhakassian-cy</string>
-      <string>chedieresis-cy</string>
       <string>yerudieresis-cy</string>
-      <string>qa-cy</string>
       <string>iigrave-cy.loclBGR</string>
       <string>sha-cy.loclBGR</string>
       <string>a-cy.ss01</string>
@@ -1296,10 +1419,8 @@
       <string>abrevehookabove.ss01</string>
       <string>abrevetilde.ss01</string>
       <string>acircumflex.ss01</string>
-      <string>acircumflexacute.ss01</string>
       <string>acircumflexdotbelow.ss01</string>
       <string>acircumflexgrave.ss01</string>
-      <string>acircumflexhookabove.ss01</string>
       <string>acircumflextilde.ss01</string>
       <string>adblgrave.ss01</string>
       <string>adieresis.ss01</string>
@@ -1315,6 +1436,7 @@
       <string>iishort-cy</string>
       <string>imacron-cy</string>
       <string>idieresis-cy</string>
+      <string>chedieresis-cy</string>
       <string>iishort-cy.loclBGR</string>
       <string>pe-cy.loclSRB</string>
       <string>abreve-cy.ss01</string>
@@ -1324,12 +1446,9 @@
     <key>public.kern1.uhorn</key>
     <array>
       <string>uhorn</string>
+      <string>uhornacute</string>
       <string>uhorndotbelow</string>
       <string>uhorngrave</string>
-    </array>
-    <key>public.kern1.uhornaccent</key>
-    <array>
-      <string>uhornacute</string>
       <string>uhornhookabove</string>
       <string>uhorntilde</string>
     </array>
@@ -1340,6 +1459,16 @@
     <key>public.kern1.uogonek</key>
     <array>
       <string>uogonek</string>
+      <string>aogonek.ss01</string>
+    </array>
+    <key>public.kern1.upsilonaccent</key>
+    <array>
+      <string>upsilondieresistonos</string>
+    </array>
+    <key>public.kern1.uviet</key>
+    <array>
+      <string>acircumflexacute.ss01</string>
+      <string>acircumflexhookabove.ss01</string>
     </array>
     <key>public.kern1.v</key>
     <array>
@@ -1350,7 +1479,6 @@
       <string>wdieresis</string>
       <string>wgrave</string>
       <string>y</string>
-      <string>ydotbelow</string>
       <string>ygrave</string>
       <string>u-cy</string>
       <string>ustraight-cy</string>
@@ -1376,6 +1504,8 @@
     <array>
       <string>ve-cy</string>
       <string>ze-cy</string>
+      <string>pe-cy</string>
+      <string>ia-cy</string>
       <string>ghemiddlehook-cy</string>
       <string>zedescender-cy</string>
     </array>
@@ -1387,12 +1517,15 @@
     <array>
       <string>x</string>
       <string>ha-cy</string>
-      <string>hadescender-cy</string>
       <string>ampersand</string>
     </array>
     <key>public.kern1.xi</key>
     <array>
       <string>xi</string>
+    </array>
+    <key>public.kern1.ydotbelow</key>
+    <array>
+      <string>ydotbelow</string>
     </array>
     <key>public.kern1.z</key>
     <array>
@@ -1435,7 +1568,6 @@
       <string>Acircumflexgrave</string>
       <string>Acircumflexhookabove</string>
       <string>Acircumflextilde</string>
-      <string>Adblgrave</string>
       <string>Adieresis</string>
       <string>Adotbelow</string>
       <string>Agrave</string>
@@ -1446,12 +1578,9 @@
       <string>Aring</string>
       <string>Aringacute</string>
       <string>Atilde</string>
-      <string>AE</string>
-      <string>AEacute</string>
       <string>A-cy</string>
       <string>Abreve-cy</string>
       <string>Adieresis-cy</string>
-      <string>De-cy.loclBGR</string>
       <string>El-cy.loclBGR</string>
       <string>Alpha</string>
       <string>Delta</string>
@@ -1460,7 +1589,13 @@
     </array>
     <key>public.kern2.AE</key>
     <array>
+      <string>AE</string>
+      <string>AEacute</string>
       <string>Aie-cy</string>
+    </array>
+    <key>public.kern2.Aaccent</key>
+    <array>
+      <string>Adblgrave</string>
     </array>
     <key>public.kern2.Che</key>
     <array>
@@ -1476,6 +1611,15 @@
       <string>El-cy</string>
       <string>Lje-cy</string>
     </array>
+    <key>public.kern2.DeBGR</key>
+    <array>
+      <string>De-cy.loclBGR</string>
+    </array>
+    <key>public.kern2.Edblgrave</key>
+    <array>
+      <string>Edblgrave</string>
+      <string>Rdblgrave</string>
+    </array>
     <key>public.kern2.Ef</key>
     <array>
       <string>Ef-cy</string>
@@ -1484,27 +1628,22 @@
     <key>public.kern2.Eth</key>
     <array>
       <string>Eth</string>
-      <string>Dcaron</string>
+      <string>Dcroat</string>
+      <string>Ghestroke-cy</string>
     </array>
     <key>public.kern2.H</key>
     <array>
       <string>B</string>
       <string>D</string>
       <string>DZcaron</string>
-      <string>Dcroat</string>
       <string>Dzcaron</string>
       <string>E</string>
       <string>Eacute</string>
-      <string>Ebreve</string>
-      <string>Ecaron</string>
       <string>Ecircumflex</string>
       <string>Ecircumflexacute</string>
       <string>Ecircumflexdotbelow</string>
       <string>Ecircumflexgrave</string>
       <string>Ecircumflexhookabove</string>
-      <string>Ecircumflextilde</string>
-      <string>Edblgrave</string>
-      <string>Edieresis</string>
       <string>Edotaccent</string>
       <string>Edotbelow</string>
       <string>Egrave</string>
@@ -1515,27 +1654,12 @@
       <string>Etilde</string>
       <string>F</string>
       <string>H</string>
-      <string>Hbar</string>
       <string>Hcircumflex</string>
       <string>I</string>
-      <string>Iacute</string>
-      <string>Ibreve</string>
-      <string>Icircumflex</string>
-      <string>Idblgrave</string>
-      <string>Idieresis</string>
-      <string>Idotaccent</string>
-      <string>Idotbelow</string>
-      <string>Igrave</string>
-      <string>Ihookabove</string>
-      <string>Iinvertedbreve</string>
-      <string>Imacron</string>
-      <string>Iogonek</string>
-      <string>Itilde</string>
       <string>K</string>
       <string>Kcommaaccent</string>
       <string>L</string>
       <string>LJ</string>
-      <string>Lacute</string>
       <string>Lcaron</string>
       <string>Lcommaaccent</string>
       <string>Ldot</string>
@@ -1553,9 +1677,7 @@
       <string>Thorn</string>
       <string>R</string>
       <string>Racute</string>
-      <string>Rcaron</string>
       <string>Rcommaaccent</string>
-      <string>Rdblgrave</string>
       <string>Rinvertedbreve</string>
       <string>Germandbls</string>
       <string>Be-cy</string>
@@ -1565,7 +1687,6 @@
       <string>Gheupturn-cy</string>
       <string>Ie-cy</string>
       <string>Iegrave-cy</string>
-      <string>Io-cy</string>
       <string>Ii-cy</string>
       <string>Iishort-cy</string>
       <string>Iigrave-cy</string>
@@ -1583,9 +1704,7 @@
       <string>Yeru-cy</string>
       <string>Nje-cy</string>
       <string>I-cy</string>
-      <string>Yi-cy</string>
       <string>Iu-cy</string>
-      <string>Ghestroke-cy</string>
       <string>Ghemiddlehook-cy</string>
       <string>Kadescender-cy</string>
       <string>Kaverticalstroke-cy</string>
@@ -1593,7 +1712,6 @@
       <string>Enghe-cy</string>
       <string>Shha-cy</string>
       <string>Palochka-cy</string>
-      <string>Iebreve-cy</string>
       <string>Imacron-cy</string>
       <string>Idieresis-cy</string>
       <string>Gedescender-cy</string>
@@ -1611,13 +1729,58 @@
       <string>Epsilontonos</string>
       <string>Etatonos</string>
       <string>Iotatonos</string>
-      <string>Iotadieresis</string>
       <string>KaiSymbol</string>
       <string>numero</string>
+    </array>
+    <key>public.kern2.Haccent</key>
+    <array>
+      <string>Dcaron</string>
+      <string>Ebreve</string>
+      <string>Ecaron</string>
+      <string>Ecircumflextilde</string>
+      <string>Edieresis</string>
+      <string>Rcaron</string>
+      <string>Io-cy</string>
+      <string>Iebreve-cy</string>
+    </array>
+    <key>public.kern2.Hbar</key>
+    <array>
+      <string>Hbar</string>
     </array>
     <key>public.kern2.Ia</key>
     <array>
       <string>Ia-cy</string>
+    </array>
+    <key>public.kern2.Iaccent</key>
+    <array>
+      <string>Ibreve</string>
+      <string>Icircumflex</string>
+      <string>Idieresis</string>
+      <string>Igrave</string>
+      <string>Ihookabove</string>
+      <string>Iinvertedbreve</string>
+      <string>Imacron</string>
+      <string>Itilde</string>
+      <string>Yi-cy</string>
+      <string>Iotadieresis</string>
+    </array>
+    <key>public.kern2.Iaccentbelow</key>
+    <array>
+      <string>Idotbelow</string>
+    </array>
+    <key>public.kern2.Idblgrave</key>
+    <array>
+      <string>Idblgrave</string>
+    </array>
+    <key>public.kern2.Idot</key>
+    <array>
+      <string>Iacute</string>
+      <string>Idotaccent</string>
+      <string>Lacute</string>
+    </array>
+    <key>public.kern2.Iogonek</key>
+    <array>
+      <string>Iogonek</string>
     </array>
     <key>public.kern2.J</key>
     <array>
@@ -1652,7 +1815,6 @@
       <string>Ocircumflexgrave</string>
       <string>Ocircumflexhookabove</string>
       <string>Ocircumflextilde</string>
-      <string>Odblgrave</string>
       <string>Odieresis</string>
       <string>Odieresismacron</string>
       <string>Odotaccentmacron</string>
@@ -1669,8 +1831,6 @@
       <string>Oinvertedbreve</string>
       <string>Omacron</string>
       <string>Oogonek</string>
-      <string>Oslash</string>
-      <string>Oslashacute</string>
       <string>Otilde</string>
       <string>Otildemacron</string>
       <string>OE</string>
@@ -1688,13 +1848,20 @@
       <string>Theta</string>
       <string>Omicron</string>
       <string>Omicrontonos</string>
-      <string>at</string>
-      <string>copyright</string>
+    </array>
+    <key>public.kern2.Oaccent</key>
+    <array>
+      <string>Odblgrave</string>
     </array>
     <key>public.kern2.Omega</key>
     <array>
       <string>Omega</string>
       <string>Omegatonos</string>
+    </array>
+    <key>public.kern2.Oslash</key>
+    <array>
+      <string>Oslash</string>
+      <string>Oslashacute</string>
     </array>
     <key>public.kern2.Psi</key>
     <array>
@@ -1704,17 +1871,22 @@
     <array>
       <string>S</string>
       <string>Sacute</string>
-      <string>Scaron</string>
       <string>Scedilla</string>
       <string>Scircumflex</string>
       <string>Scommaaccent</string>
       <string>Dze-cy</string>
     </array>
+    <key>public.kern2.Saccent</key>
+    <array>
+      <string>Scaron</string>
+    </array>
+    <key>public.kern2.Sigma</key>
+    <array>
+      <string>Sigma</string>
+    </array>
     <key>public.kern2.T</key>
     <array>
       <string>T</string>
-      <string>Tbar</string>
-      <string>Tcaron</string>
       <string>Tcedilla</string>
       <string>Tcommaaccent</string>
       <string>Te-cy</string>
@@ -1724,13 +1896,20 @@
       <string>Kabashkir-cy</string>
       <string>Tau</string>
     </array>
+    <key>public.kern2.Taccent</key>
+    <array>
+      <string>Tcaron</string>
+    </array>
+    <key>public.kern2.Tbar</key>
+    <array>
+      <string>Tbar</string>
+    </array>
     <key>public.kern2.U</key>
     <array>
       <string>U</string>
       <string>Uacute</string>
       <string>Ubreve</string>
       <string>Ucircumflex</string>
-      <string>Udblgrave</string>
       <string>Udieresis</string>
       <string>Udotbelow</string>
       <string>Ugrave</string>
@@ -1756,6 +1935,10 @@
       <string>Udieresis-cy</string>
       <string>Uhungarumlaut-cy</string>
     </array>
+    <key>public.kern2.Uaccent</key>
+    <array>
+      <string>Udblgrave</string>
+    </array>
     <key>public.kern2.V</key>
     <array>
       <string>V</string>
@@ -1771,16 +1954,18 @@
     <array>
       <string>X</string>
       <string>Ha-cy</string>
-      <string>Yusbig-cy</string>
       <string>Hadescender-cy</string>
       <string>Chi</string>
+    </array>
+    <key>public.kern2.Xi</key>
+    <array>
+      <string>Xi</string>
     </array>
     <key>public.kern2.Y</key>
     <array>
       <string>Y</string>
       <string>Yacute</string>
       <string>Ycircumflex</string>
-      <string>Ydieresis</string>
       <string>Ydotbelow</string>
       <string>Ygrave</string>
       <string>Yhookabove</string>
@@ -1790,6 +1975,10 @@
       <string>Ustraightstroke-cy</string>
       <string>Upsilon</string>
       <string>Upsilontonos</string>
+    </array>
+    <key>public.kern2.Yaccent</key>
+    <array>
+      <string>Ydieresis</string>
       <string>Upsilondieresis</string>
     </array>
     <key>public.kern2.Yat</key>
@@ -1800,19 +1989,27 @@
     <array>
       <string>Z</string>
       <string>Zacute</string>
-      <string>Zcaron</string>
       <string>Zdotaccent</string>
+      <string>Zeta</string>
+    </array>
+    <key>public.kern2.Zcaron</key>
+    <array>
+      <string>Zcaron</string>
     </array>
     <key>public.kern2.Ze</key>
     <array>
       <string>Ze-cy</string>
       <string>Ereversed-cy</string>
       <string>Zedescender-cy</string>
+    </array>
+    <key>public.kern2.Zeaccent</key>
+    <array>
       <string>Zedieresis-cy</string>
     </array>
     <key>public.kern2.Zhe</key>
     <array>
       <string>Zhe-cy</string>
+      <string>Yusbig-cy</string>
       <string>Zhedescender-cy</string>
       <string>Zhebreve-cy</string>
       <string>Zhedieresis-cy</string>
@@ -1821,11 +2018,6 @@
     <array>
       <string>a</string>
       <string>aacute</string>
-      <string>acircumflex</string>
-      <string>acircumflexacute</string>
-      <string>acircumflexdotbelow</string>
-      <string>acircumflexgrave</string>
-      <string>acircumflexhookabove</string>
       <string>adotbelow</string>
       <string>aogonek</string>
       <string>aring</string>
@@ -1842,8 +2034,12 @@
       <string>abrevegrave</string>
       <string>abrevehookabove</string>
       <string>abrevetilde</string>
+      <string>acircumflex</string>
+      <string>acircumflexacute</string>
+      <string>acircumflexdotbelow</string>
+      <string>acircumflexgrave</string>
+      <string>acircumflexhookabove</string>
       <string>acircumflextilde</string>
-      <string>adblgrave</string>
       <string>adieresis</string>
       <string>agrave</string>
       <string>ahookabove</string>
@@ -1853,6 +2049,10 @@
       <string>atilde</string>
       <string>abreve-cy</string>
       <string>adieresis-cy</string>
+    </array>
+    <key>public.kern2.adblgrave</key>
+    <array>
+      <string>adblgrave</string>
     </array>
     <key>public.kern2.ampersand</key>
     <array>
@@ -1875,6 +2075,11 @@
       <string>registered</string>
       <string>trademark</string>
       <string>degree</string>
+    </array>
+    <key>public.kern2.at</key>
+    <array>
+      <string>at</string>
+      <string>copyright</string>
     </array>
     <key>public.kern2.backslash</key>
     <array>
@@ -1902,6 +2107,9 @@
     <array>
       <string>che-cy</string>
       <string>chekhakassian-cy</string>
+    </array>
+    <key>public.kern2.cheaccent</key>
+    <array>
       <string>chedieresis-cy</string>
     </array>
     <key>public.kern2.chi</key>
@@ -2015,15 +2223,15 @@
       <string>gcaron</string>
       <string>gcircumflex</string>
     </array>
-    <key>public.kern2.geBGR</key>
-    <array>
-      <string>ge-cy.loclBGR</string>
-    </array>
     <key>public.kern2.geSRB</key>
     <array>
-      <string>gje-cy.loclMKD</string>
+      <string>ge-cy.loclBGR</string>
       <string>ge-cy.loclSRB</string>
       <string>gje-cy.loclMKD.ss01</string>
+    </array>
+    <key>public.kern2.ghestroke</key>
+    <array>
+      <string>ghestroke-cy</string>
     </array>
     <key>public.kern2.guilsinglleft</key>
     <array>
@@ -2039,26 +2247,34 @@
     <array>
       <string>b</string>
       <string>h</string>
-      <string>hbar</string>
-      <string>hcircumflex</string>
       <string>k</string>
       <string>kcommaaccent</string>
       <string>l</string>
-      <string>lacute</string>
       <string>lcaron</string>
-      <string>lcommaaccent</string>
       <string>ldot</string>
       <string>lj</string>
       <string>thorn</string>
       <string>germandbls</string>
-      <string>tshe-cy</string>
-      <string>dje-cy</string>
       <string>shha-cy</string>
       <string>palochka-cy</string>
       <string>ka-cy.loclBGR</string>
       <string>iu-cy.loclBGR</string>
       <string>beta</string>
       <string>exclam</string>
+    </array>
+    <key>public.kern2.haccent</key>
+    <array>
+      <string>hcircumflex</string>
+    </array>
+    <key>public.kern2.hbar</key>
+    <array>
+      <string>hbar</string>
+      <string>tshe-cy</string>
+      <string>dje-cy</string>
+    </array>
+    <key>public.kern2.hdot</key>
+    <array>
+      <string>lacute</string>
     </array>
     <key>public.kern2.hyphen</key>
     <array>
@@ -2074,10 +2290,7 @@
       <string>i</string>
       <string>iacute</string>
       <string>idotaccent</string>
-      <string>idotbelow</string>
-      <string>iogonek</string>
       <string>i-cy</string>
-      <string>je-cy</string>
       <string>iotatonos</string>
     </array>
     <key>public.kern2.ia</key>
@@ -2088,7 +2301,6 @@
     <array>
       <string>ibreve</string>
       <string>icircumflex</string>
-      <string>idblgrave</string>
       <string>idieresis</string>
       <string>ihookabove</string>
       <string>iinvertedbreve</string>
@@ -2097,13 +2309,19 @@
       <string>yi-cy</string>
       <string>iotadieresis</string>
     </array>
-    <key>public.kern2.idotless</key>
+    <key>public.kern2.idblgrave</key>
     <array>
-      <string>_part.heng</string>
+      <string>idblgrave</string>
+      <string>rdblgrave</string>
     </array>
     <key>public.kern2.igrave</key>
     <array>
       <string>igrave</string>
+    </array>
+    <key>public.kern2.iogonek</key>
+    <array>
+      <string>idotbelow</string>
+      <string>iogonek</string>
     </array>
     <key>public.kern2.iotadieresistonos</key>
     <array>
@@ -2112,18 +2330,27 @@
     <key>public.kern2.j</key>
     <array>
       <string>j</string>
+      <string>j.calt</string>
+      <string>je-cy</string>
+      <string>je-cy.calt</string>
     </array>
     <key>public.kern2.jaccent</key>
     <array>
       <string>jcircumflex</string>
+      <string>jcircumflex.calt</string>
     </array>
     <key>public.kern2.jdotless</key>
     <array>
       <string>jdotless</string>
+      <string>jdotless.calt</string>
     </array>
     <key>public.kern2.lamda</key>
     <array>
       <string>lambda</string>
+    </array>
+    <key>public.kern2.lcommaaccent</key>
+    <array>
+      <string>lcommaaccent</string>
     </array>
     <key>public.kern2.leftanglebracket</key>
     <array>
@@ -2247,8 +2474,6 @@
       <string>p</string>
       <string>r</string>
       <string>racute</string>
-      <string>rcommaaccent</string>
-      <string>gje-cy</string>
       <string>ii-cy</string>
       <string>ka-cy</string>
       <string>kje-cy</string>
@@ -2262,7 +2487,6 @@
       <string>yeru-cy</string>
       <string>nje-cy</string>
       <string>iu-cy</string>
-      <string>ghestroke-cy</string>
       <string>ghemiddlehook-cy</string>
       <string>kadescender-cy</string>
       <string>kaverticalstroke-cy</string>
@@ -2283,13 +2507,13 @@
     <array>
       <string>ncaron</string>
       <string>ntilde</string>
-      <string>rcaron</string>
-      <string>rdblgrave</string>
       <string>rinvertedbreve</string>
+      <string>gje-cy</string>
       <string>iishort-cy</string>
       <string>iigrave-cy</string>
       <string>imacron-cy</string>
       <string>idieresis-cy</string>
+      <string>gje-cy.loclMKD</string>
     </array>
     <key>public.kern2.ne</key>
     <array>
@@ -2331,8 +2555,6 @@
       <string>ohorndotbelow</string>
       <string>ohungarumlaut</string>
       <string>oogonek</string>
-      <string>oslash</string>
-      <string>oslashacute</string>
       <string>oe</string>
       <string>q</string>
       <string>a.ss01</string>
@@ -2382,7 +2604,6 @@
       <string>ecircumflexgrave</string>
       <string>ecircumflexhookabove</string>
       <string>ecircumflextilde</string>
-      <string>edblgrave</string>
       <string>edieresis</string>
       <string>egrave</string>
       <string>ehookabove</string>
@@ -2396,7 +2617,6 @@
       <string>ocircumflexgrave</string>
       <string>ocircumflexhookabove</string>
       <string>ocircumflextilde</string>
-      <string>odblgrave</string>
       <string>odieresis</string>
       <string>odieresismacron</string>
       <string>odotaccentmacron</string>
@@ -2421,7 +2641,6 @@
       <string>acircumflexgrave.ss01</string>
       <string>acircumflexhookabove.ss01</string>
       <string>acircumflextilde.ss01</string>
-      <string>adblgrave.ss01</string>
       <string>adieresis.ss01</string>
       <string>agrave.ss01</string>
       <string>ahookabove.ss01</string>
@@ -2441,6 +2660,12 @@
       <string>abreve-cy.ss01</string>
       <string>delta</string>
     </array>
+    <key>public.kern2.odblgrave</key>
+    <array>
+      <string>edblgrave</string>
+      <string>odblgrave</string>
+      <string>adblgrave.ss01</string>
+    </array>
     <key>public.kern2.one</key>
     <array>
       <string>one</string>
@@ -2454,6 +2679,11 @@
       <string>onehalf</string>
       <string>onequarter</string>
       <string>one.numr</string>
+    </array>
+    <key>public.kern2.oslash</key>
+    <array>
+      <string>oslash</string>
+      <string>oslashacute</string>
     </array>
     <key>public.kern2.paragraph</key>
     <array>
@@ -2511,6 +2741,14 @@
       <string>tonos</string>
       <string>tonos.case</string>
     </array>
+    <key>public.kern2.raccent</key>
+    <array>
+      <string>rcaron</string>
+    </array>
+    <key>public.kern2.raccentbelow</key>
+    <array>
+      <string>rcommaaccent</string>
+    </array>
     <key>public.kern2.rho</key>
     <array>
       <string>rho</string>
@@ -2553,6 +2791,22 @@
       <string>space</string>
       <string>nbspace</string>
     </array>
+    <key>public.kern2.spacingmark</key>
+    <array>
+      <string>dieresis</string>
+      <string>dotaccent</string>
+      <string>grave</string>
+      <string>acute</string>
+      <string>hungarumlaut</string>
+      <string>circumflex</string>
+      <string>caron</string>
+      <string>breve</string>
+      <string>ring</string>
+      <string>tilde</string>
+      <string>macron</string>
+      <string>cedilla</string>
+      <string>ogonek</string>
+    </array>
     <key>public.kern2.symbol</key>
     <array>
       <string>upArrow</string>
@@ -2569,9 +2823,11 @@
       <string>t</string>
       <string>tbar</string>
       <string>tcaron</string>
+    </array>
+    <key>public.kern2.taccentbelow</key>
+    <array>
       <string>tcedilla</string>
       <string>tcommaaccent</string>
-      <string>hardsign-cy.loclBGR</string>
     </array>
     <key>public.kern2.tau</key>
     <array>
@@ -2582,6 +2838,7 @@
       <string>te-cy</string>
       <string>hardsign-cy</string>
       <string>kabashkir-cy</string>
+      <string>hardsign-cy.loclBGR</string>
       <string>te-cy.loclSRB</string>
     </array>
     <key>public.kern2.theta</key>
@@ -2637,7 +2894,6 @@
     <array>
       <string>ubreve</string>
       <string>ucircumflex</string>
-      <string>udblgrave</string>
       <string>udieresis</string>
       <string>ugrave</string>
       <string>uhookabove</string>
@@ -2654,11 +2910,18 @@
       <string>pe-cy.loclSRB.ss01</string>
       <string>te-cy.loclSRB.ss01</string>
       <string>upsilondieresis</string>
-      <string>upsilondieresistonos</string>
+    </array>
+    <key>public.kern2.udblgrave</key>
+    <array>
+      <string>udblgrave</string>
     </array>
     <key>public.kern2.underscore</key>
     <array>
       <string>underscore</string>
+    </array>
+    <key>public.kern2.upsilonaccent</key>
+    <array>
+      <string>upsilondieresistonos</string>
     </array>
     <key>public.kern2.v</key>
     <array>
