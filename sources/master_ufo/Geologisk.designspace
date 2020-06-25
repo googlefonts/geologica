@@ -16,8 +16,13 @@
     <axis tag="slnt" name="Slant" minimum="-12" maximum="0" default="0"/>
     <axis tag="DIAG" name="Diagonal Cuts" minimum="0" maximum="100" default="0"/>
   </axes>
-  
-    <rules>
+  <rules>
+    <rule name="BRACKET.140.200">
+      <conditionset>
+        <condition name="Weight" minimum="140" maximum="200"/>
+      </conditionset>
+      <sub name="colonsign" with="colonsign.BRACKET.140"/>
+    </rule>
     <rule name="ss01">
       <conditionset>
         <condition name="Italic" minimum="1" maximum="1"/>
@@ -71,6 +76,7 @@
       <conditionset>
         <condition name="Italic" minimum="1" maximum="1"/>
       </conditionset>
+<<<<<<< HEAD
       <sub name="a" with="a.ss01"/>
       <sub name="a-cy" with="a-cy.ss01"/>
       <sub name="aacute" with="aacute.ss01"/>
@@ -122,6 +128,11 @@
       </conditionset>
       <sub name="colonsign" with="colonsign.BRACKET.140"/>
     </rule>
+=======
+      <sub name="six" with="six.ss02"/>
+      <sub name="nine" with="nine.ss02"/>
+    </rule>	
+>>>>>>> origin/kostas
   </rules>
   <sources>
     <source filename="Geologisk-Light.ufo" name="Geologisk Light" familyname="Geologisk" stylename="Light">
