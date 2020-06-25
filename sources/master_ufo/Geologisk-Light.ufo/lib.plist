@@ -687,6 +687,10 @@
         <string>DIAG</string>
       </dict>
     </array>
+    <key>com.schriftgestaltung.customParameter.GSFont.DisplayStrings</key>
+    <array>
+      <string>2348</string>
+    </array>
     <key>com.schriftgestaltung.customParameter.GSFont.Family Alignment Zones</key>
     <array>
       <string>{1440, 30}</string>

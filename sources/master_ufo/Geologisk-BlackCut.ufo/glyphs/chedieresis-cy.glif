@@ -1,14 +1,14 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="chedieresis-cy" format="2">
-  <advance width="1252"/>
+  <advance width="1232"/>
   <unicode hex="04F5"/>
-  <anchor x="590" y="486" name="center"/>
-  <anchor x="1124" y="0" name="descender"/>
-  <anchor x="724" y="0" name="descender_alt"/>
-  <anchor x="590" y="1484" name="top"/>
+  <anchor x="570" y="486" name="center"/>
+  <anchor x="1104" y="0" name="descender"/>
+  <anchor x="704" y="0" name="descender_alt"/>
+  <anchor x="570" y="1484" name="top"/>
   <outline>
     <component base="che-cy"/>
-    <component base="dieresiscomb" xOffset="1228"/>
+    <component base="dieresiscomb" xOffset="1208"/>
   </outline>
   <lib>
     <dict>

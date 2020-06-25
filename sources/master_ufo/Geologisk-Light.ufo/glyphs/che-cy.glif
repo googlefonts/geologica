@@ -1,33 +1,33 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="che-cy" format="2">
-  <advance width="1056"/>
+  <advance width="1036"/>
   <unicode hex="0447"/>
-  <anchor x="494" y="448" name="center"/>
-  <anchor x="886" y="0" name="descender"/>
-  <anchor x="774" y="0" name="descender_alt"/>
-  <anchor x="492" y="960" name="top"/>
+  <anchor x="474" y="448" name="center"/>
+  <anchor x="866" y="0" name="descender"/>
+  <anchor x="754" y="0" name="descender_alt"/>
+  <anchor x="472" y="960" name="top"/>
   <outline>
     <contour>
-      <point x="774" y="0" type="line"/>
-      <point x="886" y="0" type="line"/>
-      <point x="886" y="960" type="line"/>
-      <point x="774" y="960" type="line"/>
-      <point x="774" y="518" type="line"/>
-      <point x="692" y="500"/>
-      <point x="608" y="488"/>
-      <point x="492" y="488" type="curve" smooth="yes"/>
-      <point x="288" y="488"/>
-      <point x="212" y="574"/>
-      <point x="212" y="740" type="curve" smooth="yes"/>
-      <point x="212" y="960" type="line"/>
-      <point x="100" y="960" type="line"/>
-      <point x="100" y="722" type="line" smooth="yes"/>
-      <point x="100" y="504"/>
-      <point x="210" y="380"/>
-      <point x="486" y="380" type="curve" smooth="yes"/>
-      <point x="590" y="380"/>
-      <point x="674" y="392"/>
-      <point x="774" y="418" type="curve"/>
+      <point x="754" y="0" type="line"/>
+      <point x="866" y="0" type="line"/>
+      <point x="866" y="960" type="line"/>
+      <point x="754" y="960" type="line"/>
+      <point x="754" y="518" type="line"/>
+      <point x="672" y="500"/>
+      <point x="588" y="488"/>
+      <point x="472" y="488" type="curve" smooth="yes"/>
+      <point x="268" y="488"/>
+      <point x="192" y="574"/>
+      <point x="192" y="740" type="curve" smooth="yes"/>
+      <point x="192" y="960" type="line"/>
+      <point x="80" y="960" type="line"/>
+      <point x="80" y="722" type="line" smooth="yes"/>
+      <point x="80" y="504"/>
+      <point x="190" y="380"/>
+      <point x="466" y="380" type="curve" smooth="yes"/>
+      <point x="570" y="380"/>
+      <point x="654" y="392"/>
+      <point x="754" y="418" type="curve"/>
     </contour>
   </outline>
   <lib>
@@ -44,7 +44,7 @@
         <integer>78</integer>
       </dict>
       <key>com.schriftgestaltung.Glyphs.glyph.leftMetricsKey</key>
-      <string>=u-60</string>
+      <string>=u-80</string>
       <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
       <string>=|n</string>
       <key>public.markColor</key>

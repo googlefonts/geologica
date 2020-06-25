@@ -3,16 +3,16 @@
   <anchor x="-784" y="1398" name="_top"/>
   <outline>
     <contour>
-      <point x="-618" y="1592" type="line"/>
       <point x="-512" y="1592" type="line"/>
       <point x="-638" y="1904" type="line"/>
       <point x="-756" y="1904" type="line"/>
+      <point x="-618" y="1592" type="line"/>
     </contour>
     <contour>
-      <point x="-966" y="1592" type="line"/>
       <point x="-862" y="1592" type="line"/>
       <point x="-992" y="1904" type="line"/>
       <point x="-1108" y="1904" type="line"/>
+      <point x="-966" y="1592" type="line"/>
     </contour>
   </outline>
   <lib>

@@ -1159,6 +1159,23 @@ tcedilla
 tcommaaccent
 ze-cy.loclBGR
 Kadescender-cy
+Hadescender-cy
+idotbelow
+Shcha-cy
+Tse-cy
+Endescender-cy
+Chedescender-cy
+tse-cy
+shcha-cy
+endescender-cy
+hadescender-cy
+chedescender-cy
+qa-cy
+tse-cy.loclBGR
+shcha-cy.loclBGR
+etatonos
+exclamdown
+
  ];
 
 @j_calt_src = [ j

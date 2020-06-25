@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="chekhakassian-cy" format="2">
-  <advance width="1056"/>
+  <advance width="1036"/>
   <unicode hex="04CC"/>
   <anchor x="776" y="0" name="_descender"/>
-  <anchor x="494" y="448" name="center"/>
-  <anchor x="886" y="0" name="descender"/>
-  <anchor x="774" y="0" name="descender_alt"/>
-  <anchor x="492" y="960" name="top"/>
+  <anchor x="474" y="448" name="center"/>
+  <anchor x="866" y="0" name="descender"/>
+  <anchor x="754" y="0" name="descender_alt"/>
+  <anchor x="472" y="960" name="top"/>
   <outline>
     <contour>
       <point x="540" y="-300" type="line"/>
