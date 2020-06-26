@@ -5,7 +5,19 @@ Fontbakery version: 0.7.26
 <details>
 <summary><b>[14] Family checks</b></summary>
 <details>
-<summary>🔥 <b>FAIL:</b> All tabular figures must have the same width across the RIBBI-family.</summary>
+<summary>ℹ <b>INFO:</b> Do we have the latest version of FontBakery installed?</summary>
+
+* [com.google.fonts/check/fontbakery_version](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/fontbakery_version)
+
+* ℹ **INFO** fontbakery (0.7.27)  - Well designed Font QA tool, written in Python 3
+  INSTALLED: 0.7.26
+  LATEST:    0.7.27
+
+* 🍞 **PASS** Font Bakery is up-to-date
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> All tabular figures must have the same width across the RIBBI-family.</summary>
 
 * [com.google.fonts/check/family/tnum_horizontal_metrics](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/family/tnum_horizontal_metrics)
 <pre>--- Rationale ---
@@ -20,20 +32,7 @@ https://www.typography.com/techniques/fonts-for-financials/#tabular-figs
 
 </pre>
 
-* 🔥 **FAIL** The most common tabular glyph width is 1296. But there are other tabular glyphs with different widths such as the following ones:
-	{1297: ['zero.tnum', 'one.tnum', 'two.tnum', 'three.tnum', 'four.tnum', 'five.tnum', 'six.tnum', 'seven.tnum', 'eight.tnum', 'nine.tnum', 'zero.tnum', 'one.tnum', 'two.tnum', 'three.tnum', 'four.tnum', 'five.tnum', 'six.tnum', 'seven.tnum', 'eight.tnum', 'nine.tnum'], 1298: ['zero.tnum', 'one.tnum', 'two.tnum', 'three.tnum', 'four.tnum', 'five.tnum', 'six.tnum', 'seven.tnum', 'eight.tnum', 'nine.tnum', 'zero.tnum', 'one.tnum', 'two.tnum', 'three.tnum', 'four.tnum', 'five.tnum', 'six.tnum', 'seven.tnum', 'eight.tnum', 'nine.tnum']}. [code: inconsistent-widths]
-
-</details>
-<details>
-<summary>ℹ <b>INFO:</b> Do we have the latest version of FontBakery installed?</summary>
-
-* [com.google.fonts/check/fontbakery_version](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/fontbakery_version)
-
-* ℹ **INFO** fontbakery (0.7.27)  - Well designed Font QA tool, written in Python 3
-  INSTALLED: 0.7.26
-  LATEST:    0.7.27
-
-* 🍞 **PASS** Font Bakery is up-to-date
+* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -217,7 +216,7 @@ https://github.com/googlefonts/fontbakery/blob/master/prebuilt/workarounds
 <br>
 </details>
 <details>
-<summary><b>[158] Geologisk-Black.ttf</b></summary>
+<summary><b>[158] Geologica-Black.ttf</b></summary>
 <details>
 <summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
 
@@ -300,34 +299,34 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: Tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni20A6	Contours detected: 2	Expected: 1, 3 or 5
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni20A6	Contours detected: 2	Expected: 1, 3 or 5
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
 Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
 Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -1373,11 +1372,11 @@ of hinted versus unhinted font files.
 
 * ℹ **INFO** Hinting filesize impact:
 
-	|  | ../fonts/static/ttfs/Geologisk-Black.ttf |
+	|  | ../fonts/static/ttfs/Geologica-Black.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 124.9kb |
-	| Hinted Size | 154.1kb |
-	| Increase | 29.2kb |
+	| Dehinted Size | 125.1kb |
+	| Hinted Size | 154.4kb |
+	| Increase | 29.3kb |
 	| Change   | 23.4 % |
  [code: size-impact]
 
@@ -1470,7 +1469,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, prep, GPOS, gasp, DSIG, cvt , loca]
+* ℹ **INFO** This font contains the following optional tables [cvt , loca, prep, gasp, fpgm, GSUB, GPOS, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -1513,7 +1512,7 @@ and separated by commas:
 
 </pre>
 
-* 🍞 **PASS** ../fonts/static/ttfs/Geologisk-Black.ttf is named canonically.
+* 🍞 **PASS** ../fonts/static/ttfs/Geologica-Black.ttf is named canonically.
 
 </details>
 <details>
@@ -1764,7 +1763,7 @@ Arabic / etc.
 
 * [com.google.fonts/check/font_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright)
 
-* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2020 The Geologisk Project Authors (https://github.com/monokromskriftforlag/geologisk)' matches canonical pattern.
+* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2020 The Geologica Project Authors (https://github.com/monokromskriftforlag/geologisk)' matches canonical pattern.
 * 🍞 **PASS** Name table copyright entries are good
 
 </details>
@@ -2631,7 +2630,7 @@ the same x,y coordinates.
 <br>
 </details>
 <details>
-<summary><b>[158] Geologisk-BlackItalic.ttf</b></summary>
+<summary><b>[158] Geologica-BlackItalic.ttf</b></summary>
 <details>
 <summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
 
@@ -2714,34 +2713,34 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: Tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni20A6	Contours detected: 2	Expected: 1, 3 or 5
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni20A6	Contours detected: 2	Expected: 1, 3 or 5
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
 Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
 Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -3787,11 +3786,11 @@ of hinted versus unhinted font files.
 
 * ℹ **INFO** Hinting filesize impact:
 
-	|  | ../fonts/static/ttfs/Geologisk-BlackItalic.ttf |
+	|  | ../fonts/static/ttfs/Geologica-BlackItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 126.8kb |
-	| Hinted Size | 156.5kb |
-	| Increase | 29.7kb |
+	| Dehinted Size | 127.0kb |
+	| Hinted Size | 156.8kb |
+	| Increase | 29.8kb |
 	| Change   | 23.4 % |
  [code: size-impact]
 
@@ -3884,7 +3883,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, prep, GPOS, gasp, DSIG, cvt , loca]
+* ℹ **INFO** This font contains the following optional tables [cvt , loca, prep, gasp, fpgm, GSUB, GPOS, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -3927,7 +3926,7 @@ and separated by commas:
 
 </pre>
 
-* 🍞 **PASS** ../fonts/static/ttfs/Geologisk-BlackItalic.ttf is named canonically.
+* 🍞 **PASS** ../fonts/static/ttfs/Geologica-BlackItalic.ttf is named canonically.
 
 </details>
 <details>
@@ -4178,7 +4177,7 @@ Arabic / etc.
 
 * [com.google.fonts/check/font_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright)
 
-* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2020 The Geologisk Project Authors (https://github.com/monokromskriftforlag/geologisk)' matches canonical pattern.
+* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2020 The Geologica Project Authors (https://github.com/monokromskriftforlag/geologisk)' matches canonical pattern.
 * 🍞 **PASS** Name table copyright entries are good
 
 </details>
@@ -5045,7 +5044,7 @@ the same x,y coordinates.
 <br>
 </details>
 <details>
-<summary><b>[158] Geologisk-Bold.ttf</b></summary>
+<summary><b>[158] Geologica-Bold.ttf</b></summary>
 <details>
 <summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
 
@@ -5127,33 +5126,33 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: Tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
 Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
 Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -6199,12 +6198,12 @@ of hinted versus unhinted font files.
 
 * ℹ **INFO** Hinting filesize impact:
 
-	|  | ../fonts/static/ttfs/Geologisk-Bold.ttf |
+	|  | ../fonts/static/ttfs/Geologica-Bold.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 125.1kb |
-	| Hinted Size | 155.8kb |
-	| Increase | 30.7kb |
-	| Change   | 24.5 % |
+	| Dehinted Size | 125.2kb |
+	| Hinted Size | 156.0kb |
+	| Increase | 30.8kb |
+	| Change   | 24.6 % |
  [code: size-impact]
 
 </details>
@@ -6296,7 +6295,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, prep, GPOS, gasp, DSIG, cvt , loca]
+* ℹ **INFO** This font contains the following optional tables [cvt , loca, prep, gasp, fpgm, GSUB, GPOS, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -6339,7 +6338,7 @@ and separated by commas:
 
 </pre>
 
-* 🍞 **PASS** ../fonts/static/ttfs/Geologisk-Bold.ttf is named canonically.
+* 🍞 **PASS** ../fonts/static/ttfs/Geologica-Bold.ttf is named canonically.
 
 </details>
 <details>
@@ -6590,7 +6589,7 @@ Arabic / etc.
 
 * [com.google.fonts/check/font_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright)
 
-* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2020 The Geologisk Project Authors (https://github.com/monokromskriftforlag/geologisk)' matches canonical pattern.
+* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2020 The Geologica Project Authors (https://github.com/monokromskriftforlag/geologisk)' matches canonical pattern.
 * 🍞 **PASS** Name table copyright entries are good
 
 </details>
@@ -7457,7 +7456,7 @@ the same x,y coordinates.
 <br>
 </details>
 <details>
-<summary><b>[158] Geologisk-BoldItalic.ttf</b></summary>
+<summary><b>[158] Geologica-BoldItalic.ttf</b></summary>
 <details>
 <summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
 
@@ -7539,33 +7538,33 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: Tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
 Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
 Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -8611,12 +8610,12 @@ of hinted versus unhinted font files.
 
 * ℹ **INFO** Hinting filesize impact:
 
-	|  | ../fonts/static/ttfs/Geologisk-BoldItalic.ttf |
+	|  | ../fonts/static/ttfs/Geologica-BoldItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 126.8kb |
-	| Hinted Size | 157.3kb |
-	| Increase | 30.5kb |
-	| Change   | 24.0 % |
+	| Dehinted Size | 127.0kb |
+	| Hinted Size | 157.6kb |
+	| Increase | 30.6kb |
+	| Change   | 24.1 % |
  [code: size-impact]
 
 </details>
@@ -8708,7 +8707,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, prep, GPOS, gasp, DSIG, cvt , loca]
+* ℹ **INFO** This font contains the following optional tables [cvt , loca, prep, gasp, fpgm, GSUB, GPOS, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -8751,7 +8750,7 @@ and separated by commas:
 
 </pre>
 
-* 🍞 **PASS** ../fonts/static/ttfs/Geologisk-BoldItalic.ttf is named canonically.
+* 🍞 **PASS** ../fonts/static/ttfs/Geologica-BoldItalic.ttf is named canonically.
 
 </details>
 <details>
@@ -9002,7 +9001,7 @@ Arabic / etc.
 
 * [com.google.fonts/check/font_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright)
 
-* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2020 The Geologisk Project Authors (https://github.com/monokromskriftforlag/geologisk)' matches canonical pattern.
+* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2020 The Geologica Project Authors (https://github.com/monokromskriftforlag/geologisk)' matches canonical pattern.
 * 🍞 **PASS** Name table copyright entries are good
 
 </details>
@@ -9869,7 +9868,7 @@ the same x,y coordinates.
 <br>
 </details>
 <details>
-<summary><b>[158] Geologisk-ExtraBold.ttf</b></summary>
+<summary><b>[158] Geologica-ExtraBold.ttf</b></summary>
 <details>
 <summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
 
@@ -9951,33 +9950,33 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: Tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
 Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
 Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -11023,11 +11022,11 @@ of hinted versus unhinted font files.
 
 * ℹ **INFO** Hinting filesize impact:
 
-	|  | ../fonts/static/ttfs/Geologisk-ExtraBold.ttf |
+	|  | ../fonts/static/ttfs/Geologica-ExtraBold.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 125.2kb |
-	| Hinted Size | 165.3kb |
-	| Increase | 40.1kb |
+	| Dehinted Size | 125.4kb |
+	| Hinted Size | 165.6kb |
+	| Increase | 40.3kb |
 	| Change   | 32.1 % |
  [code: size-impact]
 
@@ -11120,7 +11119,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, prep, GPOS, gasp, DSIG, cvt , loca]
+* ℹ **INFO** This font contains the following optional tables [cvt , loca, prep, gasp, fpgm, GSUB, GPOS, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -11163,7 +11162,7 @@ and separated by commas:
 
 </pre>
 
-* 🍞 **PASS** ../fonts/static/ttfs/Geologisk-ExtraBold.ttf is named canonically.
+* 🍞 **PASS** ../fonts/static/ttfs/Geologica-ExtraBold.ttf is named canonically.
 
 </details>
 <details>
@@ -11414,7 +11413,7 @@ Arabic / etc.
 
 * [com.google.fonts/check/font_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright)
 
-* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2020 The Geologisk Project Authors (https://github.com/monokromskriftforlag/geologisk)' matches canonical pattern.
+* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2020 The Geologica Project Authors (https://github.com/monokromskriftforlag/geologisk)' matches canonical pattern.
 * 🍞 **PASS** Name table copyright entries are good
 
 </details>
@@ -12281,7 +12280,7 @@ the same x,y coordinates.
 <br>
 </details>
 <details>
-<summary><b>[158] Geologisk-ExtraBoldItalic.ttf</b></summary>
+<summary><b>[158] Geologica-ExtraBoldItalic.ttf</b></summary>
 <details>
 <summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
 
@@ -12363,33 +12362,33 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: Tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
 Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
 Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -13435,12 +13434,12 @@ of hinted versus unhinted font files.
 
 * ℹ **INFO** Hinting filesize impact:
 
-	|  | ../fonts/static/ttfs/Geologisk-ExtraBoldItalic.ttf |
+	|  | ../fonts/static/ttfs/Geologica-ExtraBoldItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 127.0kb |
-	| Hinted Size | 167.4kb |
-	| Increase | 40.4kb |
-	| Change   | 31.8 % |
+	| Dehinted Size | 127.2kb |
+	| Hinted Size | 167.8kb |
+	| Increase | 40.6kb |
+	| Change   | 31.9 % |
  [code: size-impact]
 
 </details>
@@ -13532,7 +13531,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, prep, GPOS, gasp, DSIG, cvt , loca]
+* ℹ **INFO** This font contains the following optional tables [cvt , loca, prep, gasp, fpgm, GSUB, GPOS, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -13575,7 +13574,7 @@ and separated by commas:
 
 </pre>
 
-* 🍞 **PASS** ../fonts/static/ttfs/Geologisk-ExtraBoldItalic.ttf is named canonically.
+* 🍞 **PASS** ../fonts/static/ttfs/Geologica-ExtraBoldItalic.ttf is named canonically.
 
 </details>
 <details>
@@ -13826,7 +13825,7 @@ Arabic / etc.
 
 * [com.google.fonts/check/font_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright)
 
-* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2020 The Geologisk Project Authors (https://github.com/monokromskriftforlag/geologisk)' matches canonical pattern.
+* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2020 The Geologica Project Authors (https://github.com/monokromskriftforlag/geologisk)' matches canonical pattern.
 * 🍞 **PASS** Name table copyright entries are good
 
 </details>
@@ -14693,7 +14692,7 @@ the same x,y coordinates.
 <br>
 </details>
 <details>
-<summary><b>[158] Geologisk-ExtraLight.ttf</b></summary>
+<summary><b>[158] Geologica-ExtraLight.ttf</b></summary>
 <details>
 <summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
 
@@ -14782,32 +14781,32 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: Tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
 Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
 Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -15853,11 +15852,11 @@ of hinted versus unhinted font files.
 
 * ℹ **INFO** Hinting filesize impact:
 
-	|  | ../fonts/static/ttfs/Geologisk-ExtraLight.ttf |
+	|  | ../fonts/static/ttfs/Geologica-ExtraLight.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 125.5kb |
-	| Hinted Size | 154.3kb |
-	| Increase | 28.8kb |
+	| Dehinted Size | 125.7kb |
+	| Hinted Size | 154.6kb |
+	| Increase | 28.9kb |
 	| Change   | 23.0 % |
  [code: size-impact]
 
@@ -15950,7 +15949,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, prep, GPOS, gasp, DSIG, cvt , loca]
+* ℹ **INFO** This font contains the following optional tables [cvt , loca, prep, gasp, fpgm, GSUB, GPOS, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -15993,7 +15992,7 @@ and separated by commas:
 
 </pre>
 
-* 🍞 **PASS** ../fonts/static/ttfs/Geologisk-ExtraLight.ttf is named canonically.
+* 🍞 **PASS** ../fonts/static/ttfs/Geologica-ExtraLight.ttf is named canonically.
 
 </details>
 <details>
@@ -16236,7 +16235,7 @@ Arabic / etc.
 
 * [com.google.fonts/check/font_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright)
 
-* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2020 The Geologisk Project Authors (https://github.com/monokromskriftforlag/geologisk)' matches canonical pattern.
+* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2020 The Geologica Project Authors (https://github.com/monokromskriftforlag/geologisk)' matches canonical pattern.
 * 🍞 **PASS** Name table copyright entries are good
 
 </details>
@@ -17103,7 +17102,7 @@ the same x,y coordinates.
 <br>
 </details>
 <details>
-<summary><b>[158] Geologisk-ExtraLightItalic.ttf</b></summary>
+<summary><b>[158] Geologica-ExtraLightItalic.ttf</b></summary>
 <details>
 <summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
 
@@ -17192,32 +17191,32 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: Tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
 Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
 Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -18263,11 +18262,11 @@ of hinted versus unhinted font files.
 
 * ℹ **INFO** Hinting filesize impact:
 
-	|  | ../fonts/static/ttfs/Geologisk-ExtraLightItalic.ttf |
+	|  | ../fonts/static/ttfs/Geologica-ExtraLightItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 127.2kb |
-	| Hinted Size | 156.5kb |
-	| Increase | 29.3kb |
+	| Dehinted Size | 127.3kb |
+	| Hinted Size | 156.8kb |
+	| Increase | 29.4kb |
 	| Change   | 23.1 % |
  [code: size-impact]
 
@@ -18360,7 +18359,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, prep, GPOS, gasp, DSIG, cvt , loca]
+* ℹ **INFO** This font contains the following optional tables [cvt , loca, prep, gasp, fpgm, GSUB, GPOS, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -18403,7 +18402,7 @@ and separated by commas:
 
 </pre>
 
-* 🍞 **PASS** ../fonts/static/ttfs/Geologisk-ExtraLightItalic.ttf is named canonically.
+* 🍞 **PASS** ../fonts/static/ttfs/Geologica-ExtraLightItalic.ttf is named canonically.
 
 </details>
 <details>
@@ -18646,7 +18645,7 @@ Arabic / etc.
 
 * [com.google.fonts/check/font_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright)
 
-* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2020 The Geologisk Project Authors (https://github.com/monokromskriftforlag/geologisk)' matches canonical pattern.
+* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2020 The Geologica Project Authors (https://github.com/monokromskriftforlag/geologisk)' matches canonical pattern.
 * 🍞 **PASS** Name table copyright entries are good
 
 </details>
@@ -19513,7 +19512,7 @@ the same x,y coordinates.
 <br>
 </details>
 <details>
-<summary><b>[158] Geologisk-Italic.ttf</b></summary>
+<summary><b>[158] Geologica-Italic.ttf</b></summary>
 <details>
 <summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
 
@@ -19594,32 +19593,32 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: Tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
 Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
 Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -20665,11 +20664,11 @@ of hinted versus unhinted font files.
 
 * ℹ **INFO** Hinting filesize impact:
 
-	|  | ../fonts/static/ttfs/Geologisk-Italic.ttf |
+	|  | ../fonts/static/ttfs/Geologica-Italic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 126.6kb |
-	| Hinted Size | 167.8kb |
-	| Increase | 41.1kb |
+	| Dehinted Size | 126.8kb |
+	| Hinted Size | 168.1kb |
+	| Increase | 41.3kb |
 	| Change   | 32.5 % |
  [code: size-impact]
 
@@ -20762,7 +20761,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, prep, GPOS, gasp, DSIG, cvt , loca]
+* ℹ **INFO** This font contains the following optional tables [cvt , loca, prep, gasp, fpgm, GSUB, GPOS, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -20805,7 +20804,7 @@ and separated by commas:
 
 </pre>
 
-* 🍞 **PASS** ../fonts/static/ttfs/Geologisk-Italic.ttf is named canonically.
+* 🍞 **PASS** ../fonts/static/ttfs/Geologica-Italic.ttf is named canonically.
 
 </details>
 <details>
@@ -21056,7 +21055,7 @@ Arabic / etc.
 
 * [com.google.fonts/check/font_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright)
 
-* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2020 The Geologisk Project Authors (https://github.com/monokromskriftforlag/geologisk)' matches canonical pattern.
+* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2020 The Geologica Project Authors (https://github.com/monokromskriftforlag/geologisk)' matches canonical pattern.
 * 🍞 **PASS** Name table copyright entries are good
 
 </details>
@@ -21923,7 +21922,7 @@ the same x,y coordinates.
 <br>
 </details>
 <details>
-<summary><b>[158] Geologisk-Light.ttf</b></summary>
+<summary><b>[158] Geologica-Light.ttf</b></summary>
 <details>
 <summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
 
@@ -22004,32 +22003,32 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: Tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
 Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
 Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -23075,11 +23074,11 @@ of hinted versus unhinted font files.
 
 * ℹ **INFO** Hinting filesize impact:
 
-	|  | ../fonts/static/ttfs/Geologisk-Light.ttf |
+	|  | ../fonts/static/ttfs/Geologica-Light.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 125.0kb |
-	| Hinted Size | 154.3kb |
-	| Increase | 29.3kb |
+	| Dehinted Size | 125.1kb |
+	| Hinted Size | 154.6kb |
+	| Increase | 29.4kb |
 	| Change   | 23.5 % |
  [code: size-impact]
 
@@ -23172,7 +23171,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, prep, GPOS, gasp, DSIG, cvt , loca]
+* ℹ **INFO** This font contains the following optional tables [cvt , loca, prep, gasp, fpgm, GSUB, GPOS, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -23215,7 +23214,7 @@ and separated by commas:
 
 </pre>
 
-* 🍞 **PASS** ../fonts/static/ttfs/Geologisk-Light.ttf is named canonically.
+* 🍞 **PASS** ../fonts/static/ttfs/Geologica-Light.ttf is named canonically.
 
 </details>
 <details>
@@ -23466,7 +23465,7 @@ Arabic / etc.
 
 * [com.google.fonts/check/font_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright)
 
-* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2020 The Geologisk Project Authors (https://github.com/monokromskriftforlag/geologisk)' matches canonical pattern.
+* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2020 The Geologica Project Authors (https://github.com/monokromskriftforlag/geologisk)' matches canonical pattern.
 * 🍞 **PASS** Name table copyright entries are good
 
 </details>
@@ -24333,7 +24332,7 @@ the same x,y coordinates.
 <br>
 </details>
 <details>
-<summary><b>[158] Geologisk-LightItalic.ttf</b></summary>
+<summary><b>[158] Geologica-LightItalic.ttf</b></summary>
 <details>
 <summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
 
@@ -24414,32 +24413,32 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: Tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
 Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
 Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -25485,10 +25484,10 @@ of hinted versus unhinted font files.
 
 * ℹ **INFO** Hinting filesize impact:
 
-	|  | ../fonts/static/ttfs/Geologisk-LightItalic.ttf |
+	|  | ../fonts/static/ttfs/Geologica-LightItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 126.8kb |
-	| Hinted Size | 156.5kb |
+	| Dehinted Size | 127.0kb |
+	| Hinted Size | 156.8kb |
 	| Increase | 29.7kb |
 	| Change   | 23.4 % |
  [code: size-impact]
@@ -25582,7 +25581,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, prep, GPOS, gasp, DSIG, cvt , loca]
+* ℹ **INFO** This font contains the following optional tables [cvt , loca, prep, gasp, fpgm, GSUB, GPOS, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -25625,7 +25624,7 @@ and separated by commas:
 
 </pre>
 
-* 🍞 **PASS** ../fonts/static/ttfs/Geologisk-LightItalic.ttf is named canonically.
+* 🍞 **PASS** ../fonts/static/ttfs/Geologica-LightItalic.ttf is named canonically.
 
 </details>
 <details>
@@ -25876,7 +25875,7 @@ Arabic / etc.
 
 * [com.google.fonts/check/font_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright)
 
-* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2020 The Geologisk Project Authors (https://github.com/monokromskriftforlag/geologisk)' matches canonical pattern.
+* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2020 The Geologica Project Authors (https://github.com/monokromskriftforlag/geologisk)' matches canonical pattern.
 * 🍞 **PASS** Name table copyright entries are good
 
 </details>
@@ -26743,7 +26742,7 @@ the same x,y coordinates.
 <br>
 </details>
 <details>
-<summary><b>[158] Geologisk-Medium.ttf</b></summary>
+<summary><b>[158] Geologica-Medium.ttf</b></summary>
 <details>
 <summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
 
@@ -26824,32 +26823,32 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: Tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
 Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
 Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -27895,11 +27894,11 @@ of hinted versus unhinted font files.
 
 * ℹ **INFO** Hinting filesize impact:
 
-	|  | ../fonts/static/ttfs/Geologisk-Medium.ttf |
+	|  | ../fonts/static/ttfs/Geologica-Medium.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 125.0kb |
-	| Hinted Size | 155.1kb |
-	| Increase | 30.1kb |
+	| Dehinted Size | 125.2kb |
+	| Hinted Size | 155.4kb |
+	| Increase | 30.2kb |
 	| Change   | 24.1 % |
  [code: size-impact]
 
@@ -27992,7 +27991,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, prep, GPOS, gasp, DSIG, cvt , loca]
+* ℹ **INFO** This font contains the following optional tables [cvt , loca, prep, gasp, fpgm, GSUB, GPOS, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -28035,7 +28034,7 @@ and separated by commas:
 
 </pre>
 
-* 🍞 **PASS** ../fonts/static/ttfs/Geologisk-Medium.ttf is named canonically.
+* 🍞 **PASS** ../fonts/static/ttfs/Geologica-Medium.ttf is named canonically.
 
 </details>
 <details>
@@ -28286,7 +28285,7 @@ Arabic / etc.
 
 * [com.google.fonts/check/font_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright)
 
-* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2020 The Geologisk Project Authors (https://github.com/monokromskriftforlag/geologisk)' matches canonical pattern.
+* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2020 The Geologica Project Authors (https://github.com/monokromskriftforlag/geologisk)' matches canonical pattern.
 * 🍞 **PASS** Name table copyright entries are good
 
 </details>
@@ -29153,7 +29152,7 @@ the same x,y coordinates.
 <br>
 </details>
 <details>
-<summary><b>[158] Geologisk-MediumItalic.ttf</b></summary>
+<summary><b>[158] Geologica-MediumItalic.ttf</b></summary>
 <details>
 <summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
 
@@ -29234,32 +29233,32 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: Tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
 Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
 Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -30305,11 +30304,11 @@ of hinted versus unhinted font files.
 
 * ℹ **INFO** Hinting filesize impact:
 
-	|  | ../fonts/static/ttfs/Geologisk-MediumItalic.ttf |
+	|  | ../fonts/static/ttfs/Geologica-MediumItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 126.8kb |
-	| Hinted Size | 157.3kb |
-	| Increase | 30.5kb |
+	| Dehinted Size | 127.0kb |
+	| Hinted Size | 157.6kb |
+	| Increase | 30.6kb |
 	| Change   | 24.1 % |
  [code: size-impact]
 
@@ -30402,7 +30401,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, prep, GPOS, gasp, DSIG, cvt , loca]
+* ℹ **INFO** This font contains the following optional tables [cvt , loca, prep, gasp, fpgm, GSUB, GPOS, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -30445,7 +30444,7 @@ and separated by commas:
 
 </pre>
 
-* 🍞 **PASS** ../fonts/static/ttfs/Geologisk-MediumItalic.ttf is named canonically.
+* 🍞 **PASS** ../fonts/static/ttfs/Geologica-MediumItalic.ttf is named canonically.
 
 </details>
 <details>
@@ -30696,7 +30695,7 @@ Arabic / etc.
 
 * [com.google.fonts/check/font_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright)
 
-* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2020 The Geologisk Project Authors (https://github.com/monokromskriftforlag/geologisk)' matches canonical pattern.
+* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2020 The Geologica Project Authors (https://github.com/monokromskriftforlag/geologisk)' matches canonical pattern.
 * 🍞 **PASS** Name table copyright entries are good
 
 </details>
@@ -31563,7 +31562,7 @@ the same x,y coordinates.
 <br>
 </details>
 <details>
-<summary><b>[158] Geologisk-Regular.ttf</b></summary>
+<summary><b>[158] Geologica-Regular.ttf</b></summary>
 <details>
 <summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
 
@@ -31644,32 +31643,32 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: Tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
 Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
 Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -32715,11 +32714,11 @@ of hinted versus unhinted font files.
 
 * ℹ **INFO** Hinting filesize impact:
 
-	|  | ../fonts/static/ttfs/Geologisk-Regular.ttf |
+	|  | ../fonts/static/ttfs/Geologica-Regular.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 124.9kb |
-	| Hinted Size | 165.2kb |
-	| Increase | 40.3kb |
+	| Dehinted Size | 125.1kb |
+	| Hinted Size | 165.6kb |
+	| Increase | 40.5kb |
 	| Change   | 32.3 % |
  [code: size-impact]
 
@@ -32812,7 +32811,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, prep, GPOS, gasp, DSIG, cvt , loca]
+* ℹ **INFO** This font contains the following optional tables [cvt , loca, prep, gasp, fpgm, GSUB, GPOS, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -32855,7 +32854,7 @@ and separated by commas:
 
 </pre>
 
-* 🍞 **PASS** ../fonts/static/ttfs/Geologisk-Regular.ttf is named canonically.
+* 🍞 **PASS** ../fonts/static/ttfs/Geologica-Regular.ttf is named canonically.
 
 </details>
 <details>
@@ -33106,7 +33105,7 @@ Arabic / etc.
 
 * [com.google.fonts/check/font_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright)
 
-* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2020 The Geologisk Project Authors (https://github.com/monokromskriftforlag/geologisk)' matches canonical pattern.
+* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2020 The Geologica Project Authors (https://github.com/monokromskriftforlag/geologisk)' matches canonical pattern.
 * 🍞 **PASS** Name table copyright entries are good
 
 </details>
@@ -33973,7 +33972,7 @@ the same x,y coordinates.
 <br>
 </details>
 <details>
-<summary><b>[158] Geologisk-SemiBold.ttf</b></summary>
+<summary><b>[158] Geologica-SemiBold.ttf</b></summary>
 <details>
 <summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
 
@@ -34055,33 +34054,33 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: Tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
 Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
 Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -35127,12 +35126,12 @@ of hinted versus unhinted font files.
 
 * ℹ **INFO** Hinting filesize impact:
 
-	|  | ../fonts/static/ttfs/Geologisk-SemiBold.ttf |
+	|  | ../fonts/static/ttfs/Geologica-SemiBold.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 125.1kb |
-	| Hinted Size | 155.1kb |
-	| Increase | 30.1kb |
-	| Change   | 24.0 % |
+	| Dehinted Size | 125.2kb |
+	| Hinted Size | 155.4kb |
+	| Increase | 30.2kb |
+	| Change   | 24.1 % |
  [code: size-impact]
 
 </details>
@@ -35224,7 +35223,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, prep, GPOS, gasp, DSIG, cvt , loca]
+* ℹ **INFO** This font contains the following optional tables [cvt , loca, prep, gasp, fpgm, GSUB, GPOS, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -35267,7 +35266,7 @@ and separated by commas:
 
 </pre>
 
-* 🍞 **PASS** ../fonts/static/ttfs/Geologisk-SemiBold.ttf is named canonically.
+* 🍞 **PASS** ../fonts/static/ttfs/Geologica-SemiBold.ttf is named canonically.
 
 </details>
 <details>
@@ -35518,7 +35517,7 @@ Arabic / etc.
 
 * [com.google.fonts/check/font_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright)
 
-* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2020 The Geologisk Project Authors (https://github.com/monokromskriftforlag/geologisk)' matches canonical pattern.
+* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2020 The Geologica Project Authors (https://github.com/monokromskriftforlag/geologisk)' matches canonical pattern.
 * 🍞 **PASS** Name table copyright entries are good
 
 </details>
@@ -36385,7 +36384,7 @@ the same x,y coordinates.
 <br>
 </details>
 <details>
-<summary><b>[158] Geologisk-SemiBoldItalic.ttf</b></summary>
+<summary><b>[158] Geologica-SemiBoldItalic.ttf</b></summary>
 <details>
 <summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
 
@@ -36467,33 +36466,33 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: Tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
 Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
 Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -37539,11 +37538,11 @@ of hinted versus unhinted font files.
 
 * ℹ **INFO** Hinting filesize impact:
 
-	|  | ../fonts/static/ttfs/Geologisk-SemiBoldItalic.ttf |
+	|  | ../fonts/static/ttfs/Geologica-SemiBoldItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 126.9kb |
-	| Hinted Size | 157.3kb |
-	| Increase | 30.4kb |
+	| Dehinted Size | 127.1kb |
+	| Hinted Size | 157.6kb |
+	| Increase | 30.5kb |
 	| Change   | 24.0 % |
  [code: size-impact]
 
@@ -37636,7 +37635,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, prep, GPOS, gasp, DSIG, cvt , loca]
+* ℹ **INFO** This font contains the following optional tables [cvt , loca, prep, gasp, fpgm, GSUB, GPOS, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -37679,7 +37678,7 @@ and separated by commas:
 
 </pre>
 
-* 🍞 **PASS** ../fonts/static/ttfs/Geologisk-SemiBoldItalic.ttf is named canonically.
+* 🍞 **PASS** ../fonts/static/ttfs/Geologica-SemiBoldItalic.ttf is named canonically.
 
 </details>
 <details>
@@ -37930,7 +37929,7 @@ Arabic / etc.
 
 * [com.google.fonts/check/font_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright)
 
-* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2020 The Geologisk Project Authors (https://github.com/monokromskriftforlag/geologisk)' matches canonical pattern.
+* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2020 The Geologica Project Authors (https://github.com/monokromskriftforlag/geologisk)' matches canonical pattern.
 * 🍞 **PASS** Name table copyright entries are good
 
 </details>
@@ -38797,7 +38796,7 @@ the same x,y coordinates.
 <br>
 </details>
 <details>
-<summary><b>[158] Geologisk-Thin.ttf</b></summary>
+<summary><b>[158] Geologica-Thin.ttf</b></summary>
 <details>
 <summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
 
@@ -38886,32 +38885,32 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: Tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
 Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
 Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -39957,11 +39956,11 @@ of hinted versus unhinted font files.
 
 * ℹ **INFO** Hinting filesize impact:
 
-	|  | ../fonts/static/ttfs/Geologisk-Thin.ttf |
+	|  | ../fonts/static/ttfs/Geologica-Thin.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 119.6kb |
-	| Hinted Size | 147.1kb |
-	| Increase | 27.5kb |
+	| Dehinted Size | 119.8kb |
+	| Hinted Size | 147.4kb |
+	| Increase | 27.6kb |
 	| Change   | 23.0 % |
  [code: size-impact]
 
@@ -40054,7 +40053,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, prep, GPOS, gasp, DSIG, cvt , loca]
+* ℹ **INFO** This font contains the following optional tables [cvt , loca, prep, gasp, fpgm, GSUB, GPOS, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -40097,7 +40096,7 @@ and separated by commas:
 
 </pre>
 
-* 🍞 **PASS** ../fonts/static/ttfs/Geologisk-Thin.ttf is named canonically.
+* 🍞 **PASS** ../fonts/static/ttfs/Geologica-Thin.ttf is named canonically.
 
 </details>
 <details>
@@ -40340,7 +40339,7 @@ Arabic / etc.
 
 * [com.google.fonts/check/font_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright)
 
-* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2020 The Geologisk Project Authors (https://github.com/monokromskriftforlag/geologisk)' matches canonical pattern.
+* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2020 The Geologica Project Authors (https://github.com/monokromskriftforlag/geologisk)' matches canonical pattern.
 * 🍞 **PASS** Name table copyright entries are good
 
 </details>
@@ -41207,7 +41206,7 @@ the same x,y coordinates.
 <br>
 </details>
 <details>
-<summary><b>[158] Geologisk-ThinItalic.ttf</b></summary>
+<summary><b>[158] Geologica-ThinItalic.ttf</b></summary>
 <details>
 <summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
 
@@ -41296,32 +41295,32 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: Tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
 Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
 Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -42367,12 +42366,12 @@ of hinted versus unhinted font files.
 
 * ℹ **INFO** Hinting filesize impact:
 
-	|  | ../fonts/static/ttfs/Geologisk-ThinItalic.ttf |
+	|  | ../fonts/static/ttfs/Geologica-ThinItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 120.9kb |
-	| Hinted Size | 149.0kb |
-	| Increase | 28.1kb |
-	| Change   | 23.2 % |
+	| Dehinted Size | 121.1kb |
+	| Hinted Size | 149.3kb |
+	| Increase | 28.2kb |
+	| Change   | 23.3 % |
  [code: size-impact]
 
 </details>
@@ -42464,7 +42463,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, prep, GPOS, gasp, DSIG, cvt , loca]
+* ℹ **INFO** This font contains the following optional tables [cvt , loca, prep, gasp, fpgm, GSUB, GPOS, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -42507,7 +42506,7 @@ and separated by commas:
 
 </pre>
 
-* 🍞 **PASS** ../fonts/static/ttfs/Geologisk-ThinItalic.ttf is named canonically.
+* 🍞 **PASS** ../fonts/static/ttfs/Geologica-ThinItalic.ttf is named canonically.
 
 </details>
 <details>
@@ -42750,7 +42749,7 @@ Arabic / etc.
 
 * [com.google.fonts/check/font_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright)
 
-* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2020 The Geologisk Project Authors (https://github.com/monokromskriftforlag/geologisk)' matches canonical pattern.
+* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2020 The Geologica Project Authors (https://github.com/monokromskriftforlag/geologisk)' matches canonical pattern.
 * 🍞 **PASS** Name table copyright entries are good
 
 </details>
@@ -43617,7 +43616,7 @@ the same x,y coordinates.
 <br>
 </details>
 <details>
-<summary><b>[158] GeologiskCut-Black.ttf</b></summary>
+<summary><b>[158] GeologicaSharp-Black.ttf</b></summary>
 <details>
 <summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
 
@@ -43700,34 +43699,62 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: Tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni20A6	Contours detected: 2	Expected: 1, 3 or 5
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni20A6	Contours detected: 2	Expected: 1, 3 or 5
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
 Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
 Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2 [code: contour-count]
+
+</details>
+<details>
+<summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters.</summary>
+
+* [com.google.fonts/check/name/family_and_style_max_length](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length)
+<pre>--- Rationale ---
+
+According to a GlyphsApp tutorial [1], in order to make sure all versions of
+Windows recognize it as a valid font file, we must make sure that the
+concatenated length of the familyname (NameID.FONT_FAMILY_NAME) and style
+(NameID.FONT_SUBFAMILY_NAME) strings in the name table do not exceed 20
+characters.
+
+After discussing the problem in more detail at `FontBakery issue #2179 [2] we
+decided that allowing up to 27 chars would still be on the safe side, though.
+
+[1]
+https://glyphsapp.com/tutorials/multiple-masters-part-3-setting-up-instances
+[2] https://github.com/googlefonts/fontbakery/issues/2179
+
+
+</pre>
+
+* ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
+ FONT_FAMILY_NAME = 'Geologica Sharp Black' / SUBFAMILY_NAME = 'Regular'
+
+Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
 
 </details>
 <details>
@@ -44773,12 +44800,12 @@ of hinted versus unhinted font files.
 
 * ℹ **INFO** Hinting filesize impact:
 
-	|  | ../fonts/static/ttfs/GeologiskCut-Black.ttf |
+	|  | ../fonts/static/ttfs/GeologicaSharp-Black.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 124.9kb |
-	| Hinted Size | 154.4kb |
-	| Increase | 29.5kb |
-	| Change   | 23.6 % |
+	| Dehinted Size | 125.1kb |
+	| Hinted Size | 154.7kb |
+	| Increase | 29.6kb |
+	| Change   | 23.7 % |
  [code: size-impact]
 
 </details>
@@ -44870,7 +44897,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, prep, GPOS, gasp, DSIG, cvt , loca]
+* ℹ **INFO** This font contains the following optional tables [cvt , loca, prep, gasp, fpgm, GSUB, GPOS, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -44913,7 +44940,7 @@ and separated by commas:
 
 </pre>
 
-* 🍞 **PASS** ../fonts/static/ttfs/GeologiskCut-Black.ttf is named canonically.
+* 🍞 **PASS** ../fonts/static/ttfs/GeologicaSharp-Black.ttf is named canonically.
 
 </details>
 <details>
@@ -45164,7 +45191,7 @@ Arabic / etc.
 
 * [com.google.fonts/check/font_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright)
 
-* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2020 The Geologisk Project Authors (https://github.com/monokromskriftforlag/geologisk)' matches canonical pattern.
+* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2020 The Geologica Project Authors (https://github.com/monokromskriftforlag/geologisk)' matches canonical pattern.
 * 🍞 **PASS** Name table copyright entries are good
 
 </details>
@@ -45438,31 +45465,6 @@ Bit 3 = Force ppem to integer values for all internal scaler math;
 </pre>
 
 * 🍞 **PASS** OK
-
-</details>
-<details>
-<summary>🍞 <b>PASS:</b> Combined length of family and style must not exceed 27 characters.</summary>
-
-* [com.google.fonts/check/name/family_and_style_max_length](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length)
-<pre>--- Rationale ---
-
-According to a GlyphsApp tutorial [1], in order to make sure all versions of
-Windows recognize it as a valid font file, we must make sure that the
-concatenated length of the familyname (NameID.FONT_FAMILY_NAME) and style
-(NameID.FONT_SUBFAMILY_NAME) strings in the name table do not exceed 20
-characters.
-
-After discussing the problem in more detail at `FontBakery issue #2179 [2] we
-decided that allowing up to 27 chars would still be on the safe side, though.
-
-[1]
-https://glyphsapp.com/tutorials/multiple-masters-part-3-setting-up-instances
-[2] https://github.com/googlefonts/fontbakery/issues/2179
-
-
-</pre>
-
-* 🍞 **PASS** All name entries are good.
 
 </details>
 <details>
@@ -46031,7 +46033,7 @@ the same x,y coordinates.
 <br>
 </details>
 <details>
-<summary><b>[158] GeologiskCut-BlackItalic.ttf</b></summary>
+<summary><b>[158] GeologicaSharp-BlackItalic.ttf</b></summary>
 <details>
 <summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
 
@@ -46114,34 +46116,34 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: Tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni20A6	Contours detected: 2	Expected: 1, 3 or 5
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni20A6	Contours detected: 2	Expected: 1, 3 or 5
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
 Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
 Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -47187,11 +47189,11 @@ of hinted versus unhinted font files.
 
 * ℹ **INFO** Hinting filesize impact:
 
-	|  | ../fonts/static/ttfs/GeologiskCut-BlackItalic.ttf |
+	|  | ../fonts/static/ttfs/GeologicaSharp-BlackItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 126.9kb |
-	| Hinted Size | 156.3kb |
-	| Increase | 29.4kb |
+	| Dehinted Size | 127.1kb |
+	| Hinted Size | 156.6kb |
+	| Increase | 29.5kb |
 	| Change   | 23.2 % |
  [code: size-impact]
 
@@ -47284,7 +47286,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, prep, GPOS, gasp, DSIG, cvt , loca]
+* ℹ **INFO** This font contains the following optional tables [cvt , loca, prep, gasp, fpgm, GSUB, GPOS, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -47327,7 +47329,7 @@ and separated by commas:
 
 </pre>
 
-* 🍞 **PASS** ../fonts/static/ttfs/GeologiskCut-BlackItalic.ttf is named canonically.
+* 🍞 **PASS** ../fonts/static/ttfs/GeologicaSharp-BlackItalic.ttf is named canonically.
 
 </details>
 <details>
@@ -47578,7 +47580,7 @@ Arabic / etc.
 
 * [com.google.fonts/check/font_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright)
 
-* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2020 The Geologisk Project Authors (https://github.com/monokromskriftforlag/geologisk)' matches canonical pattern.
+* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2020 The Geologica Project Authors (https://github.com/monokromskriftforlag/geologisk)' matches canonical pattern.
 * 🍞 **PASS** Name table copyright entries are good
 
 </details>
@@ -48445,7 +48447,7 @@ the same x,y coordinates.
 <br>
 </details>
 <details>
-<summary><b>[158] GeologiskCut-Bold.ttf</b></summary>
+<summary><b>[158] GeologicaSharp-Bold.ttf</b></summary>
 <details>
 <summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
 
@@ -48527,33 +48529,33 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: Tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
 Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
 Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -49599,12 +49601,12 @@ of hinted versus unhinted font files.
 
 * ℹ **INFO** Hinting filesize impact:
 
-	|  | ../fonts/static/ttfs/GeologiskCut-Bold.ttf |
+	|  | ../fonts/static/ttfs/GeologicaSharp-Bold.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 125.7kb |
-	| Hinted Size | 160.8kb |
-	| Increase | 35.1kb |
-	| Change   | 27.9 % |
+	| Dehinted Size | 125.9kb |
+	| Hinted Size | 161.1kb |
+	| Increase | 35.2kb |
+	| Change   | 28.0 % |
  [code: size-impact]
 
 </details>
@@ -49696,7 +49698,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, prep, GPOS, gasp, DSIG, cvt , loca]
+* ℹ **INFO** This font contains the following optional tables [cvt , loca, prep, gasp, fpgm, GSUB, GPOS, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -49739,7 +49741,7 @@ and separated by commas:
 
 </pre>
 
-* 🍞 **PASS** ../fonts/static/ttfs/GeologiskCut-Bold.ttf is named canonically.
+* 🍞 **PASS** ../fonts/static/ttfs/GeologicaSharp-Bold.ttf is named canonically.
 
 </details>
 <details>
@@ -49990,7 +49992,7 @@ Arabic / etc.
 
 * [com.google.fonts/check/font_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright)
 
-* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2020 The Geologisk Project Authors (https://github.com/monokromskriftforlag/geologisk)' matches canonical pattern.
+* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2020 The Geologica Project Authors (https://github.com/monokromskriftforlag/geologisk)' matches canonical pattern.
 * 🍞 **PASS** Name table copyright entries are good
 
 </details>
@@ -50857,7 +50859,7 @@ the same x,y coordinates.
 <br>
 </details>
 <details>
-<summary><b>[158] GeologiskCut-BoldItalic.ttf</b></summary>
+<summary><b>[158] GeologicaSharp-BoldItalic.ttf</b></summary>
 <details>
 <summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
 
@@ -50939,33 +50941,33 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: Tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
 Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
 Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -52011,12 +52013,12 @@ of hinted versus unhinted font files.
 
 * ℹ **INFO** Hinting filesize impact:
 
-	|  | ../fonts/static/ttfs/GeologiskCut-BoldItalic.ttf |
+	|  | ../fonts/static/ttfs/GeologicaSharp-BoldItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 127.0kb |
-	| Hinted Size | 161.4kb |
-	| Increase | 34.5kb |
-	| Change   | 27.1 % |
+	| Dehinted Size | 127.2kb |
+	| Hinted Size | 161.8kb |
+	| Increase | 34.6kb |
+	| Change   | 27.2 % |
  [code: size-impact]
 
 </details>
@@ -52108,7 +52110,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, prep, GPOS, gasp, DSIG, cvt , loca]
+* ℹ **INFO** This font contains the following optional tables [cvt , loca, prep, gasp, fpgm, GSUB, GPOS, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -52151,7 +52153,7 @@ and separated by commas:
 
 </pre>
 
-* 🍞 **PASS** ../fonts/static/ttfs/GeologiskCut-BoldItalic.ttf is named canonically.
+* 🍞 **PASS** ../fonts/static/ttfs/GeologicaSharp-BoldItalic.ttf is named canonically.
 
 </details>
 <details>
@@ -52402,7 +52404,7 @@ Arabic / etc.
 
 * [com.google.fonts/check/font_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright)
 
-* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2020 The Geologisk Project Authors (https://github.com/monokromskriftforlag/geologisk)' matches canonical pattern.
+* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2020 The Geologica Project Authors (https://github.com/monokromskriftforlag/geologisk)' matches canonical pattern.
 * 🍞 **PASS** Name table copyright entries are good
 
 </details>
@@ -53269,7 +53271,7 @@ the same x,y coordinates.
 <br>
 </details>
 <details>
-<summary><b>[158] GeologiskCut-ExtraBold.ttf</b></summary>
+<summary><b>[158] GeologicaSharp-ExtraBold.ttf</b></summary>
 <details>
 <summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
 
@@ -53351,33 +53353,33 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: Tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
 Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
 Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -53403,7 +53405,7 @@ https://glyphsapp.com/tutorials/multiple-masters-part-3-setting-up-instances
 </pre>
 
 * ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
- FONT_FAMILY_NAME = 'Geologisk Cut ExtraBold' / SUBFAMILY_NAME = 'Regular'
+ FONT_FAMILY_NAME = 'Geologica Sharp ExtraBold' / SUBFAMILY_NAME = 'Regular'
 
 Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
 
@@ -54451,11 +54453,11 @@ of hinted versus unhinted font files.
 
 * ℹ **INFO** Hinting filesize impact:
 
-	|  | ../fonts/static/ttfs/GeologiskCut-ExtraBold.ttf |
+	|  | ../fonts/static/ttfs/GeologicaSharp-ExtraBold.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 125.8kb |
-	| Hinted Size | 161.3kb |
-	| Increase | 35.6kb |
+	| Dehinted Size | 126.0kb |
+	| Hinted Size | 161.7kb |
+	| Increase | 35.7kb |
 	| Change   | 28.3 % |
  [code: size-impact]
 
@@ -54548,7 +54550,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, prep, GPOS, gasp, DSIG, cvt , loca]
+* ℹ **INFO** This font contains the following optional tables [cvt , loca, prep, gasp, fpgm, GSUB, GPOS, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -54591,7 +54593,7 @@ and separated by commas:
 
 </pre>
 
-* 🍞 **PASS** ../fonts/static/ttfs/GeologiskCut-ExtraBold.ttf is named canonically.
+* 🍞 **PASS** ../fonts/static/ttfs/GeologicaSharp-ExtraBold.ttf is named canonically.
 
 </details>
 <details>
@@ -54842,7 +54844,7 @@ Arabic / etc.
 
 * [com.google.fonts/check/font_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright)
 
-* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2020 The Geologisk Project Authors (https://github.com/monokromskriftforlag/geologisk)' matches canonical pattern.
+* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2020 The Geologica Project Authors (https://github.com/monokromskriftforlag/geologisk)' matches canonical pattern.
 * 🍞 **PASS** Name table copyright entries are good
 
 </details>
@@ -55684,7 +55686,7 @@ the same x,y coordinates.
 <br>
 </details>
 <details>
-<summary><b>[158] GeologiskCut-ExtraBoldItalic.ttf</b></summary>
+<summary><b>[158] GeologicaSharp-ExtraBoldItalic.ttf</b></summary>
 <details>
 <summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
 
@@ -55766,33 +55768,33 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: Tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
 Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
 Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -55818,7 +55820,7 @@ https://glyphsapp.com/tutorials/multiple-masters-part-3-setting-up-instances
 </pre>
 
 * ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
- FONT_FAMILY_NAME = 'Geologisk Cut ExtraBold' / SUBFAMILY_NAME = 'Italic'
+ FONT_FAMILY_NAME = 'Geologica Sharp ExtraBold' / SUBFAMILY_NAME = 'Italic'
 
 Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
 
@@ -56866,12 +56868,12 @@ of hinted versus unhinted font files.
 
 * ℹ **INFO** Hinting filesize impact:
 
-	|  | ../fonts/static/ttfs/GeologiskCut-ExtraBoldItalic.ttf |
+	|  | ../fonts/static/ttfs/GeologicaSharp-ExtraBoldItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 127.2kb |
-	| Hinted Size | 162.4kb |
-	| Increase | 35.3kb |
-	| Change   | 27.7 % |
+	| Dehinted Size | 127.4kb |
+	| Hinted Size | 162.8kb |
+	| Increase | 35.4kb |
+	| Change   | 27.8 % |
  [code: size-impact]
 
 </details>
@@ -56963,7 +56965,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, prep, GPOS, gasp, DSIG, cvt , loca]
+* ℹ **INFO** This font contains the following optional tables [cvt , loca, prep, gasp, fpgm, GSUB, GPOS, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -57006,7 +57008,7 @@ and separated by commas:
 
 </pre>
 
-* 🍞 **PASS** ../fonts/static/ttfs/GeologiskCut-ExtraBoldItalic.ttf is named canonically.
+* 🍞 **PASS** ../fonts/static/ttfs/GeologicaSharp-ExtraBoldItalic.ttf is named canonically.
 
 </details>
 <details>
@@ -57257,7 +57259,7 @@ Arabic / etc.
 
 * [com.google.fonts/check/font_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright)
 
-* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2020 The Geologisk Project Authors (https://github.com/monokromskriftforlag/geologisk)' matches canonical pattern.
+* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2020 The Geologica Project Authors (https://github.com/monokromskriftforlag/geologisk)' matches canonical pattern.
 * 🍞 **PASS** Name table copyright entries are good
 
 </details>
@@ -58099,7 +58101,7 @@ the same x,y coordinates.
 <br>
 </details>
 <details>
-<summary><b>[158] GeologiskCut-ExtraLight.ttf</b></summary>
+<summary><b>[158] GeologicaSharp-ExtraLight.ttf</b></summary>
 <details>
 <summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
 
@@ -58188,32 +58190,32 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: Tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
 Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
 Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -58239,7 +58241,7 @@ https://glyphsapp.com/tutorials/multiple-masters-part-3-setting-up-instances
 </pre>
 
 * ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
- FONT_FAMILY_NAME = 'Geologisk Cut ExtraLight' / SUBFAMILY_NAME = 'Regular'
+ FONT_FAMILY_NAME = 'Geologica Sharp ExtraLight' / SUBFAMILY_NAME = 'Regular'
 
 Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
 
@@ -59287,11 +59289,11 @@ of hinted versus unhinted font files.
 
 * ℹ **INFO** Hinting filesize impact:
 
-	|  | ../fonts/static/ttfs/GeologiskCut-ExtraLight.ttf |
+	|  | ../fonts/static/ttfs/GeologicaSharp-ExtraLight.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 126.1kb |
-	| Hinted Size | 154.5kb |
-	| Increase | 28.5kb |
+	| Dehinted Size | 126.3kb |
+	| Hinted Size | 154.9kb |
+	| Increase | 28.6kb |
 	| Change   | 22.6 % |
  [code: size-impact]
 
@@ -59384,7 +59386,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, prep, GPOS, gasp, DSIG, cvt , loca]
+* ℹ **INFO** This font contains the following optional tables [cvt , loca, prep, gasp, fpgm, GSUB, GPOS, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -59427,7 +59429,7 @@ and separated by commas:
 
 </pre>
 
-* 🍞 **PASS** ../fonts/static/ttfs/GeologiskCut-ExtraLight.ttf is named canonically.
+* 🍞 **PASS** ../fonts/static/ttfs/GeologicaSharp-ExtraLight.ttf is named canonically.
 
 </details>
 <details>
@@ -59670,7 +59672,7 @@ Arabic / etc.
 
 * [com.google.fonts/check/font_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright)
 
-* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2020 The Geologisk Project Authors (https://github.com/monokromskriftforlag/geologisk)' matches canonical pattern.
+* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2020 The Geologica Project Authors (https://github.com/monokromskriftforlag/geologisk)' matches canonical pattern.
 * 🍞 **PASS** Name table copyright entries are good
 
 </details>
@@ -60512,7 +60514,7 @@ the same x,y coordinates.
 <br>
 </details>
 <details>
-<summary><b>[158] GeologiskCut-ExtraLightItalic.ttf</b></summary>
+<summary><b>[158] GeologicaSharp-ExtraLightItalic.ttf</b></summary>
 <details>
 <summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
 
@@ -60601,32 +60603,32 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: Tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
 Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
 Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -60652,7 +60654,7 @@ https://glyphsapp.com/tutorials/multiple-masters-part-3-setting-up-instances
 </pre>
 
 * ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
- FONT_FAMILY_NAME = 'Geologisk Cut ExtraLight' / SUBFAMILY_NAME = 'Italic'
+ FONT_FAMILY_NAME = 'Geologica Sharp ExtraLight' / SUBFAMILY_NAME = 'Italic'
 
 Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
 
@@ -61700,11 +61702,11 @@ of hinted versus unhinted font files.
 
 * ℹ **INFO** Hinting filesize impact:
 
-	|  | ../fonts/static/ttfs/GeologiskCut-ExtraLightItalic.ttf |
+	|  | ../fonts/static/ttfs/GeologicaSharp-ExtraLightItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 127.2kb |
-	| Hinted Size | 155.8kb |
-	| Increase | 28.6kb |
+	| Dehinted Size | 127.4kb |
+	| Hinted Size | 156.1kb |
+	| Increase | 28.7kb |
 	| Change   | 22.5 % |
  [code: size-impact]
 
@@ -61797,7 +61799,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, prep, GPOS, gasp, DSIG, cvt , loca]
+* ℹ **INFO** This font contains the following optional tables [cvt , loca, prep, gasp, fpgm, GSUB, GPOS, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -61840,7 +61842,7 @@ and separated by commas:
 
 </pre>
 
-* 🍞 **PASS** ../fonts/static/ttfs/GeologiskCut-ExtraLightItalic.ttf is named canonically.
+* 🍞 **PASS** ../fonts/static/ttfs/GeologicaSharp-ExtraLightItalic.ttf is named canonically.
 
 </details>
 <details>
@@ -62083,7 +62085,7 @@ Arabic / etc.
 
 * [com.google.fonts/check/font_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright)
 
-* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2020 The Geologisk Project Authors (https://github.com/monokromskriftforlag/geologisk)' matches canonical pattern.
+* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2020 The Geologica Project Authors (https://github.com/monokromskriftforlag/geologisk)' matches canonical pattern.
 * 🍞 **PASS** Name table copyright entries are good
 
 </details>
@@ -62925,7 +62927,7 @@ the same x,y coordinates.
 <br>
 </details>
 <details>
-<summary><b>[158] GeologiskCut-Italic.ttf</b></summary>
+<summary><b>[158] GeologicaSharp-Italic.ttf</b></summary>
 <details>
 <summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
 
@@ -63006,32 +63008,32 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: Tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
 Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
 Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -64077,12 +64079,12 @@ of hinted versus unhinted font files.
 
 * ℹ **INFO** Hinting filesize impact:
 
-	|  | ../fonts/static/ttfs/GeologiskCut-Italic.ttf |
+	|  | ../fonts/static/ttfs/GeologicaSharp-Italic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 126.7kb |
-	| Hinted Size | 167.2kb |
-	| Increase | 40.5kb |
-	| Change   | 32.0 % |
+	| Dehinted Size | 126.9kb |
+	| Hinted Size | 167.6kb |
+	| Increase | 40.7kb |
+	| Change   | 32.1 % |
  [code: size-impact]
 
 </details>
@@ -64174,7 +64176,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, prep, GPOS, gasp, DSIG, cvt , loca]
+* ℹ **INFO** This font contains the following optional tables [cvt , loca, prep, gasp, fpgm, GSUB, GPOS, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -64217,7 +64219,7 @@ and separated by commas:
 
 </pre>
 
-* 🍞 **PASS** ../fonts/static/ttfs/GeologiskCut-Italic.ttf is named canonically.
+* 🍞 **PASS** ../fonts/static/ttfs/GeologicaSharp-Italic.ttf is named canonically.
 
 </details>
 <details>
@@ -64468,7 +64470,7 @@ Arabic / etc.
 
 * [com.google.fonts/check/font_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright)
 
-* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2020 The Geologisk Project Authors (https://github.com/monokromskriftforlag/geologisk)' matches canonical pattern.
+* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2020 The Geologica Project Authors (https://github.com/monokromskriftforlag/geologisk)' matches canonical pattern.
 * 🍞 **PASS** Name table copyright entries are good
 
 </details>
@@ -65335,7 +65337,7 @@ the same x,y coordinates.
 <br>
 </details>
 <details>
-<summary><b>[158] GeologiskCut-Light.ttf</b></summary>
+<summary><b>[158] GeologicaSharp-Light.ttf</b></summary>
 <details>
 <summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
 
@@ -65416,32 +65418,60 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: Tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
 Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
 Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2 [code: contour-count]
+
+</details>
+<details>
+<summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters.</summary>
+
+* [com.google.fonts/check/name/family_and_style_max_length](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length)
+<pre>--- Rationale ---
+
+According to a GlyphsApp tutorial [1], in order to make sure all versions of
+Windows recognize it as a valid font file, we must make sure that the
+concatenated length of the familyname (NameID.FONT_FAMILY_NAME) and style
+(NameID.FONT_SUBFAMILY_NAME) strings in the name table do not exceed 20
+characters.
+
+After discussing the problem in more detail at `FontBakery issue #2179 [2] we
+decided that allowing up to 27 chars would still be on the safe side, though.
+
+[1]
+https://glyphsapp.com/tutorials/multiple-masters-part-3-setting-up-instances
+[2] https://github.com/googlefonts/fontbakery/issues/2179
+
+
+</pre>
+
+* ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
+ FONT_FAMILY_NAME = 'Geologica Sharp Light' / SUBFAMILY_NAME = 'Regular'
+
+Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
 
 </details>
 <details>
@@ -66487,12 +66517,12 @@ of hinted versus unhinted font files.
 
 * ℹ **INFO** Hinting filesize impact:
 
-	|  | ../fonts/static/ttfs/GeologiskCut-Light.ttf |
+	|  | ../fonts/static/ttfs/GeologicaSharp-Light.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 125.6kb |
-	| Hinted Size | 159.9kb |
-	| Increase | 34.3kb |
-	| Change   | 27.3 % |
+	| Dehinted Size | 125.8kb |
+	| Hinted Size | 160.3kb |
+	| Increase | 34.5kb |
+	| Change   | 27.4 % |
  [code: size-impact]
 
 </details>
@@ -66584,7 +66614,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, prep, GPOS, gasp, DSIG, cvt , loca]
+* ℹ **INFO** This font contains the following optional tables [cvt , loca, prep, gasp, fpgm, GSUB, GPOS, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -66627,7 +66657,7 @@ and separated by commas:
 
 </pre>
 
-* 🍞 **PASS** ../fonts/static/ttfs/GeologiskCut-Light.ttf is named canonically.
+* 🍞 **PASS** ../fonts/static/ttfs/GeologicaSharp-Light.ttf is named canonically.
 
 </details>
 <details>
@@ -66878,7 +66908,7 @@ Arabic / etc.
 
 * [com.google.fonts/check/font_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright)
 
-* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2020 The Geologisk Project Authors (https://github.com/monokromskriftforlag/geologisk)' matches canonical pattern.
+* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2020 The Geologica Project Authors (https://github.com/monokromskriftforlag/geologisk)' matches canonical pattern.
 * 🍞 **PASS** Name table copyright entries are good
 
 </details>
@@ -67152,31 +67182,6 @@ Bit 3 = Force ppem to integer values for all internal scaler math;
 </pre>
 
 * 🍞 **PASS** OK
-
-</details>
-<details>
-<summary>🍞 <b>PASS:</b> Combined length of family and style must not exceed 27 characters.</summary>
-
-* [com.google.fonts/check/name/family_and_style_max_length](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length)
-<pre>--- Rationale ---
-
-According to a GlyphsApp tutorial [1], in order to make sure all versions of
-Windows recognize it as a valid font file, we must make sure that the
-concatenated length of the familyname (NameID.FONT_FAMILY_NAME) and style
-(NameID.FONT_SUBFAMILY_NAME) strings in the name table do not exceed 20
-characters.
-
-After discussing the problem in more detail at `FontBakery issue #2179 [2] we
-decided that allowing up to 27 chars would still be on the safe side, though.
-
-[1]
-https://glyphsapp.com/tutorials/multiple-masters-part-3-setting-up-instances
-[2] https://github.com/googlefonts/fontbakery/issues/2179
-
-
-</pre>
-
-* 🍞 **PASS** All name entries are good.
 
 </details>
 <details>
@@ -67745,7 +67750,7 @@ the same x,y coordinates.
 <br>
 </details>
 <details>
-<summary><b>[158] GeologiskCut-LightItalic.ttf</b></summary>
+<summary><b>[158] GeologicaSharp-LightItalic.ttf</b></summary>
 <details>
 <summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
 
@@ -67826,32 +67831,32 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: Tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
 Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
 Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -68897,12 +68902,12 @@ of hinted versus unhinted font files.
 
 * ℹ **INFO** Hinting filesize impact:
 
-	|  | ../fonts/static/ttfs/GeologiskCut-LightItalic.ttf |
+	|  | ../fonts/static/ttfs/GeologicaSharp-LightItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 126.9kb |
-	| Hinted Size | 161.3kb |
-	| Increase | 34.3kb |
-	| Change   | 27.0 % |
+	| Dehinted Size | 127.2kb |
+	| Hinted Size | 161.7kb |
+	| Increase | 34.5kb |
+	| Change   | 27.1 % |
  [code: size-impact]
 
 </details>
@@ -68994,7 +68999,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, prep, GPOS, gasp, DSIG, cvt , loca]
+* ℹ **INFO** This font contains the following optional tables [cvt , loca, prep, gasp, fpgm, GSUB, GPOS, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -69037,7 +69042,7 @@ and separated by commas:
 
 </pre>
 
-* 🍞 **PASS** ../fonts/static/ttfs/GeologiskCut-LightItalic.ttf is named canonically.
+* 🍞 **PASS** ../fonts/static/ttfs/GeologicaSharp-LightItalic.ttf is named canonically.
 
 </details>
 <details>
@@ -69288,7 +69293,7 @@ Arabic / etc.
 
 * [com.google.fonts/check/font_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright)
 
-* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2020 The Geologisk Project Authors (https://github.com/monokromskriftforlag/geologisk)' matches canonical pattern.
+* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2020 The Geologica Project Authors (https://github.com/monokromskriftforlag/geologisk)' matches canonical pattern.
 * 🍞 **PASS** Name table copyright entries are good
 
 </details>
@@ -70155,7 +70160,7 @@ the same x,y coordinates.
 <br>
 </details>
 <details>
-<summary><b>[158] GeologiskCut-Medium.ttf</b></summary>
+<summary><b>[158] GeologicaSharp-Medium.ttf</b></summary>
 <details>
 <summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
 
@@ -70237,32 +70242,60 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: Tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
 Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
 Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2 [code: contour-count]
+
+</details>
+<details>
+<summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters.</summary>
+
+* [com.google.fonts/check/name/family_and_style_max_length](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length)
+<pre>--- Rationale ---
+
+According to a GlyphsApp tutorial [1], in order to make sure all versions of
+Windows recognize it as a valid font file, we must make sure that the
+concatenated length of the familyname (NameID.FONT_FAMILY_NAME) and style
+(NameID.FONT_SUBFAMILY_NAME) strings in the name table do not exceed 20
+characters.
+
+After discussing the problem in more detail at `FontBakery issue #2179 [2] we
+decided that allowing up to 27 chars would still be on the safe side, though.
+
+[1]
+https://glyphsapp.com/tutorials/multiple-masters-part-3-setting-up-instances
+[2] https://github.com/googlefonts/fontbakery/issues/2179
+
+
+</pre>
+
+* ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
+ FONT_FAMILY_NAME = 'Geologica Sharp Medium' / SUBFAMILY_NAME = 'Regular'
+
+Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
 
 </details>
 <details>
@@ -71308,11 +71341,11 @@ of hinted versus unhinted font files.
 
 * ℹ **INFO** Hinting filesize impact:
 
-	|  | ../fonts/static/ttfs/GeologiskCut-Medium.ttf |
+	|  | ../fonts/static/ttfs/GeologicaSharp-Medium.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 125.6kb |
-	| Hinted Size | 155.7kb |
-	| Increase | 30.1kb |
+	| Dehinted Size | 125.8kb |
+	| Hinted Size | 156.0kb |
+	| Increase | 30.2kb |
 	| Change   | 24.0 % |
  [code: size-impact]
 
@@ -71405,7 +71438,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, prep, GPOS, gasp, DSIG, cvt , loca]
+* ℹ **INFO** This font contains the following optional tables [cvt , loca, prep, gasp, fpgm, GSUB, GPOS, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -71448,7 +71481,7 @@ and separated by commas:
 
 </pre>
 
-* 🍞 **PASS** ../fonts/static/ttfs/GeologiskCut-Medium.ttf is named canonically.
+* 🍞 **PASS** ../fonts/static/ttfs/GeologicaSharp-Medium.ttf is named canonically.
 
 </details>
 <details>
@@ -71699,7 +71732,7 @@ Arabic / etc.
 
 * [com.google.fonts/check/font_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright)
 
-* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2020 The Geologisk Project Authors (https://github.com/monokromskriftforlag/geologisk)' matches canonical pattern.
+* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2020 The Geologica Project Authors (https://github.com/monokromskriftforlag/geologisk)' matches canonical pattern.
 * 🍞 **PASS** Name table copyright entries are good
 
 </details>
@@ -71976,31 +72009,6 @@ Bit 3 = Force ppem to integer values for all internal scaler math;
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Combined length of family and style must not exceed 27 characters.</summary>
-
-* [com.google.fonts/check/name/family_and_style_max_length](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length)
-<pre>--- Rationale ---
-
-According to a GlyphsApp tutorial [1], in order to make sure all versions of
-Windows recognize it as a valid font file, we must make sure that the
-concatenated length of the familyname (NameID.FONT_FAMILY_NAME) and style
-(NameID.FONT_SUBFAMILY_NAME) strings in the name table do not exceed 20
-characters.
-
-After discussing the problem in more detail at `FontBakery issue #2179 [2] we
-decided that allowing up to 27 chars would still be on the safe side, though.
-
-[1]
-https://glyphsapp.com/tutorials/multiple-masters-part-3-setting-up-instances
-[2] https://github.com/googlefonts/fontbakery/issues/2179
-
-
-</pre>
-
-* 🍞 **PASS** All name entries are good.
-
-</details>
-<details>
 <summary>🍞 <b>PASS:</b> Name table entries should not contain line-breaks.</summary>
 
 * [com.google.fonts/check/name/line_breaks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/line_breaks)
@@ -72566,7 +72574,7 @@ the same x,y coordinates.
 <br>
 </details>
 <details>
-<summary><b>[158] GeologiskCut-MediumItalic.ttf</b></summary>
+<summary><b>[158] GeologicaSharp-MediumItalic.ttf</b></summary>
 <details>
 <summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
 
@@ -72647,32 +72655,60 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: Tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
 Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
 Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2 [code: contour-count]
+
+</details>
+<details>
+<summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters.</summary>
+
+* [com.google.fonts/check/name/family_and_style_max_length](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length)
+<pre>--- Rationale ---
+
+According to a GlyphsApp tutorial [1], in order to make sure all versions of
+Windows recognize it as a valid font file, we must make sure that the
+concatenated length of the familyname (NameID.FONT_FAMILY_NAME) and style
+(NameID.FONT_SUBFAMILY_NAME) strings in the name table do not exceed 20
+characters.
+
+After discussing the problem in more detail at `FontBakery issue #2179 [2] we
+decided that allowing up to 27 chars would still be on the safe side, though.
+
+[1]
+https://glyphsapp.com/tutorials/multiple-masters-part-3-setting-up-instances
+[2] https://github.com/googlefonts/fontbakery/issues/2179
+
+
+</pre>
+
+* ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
+ FONT_FAMILY_NAME = 'Geologica Sharp Medium' / SUBFAMILY_NAME = 'Italic'
+
+Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
 
 </details>
 <details>
@@ -73718,12 +73754,12 @@ of hinted versus unhinted font files.
 
 * ℹ **INFO** Hinting filesize impact:
 
-	|  | ../fonts/static/ttfs/GeologiskCut-MediumItalic.ttf |
+	|  | ../fonts/static/ttfs/GeologicaSharp-MediumItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 126.9kb |
-	| Hinted Size | 157.2kb |
+	| Dehinted Size | 127.1kb |
+	| Hinted Size | 157.5kb |
 	| Increase | 30.3kb |
-	| Change   | 23.8 % |
+	| Change   | 23.9 % |
  [code: size-impact]
 
 </details>
@@ -73815,7 +73851,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, prep, GPOS, gasp, DSIG, cvt , loca]
+* ℹ **INFO** This font contains the following optional tables [cvt , loca, prep, gasp, fpgm, GSUB, GPOS, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -73858,7 +73894,7 @@ and separated by commas:
 
 </pre>
 
-* 🍞 **PASS** ../fonts/static/ttfs/GeologiskCut-MediumItalic.ttf is named canonically.
+* 🍞 **PASS** ../fonts/static/ttfs/GeologicaSharp-MediumItalic.ttf is named canonically.
 
 </details>
 <details>
@@ -74109,7 +74145,7 @@ Arabic / etc.
 
 * [com.google.fonts/check/font_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright)
 
-* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2020 The Geologisk Project Authors (https://github.com/monokromskriftforlag/geologisk)' matches canonical pattern.
+* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2020 The Geologica Project Authors (https://github.com/monokromskriftforlag/geologisk)' matches canonical pattern.
 * 🍞 **PASS** Name table copyright entries are good
 
 </details>
@@ -74386,31 +74422,6 @@ Bit 3 = Force ppem to integer values for all internal scaler math;
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Combined length of family and style must not exceed 27 characters.</summary>
-
-* [com.google.fonts/check/name/family_and_style_max_length](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length)
-<pre>--- Rationale ---
-
-According to a GlyphsApp tutorial [1], in order to make sure all versions of
-Windows recognize it as a valid font file, we must make sure that the
-concatenated length of the familyname (NameID.FONT_FAMILY_NAME) and style
-(NameID.FONT_SUBFAMILY_NAME) strings in the name table do not exceed 20
-characters.
-
-After discussing the problem in more detail at `FontBakery issue #2179 [2] we
-decided that allowing up to 27 chars would still be on the safe side, though.
-
-[1]
-https://glyphsapp.com/tutorials/multiple-masters-part-3-setting-up-instances
-[2] https://github.com/googlefonts/fontbakery/issues/2179
-
-
-</pre>
-
-* 🍞 **PASS** All name entries are good.
-
-</details>
-<details>
 <summary>🍞 <b>PASS:</b> Name table entries should not contain line-breaks.</summary>
 
 * [com.google.fonts/check/name/line_breaks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/line_breaks)
@@ -74976,7 +74987,7 @@ the same x,y coordinates.
 <br>
 </details>
 <details>
-<summary><b>[158] GeologiskCut-Regular.ttf</b></summary>
+<summary><b>[158] GeologicaSharp-Regular.ttf</b></summary>
 <details>
 <summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
 
@@ -75058,32 +75069,32 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: Tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
 Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
 Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -76129,12 +76140,12 @@ of hinted versus unhinted font files.
 
 * ℹ **INFO** Hinting filesize impact:
 
-	|  | ../fonts/static/ttfs/GeologiskCut-Regular.ttf |
+	|  | ../fonts/static/ttfs/GeologicaSharp-Regular.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 125.5kb |
-	| Hinted Size | 165.8kb |
-	| Increase | 40.3kb |
-	| Change   | 32.1 % |
+	| Dehinted Size | 125.7kb |
+	| Hinted Size | 166.2kb |
+	| Increase | 40.4kb |
+	| Change   | 32.2 % |
  [code: size-impact]
 
 </details>
@@ -76226,7 +76237,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, prep, GPOS, gasp, DSIG, cvt , loca]
+* ℹ **INFO** This font contains the following optional tables [cvt , loca, prep, gasp, fpgm, GSUB, GPOS, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -76269,7 +76280,7 @@ and separated by commas:
 
 </pre>
 
-* 🍞 **PASS** ../fonts/static/ttfs/GeologiskCut-Regular.ttf is named canonically.
+* 🍞 **PASS** ../fonts/static/ttfs/GeologicaSharp-Regular.ttf is named canonically.
 
 </details>
 <details>
@@ -76520,7 +76531,7 @@ Arabic / etc.
 
 * [com.google.fonts/check/font_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright)
 
-* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2020 The Geologisk Project Authors (https://github.com/monokromskriftforlag/geologisk)' matches canonical pattern.
+* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2020 The Geologica Project Authors (https://github.com/monokromskriftforlag/geologisk)' matches canonical pattern.
 * 🍞 **PASS** Name table copyright entries are good
 
 </details>
@@ -77387,7 +77398,7 @@ the same x,y coordinates.
 <br>
 </details>
 <details>
-<summary><b>[158] GeologiskCut-SemiBold.ttf</b></summary>
+<summary><b>[158] GeologicaSharp-SemiBold.ttf</b></summary>
 <details>
 <summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
 
@@ -77470,33 +77481,33 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: Tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
 Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
 Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -77522,7 +77533,7 @@ https://glyphsapp.com/tutorials/multiple-masters-part-3-setting-up-instances
 </pre>
 
 * ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
- FONT_FAMILY_NAME = 'Geologisk Cut SemiBold' / SUBFAMILY_NAME = 'Regular'
+ FONT_FAMILY_NAME = 'Geologica Sharp SemiBold' / SUBFAMILY_NAME = 'Regular'
 
 Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
 
@@ -78570,12 +78581,12 @@ of hinted versus unhinted font files.
 
 * ℹ **INFO** Hinting filesize impact:
 
-	|  | ../fonts/static/ttfs/GeologiskCut-SemiBold.ttf |
+	|  | ../fonts/static/ttfs/GeologicaSharp-SemiBold.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 125.7kb |
-	| Hinted Size | 155.9kb |
-	| Increase | 30.2kb |
-	| Change   | 24.0 % |
+	| Dehinted Size | 125.9kb |
+	| Hinted Size | 156.2kb |
+	| Increase | 30.3kb |
+	| Change   | 24.1 % |
  [code: size-impact]
 
 </details>
@@ -78667,7 +78678,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, prep, GPOS, gasp, DSIG, cvt , loca]
+* ℹ **INFO** This font contains the following optional tables [cvt , loca, prep, gasp, fpgm, GSUB, GPOS, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -78710,7 +78721,7 @@ and separated by commas:
 
 </pre>
 
-* 🍞 **PASS** ../fonts/static/ttfs/GeologiskCut-SemiBold.ttf is named canonically.
+* 🍞 **PASS** ../fonts/static/ttfs/GeologicaSharp-SemiBold.ttf is named canonically.
 
 </details>
 <details>
@@ -78961,7 +78972,7 @@ Arabic / etc.
 
 * [com.google.fonts/check/font_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright)
 
-* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2020 The Geologisk Project Authors (https://github.com/monokromskriftforlag/geologisk)' matches canonical pattern.
+* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2020 The Geologica Project Authors (https://github.com/monokromskriftforlag/geologisk)' matches canonical pattern.
 * 🍞 **PASS** Name table copyright entries are good
 
 </details>
@@ -79803,7 +79814,7 @@ the same x,y coordinates.
 <br>
 </details>
 <details>
-<summary><b>[158] GeologiskCut-SemiBoldItalic.ttf</b></summary>
+<summary><b>[158] GeologicaSharp-SemiBoldItalic.ttf</b></summary>
 <details>
 <summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
 
@@ -79885,33 +79896,33 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: Tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
 Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
 Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -79937,7 +79948,7 @@ https://glyphsapp.com/tutorials/multiple-masters-part-3-setting-up-instances
 </pre>
 
 * ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
- FONT_FAMILY_NAME = 'Geologisk Cut SemiBold' / SUBFAMILY_NAME = 'Italic'
+ FONT_FAMILY_NAME = 'Geologica Sharp SemiBold' / SUBFAMILY_NAME = 'Italic'
 
 Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
 
@@ -80985,11 +80996,11 @@ of hinted versus unhinted font files.
 
 * ℹ **INFO** Hinting filesize impact:
 
-	|  | ../fonts/static/ttfs/GeologiskCut-SemiBoldItalic.ttf |
+	|  | ../fonts/static/ttfs/GeologicaSharp-SemiBoldItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 127.0kb |
-	| Hinted Size | 157.1kb |
-	| Increase | 30.1kb |
+	| Dehinted Size | 127.2kb |
+	| Hinted Size | 157.4kb |
+	| Increase | 30.2kb |
 	| Change   | 23.7 % |
  [code: size-impact]
 
@@ -81082,7 +81093,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, prep, GPOS, gasp, DSIG, cvt , loca]
+* ℹ **INFO** This font contains the following optional tables [cvt , loca, prep, gasp, fpgm, GSUB, GPOS, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -81125,7 +81136,7 @@ and separated by commas:
 
 </pre>
 
-* 🍞 **PASS** ../fonts/static/ttfs/GeologiskCut-SemiBoldItalic.ttf is named canonically.
+* 🍞 **PASS** ../fonts/static/ttfs/GeologicaSharp-SemiBoldItalic.ttf is named canonically.
 
 </details>
 <details>
@@ -81376,7 +81387,7 @@ Arabic / etc.
 
 * [com.google.fonts/check/font_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright)
 
-* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2020 The Geologisk Project Authors (https://github.com/monokromskriftforlag/geologisk)' matches canonical pattern.
+* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2020 The Geologica Project Authors (https://github.com/monokromskriftforlag/geologisk)' matches canonical pattern.
 * 🍞 **PASS** Name table copyright entries are good
 
 </details>
@@ -82218,7 +82229,7 @@ the same x,y coordinates.
 <br>
 </details>
 <details>
-<summary><b>[158] GeologiskCut-Thin.ttf</b></summary>
+<summary><b>[158] GeologicaSharp-Thin.ttf</b></summary>
 <details>
 <summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
 
@@ -82307,32 +82318,32 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: Tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
 Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
 Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -83378,12 +83389,12 @@ of hinted versus unhinted font files.
 
 * ℹ **INFO** Hinting filesize impact:
 
-	|  | ../fonts/static/ttfs/GeologiskCut-Thin.ttf |
+	|  | ../fonts/static/ttfs/GeologicaSharp-Thin.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 120.1kb |
-	| Hinted Size | 148.3kb |
-	| Increase | 28.1kb |
-	| Change   | 23.4 % |
+	| Dehinted Size | 120.3kb |
+	| Hinted Size | 148.6kb |
+	| Increase | 28.3kb |
+	| Change   | 23.5 % |
  [code: size-impact]
 
 </details>
@@ -83475,7 +83486,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, prep, GPOS, gasp, DSIG, cvt , loca]
+* ℹ **INFO** This font contains the following optional tables [cvt , loca, prep, gasp, fpgm, GSUB, GPOS, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -83518,7 +83529,7 @@ and separated by commas:
 
 </pre>
 
-* 🍞 **PASS** ../fonts/static/ttfs/GeologiskCut-Thin.ttf is named canonically.
+* 🍞 **PASS** ../fonts/static/ttfs/GeologicaSharp-Thin.ttf is named canonically.
 
 </details>
 <details>
@@ -83761,7 +83772,7 @@ Arabic / etc.
 
 * [com.google.fonts/check/font_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright)
 
-* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2020 The Geologisk Project Authors (https://github.com/monokromskriftforlag/geologisk)' matches canonical pattern.
+* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2020 The Geologica Project Authors (https://github.com/monokromskriftforlag/geologisk)' matches canonical pattern.
 * 🍞 **PASS** Name table copyright entries are good
 
 </details>
@@ -84628,7 +84639,7 @@ the same x,y coordinates.
 <br>
 </details>
 <details>
-<summary><b>[158] GeologiskCut-ThinItalic.ttf</b></summary>
+<summary><b>[158] GeologicaSharp-ThinItalic.ttf</b></summary>
 <details>
 <summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
 
@@ -84717,32 +84728,32 @@ Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: Tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
-Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni0493	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1
-Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni1EDF	Contours detected: 4	Expected: 3
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: Uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
+Glyph name: Tbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEB	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EDB	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
 Glyph name: uni1EEC	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: uni1EE3	Contours detected: 4	Expected: 3
 Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
-Glyph name: uni0492	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1EF1	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -85788,12 +85799,12 @@ of hinted versus unhinted font files.
 
 * ℹ **INFO** Hinting filesize impact:
 
-	|  | ../fonts/static/ttfs/GeologiskCut-ThinItalic.ttf |
+	|  | ../fonts/static/ttfs/GeologicaSharp-ThinItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 121.0kb |
-	| Hinted Size | 149.2kb |
-	| Increase | 28.2kb |
-	| Change   | 23.3 % |
+	| Dehinted Size | 121.2kb |
+	| Hinted Size | 149.5kb |
+	| Increase | 28.3kb |
+	| Change   | 23.4 % |
  [code: size-impact]
 
 </details>
@@ -85885,7 +85896,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, prep, GPOS, gasp, DSIG, cvt , loca]
+* ℹ **INFO** This font contains the following optional tables [cvt , loca, prep, gasp, fpgm, GSUB, GPOS, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -85928,7 +85939,7 @@ and separated by commas:
 
 </pre>
 
-* 🍞 **PASS** ../fonts/static/ttfs/GeologiskCut-ThinItalic.ttf is named canonically.
+* 🍞 **PASS** ../fonts/static/ttfs/GeologicaSharp-ThinItalic.ttf is named canonically.
 
 </details>
 <details>
@@ -86171,7 +86182,7 @@ Arabic / etc.
 
 * [com.google.fonts/check/font_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright)
 
-* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2020 The Geologisk Project Authors (https://github.com/monokromskriftforlag/geologisk)' matches canonical pattern.
+* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2020 The Geologica Project Authors (https://github.com/monokromskriftforlag/geologisk)' matches canonical pattern.
 * 🍞 **PASS** Name table copyright entries are good
 
 </details>
@@ -87042,5 +87053,5 @@ the same x,y coordinates.
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 37 | 123 | 2809 | 217 | 2516 | 0 |
+| 0 | 36 | 127 | 2809 | 217 | 2513 | 0 |
 | 0% | 1% | 2% | 49% | 4% | 44% | 0% |

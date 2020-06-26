@@ -11,7 +11,7 @@ set -e
 
 
 echo "Generating Designspace and UFOs"
-fontmake -g Geologisk.glyphs -o ufo
+fontmake -g Geologica.glyphs -o ufo
 
 
 

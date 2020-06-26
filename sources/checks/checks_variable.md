@@ -216,7 +216,7 @@ https://github.com/googlefonts/fontbakery/blob/master/prebuilt/workarounds
 <br>
 </details>
 <details>
-<summary><b>[158] Geologisk[DIAG,ital,slnt,wght].ttf</b></summary>
+<summary><b>[158] Geologica[SHRP,ital,slnt,wght].ttf</b></summary>
 <details>
 <summary>💔 <b>ERROR:</b> Check correctness of STAT table strings </summary>
 
@@ -339,42 +339,42 @@ When in doubt, please choose OFL for new font projects.
 
 * [com.google.fonts/check/varfont_instance_names](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont_instance_names)
 
-* ⚠ **WARN** Instance "Cut Thin": contains the following unparsable tokens "['Cut']"
-* ⚠ **WARN** Instance "Cut Thin": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Cut Thin Italic": contains the following unparsable tokens "['Cut']"
-* ⚠ **WARN** Instance "Cut Thin Italic": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Cut ExtraLight": contains the following unparsable tokens "['Cut']"
-* ⚠ **WARN** Instance "Cut ExtraLight": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Cut ExtraLight Italic": contains the following unparsable tokens "['Cut']"
-* ⚠ **WARN** Instance "Cut ExtraLight Italic": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Cut Light": contains the following unparsable tokens "['Cut']"
-* ⚠ **WARN** Instance "Cut Light": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Cut Light Italic": contains the following unparsable tokens "['Cut']"
-* ⚠ **WARN** Instance "Cut Light Italic": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Cut Regular": contains the following unparsable tokens "['Cut']"
-* ⚠ **WARN** Instance "Cut Regular": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Cut Italic": contains the following unparsable tokens "['Cut']"
-* ⚠ **WARN** Instance "Cut Italic": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Cut Medium": contains the following unparsable tokens "['Cut']"
-* ⚠ **WARN** Instance "Cut Medium": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Cut Medium Italic": contains the following unparsable tokens "['Cut']"
-* ⚠ **WARN** Instance "Cut Medium Italic": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Cut SemiBold": contains the following unparsable tokens "['Cut']"
-* ⚠ **WARN** Instance "Cut SemiBold": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Cut SemiBold Italic": contains the following unparsable tokens "['Cut']"
-* ⚠ **WARN** Instance "Cut SemiBold Italic": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Cut Bold": contains the following unparsable tokens "['Cut']"
-* ⚠ **WARN** Instance "Cut Bold": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Cut Bold Italic": contains the following unparsable tokens "['Cut']"
-* ⚠ **WARN** Instance "Cut Bold Italic": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Cut ExtraBold": contains the following unparsable tokens "['Cut']"
-* ⚠ **WARN** Instance "Cut ExtraBold": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Cut ExtraBold Italic": contains the following unparsable tokens "['Cut']"
-* ⚠ **WARN** Instance "Cut ExtraBold Italic": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Cut Black": contains the following unparsable tokens "['Cut']"
-* ⚠ **WARN** Instance "Cut Black": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Cut Black Italic": contains the following unparsable tokens "['Cut']"
-* ⚠ **WARN** Instance "Cut Black Italic": cannot determine instance name due to unparsable tokens
+* ⚠ **WARN** Instance "Sharp Thin": contains the following unparsable tokens "['Sharp']"
+* ⚠ **WARN** Instance "Sharp Thin": cannot determine instance name due to unparsable tokens
+* ⚠ **WARN** Instance "Sharp Thin Italic": contains the following unparsable tokens "['Sharp']"
+* ⚠ **WARN** Instance "Sharp Thin Italic": cannot determine instance name due to unparsable tokens
+* ⚠ **WARN** Instance "Sharp ExtraLight": contains the following unparsable tokens "['Sharp']"
+* ⚠ **WARN** Instance "Sharp ExtraLight": cannot determine instance name due to unparsable tokens
+* ⚠ **WARN** Instance "Sharp ExtraLight Italic": contains the following unparsable tokens "['Sharp']"
+* ⚠ **WARN** Instance "Sharp ExtraLight Italic": cannot determine instance name due to unparsable tokens
+* ⚠ **WARN** Instance "Sharp Light": contains the following unparsable tokens "['Sharp']"
+* ⚠ **WARN** Instance "Sharp Light": cannot determine instance name due to unparsable tokens
+* ⚠ **WARN** Instance "Sharp Light Italic": contains the following unparsable tokens "['Sharp']"
+* ⚠ **WARN** Instance "Sharp Light Italic": cannot determine instance name due to unparsable tokens
+* ⚠ **WARN** Instance "Sharp Regular": contains the following unparsable tokens "['Sharp']"
+* ⚠ **WARN** Instance "Sharp Regular": cannot determine instance name due to unparsable tokens
+* ⚠ **WARN** Instance "Sharp Italic": contains the following unparsable tokens "['Sharp']"
+* ⚠ **WARN** Instance "Sharp Italic": cannot determine instance name due to unparsable tokens
+* ⚠ **WARN** Instance "Sharp Medium": contains the following unparsable tokens "['Sharp']"
+* ⚠ **WARN** Instance "Sharp Medium": cannot determine instance name due to unparsable tokens
+* ⚠ **WARN** Instance "Sharp Medium Italic": contains the following unparsable tokens "['Sharp']"
+* ⚠ **WARN** Instance "Sharp Medium Italic": cannot determine instance name due to unparsable tokens
+* ⚠ **WARN** Instance "Sharp SemiBold": contains the following unparsable tokens "['Sharp']"
+* ⚠ **WARN** Instance "Sharp SemiBold": cannot determine instance name due to unparsable tokens
+* ⚠ **WARN** Instance "Sharp SemiBold Italic": contains the following unparsable tokens "['Sharp']"
+* ⚠ **WARN** Instance "Sharp SemiBold Italic": cannot determine instance name due to unparsable tokens
+* ⚠ **WARN** Instance "Sharp Bold": contains the following unparsable tokens "['Sharp']"
+* ⚠ **WARN** Instance "Sharp Bold": cannot determine instance name due to unparsable tokens
+* ⚠ **WARN** Instance "Sharp Bold Italic": contains the following unparsable tokens "['Sharp']"
+* ⚠ **WARN** Instance "Sharp Bold Italic": cannot determine instance name due to unparsable tokens
+* ⚠ **WARN** Instance "Sharp ExtraBold": contains the following unparsable tokens "['Sharp']"
+* ⚠ **WARN** Instance "Sharp ExtraBold": cannot determine instance name due to unparsable tokens
+* ⚠ **WARN** Instance "Sharp ExtraBold Italic": contains the following unparsable tokens "['Sharp']"
+* ⚠ **WARN** Instance "Sharp ExtraBold Italic": cannot determine instance name due to unparsable tokens
+* ⚠ **WARN** Instance "Sharp Black": contains the following unparsable tokens "['Sharp']"
+* ⚠ **WARN** Instance "Sharp Black": cannot determine instance name due to unparsable tokens
+* ⚠ **WARN** Instance "Sharp Black Italic": contains the following unparsable tokens "['Sharp']"
+* ⚠ **WARN** Instance "Sharp Black Italic": cannot determine instance name due to unparsable tokens
 * ⚠ **WARN** Check has either failed or produced a warning. See our wip spec for further info https://gist.github.com/m4rc1e/8f4c4498519e8a36cd54e16a004275cb
 
 </details>
@@ -1316,11 +1316,11 @@ of hinted versus unhinted font files.
 
 * ℹ **INFO** Hinting filesize impact:
 
-	|  | ../fonts/variable/Geologisk[DIAG,ital,slnt,wght].ttf |
+	|  | ../fonts/variable/Geologica[SHRP,ital,slnt,wght].ttf |
 	|:--- | ---:|
-	| Dehinted Size | 332.3kb |
-	| Hinted Size | 331.7kb |
-	| Increase | -576 bytes |
+	| Dehinted Size | 332.6kb |
+	| Hinted Size | 332.0kb |
+	| Increase | -588 bytes |
 	| Change   | -0.2 % |
  [code: size-impact]
 
@@ -1429,7 +1429,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, GSUB, prep, gasp, DSIG, GPOS]
+* ℹ **INFO** This font contains the following optional tables [GPOS, DSIG, GSUB, prep, gasp, loca]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -1472,7 +1472,7 @@ and separated by commas:
 
 </pre>
 
-* 🍞 **PASS** ../fonts/variable/Geologisk[DIAG,ital,slnt,wght].ttf is named canonically.
+* 🍞 **PASS** ../fonts/variable/Geologica[SHRP,ital,slnt,wght].ttf is named canonically.
 
 </details>
 <details>
@@ -1635,7 +1635,7 @@ Arabic / etc.
 
 * [com.google.fonts/check/font_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright)
 
-* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2020 The Geologisk Project Authors (https://github.com/monokromskriftforlag/geologisk)' matches canonical pattern.
+* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2020 The Geologica Project Authors (https://github.com/monokromskriftforlag/geologisk)' matches canonical pattern.
 * 🍞 **PASS** Name table copyright entries are good
 
 </details>

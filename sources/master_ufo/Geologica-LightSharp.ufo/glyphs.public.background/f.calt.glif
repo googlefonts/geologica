@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="f.calt" format="2">
+  <outline>
+    <contour>
+      <point x="280" y="0" type="line"/>
+      <point x="390" y="0" type="line"/>
+      <point x="390" y="856" type="line"/>
+      <point x="660" y="856" type="line"/>
+      <point x="660" y="960" type="line"/>
+      <point x="390" y="960" type="line"/>
+      <point x="390" y="1190" type="line" smooth="yes"/>
+      <point x="390" y="1320"/>
+      <point x="458" y="1362"/>
+      <point x="550" y="1362" type="curve" smooth="yes"/>
+      <point x="584" y="1362"/>
+      <point x="622" y="1354"/>
+      <point x="662" y="1334" type="curve"/>
+      <point x="662" y="1448" type="line"/>
+      <point x="632" y="1462"/>
+      <point x="596" y="1470"/>
+      <point x="548" y="1470" type="curve" smooth="yes"/>
+      <point x="386" y="1470"/>
+      <point x="280" y="1368"/>
+      <point x="280" y="1192" type="curve" smooth="yes"/>
+    </contour>
+    <contour>
+      <point x="80" y="856" type="line"/>
+      <point x="332" y="856" type="line"/>
+      <point x="332" y="980" type="line"/>
+      <point x="80" y="896" type="line"/>
+    </contour>
+  </outline>
+</glyph>

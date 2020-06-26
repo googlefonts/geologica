@@ -13,12 +13,12 @@ set -e
 echo "Generating Static fonts"
 mkdir -p ../fonts/static/ttfs
 rm -rf ../fonts/static/ttfs/*
-fontmake -m master_ufo/Geologisk.designspace -i -a -o ttf --output-dir ../fonts/static/ttfs/
+fontmake -m master_ufo/Geologica.designspace -i -a -o ttf --output-dir ../fonts/static/ttfs/
 
 
 echo "Generating VFs"
 mkdir -p ../fonts/variable
-fontmake -m master_ufo/Geologisk.designspace -o variable --output-path ../fonts/variable/Geologisk[DIAG,ital,slnt,wght].ttf
+fontmake -m master_ufo/Geologica.designspace -o variable --output-path ../fonts/variable/Geologica[SHRP,ital,slnt,wght].ttf
 
 rm -rf instance_ufo/ #master_ufo/ #deletes everything in root directory
 
@@ -75,7 +75,7 @@ do
 	
 	# patch Name and STAT table #	
 	ttx -m $vf "../sources/helpers/vf-patch.ttx"
-	mv "../sources/helpers/vf-patch.ttf" "../fonts/variable/Geologisk[DIAG,ital,slnt,wght].ttf"
+	mv "../sources/helpers/vf-patch.ttf" "../fonts/variable/Geologica[SHRP,ital,slnt,wght].ttf"
 done
 # remove any backup files #
 rm -f ../fonts/variable/*backup*.ttf

@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="_part.won" format="2">
+  <advance width="1296"/>
+  <anchor x="844" y="1400" name="top"/>
+  <outline>
+    <contour>
+      <point x="226" y="0" type="line"/>
+      <point x="360" y="0" type="line"/>
+      <point x="808" y="1218" type="line"/>
+      <point x="736" y="0" type="line"/>
+      <point x="868" y="0" type="line"/>
+      <point x="1412" y="1400" type="line"/>
+      <point x="1292" y="1400" type="line"/>
+      <point x="846" y="212" type="line"/>
+      <point x="916" y="1400" type="line"/>
+      <point x="774" y="1400" type="line"/>
+      <point x="336" y="204" type="line"/>
+      <point x="396" y="1400" type="line"/>
+      <point x="278" y="1400" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>RMXScaler</key>
+      <dict>
+        <key>weight</key>
+        <integer>-2</integer>
+        <key>width</key>
+        <integer>64</integer>
+      </dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.widthMetricsKey</key>
+      <string>plus</string>
+      <key>public.markColor</key>
+      <string>0.67,0.95,0.38,1</string>
+    </dict>
+  </lib>
+</glyph>

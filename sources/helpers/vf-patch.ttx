@@ -7,8 +7,8 @@
     <!-- DesignAxisCount=4 -->
     <DesignAxisRecord>
       <Axis index="1">
-        <AxisTag value="DIAG"/>
-        <AxisNameID value="259"/>  <!-- Diagonal Cuts -->
+        <AxisTag value="SHRP"/>
+        <AxisNameID value="259"/>  <!-- Sharp -->
         <AxisOrdering value="0"/>
       </Axis>
       <Axis index="1">
@@ -204,7 +204,7 @@
     <AxisValue index="14" Format="1">
       <AxisIndex value="0"/>
       <Flags value="0"/>
-      <ValueNameID value="299"/> <!-- Cut -->
+      <ValueNameID value="299"/> <!-- Sharp -->
       <Value value="100"/>
     </AxisValue>
 	
@@ -227,115 +227,115 @@
       Slant
     </namerecord>
     <namerecord nameID="259" platformID="1" platEncID="0" langID="0x0" unicode="True">
-      Diagonal Cuts
+      Sharp
     </namerecord>
     <namerecord nameID="260" platformID="1" platEncID="0" langID="0x0" unicode="True">
       Thin
     </namerecord>
     <namerecord nameID="261" platformID="1" platEncID="0" langID="0x0" unicode="True">
-      Cut Thin
+      Sharp Thin
     </namerecord>
     <namerecord nameID="262" platformID="1" platEncID="0" langID="0x0" unicode="True">
       Thin Italic
     </namerecord>
     <namerecord nameID="263" platformID="1" platEncID="0" langID="0x0" unicode="True">
-      Cut Thin Italic
+      Sharp Thin Italic
     </namerecord>
     <namerecord nameID="264" platformID="1" platEncID="0" langID="0x0" unicode="True">
       ExtraLight
     </namerecord>
     <namerecord nameID="265" platformID="1" platEncID="0" langID="0x0" unicode="True">
-      Cut ExtraLight
+      Sharp ExtraLight
     </namerecord>
     <namerecord nameID="266" platformID="1" platEncID="0" langID="0x0" unicode="True">
       ExtraLight Italic
     </namerecord>
     <namerecord nameID="267" platformID="1" platEncID="0" langID="0x0" unicode="True">
-      Cut ExtraLight Italic
+      Sharp ExtraLight Italic
     </namerecord>
     <namerecord nameID="268" platformID="1" platEncID="0" langID="0x0" unicode="True">
       Light
     </namerecord>
     <namerecord nameID="269" platformID="1" platEncID="0" langID="0x0" unicode="True">
-      Cut Light
+      Sharp Light
     </namerecord>
     <namerecord nameID="270" platformID="1" platEncID="0" langID="0x0" unicode="True">
       Light Italic
     </namerecord>
     <namerecord nameID="271" platformID="1" platEncID="0" langID="0x0" unicode="True">
-      Cut Light Italic
+      Sharp Light Italic
     </namerecord>
     <namerecord nameID="272" platformID="1" platEncID="0" langID="0x0" unicode="True">
       Regular
     </namerecord>
     <namerecord nameID="273" platformID="1" platEncID="0" langID="0x0" unicode="True">
-      Cut Regular
+      Sharp Regular
     </namerecord>
     <namerecord nameID="274" platformID="1" platEncID="0" langID="0x0" unicode="True">
       Italic
     </namerecord>
     <namerecord nameID="275" platformID="1" platEncID="0" langID="0x0" unicode="True">
-      Cut Italic
+      Sharp Italic
     </namerecord>
     <namerecord nameID="276" platformID="1" platEncID="0" langID="0x0" unicode="True">
       Medium
     </namerecord>
     <namerecord nameID="277" platformID="1" platEncID="0" langID="0x0" unicode="True">
-      Cut Medium
+      Sharp Medium
     </namerecord>
     <namerecord nameID="278" platformID="1" platEncID="0" langID="0x0" unicode="True">
       Medium Italic
     </namerecord>
     <namerecord nameID="279" platformID="1" platEncID="0" langID="0x0" unicode="True">
-      Cut Medium Italic
+      Sharp Medium Italic
     </namerecord>
     <namerecord nameID="280" platformID="1" platEncID="0" langID="0x0" unicode="True">
       SemiBold
     </namerecord>
     <namerecord nameID="281" platformID="1" platEncID="0" langID="0x0" unicode="True">
-      Cut SemiBold
+      Sharp SemiBold
     </namerecord>
     <namerecord nameID="282" platformID="1" platEncID="0" langID="0x0" unicode="True">
       SemiBold Italic
     </namerecord>
     <namerecord nameID="283" platformID="1" platEncID="0" langID="0x0" unicode="True">
-      Cut SemiBold Italic
+      Sharp SemiBold Italic
     </namerecord>
     <namerecord nameID="284" platformID="1" platEncID="0" langID="0x0" unicode="True">
       Bold
     </namerecord>
     <namerecord nameID="285" platformID="1" platEncID="0" langID="0x0" unicode="True">
-      Cut Bold
+      Sharp Bold
     </namerecord>
     <namerecord nameID="286" platformID="1" platEncID="0" langID="0x0" unicode="True">
       Bold Italic
     </namerecord>
     <namerecord nameID="287" platformID="1" platEncID="0" langID="0x0" unicode="True">
-      Cut Bold Italic
+      Sharp Bold Italic
     </namerecord>
     <namerecord nameID="288" platformID="1" platEncID="0" langID="0x0" unicode="True">
       ExtraBold
     </namerecord>
     <namerecord nameID="289" platformID="1" platEncID="0" langID="0x0" unicode="True">
-      Cut ExtraBold
+      Sharp ExtraBold
     </namerecord>
     <namerecord nameID="290" platformID="1" platEncID="0" langID="0x0" unicode="True">
       ExtraBold Italic
     </namerecord>
     <namerecord nameID="291" platformID="1" platEncID="0" langID="0x0" unicode="True">
-      Cut ExtraBold Italic
+      Sharp ExtraBold Italic
     </namerecord>
     <namerecord nameID="292" platformID="1" platEncID="0" langID="0x0" unicode="True">
       Black
     </namerecord>
     <namerecord nameID="293" platformID="1" platEncID="0" langID="0x0" unicode="True">
-      Cut Black
+      Sharp Black
     </namerecord>
     <namerecord nameID="294" platformID="1" platEncID="0" langID="0x0" unicode="True">
       Black Italic
     </namerecord>
     <namerecord nameID="295" platformID="1" platEncID="0" langID="0x0" unicode="True">
-      Cut Black Italic
+      Sharp Black Italic
     </namerecord>
     <namerecord nameID="296" platformID="1" platEncID="0" langID="0x0" unicode="True">
       Roman
@@ -347,31 +347,31 @@
       Cursive
     </namerecord>
     <namerecord nameID="299" platformID="1" platEncID="0" langID="0x0" unicode="True">
-      Cut
+      Sharp
     </namerecord>
 	
 	
 	<!-- PLATFORM 3: WINDOWS -->
     <namerecord nameID="0" platformID="3" platEncID="1" langID="0x409">
-      Copyright 2020 The Geologisk Project Authors (https://github.com/monokromskriftforlag/geologisk)
+      Copyright 2020 The Geologica Project Authors (https://github.com/monokromskriftforlag/geologisk)
     </namerecord>
     <namerecord nameID="1" platformID="3" platEncID="1" langID="0x409">
-      Geologisk Thin
+      Geologica Thin
     </namerecord>
     <namerecord nameID="2" platformID="3" platEncID="1" langID="0x409">
       Regular
     </namerecord>
     <namerecord nameID="3" platformID="3" platEncID="1" langID="0x409">
-      1.000;MNKR;Geologisk-Thin
+      1.000;MNKR;Geologica-Thin
     </namerecord>
     <namerecord nameID="4" platformID="3" platEncID="1" langID="0x409">
-      Geologisk Thin
+      Geologica Thin
     </namerecord>
     <namerecord nameID="5" platformID="3" platEncID="1" langID="0x409">
       Version 1.000
     </namerecord>
     <namerecord nameID="6" platformID="3" platEncID="1" langID="0x409">
-      Geologisk-Thin
+      Geologica-Thin
     </namerecord>
     <namerecord nameID="8" platformID="3" platEncID="1" langID="0x409">
       Monokrom Skriftforlag AS
@@ -389,7 +389,7 @@
       http://scripts.sil.org/OFL
     </namerecord>
     <namerecord nameID="16" platformID="3" platEncID="1" langID="0x409">
-      Geologisk
+      Geologica
     </namerecord>
     <namerecord nameID="17" platformID="3" platEncID="1" langID="0x409">
       Thin
@@ -404,115 +404,115 @@
       Slant
     </namerecord>
     <namerecord nameID="259" platformID="3" platEncID="1" langID="0x409">
-      Diagonal Cuts
+      Sharp
     </namerecord>
     <namerecord nameID="260" platformID="3" platEncID="1" langID="0x409">
       Thin
     </namerecord>
     <namerecord nameID="261" platformID="3" platEncID="1" langID="0x409">
-      Cut Thin
+      Sharp Thin
     </namerecord>
     <namerecord nameID="262" platformID="3" platEncID="1" langID="0x409">
       Thin Italic
     </namerecord>
     <namerecord nameID="263" platformID="3" platEncID="1" langID="0x409">
-      Cut Thin Italic
+      Sharp Thin Italic
     </namerecord>
     <namerecord nameID="264" platformID="3" platEncID="1" langID="0x409">
       ExtraLight
     </namerecord>
     <namerecord nameID="265" platformID="3" platEncID="1" langID="0x409">
-      Cut ExtraLight
+      Sharp ExtraLight
     </namerecord>
     <namerecord nameID="266" platformID="3" platEncID="1" langID="0x409">
       ExtraLight Italic
     </namerecord>
     <namerecord nameID="267" platformID="3" platEncID="1" langID="0x409">
-      Cut ExtraLight Italic
+      Sharp ExtraLight Italic
     </namerecord>
     <namerecord nameID="268" platformID="3" platEncID="1" langID="0x409">
       Light
     </namerecord>
     <namerecord nameID="269" platformID="3" platEncID="1" langID="0x409">
-      Cut Light
+      Sharp Light
     </namerecord>
     <namerecord nameID="270" platformID="3" platEncID="1" langID="0x409">
       Light Italic
     </namerecord>
     <namerecord nameID="271" platformID="3" platEncID="1" langID="0x409">
-      Cut Light Italic
+      Sharp Light Italic
     </namerecord>
     <namerecord nameID="272" platformID="3" platEncID="1" langID="0x409">
       Regular
     </namerecord>
     <namerecord nameID="273" platformID="3" platEncID="1" langID="0x409">
-      Cut Regular
+      Sharp Regular
     </namerecord>
     <namerecord nameID="274" platformID="3" platEncID="1" langID="0x409">
       Italic
     </namerecord>
     <namerecord nameID="275" platformID="3" platEncID="1" langID="0x409">
-      Cut Italic
+      Sharp Italic
     </namerecord>
     <namerecord nameID="276" platformID="3" platEncID="1" langID="0x409">
       Medium
     </namerecord>
     <namerecord nameID="277" platformID="3" platEncID="1" langID="0x409">
-      Cut Medium
+      Sharp Medium
     </namerecord>
     <namerecord nameID="278" platformID="3" platEncID="1" langID="0x409">
       Medium Italic
     </namerecord>
     <namerecord nameID="279" platformID="3" platEncID="1" langID="0x409">
-      Cut Medium Italic
+      Sharp Medium Italic
     </namerecord>
     <namerecord nameID="280" platformID="3" platEncID="1" langID="0x409">
       SemiBold
     </namerecord>
     <namerecord nameID="281" platformID="3" platEncID="1" langID="0x409">
-      Cut SemiBold
+      Sharp SemiBold
     </namerecord>
     <namerecord nameID="282" platformID="3" platEncID="1" langID="0x409">
       SemiBold Italic
     </namerecord>
     <namerecord nameID="283" platformID="3" platEncID="1" langID="0x409">
-      Cut SemiBold Italic
+      Sharp SemiBold Italic
     </namerecord>
     <namerecord nameID="284" platformID="3" platEncID="1" langID="0x409">
       Bold
     </namerecord>
     <namerecord nameID="285" platformID="3" platEncID="1" langID="0x409">
-      Cut Bold
+      Sharp Bold
     </namerecord>
     <namerecord nameID="286" platformID="3" platEncID="1" langID="0x409">
       Bold Italic
     </namerecord>
     <namerecord nameID="287" platformID="3" platEncID="1" langID="0x409">
-      Cut Bold Italic
+      Sharp Bold Italic
     </namerecord>
     <namerecord nameID="288" platformID="3" platEncID="1" langID="0x409">
       ExtraBold
     </namerecord>
     <namerecord nameID="289" platformID="3" platEncID="1" langID="0x409">
-      Cut ExtraBold
+      Sharp ExtraBold
     </namerecord>
     <namerecord nameID="290" platformID="3" platEncID="1" langID="0x409">
       ExtraBold Italic
     </namerecord>
     <namerecord nameID="291" platformID="3" platEncID="1" langID="0x409">
-      Cut ExtraBold Italic
+      Sharp ExtraBold Italic
     </namerecord>
     <namerecord nameID="292" platformID="3" platEncID="1" langID="0x409">
       Black
     </namerecord>
     <namerecord nameID="293" platformID="3" platEncID="1" langID="0x409">
-      Cut Black
+      Sharp Black
     </namerecord>
     <namerecord nameID="294" platformID="3" platEncID="1" langID="0x409">
       Black Italic
     </namerecord>
     <namerecord nameID="295" platformID="3" platEncID="1" langID="0x409">
-      Cut Black Italic
+      Sharp Black Italic
     </namerecord>
     <namerecord nameID="296" platformID="3" platEncID="1" langID="0x409">
       Roman
@@ -524,7 +524,7 @@
       Cursive
     </namerecord>
     <namerecord nameID="299" platformID="3" platEncID="1" langID="0x409">
-      Cut
+      Sharp
     </namerecord>
   </name>
 
@@ -560,9 +560,9 @@
       <AxisNameID>258</AxisNameID>
     </Axis>
 
-    <!-- Diagonal Cuts -->
+    <!-- Sharp -->
     <Axis>
-      <AxisTag>DIAG</AxisTag>
+      <AxisTag>SHRP</AxisTag>
       <Flags>0x0</Flags>
       <MinValue>0.0</MinValue>
       <DefaultValue>0.0</DefaultValue>
@@ -575,15 +575,15 @@
       <coord axis="wght" value="100.0"/>
       <coord axis="ital" value="0.0"/>
       <coord axis="slnt" value="0.0"/>
-      <coord axis="DIAG" value="0.0"/>
+      <coord axis="SHRP" value="0.0"/>
     </NamedInstance>
 
-    <!-- Cut Thin -->
+    <!-- Sharp Thin -->
     <NamedInstance flags="0x0" subfamilyNameID="261">
       <coord axis="wght" value="100.0"/>
       <coord axis="ital" value="0.0"/>
       <coord axis="slnt" value="0.0"/>
-      <coord axis="DIAG" value="100.0"/>
+      <coord axis="SHRP" value="100.0"/>
     </NamedInstance>
 
     <!-- Thin Italic -->
@@ -591,15 +591,15 @@
       <coord axis="wght" value="100.0"/>
       <coord axis="ital" value="1.0"/>
       <coord axis="slnt" value="-12.0"/>
-      <coord axis="DIAG" value="0.0"/>
+      <coord axis="SHRP" value="0.0"/>
     </NamedInstance>
 
-    <!-- Cut Thin Italic -->
+    <!-- Sharp Thin Italic -->
     <NamedInstance flags="0x0" subfamilyNameID="263">
       <coord axis="wght" value="100.0"/>
       <coord axis="ital" value="1.0"/>
       <coord axis="slnt" value="-12.0"/>
-      <coord axis="DIAG" value="100.0"/>
+      <coord axis="SHRP" value="100.0"/>
     </NamedInstance>
 
     <!-- ExtraLight -->
@@ -607,15 +607,15 @@
       <coord axis="wght" value="200.0"/>
       <coord axis="ital" value="0.0"/>
       <coord axis="slnt" value="0.0"/>
-      <coord axis="DIAG" value="0.0"/>
+      <coord axis="SHRP" value="0.0"/>
     </NamedInstance>
 
-    <!-- Cut ExtraLight -->
+    <!-- Sharp ExtraLight -->
     <NamedInstance flags="0x0" subfamilyNameID="265">
       <coord axis="wght" value="200.0"/>
       <coord axis="ital" value="0.0"/>
       <coord axis="slnt" value="0.0"/>
-      <coord axis="DIAG" value="100.0"/>
+      <coord axis="SHRP" value="100.0"/>
     </NamedInstance>
 
     <!-- ExtraLight Italic -->
@@ -623,15 +623,15 @@
       <coord axis="wght" value="200.0"/>
       <coord axis="ital" value="1.0"/>
       <coord axis="slnt" value="-12.0"/>
-      <coord axis="DIAG" value="0.0"/>
+      <coord axis="SHRP" value="0.0"/>
     </NamedInstance>
 
-    <!-- Cut ExtraLight Italic -->
+    <!-- Sharp ExtraLight Italic -->
     <NamedInstance flags="0x0" subfamilyNameID="267">
       <coord axis="wght" value="200.0"/>
       <coord axis="ital" value="1.0"/>
       <coord axis="slnt" value="-12.0"/>
-      <coord axis="DIAG" value="100.0"/>
+      <coord axis="SHRP" value="100.0"/>
     </NamedInstance>
 
     <!-- Light -->
@@ -639,15 +639,15 @@
       <coord axis="wght" value="300.0"/>
       <coord axis="ital" value="0.0"/>
       <coord axis="slnt" value="0.0"/>
-      <coord axis="DIAG" value="0.0"/>
+      <coord axis="SHRP" value="0.0"/>
     </NamedInstance>
 
-    <!-- Cut Light -->
+    <!-- Sharp Light -->
     <NamedInstance flags="0x0" subfamilyNameID="269">
       <coord axis="wght" value="300.0"/>
       <coord axis="ital" value="0.0"/>
       <coord axis="slnt" value="0.0"/>
-      <coord axis="DIAG" value="100.0"/>
+      <coord axis="SHRP" value="100.0"/>
     </NamedInstance>
 
     <!-- Light Italic -->
@@ -655,15 +655,15 @@
       <coord axis="wght" value="300.0"/>
       <coord axis="ital" value="1.0"/>
       <coord axis="slnt" value="-12.0"/>
-      <coord axis="DIAG" value="0.0"/>
+      <coord axis="SHRP" value="0.0"/>
     </NamedInstance>
 
-    <!-- Cut Light Italic -->
+    <!-- Sharp Light Italic -->
     <NamedInstance flags="0x0" subfamilyNameID="271">
       <coord axis="wght" value="300.0"/>
       <coord axis="ital" value="1.0"/>
       <coord axis="slnt" value="-12.0"/>
-      <coord axis="DIAG" value="100.0"/>
+      <coord axis="SHRP" value="100.0"/>
     </NamedInstance>
 
     <!-- Regular -->
@@ -671,15 +671,15 @@
       <coord axis="wght" value="400.0"/>
       <coord axis="ital" value="0.0"/>
       <coord axis="slnt" value="0.0"/>
-      <coord axis="DIAG" value="0.0"/>
+      <coord axis="SHRP" value="0.0"/>
     </NamedInstance>
 
-    <!-- Cut Regular -->
+    <!-- Sharp Regular -->
     <NamedInstance flags="0x0" subfamilyNameID="273">
       <coord axis="wght" value="400.0"/>
       <coord axis="ital" value="0.0"/>
       <coord axis="slnt" value="0.0"/>
-      <coord axis="DIAG" value="100.0"/>
+      <coord axis="SHRP" value="100.0"/>
     </NamedInstance>
 
     <!-- Italic -->
@@ -687,15 +687,15 @@
       <coord axis="wght" value="400.0"/>
       <coord axis="ital" value="1.0"/>
       <coord axis="slnt" value="-12.0"/>
-      <coord axis="DIAG" value="0.0"/>
+      <coord axis="SHRP" value="0.0"/>
     </NamedInstance>
 
-    <!-- Cut Italic -->
+    <!-- Sharp Italic -->
     <NamedInstance flags="0x0" subfamilyNameID="275">
       <coord axis="wght" value="400.0"/>
       <coord axis="ital" value="1.0"/>
       <coord axis="slnt" value="-12.0"/>
-      <coord axis="DIAG" value="100.0"/>
+      <coord axis="SHRP" value="100.0"/>
     </NamedInstance>
 
     <!-- Medium -->
@@ -703,15 +703,15 @@
       <coord axis="wght" value="500.0"/>
       <coord axis="ital" value="0.0"/>
       <coord axis="slnt" value="0.0"/>
-      <coord axis="DIAG" value="0.0"/>
+      <coord axis="SHRP" value="0.0"/>
     </NamedInstance>
 
-    <!-- Cut Medium -->
+    <!-- Sharp Medium -->
     <NamedInstance flags="0x0" subfamilyNameID="277">
       <coord axis="wght" value="500.0"/>
       <coord axis="ital" value="0.0"/>
       <coord axis="slnt" value="0.0"/>
-      <coord axis="DIAG" value="100.0"/>
+      <coord axis="SHRP" value="100.0"/>
     </NamedInstance>
 
     <!-- Medium Italic -->
@@ -719,15 +719,15 @@
       <coord axis="wght" value="500.0"/>
       <coord axis="ital" value="1.0"/>
       <coord axis="slnt" value="-12.0"/>
-      <coord axis="DIAG" value="0.0"/>
+      <coord axis="SHRP" value="0.0"/>
     </NamedInstance>
 
-    <!-- Cut Medium Italic -->
+    <!-- Sharp Medium Italic -->
     <NamedInstance flags="0x0" subfamilyNameID="279">
       <coord axis="wght" value="500.0"/>
       <coord axis="ital" value="1.0"/>
       <coord axis="slnt" value="-12.0"/>
-      <coord axis="DIAG" value="100.0"/>
+      <coord axis="SHRP" value="100.0"/>
     </NamedInstance>
 
     <!-- SemiBold -->
@@ -735,15 +735,15 @@
       <coord axis="wght" value="600.0"/>
       <coord axis="ital" value="0.0"/>
       <coord axis="slnt" value="0.0"/>
-      <coord axis="DIAG" value="0.0"/>
+      <coord axis="SHRP" value="0.0"/>
     </NamedInstance>
 
-    <!-- Cut SemiBold -->
+    <!-- Sharp SemiBold -->
     <NamedInstance flags="0x0" subfamilyNameID="281">
       <coord axis="wght" value="600.0"/>
       <coord axis="ital" value="0.0"/>
       <coord axis="slnt" value="0.0"/>
-      <coord axis="DIAG" value="100.0"/>
+      <coord axis="SHRP" value="100.0"/>
     </NamedInstance>
 
     <!-- SemiBold Italic -->
@@ -751,15 +751,15 @@
       <coord axis="wght" value="600.0"/>
       <coord axis="ital" value="1.0"/>
       <coord axis="slnt" value="-12.0"/>
-      <coord axis="DIAG" value="0.0"/>
+      <coord axis="SHRP" value="0.0"/>
     </NamedInstance>
 
-    <!-- Cut SemiBold Italic -->
+    <!-- Sharp SemiBold Italic -->
     <NamedInstance flags="0x0" subfamilyNameID="283">
       <coord axis="wght" value="600.0"/>
       <coord axis="ital" value="1.0"/>
       <coord axis="slnt" value="-12.0"/>
-      <coord axis="DIAG" value="100.0"/>
+      <coord axis="SHRP" value="100.0"/>
     </NamedInstance>
 
     <!-- Bold -->
@@ -767,15 +767,15 @@
       <coord axis="wght" value="700.0"/>
       <coord axis="ital" value="0.0"/>
       <coord axis="slnt" value="0.0"/>
-      <coord axis="DIAG" value="0.0"/>
+      <coord axis="SHRP" value="0.0"/>
     </NamedInstance>
 
-    <!-- Cut Bold -->
+    <!-- Sharp Bold -->
     <NamedInstance flags="0x0" subfamilyNameID="285">
       <coord axis="wght" value="700.0"/>
       <coord axis="ital" value="0.0"/>
       <coord axis="slnt" value="0.0"/>
-      <coord axis="DIAG" value="100.0"/>
+      <coord axis="SHRP" value="100.0"/>
     </NamedInstance>
 
     <!-- Bold Italic -->
@@ -783,15 +783,15 @@
       <coord axis="wght" value="700.0"/>
       <coord axis="ital" value="1.0"/>
       <coord axis="slnt" value="-12.0"/>
-      <coord axis="DIAG" value="0.0"/>
+      <coord axis="SHRP" value="0.0"/>
     </NamedInstance>
 
-    <!-- Cut Bold Italic -->
+    <!-- Sharp Bold Italic -->
     <NamedInstance flags="0x0" subfamilyNameID="287">
       <coord axis="wght" value="700.0"/>
       <coord axis="ital" value="1.0"/>
       <coord axis="slnt" value="-12.0"/>
-      <coord axis="DIAG" value="100.0"/>
+      <coord axis="SHRP" value="100.0"/>
     </NamedInstance>
 
     <!-- ExtraBold -->
@@ -799,15 +799,15 @@
       <coord axis="wght" value="800.0"/>
       <coord axis="ital" value="0.0"/>
       <coord axis="slnt" value="0.0"/>
-      <coord axis="DIAG" value="0.0"/>
+      <coord axis="SHRP" value="0.0"/>
     </NamedInstance>
 
-    <!-- Cut ExtraBold -->
+    <!-- Sharp ExtraBold -->
     <NamedInstance flags="0x0" subfamilyNameID="289">
       <coord axis="wght" value="800.0"/>
       <coord axis="ital" value="0.0"/>
       <coord axis="slnt" value="0.0"/>
-      <coord axis="DIAG" value="100.0"/>
+      <coord axis="SHRP" value="100.0"/>
     </NamedInstance>
 
     <!-- ExtraBold Italic -->
@@ -815,15 +815,15 @@
       <coord axis="wght" value="800.0"/>
       <coord axis="ital" value="1.0"/>
       <coord axis="slnt" value="-12.0"/>
-      <coord axis="DIAG" value="0.0"/>
+      <coord axis="SHRP" value="0.0"/>
     </NamedInstance>
 
-    <!-- Cut ExtraBold Italic -->
+    <!-- Sharp ExtraBold Italic -->
     <NamedInstance flags="0x0" subfamilyNameID="291">
       <coord axis="wght" value="800.0"/>
       <coord axis="ital" value="1.0"/>
       <coord axis="slnt" value="-12.0"/>
-      <coord axis="DIAG" value="100.0"/>
+      <coord axis="SHRP" value="100.0"/>
     </NamedInstance>
 
     <!-- Black -->
@@ -831,15 +831,15 @@
       <coord axis="wght" value="900.0"/>
       <coord axis="ital" value="0.0"/>
       <coord axis="slnt" value="0.0"/>
-      <coord axis="DIAG" value="0.0"/>
+      <coord axis="SHRP" value="0.0"/>
     </NamedInstance>
 
-    <!-- Cut Black -->
+    <!-- Sharp Black -->
     <NamedInstance flags="0x0" subfamilyNameID="293">
       <coord axis="wght" value="900.0"/>
       <coord axis="ital" value="0.0"/>
       <coord axis="slnt" value="0.0"/>
-      <coord axis="DIAG" value="100.0"/>
+      <coord axis="SHRP" value="100.0"/>
     </NamedInstance>
 
     <!-- Black Italic -->
@@ -847,15 +847,15 @@
       <coord axis="wght" value="900.0"/>
       <coord axis="ital" value="1.0"/>
       <coord axis="slnt" value="-12.0"/>
-      <coord axis="DIAG" value="0.0"/>
+      <coord axis="SHRP" value="0.0"/>
     </NamedInstance>
 
-    <!-- Cut Black Italic -->
+    <!-- Sharp Black Italic -->
     <NamedInstance flags="0x0" subfamilyNameID="295">
       <coord axis="wght" value="900.0"/>
       <coord axis="ital" value="1.0"/>
       <coord axis="slnt" value="-12.0"/>
-      <coord axis="DIAG" value="100.0"/>
+      <coord axis="SHRP" value="100.0"/>
     </NamedInstance>
   </fvar>
 

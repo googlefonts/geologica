@@ -13,7 +13,7 @@ set -e
 echo "Generating Static fonts"
 mkdir -p ../fonts/static/ttfs
 rm -rf ../fonts/static/ttfs/*
-fontmake -m master_ufo/Geologisk.designspace -i -a -o ttf --output-dir ../fonts/static/ttfs/
+fontmake -m master_ufo/Geologica.designspace -i -a -o ttf --output-dir ../fonts/static/ttfs/
 rm -rf instance_ufo/ #master_ufo/  #deletes everything in root directory
 
 ######### generate static fonts ############
