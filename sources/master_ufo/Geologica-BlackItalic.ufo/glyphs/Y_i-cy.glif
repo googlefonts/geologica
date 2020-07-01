@@ -1,14 +1,14 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Yi-cy" format="2">
-  <advance width="720"/>
+  <advance width="714"/>
   <unicode hex="0407"/>
-  <anchor x="250" y="0" name="bottom"/>
-  <anchor x="452" y="0" name="ogonek"/>
-  <anchor x="640" y="1844" name="top"/>
-  <anchor x="228" y="1400" name="topleft"/>
+  <anchor x="247" y="0" name="bottom"/>
+  <anchor x="449" y="0" name="ogonek"/>
+  <anchor x="637" y="1844" name="top"/>
+  <anchor x="225" y="1400" name="topleft"/>
   <outline>
     <component base="I"/>
-    <component base="dieresiscomb.narrow" xOffset="1254" yOffset="360"/>
+    <component base="dieresiscomb.narrow" xOffset="1251" yOffset="360"/>
   </outline>
   <lib>
     <dict>

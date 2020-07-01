@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="iishort-cy" format="2">
-  <advance width="1372"/>
+  <advance width="1366"/>
   <unicode hex="0439"/>
-  <anchor x="576" y="0" name="bottom"/>
-  <anchor x="796" y="1040" name="top"/>
+  <anchor x="573" y="0" name="bottom"/>
+  <anchor x="793" y="1040" name="top"/>
   <outline>
     <component base="ii-cy"/>
-    <component base="brevecomb-cy" xOffset="1500"/>
+    <component base="brevecomb-cy" xOffset="1497"/>
   </outline>
   <lib>
     <dict>

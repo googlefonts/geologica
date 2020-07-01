@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="palochka-cy" format="2">
-  <advance width="659"/>
+  <advance width="653"/>
   <unicode hex="04CF"/>
-  <anchor x="218" y="0" name="bottom"/>
-  <anchor x="726" y="1440" name="caron"/>
-  <anchor x="526" y="1440" name="top"/>
+  <anchor x="215" y="0" name="bottom"/>
+  <anchor x="723" y="1440" name="caron"/>
+  <anchor x="523" y="1440" name="top"/>
   <outline>
     <component base="l"/>
   </outline>

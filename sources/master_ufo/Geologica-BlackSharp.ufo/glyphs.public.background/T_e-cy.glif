@@ -2,14 +2,14 @@
 <glyph name="Te-cy" format="2">
   <outline>
     <contour>
-      <point x="390" y="0" type="line"/>
-      <point x="796" y="0" type="line"/>
-      <point x="796" y="1032" type="line"/>
-      <point x="1156" y="1032" type="line"/>
-      <point x="1156" y="1400" type="line"/>
-      <point x="70" y="1400" type="line"/>
-      <point x="-10" y="1032" type="line"/>
-      <point x="390" y="1032" type="line"/>
+      <point x="387" y="0" type="line"/>
+      <point x="793" y="0" type="line"/>
+      <point x="793" y="1032" type="line"/>
+      <point x="1153" y="1032" type="line"/>
+      <point x="1153" y="1400" type="line"/>
+      <point x="67" y="1400" type="line"/>
+      <point x="-13" y="1032" type="line"/>
+      <point x="387" y="1032" type="line"/>
     </contour>
   </outline>
 </glyph>

@@ -1,15 +1,15 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Ecircumflexgrave" format="2">
-  <advance width="1308"/>
+  <advance width="1302"/>
   <unicode hex="1EC0"/>
-  <anchor x="562" y="0" name="bottom"/>
-  <anchor x="1094" y="0" name="ogonek"/>
-  <anchor x="944" y="1806" name="top"/>
-  <anchor x="228" y="1400" name="topleft"/>
+  <anchor x="559" y="0" name="bottom"/>
+  <anchor x="1091" y="0" name="ogonek"/>
+  <anchor x="941" y="1806" name="top"/>
+  <anchor x="225" y="1400" name="topleft"/>
   <outline>
     <component base="E"/>
-    <component base="circumflexcomb.case" xOffset="1688"/>
-    <component base="gravecomb.case" xOffset="2256" yOffset="334"/>
+    <component base="circumflexcomb.case" xOffset="1685"/>
+    <component base="gravecomb.case" xOffset="2253" yOffset="334"/>
   </outline>
   <lib>
     <dict>

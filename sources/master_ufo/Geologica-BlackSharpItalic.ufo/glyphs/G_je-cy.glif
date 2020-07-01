@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Gje-cy" format="2">
-  <advance width="1088"/>
+  <advance width="1082"/>
   <unicode hex="0403"/>
-  <anchor x="468" y="644" name="bar"/>
-  <anchor x="452" y="0" name="descender"/>
-  <anchor x="794" y="1400" name="top"/>
+  <anchor x="465" y="644" name="bar"/>
+  <anchor x="449" y="0" name="descender"/>
+  <anchor x="791" y="1400" name="top"/>
   <outline>
     <component base="Ge-cy"/>
-    <component base="acutecomb.case" xOffset="1624"/>
+    <component base="acutecomb.case" xOffset="1621"/>
   </outline>
   <lib>
     <dict>

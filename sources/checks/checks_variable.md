@@ -1318,8 +1318,8 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/variable/Geologica[SHRP,ital,slnt,wght].ttf |
 	|:--- | ---:|
-	| Dehinted Size | 332.6kb |
-	| Hinted Size | 332.0kb |
+	| Dehinted Size | 332.7kb |
+	| Hinted Size | 332.1kb |
 	| Increase | -588 bytes |
 	| Change   | -0.2 % |
  [code: size-impact]
@@ -1429,7 +1429,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [GPOS, DSIG, GSUB, prep, gasp, loca]
+* ℹ **INFO** This font contains the following optional tables [GSUB, GPOS, gasp, DSIG, loca, prep]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>

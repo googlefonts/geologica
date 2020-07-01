@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Dzhe-cy" format="2">
-  <advance width="1568"/>
+  <advance width="1562"/>
   <unicode hex="040F"/>
-  <anchor x="794" y="0" name="bottom"/>
-  <anchor x="1412" y="0" name="descender"/>
+  <anchor x="791" y="0" name="bottom"/>
+  <anchor x="1409" y="0" name="descender"/>
   <outline>
     <component base="_part.Tse-cy"/>
-    <component base="_part.cy-descender-uc-center" xOffset="948"/>
+    <component base="_part.cy-descender-uc-center" xOffset="945"/>
   </outline>
   <lib>
     <dict>

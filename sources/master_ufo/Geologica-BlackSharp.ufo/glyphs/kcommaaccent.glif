@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="kcommaaccent" format="2">
-  <advance width="1272"/>
+  <advance width="1266"/>
   <unicode hex="0137"/>
-  <anchor x="672" y="0" name="bottom"/>
+  <anchor x="669" y="0" name="bottom"/>
   <outline>
     <component base="k"/>
-    <component base="commaaccentcomb" xOffset="1310"/>
+    <component base="commaaccentcomb" xOffset="1307"/>
   </outline>
   <lib>
     <dict>

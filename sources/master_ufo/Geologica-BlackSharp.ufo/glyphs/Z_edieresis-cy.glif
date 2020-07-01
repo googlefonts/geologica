@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Zedieresis-cy" format="2">
-  <advance width="1213"/>
+  <advance width="1207"/>
   <unicode hex="04DE"/>
-  <anchor x="535" y="0" name="bottom"/>
-  <anchor x="545" y="1834" name="top"/>
+  <anchor x="532" y="0" name="bottom"/>
+  <anchor x="542" y="1834" name="top"/>
   <outline>
     <component base="Ze-cy"/>
-    <component base="dieresiscomb.case" xOffset="1377"/>
+    <component base="dieresiscomb.case" xOffset="1374"/>
   </outline>
   <lib>
     <dict>

@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="aie-cy.ss01" format="2">
-  <advance width="1946"/>
-  <anchor x="964" y="1040" name="top"/>
+  <advance width="1940"/>
+  <anchor x="961" y="1040" name="top"/>
   <outline>
     <component base="ae.ss01"/>
   </outline>

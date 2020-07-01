@@ -3,18 +3,18 @@
   <anchor x="1270" y="0" name="descender"/>
   <outline>
     <contour>
-      <point x="14" y="0" type="line"/>
-      <point x="494" y="0" type="line"/>
-      <point x="706" y="402" type="line"/>
-      <point x="918" y="0" type="line"/>
-      <point x="1410" y="0" type="line"/>
-      <point x="998" y="704" type="line"/>
-      <point x="1404" y="1400" type="line"/>
-      <point x="928" y="1400" type="line"/>
-      <point x="722" y="1020" type="line"/>
-      <point x="516" y="1400" type="line"/>
-      <point x="28" y="1400" type="line"/>
-      <point x="434" y="710" type="line"/>
+      <point x="11" y="0" type="line"/>
+      <point x="491" y="0" type="line"/>
+      <point x="703" y="402" type="line"/>
+      <point x="915" y="0" type="line"/>
+      <point x="1407" y="0" type="line"/>
+      <point x="995" y="704" type="line"/>
+      <point x="1401" y="1400" type="line"/>
+      <point x="925" y="1400" type="line"/>
+      <point x="719" y="1020" type="line"/>
+      <point x="513" y="1400" type="line"/>
+      <point x="25" y="1400" type="line"/>
+      <point x="431" y="710" type="line"/>
     </contour>
   </outline>
 </glyph>

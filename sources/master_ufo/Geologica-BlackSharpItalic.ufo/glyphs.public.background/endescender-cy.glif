@@ -2,18 +2,18 @@
 <glyph name="endescender-cy" format="2">
   <outline>
     <contour>
-      <point x="18" y="0" type="line"/>
-      <point x="418" y="0" type="line"/>
-      <point x="496" y="370" type="line"/>
-      <point x="816" y="370" type="line"/>
-      <point x="738" y="0" type="line"/>
-      <point x="1138" y="0" type="line"/>
-      <point x="1372" y="1100" type="line"/>
-      <point x="934" y="914" type="line"/>
-      <point x="882" y="682" type="line"/>
-      <point x="562" y="682" type="line"/>
-      <point x="652" y="1100" type="line"/>
-      <point x="214" y="914" type="line"/>
+      <point x="15" y="0" type="line"/>
+      <point x="415" y="0" type="line"/>
+      <point x="493" y="370" type="line"/>
+      <point x="813" y="370" type="line"/>
+      <point x="735" y="0" type="line"/>
+      <point x="1135" y="0" type="line"/>
+      <point x="1369" y="1100" type="line"/>
+      <point x="931" y="914" type="line"/>
+      <point x="879" y="682" type="line"/>
+      <point x="559" y="682" type="line"/>
+      <point x="649" y="1100" type="line"/>
+      <point x="211" y="914" type="line"/>
     </contour>
     <contour>
       <point x="904" y="-384" type="line"/>

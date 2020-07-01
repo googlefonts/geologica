@@ -3,8 +3,8 @@
   <advance width="1296"/>
   <unicode hex="20AB"/>
   <guideline x="579" y="-125" angle="270"/>
-  <anchor x="1094" y="1224" name="bar"/>
-  <anchor x="1378" y="1440" name="caron"/>
+  <anchor x="1091" y="1224" name="bar"/>
+  <anchor x="1375" y="1440" name="caron"/>
   <outline>
     <contour>
       <point x="-114" y="-408" type="line"/>

@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="pe-cy.loclSRB" format="2">
-  <advance width="1376"/>
-  <anchor x="688" y="1040" name="top"/>
+  <advance width="1370"/>
+  <anchor x="685" y="1040" name="top"/>
   <outline>
     <component base="pe-cy"/>
   </outline>

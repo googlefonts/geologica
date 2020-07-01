@@ -763,6 +763,8 @@
       <integer>-40</integer>
       <key>public.kern2.haccent</key>
       <integer>180</integer>
+      <key>public.kern2.hbar</key>
+      <integer>40</integer>
       <key>public.kern2.hyphen</key>
       <integer>-140</integer>
       <key>public.kern2.ia</key>
@@ -1981,6 +1983,8 @@
       <integer>-50</integer>
       <key>public.kern2.ghestroke</key>
       <integer>-40</integer>
+      <key>public.kern2.hbar</key>
+      <integer>40</integer>
       <key>public.kern2.hyphen</key>
       <integer>-140</integer>
       <key>public.kern2.ia</key>
@@ -2110,6 +2114,8 @@
       <integer>-50</integer>
       <key>public.kern2.ghestroke</key>
       <integer>-40</integer>
+      <key>public.kern2.hbar</key>
+      <integer>40</integer>
       <key>public.kern2.hyphen</key>
       <integer>-140</integer>
       <key>public.kern2.ia</key>
@@ -2237,6 +2243,8 @@
       <integer>-50</integer>
       <key>public.kern2.ghestroke</key>
       <integer>-40</integer>
+      <key>public.kern2.hbar</key>
+      <integer>40</integer>
       <key>public.kern2.ia</key>
       <integer>-80</integer>
       <key>public.kern2.iaccent</key>
@@ -2360,6 +2368,8 @@
       <integer>80</integer>
       <key>public.kern2.Yaccent</key>
       <integer>80</integer>
+      <key>public.kern2.a</key>
+      <integer>-30</integer>
       <key>public.kern2.backslash</key>
       <integer>80</integer>
       <key>public.kern2.be</key>
@@ -2374,6 +2384,8 @@
       <integer>-160</integer>
       <key>public.kern2.ghestroke</key>
       <integer>-60</integer>
+      <key>public.kern2.hbar</key>
+      <integer>50</integer>
       <key>public.kern2.hyphen</key>
       <integer>-60</integer>
       <key>public.kern2.iaccent</key>
@@ -2573,6 +2585,8 @@
       <integer>-60</integer>
       <key>public.kern2.ghestroke</key>
       <integer>-40</integer>
+      <key>public.kern2.hbar</key>
+      <integer>50</integer>
       <key>public.kern2.hyphen</key>
       <integer>-60</integer>
       <key>public.kern2.iaccent</key>
@@ -2878,6 +2892,8 @@
       <integer>-20</integer>
       <key>public.kern2.ghestroke</key>
       <integer>-60</integer>
+      <key>public.kern2.hbar</key>
+      <integer>40</integer>
       <key>public.kern2.hyphen</key>
       <integer>-140</integer>
       <key>public.kern2.iaccent</key>
@@ -3523,6 +3539,18 @@
     <dict>
       <key>public.kern2.Hbar</key>
       <integer>80</integer>
+      <key>public.kern2.T</key>
+      <integer>40</integer>
+      <key>public.kern2.Taccent</key>
+      <integer>40</integer>
+      <key>public.kern2.Tbar</key>
+      <integer>40</integer>
+      <key>public.kern2.V</key>
+      <integer>30</integer>
+      <key>public.kern2.Y</key>
+      <integer>40</integer>
+      <key>public.kern2.Yaccent</key>
+      <integer>40</integer>
       <key>public.kern2.iaccent</key>
       <integer>140</integer>
       <key>public.kern2.idblgrave</key>
@@ -4041,6 +4069,10 @@
       <integer>120</integer>
       <key>public.kern2.jaccent</key>
       <integer>120</integer>
+      <key>public.kern2.o</key>
+      <integer>20</integer>
+      <key>public.kern2.oaccent</key>
+      <integer>20</integer>
       <key>public.kern2.period</key>
       <integer>-120</integer>
       <key>public.kern2.quote</key>
@@ -5051,7 +5083,7 @@
       <key>public.kern2.tau</key>
       <integer>10</integer>
       <key>public.kern2.te</key>
-      <integer>-40</integer>
+      <integer>-20</integer>
       <key>public.kern2.v</key>
       <integer>-30</integer>
       <key>public.kern2.x</key>
@@ -5150,7 +5182,7 @@
       <key>public.kern2.taccentbelow</key>
       <integer>-30</integer>
       <key>public.kern2.te</key>
-      <integer>-40</integer>
+      <integer>-20</integer>
       <key>public.kern2.v</key>
       <integer>-30</integer>
       <key>public.kern2.x</key>
@@ -5292,7 +5324,7 @@
       <key>public.kern2.taccentbelow</key>
       <integer>-30</integer>
       <key>public.kern2.te</key>
-      <integer>-40</integer>
+      <integer>-20</integer>
       <key>public.kern2.v</key>
       <integer>-30</integer>
       <key>public.kern2.x</key>
@@ -6393,6 +6425,12 @@
       <integer>-120</integer>
       <key>public.kern2.de</key>
       <integer>-60</integer>
+      <key>public.kern2.o</key>
+      <integer>20</integer>
+      <key>public.kern2.oaccent</key>
+      <integer>20</integer>
+      <key>public.kern2.oslash</key>
+      <integer>20</integer>
       <key>public.kern2.period</key>
       <integer>-120</integer>
       <key>public.kern2.quote</key>
@@ -6432,6 +6470,10 @@
       <integer>220</integer>
       <key>public.kern2.igrave</key>
       <integer>60</integer>
+      <key>public.kern2.o</key>
+      <integer>20</integer>
+      <key>public.kern2.oaccent</key>
+      <integer>20</integer>
       <key>public.kern2.odblgrave</key>
       <integer>100</integer>
       <key>public.kern2.period</key>

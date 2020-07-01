@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="ustraightstroke-cy" format="2">
-  <advance width="1176"/>
+  <advance width="1170"/>
   <unicode hex="04B1"/>
-  <anchor x="472" y="-80" name="bar"/>
+  <anchor x="469" y="-80" name="bar"/>
   <outline>
     <component base="ustraight-cy"/>
-    <component base="strokeshortcomb" xOffset="1110" yOffset="-614"/>
+    <component base="strokeshortcomb" xOffset="1107" yOffset="-614"/>
   </outline>
   <lib>
     <dict>

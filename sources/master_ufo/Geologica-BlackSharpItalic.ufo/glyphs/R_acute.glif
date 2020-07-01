@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Racute" format="2">
-  <advance width="1414"/>
+  <advance width="1408"/>
   <unicode hex="0154"/>
-  <anchor x="626" y="0" name="bottom"/>
-  <anchor x="856" y="1400" name="top"/>
+  <anchor x="623" y="0" name="bottom"/>
+  <anchor x="853" y="1400" name="top"/>
   <outline>
     <component base="R"/>
-    <component base="acutecomb.case" xOffset="1686"/>
+    <component base="acutecomb.case" xOffset="1683"/>
   </outline>
   <lib>
     <dict>

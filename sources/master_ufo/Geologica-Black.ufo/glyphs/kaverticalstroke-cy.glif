@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="kaverticalstroke-cy" format="2">
-  <advance width="1412"/>
+  <advance width="1406"/>
   <unicode hex="049D"/>
-  <anchor x="652" y="526" name="center"/>
+  <anchor x="649" y="526" name="center"/>
   <outline>
     <component base="_part.kaverticalstroke-cy"/>
-    <component base="_part.verticalstroke" xOffset="142" yOffset="-254"/>
+    <component base="_part.verticalstroke" xOffset="139" yOffset="-254"/>
   </outline>
   <lib>
     <dict>

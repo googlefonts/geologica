@@ -1,14 +1,14 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Chekhakassian-cy" format="2">
-  <advance width="1477"/>
+  <advance width="1471"/>
   <unicode hex="04CB"/>
-  <anchor x="725" y="636" name="center"/>
-  <anchor x="1209" y="0" name="descender"/>
-  <anchor x="805" y="0" name="descender_alt"/>
-  <anchor x="885" y="1400" name="top"/>
+  <anchor x="722" y="636" name="center"/>
+  <anchor x="1206" y="0" name="descender"/>
+  <anchor x="802" y="0" name="descender_alt"/>
+  <anchor x="882" y="1400" name="top"/>
   <outline>
     <component base="Che-cy"/>
-    <component base="_part.cy-desc-uc-reversed" xOffset="915"/>
+    <component base="_part.cy-desc-uc-reversed" xOffset="912"/>
   </outline>
   <lib>
     <dict>

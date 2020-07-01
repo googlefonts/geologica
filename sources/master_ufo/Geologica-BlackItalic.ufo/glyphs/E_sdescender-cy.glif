@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Esdescender-cy" format="2">
-  <advance width="1408"/>
+  <advance width="1401"/>
   <unicode hex="04AA"/>
-  <anchor x="691" y="0" name="bottom"/>
-  <anchor x="917" y="1400" name="top"/>
+  <anchor x="688" y="0" name="bottom"/>
+  <anchor x="914" y="1400" name="top"/>
   <outline>
     <component base="Es-cy"/>
-    <component base="cedillacomb" xOffset="1305"/>
+    <component base="cedillacomb" xOffset="1302"/>
   </outline>
   <lib>
     <dict>

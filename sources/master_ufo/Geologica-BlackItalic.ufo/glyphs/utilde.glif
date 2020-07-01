@@ -1,15 +1,15 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="utilde" format="2">
-  <advance width="1328"/>
+  <advance width="1322"/>
   <unicode hex="0169"/>
-  <anchor x="546" y="0" name="bottom"/>
-  <anchor x="1088" y="0" name="descender"/>
-  <anchor x="1310" y="1040" name="horn"/>
-  <anchor x="1088" y="0" name="ogonek"/>
-  <anchor x="870" y="1464" name="top"/>
+  <anchor x="543" y="0" name="bottom"/>
+  <anchor x="1085" y="0" name="descender"/>
+  <anchor x="1307" y="1040" name="horn"/>
+  <anchor x="1085" y="0" name="ogonek"/>
+  <anchor x="867" y="1464" name="top"/>
   <outline>
     <component base="u"/>
-    <component base="tildecomb" xOffset="1486"/>
+    <component base="tildecomb" xOffset="1483"/>
   </outline>
   <lib>
     <dict>

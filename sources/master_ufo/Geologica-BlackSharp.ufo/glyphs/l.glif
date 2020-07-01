@@ -1,16 +1,16 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="l" format="2">
-  <advance width="656"/>
+  <advance width="650"/>
   <unicode hex="006C"/>
-  <anchor x="328" y="0" name="bottom"/>
-  <anchor x="528" y="1440" name="caron"/>
-  <anchor x="328" y="1440" name="top"/>
+  <anchor x="325" y="0" name="bottom"/>
+  <anchor x="525" y="1440" name="caron"/>
+  <anchor x="325" y="1440" name="top"/>
   <outline>
     <contour>
-      <point x="128" y="0" type="line"/>
-      <point x="528" y="0" type="line"/>
-      <point x="528" y="1480" type="line"/>
-      <point x="128" y="1294" type="line"/>
+      <point x="125" y="0" type="line"/>
+      <point x="525" y="0" type="line"/>
+      <point x="525" y="1480" type="line"/>
+      <point x="125" y="1294" type="line"/>
     </contour>
   </outline>
   <lib>

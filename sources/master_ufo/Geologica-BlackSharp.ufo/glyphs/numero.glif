@@ -1,16 +1,16 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="numero" format="2">
-  <advance width="2488"/>
+  <advance width="2476"/>
   <unicode hex="2116"/>
-  <anchor x="798" y="0" name="bottom_1"/>
-  <anchor x="2042" y="722" name="bottom_2"/>
-  <anchor x="2310" y="1398" name="horn"/>
-  <anchor x="2174" y="722" name="ogonek"/>
-  <anchor x="798" y="1400" name="top_1"/>
-  <anchor x="2042" y="1398" name="top_2"/>
+  <anchor x="795" y="0" name="bottom_1"/>
+  <anchor x="2033" y="722" name="bottom_2"/>
+  <anchor x="2301" y="1398" name="horn"/>
+  <anchor x="2165" y="722" name="ogonek"/>
+  <anchor x="795" y="1400" name="top_1"/>
+  <anchor x="2033" y="1398" name="top_2"/>
   <outline>
     <component base="N"/>
-    <component base="ordmasculine" xOffset="1596"/>
+    <component base="ordmasculine" xOffset="1590"/>
   </outline>
   <lib>
     <dict>

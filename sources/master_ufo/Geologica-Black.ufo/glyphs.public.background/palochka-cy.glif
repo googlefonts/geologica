@@ -2,10 +2,10 @@
 <glyph name="palochka-cy" format="2">
   <outline>
     <contour>
-      <point x="128" y="0" type="line"/>
-      <point x="528" y="0" type="line"/>
-      <point x="528" y="1440" type="line"/>
-      <point x="128" y="1440" type="line"/>
+      <point x="125" y="0" type="line"/>
+      <point x="525" y="0" type="line"/>
+      <point x="525" y="1440" type="line"/>
+      <point x="125" y="1440" type="line"/>
     </contour>
   </outline>
 </glyph>

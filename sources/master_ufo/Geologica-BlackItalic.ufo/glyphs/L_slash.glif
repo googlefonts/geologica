@@ -1,24 +1,24 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Lslash" format="2">
-  <advance width="1192"/>
+  <advance width="1186"/>
   <unicode hex="0141"/>
-  <guideline x="1127" y="978" angle="257.9952"/>
-  <guideline x="-15" y="530" angle="77.9952"/>
-  <guideline x="1127" y="978" angle="113.0829"/>
-  <guideline x="-15" y="530" angle="113.0829"/>
-  <anchor x="556.0" y="0" name="bottom"/>
-  <anchor x="801.384" y="1440" name="caron"/>
-  <anchor x="589.29" y="1400" name="top"/>
+  <guideline x="1121" y="978" angle="257.9952"/>
+  <guideline x="-21" y="530" angle="77.9952"/>
+  <guideline x="1121" y="978" angle="113.0829"/>
+  <guideline x="-21" y="530" angle="113.0829"/>
+  <anchor x="553.0" y="0" name="bottom"/>
+  <anchor x="798.384" y="1440" name="caron"/>
+  <anchor x="586.29" y="1400" name="top"/>
   <outline>
     <contour>
-      <point x="42" y="396" type="line"/>
-      <point x="380" y="538" type="line"/>
-      <point x="372" y="498" type="line"/>
-      <point x="1184" y="844" type="line"/>
-      <point x="1070" y="1112" type="line"/>
-      <point x="446" y="846" type="line"/>
-      <point x="454" y="886" type="line"/>
-      <point x="-72" y="664" type="line"/>
+      <point x="39" y="396" type="line"/>
+      <point x="377" y="538" type="line"/>
+      <point x="369" y="498" type="line"/>
+      <point x="1181" y="844" type="line"/>
+      <point x="1067" y="1112" type="line"/>
+      <point x="443" y="846" type="line"/>
+      <point x="451" y="886" type="line"/>
+      <point x="-75" y="664" type="line"/>
     </contour>
     <component base="L" yxScale="0.00235" xOffset="40"/>
   </outline>

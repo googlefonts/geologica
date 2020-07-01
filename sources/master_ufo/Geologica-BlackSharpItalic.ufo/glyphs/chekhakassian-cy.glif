@@ -1,20 +1,20 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="chekhakassian-cy" format="2">
-  <advance width="1236"/>
+  <advance width="1230"/>
   <unicode hex="04CC"/>
-  <anchor x="616" y="0" name="_descender"/>
-  <anchor x="564" y="486" name="center"/>
-  <anchor x="996" y="0" name="descender"/>
-  <anchor x="596" y="0" name="descender_alt"/>
-  <anchor x="682" y="1040" name="top"/>
+  <anchor x="613" y="0" name="_descender"/>
+  <anchor x="561" y="486" name="center"/>
+  <anchor x="993" y="0" name="descender"/>
+  <anchor x="593" y="0" name="descender_alt"/>
+  <anchor x="679" y="1040" name="top"/>
   <outline>
     <contour>
-      <point x="250" y="-384" type="line"/>
-      <point x="650" y="-216" type="line"/>
-      <point x="696" y="0" type="line"/>
-      <point x="776" y="0" type="line"/>
-      <point x="826" y="232" type="line"/>
-      <point x="382" y="232" type="line"/>
+      <point x="247" y="-384" type="line"/>
+      <point x="647" y="-216" type="line"/>
+      <point x="693" y="0" type="line"/>
+      <point x="773" y="0" type="line"/>
+      <point x="823" y="232" type="line"/>
+      <point x="379" y="232" type="line"/>
     </contour>
     <component base="che-cy"/>
   </outline>

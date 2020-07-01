@@ -2,19 +2,19 @@
 <glyph name="We-cy" format="2">
   <outline>
     <contour>
-      <point x="448" y="0" type="line"/>
-      <point x="830" y="0" type="line"/>
-      <point x="1050" y="806" type="line"/>
-      <point x="1270" y="0" type="line"/>
-      <point x="1656" y="0" type="line"/>
-      <point x="2084" y="1400" type="line"/>
-      <point x="1678" y="1400" type="line"/>
-      <point x="1478" y="618" type="line"/>
-      <point x="1256" y="1400" type="line"/>
-      <point x="858" y="1400" type="line"/>
-      <point x="636" y="618" type="line"/>
-      <point x="436" y="1400" type="line"/>
-      <point x="20" y="1400" type="line"/>
+      <point x="445" y="0" type="line"/>
+      <point x="827" y="0" type="line"/>
+      <point x="1047" y="806" type="line"/>
+      <point x="1267" y="0" type="line"/>
+      <point x="1653" y="0" type="line"/>
+      <point x="2081" y="1400" type="line"/>
+      <point x="1675" y="1400" type="line"/>
+      <point x="1475" y="618" type="line"/>
+      <point x="1253" y="1400" type="line"/>
+      <point x="855" y="1400" type="line"/>
+      <point x="633" y="618" type="line"/>
+      <point x="433" y="1400" type="line"/>
+      <point x="17" y="1400" type="line"/>
     </contour>
   </outline>
 </glyph>

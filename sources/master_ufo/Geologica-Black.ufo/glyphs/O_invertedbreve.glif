@@ -1,15 +1,15 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Oinvertedbreve" format="2">
-  <advance width="1648"/>
+  <advance width="1642"/>
   <unicode hex="020E"/>
-  <anchor x="824" y="0" name="bottom"/>
-  <anchor x="1228" y="1400" name="horn"/>
-  <anchor x="1084" y="0" name="ogonek"/>
-  <anchor x="824" y="1400" name="top"/>
-  <anchor x="90" y="1400" name="topleft"/>
+  <anchor x="821" y="0" name="bottom"/>
+  <anchor x="1225" y="1400" name="horn"/>
+  <anchor x="1081" y="0" name="ogonek"/>
+  <anchor x="821" y="1400" name="top"/>
+  <anchor x="87" y="1400" name="topleft"/>
   <outline>
     <component base="O"/>
-    <component base="breveinvertedcomb.case" xOffset="1656"/>
+    <component base="breveinvertedcomb.case" xOffset="1653"/>
   </outline>
   <lib>
     <dict>

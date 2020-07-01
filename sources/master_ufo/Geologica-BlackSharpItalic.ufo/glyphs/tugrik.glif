@@ -2,9 +2,9 @@
 <glyph name="tugrik" format="2">
   <advance width="1296"/>
   <unicode hex="20AE"/>
-  <anchor x="676" y="644" name="bar"/>
-  <anchor x="538" y="0" name="bottom"/>
-  <anchor x="834" y="1400" name="top"/>
+  <anchor x="673" y="644" name="bar"/>
+  <anchor x="535" y="0" name="bottom"/>
+  <anchor x="831" y="1400" name="top"/>
   <outline>
     <contour>
       <point x="228" y="384" type="line"/>

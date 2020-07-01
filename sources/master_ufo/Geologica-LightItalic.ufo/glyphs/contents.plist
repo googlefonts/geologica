@@ -1386,6 +1386,8 @@
     <string>io-cy.glif</string>
     <key>iogonek</key>
     <string>iogonek.glif</string>
+    <key>iogonek.dotless</key>
+    <string>iogonek.dotless.glif</string>
     <key>iota</key>
     <string>iota.glif</string>
     <key>iotadieresis</key>

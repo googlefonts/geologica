@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="ka-cy.loclBGR" format="2">
-  <advance width="1272"/>
-  <anchor x="672" y="0" name="bottom"/>
+  <advance width="1266"/>
+  <anchor x="669" y="0" name="bottom"/>
   <outline>
     <component base="k"/>
   </outline>

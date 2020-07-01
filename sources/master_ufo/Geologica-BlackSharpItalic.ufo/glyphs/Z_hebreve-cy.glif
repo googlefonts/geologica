@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Zhebreve-cy" format="2">
-  <advance width="2136"/>
+  <advance width="2130"/>
   <unicode hex="04C1"/>
-  <anchor x="1892" y="0" name="descender"/>
-  <anchor x="1254" y="1400" name="top"/>
+  <anchor x="1889" y="0" name="descender"/>
+  <anchor x="1251" y="1400" name="top"/>
   <outline>
     <component base="Zhe-cy"/>
-    <component base="brevecomb-cy" xOffset="1958" yOffset="360"/>
+    <component base="brevecomb-cy" xOffset="1955" yOffset="360"/>
   </outline>
   <lib>
     <dict>

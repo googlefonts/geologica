@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Dcroat" format="2">
-  <advance width="1531"/>
+  <advance width="1525"/>
   <unicode hex="0110"/>
-  <anchor x="522" y="712" name="bar"/>
-  <anchor x="952" y="1400" name="top"/>
+  <anchor x="519" y="712" name="bar"/>
+  <anchor x="949" y="1400" name="top"/>
   <outline>
     <component base="Eth"/>
   </outline>

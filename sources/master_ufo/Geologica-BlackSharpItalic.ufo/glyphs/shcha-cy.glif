@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="shcha-cy" format="2">
-  <advance width="2091"/>
+  <advance width="2085"/>
   <unicode hex="0449"/>
-  <anchor x="1671" y="0" name="descender"/>
+  <anchor x="1668" y="0" name="descender"/>
   <outline>
     <component base="sha-cy"/>
-    <component base="_part.cy-desc-lc" xOffset="575"/>
+    <component base="_part.cy-desc-lc" xOffset="572"/>
   </outline>
   <lib>
     <dict>

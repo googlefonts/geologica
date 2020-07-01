@@ -2,10 +2,10 @@
 <glyph name="yi-cy" format="2">
   <outline>
     <contour>
-      <point x="18" y="0" type="line"/>
-      <point x="418" y="0" type="line"/>
-      <point x="652" y="1100" type="line"/>
-      <point x="214" y="914" type="line"/>
+      <point x="15" y="0" type="line"/>
+      <point x="415" y="0" type="line"/>
+      <point x="649" y="1100" type="line"/>
+      <point x="211" y="914" type="line"/>
     </contour>
     <contour>
       <point x="-359" y="1170" type="curve" smooth="yes"/>

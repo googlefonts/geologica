@@ -805,6 +805,7 @@
     <array>
       <string>idotbelow</string>
       <string>iogonek</string>
+      <string>iogonek.dotless</string>
     </array>
     <key>public.kern1.iota</key>
     <array>
@@ -2325,6 +2326,7 @@
     <array>
       <string>idotbelow</string>
       <string>iogonek</string>
+      <string>iogonek.dotless</string>
     </array>
     <key>public.kern2.iotadieresistonos</key>
     <array>
@@ -2517,10 +2519,6 @@
       <string>imacron-cy</string>
       <string>idieresis-cy</string>
       <string>gje-cy.loclMKD</string>
-    </array>
-    <key>public.kern2.ne</key>
-    <array>
-      <string>gheupturn-cy</string>
     </array>
     <key>public.kern2.nine</key>
     <array>
@@ -2946,6 +2944,7 @@
     <array>
       <string>ve-cy</string>
       <string>ge-cy</string>
+      <string>gheupturn-cy</string>
       <string>em-cy</string>
       <string>pe-cy</string>
     </array>

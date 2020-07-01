@@ -1,21 +1,21 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="ustraight-cy" format="2">
-  <advance width="1176"/>
+  <advance width="1170"/>
   <unicode hex="04AF"/>
-  <guideline x="200" y="-210" angle="78"/>
-  <anchor x="472" y="-80" name="bar"/>
+  <guideline x="194" y="-210" angle="78"/>
+  <anchor x="469" y="-80" name="bar"/>
   <outline>
     <contour>
-      <point x="200" y="-420" type="line"/>
-      <point x="600" y="-420" type="line"/>
-      <point x="688" y="2" type="line"/>
-      <point x="1278" y="1040" type="line"/>
-      <point x="844" y="1040" type="line"/>
-      <point x="506" y="356" type="line"/>
-      <point x="602" y="338" type="line"/>
-      <point x="540" y="1040" type="line"/>
-      <point x="120" y="1040" type="line"/>
-      <point x="288" y="0" type="line"/>
+      <point x="197" y="-420" type="line"/>
+      <point x="597" y="-420" type="line"/>
+      <point x="685" y="2" type="line"/>
+      <point x="1275" y="1040" type="line"/>
+      <point x="841" y="1040" type="line"/>
+      <point x="503" y="356" type="line"/>
+      <point x="599" y="338" type="line"/>
+      <point x="537" y="1040" type="line"/>
+      <point x="117" y="1040" type="line"/>
+      <point x="285" y="0" type="line"/>
     </contour>
   </outline>
   <lib>

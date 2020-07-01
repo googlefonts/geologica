@@ -2,11 +2,11 @@
 <glyph name="naira" format="2">
   <advance width="1296"/>
   <unicode hex="20A6"/>
-  <anchor x="548" y="0" name="bottom"/>
-  <anchor x="844" y="1400" name="top"/>
+  <anchor x="547" y="0" name="bottom"/>
+  <anchor x="843" y="1400" name="top"/>
   <outline>
     <component base="_part.naira"/>
-    <component base="_part.currencyBarHorizontalSingle"/>
+    <component base="_part.currencyBarHorizontalSingle" xOffset="-1"/>
   </outline>
   <lib>
     <dict>

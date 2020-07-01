@@ -1,15 +1,15 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Aringacute" format="2">
-  <advance width="1498"/>
+  <advance width="1492"/>
   <unicode hex="01FA"/>
-  <anchor x="750" y="0" name="bottom"/>
-  <anchor x="1435" y="0" name="ogonek"/>
-  <anchor x="750" y="2056" name="top"/>
-  <anchor x="260" y="1400" name="topleft"/>
+  <anchor x="747" y="0" name="bottom"/>
+  <anchor x="1432" y="0" name="ogonek"/>
+  <anchor x="747" y="2056" name="top"/>
+  <anchor x="257" y="1400" name="topleft"/>
   <outline>
     <component base="A"/>
-    <component base="ringcomb.case" xOffset="1584"/>
-    <component base="acutecomb.case" xOffset="1582" yOffset="656"/>
+    <component base="ringcomb.case" xOffset="1581"/>
+    <component base="acutecomb.case" xOffset="1579" yOffset="656"/>
   </outline>
   <lib>
     <dict>

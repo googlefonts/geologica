@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="hbar" format="2">
-  <advance width="1368"/>
+  <advance width="1362"/>
   <unicode hex="0127"/>
-  <anchor x="556" y="1224" name="bar"/>
-  <anchor x="526" y="1440" name="top"/>
+  <anchor x="553" y="1224" name="bar"/>
+  <anchor x="523" y="1440" name="top"/>
   <outline>
     <component base="h"/>
-    <component base="strokeshortcomb" xOffset="1194" yOffset="690"/>
+    <component base="strokeshortcomb" xOffset="1191" yOffset="690"/>
   </outline>
   <lib>
     <dict>

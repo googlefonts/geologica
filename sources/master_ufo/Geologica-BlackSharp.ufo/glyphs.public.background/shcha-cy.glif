@@ -2,18 +2,18 @@
 <glyph name="shcha-cy" format="2">
   <outline>
     <contour>
-      <point x="128" y="0" type="line"/>
-      <point x="1780" y="0" type="line"/>
-      <point x="1780" y="1100" type="line"/>
-      <point x="1400" y="924" type="line"/>
-      <point x="1400" y="312" type="line"/>
-      <point x="1144" y="312" type="line"/>
-      <point x="1144" y="1100" type="line"/>
-      <point x="764" y="924" type="line"/>
-      <point x="764" y="312" type="line"/>
-      <point x="508" y="312" type="line"/>
-      <point x="508" y="1100" type="line"/>
-      <point x="128" y="924" type="line"/>
+      <point x="125" y="0" type="line"/>
+      <point x="1777" y="0" type="line"/>
+      <point x="1777" y="1100" type="line"/>
+      <point x="1397" y="924" type="line"/>
+      <point x="1397" y="312" type="line"/>
+      <point x="1141" y="312" type="line"/>
+      <point x="1141" y="1100" type="line"/>
+      <point x="761" y="924" type="line"/>
+      <point x="761" y="312" type="line"/>
+      <point x="505" y="312" type="line"/>
+      <point x="505" y="1100" type="line"/>
+      <point x="125" y="924" type="line"/>
     </contour>
     <contour>
       <point x="592" y="-440" type="line"/>

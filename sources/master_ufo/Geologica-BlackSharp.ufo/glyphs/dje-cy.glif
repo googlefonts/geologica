@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="dje-cy" format="2">
-  <advance width="1360"/>
+  <advance width="1354"/>
   <unicode hex="0452"/>
-  <anchor x="406" y="1224" name="bar"/>
+  <anchor x="400" y="1224" name="bar"/>
   <outline>
-    <component base="_part.heng"/>
-    <component base="strokeshortcomb" xOffset="1044" yOffset="690"/>
+    <component base="_part.heng" xOffset="-3"/>
+    <component base="strokeshortcomb" xOffset="1038" yOffset="690"/>
   </outline>
   <lib>
     <dict>

@@ -2,14 +2,14 @@
 <glyph name="dzhe-cy" format="2">
   <outline>
     <contour>
-      <point x="128" y="0" type="line"/>
-      <point x="1208" y="0" type="line"/>
-      <point x="1208" y="1100" type="line"/>
-      <point x="808" y="914" type="line"/>
-      <point x="808" y="312" type="line"/>
-      <point x="528" y="312" type="line"/>
-      <point x="528" y="1100" type="line"/>
-      <point x="128" y="914" type="line"/>
+      <point x="125" y="0" type="line"/>
+      <point x="1205" y="0" type="line"/>
+      <point x="1205" y="1100" type="line"/>
+      <point x="805" y="914" type="line"/>
+      <point x="805" y="312" type="line"/>
+      <point x="525" y="312" type="line"/>
+      <point x="525" y="1100" type="line"/>
+      <point x="125" y="914" type="line"/>
     </contour>
     <contour>
       <point x="65" y="-440" type="line"/>

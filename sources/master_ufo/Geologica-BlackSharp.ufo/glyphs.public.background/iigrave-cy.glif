@@ -2,16 +2,16 @@
 <glyph name="iigrave-cy" format="2">
   <outline>
     <contour>
-      <point x="128" y="0" type="line"/>
-      <point x="490" y="0" type="line"/>
-      <point x="864" y="496" type="line"/>
-      <point x="864" y="0" type="line"/>
-      <point x="1244" y="0" type="line"/>
-      <point x="1244" y="1040" type="line"/>
-      <point x="882" y="1040" type="line"/>
-      <point x="508" y="552" type="line"/>
-      <point x="508" y="1100" type="line"/>
-      <point x="128" y="924" type="line"/>
+      <point x="125" y="0" type="line"/>
+      <point x="487" y="0" type="line"/>
+      <point x="861" y="496" type="line"/>
+      <point x="861" y="0" type="line"/>
+      <point x="1241" y="0" type="line"/>
+      <point x="1241" y="1040" type="line"/>
+      <point x="879" y="1040" type="line"/>
+      <point x="505" y="552" type="line"/>
+      <point x="505" y="1100" type="line"/>
+      <point x="125" y="924" type="line"/>
     </contour>
     <contour>
       <point x="-144" y="1170" type="line"/>

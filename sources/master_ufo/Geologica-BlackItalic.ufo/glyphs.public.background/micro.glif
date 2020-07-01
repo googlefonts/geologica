@@ -2,28 +2,28 @@
 <glyph name="micro" format="2">
   <outline>
     <contour>
-      <point x="-71" y="-420" type="line"/>
-      <point x="289" y="-420" type="line"/>
-      <point x="359" y="42" type="line"/>
-      <point x="389" y="2"/>
-      <point x="441" y="-30"/>
-      <point x="535" y="-30" type="curve" smooth="yes"/>
-      <point x="655" y="-30"/>
-      <point x="731" y="40"/>
-      <point x="785" y="102" type="curve"/>
-      <point x="763" y="0" type="line"/>
-      <point x="1103" y="0" type="line"/>
-      <point x="1325" y="1040" type="line"/>
-      <point x="925" y="1040" type="line"/>
-      <point x="805" y="482" type="line" smooth="yes"/>
-      <point x="787" y="392"/>
-      <point x="721" y="330"/>
-      <point x="631" y="330" type="curve" smooth="yes"/>
-      <point x="541" y="330"/>
-      <point x="503" y="392"/>
-      <point x="521" y="482" type="curve" smooth="yes"/>
-      <point x="641" y="1040" type="line"/>
-      <point x="241" y="1040" type="line"/>
+      <point x="-74" y="-420" type="line"/>
+      <point x="286" y="-420" type="line"/>
+      <point x="356" y="42" type="line"/>
+      <point x="386" y="2"/>
+      <point x="438" y="-30"/>
+      <point x="532" y="-30" type="curve" smooth="yes"/>
+      <point x="652" y="-30"/>
+      <point x="728" y="40"/>
+      <point x="782" y="102" type="curve"/>
+      <point x="760" y="0" type="line"/>
+      <point x="1100" y="0" type="line"/>
+      <point x="1322" y="1040" type="line"/>
+      <point x="922" y="1040" type="line"/>
+      <point x="802" y="482" type="line" smooth="yes"/>
+      <point x="784" y="392"/>
+      <point x="718" y="330"/>
+      <point x="628" y="330" type="curve" smooth="yes"/>
+      <point x="538" y="330"/>
+      <point x="500" y="392"/>
+      <point x="518" y="482" type="curve" smooth="yes"/>
+      <point x="638" y="1040" type="line"/>
+      <point x="238" y="1040" type="line"/>
     </contour>
   </outline>
 </glyph>

@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="kadescender-cy" format="2">
-  <advance width="1372"/>
+  <advance width="1366"/>
   <unicode hex="049B"/>
-  <anchor x="1138" y="0" name="descender"/>
-  <anchor x="674" y="1040" name="top"/>
+  <anchor x="1135" y="0" name="descender"/>
+  <anchor x="671" y="1040" name="top"/>
   <outline>
     <component base="ka-cy"/>
-    <component base="_part.cy-desc-lc-stem" xOffset="-52"/>
+    <component base="_part.cy-desc-lc-stem" xOffset="-55"/>
   </outline>
   <lib>
     <dict>

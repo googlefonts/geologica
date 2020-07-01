@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="ghestroke-cy" format="2">
-  <advance width="952"/>
+  <advance width="946"/>
   <unicode hex="0493"/>
-  <anchor x="388" y="462" name="bar"/>
-  <anchor x="568" y="0" name="descender"/>
-  <anchor x="534" y="1040" name="top"/>
+  <anchor x="385" y="462" name="bar"/>
+  <anchor x="565" y="0" name="descender"/>
+  <anchor x="531" y="1040" name="top"/>
   <outline>
     <component base="ge-cy" xOffset="40"/>
-    <component base="strokeshortcomb" xOffset="1026" yOffset="-72"/>
+    <component base="strokeshortcomb" xOffset="1023" yOffset="-72"/>
   </outline>
   <lib>
     <dict>

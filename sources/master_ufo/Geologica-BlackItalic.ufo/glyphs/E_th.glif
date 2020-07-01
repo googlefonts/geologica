@@ -1,15 +1,15 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Eth" format="2">
-  <advance width="1531"/>
+  <advance width="1525"/>
   <unicode hex="00D0"/>
-  <anchor x="522" y="712" name="bar"/>
-  <anchor x="952" y="1400" name="top"/>
+  <anchor x="519" y="712" name="bar"/>
+  <anchor x="949" y="1400" name="top"/>
   <outline>
     <contour>
-      <point x="-12" y="558" type="line"/>
-      <point x="874" y="558" type="line"/>
-      <point x="940" y="866" type="line"/>
-      <point x="54" y="866" type="line"/>
+      <point x="-15" y="558" type="line"/>
+      <point x="871" y="558" type="line"/>
+      <point x="937" y="866" type="line"/>
+      <point x="51" y="866" type="line"/>
     </contour>
     <component base="D" xOffset="40"/>
   </outline>

@@ -1,14 +1,14 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="tse-cy.loclBGR" format="2">
-  <advance width="1507"/>
-  <anchor x="545" y="0" name="bottom"/>
-  <anchor x="1087" y="0" name="descender"/>
-  <anchor x="1309" y="1040" name="horn"/>
-  <anchor x="1087" y="0" name="ogonek"/>
-  <anchor x="779" y="1040" name="top"/>
+  <advance width="1501"/>
+  <anchor x="542" y="0" name="bottom"/>
+  <anchor x="1084" y="0" name="descender"/>
+  <anchor x="1306" y="1040" name="horn"/>
+  <anchor x="1084" y="0" name="ogonek"/>
+  <anchor x="776" y="1040" name="top"/>
   <outline>
     <component base="u"/>
-    <component base="_part.cy-desc-lc" xOffset="-9"/>
+    <component base="_part.cy-desc-lc" xOffset="-12"/>
   </outline>
   <lib>
     <dict>

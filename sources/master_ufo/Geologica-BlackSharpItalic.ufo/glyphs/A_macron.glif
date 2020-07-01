@@ -1,14 +1,14 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Amacron" format="2">
-  <advance width="1502"/>
+  <advance width="1496"/>
   <unicode hex="0100"/>
-  <anchor x="648" y="0" name="bottom"/>
-  <anchor x="1346" y="0" name="ogonek"/>
-  <anchor x="944" y="1400" name="top"/>
-  <anchor x="456" y="1400" name="topleft"/>
+  <anchor x="645" y="0" name="bottom"/>
+  <anchor x="1343" y="0" name="ogonek"/>
+  <anchor x="941" y="1400" name="top"/>
+  <anchor x="453" y="1400" name="topleft"/>
   <outline>
     <component base="A"/>
-    <component base="macroncomb.case" xOffset="1592"/>
+    <component base="macroncomb.case" xOffset="1589"/>
   </outline>
   <lib>
     <dict>
