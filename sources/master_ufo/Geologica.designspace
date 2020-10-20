@@ -63,6 +63,8 @@
       <sub name="pe-cy.loclSRB" with="pe-cy.loclSRB.ss01"/>
       <sub name="te-cy.loclSRB" with="te-cy.loclSRB.ss01"/>
     </rule>
+  </rules>
+  <rules>
     <rule name="BRACKET.140.200">
       <conditionset>
         <condition name="Weight" minimum="140" maximum="200"/>

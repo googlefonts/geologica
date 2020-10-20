@@ -9,9 +9,9 @@ Fontbakery version: 0.7.26
 
 * [com.google.fonts/check/fontbakery_version](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/fontbakery_version)
 
-* ℹ **INFO** fontbakery (0.7.27)  - Well designed Font QA tool, written in Python 3
+* ℹ **INFO** fontbakery (0.7.31)  - Well designed Font QA tool, written in Python 3
   INSTALLED: 0.7.26
-  LATEST:    0.7.27
+  LATEST:    0.7.31
 
 * 🍞 **PASS** Font Bakery is up-to-date
 
@@ -1429,7 +1429,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [GSUB, GPOS, gasp, DSIG, loca, prep]
+* ℹ **INFO** This font contains the following optional tables [GPOS, loca, GSUB, gasp, prep, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>

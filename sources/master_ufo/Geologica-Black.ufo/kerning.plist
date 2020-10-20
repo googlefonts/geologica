@@ -3593,11 +3593,11 @@
       <key>public.kern2.Zhe</key>
       <integer>80</integer>
       <key>public.kern2.a</key>
-      <integer>-60</integer>
+      <integer>-120</integer>
       <key>public.kern2.aaccent</key>
-      <integer>80</integer>
+      <integer>40</integer>
       <key>public.kern2.adblgrave</key>
-      <integer>80</integer>
+      <integer>140</integer>
       <key>public.kern2.asterisk</key>
       <integer>60</integer>
       <key>public.kern2.backslash</key>
@@ -3631,7 +3631,7 @@
       <key>public.kern2.n</key>
       <integer>-60</integer>
       <key>public.kern2.o</key>
-      <integer>-80</integer>
+      <integer>-140</integer>
       <key>public.kern2.odblgrave</key>
       <integer>80</integer>
       <key>public.kern2.one</key>
@@ -3639,7 +3639,7 @@
       <key>public.kern2.one.numr</key>
       <integer>120</integer>
       <key>public.kern2.oslash</key>
-      <integer>-80</integer>
+      <integer>-140</integer>
       <key>public.kern2.parenright</key>
       <integer>100</integer>
       <key>public.kern2.period</key>
@@ -3649,15 +3649,13 @@
       <key>public.kern2.raccentbelow</key>
       <integer>-60</integer>
       <key>public.kern2.s</key>
-      <integer>-60</integer>
+      <integer>-120</integer>
       <key>public.kern2.saccent</key>
       <integer>20</integer>
       <key>public.kern2.seven</key>
       <integer>80</integer>
       <key>public.kern2.u</key>
       <integer>-60</integer>
-      <key>public.kern2.uaccent</key>
-      <integer>100</integer>
       <key>public.kern2.udblgrave</key>
       <integer>100</integer>
       <key>public.kern2.upsilonaccent</key>
@@ -3909,6 +3907,12 @@
     </dict>
     <key>public.kern1.f</key>
     <dict>
+      <key>public.kern2.T</key>
+      <integer>40</integer>
+      <key>public.kern2.Taccent</key>
+      <integer>40</integer>
+      <key>public.kern2.Tbar</key>
+      <integer>40</integer>
       <key>public.kern2.a</key>
       <integer>-10</integer>
       <key>public.kern2.aaccent</key>
@@ -4360,6 +4364,8 @@
       <integer>260</integer>
       <key>public.kern2.odblgrave</key>
       <integer>100</integer>
+      <key>public.kern2.zaccent</key>
+      <integer>20</integer>
     </dict>
     <key>public.kern1.idotless</key>
     <dict>

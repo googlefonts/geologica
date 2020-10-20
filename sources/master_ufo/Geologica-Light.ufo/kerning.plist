@@ -3025,6 +3025,8 @@
     <dict>
       <key>public.kern2.A</key>
       <integer>40</integer>
+      <key>public.kern2.AE</key>
+      <integer>80</integer>
       <key>public.kern2.Aaccent</key>
       <integer>40</integer>
       <key>public.kern2.Che</key>
@@ -3168,7 +3170,7 @@
       <key>public.kern2.aaccent</key>
       <integer>20</integer>
       <key>public.kern2.adblgrave</key>
-      <integer>20</integer>
+      <integer>60</integer>
       <key>public.kern2.asterisk</key>
       <integer>60</integer>
       <key>public.kern2.backslash</key>
@@ -3467,6 +3469,12 @@
     </dict>
     <key>public.kern1.f</key>
     <dict>
+      <key>public.kern2.T</key>
+      <integer>20</integer>
+      <key>public.kern2.Taccent</key>
+      <integer>20</integer>
+      <key>public.kern2.Tbar</key>
+      <integer>20</integer>
       <key>public.kern2.a</key>
       <integer>-10</integer>
       <key>public.kern2.aaccent</key>
@@ -4695,6 +4703,8 @@
     <dict>
       <key>public.kern2.A</key>
       <integer>40</integer>
+      <key>public.kern2.AE</key>
+      <integer>80</integer>
       <key>public.kern2.Aaccent</key>
       <integer>40</integer>
       <key>public.kern2.Che</key>

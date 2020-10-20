@@ -689,6 +689,11 @@
         <string>SHRP</string>
       </dict>
     </array>
+    <key>com.schriftgestaltung.customParameter.GSFont.DisplayStrings</key>
+    <array>
+      <string>n/Dje-cy qwe/Ghemiddlehook-cy 123uio1p23iou123</string>
+      <string>.</string>
+    </array>
     <key>com.schriftgestaltung.customParameter.GSFont.Family Alignment Zones</key>
     <array>
       <string>{1440, 30}</string>
