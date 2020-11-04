@@ -3,7 +3,14 @@
   <advance width="1296"/>
   <unicode hex="27E9"/>
   <outline>
-    <component base="leftanglebracket-math" xScale="-1" yScale="-1" xOffset="1374" yOffset="1328"/>
+    <contour>
+      <point x="74" y="-440" type="line"/>
+      <point x="1080" y="664" type="line"/>
+      <point x="542" y="1768" type="line"/>
+      <point x="512" y="1616" type="line"/>
+      <point x="970" y="670" type="line"/>
+      <point x="108" y="-274" type="line"/>
+    </contour>
   </outline>
   <lib>
     <dict>
