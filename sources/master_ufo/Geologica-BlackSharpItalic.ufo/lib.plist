@@ -659,7 +659,7 @@
       </dict>
     </dict>
     <key>com.schriftgestaltung.appVersion</key>
-    <string>1260</string>
+    <string>1348</string>
     <key>com.schriftgestaltung.customName</key>
     <string>Black Sharp Italic</string>
     <key>com.schriftgestaltung.customParameter.GSFont.Axes</key>
@@ -692,7 +692,8 @@
     <key>com.schriftgestaltung.customParameter.GSFont.DisplayStrings</key>
     <array>
       <string>n/Dje-cy qwe/Ghemiddlehook-cy 123uio1p23iou123</string>
-      <string>.</string>
+      <string>/Uhorn/hbar .</string>
+      <string>)/quoteleft/guilsinglright/rightanglebracket-math &lt;/southEastArrow/downArrow/southWestArrow/leftArrow/northWestArrow</string>
     </array>
     <key>com.schriftgestaltung.customParameter.GSFont.Family Alignment Zones</key>
     <array>

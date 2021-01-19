@@ -1,6 +1,6 @@
 ## Fontbakery report
 
-Fontbakery version: 0.7.26
+Fontbakery version: 0.7.29
 
 <details>
 <summary><b>[14] Family checks</b></summary>
@@ -10,7 +10,7 @@ Fontbakery version: 0.7.26
 * [com.google.fonts/check/fontbakery_version](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/fontbakery_version)
 
 * ℹ **INFO** fontbakery (0.7.31)  - Well designed Font QA tool, written in Python 3
-  INSTALLED: 0.7.26
+  INSTALLED: 0.7.29
   LATEST:    0.7.31
 
 * 🍞 **PASS** Font Bakery is up-to-date
@@ -216,63 +216,7 @@ https://github.com/googlefonts/fontbakery/blob/master/prebuilt/workarounds
 <br>
 </details>
 <details>
-<summary><b>[158] Geologica-Black.ttf</b></summary>
-<details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
-
-This can be accomplished by using the 'gftools fix-hinting' command.
-
-# create virtualenvpython3 -m venv venv
-# activate virtualenvsource venv/bin/activate
-# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-
-A font&#x27;s winAscent and winDescent values should be greater than the head
-table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
-can occur on Windows platforms
-(https://github.com/RedHatBrand/Overpass/issues/33).
-
-If the font includes tall/deep writing systems such as Arabic or Devanagari,
-the winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-
-When the win Metrics are significantly greater than the upm, the linespacing
-can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
-This means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).
-
-
-</pre>
-
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 895, but got 746 instead [code: descent]
-
-</details>
+<summary><b>[163] Geologica-Black.ttf</b></summary>
 <details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
@@ -328,66 +272,33 @@ Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uhorn	Contours detected: 2	Expected: 1
 Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni20A6	Contours detected: 2	Expected: 1, 3 or 5
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
 Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1 [code: contour-count]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class)</summary>
-
-* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
-<pre>--- Rationale ---
-
-Glyphs in the GDEF mark glyph class should be non-spacing.
-Spacing glyphs in the GDEF mark glyph class may have incorrect
-anchor positioning that was only intended for building composite glyphs
-during design.
-
-
-</pre>
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 acutecomb, acutecomb.case, acutecomb.narrow, brevecombcy, dotbelowcomb, gravecomb, gravecomb.case, gravecomb.narrow, hookabovecomb, hookabovecomb.case and 55 more. [code: spacing-mark-glyphs]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class</summary>
-
-* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
-<pre>--- Rationale ---
-
-Mark characters should be in the GDEF mark glyph class.
-
-
-</pre>
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 U+0300, U+0301, U+0302, U+0303, U+0304, U+0306, U+0307, U+0308, U+0309, U+030A, U+030B, U+030C, U+030F, U+0311, U+0312, U+031B, U+0323, U+0324, U+0326, U+0327, U+0328, U+032E, U+0331 and U+0335 [code: mark-chars]
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni20A6	Contours detected: 2	Expected: 1, 3 or 5
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
 
 </details>
 <details>
@@ -398,12 +309,12 @@ Mark characters should be in the GDEF mark glyph class.
 
 The snippet of HTML in the DESCRIPTION.en_us.html file is added to the font
 family webpage on the Google Fonts website. For that reason, all hyperlinks in
-it must be properly working. 
+it must be properly working.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -426,7 +337,7 @@ any other git-based version control service.
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -435,17 +346,19 @@ any other git-based version control service.
 * [com.google.fonts/check/description/valid_html](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/valid_html)
 <pre>--- Rationale ---
 
-When packaging families for being pushed to the `google/fonts` git repo, if
-there is no DESCRIPTION.en_us.html file, some older versions of the
-`add_font.py` tool insert a dummy description file which contains invalid html.
+Sometimes people write malformed HTML markup. This check should ensure the file
+is good.
 
-This file needs to either be replaced with an existing description file or
-edited by hand.
+Additionally, when packaging families for being pushed to the `google/fonts`
+git repo, if there is no DESCRIPTION.en_us.html file, some older versions of
+the `add_font.py` tool insert a dummy description file which contains invalid
+html. This file needs to either be replaced with an existing description file
+or edited by hand.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: descfile
+* 💤 **SKIP** Unfulfilled Conditions: description
 
 </details>
 <details>
@@ -496,7 +409,7 @@ malformed.
 
 </pre>
 
-* 💤 **SKIP** Font family at '../fonts/static/ttfs' lacks a METADATA.pb file.
+* 💤 **SKIP** Font family at '../fonts/static/ttfs' lacks a METADATA.pb file. [code: file-not-found]
 
 </details>
 <details>
@@ -565,6 +478,28 @@ match exactly those declared on the METADATA.pb file.
 
 Also, to avoid confusion, we expect that font files (other than statics) are
 not placed on subdirectories.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: family_metadata
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure METADATA.pb category field is valid.</summary>
+
+* [com.google.fonts/check/metadata/category](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/category)
+<pre>--- Rationale ---
+
+There are only five acceptable values for the category field in a METADATA.pb
+file:
+- MONOSPACE
+- SANS_SERIF
+- SERIF
+- DISPLAY
+- HANDWRITING
+
+This check is meant to avoid typos in this field.
 
 
 </pre>
@@ -859,15 +794,28 @@ We may want to merge them all into a single check.
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Checking OS/2 usWeightClass matches weight specified at METADATA.pb.</summary>
+<summary>💤 <b>SKIP:</b> Check METADATA.pb font weights are correct.</summary>
 
 * [com.google.fonts/check/metadata/os2_weightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/os2_weightclass)
+<pre>--- Rationale ---
+
+Check METADATA.pb font weights are correct.
+
+For static fonts, the metadata weight should be the same
+as the static font&#x27;s OS/2 usWeightClass.
+
+For variable fonts, the weight value should be 400 if the
+font&#x27;s wght axis range includes 400, otherwise it should be the
+value closest to 400.
+
+
+</pre>
 
 * 💤 **SKIP** Unfulfilled Conditions: font_metadata
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName.</summary>
+<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName for static fonts.</summary>
 
 * [com.google.fonts/check/metadata/match_weight_postscript](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/match_weight_postscript)
 
@@ -1011,6 +959,10 @@ All ligatures in a font must have corresponding caret (text cursor) positions
 defined in the GDEF table, otherwhise, users may experience issues with caret
 rendering.
 
+If using GlyphsApp, ligature carets can be set directly on canvas by accessing
+the `Glyph -&gt; Set Anchors` menu option or by pressing the `Cmd+U` keyboard
+shortcut.
+
 
 </pre>
 
@@ -1088,6 +1040,25 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Check font follows the Google Fonts CJK vertical metric schema</summary>
+
+* [com.google.fonts/check/cjk_vertical_metrics](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/cjk_vertical_metrics)
+<pre>--- Rationale ---
+
+CJK fonts have different vertical metrics when compared to Latin fonts. We
+follow the schema developed by dr Ken Lunde for Source Han Sans and the Noto
+CJK fonts.
+
+Our documentation includes further information:
+https://github.com/googlefonts/gf-docs/tree/master/Spec#cjk-vertical-metrics
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_cjk_font
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Check variable font instances have correct coordinate values</summary>
 
 * [com.google.fonts/check/varfont_instance_coordinates](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont_instance_coordinates)
@@ -1104,7 +1075,7 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Ensure VFs do not contain opsz or ital axes. </summary>
+<summary>💤 <b>SKIP:</b> Ensure VFs do not contain slnt or ital axes. </summary>
 
 * [com.google.fonts/check/varfont/unsupported_axes](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont/unsupported_axes)
 <pre>--- Rationale ---
@@ -1165,6 +1136,21 @@ result in WARNs.
 </pre>
 
 * 💤 **SKIP** Sibling families were not detected.
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure indic fonts have the Indian Rupee Sign glyph. </summary>
+
+* [com.google.fonts/check/rupee](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/rupee)
+<pre>--- Rationale ---
+
+Per Bureau of Indian Standards every font supporting one of the official Indian
+languages needs to include Unicode Character “₹” (U+20B9) Indian Rupee Sign.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_indic_font
 
 </details>
 <details>
@@ -1402,10 +1388,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/Geologica-Black.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 125.2kb |
-	| Hinted Size | 154.3kb |
-	| Increase | 29.1kb |
-	| Change   | 23.3 % |
+	| Dehinted Size | 125.5kb |
+	| Hinted Size | 155.0kb |
+	| Increase | 29.5kb |
+	| Change   | 23.5 % |
  [code: size-impact]
 
 </details>
@@ -1497,7 +1483,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [GPOS, gasp, cvt , loca, prep, GSUB, fpgm, DSIG]
+* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, GPOS, DSIG, gasp, prep, loca, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -1620,8 +1606,25 @@ set of characters defined in the `GF-latin-core` glyph-set.
 <summary>🍞 <b>PASS:</b> Checking OS/2 usWeightClass.</summary>
 
 * [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
+<pre>--- Rationale ---
 
-* 🍞 **PASS** OS/2 usWeightClass value looks good!
+Google Fonts expects variable fonts, static ttfs and static otfs to have
+differing OS/2 usWeightClass values.
+
+For Variable Fonts, Thin-Black must be 100-900
+For static ttfs, Thin-Black can be 100-900 or 250-900
+For static otfs, Thin-Black must be 250-900
+
+If static otfs are set lower than 250, text may appear blurry in legacy Windows
+applications.
+
+Glyphsapp users can change the usWeightClass value of an instance by adding a
+&#x27;weightClass&#x27; customParameter.
+
+
+</pre>
+
+* 🍞 **PASS** OS/2 usWeightClass is good
 
 </details>
 <details>
@@ -1807,20 +1810,12 @@ Even though the OpenType spec allows unitsPerEm to be any value between 16 and
 The spec suggests usage of powers of two in order to get some performance
 improvements on legacy renderers, so those values are acceptable.
 
-But value of 500 or 1000 are also acceptable, with the added benefit that it
+But values of 500 or 1000 are also acceptable, with the added benefit that it
 makes upm math easier for designers, while the performance hit of not using a
 power of two is most likely negligible nowadays.
 
-Another acceptable value is 2000. Since TT outlines are all integers (no
-floats), then instances in a VF suffer rounding compromises, and therefore a
-1000 UPM is too small because it forces too many such compromises.
-
-Therefore 2000 is a good &#x27;new VF standard&#x27;, because 2000 is a simple 2x
-conversion from existing fonts drawn on a 1000 UPM, and anyone who knows what
-10 units can do for 1000 UPM will know what 20 units does too.
-
-Additionally, values above 2048 would result in filesize increases with not
-much added benefit.
+Additionally, values above 2048 would likely result in unreasonable filesize
+increases.
 
 
 </pre>
@@ -2046,6 +2041,28 @@ release files, but Google Fonts should only have OpenType tables.
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+<pre>--- Rationale ---
+
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Combined length of family and style must not exceed 27 characters.</summary>
 
 * [com.google.fonts/check/name/family_and_style_max_length](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length)
@@ -2116,11 +2133,73 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> A font repository should not include fontbakery report files</summary>
+
+* [com.google.fonts/check/repo/fb_report](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/fb_report)
+<pre>--- Rationale ---
+
+A FontBakery report is ephemeral and so should be used for posting issues on a
+bug-tracker instead of being hosted in the font project repository.
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> A font repository should not include ZIP files</summary>
+
+* [com.google.fonts/check/repo/zip_files](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/zip_files)
+<pre>--- Rationale ---
+
+Sometimes people check in ZIPs into their font project repositories. While we
+accept the practice of checking in binaries, we believe that a ZIP is a step
+too far ;)
+
+Note: a source purist position is that only source files and build scripts
+should be checked in. 
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Name table records must not have trailing spaces.</summary>
 
 * [com.google.fonts/check/name/trailing_spaces](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/name/trailing_spaces)
 
 * 🍞 **PASS** No trailing spaces on name table entries.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+<pre>--- Rationale ---
+
+A font&#x27;s winAscent and winDescent values should be greater than the head
+table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
+can occur on Windows platforms
+(https://github.com/RedHatBrand/Overpass/issues/33).
+
+If the font includes tall/deep writing systems such as Arabic or Devanagari,
+the winAscent and winDescent can be greater than the yMax and abs(yMin) to
+accommodate vowel marks.
+
+When the win Metrics are significantly greater than the upm, the linespacing
+can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
+(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
+This means the font developer can control the linespacing with the typo values,
+whilst avoiding clipping by setting the win values to values greater than the
+yMax and abs(yMin).
+
+
+</pre>
+
+* 🍞 **PASS** OS/2 usWinAscent & usWinDescent values look good!
 
 </details>
 <details>
@@ -2189,8 +2268,15 @@ space glyph. This might have been relevant for applications on MacOS 9.
 <summary>🍞 <b>PASS:</b> Font has **proper** whitespace glyph names?</summary>
 
 * [com.google.fonts/check/whitespace_glyphnames](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/whitespace_glyphnames)
+<pre>--- Rationale ---
 
-* 🍞 **PASS** Font has **proper** whitespace glyph names.
+This check enforces adherence to recommended whitespace (codepoints 0020 and
+00A0) glyph names according to the Adobe Glyph List.
+
+
+</pre>
+
+* 🍞 **PASS** Font has **AGL recommended** names for whitespace glyphs.
 
 </details>
 <details>
@@ -2413,7 +2499,7 @@ apps.
 <pre>--- Rationale ---
 
 There are various metadata in the OpenType spec to specify if a font is
-monospaced or not. If the font is not trully monospaced, then no monospaced
+monospaced or not. If the font is not truly monospaced, then no monospaced
 metadata should be set (as sometimes they mistakenly are...)
 
 Requirements for monospace fonts:
@@ -2544,15 +2630,45 @@ Reference: https://github.com/googlefonts/fontbakery/issues/1845
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class)</summary>
+
+* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
+<pre>--- Rationale ---
+
+Glyphs in the GDEF mark glyph class should be non-spacing.
+Spacing glyphs in the GDEF mark glyph class may have incorrect anchor
+positioning that was only intended for building composite glyphs during design.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not has spacing glyphs in the GDEF mark glyph class.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class</summary>
+
+* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
+<pre>--- Rationale ---
+
+Mark characters should be in the GDEF mark glyph class.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not have mark characters not in the GDEF mark glyph class.
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Check GDEF mark glyph class doesn't have characters that are not marks)</summary>
 
 * [com.google.fonts/check/gdef_non_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars)
 <pre>--- Rationale ---
 
-Glyphs in the GDEF mark glyph class become non-spacing and may be
-repositioned if they have mark anchors. Only combining mark glyphs
-should be in that class. Any non-mark glyph must not be in that class,
-in particular spacing glyphs.
+Glyphs in the GDEF mark glyph class become non-spacing and may be repositioned
+if they have mark anchors.
+Only combining mark glyphs should be in that class. Any non-mark glyph must not
+be in that class, in particular spacing glyphs.
 
 
 </pre>
@@ -2636,63 +2752,7 @@ the same x,y coordinates.
 <br>
 </details>
 <details>
-<summary><b>[158] Geologica-BlackItalic.ttf</b></summary>
-<details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
-
-This can be accomplished by using the 'gftools fix-hinting' command.
-
-# create virtualenvpython3 -m venv venv
-# activate virtualenvsource venv/bin/activate
-# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-
-A font&#x27;s winAscent and winDescent values should be greater than the head
-table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
-can occur on Windows platforms
-(https://github.com/RedHatBrand/Overpass/issues/33).
-
-If the font includes tall/deep writing systems such as Arabic or Devanagari,
-the winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-
-When the win Metrics are significantly greater than the upm, the linespacing
-can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
-This means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).
-
-
-</pre>
-
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 895, but got 746 instead [code: descent]
-
-</details>
+<summary><b>[163] Geologica-BlackItalic.ttf</b></summary>
 <details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
@@ -2748,66 +2808,33 @@ Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uhorn	Contours detected: 2	Expected: 1
 Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni20A6	Contours detected: 2	Expected: 1, 3 or 5
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
 Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1 [code: contour-count]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class)</summary>
-
-* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
-<pre>--- Rationale ---
-
-Glyphs in the GDEF mark glyph class should be non-spacing.
-Spacing glyphs in the GDEF mark glyph class may have incorrect
-anchor positioning that was only intended for building composite glyphs
-during design.
-
-
-</pre>
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 acutecomb, acutecomb.case, acutecomb.narrow, brevecombcy, dotbelowcomb, gravecomb, gravecomb.case, gravecomb.narrow, hookabovecomb, hookabovecomb.case and 55 more. [code: spacing-mark-glyphs]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class</summary>
-
-* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
-<pre>--- Rationale ---
-
-Mark characters should be in the GDEF mark glyph class.
-
-
-</pre>
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 U+0300, U+0301, U+0302, U+0303, U+0304, U+0306, U+0307, U+0308, U+0309, U+030A, U+030B, U+030C, U+030F, U+0311, U+0312, U+031B, U+0323, U+0324, U+0326, U+0327, U+0328, U+032E, U+0331 and U+0335 [code: mark-chars]
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni20A6	Contours detected: 2	Expected: 1, 3 or 5
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
 
 </details>
 <details>
@@ -2818,12 +2845,12 @@ Mark characters should be in the GDEF mark glyph class.
 
 The snippet of HTML in the DESCRIPTION.en_us.html file is added to the font
 family webpage on the Google Fonts website. For that reason, all hyperlinks in
-it must be properly working. 
+it must be properly working.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -2846,7 +2873,7 @@ any other git-based version control service.
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -2855,17 +2882,19 @@ any other git-based version control service.
 * [com.google.fonts/check/description/valid_html](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/valid_html)
 <pre>--- Rationale ---
 
-When packaging families for being pushed to the `google/fonts` git repo, if
-there is no DESCRIPTION.en_us.html file, some older versions of the
-`add_font.py` tool insert a dummy description file which contains invalid html.
+Sometimes people write malformed HTML markup. This check should ensure the file
+is good.
 
-This file needs to either be replaced with an existing description file or
-edited by hand.
+Additionally, when packaging families for being pushed to the `google/fonts`
+git repo, if there is no DESCRIPTION.en_us.html file, some older versions of
+the `add_font.py` tool insert a dummy description file which contains invalid
+html. This file needs to either be replaced with an existing description file
+or edited by hand.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: descfile
+* 💤 **SKIP** Unfulfilled Conditions: description
 
 </details>
 <details>
@@ -2916,7 +2945,7 @@ malformed.
 
 </pre>
 
-* 💤 **SKIP** Font family at '../fonts/static/ttfs' lacks a METADATA.pb file.
+* 💤 **SKIP** Font family at '../fonts/static/ttfs' lacks a METADATA.pb file. [code: file-not-found]
 
 </details>
 <details>
@@ -2985,6 +3014,28 @@ match exactly those declared on the METADATA.pb file.
 
 Also, to avoid confusion, we expect that font files (other than statics) are
 not placed on subdirectories.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: family_metadata
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure METADATA.pb category field is valid.</summary>
+
+* [com.google.fonts/check/metadata/category](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/category)
+<pre>--- Rationale ---
+
+There are only five acceptable values for the category field in a METADATA.pb
+file:
+- MONOSPACE
+- SANS_SERIF
+- SERIF
+- DISPLAY
+- HANDWRITING
+
+This check is meant to avoid typos in this field.
 
 
 </pre>
@@ -3279,15 +3330,28 @@ We may want to merge them all into a single check.
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Checking OS/2 usWeightClass matches weight specified at METADATA.pb.</summary>
+<summary>💤 <b>SKIP:</b> Check METADATA.pb font weights are correct.</summary>
 
 * [com.google.fonts/check/metadata/os2_weightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/os2_weightclass)
+<pre>--- Rationale ---
+
+Check METADATA.pb font weights are correct.
+
+For static fonts, the metadata weight should be the same
+as the static font&#x27;s OS/2 usWeightClass.
+
+For variable fonts, the weight value should be 400 if the
+font&#x27;s wght axis range includes 400, otherwise it should be the
+value closest to 400.
+
+
+</pre>
 
 * 💤 **SKIP** Unfulfilled Conditions: font_metadata
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName.</summary>
+<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName for static fonts.</summary>
 
 * [com.google.fonts/check/metadata/match_weight_postscript](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/match_weight_postscript)
 
@@ -3431,6 +3495,10 @@ All ligatures in a font must have corresponding caret (text cursor) positions
 defined in the GDEF table, otherwhise, users may experience issues with caret
 rendering.
 
+If using GlyphsApp, ligature carets can be set directly on canvas by accessing
+the `Glyph -&gt; Set Anchors` menu option or by pressing the `Cmd+U` keyboard
+shortcut.
+
 
 </pre>
 
@@ -3508,6 +3576,25 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Check font follows the Google Fonts CJK vertical metric schema</summary>
+
+* [com.google.fonts/check/cjk_vertical_metrics](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/cjk_vertical_metrics)
+<pre>--- Rationale ---
+
+CJK fonts have different vertical metrics when compared to Latin fonts. We
+follow the schema developed by dr Ken Lunde for Source Han Sans and the Noto
+CJK fonts.
+
+Our documentation includes further information:
+https://github.com/googlefonts/gf-docs/tree/master/Spec#cjk-vertical-metrics
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_cjk_font
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Check variable font instances have correct coordinate values</summary>
 
 * [com.google.fonts/check/varfont_instance_coordinates](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont_instance_coordinates)
@@ -3524,7 +3611,7 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Ensure VFs do not contain opsz or ital axes. </summary>
+<summary>💤 <b>SKIP:</b> Ensure VFs do not contain slnt or ital axes. </summary>
 
 * [com.google.fonts/check/varfont/unsupported_axes](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont/unsupported_axes)
 <pre>--- Rationale ---
@@ -3585,6 +3672,21 @@ result in WARNs.
 </pre>
 
 * 💤 **SKIP** Sibling families were not detected.
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure indic fonts have the Indian Rupee Sign glyph. </summary>
+
+* [com.google.fonts/check/rupee](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/rupee)
+<pre>--- Rationale ---
+
+Per Bureau of Indian Standards every font supporting one of the official Indian
+languages needs to include Unicode Character “₹” (U+20B9) Indian Rupee Sign.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_indic_font
 
 </details>
 <details>
@@ -3822,10 +3924,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/Geologica-BlackItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 127.1kb |
-	| Hinted Size | 156.6kb |
-	| Increase | 29.6kb |
-	| Change   | 23.3 % |
+	| Dehinted Size | 127.4kb |
+	| Hinted Size | 157.3kb |
+	| Increase | 29.9kb |
+	| Change   | 23.5 % |
  [code: size-impact]
 
 </details>
@@ -3917,7 +4019,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [GPOS, gasp, cvt , loca, prep, GSUB, fpgm, DSIG]
+* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, GPOS, DSIG, gasp, prep, loca, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -4040,8 +4142,25 @@ set of characters defined in the `GF-latin-core` glyph-set.
 <summary>🍞 <b>PASS:</b> Checking OS/2 usWeightClass.</summary>
 
 * [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
+<pre>--- Rationale ---
 
-* 🍞 **PASS** OS/2 usWeightClass value looks good!
+Google Fonts expects variable fonts, static ttfs and static otfs to have
+differing OS/2 usWeightClass values.
+
+For Variable Fonts, Thin-Black must be 100-900
+For static ttfs, Thin-Black can be 100-900 or 250-900
+For static otfs, Thin-Black must be 250-900
+
+If static otfs are set lower than 250, text may appear blurry in legacy Windows
+applications.
+
+Glyphsapp users can change the usWeightClass value of an instance by adding a
+&#x27;weightClass&#x27; customParameter.
+
+
+</pre>
+
+* 🍞 **PASS** OS/2 usWeightClass is good
 
 </details>
 <details>
@@ -4227,20 +4346,12 @@ Even though the OpenType spec allows unitsPerEm to be any value between 16 and
 The spec suggests usage of powers of two in order to get some performance
 improvements on legacy renderers, so those values are acceptable.
 
-But value of 500 or 1000 are also acceptable, with the added benefit that it
+But values of 500 or 1000 are also acceptable, with the added benefit that it
 makes upm math easier for designers, while the performance hit of not using a
 power of two is most likely negligible nowadays.
 
-Another acceptable value is 2000. Since TT outlines are all integers (no
-floats), then instances in a VF suffer rounding compromises, and therefore a
-1000 UPM is too small because it forces too many such compromises.
-
-Therefore 2000 is a good &#x27;new VF standard&#x27;, because 2000 is a simple 2x
-conversion from existing fonts drawn on a 1000 UPM, and anyone who knows what
-10 units can do for 1000 UPM will know what 20 units does too.
-
-Additionally, values above 2048 would result in filesize increases with not
-much added benefit.
+Additionally, values above 2048 would likely result in unreasonable filesize
+increases.
 
 
 </pre>
@@ -4466,6 +4577,28 @@ release files, but Google Fonts should only have OpenType tables.
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+<pre>--- Rationale ---
+
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Combined length of family and style must not exceed 27 characters.</summary>
 
 * [com.google.fonts/check/name/family_and_style_max_length](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length)
@@ -4536,11 +4669,73 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> A font repository should not include fontbakery report files</summary>
+
+* [com.google.fonts/check/repo/fb_report](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/fb_report)
+<pre>--- Rationale ---
+
+A FontBakery report is ephemeral and so should be used for posting issues on a
+bug-tracker instead of being hosted in the font project repository.
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> A font repository should not include ZIP files</summary>
+
+* [com.google.fonts/check/repo/zip_files](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/zip_files)
+<pre>--- Rationale ---
+
+Sometimes people check in ZIPs into their font project repositories. While we
+accept the practice of checking in binaries, we believe that a ZIP is a step
+too far ;)
+
+Note: a source purist position is that only source files and build scripts
+should be checked in. 
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Name table records must not have trailing spaces.</summary>
 
 * [com.google.fonts/check/name/trailing_spaces](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/name/trailing_spaces)
 
 * 🍞 **PASS** No trailing spaces on name table entries.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+<pre>--- Rationale ---
+
+A font&#x27;s winAscent and winDescent values should be greater than the head
+table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
+can occur on Windows platforms
+(https://github.com/RedHatBrand/Overpass/issues/33).
+
+If the font includes tall/deep writing systems such as Arabic or Devanagari,
+the winAscent and winDescent can be greater than the yMax and abs(yMin) to
+accommodate vowel marks.
+
+When the win Metrics are significantly greater than the upm, the linespacing
+can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
+(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
+This means the font developer can control the linespacing with the typo values,
+whilst avoiding clipping by setting the win values to values greater than the
+yMax and abs(yMin).
+
+
+</pre>
+
+* 🍞 **PASS** OS/2 usWinAscent & usWinDescent values look good!
 
 </details>
 <details>
@@ -4609,8 +4804,15 @@ space glyph. This might have been relevant for applications on MacOS 9.
 <summary>🍞 <b>PASS:</b> Font has **proper** whitespace glyph names?</summary>
 
 * [com.google.fonts/check/whitespace_glyphnames](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/whitespace_glyphnames)
+<pre>--- Rationale ---
 
-* 🍞 **PASS** Font has **proper** whitespace glyph names.
+This check enforces adherence to recommended whitespace (codepoints 0020 and
+00A0) glyph names according to the Adobe Glyph List.
+
+
+</pre>
+
+* 🍞 **PASS** Font has **AGL recommended** names for whitespace glyphs.
 
 </details>
 <details>
@@ -4833,7 +5035,7 @@ apps.
 <pre>--- Rationale ---
 
 There are various metadata in the OpenType spec to specify if a font is
-monospaced or not. If the font is not trully monospaced, then no monospaced
+monospaced or not. If the font is not truly monospaced, then no monospaced
 metadata should be set (as sometimes they mistakenly are...)
 
 Requirements for monospace fonts:
@@ -4964,15 +5166,45 @@ Reference: https://github.com/googlefonts/fontbakery/issues/1845
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class)</summary>
+
+* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
+<pre>--- Rationale ---
+
+Glyphs in the GDEF mark glyph class should be non-spacing.
+Spacing glyphs in the GDEF mark glyph class may have incorrect anchor
+positioning that was only intended for building composite glyphs during design.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not has spacing glyphs in the GDEF mark glyph class.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class</summary>
+
+* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
+<pre>--- Rationale ---
+
+Mark characters should be in the GDEF mark glyph class.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not have mark characters not in the GDEF mark glyph class.
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Check GDEF mark glyph class doesn't have characters that are not marks)</summary>
 
 * [com.google.fonts/check/gdef_non_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars)
 <pre>--- Rationale ---
 
-Glyphs in the GDEF mark glyph class become non-spacing and may be
-repositioned if they have mark anchors. Only combining mark glyphs
-should be in that class. Any non-mark glyph must not be in that class,
-in particular spacing glyphs.
+Glyphs in the GDEF mark glyph class become non-spacing and may be repositioned
+if they have mark anchors.
+Only combining mark glyphs should be in that class. Any non-mark glyph must not
+be in that class, in particular spacing glyphs.
 
 
 </pre>
@@ -5056,63 +5288,7 @@ the same x,y coordinates.
 <br>
 </details>
 <details>
-<summary><b>[158] Geologica-Bold.ttf</b></summary>
-<details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
-
-This can be accomplished by using the 'gftools fix-hinting' command.
-
-# create virtualenvpython3 -m venv venv
-# activate virtualenvsource venv/bin/activate
-# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-
-A font&#x27;s winAscent and winDescent values should be greater than the head
-table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
-can occur on Windows platforms
-(https://github.com/RedHatBrand/Overpass/issues/33).
-
-If the font includes tall/deep writing systems such as Arabic or Devanagari,
-the winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-
-When the win Metrics are significantly greater than the upm, the linespacing
-can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
-This means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).
-
-
-</pre>
-
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 895, but got 746 instead [code: descent]
-
-</details>
+<summary><b>[163] Geologica-Bold.ttf</b></summary>
 <details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
@@ -5167,65 +5343,32 @@ Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uhorn	Contours detected: 2	Expected: 1
 Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
 Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1 [code: contour-count]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class)</summary>
-
-* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
-<pre>--- Rationale ---
-
-Glyphs in the GDEF mark glyph class should be non-spacing.
-Spacing glyphs in the GDEF mark glyph class may have incorrect
-anchor positioning that was only intended for building composite glyphs
-during design.
-
-
-</pre>
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 acutecomb, acutecomb.case, acutecomb.narrow, brevecombcy, dotbelowcomb, gravecomb, gravecomb.case, gravecomb.narrow, hookabovecomb, hookabovecomb.case and 55 more. [code: spacing-mark-glyphs]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class</summary>
-
-* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
-<pre>--- Rationale ---
-
-Mark characters should be in the GDEF mark glyph class.
-
-
-</pre>
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 U+0300, U+0301, U+0302, U+0303, U+0304, U+0306, U+0307, U+0308, U+0309, U+030A, U+030B, U+030C, U+030F, U+0311, U+0312, U+031B, U+0323, U+0324, U+0326, U+0327, U+0328, U+032E, U+0331 and U+0335 [code: mark-chars]
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
 
 </details>
 <details>
@@ -5236,12 +5379,12 @@ Mark characters should be in the GDEF mark glyph class.
 
 The snippet of HTML in the DESCRIPTION.en_us.html file is added to the font
 family webpage on the Google Fonts website. For that reason, all hyperlinks in
-it must be properly working. 
+it must be properly working.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -5264,7 +5407,7 @@ any other git-based version control service.
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -5273,17 +5416,19 @@ any other git-based version control service.
 * [com.google.fonts/check/description/valid_html](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/valid_html)
 <pre>--- Rationale ---
 
-When packaging families for being pushed to the `google/fonts` git repo, if
-there is no DESCRIPTION.en_us.html file, some older versions of the
-`add_font.py` tool insert a dummy description file which contains invalid html.
+Sometimes people write malformed HTML markup. This check should ensure the file
+is good.
 
-This file needs to either be replaced with an existing description file or
-edited by hand.
+Additionally, when packaging families for being pushed to the `google/fonts`
+git repo, if there is no DESCRIPTION.en_us.html file, some older versions of
+the `add_font.py` tool insert a dummy description file which contains invalid
+html. This file needs to either be replaced with an existing description file
+or edited by hand.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: descfile
+* 💤 **SKIP** Unfulfilled Conditions: description
 
 </details>
 <details>
@@ -5334,7 +5479,7 @@ malformed.
 
 </pre>
 
-* 💤 **SKIP** Font family at '../fonts/static/ttfs' lacks a METADATA.pb file.
+* 💤 **SKIP** Font family at '../fonts/static/ttfs' lacks a METADATA.pb file. [code: file-not-found]
 
 </details>
 <details>
@@ -5403,6 +5548,28 @@ match exactly those declared on the METADATA.pb file.
 
 Also, to avoid confusion, we expect that font files (other than statics) are
 not placed on subdirectories.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: family_metadata
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure METADATA.pb category field is valid.</summary>
+
+* [com.google.fonts/check/metadata/category](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/category)
+<pre>--- Rationale ---
+
+There are only five acceptable values for the category field in a METADATA.pb
+file:
+- MONOSPACE
+- SANS_SERIF
+- SERIF
+- DISPLAY
+- HANDWRITING
+
+This check is meant to avoid typos in this field.
 
 
 </pre>
@@ -5697,15 +5864,28 @@ We may want to merge them all into a single check.
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Checking OS/2 usWeightClass matches weight specified at METADATA.pb.</summary>
+<summary>💤 <b>SKIP:</b> Check METADATA.pb font weights are correct.</summary>
 
 * [com.google.fonts/check/metadata/os2_weightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/os2_weightclass)
+<pre>--- Rationale ---
+
+Check METADATA.pb font weights are correct.
+
+For static fonts, the metadata weight should be the same
+as the static font&#x27;s OS/2 usWeightClass.
+
+For variable fonts, the weight value should be 400 if the
+font&#x27;s wght axis range includes 400, otherwise it should be the
+value closest to 400.
+
+
+</pre>
 
 * 💤 **SKIP** Unfulfilled Conditions: font_metadata
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName.</summary>
+<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName for static fonts.</summary>
 
 * [com.google.fonts/check/metadata/match_weight_postscript](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/match_weight_postscript)
 
@@ -5849,6 +6029,10 @@ All ligatures in a font must have corresponding caret (text cursor) positions
 defined in the GDEF table, otherwhise, users may experience issues with caret
 rendering.
 
+If using GlyphsApp, ligature carets can be set directly on canvas by accessing
+the `Glyph -&gt; Set Anchors` menu option or by pressing the `Cmd+U` keyboard
+shortcut.
+
 
 </pre>
 
@@ -5926,6 +6110,25 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Check font follows the Google Fonts CJK vertical metric schema</summary>
+
+* [com.google.fonts/check/cjk_vertical_metrics](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/cjk_vertical_metrics)
+<pre>--- Rationale ---
+
+CJK fonts have different vertical metrics when compared to Latin fonts. We
+follow the schema developed by dr Ken Lunde for Source Han Sans and the Noto
+CJK fonts.
+
+Our documentation includes further information:
+https://github.com/googlefonts/gf-docs/tree/master/Spec#cjk-vertical-metrics
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_cjk_font
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Check variable font instances have correct coordinate values</summary>
 
 * [com.google.fonts/check/varfont_instance_coordinates](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont_instance_coordinates)
@@ -5942,7 +6145,7 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Ensure VFs do not contain opsz or ital axes. </summary>
+<summary>💤 <b>SKIP:</b> Ensure VFs do not contain slnt or ital axes. </summary>
 
 * [com.google.fonts/check/varfont/unsupported_axes](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont/unsupported_axes)
 <pre>--- Rationale ---
@@ -6003,6 +6206,21 @@ result in WARNs.
 </pre>
 
 * 💤 **SKIP** Sibling families were not detected.
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure indic fonts have the Indian Rupee Sign glyph. </summary>
+
+* [com.google.fonts/check/rupee](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/rupee)
+<pre>--- Rationale ---
+
+Per Bureau of Indian Standards every font supporting one of the official Indian
+languages needs to include Unicode Character “₹” (U+20B9) Indian Rupee Sign.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_indic_font
 
 </details>
 <details>
@@ -6240,10 +6458,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/Geologica-Bold.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 125.3kb |
-	| Hinted Size | 155.9kb |
-	| Increase | 30.6kb |
-	| Change   | 24.4 % |
+	| Dehinted Size | 125.5kb |
+	| Hinted Size | 156.5kb |
+	| Increase | 30.9kb |
+	| Change   | 24.6 % |
  [code: size-impact]
 
 </details>
@@ -6335,7 +6553,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [GPOS, gasp, cvt , loca, prep, GSUB, fpgm, DSIG]
+* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, GPOS, DSIG, gasp, prep, loca, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -6458,8 +6676,25 @@ set of characters defined in the `GF-latin-core` glyph-set.
 <summary>🍞 <b>PASS:</b> Checking OS/2 usWeightClass.</summary>
 
 * [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
+<pre>--- Rationale ---
 
-* 🍞 **PASS** OS/2 usWeightClass value looks good!
+Google Fonts expects variable fonts, static ttfs and static otfs to have
+differing OS/2 usWeightClass values.
+
+For Variable Fonts, Thin-Black must be 100-900
+For static ttfs, Thin-Black can be 100-900 or 250-900
+For static otfs, Thin-Black must be 250-900
+
+If static otfs are set lower than 250, text may appear blurry in legacy Windows
+applications.
+
+Glyphsapp users can change the usWeightClass value of an instance by adding a
+&#x27;weightClass&#x27; customParameter.
+
+
+</pre>
+
+* 🍞 **PASS** OS/2 usWeightClass is good
 
 </details>
 <details>
@@ -6645,20 +6880,12 @@ Even though the OpenType spec allows unitsPerEm to be any value between 16 and
 The spec suggests usage of powers of two in order to get some performance
 improvements on legacy renderers, so those values are acceptable.
 
-But value of 500 or 1000 are also acceptable, with the added benefit that it
+But values of 500 or 1000 are also acceptable, with the added benefit that it
 makes upm math easier for designers, while the performance hit of not using a
 power of two is most likely negligible nowadays.
 
-Another acceptable value is 2000. Since TT outlines are all integers (no
-floats), then instances in a VF suffer rounding compromises, and therefore a
-1000 UPM is too small because it forces too many such compromises.
-
-Therefore 2000 is a good &#x27;new VF standard&#x27;, because 2000 is a simple 2x
-conversion from existing fonts drawn on a 1000 UPM, and anyone who knows what
-10 units can do for 1000 UPM will know what 20 units does too.
-
-Additionally, values above 2048 would result in filesize increases with not
-much added benefit.
+Additionally, values above 2048 would likely result in unreasonable filesize
+increases.
 
 
 </pre>
@@ -6884,6 +7111,28 @@ release files, but Google Fonts should only have OpenType tables.
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+<pre>--- Rationale ---
+
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Combined length of family and style must not exceed 27 characters.</summary>
 
 * [com.google.fonts/check/name/family_and_style_max_length](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length)
@@ -6954,11 +7203,73 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> A font repository should not include fontbakery report files</summary>
+
+* [com.google.fonts/check/repo/fb_report](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/fb_report)
+<pre>--- Rationale ---
+
+A FontBakery report is ephemeral and so should be used for posting issues on a
+bug-tracker instead of being hosted in the font project repository.
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> A font repository should not include ZIP files</summary>
+
+* [com.google.fonts/check/repo/zip_files](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/zip_files)
+<pre>--- Rationale ---
+
+Sometimes people check in ZIPs into their font project repositories. While we
+accept the practice of checking in binaries, we believe that a ZIP is a step
+too far ;)
+
+Note: a source purist position is that only source files and build scripts
+should be checked in. 
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Name table records must not have trailing spaces.</summary>
 
 * [com.google.fonts/check/name/trailing_spaces](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/name/trailing_spaces)
 
 * 🍞 **PASS** No trailing spaces on name table entries.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+<pre>--- Rationale ---
+
+A font&#x27;s winAscent and winDescent values should be greater than the head
+table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
+can occur on Windows platforms
+(https://github.com/RedHatBrand/Overpass/issues/33).
+
+If the font includes tall/deep writing systems such as Arabic or Devanagari,
+the winAscent and winDescent can be greater than the yMax and abs(yMin) to
+accommodate vowel marks.
+
+When the win Metrics are significantly greater than the upm, the linespacing
+can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
+(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
+This means the font developer can control the linespacing with the typo values,
+whilst avoiding clipping by setting the win values to values greater than the
+yMax and abs(yMin).
+
+
+</pre>
+
+* 🍞 **PASS** OS/2 usWinAscent & usWinDescent values look good!
 
 </details>
 <details>
@@ -7027,8 +7338,15 @@ space glyph. This might have been relevant for applications on MacOS 9.
 <summary>🍞 <b>PASS:</b> Font has **proper** whitespace glyph names?</summary>
 
 * [com.google.fonts/check/whitespace_glyphnames](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/whitespace_glyphnames)
+<pre>--- Rationale ---
 
-* 🍞 **PASS** Font has **proper** whitespace glyph names.
+This check enforces adherence to recommended whitespace (codepoints 0020 and
+00A0) glyph names according to the Adobe Glyph List.
+
+
+</pre>
+
+* 🍞 **PASS** Font has **AGL recommended** names for whitespace glyphs.
 
 </details>
 <details>
@@ -7251,7 +7569,7 @@ apps.
 <pre>--- Rationale ---
 
 There are various metadata in the OpenType spec to specify if a font is
-monospaced or not. If the font is not trully monospaced, then no monospaced
+monospaced or not. If the font is not truly monospaced, then no monospaced
 metadata should be set (as sometimes they mistakenly are...)
 
 Requirements for monospace fonts:
@@ -7382,15 +7700,45 @@ Reference: https://github.com/googlefonts/fontbakery/issues/1845
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class)</summary>
+
+* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
+<pre>--- Rationale ---
+
+Glyphs in the GDEF mark glyph class should be non-spacing.
+Spacing glyphs in the GDEF mark glyph class may have incorrect anchor
+positioning that was only intended for building composite glyphs during design.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not has spacing glyphs in the GDEF mark glyph class.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class</summary>
+
+* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
+<pre>--- Rationale ---
+
+Mark characters should be in the GDEF mark glyph class.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not have mark characters not in the GDEF mark glyph class.
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Check GDEF mark glyph class doesn't have characters that are not marks)</summary>
 
 * [com.google.fonts/check/gdef_non_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars)
 <pre>--- Rationale ---
 
-Glyphs in the GDEF mark glyph class become non-spacing and may be
-repositioned if they have mark anchors. Only combining mark glyphs
-should be in that class. Any non-mark glyph must not be in that class,
-in particular spacing glyphs.
+Glyphs in the GDEF mark glyph class become non-spacing and may be repositioned
+if they have mark anchors.
+Only combining mark glyphs should be in that class. Any non-mark glyph must not
+be in that class, in particular spacing glyphs.
 
 
 </pre>
@@ -7474,63 +7822,7 @@ the same x,y coordinates.
 <br>
 </details>
 <details>
-<summary><b>[158] Geologica-BoldItalic.ttf</b></summary>
-<details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
-
-This can be accomplished by using the 'gftools fix-hinting' command.
-
-# create virtualenvpython3 -m venv venv
-# activate virtualenvsource venv/bin/activate
-# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-
-A font&#x27;s winAscent and winDescent values should be greater than the head
-table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
-can occur on Windows platforms
-(https://github.com/RedHatBrand/Overpass/issues/33).
-
-If the font includes tall/deep writing systems such as Arabic or Devanagari,
-the winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-
-When the win Metrics are significantly greater than the upm, the linespacing
-can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
-This means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).
-
-
-</pre>
-
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 895, but got 746 instead [code: descent]
-
-</details>
+<summary><b>[163] Geologica-BoldItalic.ttf</b></summary>
 <details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
@@ -7585,65 +7877,32 @@ Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uhorn	Contours detected: 2	Expected: 1
 Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
 Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1 [code: contour-count]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class)</summary>
-
-* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
-<pre>--- Rationale ---
-
-Glyphs in the GDEF mark glyph class should be non-spacing.
-Spacing glyphs in the GDEF mark glyph class may have incorrect
-anchor positioning that was only intended for building composite glyphs
-during design.
-
-
-</pre>
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 acutecomb, acutecomb.case, acutecomb.narrow, brevecombcy, dotbelowcomb, gravecomb, gravecomb.case, gravecomb.narrow, hookabovecomb, hookabovecomb.case and 55 more. [code: spacing-mark-glyphs]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class</summary>
-
-* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
-<pre>--- Rationale ---
-
-Mark characters should be in the GDEF mark glyph class.
-
-
-</pre>
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 U+0300, U+0301, U+0302, U+0303, U+0304, U+0306, U+0307, U+0308, U+0309, U+030A, U+030B, U+030C, U+030F, U+0311, U+0312, U+031B, U+0323, U+0324, U+0326, U+0327, U+0328, U+032E, U+0331 and U+0335 [code: mark-chars]
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
 
 </details>
 <details>
@@ -7654,12 +7913,12 @@ Mark characters should be in the GDEF mark glyph class.
 
 The snippet of HTML in the DESCRIPTION.en_us.html file is added to the font
 family webpage on the Google Fonts website. For that reason, all hyperlinks in
-it must be properly working. 
+it must be properly working.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -7682,7 +7941,7 @@ any other git-based version control service.
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -7691,17 +7950,19 @@ any other git-based version control service.
 * [com.google.fonts/check/description/valid_html](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/valid_html)
 <pre>--- Rationale ---
 
-When packaging families for being pushed to the `google/fonts` git repo, if
-there is no DESCRIPTION.en_us.html file, some older versions of the
-`add_font.py` tool insert a dummy description file which contains invalid html.
+Sometimes people write malformed HTML markup. This check should ensure the file
+is good.
 
-This file needs to either be replaced with an existing description file or
-edited by hand.
+Additionally, when packaging families for being pushed to the `google/fonts`
+git repo, if there is no DESCRIPTION.en_us.html file, some older versions of
+the `add_font.py` tool insert a dummy description file which contains invalid
+html. This file needs to either be replaced with an existing description file
+or edited by hand.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: descfile
+* 💤 **SKIP** Unfulfilled Conditions: description
 
 </details>
 <details>
@@ -7752,7 +8013,7 @@ malformed.
 
 </pre>
 
-* 💤 **SKIP** Font family at '../fonts/static/ttfs' lacks a METADATA.pb file.
+* 💤 **SKIP** Font family at '../fonts/static/ttfs' lacks a METADATA.pb file. [code: file-not-found]
 
 </details>
 <details>
@@ -7821,6 +8082,28 @@ match exactly those declared on the METADATA.pb file.
 
 Also, to avoid confusion, we expect that font files (other than statics) are
 not placed on subdirectories.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: family_metadata
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure METADATA.pb category field is valid.</summary>
+
+* [com.google.fonts/check/metadata/category](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/category)
+<pre>--- Rationale ---
+
+There are only five acceptable values for the category field in a METADATA.pb
+file:
+- MONOSPACE
+- SANS_SERIF
+- SERIF
+- DISPLAY
+- HANDWRITING
+
+This check is meant to avoid typos in this field.
 
 
 </pre>
@@ -8115,15 +8398,28 @@ We may want to merge them all into a single check.
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Checking OS/2 usWeightClass matches weight specified at METADATA.pb.</summary>
+<summary>💤 <b>SKIP:</b> Check METADATA.pb font weights are correct.</summary>
 
 * [com.google.fonts/check/metadata/os2_weightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/os2_weightclass)
+<pre>--- Rationale ---
+
+Check METADATA.pb font weights are correct.
+
+For static fonts, the metadata weight should be the same
+as the static font&#x27;s OS/2 usWeightClass.
+
+For variable fonts, the weight value should be 400 if the
+font&#x27;s wght axis range includes 400, otherwise it should be the
+value closest to 400.
+
+
+</pre>
 
 * 💤 **SKIP** Unfulfilled Conditions: font_metadata
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName.</summary>
+<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName for static fonts.</summary>
 
 * [com.google.fonts/check/metadata/match_weight_postscript](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/match_weight_postscript)
 
@@ -8267,6 +8563,10 @@ All ligatures in a font must have corresponding caret (text cursor) positions
 defined in the GDEF table, otherwhise, users may experience issues with caret
 rendering.
 
+If using GlyphsApp, ligature carets can be set directly on canvas by accessing
+the `Glyph -&gt; Set Anchors` menu option or by pressing the `Cmd+U` keyboard
+shortcut.
+
 
 </pre>
 
@@ -8344,6 +8644,25 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Check font follows the Google Fonts CJK vertical metric schema</summary>
+
+* [com.google.fonts/check/cjk_vertical_metrics](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/cjk_vertical_metrics)
+<pre>--- Rationale ---
+
+CJK fonts have different vertical metrics when compared to Latin fonts. We
+follow the schema developed by dr Ken Lunde for Source Han Sans and the Noto
+CJK fonts.
+
+Our documentation includes further information:
+https://github.com/googlefonts/gf-docs/tree/master/Spec#cjk-vertical-metrics
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_cjk_font
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Check variable font instances have correct coordinate values</summary>
 
 * [com.google.fonts/check/varfont_instance_coordinates](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont_instance_coordinates)
@@ -8360,7 +8679,7 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Ensure VFs do not contain opsz or ital axes. </summary>
+<summary>💤 <b>SKIP:</b> Ensure VFs do not contain slnt or ital axes. </summary>
 
 * [com.google.fonts/check/varfont/unsupported_axes](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont/unsupported_axes)
 <pre>--- Rationale ---
@@ -8421,6 +8740,21 @@ result in WARNs.
 </pre>
 
 * 💤 **SKIP** Sibling families were not detected.
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure indic fonts have the Indian Rupee Sign glyph. </summary>
+
+* [com.google.fonts/check/rupee](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/rupee)
+<pre>--- Rationale ---
+
+Per Bureau of Indian Standards every font supporting one of the official Indian
+languages needs to include Unicode Character “₹” (U+20B9) Indian Rupee Sign.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_indic_font
 
 </details>
 <details>
@@ -8658,10 +8992,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/Geologica-BoldItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 127.0kb |
-	| Hinted Size | 157.4kb |
-	| Increase | 30.4kb |
-	| Change   | 23.9 % |
+	| Dehinted Size | 127.3kb |
+	| Hinted Size | 158.1kb |
+	| Increase | 30.7kb |
+	| Change   | 24.1 % |
  [code: size-impact]
 
 </details>
@@ -8753,7 +9087,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [GPOS, gasp, cvt , loca, prep, GSUB, fpgm, DSIG]
+* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, GPOS, DSIG, gasp, prep, loca, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -8876,8 +9210,25 @@ set of characters defined in the `GF-latin-core` glyph-set.
 <summary>🍞 <b>PASS:</b> Checking OS/2 usWeightClass.</summary>
 
 * [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
+<pre>--- Rationale ---
 
-* 🍞 **PASS** OS/2 usWeightClass value looks good!
+Google Fonts expects variable fonts, static ttfs and static otfs to have
+differing OS/2 usWeightClass values.
+
+For Variable Fonts, Thin-Black must be 100-900
+For static ttfs, Thin-Black can be 100-900 or 250-900
+For static otfs, Thin-Black must be 250-900
+
+If static otfs are set lower than 250, text may appear blurry in legacy Windows
+applications.
+
+Glyphsapp users can change the usWeightClass value of an instance by adding a
+&#x27;weightClass&#x27; customParameter.
+
+
+</pre>
+
+* 🍞 **PASS** OS/2 usWeightClass is good
 
 </details>
 <details>
@@ -9063,20 +9414,12 @@ Even though the OpenType spec allows unitsPerEm to be any value between 16 and
 The spec suggests usage of powers of two in order to get some performance
 improvements on legacy renderers, so those values are acceptable.
 
-But value of 500 or 1000 are also acceptable, with the added benefit that it
+But values of 500 or 1000 are also acceptable, with the added benefit that it
 makes upm math easier for designers, while the performance hit of not using a
 power of two is most likely negligible nowadays.
 
-Another acceptable value is 2000. Since TT outlines are all integers (no
-floats), then instances in a VF suffer rounding compromises, and therefore a
-1000 UPM is too small because it forces too many such compromises.
-
-Therefore 2000 is a good &#x27;new VF standard&#x27;, because 2000 is a simple 2x
-conversion from existing fonts drawn on a 1000 UPM, and anyone who knows what
-10 units can do for 1000 UPM will know what 20 units does too.
-
-Additionally, values above 2048 would result in filesize increases with not
-much added benefit.
+Additionally, values above 2048 would likely result in unreasonable filesize
+increases.
 
 
 </pre>
@@ -9302,6 +9645,28 @@ release files, but Google Fonts should only have OpenType tables.
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+<pre>--- Rationale ---
+
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Combined length of family and style must not exceed 27 characters.</summary>
 
 * [com.google.fonts/check/name/family_and_style_max_length](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length)
@@ -9372,11 +9737,73 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> A font repository should not include fontbakery report files</summary>
+
+* [com.google.fonts/check/repo/fb_report](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/fb_report)
+<pre>--- Rationale ---
+
+A FontBakery report is ephemeral and so should be used for posting issues on a
+bug-tracker instead of being hosted in the font project repository.
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> A font repository should not include ZIP files</summary>
+
+* [com.google.fonts/check/repo/zip_files](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/zip_files)
+<pre>--- Rationale ---
+
+Sometimes people check in ZIPs into their font project repositories. While we
+accept the practice of checking in binaries, we believe that a ZIP is a step
+too far ;)
+
+Note: a source purist position is that only source files and build scripts
+should be checked in. 
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Name table records must not have trailing spaces.</summary>
 
 * [com.google.fonts/check/name/trailing_spaces](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/name/trailing_spaces)
 
 * 🍞 **PASS** No trailing spaces on name table entries.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+<pre>--- Rationale ---
+
+A font&#x27;s winAscent and winDescent values should be greater than the head
+table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
+can occur on Windows platforms
+(https://github.com/RedHatBrand/Overpass/issues/33).
+
+If the font includes tall/deep writing systems such as Arabic or Devanagari,
+the winAscent and winDescent can be greater than the yMax and abs(yMin) to
+accommodate vowel marks.
+
+When the win Metrics are significantly greater than the upm, the linespacing
+can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
+(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
+This means the font developer can control the linespacing with the typo values,
+whilst avoiding clipping by setting the win values to values greater than the
+yMax and abs(yMin).
+
+
+</pre>
+
+* 🍞 **PASS** OS/2 usWinAscent & usWinDescent values look good!
 
 </details>
 <details>
@@ -9445,8 +9872,15 @@ space glyph. This might have been relevant for applications on MacOS 9.
 <summary>🍞 <b>PASS:</b> Font has **proper** whitespace glyph names?</summary>
 
 * [com.google.fonts/check/whitespace_glyphnames](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/whitespace_glyphnames)
+<pre>--- Rationale ---
 
-* 🍞 **PASS** Font has **proper** whitespace glyph names.
+This check enforces adherence to recommended whitespace (codepoints 0020 and
+00A0) glyph names according to the Adobe Glyph List.
+
+
+</pre>
+
+* 🍞 **PASS** Font has **AGL recommended** names for whitespace glyphs.
 
 </details>
 <details>
@@ -9669,7 +10103,7 @@ apps.
 <pre>--- Rationale ---
 
 There are various metadata in the OpenType spec to specify if a font is
-monospaced or not. If the font is not trully monospaced, then no monospaced
+monospaced or not. If the font is not truly monospaced, then no monospaced
 metadata should be set (as sometimes they mistakenly are...)
 
 Requirements for monospace fonts:
@@ -9800,15 +10234,45 @@ Reference: https://github.com/googlefonts/fontbakery/issues/1845
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class)</summary>
+
+* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
+<pre>--- Rationale ---
+
+Glyphs in the GDEF mark glyph class should be non-spacing.
+Spacing glyphs in the GDEF mark glyph class may have incorrect anchor
+positioning that was only intended for building composite glyphs during design.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not has spacing glyphs in the GDEF mark glyph class.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class</summary>
+
+* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
+<pre>--- Rationale ---
+
+Mark characters should be in the GDEF mark glyph class.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not have mark characters not in the GDEF mark glyph class.
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Check GDEF mark glyph class doesn't have characters that are not marks)</summary>
 
 * [com.google.fonts/check/gdef_non_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars)
 <pre>--- Rationale ---
 
-Glyphs in the GDEF mark glyph class become non-spacing and may be
-repositioned if they have mark anchors. Only combining mark glyphs
-should be in that class. Any non-mark glyph must not be in that class,
-in particular spacing glyphs.
+Glyphs in the GDEF mark glyph class become non-spacing and may be repositioned
+if they have mark anchors.
+Only combining mark glyphs should be in that class. Any non-mark glyph must not
+be in that class, in particular spacing glyphs.
 
 
 </pre>
@@ -9892,63 +10356,7 @@ the same x,y coordinates.
 <br>
 </details>
 <details>
-<summary><b>[158] Geologica-ExtraBold.ttf</b></summary>
-<details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
-
-This can be accomplished by using the 'gftools fix-hinting' command.
-
-# create virtualenvpython3 -m venv venv
-# activate virtualenvsource venv/bin/activate
-# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-
-A font&#x27;s winAscent and winDescent values should be greater than the head
-table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
-can occur on Windows platforms
-(https://github.com/RedHatBrand/Overpass/issues/33).
-
-If the font includes tall/deep writing systems such as Arabic or Devanagari,
-the winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-
-When the win Metrics are significantly greater than the upm, the linespacing
-can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
-This means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).
-
-
-</pre>
-
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 895, but got 746 instead [code: descent]
-
-</details>
+<summary><b>[163] Geologica-ExtraBold.ttf</b></summary>
 <details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
@@ -10003,65 +10411,32 @@ Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uhorn	Contours detected: 2	Expected: 1
 Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
 Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1 [code: contour-count]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class)</summary>
-
-* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
-<pre>--- Rationale ---
-
-Glyphs in the GDEF mark glyph class should be non-spacing.
-Spacing glyphs in the GDEF mark glyph class may have incorrect
-anchor positioning that was only intended for building composite glyphs
-during design.
-
-
-</pre>
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 acutecomb, acutecomb.case, acutecomb.narrow, brevecombcy, dotbelowcomb, gravecomb, gravecomb.case, gravecomb.narrow, hookabovecomb, hookabovecomb.case and 55 more. [code: spacing-mark-glyphs]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class</summary>
-
-* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
-<pre>--- Rationale ---
-
-Mark characters should be in the GDEF mark glyph class.
-
-
-</pre>
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 U+0300, U+0301, U+0302, U+0303, U+0304, U+0306, U+0307, U+0308, U+0309, U+030A, U+030B, U+030C, U+030F, U+0311, U+0312, U+031B, U+0323, U+0324, U+0326, U+0327, U+0328, U+032E, U+0331 and U+0335 [code: mark-chars]
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
 
 </details>
 <details>
@@ -10072,12 +10447,12 @@ Mark characters should be in the GDEF mark glyph class.
 
 The snippet of HTML in the DESCRIPTION.en_us.html file is added to the font
 family webpage on the Google Fonts website. For that reason, all hyperlinks in
-it must be properly working. 
+it must be properly working.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -10100,7 +10475,7 @@ any other git-based version control service.
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -10109,17 +10484,19 @@ any other git-based version control service.
 * [com.google.fonts/check/description/valid_html](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/valid_html)
 <pre>--- Rationale ---
 
-When packaging families for being pushed to the `google/fonts` git repo, if
-there is no DESCRIPTION.en_us.html file, some older versions of the
-`add_font.py` tool insert a dummy description file which contains invalid html.
+Sometimes people write malformed HTML markup. This check should ensure the file
+is good.
 
-This file needs to either be replaced with an existing description file or
-edited by hand.
+Additionally, when packaging families for being pushed to the `google/fonts`
+git repo, if there is no DESCRIPTION.en_us.html file, some older versions of
+the `add_font.py` tool insert a dummy description file which contains invalid
+html. This file needs to either be replaced with an existing description file
+or edited by hand.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: descfile
+* 💤 **SKIP** Unfulfilled Conditions: description
 
 </details>
 <details>
@@ -10170,7 +10547,7 @@ malformed.
 
 </pre>
 
-* 💤 **SKIP** Font family at '../fonts/static/ttfs' lacks a METADATA.pb file.
+* 💤 **SKIP** Font family at '../fonts/static/ttfs' lacks a METADATA.pb file. [code: file-not-found]
 
 </details>
 <details>
@@ -10239,6 +10616,28 @@ match exactly those declared on the METADATA.pb file.
 
 Also, to avoid confusion, we expect that font files (other than statics) are
 not placed on subdirectories.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: family_metadata
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure METADATA.pb category field is valid.</summary>
+
+* [com.google.fonts/check/metadata/category](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/category)
+<pre>--- Rationale ---
+
+There are only five acceptable values for the category field in a METADATA.pb
+file:
+- MONOSPACE
+- SANS_SERIF
+- SERIF
+- DISPLAY
+- HANDWRITING
+
+This check is meant to avoid typos in this field.
 
 
 </pre>
@@ -10533,15 +10932,28 @@ We may want to merge them all into a single check.
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Checking OS/2 usWeightClass matches weight specified at METADATA.pb.</summary>
+<summary>💤 <b>SKIP:</b> Check METADATA.pb font weights are correct.</summary>
 
 * [com.google.fonts/check/metadata/os2_weightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/os2_weightclass)
+<pre>--- Rationale ---
+
+Check METADATA.pb font weights are correct.
+
+For static fonts, the metadata weight should be the same
+as the static font&#x27;s OS/2 usWeightClass.
+
+For variable fonts, the weight value should be 400 if the
+font&#x27;s wght axis range includes 400, otherwise it should be the
+value closest to 400.
+
+
+</pre>
 
 * 💤 **SKIP** Unfulfilled Conditions: font_metadata
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName.</summary>
+<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName for static fonts.</summary>
 
 * [com.google.fonts/check/metadata/match_weight_postscript](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/match_weight_postscript)
 
@@ -10685,6 +11097,10 @@ All ligatures in a font must have corresponding caret (text cursor) positions
 defined in the GDEF table, otherwhise, users may experience issues with caret
 rendering.
 
+If using GlyphsApp, ligature carets can be set directly on canvas by accessing
+the `Glyph -&gt; Set Anchors` menu option or by pressing the `Cmd+U` keyboard
+shortcut.
+
 
 </pre>
 
@@ -10762,6 +11178,25 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Check font follows the Google Fonts CJK vertical metric schema</summary>
+
+* [com.google.fonts/check/cjk_vertical_metrics](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/cjk_vertical_metrics)
+<pre>--- Rationale ---
+
+CJK fonts have different vertical metrics when compared to Latin fonts. We
+follow the schema developed by dr Ken Lunde for Source Han Sans and the Noto
+CJK fonts.
+
+Our documentation includes further information:
+https://github.com/googlefonts/gf-docs/tree/master/Spec#cjk-vertical-metrics
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_cjk_font
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Check variable font instances have correct coordinate values</summary>
 
 * [com.google.fonts/check/varfont_instance_coordinates](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont_instance_coordinates)
@@ -10778,7 +11213,7 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Ensure VFs do not contain opsz or ital axes. </summary>
+<summary>💤 <b>SKIP:</b> Ensure VFs do not contain slnt or ital axes. </summary>
 
 * [com.google.fonts/check/varfont/unsupported_axes](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont/unsupported_axes)
 <pre>--- Rationale ---
@@ -10839,6 +11274,21 @@ result in WARNs.
 </pre>
 
 * 💤 **SKIP** Sibling families were not detected.
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure indic fonts have the Indian Rupee Sign glyph. </summary>
+
+* [com.google.fonts/check/rupee](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/rupee)
+<pre>--- Rationale ---
+
+Per Bureau of Indian Standards every font supporting one of the official Indian
+languages needs to include Unicode Character “₹” (U+20B9) Indian Rupee Sign.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_indic_font
 
 </details>
 <details>
@@ -11076,10 +11526,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/Geologica-ExtraBold.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 125.4kb |
-	| Hinted Size | 165.5kb |
-	| Increase | 40.1kb |
-	| Change   | 32.0 % |
+	| Dehinted Size | 125.7kb |
+	| Hinted Size | 166.2kb |
+	| Increase | 40.5kb |
+	| Change   | 32.2 % |
  [code: size-impact]
 
 </details>
@@ -11171,7 +11621,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [GPOS, gasp, cvt , loca, prep, GSUB, fpgm, DSIG]
+* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, GPOS, DSIG, gasp, prep, loca, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -11294,8 +11744,25 @@ set of characters defined in the `GF-latin-core` glyph-set.
 <summary>🍞 <b>PASS:</b> Checking OS/2 usWeightClass.</summary>
 
 * [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
+<pre>--- Rationale ---
 
-* 🍞 **PASS** OS/2 usWeightClass value looks good!
+Google Fonts expects variable fonts, static ttfs and static otfs to have
+differing OS/2 usWeightClass values.
+
+For Variable Fonts, Thin-Black must be 100-900
+For static ttfs, Thin-Black can be 100-900 or 250-900
+For static otfs, Thin-Black must be 250-900
+
+If static otfs are set lower than 250, text may appear blurry in legacy Windows
+applications.
+
+Glyphsapp users can change the usWeightClass value of an instance by adding a
+&#x27;weightClass&#x27; customParameter.
+
+
+</pre>
+
+* 🍞 **PASS** OS/2 usWeightClass is good
 
 </details>
 <details>
@@ -11481,20 +11948,12 @@ Even though the OpenType spec allows unitsPerEm to be any value between 16 and
 The spec suggests usage of powers of two in order to get some performance
 improvements on legacy renderers, so those values are acceptable.
 
-But value of 500 or 1000 are also acceptable, with the added benefit that it
+But values of 500 or 1000 are also acceptable, with the added benefit that it
 makes upm math easier for designers, while the performance hit of not using a
 power of two is most likely negligible nowadays.
 
-Another acceptable value is 2000. Since TT outlines are all integers (no
-floats), then instances in a VF suffer rounding compromises, and therefore a
-1000 UPM is too small because it forces too many such compromises.
-
-Therefore 2000 is a good &#x27;new VF standard&#x27;, because 2000 is a simple 2x
-conversion from existing fonts drawn on a 1000 UPM, and anyone who knows what
-10 units can do for 1000 UPM will know what 20 units does too.
-
-Additionally, values above 2048 would result in filesize increases with not
-much added benefit.
+Additionally, values above 2048 would likely result in unreasonable filesize
+increases.
 
 
 </pre>
@@ -11720,6 +12179,28 @@ release files, but Google Fonts should only have OpenType tables.
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+<pre>--- Rationale ---
+
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Combined length of family and style must not exceed 27 characters.</summary>
 
 * [com.google.fonts/check/name/family_and_style_max_length](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length)
@@ -11790,11 +12271,73 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> A font repository should not include fontbakery report files</summary>
+
+* [com.google.fonts/check/repo/fb_report](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/fb_report)
+<pre>--- Rationale ---
+
+A FontBakery report is ephemeral and so should be used for posting issues on a
+bug-tracker instead of being hosted in the font project repository.
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> A font repository should not include ZIP files</summary>
+
+* [com.google.fonts/check/repo/zip_files](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/zip_files)
+<pre>--- Rationale ---
+
+Sometimes people check in ZIPs into their font project repositories. While we
+accept the practice of checking in binaries, we believe that a ZIP is a step
+too far ;)
+
+Note: a source purist position is that only source files and build scripts
+should be checked in. 
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Name table records must not have trailing spaces.</summary>
 
 * [com.google.fonts/check/name/trailing_spaces](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/name/trailing_spaces)
 
 * 🍞 **PASS** No trailing spaces on name table entries.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+<pre>--- Rationale ---
+
+A font&#x27;s winAscent and winDescent values should be greater than the head
+table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
+can occur on Windows platforms
+(https://github.com/RedHatBrand/Overpass/issues/33).
+
+If the font includes tall/deep writing systems such as Arabic or Devanagari,
+the winAscent and winDescent can be greater than the yMax and abs(yMin) to
+accommodate vowel marks.
+
+When the win Metrics are significantly greater than the upm, the linespacing
+can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
+(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
+This means the font developer can control the linespacing with the typo values,
+whilst avoiding clipping by setting the win values to values greater than the
+yMax and abs(yMin).
+
+
+</pre>
+
+* 🍞 **PASS** OS/2 usWinAscent & usWinDescent values look good!
 
 </details>
 <details>
@@ -11863,8 +12406,15 @@ space glyph. This might have been relevant for applications on MacOS 9.
 <summary>🍞 <b>PASS:</b> Font has **proper** whitespace glyph names?</summary>
 
 * [com.google.fonts/check/whitespace_glyphnames](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/whitespace_glyphnames)
+<pre>--- Rationale ---
 
-* 🍞 **PASS** Font has **proper** whitespace glyph names.
+This check enforces adherence to recommended whitespace (codepoints 0020 and
+00A0) glyph names according to the Adobe Glyph List.
+
+
+</pre>
+
+* 🍞 **PASS** Font has **AGL recommended** names for whitespace glyphs.
 
 </details>
 <details>
@@ -12087,7 +12637,7 @@ apps.
 <pre>--- Rationale ---
 
 There are various metadata in the OpenType spec to specify if a font is
-monospaced or not. If the font is not trully monospaced, then no monospaced
+monospaced or not. If the font is not truly monospaced, then no monospaced
 metadata should be set (as sometimes they mistakenly are...)
 
 Requirements for monospace fonts:
@@ -12218,15 +12768,45 @@ Reference: https://github.com/googlefonts/fontbakery/issues/1845
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class)</summary>
+
+* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
+<pre>--- Rationale ---
+
+Glyphs in the GDEF mark glyph class should be non-spacing.
+Spacing glyphs in the GDEF mark glyph class may have incorrect anchor
+positioning that was only intended for building composite glyphs during design.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not has spacing glyphs in the GDEF mark glyph class.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class</summary>
+
+* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
+<pre>--- Rationale ---
+
+Mark characters should be in the GDEF mark glyph class.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not have mark characters not in the GDEF mark glyph class.
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Check GDEF mark glyph class doesn't have characters that are not marks)</summary>
 
 * [com.google.fonts/check/gdef_non_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars)
 <pre>--- Rationale ---
 
-Glyphs in the GDEF mark glyph class become non-spacing and may be
-repositioned if they have mark anchors. Only combining mark glyphs
-should be in that class. Any non-mark glyph must not be in that class,
-in particular spacing glyphs.
+Glyphs in the GDEF mark glyph class become non-spacing and may be repositioned
+if they have mark anchors.
+Only combining mark glyphs should be in that class. Any non-mark glyph must not
+be in that class, in particular spacing glyphs.
 
 
 </pre>
@@ -12310,63 +12890,7 @@ the same x,y coordinates.
 <br>
 </details>
 <details>
-<summary><b>[158] Geologica-ExtraBoldItalic.ttf</b></summary>
-<details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
-
-This can be accomplished by using the 'gftools fix-hinting' command.
-
-# create virtualenvpython3 -m venv venv
-# activate virtualenvsource venv/bin/activate
-# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-
-A font&#x27;s winAscent and winDescent values should be greater than the head
-table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
-can occur on Windows platforms
-(https://github.com/RedHatBrand/Overpass/issues/33).
-
-If the font includes tall/deep writing systems such as Arabic or Devanagari,
-the winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-
-When the win Metrics are significantly greater than the upm, the linespacing
-can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
-This means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).
-
-
-</pre>
-
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 895, but got 746 instead [code: descent]
-
-</details>
+<summary><b>[163] Geologica-ExtraBoldItalic.ttf</b></summary>
 <details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
@@ -12421,65 +12945,32 @@ Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uhorn	Contours detected: 2	Expected: 1
 Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
 Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1 [code: contour-count]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class)</summary>
-
-* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
-<pre>--- Rationale ---
-
-Glyphs in the GDEF mark glyph class should be non-spacing.
-Spacing glyphs in the GDEF mark glyph class may have incorrect
-anchor positioning that was only intended for building composite glyphs
-during design.
-
-
-</pre>
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 acutecomb, acutecomb.case, acutecomb.narrow, brevecombcy, dotbelowcomb, gravecomb, gravecomb.case, gravecomb.narrow, hookabovecomb, hookabovecomb.case and 55 more. [code: spacing-mark-glyphs]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class</summary>
-
-* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
-<pre>--- Rationale ---
-
-Mark characters should be in the GDEF mark glyph class.
-
-
-</pre>
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 U+0300, U+0301, U+0302, U+0303, U+0304, U+0306, U+0307, U+0308, U+0309, U+030A, U+030B, U+030C, U+030F, U+0311, U+0312, U+031B, U+0323, U+0324, U+0326, U+0327, U+0328, U+032E, U+0331 and U+0335 [code: mark-chars]
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
 
 </details>
 <details>
@@ -12490,12 +12981,12 @@ Mark characters should be in the GDEF mark glyph class.
 
 The snippet of HTML in the DESCRIPTION.en_us.html file is added to the font
 family webpage on the Google Fonts website. For that reason, all hyperlinks in
-it must be properly working. 
+it must be properly working.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -12518,7 +13009,7 @@ any other git-based version control service.
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -12527,17 +13018,19 @@ any other git-based version control service.
 * [com.google.fonts/check/description/valid_html](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/valid_html)
 <pre>--- Rationale ---
 
-When packaging families for being pushed to the `google/fonts` git repo, if
-there is no DESCRIPTION.en_us.html file, some older versions of the
-`add_font.py` tool insert a dummy description file which contains invalid html.
+Sometimes people write malformed HTML markup. This check should ensure the file
+is good.
 
-This file needs to either be replaced with an existing description file or
-edited by hand.
+Additionally, when packaging families for being pushed to the `google/fonts`
+git repo, if there is no DESCRIPTION.en_us.html file, some older versions of
+the `add_font.py` tool insert a dummy description file which contains invalid
+html. This file needs to either be replaced with an existing description file
+or edited by hand.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: descfile
+* 💤 **SKIP** Unfulfilled Conditions: description
 
 </details>
 <details>
@@ -12588,7 +13081,7 @@ malformed.
 
 </pre>
 
-* 💤 **SKIP** Font family at '../fonts/static/ttfs' lacks a METADATA.pb file.
+* 💤 **SKIP** Font family at '../fonts/static/ttfs' lacks a METADATA.pb file. [code: file-not-found]
 
 </details>
 <details>
@@ -12657,6 +13150,28 @@ match exactly those declared on the METADATA.pb file.
 
 Also, to avoid confusion, we expect that font files (other than statics) are
 not placed on subdirectories.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: family_metadata
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure METADATA.pb category field is valid.</summary>
+
+* [com.google.fonts/check/metadata/category](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/category)
+<pre>--- Rationale ---
+
+There are only five acceptable values for the category field in a METADATA.pb
+file:
+- MONOSPACE
+- SANS_SERIF
+- SERIF
+- DISPLAY
+- HANDWRITING
+
+This check is meant to avoid typos in this field.
 
 
 </pre>
@@ -12951,15 +13466,28 @@ We may want to merge them all into a single check.
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Checking OS/2 usWeightClass matches weight specified at METADATA.pb.</summary>
+<summary>💤 <b>SKIP:</b> Check METADATA.pb font weights are correct.</summary>
 
 * [com.google.fonts/check/metadata/os2_weightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/os2_weightclass)
+<pre>--- Rationale ---
+
+Check METADATA.pb font weights are correct.
+
+For static fonts, the metadata weight should be the same
+as the static font&#x27;s OS/2 usWeightClass.
+
+For variable fonts, the weight value should be 400 if the
+font&#x27;s wght axis range includes 400, otherwise it should be the
+value closest to 400.
+
+
+</pre>
 
 * 💤 **SKIP** Unfulfilled Conditions: font_metadata
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName.</summary>
+<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName for static fonts.</summary>
 
 * [com.google.fonts/check/metadata/match_weight_postscript](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/match_weight_postscript)
 
@@ -13103,6 +13631,10 @@ All ligatures in a font must have corresponding caret (text cursor) positions
 defined in the GDEF table, otherwhise, users may experience issues with caret
 rendering.
 
+If using GlyphsApp, ligature carets can be set directly on canvas by accessing
+the `Glyph -&gt; Set Anchors` menu option or by pressing the `Cmd+U` keyboard
+shortcut.
+
 
 </pre>
 
@@ -13180,6 +13712,25 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Check font follows the Google Fonts CJK vertical metric schema</summary>
+
+* [com.google.fonts/check/cjk_vertical_metrics](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/cjk_vertical_metrics)
+<pre>--- Rationale ---
+
+CJK fonts have different vertical metrics when compared to Latin fonts. We
+follow the schema developed by dr Ken Lunde for Source Han Sans and the Noto
+CJK fonts.
+
+Our documentation includes further information:
+https://github.com/googlefonts/gf-docs/tree/master/Spec#cjk-vertical-metrics
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_cjk_font
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Check variable font instances have correct coordinate values</summary>
 
 * [com.google.fonts/check/varfont_instance_coordinates](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont_instance_coordinates)
@@ -13196,7 +13747,7 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Ensure VFs do not contain opsz or ital axes. </summary>
+<summary>💤 <b>SKIP:</b> Ensure VFs do not contain slnt or ital axes. </summary>
 
 * [com.google.fonts/check/varfont/unsupported_axes](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont/unsupported_axes)
 <pre>--- Rationale ---
@@ -13257,6 +13808,21 @@ result in WARNs.
 </pre>
 
 * 💤 **SKIP** Sibling families were not detected.
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure indic fonts have the Indian Rupee Sign glyph. </summary>
+
+* [com.google.fonts/check/rupee](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/rupee)
+<pre>--- Rationale ---
+
+Per Bureau of Indian Standards every font supporting one of the official Indian
+languages needs to include Unicode Character “₹” (U+20B9) Indian Rupee Sign.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_indic_font
 
 </details>
 <details>
@@ -13494,10 +14060,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/Geologica-ExtraBoldItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 127.2kb |
-	| Hinted Size | 167.6kb |
-	| Increase | 40.4kb |
-	| Change   | 31.7 % |
+	| Dehinted Size | 127.5kb |
+	| Hinted Size | 168.3kb |
+	| Increase | 40.8kb |
+	| Change   | 32.0 % |
  [code: size-impact]
 
 </details>
@@ -13589,7 +14155,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [GPOS, gasp, cvt , loca, prep, GSUB, fpgm, DSIG]
+* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, GPOS, DSIG, gasp, prep, loca, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -13712,8 +14278,25 @@ set of characters defined in the `GF-latin-core` glyph-set.
 <summary>🍞 <b>PASS:</b> Checking OS/2 usWeightClass.</summary>
 
 * [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
+<pre>--- Rationale ---
 
-* 🍞 **PASS** OS/2 usWeightClass value looks good!
+Google Fonts expects variable fonts, static ttfs and static otfs to have
+differing OS/2 usWeightClass values.
+
+For Variable Fonts, Thin-Black must be 100-900
+For static ttfs, Thin-Black can be 100-900 or 250-900
+For static otfs, Thin-Black must be 250-900
+
+If static otfs are set lower than 250, text may appear blurry in legacy Windows
+applications.
+
+Glyphsapp users can change the usWeightClass value of an instance by adding a
+&#x27;weightClass&#x27; customParameter.
+
+
+</pre>
+
+* 🍞 **PASS** OS/2 usWeightClass is good
 
 </details>
 <details>
@@ -13899,20 +14482,12 @@ Even though the OpenType spec allows unitsPerEm to be any value between 16 and
 The spec suggests usage of powers of two in order to get some performance
 improvements on legacy renderers, so those values are acceptable.
 
-But value of 500 or 1000 are also acceptable, with the added benefit that it
+But values of 500 or 1000 are also acceptable, with the added benefit that it
 makes upm math easier for designers, while the performance hit of not using a
 power of two is most likely negligible nowadays.
 
-Another acceptable value is 2000. Since TT outlines are all integers (no
-floats), then instances in a VF suffer rounding compromises, and therefore a
-1000 UPM is too small because it forces too many such compromises.
-
-Therefore 2000 is a good &#x27;new VF standard&#x27;, because 2000 is a simple 2x
-conversion from existing fonts drawn on a 1000 UPM, and anyone who knows what
-10 units can do for 1000 UPM will know what 20 units does too.
-
-Additionally, values above 2048 would result in filesize increases with not
-much added benefit.
+Additionally, values above 2048 would likely result in unreasonable filesize
+increases.
 
 
 </pre>
@@ -14138,6 +14713,28 @@ release files, but Google Fonts should only have OpenType tables.
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+<pre>--- Rationale ---
+
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Combined length of family and style must not exceed 27 characters.</summary>
 
 * [com.google.fonts/check/name/family_and_style_max_length](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length)
@@ -14208,11 +14805,73 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> A font repository should not include fontbakery report files</summary>
+
+* [com.google.fonts/check/repo/fb_report](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/fb_report)
+<pre>--- Rationale ---
+
+A FontBakery report is ephemeral and so should be used for posting issues on a
+bug-tracker instead of being hosted in the font project repository.
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> A font repository should not include ZIP files</summary>
+
+* [com.google.fonts/check/repo/zip_files](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/zip_files)
+<pre>--- Rationale ---
+
+Sometimes people check in ZIPs into their font project repositories. While we
+accept the practice of checking in binaries, we believe that a ZIP is a step
+too far ;)
+
+Note: a source purist position is that only source files and build scripts
+should be checked in. 
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Name table records must not have trailing spaces.</summary>
 
 * [com.google.fonts/check/name/trailing_spaces](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/name/trailing_spaces)
 
 * 🍞 **PASS** No trailing spaces on name table entries.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+<pre>--- Rationale ---
+
+A font&#x27;s winAscent and winDescent values should be greater than the head
+table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
+can occur on Windows platforms
+(https://github.com/RedHatBrand/Overpass/issues/33).
+
+If the font includes tall/deep writing systems such as Arabic or Devanagari,
+the winAscent and winDescent can be greater than the yMax and abs(yMin) to
+accommodate vowel marks.
+
+When the win Metrics are significantly greater than the upm, the linespacing
+can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
+(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
+This means the font developer can control the linespacing with the typo values,
+whilst avoiding clipping by setting the win values to values greater than the
+yMax and abs(yMin).
+
+
+</pre>
+
+* 🍞 **PASS** OS/2 usWinAscent & usWinDescent values look good!
 
 </details>
 <details>
@@ -14281,8 +14940,15 @@ space glyph. This might have been relevant for applications on MacOS 9.
 <summary>🍞 <b>PASS:</b> Font has **proper** whitespace glyph names?</summary>
 
 * [com.google.fonts/check/whitespace_glyphnames](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/whitespace_glyphnames)
+<pre>--- Rationale ---
 
-* 🍞 **PASS** Font has **proper** whitespace glyph names.
+This check enforces adherence to recommended whitespace (codepoints 0020 and
+00A0) glyph names according to the Adobe Glyph List.
+
+
+</pre>
+
+* 🍞 **PASS** Font has **AGL recommended** names for whitespace glyphs.
 
 </details>
 <details>
@@ -14505,7 +15171,7 @@ apps.
 <pre>--- Rationale ---
 
 There are various metadata in the OpenType spec to specify if a font is
-monospaced or not. If the font is not trully monospaced, then no monospaced
+monospaced or not. If the font is not truly monospaced, then no monospaced
 metadata should be set (as sometimes they mistakenly are...)
 
 Requirements for monospace fonts:
@@ -14636,15 +15302,45 @@ Reference: https://github.com/googlefonts/fontbakery/issues/1845
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class)</summary>
+
+* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
+<pre>--- Rationale ---
+
+Glyphs in the GDEF mark glyph class should be non-spacing.
+Spacing glyphs in the GDEF mark glyph class may have incorrect anchor
+positioning that was only intended for building composite glyphs during design.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not has spacing glyphs in the GDEF mark glyph class.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class</summary>
+
+* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
+<pre>--- Rationale ---
+
+Mark characters should be in the GDEF mark glyph class.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not have mark characters not in the GDEF mark glyph class.
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Check GDEF mark glyph class doesn't have characters that are not marks)</summary>
 
 * [com.google.fonts/check/gdef_non_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars)
 <pre>--- Rationale ---
 
-Glyphs in the GDEF mark glyph class become non-spacing and may be
-repositioned if they have mark anchors. Only combining mark glyphs
-should be in that class. Any non-mark glyph must not be in that class,
-in particular spacing glyphs.
+Glyphs in the GDEF mark glyph class become non-spacing and may be repositioned
+if they have mark anchors.
+Only combining mark glyphs should be in that class. Any non-mark glyph must not
+be in that class, in particular spacing glyphs.
 
 
 </pre>
@@ -14728,71 +15424,7 @@ the same x,y coordinates.
 <br>
 </details>
 <details>
-<summary><b>[158] Geologica-ExtraLight.ttf</b></summary>
-<details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
-
-This can be accomplished by using the 'gftools fix-hinting' command.
-
-# create virtualenvpython3 -m venv venv
-# activate virtualenvsource venv/bin/activate
-# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-
-A font&#x27;s winAscent and winDescent values should be greater than the head
-table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
-can occur on Windows platforms
-(https://github.com/RedHatBrand/Overpass/issues/33).
-
-If the font includes tall/deep writing systems such as Arabic or Devanagari,
-the winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-
-When the win Metrics are significantly greater than the upm, the linespacing
-can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
-This means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).
-
-
-</pre>
-
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 895, but got 746 instead [code: descent]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Checking OS/2 usWeightClass.</summary>
-
-* [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
-
-* ⚠ **WARN** ExtraLight:200 is OK on TTFs, but OTF files with those values will cause bluring on Windows. GlyphsApp users must set an Instance Custom Parameter for the Thin and ExtraLight styles to 250 and 275, so that if OTFs are exported then it will not blur on Windows. [code: blur-on-windows]
-
-</details>
+<summary><b>[163] Geologica-ExtraLight.ttf</b></summary>
 <details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
@@ -14846,64 +15478,31 @@ Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uhorn	Contours detected: 2	Expected: 1
 Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
 Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1 [code: contour-count]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class)</summary>
-
-* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
-<pre>--- Rationale ---
-
-Glyphs in the GDEF mark glyph class should be non-spacing.
-Spacing glyphs in the GDEF mark glyph class may have incorrect
-anchor positioning that was only intended for building composite glyphs
-during design.
-
-
-</pre>
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 acutecomb, acutecomb.case, acutecomb.narrow, brevecombcy, dotbelowcomb, gravecomb, gravecomb.case, gravecomb.narrow, hookabovecomb, hookabovecomb.case and 55 more. [code: spacing-mark-glyphs]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class</summary>
-
-* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
-<pre>--- Rationale ---
-
-Mark characters should be in the GDEF mark glyph class.
-
-
-</pre>
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 U+0300, U+0301, U+0302, U+0303, U+0304, U+0306, U+0307, U+0308, U+0309, U+030A, U+030B, U+030C, U+030F, U+0311, U+0312, U+031B, U+0323, U+0324, U+0326, U+0327, U+0328, U+032E, U+0331 and U+0335 [code: mark-chars]
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
 
 </details>
 <details>
@@ -14914,12 +15513,12 @@ Mark characters should be in the GDEF mark glyph class.
 
 The snippet of HTML in the DESCRIPTION.en_us.html file is added to the font
 family webpage on the Google Fonts website. For that reason, all hyperlinks in
-it must be properly working. 
+it must be properly working.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -14942,7 +15541,7 @@ any other git-based version control service.
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -14951,17 +15550,19 @@ any other git-based version control service.
 * [com.google.fonts/check/description/valid_html](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/valid_html)
 <pre>--- Rationale ---
 
-When packaging families for being pushed to the `google/fonts` git repo, if
-there is no DESCRIPTION.en_us.html file, some older versions of the
-`add_font.py` tool insert a dummy description file which contains invalid html.
+Sometimes people write malformed HTML markup. This check should ensure the file
+is good.
 
-This file needs to either be replaced with an existing description file or
-edited by hand.
+Additionally, when packaging families for being pushed to the `google/fonts`
+git repo, if there is no DESCRIPTION.en_us.html file, some older versions of
+the `add_font.py` tool insert a dummy description file which contains invalid
+html. This file needs to either be replaced with an existing description file
+or edited by hand.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: descfile
+* 💤 **SKIP** Unfulfilled Conditions: description
 
 </details>
 <details>
@@ -15012,7 +15613,7 @@ malformed.
 
 </pre>
 
-* 💤 **SKIP** Font family at '../fonts/static/ttfs' lacks a METADATA.pb file.
+* 💤 **SKIP** Font family at '../fonts/static/ttfs' lacks a METADATA.pb file. [code: file-not-found]
 
 </details>
 <details>
@@ -15081,6 +15682,28 @@ match exactly those declared on the METADATA.pb file.
 
 Also, to avoid confusion, we expect that font files (other than statics) are
 not placed on subdirectories.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: family_metadata
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure METADATA.pb category field is valid.</summary>
+
+* [com.google.fonts/check/metadata/category](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/category)
+<pre>--- Rationale ---
+
+There are only five acceptable values for the category field in a METADATA.pb
+file:
+- MONOSPACE
+- SANS_SERIF
+- SERIF
+- DISPLAY
+- HANDWRITING
+
+This check is meant to avoid typos in this field.
 
 
 </pre>
@@ -15375,15 +15998,28 @@ We may want to merge them all into a single check.
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Checking OS/2 usWeightClass matches weight specified at METADATA.pb.</summary>
+<summary>💤 <b>SKIP:</b> Check METADATA.pb font weights are correct.</summary>
 
 * [com.google.fonts/check/metadata/os2_weightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/os2_weightclass)
+<pre>--- Rationale ---
+
+Check METADATA.pb font weights are correct.
+
+For static fonts, the metadata weight should be the same
+as the static font&#x27;s OS/2 usWeightClass.
+
+For variable fonts, the weight value should be 400 if the
+font&#x27;s wght axis range includes 400, otherwise it should be the
+value closest to 400.
+
+
+</pre>
 
 * 💤 **SKIP** Unfulfilled Conditions: font_metadata
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName.</summary>
+<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName for static fonts.</summary>
 
 * [com.google.fonts/check/metadata/match_weight_postscript](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/match_weight_postscript)
 
@@ -15527,6 +16163,10 @@ All ligatures in a font must have corresponding caret (text cursor) positions
 defined in the GDEF table, otherwhise, users may experience issues with caret
 rendering.
 
+If using GlyphsApp, ligature carets can be set directly on canvas by accessing
+the `Glyph -&gt; Set Anchors` menu option or by pressing the `Cmd+U` keyboard
+shortcut.
+
 
 </pre>
 
@@ -15604,6 +16244,25 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Check font follows the Google Fonts CJK vertical metric schema</summary>
+
+* [com.google.fonts/check/cjk_vertical_metrics](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/cjk_vertical_metrics)
+<pre>--- Rationale ---
+
+CJK fonts have different vertical metrics when compared to Latin fonts. We
+follow the schema developed by dr Ken Lunde for Source Han Sans and the Noto
+CJK fonts.
+
+Our documentation includes further information:
+https://github.com/googlefonts/gf-docs/tree/master/Spec#cjk-vertical-metrics
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_cjk_font
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Check variable font instances have correct coordinate values</summary>
 
 * [com.google.fonts/check/varfont_instance_coordinates](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont_instance_coordinates)
@@ -15620,7 +16279,7 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Ensure VFs do not contain opsz or ital axes. </summary>
+<summary>💤 <b>SKIP:</b> Ensure VFs do not contain slnt or ital axes. </summary>
 
 * [com.google.fonts/check/varfont/unsupported_axes](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont/unsupported_axes)
 <pre>--- Rationale ---
@@ -15681,6 +16340,21 @@ result in WARNs.
 </pre>
 
 * 💤 **SKIP** Sibling families were not detected.
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure indic fonts have the Indian Rupee Sign glyph. </summary>
+
+* [com.google.fonts/check/rupee](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/rupee)
+<pre>--- Rationale ---
+
+Per Bureau of Indian Standards every font supporting one of the official Indian
+languages needs to include Unicode Character “₹” (U+20B9) Indian Rupee Sign.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_indic_font
 
 </details>
 <details>
@@ -15918,10 +16592,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/Geologica-ExtraLight.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 125.8kb |
-	| Hinted Size | 154.5kb |
-	| Increase | 28.7kb |
-	| Change   | 22.8 % |
+	| Dehinted Size | 126.1kb |
+	| Hinted Size | 155.1kb |
+	| Increase | 29.1kb |
+	| Change   | 23.0 % |
  [code: size-impact]
 
 </details>
@@ -16013,7 +16687,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [GPOS, gasp, cvt , loca, prep, GSUB, fpgm, DSIG]
+* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, GPOS, DSIG, gasp, prep, loca, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -16130,6 +16804,31 @@ set of characters defined in the `GF-latin-core` glyph-set.
 * [com.google.fonts/check/name/unwanted_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars)
 
 * 🍞 **PASS** No need to substitute copyright, registered and trademark symbols in name table entries of this font.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Checking OS/2 usWeightClass.</summary>
+
+* [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
+<pre>--- Rationale ---
+
+Google Fonts expects variable fonts, static ttfs and static otfs to have
+differing OS/2 usWeightClass values.
+
+For Variable Fonts, Thin-Black must be 100-900
+For static ttfs, Thin-Black can be 100-900 or 250-900
+For static otfs, Thin-Black must be 250-900
+
+If static otfs are set lower than 250, text may appear blurry in legacy Windows
+applications.
+
+Glyphsapp users can change the usWeightClass value of an instance by adding a
+&#x27;weightClass&#x27; customParameter.
+
+
+</pre>
+
+* 🍞 **PASS** OS/2 usWeightClass is good
 
 </details>
 <details>
@@ -16315,20 +17014,12 @@ Even though the OpenType spec allows unitsPerEm to be any value between 16 and
 The spec suggests usage of powers of two in order to get some performance
 improvements on legacy renderers, so those values are acceptable.
 
-But value of 500 or 1000 are also acceptable, with the added benefit that it
+But values of 500 or 1000 are also acceptable, with the added benefit that it
 makes upm math easier for designers, while the performance hit of not using a
 power of two is most likely negligible nowadays.
 
-Another acceptable value is 2000. Since TT outlines are all integers (no
-floats), then instances in a VF suffer rounding compromises, and therefore a
-1000 UPM is too small because it forces too many such compromises.
-
-Therefore 2000 is a good &#x27;new VF standard&#x27;, because 2000 is a simple 2x
-conversion from existing fonts drawn on a 1000 UPM, and anyone who knows what
-10 units can do for 1000 UPM will know what 20 units does too.
-
-Additionally, values above 2048 would result in filesize increases with not
-much added benefit.
+Additionally, values above 2048 would likely result in unreasonable filesize
+increases.
 
 
 </pre>
@@ -16554,6 +17245,28 @@ release files, but Google Fonts should only have OpenType tables.
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+<pre>--- Rationale ---
+
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Combined length of family and style must not exceed 27 characters.</summary>
 
 * [com.google.fonts/check/name/family_and_style_max_length](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length)
@@ -16624,11 +17337,73 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> A font repository should not include fontbakery report files</summary>
+
+* [com.google.fonts/check/repo/fb_report](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/fb_report)
+<pre>--- Rationale ---
+
+A FontBakery report is ephemeral and so should be used for posting issues on a
+bug-tracker instead of being hosted in the font project repository.
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> A font repository should not include ZIP files</summary>
+
+* [com.google.fonts/check/repo/zip_files](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/zip_files)
+<pre>--- Rationale ---
+
+Sometimes people check in ZIPs into their font project repositories. While we
+accept the practice of checking in binaries, we believe that a ZIP is a step
+too far ;)
+
+Note: a source purist position is that only source files and build scripts
+should be checked in. 
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Name table records must not have trailing spaces.</summary>
 
 * [com.google.fonts/check/name/trailing_spaces](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/name/trailing_spaces)
 
 * 🍞 **PASS** No trailing spaces on name table entries.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+<pre>--- Rationale ---
+
+A font&#x27;s winAscent and winDescent values should be greater than the head
+table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
+can occur on Windows platforms
+(https://github.com/RedHatBrand/Overpass/issues/33).
+
+If the font includes tall/deep writing systems such as Arabic or Devanagari,
+the winAscent and winDescent can be greater than the yMax and abs(yMin) to
+accommodate vowel marks.
+
+When the win Metrics are significantly greater than the upm, the linespacing
+can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
+(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
+This means the font developer can control the linespacing with the typo values,
+whilst avoiding clipping by setting the win values to values greater than the
+yMax and abs(yMin).
+
+
+</pre>
+
+* 🍞 **PASS** OS/2 usWinAscent & usWinDescent values look good!
 
 </details>
 <details>
@@ -16697,8 +17472,15 @@ space glyph. This might have been relevant for applications on MacOS 9.
 <summary>🍞 <b>PASS:</b> Font has **proper** whitespace glyph names?</summary>
 
 * [com.google.fonts/check/whitespace_glyphnames](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/whitespace_glyphnames)
+<pre>--- Rationale ---
 
-* 🍞 **PASS** Font has **proper** whitespace glyph names.
+This check enforces adherence to recommended whitespace (codepoints 0020 and
+00A0) glyph names according to the Adobe Glyph List.
+
+
+</pre>
+
+* 🍞 **PASS** Font has **AGL recommended** names for whitespace glyphs.
 
 </details>
 <details>
@@ -16921,7 +17703,7 @@ apps.
 <pre>--- Rationale ---
 
 There are various metadata in the OpenType spec to specify if a font is
-monospaced or not. If the font is not trully monospaced, then no monospaced
+monospaced or not. If the font is not truly monospaced, then no monospaced
 metadata should be set (as sometimes they mistakenly are...)
 
 Requirements for monospace fonts:
@@ -17052,15 +17834,45 @@ Reference: https://github.com/googlefonts/fontbakery/issues/1845
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class)</summary>
+
+* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
+<pre>--- Rationale ---
+
+Glyphs in the GDEF mark glyph class should be non-spacing.
+Spacing glyphs in the GDEF mark glyph class may have incorrect anchor
+positioning that was only intended for building composite glyphs during design.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not has spacing glyphs in the GDEF mark glyph class.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class</summary>
+
+* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
+<pre>--- Rationale ---
+
+Mark characters should be in the GDEF mark glyph class.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not have mark characters not in the GDEF mark glyph class.
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Check GDEF mark glyph class doesn't have characters that are not marks)</summary>
 
 * [com.google.fonts/check/gdef_non_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars)
 <pre>--- Rationale ---
 
-Glyphs in the GDEF mark glyph class become non-spacing and may be
-repositioned if they have mark anchors. Only combining mark glyphs
-should be in that class. Any non-mark glyph must not be in that class,
-in particular spacing glyphs.
+Glyphs in the GDEF mark glyph class become non-spacing and may be repositioned
+if they have mark anchors.
+Only combining mark glyphs should be in that class. Any non-mark glyph must not
+be in that class, in particular spacing glyphs.
 
 
 </pre>
@@ -17144,71 +17956,7 @@ the same x,y coordinates.
 <br>
 </details>
 <details>
-<summary><b>[158] Geologica-ExtraLightItalic.ttf</b></summary>
-<details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
-
-This can be accomplished by using the 'gftools fix-hinting' command.
-
-# create virtualenvpython3 -m venv venv
-# activate virtualenvsource venv/bin/activate
-# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-
-A font&#x27;s winAscent and winDescent values should be greater than the head
-table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
-can occur on Windows platforms
-(https://github.com/RedHatBrand/Overpass/issues/33).
-
-If the font includes tall/deep writing systems such as Arabic or Devanagari,
-the winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-
-When the win Metrics are significantly greater than the upm, the linespacing
-can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
-This means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).
-
-
-</pre>
-
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 895, but got 746 instead [code: descent]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Checking OS/2 usWeightClass.</summary>
-
-* [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
-
-* ⚠ **WARN** ExtraLight Italic:200 is OK on TTFs, but OTF files with those values will cause bluring on Windows. GlyphsApp users must set an Instance Custom Parameter for the Thin and ExtraLight styles to 250 and 275, so that if OTFs are exported then it will not blur on Windows. [code: blur-on-windows]
-
-</details>
+<summary><b>[163] Geologica-ExtraLightItalic.ttf</b></summary>
 <details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
@@ -17262,64 +18010,31 @@ Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uhorn	Contours detected: 2	Expected: 1
 Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
 Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1 [code: contour-count]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class)</summary>
-
-* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
-<pre>--- Rationale ---
-
-Glyphs in the GDEF mark glyph class should be non-spacing.
-Spacing glyphs in the GDEF mark glyph class may have incorrect
-anchor positioning that was only intended for building composite glyphs
-during design.
-
-
-</pre>
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 acutecomb, acutecomb.case, acutecomb.narrow, brevecombcy, dotbelowcomb, gravecomb, gravecomb.case, gravecomb.narrow, hookabovecomb, hookabovecomb.case and 55 more. [code: spacing-mark-glyphs]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class</summary>
-
-* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
-<pre>--- Rationale ---
-
-Mark characters should be in the GDEF mark glyph class.
-
-
-</pre>
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 U+0300, U+0301, U+0302, U+0303, U+0304, U+0306, U+0307, U+0308, U+0309, U+030A, U+030B, U+030C, U+030F, U+0311, U+0312, U+031B, U+0323, U+0324, U+0326, U+0327, U+0328, U+032E, U+0331 and U+0335 [code: mark-chars]
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
 
 </details>
 <details>
@@ -17330,12 +18045,12 @@ Mark characters should be in the GDEF mark glyph class.
 
 The snippet of HTML in the DESCRIPTION.en_us.html file is added to the font
 family webpage on the Google Fonts website. For that reason, all hyperlinks in
-it must be properly working. 
+it must be properly working.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -17358,7 +18073,7 @@ any other git-based version control service.
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -17367,17 +18082,19 @@ any other git-based version control service.
 * [com.google.fonts/check/description/valid_html](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/valid_html)
 <pre>--- Rationale ---
 
-When packaging families for being pushed to the `google/fonts` git repo, if
-there is no DESCRIPTION.en_us.html file, some older versions of the
-`add_font.py` tool insert a dummy description file which contains invalid html.
+Sometimes people write malformed HTML markup. This check should ensure the file
+is good.
 
-This file needs to either be replaced with an existing description file or
-edited by hand.
+Additionally, when packaging families for being pushed to the `google/fonts`
+git repo, if there is no DESCRIPTION.en_us.html file, some older versions of
+the `add_font.py` tool insert a dummy description file which contains invalid
+html. This file needs to either be replaced with an existing description file
+or edited by hand.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: descfile
+* 💤 **SKIP** Unfulfilled Conditions: description
 
 </details>
 <details>
@@ -17428,7 +18145,7 @@ malformed.
 
 </pre>
 
-* 💤 **SKIP** Font family at '../fonts/static/ttfs' lacks a METADATA.pb file.
+* 💤 **SKIP** Font family at '../fonts/static/ttfs' lacks a METADATA.pb file. [code: file-not-found]
 
 </details>
 <details>
@@ -17497,6 +18214,28 @@ match exactly those declared on the METADATA.pb file.
 
 Also, to avoid confusion, we expect that font files (other than statics) are
 not placed on subdirectories.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: family_metadata
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure METADATA.pb category field is valid.</summary>
+
+* [com.google.fonts/check/metadata/category](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/category)
+<pre>--- Rationale ---
+
+There are only five acceptable values for the category field in a METADATA.pb
+file:
+- MONOSPACE
+- SANS_SERIF
+- SERIF
+- DISPLAY
+- HANDWRITING
+
+This check is meant to avoid typos in this field.
 
 
 </pre>
@@ -17791,15 +18530,28 @@ We may want to merge them all into a single check.
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Checking OS/2 usWeightClass matches weight specified at METADATA.pb.</summary>
+<summary>💤 <b>SKIP:</b> Check METADATA.pb font weights are correct.</summary>
 
 * [com.google.fonts/check/metadata/os2_weightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/os2_weightclass)
+<pre>--- Rationale ---
+
+Check METADATA.pb font weights are correct.
+
+For static fonts, the metadata weight should be the same
+as the static font&#x27;s OS/2 usWeightClass.
+
+For variable fonts, the weight value should be 400 if the
+font&#x27;s wght axis range includes 400, otherwise it should be the
+value closest to 400.
+
+
+</pre>
 
 * 💤 **SKIP** Unfulfilled Conditions: font_metadata
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName.</summary>
+<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName for static fonts.</summary>
 
 * [com.google.fonts/check/metadata/match_weight_postscript](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/match_weight_postscript)
 
@@ -17943,6 +18695,10 @@ All ligatures in a font must have corresponding caret (text cursor) positions
 defined in the GDEF table, otherwhise, users may experience issues with caret
 rendering.
 
+If using GlyphsApp, ligature carets can be set directly on canvas by accessing
+the `Glyph -&gt; Set Anchors` menu option or by pressing the `Cmd+U` keyboard
+shortcut.
+
 
 </pre>
 
@@ -18020,6 +18776,25 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Check font follows the Google Fonts CJK vertical metric schema</summary>
+
+* [com.google.fonts/check/cjk_vertical_metrics](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/cjk_vertical_metrics)
+<pre>--- Rationale ---
+
+CJK fonts have different vertical metrics when compared to Latin fonts. We
+follow the schema developed by dr Ken Lunde for Source Han Sans and the Noto
+CJK fonts.
+
+Our documentation includes further information:
+https://github.com/googlefonts/gf-docs/tree/master/Spec#cjk-vertical-metrics
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_cjk_font
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Check variable font instances have correct coordinate values</summary>
 
 * [com.google.fonts/check/varfont_instance_coordinates](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont_instance_coordinates)
@@ -18036,7 +18811,7 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Ensure VFs do not contain opsz or ital axes. </summary>
+<summary>💤 <b>SKIP:</b> Ensure VFs do not contain slnt or ital axes. </summary>
 
 * [com.google.fonts/check/varfont/unsupported_axes](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont/unsupported_axes)
 <pre>--- Rationale ---
@@ -18097,6 +18872,21 @@ result in WARNs.
 </pre>
 
 * 💤 **SKIP** Sibling families were not detected.
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure indic fonts have the Indian Rupee Sign glyph. </summary>
+
+* [com.google.fonts/check/rupee](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/rupee)
+<pre>--- Rationale ---
+
+Per Bureau of Indian Standards every font supporting one of the official Indian
+languages needs to include Unicode Character “₹” (U+20B9) Indian Rupee Sign.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_indic_font
 
 </details>
 <details>
@@ -18334,10 +19124,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/Geologica-ExtraLightItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 127.4kb |
-	| Hinted Size | 156.6kb |
-	| Increase | 29.2kb |
-	| Change   | 22.9 % |
+	| Dehinted Size | 127.7kb |
+	| Hinted Size | 157.2kb |
+	| Increase | 29.6kb |
+	| Change   | 23.2 % |
  [code: size-impact]
 
 </details>
@@ -18429,7 +19219,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [GPOS, gasp, cvt , loca, prep, GSUB, fpgm, DSIG]
+* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, GPOS, DSIG, gasp, prep, loca, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -18546,6 +19336,31 @@ set of characters defined in the `GF-latin-core` glyph-set.
 * [com.google.fonts/check/name/unwanted_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars)
 
 * 🍞 **PASS** No need to substitute copyright, registered and trademark symbols in name table entries of this font.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Checking OS/2 usWeightClass.</summary>
+
+* [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
+<pre>--- Rationale ---
+
+Google Fonts expects variable fonts, static ttfs and static otfs to have
+differing OS/2 usWeightClass values.
+
+For Variable Fonts, Thin-Black must be 100-900
+For static ttfs, Thin-Black can be 100-900 or 250-900
+For static otfs, Thin-Black must be 250-900
+
+If static otfs are set lower than 250, text may appear blurry in legacy Windows
+applications.
+
+Glyphsapp users can change the usWeightClass value of an instance by adding a
+&#x27;weightClass&#x27; customParameter.
+
+
+</pre>
+
+* 🍞 **PASS** OS/2 usWeightClass is good
 
 </details>
 <details>
@@ -18731,20 +19546,12 @@ Even though the OpenType spec allows unitsPerEm to be any value between 16 and
 The spec suggests usage of powers of two in order to get some performance
 improvements on legacy renderers, so those values are acceptable.
 
-But value of 500 or 1000 are also acceptable, with the added benefit that it
+But values of 500 or 1000 are also acceptable, with the added benefit that it
 makes upm math easier for designers, while the performance hit of not using a
 power of two is most likely negligible nowadays.
 
-Another acceptable value is 2000. Since TT outlines are all integers (no
-floats), then instances in a VF suffer rounding compromises, and therefore a
-1000 UPM is too small because it forces too many such compromises.
-
-Therefore 2000 is a good &#x27;new VF standard&#x27;, because 2000 is a simple 2x
-conversion from existing fonts drawn on a 1000 UPM, and anyone who knows what
-10 units can do for 1000 UPM will know what 20 units does too.
-
-Additionally, values above 2048 would result in filesize increases with not
-much added benefit.
+Additionally, values above 2048 would likely result in unreasonable filesize
+increases.
 
 
 </pre>
@@ -18970,6 +19777,28 @@ release files, but Google Fonts should only have OpenType tables.
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+<pre>--- Rationale ---
+
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Combined length of family and style must not exceed 27 characters.</summary>
 
 * [com.google.fonts/check/name/family_and_style_max_length](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length)
@@ -19040,11 +19869,73 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> A font repository should not include fontbakery report files</summary>
+
+* [com.google.fonts/check/repo/fb_report](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/fb_report)
+<pre>--- Rationale ---
+
+A FontBakery report is ephemeral and so should be used for posting issues on a
+bug-tracker instead of being hosted in the font project repository.
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> A font repository should not include ZIP files</summary>
+
+* [com.google.fonts/check/repo/zip_files](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/zip_files)
+<pre>--- Rationale ---
+
+Sometimes people check in ZIPs into their font project repositories. While we
+accept the practice of checking in binaries, we believe that a ZIP is a step
+too far ;)
+
+Note: a source purist position is that only source files and build scripts
+should be checked in. 
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Name table records must not have trailing spaces.</summary>
 
 * [com.google.fonts/check/name/trailing_spaces](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/name/trailing_spaces)
 
 * 🍞 **PASS** No trailing spaces on name table entries.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+<pre>--- Rationale ---
+
+A font&#x27;s winAscent and winDescent values should be greater than the head
+table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
+can occur on Windows platforms
+(https://github.com/RedHatBrand/Overpass/issues/33).
+
+If the font includes tall/deep writing systems such as Arabic or Devanagari,
+the winAscent and winDescent can be greater than the yMax and abs(yMin) to
+accommodate vowel marks.
+
+When the win Metrics are significantly greater than the upm, the linespacing
+can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
+(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
+This means the font developer can control the linespacing with the typo values,
+whilst avoiding clipping by setting the win values to values greater than the
+yMax and abs(yMin).
+
+
+</pre>
+
+* 🍞 **PASS** OS/2 usWinAscent & usWinDescent values look good!
 
 </details>
 <details>
@@ -19113,8 +20004,15 @@ space glyph. This might have been relevant for applications on MacOS 9.
 <summary>🍞 <b>PASS:</b> Font has **proper** whitespace glyph names?</summary>
 
 * [com.google.fonts/check/whitespace_glyphnames](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/whitespace_glyphnames)
+<pre>--- Rationale ---
 
-* 🍞 **PASS** Font has **proper** whitespace glyph names.
+This check enforces adherence to recommended whitespace (codepoints 0020 and
+00A0) glyph names according to the Adobe Glyph List.
+
+
+</pre>
+
+* 🍞 **PASS** Font has **AGL recommended** names for whitespace glyphs.
 
 </details>
 <details>
@@ -19337,7 +20235,7 @@ apps.
 <pre>--- Rationale ---
 
 There are various metadata in the OpenType spec to specify if a font is
-monospaced or not. If the font is not trully monospaced, then no monospaced
+monospaced or not. If the font is not truly monospaced, then no monospaced
 metadata should be set (as sometimes they mistakenly are...)
 
 Requirements for monospace fonts:
@@ -19468,15 +20366,45 @@ Reference: https://github.com/googlefonts/fontbakery/issues/1845
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class)</summary>
+
+* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
+<pre>--- Rationale ---
+
+Glyphs in the GDEF mark glyph class should be non-spacing.
+Spacing glyphs in the GDEF mark glyph class may have incorrect anchor
+positioning that was only intended for building composite glyphs during design.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not has spacing glyphs in the GDEF mark glyph class.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class</summary>
+
+* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
+<pre>--- Rationale ---
+
+Mark characters should be in the GDEF mark glyph class.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not have mark characters not in the GDEF mark glyph class.
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Check GDEF mark glyph class doesn't have characters that are not marks)</summary>
 
 * [com.google.fonts/check/gdef_non_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars)
 <pre>--- Rationale ---
 
-Glyphs in the GDEF mark glyph class become non-spacing and may be
-repositioned if they have mark anchors. Only combining mark glyphs
-should be in that class. Any non-mark glyph must not be in that class,
-in particular spacing glyphs.
+Glyphs in the GDEF mark glyph class become non-spacing and may be repositioned
+if they have mark anchors.
+Only combining mark glyphs should be in that class. Any non-mark glyph must not
+be in that class, in particular spacing glyphs.
 
 
 </pre>
@@ -19560,63 +20488,7 @@ the same x,y coordinates.
 <br>
 </details>
 <details>
-<summary><b>[158] Geologica-Italic.ttf</b></summary>
-<details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
-
-This can be accomplished by using the 'gftools fix-hinting' command.
-
-# create virtualenvpython3 -m venv venv
-# activate virtualenvsource venv/bin/activate
-# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-
-A font&#x27;s winAscent and winDescent values should be greater than the head
-table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
-can occur on Windows platforms
-(https://github.com/RedHatBrand/Overpass/issues/33).
-
-If the font includes tall/deep writing systems such as Arabic or Devanagari,
-the winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-
-When the win Metrics are significantly greater than the upm, the linespacing
-can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
-This means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).
-
-
-</pre>
-
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 895, but got 746 instead [code: descent]
-
-</details>
+<summary><b>[163] Geologica-Italic.ttf</b></summary>
 <details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
@@ -19670,64 +20542,31 @@ Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uhorn	Contours detected: 2	Expected: 1
 Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
 Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1 [code: contour-count]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class)</summary>
-
-* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
-<pre>--- Rationale ---
-
-Glyphs in the GDEF mark glyph class should be non-spacing.
-Spacing glyphs in the GDEF mark glyph class may have incorrect
-anchor positioning that was only intended for building composite glyphs
-during design.
-
-
-</pre>
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 acutecomb, acutecomb.case, acutecomb.narrow, brevecombcy, dotbelowcomb, gravecomb, gravecomb.case, gravecomb.narrow, hookabovecomb, hookabovecomb.case and 55 more. [code: spacing-mark-glyphs]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class</summary>
-
-* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
-<pre>--- Rationale ---
-
-Mark characters should be in the GDEF mark glyph class.
-
-
-</pre>
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 U+0300, U+0301, U+0302, U+0303, U+0304, U+0306, U+0307, U+0308, U+0309, U+030A, U+030B, U+030C, U+030F, U+0311, U+0312, U+031B, U+0323, U+0324, U+0326, U+0327, U+0328, U+032E, U+0331 and U+0335 [code: mark-chars]
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
 
 </details>
 <details>
@@ -19738,12 +20577,12 @@ Mark characters should be in the GDEF mark glyph class.
 
 The snippet of HTML in the DESCRIPTION.en_us.html file is added to the font
 family webpage on the Google Fonts website. For that reason, all hyperlinks in
-it must be properly working. 
+it must be properly working.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -19766,7 +20605,7 @@ any other git-based version control service.
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -19775,17 +20614,19 @@ any other git-based version control service.
 * [com.google.fonts/check/description/valid_html](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/valid_html)
 <pre>--- Rationale ---
 
-When packaging families for being pushed to the `google/fonts` git repo, if
-there is no DESCRIPTION.en_us.html file, some older versions of the
-`add_font.py` tool insert a dummy description file which contains invalid html.
+Sometimes people write malformed HTML markup. This check should ensure the file
+is good.
 
-This file needs to either be replaced with an existing description file or
-edited by hand.
+Additionally, when packaging families for being pushed to the `google/fonts`
+git repo, if there is no DESCRIPTION.en_us.html file, some older versions of
+the `add_font.py` tool insert a dummy description file which contains invalid
+html. This file needs to either be replaced with an existing description file
+or edited by hand.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: descfile
+* 💤 **SKIP** Unfulfilled Conditions: description
 
 </details>
 <details>
@@ -19836,7 +20677,7 @@ malformed.
 
 </pre>
 
-* 💤 **SKIP** Font family at '../fonts/static/ttfs' lacks a METADATA.pb file.
+* 💤 **SKIP** Font family at '../fonts/static/ttfs' lacks a METADATA.pb file. [code: file-not-found]
 
 </details>
 <details>
@@ -19905,6 +20746,28 @@ match exactly those declared on the METADATA.pb file.
 
 Also, to avoid confusion, we expect that font files (other than statics) are
 not placed on subdirectories.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: family_metadata
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure METADATA.pb category field is valid.</summary>
+
+* [com.google.fonts/check/metadata/category](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/category)
+<pre>--- Rationale ---
+
+There are only five acceptable values for the category field in a METADATA.pb
+file:
+- MONOSPACE
+- SANS_SERIF
+- SERIF
+- DISPLAY
+- HANDWRITING
+
+This check is meant to avoid typos in this field.
 
 
 </pre>
@@ -20199,15 +21062,28 @@ We may want to merge them all into a single check.
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Checking OS/2 usWeightClass matches weight specified at METADATA.pb.</summary>
+<summary>💤 <b>SKIP:</b> Check METADATA.pb font weights are correct.</summary>
 
 * [com.google.fonts/check/metadata/os2_weightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/os2_weightclass)
+<pre>--- Rationale ---
+
+Check METADATA.pb font weights are correct.
+
+For static fonts, the metadata weight should be the same
+as the static font&#x27;s OS/2 usWeightClass.
+
+For variable fonts, the weight value should be 400 if the
+font&#x27;s wght axis range includes 400, otherwise it should be the
+value closest to 400.
+
+
+</pre>
 
 * 💤 **SKIP** Unfulfilled Conditions: font_metadata
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName.</summary>
+<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName for static fonts.</summary>
 
 * [com.google.fonts/check/metadata/match_weight_postscript](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/match_weight_postscript)
 
@@ -20351,6 +21227,10 @@ All ligatures in a font must have corresponding caret (text cursor) positions
 defined in the GDEF table, otherwhise, users may experience issues with caret
 rendering.
 
+If using GlyphsApp, ligature carets can be set directly on canvas by accessing
+the `Glyph -&gt; Set Anchors` menu option or by pressing the `Cmd+U` keyboard
+shortcut.
+
 
 </pre>
 
@@ -20428,6 +21308,25 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Check font follows the Google Fonts CJK vertical metric schema</summary>
+
+* [com.google.fonts/check/cjk_vertical_metrics](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/cjk_vertical_metrics)
+<pre>--- Rationale ---
+
+CJK fonts have different vertical metrics when compared to Latin fonts. We
+follow the schema developed by dr Ken Lunde for Source Han Sans and the Noto
+CJK fonts.
+
+Our documentation includes further information:
+https://github.com/googlefonts/gf-docs/tree/master/Spec#cjk-vertical-metrics
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_cjk_font
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Check variable font instances have correct coordinate values</summary>
 
 * [com.google.fonts/check/varfont_instance_coordinates](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont_instance_coordinates)
@@ -20444,7 +21343,7 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Ensure VFs do not contain opsz or ital axes. </summary>
+<summary>💤 <b>SKIP:</b> Ensure VFs do not contain slnt or ital axes. </summary>
 
 * [com.google.fonts/check/varfont/unsupported_axes](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont/unsupported_axes)
 <pre>--- Rationale ---
@@ -20505,6 +21404,21 @@ result in WARNs.
 </pre>
 
 * 💤 **SKIP** Sibling families were not detected.
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure indic fonts have the Indian Rupee Sign glyph. </summary>
+
+* [com.google.fonts/check/rupee](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/rupee)
+<pre>--- Rationale ---
+
+Per Bureau of Indian Standards every font supporting one of the official Indian
+languages needs to include Unicode Character “₹” (U+20B9) Indian Rupee Sign.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_indic_font
 
 </details>
 <details>
@@ -20742,10 +21656,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/Geologica-Italic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 126.9kb |
-	| Hinted Size | 168.0kb |
-	| Increase | 41.1kb |
-	| Change   | 32.4 % |
+	| Dehinted Size | 127.2kb |
+	| Hinted Size | 168.6kb |
+	| Increase | 41.4kb |
+	| Change   | 32.6 % |
  [code: size-impact]
 
 </details>
@@ -20837,7 +21751,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [GPOS, gasp, cvt , loca, prep, GSUB, fpgm, DSIG]
+* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, GPOS, DSIG, gasp, prep, loca, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -20960,8 +21874,25 @@ set of characters defined in the `GF-latin-core` glyph-set.
 <summary>🍞 <b>PASS:</b> Checking OS/2 usWeightClass.</summary>
 
 * [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
+<pre>--- Rationale ---
 
-* 🍞 **PASS** OS/2 usWeightClass value looks good!
+Google Fonts expects variable fonts, static ttfs and static otfs to have
+differing OS/2 usWeightClass values.
+
+For Variable Fonts, Thin-Black must be 100-900
+For static ttfs, Thin-Black can be 100-900 or 250-900
+For static otfs, Thin-Black must be 250-900
+
+If static otfs are set lower than 250, text may appear blurry in legacy Windows
+applications.
+
+Glyphsapp users can change the usWeightClass value of an instance by adding a
+&#x27;weightClass&#x27; customParameter.
+
+
+</pre>
+
+* 🍞 **PASS** OS/2 usWeightClass is good
 
 </details>
 <details>
@@ -21147,20 +22078,12 @@ Even though the OpenType spec allows unitsPerEm to be any value between 16 and
 The spec suggests usage of powers of two in order to get some performance
 improvements on legacy renderers, so those values are acceptable.
 
-But value of 500 or 1000 are also acceptable, with the added benefit that it
+But values of 500 or 1000 are also acceptable, with the added benefit that it
 makes upm math easier for designers, while the performance hit of not using a
 power of two is most likely negligible nowadays.
 
-Another acceptable value is 2000. Since TT outlines are all integers (no
-floats), then instances in a VF suffer rounding compromises, and therefore a
-1000 UPM is too small because it forces too many such compromises.
-
-Therefore 2000 is a good &#x27;new VF standard&#x27;, because 2000 is a simple 2x
-conversion from existing fonts drawn on a 1000 UPM, and anyone who knows what
-10 units can do for 1000 UPM will know what 20 units does too.
-
-Additionally, values above 2048 would result in filesize increases with not
-much added benefit.
+Additionally, values above 2048 would likely result in unreasonable filesize
+increases.
 
 
 </pre>
@@ -21386,6 +22309,28 @@ release files, but Google Fonts should only have OpenType tables.
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+<pre>--- Rationale ---
+
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Combined length of family and style must not exceed 27 characters.</summary>
 
 * [com.google.fonts/check/name/family_and_style_max_length](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length)
@@ -21456,11 +22401,73 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> A font repository should not include fontbakery report files</summary>
+
+* [com.google.fonts/check/repo/fb_report](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/fb_report)
+<pre>--- Rationale ---
+
+A FontBakery report is ephemeral and so should be used for posting issues on a
+bug-tracker instead of being hosted in the font project repository.
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> A font repository should not include ZIP files</summary>
+
+* [com.google.fonts/check/repo/zip_files](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/zip_files)
+<pre>--- Rationale ---
+
+Sometimes people check in ZIPs into their font project repositories. While we
+accept the practice of checking in binaries, we believe that a ZIP is a step
+too far ;)
+
+Note: a source purist position is that only source files and build scripts
+should be checked in. 
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Name table records must not have trailing spaces.</summary>
 
 * [com.google.fonts/check/name/trailing_spaces](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/name/trailing_spaces)
 
 * 🍞 **PASS** No trailing spaces on name table entries.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+<pre>--- Rationale ---
+
+A font&#x27;s winAscent and winDescent values should be greater than the head
+table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
+can occur on Windows platforms
+(https://github.com/RedHatBrand/Overpass/issues/33).
+
+If the font includes tall/deep writing systems such as Arabic or Devanagari,
+the winAscent and winDescent can be greater than the yMax and abs(yMin) to
+accommodate vowel marks.
+
+When the win Metrics are significantly greater than the upm, the linespacing
+can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
+(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
+This means the font developer can control the linespacing with the typo values,
+whilst avoiding clipping by setting the win values to values greater than the
+yMax and abs(yMin).
+
+
+</pre>
+
+* 🍞 **PASS** OS/2 usWinAscent & usWinDescent values look good!
 
 </details>
 <details>
@@ -21529,8 +22536,15 @@ space glyph. This might have been relevant for applications on MacOS 9.
 <summary>🍞 <b>PASS:</b> Font has **proper** whitespace glyph names?</summary>
 
 * [com.google.fonts/check/whitespace_glyphnames](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/whitespace_glyphnames)
+<pre>--- Rationale ---
 
-* 🍞 **PASS** Font has **proper** whitespace glyph names.
+This check enforces adherence to recommended whitespace (codepoints 0020 and
+00A0) glyph names according to the Adobe Glyph List.
+
+
+</pre>
+
+* 🍞 **PASS** Font has **AGL recommended** names for whitespace glyphs.
 
 </details>
 <details>
@@ -21753,7 +22767,7 @@ apps.
 <pre>--- Rationale ---
 
 There are various metadata in the OpenType spec to specify if a font is
-monospaced or not. If the font is not trully monospaced, then no monospaced
+monospaced or not. If the font is not truly monospaced, then no monospaced
 metadata should be set (as sometimes they mistakenly are...)
 
 Requirements for monospace fonts:
@@ -21884,15 +22898,45 @@ Reference: https://github.com/googlefonts/fontbakery/issues/1845
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class)</summary>
+
+* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
+<pre>--- Rationale ---
+
+Glyphs in the GDEF mark glyph class should be non-spacing.
+Spacing glyphs in the GDEF mark glyph class may have incorrect anchor
+positioning that was only intended for building composite glyphs during design.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not has spacing glyphs in the GDEF mark glyph class.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class</summary>
+
+* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
+<pre>--- Rationale ---
+
+Mark characters should be in the GDEF mark glyph class.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not have mark characters not in the GDEF mark glyph class.
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Check GDEF mark glyph class doesn't have characters that are not marks)</summary>
 
 * [com.google.fonts/check/gdef_non_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars)
 <pre>--- Rationale ---
 
-Glyphs in the GDEF mark glyph class become non-spacing and may be
-repositioned if they have mark anchors. Only combining mark glyphs
-should be in that class. Any non-mark glyph must not be in that class,
-in particular spacing glyphs.
+Glyphs in the GDEF mark glyph class become non-spacing and may be repositioned
+if they have mark anchors.
+Only combining mark glyphs should be in that class. Any non-mark glyph must not
+be in that class, in particular spacing glyphs.
 
 
 </pre>
@@ -21976,63 +23020,7 @@ the same x,y coordinates.
 <br>
 </details>
 <details>
-<summary><b>[158] Geologica-Light.ttf</b></summary>
-<details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
-
-This can be accomplished by using the 'gftools fix-hinting' command.
-
-# create virtualenvpython3 -m venv venv
-# activate virtualenvsource venv/bin/activate
-# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-
-A font&#x27;s winAscent and winDescent values should be greater than the head
-table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
-can occur on Windows platforms
-(https://github.com/RedHatBrand/Overpass/issues/33).
-
-If the font includes tall/deep writing systems such as Arabic or Devanagari,
-the winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-
-When the win Metrics are significantly greater than the upm, the linespacing
-can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
-This means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).
-
-
-</pre>
-
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 895, but got 746 instead [code: descent]
-
-</details>
+<summary><b>[163] Geologica-Light.ttf</b></summary>
 <details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
@@ -22086,64 +23074,31 @@ Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uhorn	Contours detected: 2	Expected: 1
 Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
 Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1 [code: contour-count]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class)</summary>
-
-* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
-<pre>--- Rationale ---
-
-Glyphs in the GDEF mark glyph class should be non-spacing.
-Spacing glyphs in the GDEF mark glyph class may have incorrect
-anchor positioning that was only intended for building composite glyphs
-during design.
-
-
-</pre>
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 acutecomb, acutecomb.case, acutecomb.narrow, brevecombcy, dotbelowcomb, gravecomb, gravecomb.case, gravecomb.narrow, hookabovecomb, hookabovecomb.case and 55 more. [code: spacing-mark-glyphs]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class</summary>
-
-* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
-<pre>--- Rationale ---
-
-Mark characters should be in the GDEF mark glyph class.
-
-
-</pre>
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 U+0300, U+0301, U+0302, U+0303, U+0304, U+0306, U+0307, U+0308, U+0309, U+030A, U+030B, U+030C, U+030F, U+0311, U+0312, U+031B, U+0323, U+0324, U+0326, U+0327, U+0328, U+032E, U+0331 and U+0335 [code: mark-chars]
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
 
 </details>
 <details>
@@ -22154,12 +23109,12 @@ Mark characters should be in the GDEF mark glyph class.
 
 The snippet of HTML in the DESCRIPTION.en_us.html file is added to the font
 family webpage on the Google Fonts website. For that reason, all hyperlinks in
-it must be properly working. 
+it must be properly working.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -22182,7 +23137,7 @@ any other git-based version control service.
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -22191,17 +23146,19 @@ any other git-based version control service.
 * [com.google.fonts/check/description/valid_html](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/valid_html)
 <pre>--- Rationale ---
 
-When packaging families for being pushed to the `google/fonts` git repo, if
-there is no DESCRIPTION.en_us.html file, some older versions of the
-`add_font.py` tool insert a dummy description file which contains invalid html.
+Sometimes people write malformed HTML markup. This check should ensure the file
+is good.
 
-This file needs to either be replaced with an existing description file or
-edited by hand.
+Additionally, when packaging families for being pushed to the `google/fonts`
+git repo, if there is no DESCRIPTION.en_us.html file, some older versions of
+the `add_font.py` tool insert a dummy description file which contains invalid
+html. This file needs to either be replaced with an existing description file
+or edited by hand.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: descfile
+* 💤 **SKIP** Unfulfilled Conditions: description
 
 </details>
 <details>
@@ -22252,7 +23209,7 @@ malformed.
 
 </pre>
 
-* 💤 **SKIP** Font family at '../fonts/static/ttfs' lacks a METADATA.pb file.
+* 💤 **SKIP** Font family at '../fonts/static/ttfs' lacks a METADATA.pb file. [code: file-not-found]
 
 </details>
 <details>
@@ -22321,6 +23278,28 @@ match exactly those declared on the METADATA.pb file.
 
 Also, to avoid confusion, we expect that font files (other than statics) are
 not placed on subdirectories.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: family_metadata
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure METADATA.pb category field is valid.</summary>
+
+* [com.google.fonts/check/metadata/category](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/category)
+<pre>--- Rationale ---
+
+There are only five acceptable values for the category field in a METADATA.pb
+file:
+- MONOSPACE
+- SANS_SERIF
+- SERIF
+- DISPLAY
+- HANDWRITING
+
+This check is meant to avoid typos in this field.
 
 
 </pre>
@@ -22615,15 +23594,28 @@ We may want to merge them all into a single check.
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Checking OS/2 usWeightClass matches weight specified at METADATA.pb.</summary>
+<summary>💤 <b>SKIP:</b> Check METADATA.pb font weights are correct.</summary>
 
 * [com.google.fonts/check/metadata/os2_weightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/os2_weightclass)
+<pre>--- Rationale ---
+
+Check METADATA.pb font weights are correct.
+
+For static fonts, the metadata weight should be the same
+as the static font&#x27;s OS/2 usWeightClass.
+
+For variable fonts, the weight value should be 400 if the
+font&#x27;s wght axis range includes 400, otherwise it should be the
+value closest to 400.
+
+
+</pre>
 
 * 💤 **SKIP** Unfulfilled Conditions: font_metadata
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName.</summary>
+<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName for static fonts.</summary>
 
 * [com.google.fonts/check/metadata/match_weight_postscript](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/match_weight_postscript)
 
@@ -22767,6 +23759,10 @@ All ligatures in a font must have corresponding caret (text cursor) positions
 defined in the GDEF table, otherwhise, users may experience issues with caret
 rendering.
 
+If using GlyphsApp, ligature carets can be set directly on canvas by accessing
+the `Glyph -&gt; Set Anchors` menu option or by pressing the `Cmd+U` keyboard
+shortcut.
+
 
 </pre>
 
@@ -22844,6 +23840,25 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Check font follows the Google Fonts CJK vertical metric schema</summary>
+
+* [com.google.fonts/check/cjk_vertical_metrics](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/cjk_vertical_metrics)
+<pre>--- Rationale ---
+
+CJK fonts have different vertical metrics when compared to Latin fonts. We
+follow the schema developed by dr Ken Lunde for Source Han Sans and the Noto
+CJK fonts.
+
+Our documentation includes further information:
+https://github.com/googlefonts/gf-docs/tree/master/Spec#cjk-vertical-metrics
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_cjk_font
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Check variable font instances have correct coordinate values</summary>
 
 * [com.google.fonts/check/varfont_instance_coordinates](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont_instance_coordinates)
@@ -22860,7 +23875,7 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Ensure VFs do not contain opsz or ital axes. </summary>
+<summary>💤 <b>SKIP:</b> Ensure VFs do not contain slnt or ital axes. </summary>
 
 * [com.google.fonts/check/varfont/unsupported_axes](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont/unsupported_axes)
 <pre>--- Rationale ---
@@ -22921,6 +23936,21 @@ result in WARNs.
 </pre>
 
 * 💤 **SKIP** Sibling families were not detected.
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure indic fonts have the Indian Rupee Sign glyph. </summary>
+
+* [com.google.fonts/check/rupee](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/rupee)
+<pre>--- Rationale ---
+
+Per Bureau of Indian Standards every font supporting one of the official Indian
+languages needs to include Unicode Character “₹” (U+20B9) Indian Rupee Sign.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_indic_font
 
 </details>
 <details>
@@ -23158,10 +24188,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/Geologica-Light.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 125.2kb |
-	| Hinted Size | 154.5kb |
-	| Increase | 29.2kb |
-	| Change   | 23.3 % |
+	| Dehinted Size | 125.5kb |
+	| Hinted Size | 155.1kb |
+	| Increase | 29.6kb |
+	| Change   | 23.6 % |
  [code: size-impact]
 
 </details>
@@ -23253,7 +24283,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [GPOS, gasp, cvt , loca, prep, GSUB, fpgm, DSIG]
+* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, GPOS, DSIG, gasp, prep, loca, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -23376,8 +24406,25 @@ set of characters defined in the `GF-latin-core` glyph-set.
 <summary>🍞 <b>PASS:</b> Checking OS/2 usWeightClass.</summary>
 
 * [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
+<pre>--- Rationale ---
 
-* 🍞 **PASS** OS/2 usWeightClass value looks good!
+Google Fonts expects variable fonts, static ttfs and static otfs to have
+differing OS/2 usWeightClass values.
+
+For Variable Fonts, Thin-Black must be 100-900
+For static ttfs, Thin-Black can be 100-900 or 250-900
+For static otfs, Thin-Black must be 250-900
+
+If static otfs are set lower than 250, text may appear blurry in legacy Windows
+applications.
+
+Glyphsapp users can change the usWeightClass value of an instance by adding a
+&#x27;weightClass&#x27; customParameter.
+
+
+</pre>
+
+* 🍞 **PASS** OS/2 usWeightClass is good
 
 </details>
 <details>
@@ -23563,20 +24610,12 @@ Even though the OpenType spec allows unitsPerEm to be any value between 16 and
 The spec suggests usage of powers of two in order to get some performance
 improvements on legacy renderers, so those values are acceptable.
 
-But value of 500 or 1000 are also acceptable, with the added benefit that it
+But values of 500 or 1000 are also acceptable, with the added benefit that it
 makes upm math easier for designers, while the performance hit of not using a
 power of two is most likely negligible nowadays.
 
-Another acceptable value is 2000. Since TT outlines are all integers (no
-floats), then instances in a VF suffer rounding compromises, and therefore a
-1000 UPM is too small because it forces too many such compromises.
-
-Therefore 2000 is a good &#x27;new VF standard&#x27;, because 2000 is a simple 2x
-conversion from existing fonts drawn on a 1000 UPM, and anyone who knows what
-10 units can do for 1000 UPM will know what 20 units does too.
-
-Additionally, values above 2048 would result in filesize increases with not
-much added benefit.
+Additionally, values above 2048 would likely result in unreasonable filesize
+increases.
 
 
 </pre>
@@ -23802,6 +24841,28 @@ release files, but Google Fonts should only have OpenType tables.
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+<pre>--- Rationale ---
+
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Combined length of family and style must not exceed 27 characters.</summary>
 
 * [com.google.fonts/check/name/family_and_style_max_length](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length)
@@ -23872,11 +24933,73 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> A font repository should not include fontbakery report files</summary>
+
+* [com.google.fonts/check/repo/fb_report](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/fb_report)
+<pre>--- Rationale ---
+
+A FontBakery report is ephemeral and so should be used for posting issues on a
+bug-tracker instead of being hosted in the font project repository.
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> A font repository should not include ZIP files</summary>
+
+* [com.google.fonts/check/repo/zip_files](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/zip_files)
+<pre>--- Rationale ---
+
+Sometimes people check in ZIPs into their font project repositories. While we
+accept the practice of checking in binaries, we believe that a ZIP is a step
+too far ;)
+
+Note: a source purist position is that only source files and build scripts
+should be checked in. 
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Name table records must not have trailing spaces.</summary>
 
 * [com.google.fonts/check/name/trailing_spaces](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/name/trailing_spaces)
 
 * 🍞 **PASS** No trailing spaces on name table entries.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+<pre>--- Rationale ---
+
+A font&#x27;s winAscent and winDescent values should be greater than the head
+table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
+can occur on Windows platforms
+(https://github.com/RedHatBrand/Overpass/issues/33).
+
+If the font includes tall/deep writing systems such as Arabic or Devanagari,
+the winAscent and winDescent can be greater than the yMax and abs(yMin) to
+accommodate vowel marks.
+
+When the win Metrics are significantly greater than the upm, the linespacing
+can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
+(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
+This means the font developer can control the linespacing with the typo values,
+whilst avoiding clipping by setting the win values to values greater than the
+yMax and abs(yMin).
+
+
+</pre>
+
+* 🍞 **PASS** OS/2 usWinAscent & usWinDescent values look good!
 
 </details>
 <details>
@@ -23945,8 +25068,15 @@ space glyph. This might have been relevant for applications on MacOS 9.
 <summary>🍞 <b>PASS:</b> Font has **proper** whitespace glyph names?</summary>
 
 * [com.google.fonts/check/whitespace_glyphnames](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/whitespace_glyphnames)
+<pre>--- Rationale ---
 
-* 🍞 **PASS** Font has **proper** whitespace glyph names.
+This check enforces adherence to recommended whitespace (codepoints 0020 and
+00A0) glyph names according to the Adobe Glyph List.
+
+
+</pre>
+
+* 🍞 **PASS** Font has **AGL recommended** names for whitespace glyphs.
 
 </details>
 <details>
@@ -24169,7 +25299,7 @@ apps.
 <pre>--- Rationale ---
 
 There are various metadata in the OpenType spec to specify if a font is
-monospaced or not. If the font is not trully monospaced, then no monospaced
+monospaced or not. If the font is not truly monospaced, then no monospaced
 metadata should be set (as sometimes they mistakenly are...)
 
 Requirements for monospace fonts:
@@ -24300,15 +25430,45 @@ Reference: https://github.com/googlefonts/fontbakery/issues/1845
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class)</summary>
+
+* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
+<pre>--- Rationale ---
+
+Glyphs in the GDEF mark glyph class should be non-spacing.
+Spacing glyphs in the GDEF mark glyph class may have incorrect anchor
+positioning that was only intended for building composite glyphs during design.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not has spacing glyphs in the GDEF mark glyph class.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class</summary>
+
+* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
+<pre>--- Rationale ---
+
+Mark characters should be in the GDEF mark glyph class.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not have mark characters not in the GDEF mark glyph class.
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Check GDEF mark glyph class doesn't have characters that are not marks)</summary>
 
 * [com.google.fonts/check/gdef_non_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars)
 <pre>--- Rationale ---
 
-Glyphs in the GDEF mark glyph class become non-spacing and may be
-repositioned if they have mark anchors. Only combining mark glyphs
-should be in that class. Any non-mark glyph must not be in that class,
-in particular spacing glyphs.
+Glyphs in the GDEF mark glyph class become non-spacing and may be repositioned
+if they have mark anchors.
+Only combining mark glyphs should be in that class. Any non-mark glyph must not
+be in that class, in particular spacing glyphs.
 
 
 </pre>
@@ -24392,63 +25552,7 @@ the same x,y coordinates.
 <br>
 </details>
 <details>
-<summary><b>[158] Geologica-LightItalic.ttf</b></summary>
-<details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
-
-This can be accomplished by using the 'gftools fix-hinting' command.
-
-# create virtualenvpython3 -m venv venv
-# activate virtualenvsource venv/bin/activate
-# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-
-A font&#x27;s winAscent and winDescent values should be greater than the head
-table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
-can occur on Windows platforms
-(https://github.com/RedHatBrand/Overpass/issues/33).
-
-If the font includes tall/deep writing systems such as Arabic or Devanagari,
-the winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-
-When the win Metrics are significantly greater than the upm, the linespacing
-can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
-This means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).
-
-
-</pre>
-
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 895, but got 746 instead [code: descent]
-
-</details>
+<summary><b>[163] Geologica-LightItalic.ttf</b></summary>
 <details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
@@ -24502,64 +25606,31 @@ Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uhorn	Contours detected: 2	Expected: 1
 Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
 Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1 [code: contour-count]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class)</summary>
-
-* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
-<pre>--- Rationale ---
-
-Glyphs in the GDEF mark glyph class should be non-spacing.
-Spacing glyphs in the GDEF mark glyph class may have incorrect
-anchor positioning that was only intended for building composite glyphs
-during design.
-
-
-</pre>
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 acutecomb, acutecomb.case, acutecomb.narrow, brevecombcy, dotbelowcomb, gravecomb, gravecomb.case, gravecomb.narrow, hookabovecomb, hookabovecomb.case and 55 more. [code: spacing-mark-glyphs]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class</summary>
-
-* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
-<pre>--- Rationale ---
-
-Mark characters should be in the GDEF mark glyph class.
-
-
-</pre>
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 U+0300, U+0301, U+0302, U+0303, U+0304, U+0306, U+0307, U+0308, U+0309, U+030A, U+030B, U+030C, U+030F, U+0311, U+0312, U+031B, U+0323, U+0324, U+0326, U+0327, U+0328, U+032E, U+0331 and U+0335 [code: mark-chars]
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
 
 </details>
 <details>
@@ -24570,12 +25641,12 @@ Mark characters should be in the GDEF mark glyph class.
 
 The snippet of HTML in the DESCRIPTION.en_us.html file is added to the font
 family webpage on the Google Fonts website. For that reason, all hyperlinks in
-it must be properly working. 
+it must be properly working.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -24598,7 +25669,7 @@ any other git-based version control service.
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -24607,17 +25678,19 @@ any other git-based version control service.
 * [com.google.fonts/check/description/valid_html](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/valid_html)
 <pre>--- Rationale ---
 
-When packaging families for being pushed to the `google/fonts` git repo, if
-there is no DESCRIPTION.en_us.html file, some older versions of the
-`add_font.py` tool insert a dummy description file which contains invalid html.
+Sometimes people write malformed HTML markup. This check should ensure the file
+is good.
 
-This file needs to either be replaced with an existing description file or
-edited by hand.
+Additionally, when packaging families for being pushed to the `google/fonts`
+git repo, if there is no DESCRIPTION.en_us.html file, some older versions of
+the `add_font.py` tool insert a dummy description file which contains invalid
+html. This file needs to either be replaced with an existing description file
+or edited by hand.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: descfile
+* 💤 **SKIP** Unfulfilled Conditions: description
 
 </details>
 <details>
@@ -24668,7 +25741,7 @@ malformed.
 
 </pre>
 
-* 💤 **SKIP** Font family at '../fonts/static/ttfs' lacks a METADATA.pb file.
+* 💤 **SKIP** Font family at '../fonts/static/ttfs' lacks a METADATA.pb file. [code: file-not-found]
 
 </details>
 <details>
@@ -24737,6 +25810,28 @@ match exactly those declared on the METADATA.pb file.
 
 Also, to avoid confusion, we expect that font files (other than statics) are
 not placed on subdirectories.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: family_metadata
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure METADATA.pb category field is valid.</summary>
+
+* [com.google.fonts/check/metadata/category](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/category)
+<pre>--- Rationale ---
+
+There are only five acceptable values for the category field in a METADATA.pb
+file:
+- MONOSPACE
+- SANS_SERIF
+- SERIF
+- DISPLAY
+- HANDWRITING
+
+This check is meant to avoid typos in this field.
 
 
 </pre>
@@ -25031,15 +26126,28 @@ We may want to merge them all into a single check.
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Checking OS/2 usWeightClass matches weight specified at METADATA.pb.</summary>
+<summary>💤 <b>SKIP:</b> Check METADATA.pb font weights are correct.</summary>
 
 * [com.google.fonts/check/metadata/os2_weightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/os2_weightclass)
+<pre>--- Rationale ---
+
+Check METADATA.pb font weights are correct.
+
+For static fonts, the metadata weight should be the same
+as the static font&#x27;s OS/2 usWeightClass.
+
+For variable fonts, the weight value should be 400 if the
+font&#x27;s wght axis range includes 400, otherwise it should be the
+value closest to 400.
+
+
+</pre>
 
 * 💤 **SKIP** Unfulfilled Conditions: font_metadata
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName.</summary>
+<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName for static fonts.</summary>
 
 * [com.google.fonts/check/metadata/match_weight_postscript](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/match_weight_postscript)
 
@@ -25183,6 +26291,10 @@ All ligatures in a font must have corresponding caret (text cursor) positions
 defined in the GDEF table, otherwhise, users may experience issues with caret
 rendering.
 
+If using GlyphsApp, ligature carets can be set directly on canvas by accessing
+the `Glyph -&gt; Set Anchors` menu option or by pressing the `Cmd+U` keyboard
+shortcut.
+
 
 </pre>
 
@@ -25260,6 +26372,25 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Check font follows the Google Fonts CJK vertical metric schema</summary>
+
+* [com.google.fonts/check/cjk_vertical_metrics](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/cjk_vertical_metrics)
+<pre>--- Rationale ---
+
+CJK fonts have different vertical metrics when compared to Latin fonts. We
+follow the schema developed by dr Ken Lunde for Source Han Sans and the Noto
+CJK fonts.
+
+Our documentation includes further information:
+https://github.com/googlefonts/gf-docs/tree/master/Spec#cjk-vertical-metrics
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_cjk_font
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Check variable font instances have correct coordinate values</summary>
 
 * [com.google.fonts/check/varfont_instance_coordinates](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont_instance_coordinates)
@@ -25276,7 +26407,7 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Ensure VFs do not contain opsz or ital axes. </summary>
+<summary>💤 <b>SKIP:</b> Ensure VFs do not contain slnt or ital axes. </summary>
 
 * [com.google.fonts/check/varfont/unsupported_axes](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont/unsupported_axes)
 <pre>--- Rationale ---
@@ -25337,6 +26468,21 @@ result in WARNs.
 </pre>
 
 * 💤 **SKIP** Sibling families were not detected.
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure indic fonts have the Indian Rupee Sign glyph. </summary>
+
+* [com.google.fonts/check/rupee](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/rupee)
+<pre>--- Rationale ---
+
+Per Bureau of Indian Standards every font supporting one of the official Indian
+languages needs to include Unicode Character “₹” (U+20B9) Indian Rupee Sign.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_indic_font
 
 </details>
 <details>
@@ -25574,10 +26720,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/Geologica-LightItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 127.1kb |
-	| Hinted Size | 156.6kb |
-	| Increase | 29.6kb |
-	| Change   | 23.3 % |
+	| Dehinted Size | 127.3kb |
+	| Hinted Size | 157.3kb |
+	| Increase | 29.9kb |
+	| Change   | 23.5 % |
  [code: size-impact]
 
 </details>
@@ -25669,7 +26815,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [GPOS, gasp, cvt , loca, prep, GSUB, fpgm, DSIG]
+* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, GPOS, DSIG, gasp, prep, loca, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -25792,8 +26938,25 @@ set of characters defined in the `GF-latin-core` glyph-set.
 <summary>🍞 <b>PASS:</b> Checking OS/2 usWeightClass.</summary>
 
 * [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
+<pre>--- Rationale ---
 
-* 🍞 **PASS** OS/2 usWeightClass value looks good!
+Google Fonts expects variable fonts, static ttfs and static otfs to have
+differing OS/2 usWeightClass values.
+
+For Variable Fonts, Thin-Black must be 100-900
+For static ttfs, Thin-Black can be 100-900 or 250-900
+For static otfs, Thin-Black must be 250-900
+
+If static otfs are set lower than 250, text may appear blurry in legacy Windows
+applications.
+
+Glyphsapp users can change the usWeightClass value of an instance by adding a
+&#x27;weightClass&#x27; customParameter.
+
+
+</pre>
+
+* 🍞 **PASS** OS/2 usWeightClass is good
 
 </details>
 <details>
@@ -25979,20 +27142,12 @@ Even though the OpenType spec allows unitsPerEm to be any value between 16 and
 The spec suggests usage of powers of two in order to get some performance
 improvements on legacy renderers, so those values are acceptable.
 
-But value of 500 or 1000 are also acceptable, with the added benefit that it
+But values of 500 or 1000 are also acceptable, with the added benefit that it
 makes upm math easier for designers, while the performance hit of not using a
 power of two is most likely negligible nowadays.
 
-Another acceptable value is 2000. Since TT outlines are all integers (no
-floats), then instances in a VF suffer rounding compromises, and therefore a
-1000 UPM is too small because it forces too many such compromises.
-
-Therefore 2000 is a good &#x27;new VF standard&#x27;, because 2000 is a simple 2x
-conversion from existing fonts drawn on a 1000 UPM, and anyone who knows what
-10 units can do for 1000 UPM will know what 20 units does too.
-
-Additionally, values above 2048 would result in filesize increases with not
-much added benefit.
+Additionally, values above 2048 would likely result in unreasonable filesize
+increases.
 
 
 </pre>
@@ -26218,6 +27373,28 @@ release files, but Google Fonts should only have OpenType tables.
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+<pre>--- Rationale ---
+
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Combined length of family and style must not exceed 27 characters.</summary>
 
 * [com.google.fonts/check/name/family_and_style_max_length](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length)
@@ -26288,11 +27465,73 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> A font repository should not include fontbakery report files</summary>
+
+* [com.google.fonts/check/repo/fb_report](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/fb_report)
+<pre>--- Rationale ---
+
+A FontBakery report is ephemeral and so should be used for posting issues on a
+bug-tracker instead of being hosted in the font project repository.
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> A font repository should not include ZIP files</summary>
+
+* [com.google.fonts/check/repo/zip_files](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/zip_files)
+<pre>--- Rationale ---
+
+Sometimes people check in ZIPs into their font project repositories. While we
+accept the practice of checking in binaries, we believe that a ZIP is a step
+too far ;)
+
+Note: a source purist position is that only source files and build scripts
+should be checked in. 
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Name table records must not have trailing spaces.</summary>
 
 * [com.google.fonts/check/name/trailing_spaces](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/name/trailing_spaces)
 
 * 🍞 **PASS** No trailing spaces on name table entries.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+<pre>--- Rationale ---
+
+A font&#x27;s winAscent and winDescent values should be greater than the head
+table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
+can occur on Windows platforms
+(https://github.com/RedHatBrand/Overpass/issues/33).
+
+If the font includes tall/deep writing systems such as Arabic or Devanagari,
+the winAscent and winDescent can be greater than the yMax and abs(yMin) to
+accommodate vowel marks.
+
+When the win Metrics are significantly greater than the upm, the linespacing
+can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
+(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
+This means the font developer can control the linespacing with the typo values,
+whilst avoiding clipping by setting the win values to values greater than the
+yMax and abs(yMin).
+
+
+</pre>
+
+* 🍞 **PASS** OS/2 usWinAscent & usWinDescent values look good!
 
 </details>
 <details>
@@ -26361,8 +27600,15 @@ space glyph. This might have been relevant for applications on MacOS 9.
 <summary>🍞 <b>PASS:</b> Font has **proper** whitespace glyph names?</summary>
 
 * [com.google.fonts/check/whitespace_glyphnames](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/whitespace_glyphnames)
+<pre>--- Rationale ---
 
-* 🍞 **PASS** Font has **proper** whitespace glyph names.
+This check enforces adherence to recommended whitespace (codepoints 0020 and
+00A0) glyph names according to the Adobe Glyph List.
+
+
+</pre>
+
+* 🍞 **PASS** Font has **AGL recommended** names for whitespace glyphs.
 
 </details>
 <details>
@@ -26585,7 +27831,7 @@ apps.
 <pre>--- Rationale ---
 
 There are various metadata in the OpenType spec to specify if a font is
-monospaced or not. If the font is not trully monospaced, then no monospaced
+monospaced or not. If the font is not truly monospaced, then no monospaced
 metadata should be set (as sometimes they mistakenly are...)
 
 Requirements for monospace fonts:
@@ -26716,15 +27962,45 @@ Reference: https://github.com/googlefonts/fontbakery/issues/1845
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class)</summary>
+
+* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
+<pre>--- Rationale ---
+
+Glyphs in the GDEF mark glyph class should be non-spacing.
+Spacing glyphs in the GDEF mark glyph class may have incorrect anchor
+positioning that was only intended for building composite glyphs during design.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not has spacing glyphs in the GDEF mark glyph class.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class</summary>
+
+* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
+<pre>--- Rationale ---
+
+Mark characters should be in the GDEF mark glyph class.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not have mark characters not in the GDEF mark glyph class.
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Check GDEF mark glyph class doesn't have characters that are not marks)</summary>
 
 * [com.google.fonts/check/gdef_non_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars)
 <pre>--- Rationale ---
 
-Glyphs in the GDEF mark glyph class become non-spacing and may be
-repositioned if they have mark anchors. Only combining mark glyphs
-should be in that class. Any non-mark glyph must not be in that class,
-in particular spacing glyphs.
+Glyphs in the GDEF mark glyph class become non-spacing and may be repositioned
+if they have mark anchors.
+Only combining mark glyphs should be in that class. Any non-mark glyph must not
+be in that class, in particular spacing glyphs.
 
 
 </pre>
@@ -26808,63 +28084,7 @@ the same x,y coordinates.
 <br>
 </details>
 <details>
-<summary><b>[158] Geologica-Medium.ttf</b></summary>
-<details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
-
-This can be accomplished by using the 'gftools fix-hinting' command.
-
-# create virtualenvpython3 -m venv venv
-# activate virtualenvsource venv/bin/activate
-# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-
-A font&#x27;s winAscent and winDescent values should be greater than the head
-table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
-can occur on Windows platforms
-(https://github.com/RedHatBrand/Overpass/issues/33).
-
-If the font includes tall/deep writing systems such as Arabic or Devanagari,
-the winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-
-When the win Metrics are significantly greater than the upm, the linespacing
-can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
-This means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).
-
-
-</pre>
-
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 895, but got 746 instead [code: descent]
-
-</details>
+<summary><b>[163] Geologica-Medium.ttf</b></summary>
 <details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
@@ -26918,64 +28138,31 @@ Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uhorn	Contours detected: 2	Expected: 1
 Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
 Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1 [code: contour-count]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class)</summary>
-
-* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
-<pre>--- Rationale ---
-
-Glyphs in the GDEF mark glyph class should be non-spacing.
-Spacing glyphs in the GDEF mark glyph class may have incorrect
-anchor positioning that was only intended for building composite glyphs
-during design.
-
-
-</pre>
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 acutecomb, acutecomb.case, acutecomb.narrow, brevecombcy, dotbelowcomb, gravecomb, gravecomb.case, gravecomb.narrow, hookabovecomb, hookabovecomb.case and 55 more. [code: spacing-mark-glyphs]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class</summary>
-
-* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
-<pre>--- Rationale ---
-
-Mark characters should be in the GDEF mark glyph class.
-
-
-</pre>
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 U+0300, U+0301, U+0302, U+0303, U+0304, U+0306, U+0307, U+0308, U+0309, U+030A, U+030B, U+030C, U+030F, U+0311, U+0312, U+031B, U+0323, U+0324, U+0326, U+0327, U+0328, U+032E, U+0331 and U+0335 [code: mark-chars]
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
 
 </details>
 <details>
@@ -26986,12 +28173,12 @@ Mark characters should be in the GDEF mark glyph class.
 
 The snippet of HTML in the DESCRIPTION.en_us.html file is added to the font
 family webpage on the Google Fonts website. For that reason, all hyperlinks in
-it must be properly working. 
+it must be properly working.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -27014,7 +28201,7 @@ any other git-based version control service.
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -27023,17 +28210,19 @@ any other git-based version control service.
 * [com.google.fonts/check/description/valid_html](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/valid_html)
 <pre>--- Rationale ---
 
-When packaging families for being pushed to the `google/fonts` git repo, if
-there is no DESCRIPTION.en_us.html file, some older versions of the
-`add_font.py` tool insert a dummy description file which contains invalid html.
+Sometimes people write malformed HTML markup. This check should ensure the file
+is good.
 
-This file needs to either be replaced with an existing description file or
-edited by hand.
+Additionally, when packaging families for being pushed to the `google/fonts`
+git repo, if there is no DESCRIPTION.en_us.html file, some older versions of
+the `add_font.py` tool insert a dummy description file which contains invalid
+html. This file needs to either be replaced with an existing description file
+or edited by hand.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: descfile
+* 💤 **SKIP** Unfulfilled Conditions: description
 
 </details>
 <details>
@@ -27084,7 +28273,7 @@ malformed.
 
 </pre>
 
-* 💤 **SKIP** Font family at '../fonts/static/ttfs' lacks a METADATA.pb file.
+* 💤 **SKIP** Font family at '../fonts/static/ttfs' lacks a METADATA.pb file. [code: file-not-found]
 
 </details>
 <details>
@@ -27153,6 +28342,28 @@ match exactly those declared on the METADATA.pb file.
 
 Also, to avoid confusion, we expect that font files (other than statics) are
 not placed on subdirectories.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: family_metadata
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure METADATA.pb category field is valid.</summary>
+
+* [com.google.fonts/check/metadata/category](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/category)
+<pre>--- Rationale ---
+
+There are only five acceptable values for the category field in a METADATA.pb
+file:
+- MONOSPACE
+- SANS_SERIF
+- SERIF
+- DISPLAY
+- HANDWRITING
+
+This check is meant to avoid typos in this field.
 
 
 </pre>
@@ -27447,15 +28658,28 @@ We may want to merge them all into a single check.
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Checking OS/2 usWeightClass matches weight specified at METADATA.pb.</summary>
+<summary>💤 <b>SKIP:</b> Check METADATA.pb font weights are correct.</summary>
 
 * [com.google.fonts/check/metadata/os2_weightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/os2_weightclass)
+<pre>--- Rationale ---
+
+Check METADATA.pb font weights are correct.
+
+For static fonts, the metadata weight should be the same
+as the static font&#x27;s OS/2 usWeightClass.
+
+For variable fonts, the weight value should be 400 if the
+font&#x27;s wght axis range includes 400, otherwise it should be the
+value closest to 400.
+
+
+</pre>
 
 * 💤 **SKIP** Unfulfilled Conditions: font_metadata
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName.</summary>
+<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName for static fonts.</summary>
 
 * [com.google.fonts/check/metadata/match_weight_postscript](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/match_weight_postscript)
 
@@ -27599,6 +28823,10 @@ All ligatures in a font must have corresponding caret (text cursor) positions
 defined in the GDEF table, otherwhise, users may experience issues with caret
 rendering.
 
+If using GlyphsApp, ligature carets can be set directly on canvas by accessing
+the `Glyph -&gt; Set Anchors` menu option or by pressing the `Cmd+U` keyboard
+shortcut.
+
 
 </pre>
 
@@ -27676,6 +28904,25 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Check font follows the Google Fonts CJK vertical metric schema</summary>
+
+* [com.google.fonts/check/cjk_vertical_metrics](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/cjk_vertical_metrics)
+<pre>--- Rationale ---
+
+CJK fonts have different vertical metrics when compared to Latin fonts. We
+follow the schema developed by dr Ken Lunde for Source Han Sans and the Noto
+CJK fonts.
+
+Our documentation includes further information:
+https://github.com/googlefonts/gf-docs/tree/master/Spec#cjk-vertical-metrics
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_cjk_font
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Check variable font instances have correct coordinate values</summary>
 
 * [com.google.fonts/check/varfont_instance_coordinates](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont_instance_coordinates)
@@ -27692,7 +28939,7 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Ensure VFs do not contain opsz or ital axes. </summary>
+<summary>💤 <b>SKIP:</b> Ensure VFs do not contain slnt or ital axes. </summary>
 
 * [com.google.fonts/check/varfont/unsupported_axes](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont/unsupported_axes)
 <pre>--- Rationale ---
@@ -27753,6 +29000,21 @@ result in WARNs.
 </pre>
 
 * 💤 **SKIP** Sibling families were not detected.
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure indic fonts have the Indian Rupee Sign glyph. </summary>
+
+* [com.google.fonts/check/rupee](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/rupee)
+<pre>--- Rationale ---
+
+Per Bureau of Indian Standards every font supporting one of the official Indian
+languages needs to include Unicode Character “₹” (U+20B9) Indian Rupee Sign.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_indic_font
 
 </details>
 <details>
@@ -27990,10 +29252,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/Geologica-Medium.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 125.2kb |
-	| Hinted Size | 155.2kb |
-	| Increase | 30.0kb |
-	| Change   | 23.9 % |
+	| Dehinted Size | 125.5kb |
+	| Hinted Size | 155.8kb |
+	| Increase | 30.3kb |
+	| Change   | 24.2 % |
  [code: size-impact]
 
 </details>
@@ -28085,7 +29347,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [GPOS, gasp, cvt , loca, prep, GSUB, fpgm, DSIG]
+* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, GPOS, DSIG, gasp, prep, loca, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -28208,8 +29470,25 @@ set of characters defined in the `GF-latin-core` glyph-set.
 <summary>🍞 <b>PASS:</b> Checking OS/2 usWeightClass.</summary>
 
 * [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
+<pre>--- Rationale ---
 
-* 🍞 **PASS** OS/2 usWeightClass value looks good!
+Google Fonts expects variable fonts, static ttfs and static otfs to have
+differing OS/2 usWeightClass values.
+
+For Variable Fonts, Thin-Black must be 100-900
+For static ttfs, Thin-Black can be 100-900 or 250-900
+For static otfs, Thin-Black must be 250-900
+
+If static otfs are set lower than 250, text may appear blurry in legacy Windows
+applications.
+
+Glyphsapp users can change the usWeightClass value of an instance by adding a
+&#x27;weightClass&#x27; customParameter.
+
+
+</pre>
+
+* 🍞 **PASS** OS/2 usWeightClass is good
 
 </details>
 <details>
@@ -28395,20 +29674,12 @@ Even though the OpenType spec allows unitsPerEm to be any value between 16 and
 The spec suggests usage of powers of two in order to get some performance
 improvements on legacy renderers, so those values are acceptable.
 
-But value of 500 or 1000 are also acceptable, with the added benefit that it
+But values of 500 or 1000 are also acceptable, with the added benefit that it
 makes upm math easier for designers, while the performance hit of not using a
 power of two is most likely negligible nowadays.
 
-Another acceptable value is 2000. Since TT outlines are all integers (no
-floats), then instances in a VF suffer rounding compromises, and therefore a
-1000 UPM is too small because it forces too many such compromises.
-
-Therefore 2000 is a good &#x27;new VF standard&#x27;, because 2000 is a simple 2x
-conversion from existing fonts drawn on a 1000 UPM, and anyone who knows what
-10 units can do for 1000 UPM will know what 20 units does too.
-
-Additionally, values above 2048 would result in filesize increases with not
-much added benefit.
+Additionally, values above 2048 would likely result in unreasonable filesize
+increases.
 
 
 </pre>
@@ -28634,6 +29905,28 @@ release files, but Google Fonts should only have OpenType tables.
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+<pre>--- Rationale ---
+
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Combined length of family and style must not exceed 27 characters.</summary>
 
 * [com.google.fonts/check/name/family_and_style_max_length](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length)
@@ -28704,11 +29997,73 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> A font repository should not include fontbakery report files</summary>
+
+* [com.google.fonts/check/repo/fb_report](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/fb_report)
+<pre>--- Rationale ---
+
+A FontBakery report is ephemeral and so should be used for posting issues on a
+bug-tracker instead of being hosted in the font project repository.
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> A font repository should not include ZIP files</summary>
+
+* [com.google.fonts/check/repo/zip_files](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/zip_files)
+<pre>--- Rationale ---
+
+Sometimes people check in ZIPs into their font project repositories. While we
+accept the practice of checking in binaries, we believe that a ZIP is a step
+too far ;)
+
+Note: a source purist position is that only source files and build scripts
+should be checked in. 
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Name table records must not have trailing spaces.</summary>
 
 * [com.google.fonts/check/name/trailing_spaces](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/name/trailing_spaces)
 
 * 🍞 **PASS** No trailing spaces on name table entries.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+<pre>--- Rationale ---
+
+A font&#x27;s winAscent and winDescent values should be greater than the head
+table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
+can occur on Windows platforms
+(https://github.com/RedHatBrand/Overpass/issues/33).
+
+If the font includes tall/deep writing systems such as Arabic or Devanagari,
+the winAscent and winDescent can be greater than the yMax and abs(yMin) to
+accommodate vowel marks.
+
+When the win Metrics are significantly greater than the upm, the linespacing
+can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
+(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
+This means the font developer can control the linespacing with the typo values,
+whilst avoiding clipping by setting the win values to values greater than the
+yMax and abs(yMin).
+
+
+</pre>
+
+* 🍞 **PASS** OS/2 usWinAscent & usWinDescent values look good!
 
 </details>
 <details>
@@ -28777,8 +30132,15 @@ space glyph. This might have been relevant for applications on MacOS 9.
 <summary>🍞 <b>PASS:</b> Font has **proper** whitespace glyph names?</summary>
 
 * [com.google.fonts/check/whitespace_glyphnames](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/whitespace_glyphnames)
+<pre>--- Rationale ---
 
-* 🍞 **PASS** Font has **proper** whitespace glyph names.
+This check enforces adherence to recommended whitespace (codepoints 0020 and
+00A0) glyph names according to the Adobe Glyph List.
+
+
+</pre>
+
+* 🍞 **PASS** Font has **AGL recommended** names for whitespace glyphs.
 
 </details>
 <details>
@@ -29001,7 +30363,7 @@ apps.
 <pre>--- Rationale ---
 
 There are various metadata in the OpenType spec to specify if a font is
-monospaced or not. If the font is not trully monospaced, then no monospaced
+monospaced or not. If the font is not truly monospaced, then no monospaced
 metadata should be set (as sometimes they mistakenly are...)
 
 Requirements for monospace fonts:
@@ -29132,15 +30494,45 @@ Reference: https://github.com/googlefonts/fontbakery/issues/1845
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class)</summary>
+
+* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
+<pre>--- Rationale ---
+
+Glyphs in the GDEF mark glyph class should be non-spacing.
+Spacing glyphs in the GDEF mark glyph class may have incorrect anchor
+positioning that was only intended for building composite glyphs during design.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not has spacing glyphs in the GDEF mark glyph class.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class</summary>
+
+* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
+<pre>--- Rationale ---
+
+Mark characters should be in the GDEF mark glyph class.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not have mark characters not in the GDEF mark glyph class.
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Check GDEF mark glyph class doesn't have characters that are not marks)</summary>
 
 * [com.google.fonts/check/gdef_non_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars)
 <pre>--- Rationale ---
 
-Glyphs in the GDEF mark glyph class become non-spacing and may be
-repositioned if they have mark anchors. Only combining mark glyphs
-should be in that class. Any non-mark glyph must not be in that class,
-in particular spacing glyphs.
+Glyphs in the GDEF mark glyph class become non-spacing and may be repositioned
+if they have mark anchors.
+Only combining mark glyphs should be in that class. Any non-mark glyph must not
+be in that class, in particular spacing glyphs.
 
 
 </pre>
@@ -29224,63 +30616,7 @@ the same x,y coordinates.
 <br>
 </details>
 <details>
-<summary><b>[158] Geologica-MediumItalic.ttf</b></summary>
-<details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
-
-This can be accomplished by using the 'gftools fix-hinting' command.
-
-# create virtualenvpython3 -m venv venv
-# activate virtualenvsource venv/bin/activate
-# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-
-A font&#x27;s winAscent and winDescent values should be greater than the head
-table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
-can occur on Windows platforms
-(https://github.com/RedHatBrand/Overpass/issues/33).
-
-If the font includes tall/deep writing systems such as Arabic or Devanagari,
-the winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-
-When the win Metrics are significantly greater than the upm, the linespacing
-can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
-This means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).
-
-
-</pre>
-
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 895, but got 746 instead [code: descent]
-
-</details>
+<summary><b>[163] Geologica-MediumItalic.ttf</b></summary>
 <details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
@@ -29334,64 +30670,31 @@ Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uhorn	Contours detected: 2	Expected: 1
 Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
 Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1 [code: contour-count]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class)</summary>
-
-* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
-<pre>--- Rationale ---
-
-Glyphs in the GDEF mark glyph class should be non-spacing.
-Spacing glyphs in the GDEF mark glyph class may have incorrect
-anchor positioning that was only intended for building composite glyphs
-during design.
-
-
-</pre>
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 acutecomb, acutecomb.case, acutecomb.narrow, brevecombcy, dotbelowcomb, gravecomb, gravecomb.case, gravecomb.narrow, hookabovecomb, hookabovecomb.case and 55 more. [code: spacing-mark-glyphs]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class</summary>
-
-* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
-<pre>--- Rationale ---
-
-Mark characters should be in the GDEF mark glyph class.
-
-
-</pre>
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 U+0300, U+0301, U+0302, U+0303, U+0304, U+0306, U+0307, U+0308, U+0309, U+030A, U+030B, U+030C, U+030F, U+0311, U+0312, U+031B, U+0323, U+0324, U+0326, U+0327, U+0328, U+032E, U+0331 and U+0335 [code: mark-chars]
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
 
 </details>
 <details>
@@ -29402,12 +30705,12 @@ Mark characters should be in the GDEF mark glyph class.
 
 The snippet of HTML in the DESCRIPTION.en_us.html file is added to the font
 family webpage on the Google Fonts website. For that reason, all hyperlinks in
-it must be properly working. 
+it must be properly working.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -29430,7 +30733,7 @@ any other git-based version control service.
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -29439,17 +30742,19 @@ any other git-based version control service.
 * [com.google.fonts/check/description/valid_html](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/valid_html)
 <pre>--- Rationale ---
 
-When packaging families for being pushed to the `google/fonts` git repo, if
-there is no DESCRIPTION.en_us.html file, some older versions of the
-`add_font.py` tool insert a dummy description file which contains invalid html.
+Sometimes people write malformed HTML markup. This check should ensure the file
+is good.
 
-This file needs to either be replaced with an existing description file or
-edited by hand.
+Additionally, when packaging families for being pushed to the `google/fonts`
+git repo, if there is no DESCRIPTION.en_us.html file, some older versions of
+the `add_font.py` tool insert a dummy description file which contains invalid
+html. This file needs to either be replaced with an existing description file
+or edited by hand.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: descfile
+* 💤 **SKIP** Unfulfilled Conditions: description
 
 </details>
 <details>
@@ -29500,7 +30805,7 @@ malformed.
 
 </pre>
 
-* 💤 **SKIP** Font family at '../fonts/static/ttfs' lacks a METADATA.pb file.
+* 💤 **SKIP** Font family at '../fonts/static/ttfs' lacks a METADATA.pb file. [code: file-not-found]
 
 </details>
 <details>
@@ -29569,6 +30874,28 @@ match exactly those declared on the METADATA.pb file.
 
 Also, to avoid confusion, we expect that font files (other than statics) are
 not placed on subdirectories.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: family_metadata
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure METADATA.pb category field is valid.</summary>
+
+* [com.google.fonts/check/metadata/category](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/category)
+<pre>--- Rationale ---
+
+There are only five acceptable values for the category field in a METADATA.pb
+file:
+- MONOSPACE
+- SANS_SERIF
+- SERIF
+- DISPLAY
+- HANDWRITING
+
+This check is meant to avoid typos in this field.
 
 
 </pre>
@@ -29863,15 +31190,28 @@ We may want to merge them all into a single check.
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Checking OS/2 usWeightClass matches weight specified at METADATA.pb.</summary>
+<summary>💤 <b>SKIP:</b> Check METADATA.pb font weights are correct.</summary>
 
 * [com.google.fonts/check/metadata/os2_weightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/os2_weightclass)
+<pre>--- Rationale ---
+
+Check METADATA.pb font weights are correct.
+
+For static fonts, the metadata weight should be the same
+as the static font&#x27;s OS/2 usWeightClass.
+
+For variable fonts, the weight value should be 400 if the
+font&#x27;s wght axis range includes 400, otherwise it should be the
+value closest to 400.
+
+
+</pre>
 
 * 💤 **SKIP** Unfulfilled Conditions: font_metadata
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName.</summary>
+<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName for static fonts.</summary>
 
 * [com.google.fonts/check/metadata/match_weight_postscript](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/match_weight_postscript)
 
@@ -30015,6 +31355,10 @@ All ligatures in a font must have corresponding caret (text cursor) positions
 defined in the GDEF table, otherwhise, users may experience issues with caret
 rendering.
 
+If using GlyphsApp, ligature carets can be set directly on canvas by accessing
+the `Glyph -&gt; Set Anchors` menu option or by pressing the `Cmd+U` keyboard
+shortcut.
+
 
 </pre>
 
@@ -30092,6 +31436,25 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Check font follows the Google Fonts CJK vertical metric schema</summary>
+
+* [com.google.fonts/check/cjk_vertical_metrics](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/cjk_vertical_metrics)
+<pre>--- Rationale ---
+
+CJK fonts have different vertical metrics when compared to Latin fonts. We
+follow the schema developed by dr Ken Lunde for Source Han Sans and the Noto
+CJK fonts.
+
+Our documentation includes further information:
+https://github.com/googlefonts/gf-docs/tree/master/Spec#cjk-vertical-metrics
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_cjk_font
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Check variable font instances have correct coordinate values</summary>
 
 * [com.google.fonts/check/varfont_instance_coordinates](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont_instance_coordinates)
@@ -30108,7 +31471,7 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Ensure VFs do not contain opsz or ital axes. </summary>
+<summary>💤 <b>SKIP:</b> Ensure VFs do not contain slnt or ital axes. </summary>
 
 * [com.google.fonts/check/varfont/unsupported_axes](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont/unsupported_axes)
 <pre>--- Rationale ---
@@ -30169,6 +31532,21 @@ result in WARNs.
 </pre>
 
 * 💤 **SKIP** Sibling families were not detected.
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure indic fonts have the Indian Rupee Sign glyph. </summary>
+
+* [com.google.fonts/check/rupee](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/rupee)
+<pre>--- Rationale ---
+
+Per Bureau of Indian Standards every font supporting one of the official Indian
+languages needs to include Unicode Character “₹” (U+20B9) Indian Rupee Sign.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_indic_font
 
 </details>
 <details>
@@ -30406,10 +31784,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/Geologica-MediumItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 127.0kb |
-	| Hinted Size | 157.4kb |
-	| Increase | 30.4kb |
-	| Change   | 24.0 % |
+	| Dehinted Size | 127.3kb |
+	| Hinted Size | 158.0kb |
+	| Increase | 30.8kb |
+	| Change   | 24.2 % |
  [code: size-impact]
 
 </details>
@@ -30501,7 +31879,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [GPOS, gasp, cvt , loca, prep, GSUB, fpgm, DSIG]
+* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, GPOS, DSIG, gasp, prep, loca, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -30624,8 +32002,25 @@ set of characters defined in the `GF-latin-core` glyph-set.
 <summary>🍞 <b>PASS:</b> Checking OS/2 usWeightClass.</summary>
 
 * [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
+<pre>--- Rationale ---
 
-* 🍞 **PASS** OS/2 usWeightClass value looks good!
+Google Fonts expects variable fonts, static ttfs and static otfs to have
+differing OS/2 usWeightClass values.
+
+For Variable Fonts, Thin-Black must be 100-900
+For static ttfs, Thin-Black can be 100-900 or 250-900
+For static otfs, Thin-Black must be 250-900
+
+If static otfs are set lower than 250, text may appear blurry in legacy Windows
+applications.
+
+Glyphsapp users can change the usWeightClass value of an instance by adding a
+&#x27;weightClass&#x27; customParameter.
+
+
+</pre>
+
+* 🍞 **PASS** OS/2 usWeightClass is good
 
 </details>
 <details>
@@ -30811,20 +32206,12 @@ Even though the OpenType spec allows unitsPerEm to be any value between 16 and
 The spec suggests usage of powers of two in order to get some performance
 improvements on legacy renderers, so those values are acceptable.
 
-But value of 500 or 1000 are also acceptable, with the added benefit that it
+But values of 500 or 1000 are also acceptable, with the added benefit that it
 makes upm math easier for designers, while the performance hit of not using a
 power of two is most likely negligible nowadays.
 
-Another acceptable value is 2000. Since TT outlines are all integers (no
-floats), then instances in a VF suffer rounding compromises, and therefore a
-1000 UPM is too small because it forces too many such compromises.
-
-Therefore 2000 is a good &#x27;new VF standard&#x27;, because 2000 is a simple 2x
-conversion from existing fonts drawn on a 1000 UPM, and anyone who knows what
-10 units can do for 1000 UPM will know what 20 units does too.
-
-Additionally, values above 2048 would result in filesize increases with not
-much added benefit.
+Additionally, values above 2048 would likely result in unreasonable filesize
+increases.
 
 
 </pre>
@@ -31050,6 +32437,28 @@ release files, but Google Fonts should only have OpenType tables.
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+<pre>--- Rationale ---
+
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Combined length of family and style must not exceed 27 characters.</summary>
 
 * [com.google.fonts/check/name/family_and_style_max_length](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length)
@@ -31120,11 +32529,73 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> A font repository should not include fontbakery report files</summary>
+
+* [com.google.fonts/check/repo/fb_report](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/fb_report)
+<pre>--- Rationale ---
+
+A FontBakery report is ephemeral and so should be used for posting issues on a
+bug-tracker instead of being hosted in the font project repository.
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> A font repository should not include ZIP files</summary>
+
+* [com.google.fonts/check/repo/zip_files](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/zip_files)
+<pre>--- Rationale ---
+
+Sometimes people check in ZIPs into their font project repositories. While we
+accept the practice of checking in binaries, we believe that a ZIP is a step
+too far ;)
+
+Note: a source purist position is that only source files and build scripts
+should be checked in. 
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Name table records must not have trailing spaces.</summary>
 
 * [com.google.fonts/check/name/trailing_spaces](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/name/trailing_spaces)
 
 * 🍞 **PASS** No trailing spaces on name table entries.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+<pre>--- Rationale ---
+
+A font&#x27;s winAscent and winDescent values should be greater than the head
+table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
+can occur on Windows platforms
+(https://github.com/RedHatBrand/Overpass/issues/33).
+
+If the font includes tall/deep writing systems such as Arabic or Devanagari,
+the winAscent and winDescent can be greater than the yMax and abs(yMin) to
+accommodate vowel marks.
+
+When the win Metrics are significantly greater than the upm, the linespacing
+can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
+(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
+This means the font developer can control the linespacing with the typo values,
+whilst avoiding clipping by setting the win values to values greater than the
+yMax and abs(yMin).
+
+
+</pre>
+
+* 🍞 **PASS** OS/2 usWinAscent & usWinDescent values look good!
 
 </details>
 <details>
@@ -31193,8 +32664,15 @@ space glyph. This might have been relevant for applications on MacOS 9.
 <summary>🍞 <b>PASS:</b> Font has **proper** whitespace glyph names?</summary>
 
 * [com.google.fonts/check/whitespace_glyphnames](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/whitespace_glyphnames)
+<pre>--- Rationale ---
 
-* 🍞 **PASS** Font has **proper** whitespace glyph names.
+This check enforces adherence to recommended whitespace (codepoints 0020 and
+00A0) glyph names according to the Adobe Glyph List.
+
+
+</pre>
+
+* 🍞 **PASS** Font has **AGL recommended** names for whitespace glyphs.
 
 </details>
 <details>
@@ -31417,7 +32895,7 @@ apps.
 <pre>--- Rationale ---
 
 There are various metadata in the OpenType spec to specify if a font is
-monospaced or not. If the font is not trully monospaced, then no monospaced
+monospaced or not. If the font is not truly monospaced, then no monospaced
 metadata should be set (as sometimes they mistakenly are...)
 
 Requirements for monospace fonts:
@@ -31548,15 +33026,45 @@ Reference: https://github.com/googlefonts/fontbakery/issues/1845
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class)</summary>
+
+* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
+<pre>--- Rationale ---
+
+Glyphs in the GDEF mark glyph class should be non-spacing.
+Spacing glyphs in the GDEF mark glyph class may have incorrect anchor
+positioning that was only intended for building composite glyphs during design.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not has spacing glyphs in the GDEF mark glyph class.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class</summary>
+
+* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
+<pre>--- Rationale ---
+
+Mark characters should be in the GDEF mark glyph class.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not have mark characters not in the GDEF mark glyph class.
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Check GDEF mark glyph class doesn't have characters that are not marks)</summary>
 
 * [com.google.fonts/check/gdef_non_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars)
 <pre>--- Rationale ---
 
-Glyphs in the GDEF mark glyph class become non-spacing and may be
-repositioned if they have mark anchors. Only combining mark glyphs
-should be in that class. Any non-mark glyph must not be in that class,
-in particular spacing glyphs.
+Glyphs in the GDEF mark glyph class become non-spacing and may be repositioned
+if they have mark anchors.
+Only combining mark glyphs should be in that class. Any non-mark glyph must not
+be in that class, in particular spacing glyphs.
 
 
 </pre>
@@ -31640,63 +33148,7 @@ the same x,y coordinates.
 <br>
 </details>
 <details>
-<summary><b>[158] Geologica-Regular.ttf</b></summary>
-<details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
-
-This can be accomplished by using the 'gftools fix-hinting' command.
-
-# create virtualenvpython3 -m venv venv
-# activate virtualenvsource venv/bin/activate
-# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-
-A font&#x27;s winAscent and winDescent values should be greater than the head
-table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
-can occur on Windows platforms
-(https://github.com/RedHatBrand/Overpass/issues/33).
-
-If the font includes tall/deep writing systems such as Arabic or Devanagari,
-the winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-
-When the win Metrics are significantly greater than the upm, the linespacing
-can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
-This means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).
-
-
-</pre>
-
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 895, but got 746 instead [code: descent]
-
-</details>
+<summary><b>[163] Geologica-Regular.ttf</b></summary>
 <details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
@@ -31750,64 +33202,31 @@ Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uhorn	Contours detected: 2	Expected: 1
 Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
 Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1 [code: contour-count]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class)</summary>
-
-* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
-<pre>--- Rationale ---
-
-Glyphs in the GDEF mark glyph class should be non-spacing.
-Spacing glyphs in the GDEF mark glyph class may have incorrect
-anchor positioning that was only intended for building composite glyphs
-during design.
-
-
-</pre>
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 acutecomb, acutecomb.case, acutecomb.narrow, brevecombcy, dotbelowcomb, gravecomb, gravecomb.case, gravecomb.narrow, hookabovecomb, hookabovecomb.case and 55 more. [code: spacing-mark-glyphs]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class</summary>
-
-* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
-<pre>--- Rationale ---
-
-Mark characters should be in the GDEF mark glyph class.
-
-
-</pre>
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 U+0300, U+0301, U+0302, U+0303, U+0304, U+0306, U+0307, U+0308, U+0309, U+030A, U+030B, U+030C, U+030F, U+0311, U+0312, U+031B, U+0323, U+0324, U+0326, U+0327, U+0328, U+032E, U+0331 and U+0335 [code: mark-chars]
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
 
 </details>
 <details>
@@ -31818,12 +33237,12 @@ Mark characters should be in the GDEF mark glyph class.
 
 The snippet of HTML in the DESCRIPTION.en_us.html file is added to the font
 family webpage on the Google Fonts website. For that reason, all hyperlinks in
-it must be properly working. 
+it must be properly working.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -31846,7 +33265,7 @@ any other git-based version control service.
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -31855,17 +33274,19 @@ any other git-based version control service.
 * [com.google.fonts/check/description/valid_html](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/valid_html)
 <pre>--- Rationale ---
 
-When packaging families for being pushed to the `google/fonts` git repo, if
-there is no DESCRIPTION.en_us.html file, some older versions of the
-`add_font.py` tool insert a dummy description file which contains invalid html.
+Sometimes people write malformed HTML markup. This check should ensure the file
+is good.
 
-This file needs to either be replaced with an existing description file or
-edited by hand.
+Additionally, when packaging families for being pushed to the `google/fonts`
+git repo, if there is no DESCRIPTION.en_us.html file, some older versions of
+the `add_font.py` tool insert a dummy description file which contains invalid
+html. This file needs to either be replaced with an existing description file
+or edited by hand.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: descfile
+* 💤 **SKIP** Unfulfilled Conditions: description
 
 </details>
 <details>
@@ -31916,7 +33337,7 @@ malformed.
 
 </pre>
 
-* 💤 **SKIP** Font family at '../fonts/static/ttfs' lacks a METADATA.pb file.
+* 💤 **SKIP** Font family at '../fonts/static/ttfs' lacks a METADATA.pb file. [code: file-not-found]
 
 </details>
 <details>
@@ -31985,6 +33406,28 @@ match exactly those declared on the METADATA.pb file.
 
 Also, to avoid confusion, we expect that font files (other than statics) are
 not placed on subdirectories.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: family_metadata
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure METADATA.pb category field is valid.</summary>
+
+* [com.google.fonts/check/metadata/category](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/category)
+<pre>--- Rationale ---
+
+There are only five acceptable values for the category field in a METADATA.pb
+file:
+- MONOSPACE
+- SANS_SERIF
+- SERIF
+- DISPLAY
+- HANDWRITING
+
+This check is meant to avoid typos in this field.
 
 
 </pre>
@@ -32279,15 +33722,28 @@ We may want to merge them all into a single check.
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Checking OS/2 usWeightClass matches weight specified at METADATA.pb.</summary>
+<summary>💤 <b>SKIP:</b> Check METADATA.pb font weights are correct.</summary>
 
 * [com.google.fonts/check/metadata/os2_weightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/os2_weightclass)
+<pre>--- Rationale ---
+
+Check METADATA.pb font weights are correct.
+
+For static fonts, the metadata weight should be the same
+as the static font&#x27;s OS/2 usWeightClass.
+
+For variable fonts, the weight value should be 400 if the
+font&#x27;s wght axis range includes 400, otherwise it should be the
+value closest to 400.
+
+
+</pre>
 
 * 💤 **SKIP** Unfulfilled Conditions: font_metadata
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName.</summary>
+<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName for static fonts.</summary>
 
 * [com.google.fonts/check/metadata/match_weight_postscript](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/match_weight_postscript)
 
@@ -32431,6 +33887,10 @@ All ligatures in a font must have corresponding caret (text cursor) positions
 defined in the GDEF table, otherwhise, users may experience issues with caret
 rendering.
 
+If using GlyphsApp, ligature carets can be set directly on canvas by accessing
+the `Glyph -&gt; Set Anchors` menu option or by pressing the `Cmd+U` keyboard
+shortcut.
+
 
 </pre>
 
@@ -32508,6 +33968,25 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Check font follows the Google Fonts CJK vertical metric schema</summary>
+
+* [com.google.fonts/check/cjk_vertical_metrics](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/cjk_vertical_metrics)
+<pre>--- Rationale ---
+
+CJK fonts have different vertical metrics when compared to Latin fonts. We
+follow the schema developed by dr Ken Lunde for Source Han Sans and the Noto
+CJK fonts.
+
+Our documentation includes further information:
+https://github.com/googlefonts/gf-docs/tree/master/Spec#cjk-vertical-metrics
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_cjk_font
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Check variable font instances have correct coordinate values</summary>
 
 * [com.google.fonts/check/varfont_instance_coordinates](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont_instance_coordinates)
@@ -32524,7 +34003,7 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Ensure VFs do not contain opsz or ital axes. </summary>
+<summary>💤 <b>SKIP:</b> Ensure VFs do not contain slnt or ital axes. </summary>
 
 * [com.google.fonts/check/varfont/unsupported_axes](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont/unsupported_axes)
 <pre>--- Rationale ---
@@ -32585,6 +34064,21 @@ result in WARNs.
 </pre>
 
 * 💤 **SKIP** Sibling families were not detected.
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure indic fonts have the Indian Rupee Sign glyph. </summary>
+
+* [com.google.fonts/check/rupee](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/rupee)
+<pre>--- Rationale ---
+
+Per Bureau of Indian Standards every font supporting one of the official Indian
+languages needs to include Unicode Character “₹” (U+20B9) Indian Rupee Sign.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_indic_font
 
 </details>
 <details>
@@ -32822,10 +34316,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/Geologica-Regular.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 125.1kb |
-	| Hinted Size | 165.4kb |
-	| Increase | 40.3kb |
-	| Change   | 32.2 % |
+	| Dehinted Size | 125.4kb |
+	| Hinted Size | 166.0kb |
+	| Increase | 40.6kb |
+	| Change   | 32.4 % |
  [code: size-impact]
 
 </details>
@@ -32917,7 +34411,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [GPOS, gasp, cvt , loca, prep, GSUB, fpgm, DSIG]
+* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, GPOS, DSIG, gasp, prep, loca, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -33040,8 +34534,25 @@ set of characters defined in the `GF-latin-core` glyph-set.
 <summary>🍞 <b>PASS:</b> Checking OS/2 usWeightClass.</summary>
 
 * [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
+<pre>--- Rationale ---
 
-* 🍞 **PASS** OS/2 usWeightClass value looks good!
+Google Fonts expects variable fonts, static ttfs and static otfs to have
+differing OS/2 usWeightClass values.
+
+For Variable Fonts, Thin-Black must be 100-900
+For static ttfs, Thin-Black can be 100-900 or 250-900
+For static otfs, Thin-Black must be 250-900
+
+If static otfs are set lower than 250, text may appear blurry in legacy Windows
+applications.
+
+Glyphsapp users can change the usWeightClass value of an instance by adding a
+&#x27;weightClass&#x27; customParameter.
+
+
+</pre>
+
+* 🍞 **PASS** OS/2 usWeightClass is good
 
 </details>
 <details>
@@ -33227,20 +34738,12 @@ Even though the OpenType spec allows unitsPerEm to be any value between 16 and
 The spec suggests usage of powers of two in order to get some performance
 improvements on legacy renderers, so those values are acceptable.
 
-But value of 500 or 1000 are also acceptable, with the added benefit that it
+But values of 500 or 1000 are also acceptable, with the added benefit that it
 makes upm math easier for designers, while the performance hit of not using a
 power of two is most likely negligible nowadays.
 
-Another acceptable value is 2000. Since TT outlines are all integers (no
-floats), then instances in a VF suffer rounding compromises, and therefore a
-1000 UPM is too small because it forces too many such compromises.
-
-Therefore 2000 is a good &#x27;new VF standard&#x27;, because 2000 is a simple 2x
-conversion from existing fonts drawn on a 1000 UPM, and anyone who knows what
-10 units can do for 1000 UPM will know what 20 units does too.
-
-Additionally, values above 2048 would result in filesize increases with not
-much added benefit.
+Additionally, values above 2048 would likely result in unreasonable filesize
+increases.
 
 
 </pre>
@@ -33466,6 +34969,28 @@ release files, but Google Fonts should only have OpenType tables.
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+<pre>--- Rationale ---
+
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Combined length of family and style must not exceed 27 characters.</summary>
 
 * [com.google.fonts/check/name/family_and_style_max_length](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length)
@@ -33536,11 +35061,73 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> A font repository should not include fontbakery report files</summary>
+
+* [com.google.fonts/check/repo/fb_report](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/fb_report)
+<pre>--- Rationale ---
+
+A FontBakery report is ephemeral and so should be used for posting issues on a
+bug-tracker instead of being hosted in the font project repository.
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> A font repository should not include ZIP files</summary>
+
+* [com.google.fonts/check/repo/zip_files](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/zip_files)
+<pre>--- Rationale ---
+
+Sometimes people check in ZIPs into their font project repositories. While we
+accept the practice of checking in binaries, we believe that a ZIP is a step
+too far ;)
+
+Note: a source purist position is that only source files and build scripts
+should be checked in. 
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Name table records must not have trailing spaces.</summary>
 
 * [com.google.fonts/check/name/trailing_spaces](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/name/trailing_spaces)
 
 * 🍞 **PASS** No trailing spaces on name table entries.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+<pre>--- Rationale ---
+
+A font&#x27;s winAscent and winDescent values should be greater than the head
+table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
+can occur on Windows platforms
+(https://github.com/RedHatBrand/Overpass/issues/33).
+
+If the font includes tall/deep writing systems such as Arabic or Devanagari,
+the winAscent and winDescent can be greater than the yMax and abs(yMin) to
+accommodate vowel marks.
+
+When the win Metrics are significantly greater than the upm, the linespacing
+can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
+(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
+This means the font developer can control the linespacing with the typo values,
+whilst avoiding clipping by setting the win values to values greater than the
+yMax and abs(yMin).
+
+
+</pre>
+
+* 🍞 **PASS** OS/2 usWinAscent & usWinDescent values look good!
 
 </details>
 <details>
@@ -33609,8 +35196,15 @@ space glyph. This might have been relevant for applications on MacOS 9.
 <summary>🍞 <b>PASS:</b> Font has **proper** whitespace glyph names?</summary>
 
 * [com.google.fonts/check/whitespace_glyphnames](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/whitespace_glyphnames)
+<pre>--- Rationale ---
 
-* 🍞 **PASS** Font has **proper** whitespace glyph names.
+This check enforces adherence to recommended whitespace (codepoints 0020 and
+00A0) glyph names according to the Adobe Glyph List.
+
+
+</pre>
+
+* 🍞 **PASS** Font has **AGL recommended** names for whitespace glyphs.
 
 </details>
 <details>
@@ -33833,7 +35427,7 @@ apps.
 <pre>--- Rationale ---
 
 There are various metadata in the OpenType spec to specify if a font is
-monospaced or not. If the font is not trully monospaced, then no monospaced
+monospaced or not. If the font is not truly monospaced, then no monospaced
 metadata should be set (as sometimes they mistakenly are...)
 
 Requirements for monospace fonts:
@@ -33964,15 +35558,45 @@ Reference: https://github.com/googlefonts/fontbakery/issues/1845
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class)</summary>
+
+* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
+<pre>--- Rationale ---
+
+Glyphs in the GDEF mark glyph class should be non-spacing.
+Spacing glyphs in the GDEF mark glyph class may have incorrect anchor
+positioning that was only intended for building composite glyphs during design.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not has spacing glyphs in the GDEF mark glyph class.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class</summary>
+
+* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
+<pre>--- Rationale ---
+
+Mark characters should be in the GDEF mark glyph class.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not have mark characters not in the GDEF mark glyph class.
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Check GDEF mark glyph class doesn't have characters that are not marks)</summary>
 
 * [com.google.fonts/check/gdef_non_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars)
 <pre>--- Rationale ---
 
-Glyphs in the GDEF mark glyph class become non-spacing and may be
-repositioned if they have mark anchors. Only combining mark glyphs
-should be in that class. Any non-mark glyph must not be in that class,
-in particular spacing glyphs.
+Glyphs in the GDEF mark glyph class become non-spacing and may be repositioned
+if they have mark anchors.
+Only combining mark glyphs should be in that class. Any non-mark glyph must not
+be in that class, in particular spacing glyphs.
 
 
 </pre>
@@ -34056,63 +35680,7 @@ the same x,y coordinates.
 <br>
 </details>
 <details>
-<summary><b>[158] Geologica-SemiBold.ttf</b></summary>
-<details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
-
-This can be accomplished by using the 'gftools fix-hinting' command.
-
-# create virtualenvpython3 -m venv venv
-# activate virtualenvsource venv/bin/activate
-# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-
-A font&#x27;s winAscent and winDescent values should be greater than the head
-table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
-can occur on Windows platforms
-(https://github.com/RedHatBrand/Overpass/issues/33).
-
-If the font includes tall/deep writing systems such as Arabic or Devanagari,
-the winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-
-When the win Metrics are significantly greater than the upm, the linespacing
-can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
-This means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).
-
-
-</pre>
-
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 895, but got 746 instead [code: descent]
-
-</details>
+<summary><b>[163] Geologica-SemiBold.ttf</b></summary>
 <details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
@@ -34139,7 +35707,6 @@ optimized for the typical construction of glyphs in static fonts.
 
 The following glyphs do not have the recommended number of contours:
 
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
 Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
@@ -34167,65 +35734,31 @@ Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uhorn	Contours detected: 2	Expected: 1
 Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
 Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1 [code: contour-count]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class)</summary>
-
-* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
-<pre>--- Rationale ---
-
-Glyphs in the GDEF mark glyph class should be non-spacing.
-Spacing glyphs in the GDEF mark glyph class may have incorrect
-anchor positioning that was only intended for building composite glyphs
-during design.
-
-
-</pre>
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 acutecomb, acutecomb.case, acutecomb.narrow, brevecombcy, dotbelowcomb, gravecomb, gravecomb.case, gravecomb.narrow, hookabovecomb, hookabovecomb.case and 55 more. [code: spacing-mark-glyphs]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class</summary>
-
-* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
-<pre>--- Rationale ---
-
-Mark characters should be in the GDEF mark glyph class.
-
-
-</pre>
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 U+0300, U+0301, U+0302, U+0303, U+0304, U+0306, U+0307, U+0308, U+0309, U+030A, U+030B, U+030C, U+030F, U+0311, U+0312, U+031B, U+0323, U+0324, U+0326, U+0327, U+0328, U+032E, U+0331 and U+0335 [code: mark-chars]
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
 
 </details>
 <details>
@@ -34236,12 +35769,12 @@ Mark characters should be in the GDEF mark glyph class.
 
 The snippet of HTML in the DESCRIPTION.en_us.html file is added to the font
 family webpage on the Google Fonts website. For that reason, all hyperlinks in
-it must be properly working. 
+it must be properly working.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -34264,7 +35797,7 @@ any other git-based version control service.
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -34273,17 +35806,19 @@ any other git-based version control service.
 * [com.google.fonts/check/description/valid_html](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/valid_html)
 <pre>--- Rationale ---
 
-When packaging families for being pushed to the `google/fonts` git repo, if
-there is no DESCRIPTION.en_us.html file, some older versions of the
-`add_font.py` tool insert a dummy description file which contains invalid html.
+Sometimes people write malformed HTML markup. This check should ensure the file
+is good.
 
-This file needs to either be replaced with an existing description file or
-edited by hand.
+Additionally, when packaging families for being pushed to the `google/fonts`
+git repo, if there is no DESCRIPTION.en_us.html file, some older versions of
+the `add_font.py` tool insert a dummy description file which contains invalid
+html. This file needs to either be replaced with an existing description file
+or edited by hand.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: descfile
+* 💤 **SKIP** Unfulfilled Conditions: description
 
 </details>
 <details>
@@ -34334,7 +35869,7 @@ malformed.
 
 </pre>
 
-* 💤 **SKIP** Font family at '../fonts/static/ttfs' lacks a METADATA.pb file.
+* 💤 **SKIP** Font family at '../fonts/static/ttfs' lacks a METADATA.pb file. [code: file-not-found]
 
 </details>
 <details>
@@ -34403,6 +35938,28 @@ match exactly those declared on the METADATA.pb file.
 
 Also, to avoid confusion, we expect that font files (other than statics) are
 not placed on subdirectories.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: family_metadata
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure METADATA.pb category field is valid.</summary>
+
+* [com.google.fonts/check/metadata/category](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/category)
+<pre>--- Rationale ---
+
+There are only five acceptable values for the category field in a METADATA.pb
+file:
+- MONOSPACE
+- SANS_SERIF
+- SERIF
+- DISPLAY
+- HANDWRITING
+
+This check is meant to avoid typos in this field.
 
 
 </pre>
@@ -34697,15 +36254,28 @@ We may want to merge them all into a single check.
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Checking OS/2 usWeightClass matches weight specified at METADATA.pb.</summary>
+<summary>💤 <b>SKIP:</b> Check METADATA.pb font weights are correct.</summary>
 
 * [com.google.fonts/check/metadata/os2_weightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/os2_weightclass)
+<pre>--- Rationale ---
+
+Check METADATA.pb font weights are correct.
+
+For static fonts, the metadata weight should be the same
+as the static font&#x27;s OS/2 usWeightClass.
+
+For variable fonts, the weight value should be 400 if the
+font&#x27;s wght axis range includes 400, otherwise it should be the
+value closest to 400.
+
+
+</pre>
 
 * 💤 **SKIP** Unfulfilled Conditions: font_metadata
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName.</summary>
+<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName for static fonts.</summary>
 
 * [com.google.fonts/check/metadata/match_weight_postscript](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/match_weight_postscript)
 
@@ -34849,6 +36419,10 @@ All ligatures in a font must have corresponding caret (text cursor) positions
 defined in the GDEF table, otherwhise, users may experience issues with caret
 rendering.
 
+If using GlyphsApp, ligature carets can be set directly on canvas by accessing
+the `Glyph -&gt; Set Anchors` menu option or by pressing the `Cmd+U` keyboard
+shortcut.
+
 
 </pre>
 
@@ -34926,6 +36500,25 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Check font follows the Google Fonts CJK vertical metric schema</summary>
+
+* [com.google.fonts/check/cjk_vertical_metrics](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/cjk_vertical_metrics)
+<pre>--- Rationale ---
+
+CJK fonts have different vertical metrics when compared to Latin fonts. We
+follow the schema developed by dr Ken Lunde for Source Han Sans and the Noto
+CJK fonts.
+
+Our documentation includes further information:
+https://github.com/googlefonts/gf-docs/tree/master/Spec#cjk-vertical-metrics
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_cjk_font
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Check variable font instances have correct coordinate values</summary>
 
 * [com.google.fonts/check/varfont_instance_coordinates](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont_instance_coordinates)
@@ -34942,7 +36535,7 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Ensure VFs do not contain opsz or ital axes. </summary>
+<summary>💤 <b>SKIP:</b> Ensure VFs do not contain slnt or ital axes. </summary>
 
 * [com.google.fonts/check/varfont/unsupported_axes](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont/unsupported_axes)
 <pre>--- Rationale ---
@@ -35003,6 +36596,21 @@ result in WARNs.
 </pre>
 
 * 💤 **SKIP** Sibling families were not detected.
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure indic fonts have the Indian Rupee Sign glyph. </summary>
+
+* [com.google.fonts/check/rupee](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/rupee)
+<pre>--- Rationale ---
+
+Per Bureau of Indian Standards every font supporting one of the official Indian
+languages needs to include Unicode Character “₹” (U+20B9) Indian Rupee Sign.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_indic_font
 
 </details>
 <details>
@@ -35240,10 +36848,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/Geologica-SemiBold.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 125.3kb |
-	| Hinted Size | 155.2kb |
-	| Increase | 29.9kb |
-	| Change   | 23.9 % |
+	| Dehinted Size | 125.6kb |
+	| Hinted Size | 155.9kb |
+	| Increase | 30.3kb |
+	| Change   | 24.1 % |
  [code: size-impact]
 
 </details>
@@ -35335,7 +36943,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [GPOS, gasp, cvt , loca, prep, GSUB, fpgm, DSIG]
+* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, GPOS, DSIG, gasp, prep, loca, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -35458,8 +37066,25 @@ set of characters defined in the `GF-latin-core` glyph-set.
 <summary>🍞 <b>PASS:</b> Checking OS/2 usWeightClass.</summary>
 
 * [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
+<pre>--- Rationale ---
 
-* 🍞 **PASS** OS/2 usWeightClass value looks good!
+Google Fonts expects variable fonts, static ttfs and static otfs to have
+differing OS/2 usWeightClass values.
+
+For Variable Fonts, Thin-Black must be 100-900
+For static ttfs, Thin-Black can be 100-900 or 250-900
+For static otfs, Thin-Black must be 250-900
+
+If static otfs are set lower than 250, text may appear blurry in legacy Windows
+applications.
+
+Glyphsapp users can change the usWeightClass value of an instance by adding a
+&#x27;weightClass&#x27; customParameter.
+
+
+</pre>
+
+* 🍞 **PASS** OS/2 usWeightClass is good
 
 </details>
 <details>
@@ -35645,20 +37270,12 @@ Even though the OpenType spec allows unitsPerEm to be any value between 16 and
 The spec suggests usage of powers of two in order to get some performance
 improvements on legacy renderers, so those values are acceptable.
 
-But value of 500 or 1000 are also acceptable, with the added benefit that it
+But values of 500 or 1000 are also acceptable, with the added benefit that it
 makes upm math easier for designers, while the performance hit of not using a
 power of two is most likely negligible nowadays.
 
-Another acceptable value is 2000. Since TT outlines are all integers (no
-floats), then instances in a VF suffer rounding compromises, and therefore a
-1000 UPM is too small because it forces too many such compromises.
-
-Therefore 2000 is a good &#x27;new VF standard&#x27;, because 2000 is a simple 2x
-conversion from existing fonts drawn on a 1000 UPM, and anyone who knows what
-10 units can do for 1000 UPM will know what 20 units does too.
-
-Additionally, values above 2048 would result in filesize increases with not
-much added benefit.
+Additionally, values above 2048 would likely result in unreasonable filesize
+increases.
 
 
 </pre>
@@ -35884,6 +37501,28 @@ release files, but Google Fonts should only have OpenType tables.
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+<pre>--- Rationale ---
+
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Combined length of family and style must not exceed 27 characters.</summary>
 
 * [com.google.fonts/check/name/family_and_style_max_length](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length)
@@ -35954,11 +37593,73 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> A font repository should not include fontbakery report files</summary>
+
+* [com.google.fonts/check/repo/fb_report](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/fb_report)
+<pre>--- Rationale ---
+
+A FontBakery report is ephemeral and so should be used for posting issues on a
+bug-tracker instead of being hosted in the font project repository.
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> A font repository should not include ZIP files</summary>
+
+* [com.google.fonts/check/repo/zip_files](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/zip_files)
+<pre>--- Rationale ---
+
+Sometimes people check in ZIPs into their font project repositories. While we
+accept the practice of checking in binaries, we believe that a ZIP is a step
+too far ;)
+
+Note: a source purist position is that only source files and build scripts
+should be checked in. 
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Name table records must not have trailing spaces.</summary>
 
 * [com.google.fonts/check/name/trailing_spaces](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/name/trailing_spaces)
 
 * 🍞 **PASS** No trailing spaces on name table entries.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+<pre>--- Rationale ---
+
+A font&#x27;s winAscent and winDescent values should be greater than the head
+table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
+can occur on Windows platforms
+(https://github.com/RedHatBrand/Overpass/issues/33).
+
+If the font includes tall/deep writing systems such as Arabic or Devanagari,
+the winAscent and winDescent can be greater than the yMax and abs(yMin) to
+accommodate vowel marks.
+
+When the win Metrics are significantly greater than the upm, the linespacing
+can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
+(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
+This means the font developer can control the linespacing with the typo values,
+whilst avoiding clipping by setting the win values to values greater than the
+yMax and abs(yMin).
+
+
+</pre>
+
+* 🍞 **PASS** OS/2 usWinAscent & usWinDescent values look good!
 
 </details>
 <details>
@@ -36027,8 +37728,15 @@ space glyph. This might have been relevant for applications on MacOS 9.
 <summary>🍞 <b>PASS:</b> Font has **proper** whitespace glyph names?</summary>
 
 * [com.google.fonts/check/whitespace_glyphnames](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/whitespace_glyphnames)
+<pre>--- Rationale ---
 
-* 🍞 **PASS** Font has **proper** whitespace glyph names.
+This check enforces adherence to recommended whitespace (codepoints 0020 and
+00A0) glyph names according to the Adobe Glyph List.
+
+
+</pre>
+
+* 🍞 **PASS** Font has **AGL recommended** names for whitespace glyphs.
 
 </details>
 <details>
@@ -36251,7 +37959,7 @@ apps.
 <pre>--- Rationale ---
 
 There are various metadata in the OpenType spec to specify if a font is
-monospaced or not. If the font is not trully monospaced, then no monospaced
+monospaced or not. If the font is not truly monospaced, then no monospaced
 metadata should be set (as sometimes they mistakenly are...)
 
 Requirements for monospace fonts:
@@ -36382,15 +38090,45 @@ Reference: https://github.com/googlefonts/fontbakery/issues/1845
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class)</summary>
+
+* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
+<pre>--- Rationale ---
+
+Glyphs in the GDEF mark glyph class should be non-spacing.
+Spacing glyphs in the GDEF mark glyph class may have incorrect anchor
+positioning that was only intended for building composite glyphs during design.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not has spacing glyphs in the GDEF mark glyph class.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class</summary>
+
+* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
+<pre>--- Rationale ---
+
+Mark characters should be in the GDEF mark glyph class.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not have mark characters not in the GDEF mark glyph class.
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Check GDEF mark glyph class doesn't have characters that are not marks)</summary>
 
 * [com.google.fonts/check/gdef_non_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars)
 <pre>--- Rationale ---
 
-Glyphs in the GDEF mark glyph class become non-spacing and may be
-repositioned if they have mark anchors. Only combining mark glyphs
-should be in that class. Any non-mark glyph must not be in that class,
-in particular spacing glyphs.
+Glyphs in the GDEF mark glyph class become non-spacing and may be repositioned
+if they have mark anchors.
+Only combining mark glyphs should be in that class. Any non-mark glyph must not
+be in that class, in particular spacing glyphs.
 
 
 </pre>
@@ -36474,63 +38212,7 @@ the same x,y coordinates.
 <br>
 </details>
 <details>
-<summary><b>[158] Geologica-SemiBoldItalic.ttf</b></summary>
-<details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
-
-This can be accomplished by using the 'gftools fix-hinting' command.
-
-# create virtualenvpython3 -m venv venv
-# activate virtualenvsource venv/bin/activate
-# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-
-A font&#x27;s winAscent and winDescent values should be greater than the head
-table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
-can occur on Windows platforms
-(https://github.com/RedHatBrand/Overpass/issues/33).
-
-If the font includes tall/deep writing systems such as Arabic or Devanagari,
-the winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-
-When the win Metrics are significantly greater than the upm, the linespacing
-can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
-This means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).
-
-
-</pre>
-
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 895, but got 746 instead [code: descent]
-
-</details>
+<summary><b>[163] Geologica-SemiBoldItalic.ttf</b></summary>
 <details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
@@ -36557,7 +38239,6 @@ optimized for the typical construction of glyphs in static fonts.
 
 The following glyphs do not have the recommended number of contours:
 
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
 Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
@@ -36585,65 +38266,31 @@ Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uhorn	Contours detected: 2	Expected: 1
 Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
 Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1 [code: contour-count]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class)</summary>
-
-* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
-<pre>--- Rationale ---
-
-Glyphs in the GDEF mark glyph class should be non-spacing.
-Spacing glyphs in the GDEF mark glyph class may have incorrect
-anchor positioning that was only intended for building composite glyphs
-during design.
-
-
-</pre>
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 acutecomb, acutecomb.case, acutecomb.narrow, brevecombcy, dotbelowcomb, gravecomb, gravecomb.case, gravecomb.narrow, hookabovecomb, hookabovecomb.case and 55 more. [code: spacing-mark-glyphs]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class</summary>
-
-* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
-<pre>--- Rationale ---
-
-Mark characters should be in the GDEF mark glyph class.
-
-
-</pre>
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 U+0300, U+0301, U+0302, U+0303, U+0304, U+0306, U+0307, U+0308, U+0309, U+030A, U+030B, U+030C, U+030F, U+0311, U+0312, U+031B, U+0323, U+0324, U+0326, U+0327, U+0328, U+032E, U+0331 and U+0335 [code: mark-chars]
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
 
 </details>
 <details>
@@ -36654,12 +38301,12 @@ Mark characters should be in the GDEF mark glyph class.
 
 The snippet of HTML in the DESCRIPTION.en_us.html file is added to the font
 family webpage on the Google Fonts website. For that reason, all hyperlinks in
-it must be properly working. 
+it must be properly working.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -36682,7 +38329,7 @@ any other git-based version control service.
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -36691,17 +38338,19 @@ any other git-based version control service.
 * [com.google.fonts/check/description/valid_html](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/valid_html)
 <pre>--- Rationale ---
 
-When packaging families for being pushed to the `google/fonts` git repo, if
-there is no DESCRIPTION.en_us.html file, some older versions of the
-`add_font.py` tool insert a dummy description file which contains invalid html.
+Sometimes people write malformed HTML markup. This check should ensure the file
+is good.
 
-This file needs to either be replaced with an existing description file or
-edited by hand.
+Additionally, when packaging families for being pushed to the `google/fonts`
+git repo, if there is no DESCRIPTION.en_us.html file, some older versions of
+the `add_font.py` tool insert a dummy description file which contains invalid
+html. This file needs to either be replaced with an existing description file
+or edited by hand.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: descfile
+* 💤 **SKIP** Unfulfilled Conditions: description
 
 </details>
 <details>
@@ -36752,7 +38401,7 @@ malformed.
 
 </pre>
 
-* 💤 **SKIP** Font family at '../fonts/static/ttfs' lacks a METADATA.pb file.
+* 💤 **SKIP** Font family at '../fonts/static/ttfs' lacks a METADATA.pb file. [code: file-not-found]
 
 </details>
 <details>
@@ -36821,6 +38470,28 @@ match exactly those declared on the METADATA.pb file.
 
 Also, to avoid confusion, we expect that font files (other than statics) are
 not placed on subdirectories.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: family_metadata
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure METADATA.pb category field is valid.</summary>
+
+* [com.google.fonts/check/metadata/category](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/category)
+<pre>--- Rationale ---
+
+There are only five acceptable values for the category field in a METADATA.pb
+file:
+- MONOSPACE
+- SANS_SERIF
+- SERIF
+- DISPLAY
+- HANDWRITING
+
+This check is meant to avoid typos in this field.
 
 
 </pre>
@@ -37115,15 +38786,28 @@ We may want to merge them all into a single check.
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Checking OS/2 usWeightClass matches weight specified at METADATA.pb.</summary>
+<summary>💤 <b>SKIP:</b> Check METADATA.pb font weights are correct.</summary>
 
 * [com.google.fonts/check/metadata/os2_weightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/os2_weightclass)
+<pre>--- Rationale ---
+
+Check METADATA.pb font weights are correct.
+
+For static fonts, the metadata weight should be the same
+as the static font&#x27;s OS/2 usWeightClass.
+
+For variable fonts, the weight value should be 400 if the
+font&#x27;s wght axis range includes 400, otherwise it should be the
+value closest to 400.
+
+
+</pre>
 
 * 💤 **SKIP** Unfulfilled Conditions: font_metadata
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName.</summary>
+<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName for static fonts.</summary>
 
 * [com.google.fonts/check/metadata/match_weight_postscript](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/match_weight_postscript)
 
@@ -37267,6 +38951,10 @@ All ligatures in a font must have corresponding caret (text cursor) positions
 defined in the GDEF table, otherwhise, users may experience issues with caret
 rendering.
 
+If using GlyphsApp, ligature carets can be set directly on canvas by accessing
+the `Glyph -&gt; Set Anchors` menu option or by pressing the `Cmd+U` keyboard
+shortcut.
+
 
 </pre>
 
@@ -37344,6 +39032,25 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Check font follows the Google Fonts CJK vertical metric schema</summary>
+
+* [com.google.fonts/check/cjk_vertical_metrics](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/cjk_vertical_metrics)
+<pre>--- Rationale ---
+
+CJK fonts have different vertical metrics when compared to Latin fonts. We
+follow the schema developed by dr Ken Lunde for Source Han Sans and the Noto
+CJK fonts.
+
+Our documentation includes further information:
+https://github.com/googlefonts/gf-docs/tree/master/Spec#cjk-vertical-metrics
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_cjk_font
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Check variable font instances have correct coordinate values</summary>
 
 * [com.google.fonts/check/varfont_instance_coordinates](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont_instance_coordinates)
@@ -37360,7 +39067,7 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Ensure VFs do not contain opsz or ital axes. </summary>
+<summary>💤 <b>SKIP:</b> Ensure VFs do not contain slnt or ital axes. </summary>
 
 * [com.google.fonts/check/varfont/unsupported_axes](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont/unsupported_axes)
 <pre>--- Rationale ---
@@ -37421,6 +39128,21 @@ result in WARNs.
 </pre>
 
 * 💤 **SKIP** Sibling families were not detected.
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure indic fonts have the Indian Rupee Sign glyph. </summary>
+
+* [com.google.fonts/check/rupee](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/rupee)
+<pre>--- Rationale ---
+
+Per Bureau of Indian Standards every font supporting one of the official Indian
+languages needs to include Unicode Character “₹” (U+20B9) Indian Rupee Sign.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_indic_font
 
 </details>
 <details>
@@ -37658,10 +39380,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/Geologica-SemiBoldItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 127.1kb |
-	| Hinted Size | 157.4kb |
-	| Increase | 30.3kb |
-	| Change   | 23.8 % |
+	| Dehinted Size | 127.4kb |
+	| Hinted Size | 158.0kb |
+	| Increase | 30.6kb |
+	| Change   | 24.1 % |
  [code: size-impact]
 
 </details>
@@ -37753,7 +39475,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [GPOS, gasp, cvt , loca, prep, GSUB, fpgm, DSIG]
+* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, GPOS, DSIG, gasp, prep, loca, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -37876,8 +39598,25 @@ set of characters defined in the `GF-latin-core` glyph-set.
 <summary>🍞 <b>PASS:</b> Checking OS/2 usWeightClass.</summary>
 
 * [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
+<pre>--- Rationale ---
 
-* 🍞 **PASS** OS/2 usWeightClass value looks good!
+Google Fonts expects variable fonts, static ttfs and static otfs to have
+differing OS/2 usWeightClass values.
+
+For Variable Fonts, Thin-Black must be 100-900
+For static ttfs, Thin-Black can be 100-900 or 250-900
+For static otfs, Thin-Black must be 250-900
+
+If static otfs are set lower than 250, text may appear blurry in legacy Windows
+applications.
+
+Glyphsapp users can change the usWeightClass value of an instance by adding a
+&#x27;weightClass&#x27; customParameter.
+
+
+</pre>
+
+* 🍞 **PASS** OS/2 usWeightClass is good
 
 </details>
 <details>
@@ -38063,20 +39802,12 @@ Even though the OpenType spec allows unitsPerEm to be any value between 16 and
 The spec suggests usage of powers of two in order to get some performance
 improvements on legacy renderers, so those values are acceptable.
 
-But value of 500 or 1000 are also acceptable, with the added benefit that it
+But values of 500 or 1000 are also acceptable, with the added benefit that it
 makes upm math easier for designers, while the performance hit of not using a
 power of two is most likely negligible nowadays.
 
-Another acceptable value is 2000. Since TT outlines are all integers (no
-floats), then instances in a VF suffer rounding compromises, and therefore a
-1000 UPM is too small because it forces too many such compromises.
-
-Therefore 2000 is a good &#x27;new VF standard&#x27;, because 2000 is a simple 2x
-conversion from existing fonts drawn on a 1000 UPM, and anyone who knows what
-10 units can do for 1000 UPM will know what 20 units does too.
-
-Additionally, values above 2048 would result in filesize increases with not
-much added benefit.
+Additionally, values above 2048 would likely result in unreasonable filesize
+increases.
 
 
 </pre>
@@ -38302,6 +40033,28 @@ release files, but Google Fonts should only have OpenType tables.
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+<pre>--- Rationale ---
+
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Combined length of family and style must not exceed 27 characters.</summary>
 
 * [com.google.fonts/check/name/family_and_style_max_length](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length)
@@ -38372,11 +40125,73 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> A font repository should not include fontbakery report files</summary>
+
+* [com.google.fonts/check/repo/fb_report](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/fb_report)
+<pre>--- Rationale ---
+
+A FontBakery report is ephemeral and so should be used for posting issues on a
+bug-tracker instead of being hosted in the font project repository.
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> A font repository should not include ZIP files</summary>
+
+* [com.google.fonts/check/repo/zip_files](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/zip_files)
+<pre>--- Rationale ---
+
+Sometimes people check in ZIPs into their font project repositories. While we
+accept the practice of checking in binaries, we believe that a ZIP is a step
+too far ;)
+
+Note: a source purist position is that only source files and build scripts
+should be checked in. 
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Name table records must not have trailing spaces.</summary>
 
 * [com.google.fonts/check/name/trailing_spaces](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/name/trailing_spaces)
 
 * 🍞 **PASS** No trailing spaces on name table entries.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+<pre>--- Rationale ---
+
+A font&#x27;s winAscent and winDescent values should be greater than the head
+table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
+can occur on Windows platforms
+(https://github.com/RedHatBrand/Overpass/issues/33).
+
+If the font includes tall/deep writing systems such as Arabic or Devanagari,
+the winAscent and winDescent can be greater than the yMax and abs(yMin) to
+accommodate vowel marks.
+
+When the win Metrics are significantly greater than the upm, the linespacing
+can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
+(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
+This means the font developer can control the linespacing with the typo values,
+whilst avoiding clipping by setting the win values to values greater than the
+yMax and abs(yMin).
+
+
+</pre>
+
+* 🍞 **PASS** OS/2 usWinAscent & usWinDescent values look good!
 
 </details>
 <details>
@@ -38445,8 +40260,15 @@ space glyph. This might have been relevant for applications on MacOS 9.
 <summary>🍞 <b>PASS:</b> Font has **proper** whitespace glyph names?</summary>
 
 * [com.google.fonts/check/whitespace_glyphnames](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/whitespace_glyphnames)
+<pre>--- Rationale ---
 
-* 🍞 **PASS** Font has **proper** whitespace glyph names.
+This check enforces adherence to recommended whitespace (codepoints 0020 and
+00A0) glyph names according to the Adobe Glyph List.
+
+
+</pre>
+
+* 🍞 **PASS** Font has **AGL recommended** names for whitespace glyphs.
 
 </details>
 <details>
@@ -38669,7 +40491,7 @@ apps.
 <pre>--- Rationale ---
 
 There are various metadata in the OpenType spec to specify if a font is
-monospaced or not. If the font is not trully monospaced, then no monospaced
+monospaced or not. If the font is not truly monospaced, then no monospaced
 metadata should be set (as sometimes they mistakenly are...)
 
 Requirements for monospace fonts:
@@ -38800,15 +40622,45 @@ Reference: https://github.com/googlefonts/fontbakery/issues/1845
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class)</summary>
+
+* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
+<pre>--- Rationale ---
+
+Glyphs in the GDEF mark glyph class should be non-spacing.
+Spacing glyphs in the GDEF mark glyph class may have incorrect anchor
+positioning that was only intended for building composite glyphs during design.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not has spacing glyphs in the GDEF mark glyph class.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class</summary>
+
+* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
+<pre>--- Rationale ---
+
+Mark characters should be in the GDEF mark glyph class.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not have mark characters not in the GDEF mark glyph class.
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Check GDEF mark glyph class doesn't have characters that are not marks)</summary>
 
 * [com.google.fonts/check/gdef_non_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars)
 <pre>--- Rationale ---
 
-Glyphs in the GDEF mark glyph class become non-spacing and may be
-repositioned if they have mark anchors. Only combining mark glyphs
-should be in that class. Any non-mark glyph must not be in that class,
-in particular spacing glyphs.
+Glyphs in the GDEF mark glyph class become non-spacing and may be repositioned
+if they have mark anchors.
+Only combining mark glyphs should be in that class. Any non-mark glyph must not
+be in that class, in particular spacing glyphs.
 
 
 </pre>
@@ -38892,71 +40744,7 @@ the same x,y coordinates.
 <br>
 </details>
 <details>
-<summary><b>[158] Geologica-Thin.ttf</b></summary>
-<details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
-
-This can be accomplished by using the 'gftools fix-hinting' command.
-
-# create virtualenvpython3 -m venv venv
-# activate virtualenvsource venv/bin/activate
-# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-
-A font&#x27;s winAscent and winDescent values should be greater than the head
-table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
-can occur on Windows platforms
-(https://github.com/RedHatBrand/Overpass/issues/33).
-
-If the font includes tall/deep writing systems such as Arabic or Devanagari,
-the winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-
-When the win Metrics are significantly greater than the upm, the linespacing
-can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
-This means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).
-
-
-</pre>
-
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 895, but got 746 instead [code: descent]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Checking OS/2 usWeightClass.</summary>
-
-* [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
-
-* ⚠ **WARN** Thin:100 is OK on TTFs, but OTF files with those values will cause bluring on Windows. GlyphsApp users must set an Instance Custom Parameter for the Thin and ExtraLight styles to 250 and 275, so that if OTFs are exported then it will not blur on Windows. [code: blur-on-windows]
-
-</details>
+<summary><b>[163] Geologica-Thin.ttf</b></summary>
 <details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
@@ -39010,64 +40798,31 @@ Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uhorn	Contours detected: 2	Expected: 1
 Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
 Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1 [code: contour-count]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class)</summary>
-
-* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
-<pre>--- Rationale ---
-
-Glyphs in the GDEF mark glyph class should be non-spacing.
-Spacing glyphs in the GDEF mark glyph class may have incorrect
-anchor positioning that was only intended for building composite glyphs
-during design.
-
-
-</pre>
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 acutecomb, acutecomb.case, acutecomb.narrow, brevecombcy, dotbelowcomb, gravecomb, gravecomb.case, gravecomb.narrow, hookabovecomb, hookabovecomb.case and 55 more. [code: spacing-mark-glyphs]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class</summary>
-
-* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
-<pre>--- Rationale ---
-
-Mark characters should be in the GDEF mark glyph class.
-
-
-</pre>
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 U+0300, U+0301, U+0302, U+0303, U+0304, U+0306, U+0307, U+0308, U+0309, U+030A, U+030B, U+030C, U+030F, U+0311, U+0312, U+031B, U+0323, U+0324, U+0326, U+0327, U+0328, U+032E, U+0331 and U+0335 [code: mark-chars]
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
 
 </details>
 <details>
@@ -39078,12 +40833,12 @@ Mark characters should be in the GDEF mark glyph class.
 
 The snippet of HTML in the DESCRIPTION.en_us.html file is added to the font
 family webpage on the Google Fonts website. For that reason, all hyperlinks in
-it must be properly working. 
+it must be properly working.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -39106,7 +40861,7 @@ any other git-based version control service.
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -39115,17 +40870,19 @@ any other git-based version control service.
 * [com.google.fonts/check/description/valid_html](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/valid_html)
 <pre>--- Rationale ---
 
-When packaging families for being pushed to the `google/fonts` git repo, if
-there is no DESCRIPTION.en_us.html file, some older versions of the
-`add_font.py` tool insert a dummy description file which contains invalid html.
+Sometimes people write malformed HTML markup. This check should ensure the file
+is good.
 
-This file needs to either be replaced with an existing description file or
-edited by hand.
+Additionally, when packaging families for being pushed to the `google/fonts`
+git repo, if there is no DESCRIPTION.en_us.html file, some older versions of
+the `add_font.py` tool insert a dummy description file which contains invalid
+html. This file needs to either be replaced with an existing description file
+or edited by hand.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: descfile
+* 💤 **SKIP** Unfulfilled Conditions: description
 
 </details>
 <details>
@@ -39176,7 +40933,7 @@ malformed.
 
 </pre>
 
-* 💤 **SKIP** Font family at '../fonts/static/ttfs' lacks a METADATA.pb file.
+* 💤 **SKIP** Font family at '../fonts/static/ttfs' lacks a METADATA.pb file. [code: file-not-found]
 
 </details>
 <details>
@@ -39245,6 +41002,28 @@ match exactly those declared on the METADATA.pb file.
 
 Also, to avoid confusion, we expect that font files (other than statics) are
 not placed on subdirectories.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: family_metadata
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure METADATA.pb category field is valid.</summary>
+
+* [com.google.fonts/check/metadata/category](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/category)
+<pre>--- Rationale ---
+
+There are only five acceptable values for the category field in a METADATA.pb
+file:
+- MONOSPACE
+- SANS_SERIF
+- SERIF
+- DISPLAY
+- HANDWRITING
+
+This check is meant to avoid typos in this field.
 
 
 </pre>
@@ -39539,15 +41318,28 @@ We may want to merge them all into a single check.
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Checking OS/2 usWeightClass matches weight specified at METADATA.pb.</summary>
+<summary>💤 <b>SKIP:</b> Check METADATA.pb font weights are correct.</summary>
 
 * [com.google.fonts/check/metadata/os2_weightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/os2_weightclass)
+<pre>--- Rationale ---
+
+Check METADATA.pb font weights are correct.
+
+For static fonts, the metadata weight should be the same
+as the static font&#x27;s OS/2 usWeightClass.
+
+For variable fonts, the weight value should be 400 if the
+font&#x27;s wght axis range includes 400, otherwise it should be the
+value closest to 400.
+
+
+</pre>
 
 * 💤 **SKIP** Unfulfilled Conditions: font_metadata
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName.</summary>
+<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName for static fonts.</summary>
 
 * [com.google.fonts/check/metadata/match_weight_postscript](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/match_weight_postscript)
 
@@ -39691,6 +41483,10 @@ All ligatures in a font must have corresponding caret (text cursor) positions
 defined in the GDEF table, otherwhise, users may experience issues with caret
 rendering.
 
+If using GlyphsApp, ligature carets can be set directly on canvas by accessing
+the `Glyph -&gt; Set Anchors` menu option or by pressing the `Cmd+U` keyboard
+shortcut.
+
 
 </pre>
 
@@ -39768,6 +41564,25 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Check font follows the Google Fonts CJK vertical metric schema</summary>
+
+* [com.google.fonts/check/cjk_vertical_metrics](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/cjk_vertical_metrics)
+<pre>--- Rationale ---
+
+CJK fonts have different vertical metrics when compared to Latin fonts. We
+follow the schema developed by dr Ken Lunde for Source Han Sans and the Noto
+CJK fonts.
+
+Our documentation includes further information:
+https://github.com/googlefonts/gf-docs/tree/master/Spec#cjk-vertical-metrics
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_cjk_font
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Check variable font instances have correct coordinate values</summary>
 
 * [com.google.fonts/check/varfont_instance_coordinates](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont_instance_coordinates)
@@ -39784,7 +41599,7 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Ensure VFs do not contain opsz or ital axes. </summary>
+<summary>💤 <b>SKIP:</b> Ensure VFs do not contain slnt or ital axes. </summary>
 
 * [com.google.fonts/check/varfont/unsupported_axes](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont/unsupported_axes)
 <pre>--- Rationale ---
@@ -39845,6 +41660,21 @@ result in WARNs.
 </pre>
 
 * 💤 **SKIP** Sibling families were not detected.
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure indic fonts have the Indian Rupee Sign glyph. </summary>
+
+* [com.google.fonts/check/rupee](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/rupee)
+<pre>--- Rationale ---
+
+Per Bureau of Indian Standards every font supporting one of the official Indian
+languages needs to include Unicode Character “₹” (U+20B9) Indian Rupee Sign.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_indic_font
 
 </details>
 <details>
@@ -40082,10 +41912,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/Geologica-Thin.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 119.8kb |
-	| Hinted Size | 147.3kb |
-	| Increase | 27.4kb |
-	| Change   | 22.9 % |
+	| Dehinted Size | 120.1kb |
+	| Hinted Size | 147.9kb |
+	| Increase | 27.8kb |
+	| Change   | 23.1 % |
  [code: size-impact]
 
 </details>
@@ -40177,7 +42007,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [GPOS, gasp, cvt , loca, prep, GSUB, fpgm, DSIG]
+* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, GPOS, DSIG, gasp, prep, loca, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -40294,6 +42124,31 @@ set of characters defined in the `GF-latin-core` glyph-set.
 * [com.google.fonts/check/name/unwanted_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars)
 
 * 🍞 **PASS** No need to substitute copyright, registered and trademark symbols in name table entries of this font.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Checking OS/2 usWeightClass.</summary>
+
+* [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
+<pre>--- Rationale ---
+
+Google Fonts expects variable fonts, static ttfs and static otfs to have
+differing OS/2 usWeightClass values.
+
+For Variable Fonts, Thin-Black must be 100-900
+For static ttfs, Thin-Black can be 100-900 or 250-900
+For static otfs, Thin-Black must be 250-900
+
+If static otfs are set lower than 250, text may appear blurry in legacy Windows
+applications.
+
+Glyphsapp users can change the usWeightClass value of an instance by adding a
+&#x27;weightClass&#x27; customParameter.
+
+
+</pre>
+
+* 🍞 **PASS** OS/2 usWeightClass is good
 
 </details>
 <details>
@@ -40479,20 +42334,12 @@ Even though the OpenType spec allows unitsPerEm to be any value between 16 and
 The spec suggests usage of powers of two in order to get some performance
 improvements on legacy renderers, so those values are acceptable.
 
-But value of 500 or 1000 are also acceptable, with the added benefit that it
+But values of 500 or 1000 are also acceptable, with the added benefit that it
 makes upm math easier for designers, while the performance hit of not using a
 power of two is most likely negligible nowadays.
 
-Another acceptable value is 2000. Since TT outlines are all integers (no
-floats), then instances in a VF suffer rounding compromises, and therefore a
-1000 UPM is too small because it forces too many such compromises.
-
-Therefore 2000 is a good &#x27;new VF standard&#x27;, because 2000 is a simple 2x
-conversion from existing fonts drawn on a 1000 UPM, and anyone who knows what
-10 units can do for 1000 UPM will know what 20 units does too.
-
-Additionally, values above 2048 would result in filesize increases with not
-much added benefit.
+Additionally, values above 2048 would likely result in unreasonable filesize
+increases.
 
 
 </pre>
@@ -40718,6 +42565,28 @@ release files, but Google Fonts should only have OpenType tables.
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+<pre>--- Rationale ---
+
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Combined length of family and style must not exceed 27 characters.</summary>
 
 * [com.google.fonts/check/name/family_and_style_max_length](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length)
@@ -40788,11 +42657,73 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> A font repository should not include fontbakery report files</summary>
+
+* [com.google.fonts/check/repo/fb_report](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/fb_report)
+<pre>--- Rationale ---
+
+A FontBakery report is ephemeral and so should be used for posting issues on a
+bug-tracker instead of being hosted in the font project repository.
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> A font repository should not include ZIP files</summary>
+
+* [com.google.fonts/check/repo/zip_files](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/zip_files)
+<pre>--- Rationale ---
+
+Sometimes people check in ZIPs into their font project repositories. While we
+accept the practice of checking in binaries, we believe that a ZIP is a step
+too far ;)
+
+Note: a source purist position is that only source files and build scripts
+should be checked in. 
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Name table records must not have trailing spaces.</summary>
 
 * [com.google.fonts/check/name/trailing_spaces](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/name/trailing_spaces)
 
 * 🍞 **PASS** No trailing spaces on name table entries.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+<pre>--- Rationale ---
+
+A font&#x27;s winAscent and winDescent values should be greater than the head
+table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
+can occur on Windows platforms
+(https://github.com/RedHatBrand/Overpass/issues/33).
+
+If the font includes tall/deep writing systems such as Arabic or Devanagari,
+the winAscent and winDescent can be greater than the yMax and abs(yMin) to
+accommodate vowel marks.
+
+When the win Metrics are significantly greater than the upm, the linespacing
+can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
+(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
+This means the font developer can control the linespacing with the typo values,
+whilst avoiding clipping by setting the win values to values greater than the
+yMax and abs(yMin).
+
+
+</pre>
+
+* 🍞 **PASS** OS/2 usWinAscent & usWinDescent values look good!
 
 </details>
 <details>
@@ -40861,8 +42792,15 @@ space glyph. This might have been relevant for applications on MacOS 9.
 <summary>🍞 <b>PASS:</b> Font has **proper** whitespace glyph names?</summary>
 
 * [com.google.fonts/check/whitespace_glyphnames](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/whitespace_glyphnames)
+<pre>--- Rationale ---
 
-* 🍞 **PASS** Font has **proper** whitespace glyph names.
+This check enforces adherence to recommended whitespace (codepoints 0020 and
+00A0) glyph names according to the Adobe Glyph List.
+
+
+</pre>
+
+* 🍞 **PASS** Font has **AGL recommended** names for whitespace glyphs.
 
 </details>
 <details>
@@ -41085,7 +43023,7 @@ apps.
 <pre>--- Rationale ---
 
 There are various metadata in the OpenType spec to specify if a font is
-monospaced or not. If the font is not trully monospaced, then no monospaced
+monospaced or not. If the font is not truly monospaced, then no monospaced
 metadata should be set (as sometimes they mistakenly are...)
 
 Requirements for monospace fonts:
@@ -41216,15 +43154,45 @@ Reference: https://github.com/googlefonts/fontbakery/issues/1845
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class)</summary>
+
+* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
+<pre>--- Rationale ---
+
+Glyphs in the GDEF mark glyph class should be non-spacing.
+Spacing glyphs in the GDEF mark glyph class may have incorrect anchor
+positioning that was only intended for building composite glyphs during design.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not has spacing glyphs in the GDEF mark glyph class.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class</summary>
+
+* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
+<pre>--- Rationale ---
+
+Mark characters should be in the GDEF mark glyph class.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not have mark characters not in the GDEF mark glyph class.
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Check GDEF mark glyph class doesn't have characters that are not marks)</summary>
 
 * [com.google.fonts/check/gdef_non_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars)
 <pre>--- Rationale ---
 
-Glyphs in the GDEF mark glyph class become non-spacing and may be
-repositioned if they have mark anchors. Only combining mark glyphs
-should be in that class. Any non-mark glyph must not be in that class,
-in particular spacing glyphs.
+Glyphs in the GDEF mark glyph class become non-spacing and may be repositioned
+if they have mark anchors.
+Only combining mark glyphs should be in that class. Any non-mark glyph must not
+be in that class, in particular spacing glyphs.
 
 
 </pre>
@@ -41308,71 +43276,7 @@ the same x,y coordinates.
 <br>
 </details>
 <details>
-<summary><b>[158] Geologica-ThinItalic.ttf</b></summary>
-<details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
-
-This can be accomplished by using the 'gftools fix-hinting' command.
-
-# create virtualenvpython3 -m venv venv
-# activate virtualenvsource venv/bin/activate
-# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-
-A font&#x27;s winAscent and winDescent values should be greater than the head
-table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
-can occur on Windows platforms
-(https://github.com/RedHatBrand/Overpass/issues/33).
-
-If the font includes tall/deep writing systems such as Arabic or Devanagari,
-the winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-
-When the win Metrics are significantly greater than the upm, the linespacing
-can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
-This means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).
-
-
-</pre>
-
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 895, but got 746 instead [code: descent]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Checking OS/2 usWeightClass.</summary>
-
-* [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
-
-* ⚠ **WARN** Thin Italic:100 is OK on TTFs, but OTF files with those values will cause bluring on Windows. GlyphsApp users must set an Instance Custom Parameter for the Thin and ExtraLight styles to 250 and 275, so that if OTFs are exported then it will not blur on Windows. [code: blur-on-windows]
-
-</details>
+<summary><b>[163] Geologica-ThinItalic.ttf</b></summary>
 <details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
@@ -41426,64 +43330,31 @@ Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uhorn	Contours detected: 2	Expected: 1
 Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
 Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1 [code: contour-count]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class)</summary>
-
-* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
-<pre>--- Rationale ---
-
-Glyphs in the GDEF mark glyph class should be non-spacing.
-Spacing glyphs in the GDEF mark glyph class may have incorrect
-anchor positioning that was only intended for building composite glyphs
-during design.
-
-
-</pre>
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 acutecomb, acutecomb.case, acutecomb.narrow, brevecombcy, dotbelowcomb, gravecomb, gravecomb.case, gravecomb.narrow, hookabovecomb, hookabovecomb.case and 55 more. [code: spacing-mark-glyphs]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class</summary>
-
-* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
-<pre>--- Rationale ---
-
-Mark characters should be in the GDEF mark glyph class.
-
-
-</pre>
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 U+0300, U+0301, U+0302, U+0303, U+0304, U+0306, U+0307, U+0308, U+0309, U+030A, U+030B, U+030C, U+030F, U+0311, U+0312, U+031B, U+0323, U+0324, U+0326, U+0327, U+0328, U+032E, U+0331 and U+0335 [code: mark-chars]
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
 
 </details>
 <details>
@@ -41494,12 +43365,12 @@ Mark characters should be in the GDEF mark glyph class.
 
 The snippet of HTML in the DESCRIPTION.en_us.html file is added to the font
 family webpage on the Google Fonts website. For that reason, all hyperlinks in
-it must be properly working. 
+it must be properly working.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -41522,7 +43393,7 @@ any other git-based version control service.
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -41531,17 +43402,19 @@ any other git-based version control service.
 * [com.google.fonts/check/description/valid_html](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/valid_html)
 <pre>--- Rationale ---
 
-When packaging families for being pushed to the `google/fonts` git repo, if
-there is no DESCRIPTION.en_us.html file, some older versions of the
-`add_font.py` tool insert a dummy description file which contains invalid html.
+Sometimes people write malformed HTML markup. This check should ensure the file
+is good.
 
-This file needs to either be replaced with an existing description file or
-edited by hand.
+Additionally, when packaging families for being pushed to the `google/fonts`
+git repo, if there is no DESCRIPTION.en_us.html file, some older versions of
+the `add_font.py` tool insert a dummy description file which contains invalid
+html. This file needs to either be replaced with an existing description file
+or edited by hand.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: descfile
+* 💤 **SKIP** Unfulfilled Conditions: description
 
 </details>
 <details>
@@ -41592,7 +43465,7 @@ malformed.
 
 </pre>
 
-* 💤 **SKIP** Font family at '../fonts/static/ttfs' lacks a METADATA.pb file.
+* 💤 **SKIP** Font family at '../fonts/static/ttfs' lacks a METADATA.pb file. [code: file-not-found]
 
 </details>
 <details>
@@ -41661,6 +43534,28 @@ match exactly those declared on the METADATA.pb file.
 
 Also, to avoid confusion, we expect that font files (other than statics) are
 not placed on subdirectories.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: family_metadata
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure METADATA.pb category field is valid.</summary>
+
+* [com.google.fonts/check/metadata/category](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/category)
+<pre>--- Rationale ---
+
+There are only five acceptable values for the category field in a METADATA.pb
+file:
+- MONOSPACE
+- SANS_SERIF
+- SERIF
+- DISPLAY
+- HANDWRITING
+
+This check is meant to avoid typos in this field.
 
 
 </pre>
@@ -41955,15 +43850,28 @@ We may want to merge them all into a single check.
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Checking OS/2 usWeightClass matches weight specified at METADATA.pb.</summary>
+<summary>💤 <b>SKIP:</b> Check METADATA.pb font weights are correct.</summary>
 
 * [com.google.fonts/check/metadata/os2_weightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/os2_weightclass)
+<pre>--- Rationale ---
+
+Check METADATA.pb font weights are correct.
+
+For static fonts, the metadata weight should be the same
+as the static font&#x27;s OS/2 usWeightClass.
+
+For variable fonts, the weight value should be 400 if the
+font&#x27;s wght axis range includes 400, otherwise it should be the
+value closest to 400.
+
+
+</pre>
 
 * 💤 **SKIP** Unfulfilled Conditions: font_metadata
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName.</summary>
+<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName for static fonts.</summary>
 
 * [com.google.fonts/check/metadata/match_weight_postscript](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/match_weight_postscript)
 
@@ -42107,6 +44015,10 @@ All ligatures in a font must have corresponding caret (text cursor) positions
 defined in the GDEF table, otherwhise, users may experience issues with caret
 rendering.
 
+If using GlyphsApp, ligature carets can be set directly on canvas by accessing
+the `Glyph -&gt; Set Anchors` menu option or by pressing the `Cmd+U` keyboard
+shortcut.
+
 
 </pre>
 
@@ -42184,6 +44096,25 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Check font follows the Google Fonts CJK vertical metric schema</summary>
+
+* [com.google.fonts/check/cjk_vertical_metrics](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/cjk_vertical_metrics)
+<pre>--- Rationale ---
+
+CJK fonts have different vertical metrics when compared to Latin fonts. We
+follow the schema developed by dr Ken Lunde for Source Han Sans and the Noto
+CJK fonts.
+
+Our documentation includes further information:
+https://github.com/googlefonts/gf-docs/tree/master/Spec#cjk-vertical-metrics
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_cjk_font
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Check variable font instances have correct coordinate values</summary>
 
 * [com.google.fonts/check/varfont_instance_coordinates](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont_instance_coordinates)
@@ -42200,7 +44131,7 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Ensure VFs do not contain opsz or ital axes. </summary>
+<summary>💤 <b>SKIP:</b> Ensure VFs do not contain slnt or ital axes. </summary>
 
 * [com.google.fonts/check/varfont/unsupported_axes](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont/unsupported_axes)
 <pre>--- Rationale ---
@@ -42261,6 +44192,21 @@ result in WARNs.
 </pre>
 
 * 💤 **SKIP** Sibling families were not detected.
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure indic fonts have the Indian Rupee Sign glyph. </summary>
+
+* [com.google.fonts/check/rupee](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/rupee)
+<pre>--- Rationale ---
+
+Per Bureau of Indian Standards every font supporting one of the official Indian
+languages needs to include Unicode Character “₹” (U+20B9) Indian Rupee Sign.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_indic_font
 
 </details>
 <details>
@@ -42498,10 +44444,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/Geologica-ThinItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 121.2kb |
-	| Hinted Size | 149.2kb |
-	| Increase | 28.0kb |
-	| Change   | 23.1 % |
+	| Dehinted Size | 121.4kb |
+	| Hinted Size | 149.8kb |
+	| Increase | 28.3kb |
+	| Change   | 23.3 % |
  [code: size-impact]
 
 </details>
@@ -42593,7 +44539,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [GPOS, gasp, cvt , loca, prep, GSUB, fpgm, DSIG]
+* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, GPOS, DSIG, gasp, prep, loca, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -42710,6 +44656,31 @@ set of characters defined in the `GF-latin-core` glyph-set.
 * [com.google.fonts/check/name/unwanted_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars)
 
 * 🍞 **PASS** No need to substitute copyright, registered and trademark symbols in name table entries of this font.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Checking OS/2 usWeightClass.</summary>
+
+* [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
+<pre>--- Rationale ---
+
+Google Fonts expects variable fonts, static ttfs and static otfs to have
+differing OS/2 usWeightClass values.
+
+For Variable Fonts, Thin-Black must be 100-900
+For static ttfs, Thin-Black can be 100-900 or 250-900
+For static otfs, Thin-Black must be 250-900
+
+If static otfs are set lower than 250, text may appear blurry in legacy Windows
+applications.
+
+Glyphsapp users can change the usWeightClass value of an instance by adding a
+&#x27;weightClass&#x27; customParameter.
+
+
+</pre>
+
+* 🍞 **PASS** OS/2 usWeightClass is good
 
 </details>
 <details>
@@ -42895,20 +44866,12 @@ Even though the OpenType spec allows unitsPerEm to be any value between 16 and
 The spec suggests usage of powers of two in order to get some performance
 improvements on legacy renderers, so those values are acceptable.
 
-But value of 500 or 1000 are also acceptable, with the added benefit that it
+But values of 500 or 1000 are also acceptable, with the added benefit that it
 makes upm math easier for designers, while the performance hit of not using a
 power of two is most likely negligible nowadays.
 
-Another acceptable value is 2000. Since TT outlines are all integers (no
-floats), then instances in a VF suffer rounding compromises, and therefore a
-1000 UPM is too small because it forces too many such compromises.
-
-Therefore 2000 is a good &#x27;new VF standard&#x27;, because 2000 is a simple 2x
-conversion from existing fonts drawn on a 1000 UPM, and anyone who knows what
-10 units can do for 1000 UPM will know what 20 units does too.
-
-Additionally, values above 2048 would result in filesize increases with not
-much added benefit.
+Additionally, values above 2048 would likely result in unreasonable filesize
+increases.
 
 
 </pre>
@@ -43134,6 +45097,28 @@ release files, but Google Fonts should only have OpenType tables.
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+<pre>--- Rationale ---
+
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Combined length of family and style must not exceed 27 characters.</summary>
 
 * [com.google.fonts/check/name/family_and_style_max_length](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length)
@@ -43204,11 +45189,73 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> A font repository should not include fontbakery report files</summary>
+
+* [com.google.fonts/check/repo/fb_report](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/fb_report)
+<pre>--- Rationale ---
+
+A FontBakery report is ephemeral and so should be used for posting issues on a
+bug-tracker instead of being hosted in the font project repository.
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> A font repository should not include ZIP files</summary>
+
+* [com.google.fonts/check/repo/zip_files](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/zip_files)
+<pre>--- Rationale ---
+
+Sometimes people check in ZIPs into their font project repositories. While we
+accept the practice of checking in binaries, we believe that a ZIP is a step
+too far ;)
+
+Note: a source purist position is that only source files and build scripts
+should be checked in. 
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Name table records must not have trailing spaces.</summary>
 
 * [com.google.fonts/check/name/trailing_spaces](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/name/trailing_spaces)
 
 * 🍞 **PASS** No trailing spaces on name table entries.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+<pre>--- Rationale ---
+
+A font&#x27;s winAscent and winDescent values should be greater than the head
+table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
+can occur on Windows platforms
+(https://github.com/RedHatBrand/Overpass/issues/33).
+
+If the font includes tall/deep writing systems such as Arabic or Devanagari,
+the winAscent and winDescent can be greater than the yMax and abs(yMin) to
+accommodate vowel marks.
+
+When the win Metrics are significantly greater than the upm, the linespacing
+can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
+(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
+This means the font developer can control the linespacing with the typo values,
+whilst avoiding clipping by setting the win values to values greater than the
+yMax and abs(yMin).
+
+
+</pre>
+
+* 🍞 **PASS** OS/2 usWinAscent & usWinDescent values look good!
 
 </details>
 <details>
@@ -43277,8 +45324,15 @@ space glyph. This might have been relevant for applications on MacOS 9.
 <summary>🍞 <b>PASS:</b> Font has **proper** whitespace glyph names?</summary>
 
 * [com.google.fonts/check/whitespace_glyphnames](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/whitespace_glyphnames)
+<pre>--- Rationale ---
 
-* 🍞 **PASS** Font has **proper** whitespace glyph names.
+This check enforces adherence to recommended whitespace (codepoints 0020 and
+00A0) glyph names according to the Adobe Glyph List.
+
+
+</pre>
+
+* 🍞 **PASS** Font has **AGL recommended** names for whitespace glyphs.
 
 </details>
 <details>
@@ -43501,7 +45555,7 @@ apps.
 <pre>--- Rationale ---
 
 There are various metadata in the OpenType spec to specify if a font is
-monospaced or not. If the font is not trully monospaced, then no monospaced
+monospaced or not. If the font is not truly monospaced, then no monospaced
 metadata should be set (as sometimes they mistakenly are...)
 
 Requirements for monospace fonts:
@@ -43632,15 +45686,45 @@ Reference: https://github.com/googlefonts/fontbakery/issues/1845
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class)</summary>
+
+* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
+<pre>--- Rationale ---
+
+Glyphs in the GDEF mark glyph class should be non-spacing.
+Spacing glyphs in the GDEF mark glyph class may have incorrect anchor
+positioning that was only intended for building composite glyphs during design.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not has spacing glyphs in the GDEF mark glyph class.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class</summary>
+
+* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
+<pre>--- Rationale ---
+
+Mark characters should be in the GDEF mark glyph class.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not have mark characters not in the GDEF mark glyph class.
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Check GDEF mark glyph class doesn't have characters that are not marks)</summary>
 
 * [com.google.fonts/check/gdef_non_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars)
 <pre>--- Rationale ---
 
-Glyphs in the GDEF mark glyph class become non-spacing and may be
-repositioned if they have mark anchors. Only combining mark glyphs
-should be in that class. Any non-mark glyph must not be in that class,
-in particular spacing glyphs.
+Glyphs in the GDEF mark glyph class become non-spacing and may be repositioned
+if they have mark anchors.
+Only combining mark glyphs should be in that class. Any non-mark glyph must not
+be in that class, in particular spacing glyphs.
 
 
 </pre>
@@ -43724,63 +45808,7 @@ the same x,y coordinates.
 <br>
 </details>
 <details>
-<summary><b>[158] GeologicaSharp-Black.ttf</b></summary>
-<details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
-
-This can be accomplished by using the 'gftools fix-hinting' command.
-
-# create virtualenvpython3 -m venv venv
-# activate virtualenvsource venv/bin/activate
-# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-
-A font&#x27;s winAscent and winDescent values should be greater than the head
-table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
-can occur on Windows platforms
-(https://github.com/RedHatBrand/Overpass/issues/33).
-
-If the font includes tall/deep writing systems such as Arabic or Devanagari,
-the winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-
-When the win Metrics are significantly greater than the upm, the linespacing
-can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
-This means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).
-
-
-</pre>
-
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 895, but got 746 instead [code: descent]
-
-</details>
+<summary><b>[163] GeologicaSharp-Black.ttf</b></summary>
 <details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
@@ -43836,33 +45864,33 @@ Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uhorn	Contours detected: 2	Expected: 1
 Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni20A6	Contours detected: 2	Expected: 1, 3 or 5
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
 Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1 [code: contour-count]
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni20A6	Contours detected: 2	Expected: 1, 3 or 5
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
 
 </details>
 <details>
@@ -43894,39 +45922,6 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 </details>
 <details>
-<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class)</summary>
-
-* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
-<pre>--- Rationale ---
-
-Glyphs in the GDEF mark glyph class should be non-spacing.
-Spacing glyphs in the GDEF mark glyph class may have incorrect
-anchor positioning that was only intended for building composite glyphs
-during design.
-
-
-</pre>
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 acutecomb, acutecomb.case, acutecomb.narrow, brevecombcy, dotbelowcomb, gravecomb, gravecomb.case, gravecomb.narrow, hookabovecomb, hookabovecomb.case and 55 more. [code: spacing-mark-glyphs]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class</summary>
-
-* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
-<pre>--- Rationale ---
-
-Mark characters should be in the GDEF mark glyph class.
-
-
-</pre>
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 U+0300, U+0301, U+0302, U+0303, U+0304, U+0306, U+0307, U+0308, U+0309, U+030A, U+030B, U+030C, U+030F, U+0311, U+0312, U+031B, U+0323, U+0324, U+0326, U+0327, U+0328, U+032E, U+0331 and U+0335 [code: mark-chars]
-
-</details>
-<details>
 <summary>💤 <b>SKIP:</b> Does DESCRIPTION file contain broken links?</summary>
 
 * [com.google.fonts/check/description/broken_links](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/broken_links)
@@ -43934,12 +45929,12 @@ Mark characters should be in the GDEF mark glyph class.
 
 The snippet of HTML in the DESCRIPTION.en_us.html file is added to the font
 family webpage on the Google Fonts website. For that reason, all hyperlinks in
-it must be properly working. 
+it must be properly working.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -43962,7 +45957,7 @@ any other git-based version control service.
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -43971,17 +45966,19 @@ any other git-based version control service.
 * [com.google.fonts/check/description/valid_html](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/valid_html)
 <pre>--- Rationale ---
 
-When packaging families for being pushed to the `google/fonts` git repo, if
-there is no DESCRIPTION.en_us.html file, some older versions of the
-`add_font.py` tool insert a dummy description file which contains invalid html.
+Sometimes people write malformed HTML markup. This check should ensure the file
+is good.
 
-This file needs to either be replaced with an existing description file or
-edited by hand.
+Additionally, when packaging families for being pushed to the `google/fonts`
+git repo, if there is no DESCRIPTION.en_us.html file, some older versions of
+the `add_font.py` tool insert a dummy description file which contains invalid
+html. This file needs to either be replaced with an existing description file
+or edited by hand.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: descfile
+* 💤 **SKIP** Unfulfilled Conditions: description
 
 </details>
 <details>
@@ -44032,7 +46029,7 @@ malformed.
 
 </pre>
 
-* 💤 **SKIP** Font family at '../fonts/static/ttfs' lacks a METADATA.pb file.
+* 💤 **SKIP** Font family at '../fonts/static/ttfs' lacks a METADATA.pb file. [code: file-not-found]
 
 </details>
 <details>
@@ -44101,6 +46098,28 @@ match exactly those declared on the METADATA.pb file.
 
 Also, to avoid confusion, we expect that font files (other than statics) are
 not placed on subdirectories.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: family_metadata
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure METADATA.pb category field is valid.</summary>
+
+* [com.google.fonts/check/metadata/category](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/category)
+<pre>--- Rationale ---
+
+There are only five acceptable values for the category field in a METADATA.pb
+file:
+- MONOSPACE
+- SANS_SERIF
+- SERIF
+- DISPLAY
+- HANDWRITING
+
+This check is meant to avoid typos in this field.
 
 
 </pre>
@@ -44395,15 +46414,28 @@ We may want to merge them all into a single check.
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Checking OS/2 usWeightClass matches weight specified at METADATA.pb.</summary>
+<summary>💤 <b>SKIP:</b> Check METADATA.pb font weights are correct.</summary>
 
 * [com.google.fonts/check/metadata/os2_weightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/os2_weightclass)
+<pre>--- Rationale ---
+
+Check METADATA.pb font weights are correct.
+
+For static fonts, the metadata weight should be the same
+as the static font&#x27;s OS/2 usWeightClass.
+
+For variable fonts, the weight value should be 400 if the
+font&#x27;s wght axis range includes 400, otherwise it should be the
+value closest to 400.
+
+
+</pre>
 
 * 💤 **SKIP** Unfulfilled Conditions: font_metadata
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName.</summary>
+<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName for static fonts.</summary>
 
 * [com.google.fonts/check/metadata/match_weight_postscript](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/match_weight_postscript)
 
@@ -44547,6 +46579,10 @@ All ligatures in a font must have corresponding caret (text cursor) positions
 defined in the GDEF table, otherwhise, users may experience issues with caret
 rendering.
 
+If using GlyphsApp, ligature carets can be set directly on canvas by accessing
+the `Glyph -&gt; Set Anchors` menu option or by pressing the `Cmd+U` keyboard
+shortcut.
+
 
 </pre>
 
@@ -44624,6 +46660,25 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Check font follows the Google Fonts CJK vertical metric schema</summary>
+
+* [com.google.fonts/check/cjk_vertical_metrics](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/cjk_vertical_metrics)
+<pre>--- Rationale ---
+
+CJK fonts have different vertical metrics when compared to Latin fonts. We
+follow the schema developed by dr Ken Lunde for Source Han Sans and the Noto
+CJK fonts.
+
+Our documentation includes further information:
+https://github.com/googlefonts/gf-docs/tree/master/Spec#cjk-vertical-metrics
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_cjk_font
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Check variable font instances have correct coordinate values</summary>
 
 * [com.google.fonts/check/varfont_instance_coordinates](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont_instance_coordinates)
@@ -44640,7 +46695,7 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Ensure VFs do not contain opsz or ital axes. </summary>
+<summary>💤 <b>SKIP:</b> Ensure VFs do not contain slnt or ital axes. </summary>
 
 * [com.google.fonts/check/varfont/unsupported_axes](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont/unsupported_axes)
 <pre>--- Rationale ---
@@ -44701,6 +46756,21 @@ result in WARNs.
 </pre>
 
 * 💤 **SKIP** Sibling families were not detected.
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure indic fonts have the Indian Rupee Sign glyph. </summary>
+
+* [com.google.fonts/check/rupee](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/rupee)
+<pre>--- Rationale ---
+
+Per Bureau of Indian Standards every font supporting one of the official Indian
+languages needs to include Unicode Character “₹” (U+20B9) Indian Rupee Sign.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_indic_font
 
 </details>
 <details>
@@ -44938,10 +47008,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/GeologicaSharp-Black.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 125.1kb |
-	| Hinted Size | 154.6kb |
-	| Increase | 29.4kb |
-	| Change   | 23.5 % |
+	| Dehinted Size | 125.4kb |
+	| Hinted Size | 155.2kb |
+	| Increase | 29.8kb |
+	| Change   | 23.8 % |
  [code: size-impact]
 
 </details>
@@ -45033,7 +47103,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [GPOS, gasp, cvt , loca, prep, GSUB, fpgm, DSIG]
+* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, GPOS, DSIG, gasp, prep, loca, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -45156,8 +47226,25 @@ set of characters defined in the `GF-latin-core` glyph-set.
 <summary>🍞 <b>PASS:</b> Checking OS/2 usWeightClass.</summary>
 
 * [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
+<pre>--- Rationale ---
 
-* 🍞 **PASS** OS/2 usWeightClass value looks good!
+Google Fonts expects variable fonts, static ttfs and static otfs to have
+differing OS/2 usWeightClass values.
+
+For Variable Fonts, Thin-Black must be 100-900
+For static ttfs, Thin-Black can be 100-900 or 250-900
+For static otfs, Thin-Black must be 250-900
+
+If static otfs are set lower than 250, text may appear blurry in legacy Windows
+applications.
+
+Glyphsapp users can change the usWeightClass value of an instance by adding a
+&#x27;weightClass&#x27; customParameter.
+
+
+</pre>
+
+* 🍞 **PASS** OS/2 usWeightClass is good
 
 </details>
 <details>
@@ -45343,20 +47430,12 @@ Even though the OpenType spec allows unitsPerEm to be any value between 16 and
 The spec suggests usage of powers of two in order to get some performance
 improvements on legacy renderers, so those values are acceptable.
 
-But value of 500 or 1000 are also acceptable, with the added benefit that it
+But values of 500 or 1000 are also acceptable, with the added benefit that it
 makes upm math easier for designers, while the performance hit of not using a
 power of two is most likely negligible nowadays.
 
-Another acceptable value is 2000. Since TT outlines are all integers (no
-floats), then instances in a VF suffer rounding compromises, and therefore a
-1000 UPM is too small because it forces too many such compromises.
-
-Therefore 2000 is a good &#x27;new VF standard&#x27;, because 2000 is a simple 2x
-conversion from existing fonts drawn on a 1000 UPM, and anyone who knows what
-10 units can do for 1000 UPM will know what 20 units does too.
-
-Additionally, values above 2048 would result in filesize increases with not
-much added benefit.
+Additionally, values above 2048 would likely result in unreasonable filesize
+increases.
 
 
 </pre>
@@ -45582,6 +47661,28 @@ release files, but Google Fonts should only have OpenType tables.
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+<pre>--- Rationale ---
+
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Name table entries should not contain line-breaks.</summary>
 
 * [com.google.fonts/check/name/line_breaks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/line_breaks)
@@ -45627,11 +47728,73 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> A font repository should not include fontbakery report files</summary>
+
+* [com.google.fonts/check/repo/fb_report](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/fb_report)
+<pre>--- Rationale ---
+
+A FontBakery report is ephemeral and so should be used for posting issues on a
+bug-tracker instead of being hosted in the font project repository.
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> A font repository should not include ZIP files</summary>
+
+* [com.google.fonts/check/repo/zip_files](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/zip_files)
+<pre>--- Rationale ---
+
+Sometimes people check in ZIPs into their font project repositories. While we
+accept the practice of checking in binaries, we believe that a ZIP is a step
+too far ;)
+
+Note: a source purist position is that only source files and build scripts
+should be checked in. 
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Name table records must not have trailing spaces.</summary>
 
 * [com.google.fonts/check/name/trailing_spaces](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/name/trailing_spaces)
 
 * 🍞 **PASS** No trailing spaces on name table entries.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+<pre>--- Rationale ---
+
+A font&#x27;s winAscent and winDescent values should be greater than the head
+table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
+can occur on Windows platforms
+(https://github.com/RedHatBrand/Overpass/issues/33).
+
+If the font includes tall/deep writing systems such as Arabic or Devanagari,
+the winAscent and winDescent can be greater than the yMax and abs(yMin) to
+accommodate vowel marks.
+
+When the win Metrics are significantly greater than the upm, the linespacing
+can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
+(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
+This means the font developer can control the linespacing with the typo values,
+whilst avoiding clipping by setting the win values to values greater than the
+yMax and abs(yMin).
+
+
+</pre>
+
+* 🍞 **PASS** OS/2 usWinAscent & usWinDescent values look good!
 
 </details>
 <details>
@@ -45700,8 +47863,15 @@ space glyph. This might have been relevant for applications on MacOS 9.
 <summary>🍞 <b>PASS:</b> Font has **proper** whitespace glyph names?</summary>
 
 * [com.google.fonts/check/whitespace_glyphnames](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/whitespace_glyphnames)
+<pre>--- Rationale ---
 
-* 🍞 **PASS** Font has **proper** whitespace glyph names.
+This check enforces adherence to recommended whitespace (codepoints 0020 and
+00A0) glyph names according to the Adobe Glyph List.
+
+
+</pre>
+
+* 🍞 **PASS** Font has **AGL recommended** names for whitespace glyphs.
 
 </details>
 <details>
@@ -45924,7 +48094,7 @@ apps.
 <pre>--- Rationale ---
 
 There are various metadata in the OpenType spec to specify if a font is
-monospaced or not. If the font is not trully monospaced, then no monospaced
+monospaced or not. If the font is not truly monospaced, then no monospaced
 metadata should be set (as sometimes they mistakenly are...)
 
 Requirements for monospace fonts:
@@ -46055,15 +48225,45 @@ Reference: https://github.com/googlefonts/fontbakery/issues/1845
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class)</summary>
+
+* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
+<pre>--- Rationale ---
+
+Glyphs in the GDEF mark glyph class should be non-spacing.
+Spacing glyphs in the GDEF mark glyph class may have incorrect anchor
+positioning that was only intended for building composite glyphs during design.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not has spacing glyphs in the GDEF mark glyph class.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class</summary>
+
+* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
+<pre>--- Rationale ---
+
+Mark characters should be in the GDEF mark glyph class.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not have mark characters not in the GDEF mark glyph class.
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Check GDEF mark glyph class doesn't have characters that are not marks)</summary>
 
 * [com.google.fonts/check/gdef_non_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars)
 <pre>--- Rationale ---
 
-Glyphs in the GDEF mark glyph class become non-spacing and may be
-repositioned if they have mark anchors. Only combining mark glyphs
-should be in that class. Any non-mark glyph must not be in that class,
-in particular spacing glyphs.
+Glyphs in the GDEF mark glyph class become non-spacing and may be repositioned
+if they have mark anchors.
+Only combining mark glyphs should be in that class. Any non-mark glyph must not
+be in that class, in particular spacing glyphs.
 
 
 </pre>
@@ -46147,63 +48347,7 @@ the same x,y coordinates.
 <br>
 </details>
 <details>
-<summary><b>[158] GeologicaSharp-BlackItalic.ttf</b></summary>
-<details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
-
-This can be accomplished by using the 'gftools fix-hinting' command.
-
-# create virtualenvpython3 -m venv venv
-# activate virtualenvsource venv/bin/activate
-# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-
-A font&#x27;s winAscent and winDescent values should be greater than the head
-table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
-can occur on Windows platforms
-(https://github.com/RedHatBrand/Overpass/issues/33).
-
-If the font includes tall/deep writing systems such as Arabic or Devanagari,
-the winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-
-When the win Metrics are significantly greater than the upm, the linespacing
-can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
-This means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).
-
-
-</pre>
-
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 895, but got 746 instead [code: descent]
-
-</details>
+<summary><b>[163] GeologicaSharp-BlackItalic.ttf</b></summary>
 <details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
@@ -46259,66 +48403,33 @@ Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uhorn	Contours detected: 2	Expected: 1
 Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni20A6	Contours detected: 2	Expected: 1, 3 or 5
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
 Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1 [code: contour-count]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class)</summary>
-
-* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
-<pre>--- Rationale ---
-
-Glyphs in the GDEF mark glyph class should be non-spacing.
-Spacing glyphs in the GDEF mark glyph class may have incorrect
-anchor positioning that was only intended for building composite glyphs
-during design.
-
-
-</pre>
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 acutecomb, acutecomb.case, acutecomb.narrow, brevecombcy, dotbelowcomb, gravecomb, gravecomb.case, gravecomb.narrow, hookabovecomb, hookabovecomb.case and 55 more. [code: spacing-mark-glyphs]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class</summary>
-
-* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
-<pre>--- Rationale ---
-
-Mark characters should be in the GDEF mark glyph class.
-
-
-</pre>
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 U+0300, U+0301, U+0302, U+0303, U+0304, U+0306, U+0307, U+0308, U+0309, U+030A, U+030B, U+030C, U+030F, U+0311, U+0312, U+031B, U+0323, U+0324, U+0326, U+0327, U+0328, U+032E, U+0331 and U+0335 [code: mark-chars]
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: uni20A6	Contours detected: 2	Expected: 1, 3 or 5
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
 
 </details>
 <details>
@@ -46329,12 +48440,12 @@ Mark characters should be in the GDEF mark glyph class.
 
 The snippet of HTML in the DESCRIPTION.en_us.html file is added to the font
 family webpage on the Google Fonts website. For that reason, all hyperlinks in
-it must be properly working. 
+it must be properly working.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -46357,7 +48468,7 @@ any other git-based version control service.
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -46366,17 +48477,19 @@ any other git-based version control service.
 * [com.google.fonts/check/description/valid_html](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/valid_html)
 <pre>--- Rationale ---
 
-When packaging families for being pushed to the `google/fonts` git repo, if
-there is no DESCRIPTION.en_us.html file, some older versions of the
-`add_font.py` tool insert a dummy description file which contains invalid html.
+Sometimes people write malformed HTML markup. This check should ensure the file
+is good.
 
-This file needs to either be replaced with an existing description file or
-edited by hand.
+Additionally, when packaging families for being pushed to the `google/fonts`
+git repo, if there is no DESCRIPTION.en_us.html file, some older versions of
+the `add_font.py` tool insert a dummy description file which contains invalid
+html. This file needs to either be replaced with an existing description file
+or edited by hand.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: descfile
+* 💤 **SKIP** Unfulfilled Conditions: description
 
 </details>
 <details>
@@ -46427,7 +48540,7 @@ malformed.
 
 </pre>
 
-* 💤 **SKIP** Font family at '../fonts/static/ttfs' lacks a METADATA.pb file.
+* 💤 **SKIP** Font family at '../fonts/static/ttfs' lacks a METADATA.pb file. [code: file-not-found]
 
 </details>
 <details>
@@ -46496,6 +48609,28 @@ match exactly those declared on the METADATA.pb file.
 
 Also, to avoid confusion, we expect that font files (other than statics) are
 not placed on subdirectories.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: family_metadata
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure METADATA.pb category field is valid.</summary>
+
+* [com.google.fonts/check/metadata/category](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/category)
+<pre>--- Rationale ---
+
+There are only five acceptable values for the category field in a METADATA.pb
+file:
+- MONOSPACE
+- SANS_SERIF
+- SERIF
+- DISPLAY
+- HANDWRITING
+
+This check is meant to avoid typos in this field.
 
 
 </pre>
@@ -46790,15 +48925,28 @@ We may want to merge them all into a single check.
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Checking OS/2 usWeightClass matches weight specified at METADATA.pb.</summary>
+<summary>💤 <b>SKIP:</b> Check METADATA.pb font weights are correct.</summary>
 
 * [com.google.fonts/check/metadata/os2_weightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/os2_weightclass)
+<pre>--- Rationale ---
+
+Check METADATA.pb font weights are correct.
+
+For static fonts, the metadata weight should be the same
+as the static font&#x27;s OS/2 usWeightClass.
+
+For variable fonts, the weight value should be 400 if the
+font&#x27;s wght axis range includes 400, otherwise it should be the
+value closest to 400.
+
+
+</pre>
 
 * 💤 **SKIP** Unfulfilled Conditions: font_metadata
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName.</summary>
+<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName for static fonts.</summary>
 
 * [com.google.fonts/check/metadata/match_weight_postscript](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/match_weight_postscript)
 
@@ -46942,6 +49090,10 @@ All ligatures in a font must have corresponding caret (text cursor) positions
 defined in the GDEF table, otherwhise, users may experience issues with caret
 rendering.
 
+If using GlyphsApp, ligature carets can be set directly on canvas by accessing
+the `Glyph -&gt; Set Anchors` menu option or by pressing the `Cmd+U` keyboard
+shortcut.
+
 
 </pre>
 
@@ -47019,6 +49171,25 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Check font follows the Google Fonts CJK vertical metric schema</summary>
+
+* [com.google.fonts/check/cjk_vertical_metrics](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/cjk_vertical_metrics)
+<pre>--- Rationale ---
+
+CJK fonts have different vertical metrics when compared to Latin fonts. We
+follow the schema developed by dr Ken Lunde for Source Han Sans and the Noto
+CJK fonts.
+
+Our documentation includes further information:
+https://github.com/googlefonts/gf-docs/tree/master/Spec#cjk-vertical-metrics
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_cjk_font
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Check variable font instances have correct coordinate values</summary>
 
 * [com.google.fonts/check/varfont_instance_coordinates](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont_instance_coordinates)
@@ -47035,7 +49206,7 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Ensure VFs do not contain opsz or ital axes. </summary>
+<summary>💤 <b>SKIP:</b> Ensure VFs do not contain slnt or ital axes. </summary>
 
 * [com.google.fonts/check/varfont/unsupported_axes](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont/unsupported_axes)
 <pre>--- Rationale ---
@@ -47096,6 +49267,21 @@ result in WARNs.
 </pre>
 
 * 💤 **SKIP** Sibling families were not detected.
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure indic fonts have the Indian Rupee Sign glyph. </summary>
+
+* [com.google.fonts/check/rupee](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/rupee)
+<pre>--- Rationale ---
+
+Per Bureau of Indian Standards every font supporting one of the official Indian
+languages needs to include Unicode Character “₹” (U+20B9) Indian Rupee Sign.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_indic_font
 
 </details>
 <details>
@@ -47333,10 +49519,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/GeologicaSharp-BlackItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 127.2kb |
-	| Hinted Size | 156.5kb |
-	| Increase | 29.3kb |
-	| Change   | 23.1 % |
+	| Dehinted Size | 127.5kb |
+	| Hinted Size | 157.2kb |
+	| Increase | 29.7kb |
+	| Change   | 23.3 % |
  [code: size-impact]
 
 </details>
@@ -47428,7 +49614,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [GPOS, gasp, cvt , loca, prep, GSUB, fpgm, DSIG]
+* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, GPOS, DSIG, gasp, prep, loca, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -47551,8 +49737,25 @@ set of characters defined in the `GF-latin-core` glyph-set.
 <summary>🍞 <b>PASS:</b> Checking OS/2 usWeightClass.</summary>
 
 * [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
+<pre>--- Rationale ---
 
-* 🍞 **PASS** OS/2 usWeightClass value looks good!
+Google Fonts expects variable fonts, static ttfs and static otfs to have
+differing OS/2 usWeightClass values.
+
+For Variable Fonts, Thin-Black must be 100-900
+For static ttfs, Thin-Black can be 100-900 or 250-900
+For static otfs, Thin-Black must be 250-900
+
+If static otfs are set lower than 250, text may appear blurry in legacy Windows
+applications.
+
+Glyphsapp users can change the usWeightClass value of an instance by adding a
+&#x27;weightClass&#x27; customParameter.
+
+
+</pre>
+
+* 🍞 **PASS** OS/2 usWeightClass is good
 
 </details>
 <details>
@@ -47738,20 +49941,12 @@ Even though the OpenType spec allows unitsPerEm to be any value between 16 and
 The spec suggests usage of powers of two in order to get some performance
 improvements on legacy renderers, so those values are acceptable.
 
-But value of 500 or 1000 are also acceptable, with the added benefit that it
+But values of 500 or 1000 are also acceptable, with the added benefit that it
 makes upm math easier for designers, while the performance hit of not using a
 power of two is most likely negligible nowadays.
 
-Another acceptable value is 2000. Since TT outlines are all integers (no
-floats), then instances in a VF suffer rounding compromises, and therefore a
-1000 UPM is too small because it forces too many such compromises.
-
-Therefore 2000 is a good &#x27;new VF standard&#x27;, because 2000 is a simple 2x
-conversion from existing fonts drawn on a 1000 UPM, and anyone who knows what
-10 units can do for 1000 UPM will know what 20 units does too.
-
-Additionally, values above 2048 would result in filesize increases with not
-much added benefit.
+Additionally, values above 2048 would likely result in unreasonable filesize
+increases.
 
 
 </pre>
@@ -47977,6 +50172,28 @@ release files, but Google Fonts should only have OpenType tables.
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+<pre>--- Rationale ---
+
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Combined length of family and style must not exceed 27 characters.</summary>
 
 * [com.google.fonts/check/name/family_and_style_max_length](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length)
@@ -48047,11 +50264,73 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> A font repository should not include fontbakery report files</summary>
+
+* [com.google.fonts/check/repo/fb_report](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/fb_report)
+<pre>--- Rationale ---
+
+A FontBakery report is ephemeral and so should be used for posting issues on a
+bug-tracker instead of being hosted in the font project repository.
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> A font repository should not include ZIP files</summary>
+
+* [com.google.fonts/check/repo/zip_files](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/zip_files)
+<pre>--- Rationale ---
+
+Sometimes people check in ZIPs into their font project repositories. While we
+accept the practice of checking in binaries, we believe that a ZIP is a step
+too far ;)
+
+Note: a source purist position is that only source files and build scripts
+should be checked in. 
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Name table records must not have trailing spaces.</summary>
 
 * [com.google.fonts/check/name/trailing_spaces](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/name/trailing_spaces)
 
 * 🍞 **PASS** No trailing spaces on name table entries.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+<pre>--- Rationale ---
+
+A font&#x27;s winAscent and winDescent values should be greater than the head
+table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
+can occur on Windows platforms
+(https://github.com/RedHatBrand/Overpass/issues/33).
+
+If the font includes tall/deep writing systems such as Arabic or Devanagari,
+the winAscent and winDescent can be greater than the yMax and abs(yMin) to
+accommodate vowel marks.
+
+When the win Metrics are significantly greater than the upm, the linespacing
+can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
+(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
+This means the font developer can control the linespacing with the typo values,
+whilst avoiding clipping by setting the win values to values greater than the
+yMax and abs(yMin).
+
+
+</pre>
+
+* 🍞 **PASS** OS/2 usWinAscent & usWinDescent values look good!
 
 </details>
 <details>
@@ -48120,8 +50399,15 @@ space glyph. This might have been relevant for applications on MacOS 9.
 <summary>🍞 <b>PASS:</b> Font has **proper** whitespace glyph names?</summary>
 
 * [com.google.fonts/check/whitespace_glyphnames](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/whitespace_glyphnames)
+<pre>--- Rationale ---
 
-* 🍞 **PASS** Font has **proper** whitespace glyph names.
+This check enforces adherence to recommended whitespace (codepoints 0020 and
+00A0) glyph names according to the Adobe Glyph List.
+
+
+</pre>
+
+* 🍞 **PASS** Font has **AGL recommended** names for whitespace glyphs.
 
 </details>
 <details>
@@ -48344,7 +50630,7 @@ apps.
 <pre>--- Rationale ---
 
 There are various metadata in the OpenType spec to specify if a font is
-monospaced or not. If the font is not trully monospaced, then no monospaced
+monospaced or not. If the font is not truly monospaced, then no monospaced
 metadata should be set (as sometimes they mistakenly are...)
 
 Requirements for monospace fonts:
@@ -48475,15 +50761,45 @@ Reference: https://github.com/googlefonts/fontbakery/issues/1845
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class)</summary>
+
+* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
+<pre>--- Rationale ---
+
+Glyphs in the GDEF mark glyph class should be non-spacing.
+Spacing glyphs in the GDEF mark glyph class may have incorrect anchor
+positioning that was only intended for building composite glyphs during design.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not has spacing glyphs in the GDEF mark glyph class.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class</summary>
+
+* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
+<pre>--- Rationale ---
+
+Mark characters should be in the GDEF mark glyph class.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not have mark characters not in the GDEF mark glyph class.
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Check GDEF mark glyph class doesn't have characters that are not marks)</summary>
 
 * [com.google.fonts/check/gdef_non_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars)
 <pre>--- Rationale ---
 
-Glyphs in the GDEF mark glyph class become non-spacing and may be
-repositioned if they have mark anchors. Only combining mark glyphs
-should be in that class. Any non-mark glyph must not be in that class,
-in particular spacing glyphs.
+Glyphs in the GDEF mark glyph class become non-spacing and may be repositioned
+if they have mark anchors.
+Only combining mark glyphs should be in that class. Any non-mark glyph must not
+be in that class, in particular spacing glyphs.
 
 
 </pre>
@@ -48567,63 +50883,7 @@ the same x,y coordinates.
 <br>
 </details>
 <details>
-<summary><b>[158] GeologicaSharp-Bold.ttf</b></summary>
-<details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
-
-This can be accomplished by using the 'gftools fix-hinting' command.
-
-# create virtualenvpython3 -m venv venv
-# activate virtualenvsource venv/bin/activate
-# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-
-A font&#x27;s winAscent and winDescent values should be greater than the head
-table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
-can occur on Windows platforms
-(https://github.com/RedHatBrand/Overpass/issues/33).
-
-If the font includes tall/deep writing systems such as Arabic or Devanagari,
-the winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-
-When the win Metrics are significantly greater than the upm, the linespacing
-can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
-This means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).
-
-
-</pre>
-
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 895, but got 746 instead [code: descent]
-
-</details>
+<summary><b>[163] GeologicaSharp-Bold.ttf</b></summary>
 <details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
@@ -48678,65 +50938,32 @@ Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uhorn	Contours detected: 2	Expected: 1
 Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
 Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1 [code: contour-count]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class)</summary>
-
-* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
-<pre>--- Rationale ---
-
-Glyphs in the GDEF mark glyph class should be non-spacing.
-Spacing glyphs in the GDEF mark glyph class may have incorrect
-anchor positioning that was only intended for building composite glyphs
-during design.
-
-
-</pre>
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 acutecomb, acutecomb.case, acutecomb.narrow, brevecombcy, dotbelowcomb, gravecomb, gravecomb.case, gravecomb.narrow, hookabovecomb, hookabovecomb.case and 55 more. [code: spacing-mark-glyphs]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class</summary>
-
-* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
-<pre>--- Rationale ---
-
-Mark characters should be in the GDEF mark glyph class.
-
-
-</pre>
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 U+0300, U+0301, U+0302, U+0303, U+0304, U+0306, U+0307, U+0308, U+0309, U+030A, U+030B, U+030C, U+030F, U+0311, U+0312, U+031B, U+0323, U+0324, U+0326, U+0327, U+0328, U+032E, U+0331 and U+0335 [code: mark-chars]
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
 
 </details>
 <details>
@@ -48747,12 +50974,12 @@ Mark characters should be in the GDEF mark glyph class.
 
 The snippet of HTML in the DESCRIPTION.en_us.html file is added to the font
 family webpage on the Google Fonts website. For that reason, all hyperlinks in
-it must be properly working. 
+it must be properly working.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -48775,7 +51002,7 @@ any other git-based version control service.
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -48784,17 +51011,19 @@ any other git-based version control service.
 * [com.google.fonts/check/description/valid_html](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/valid_html)
 <pre>--- Rationale ---
 
-When packaging families for being pushed to the `google/fonts` git repo, if
-there is no DESCRIPTION.en_us.html file, some older versions of the
-`add_font.py` tool insert a dummy description file which contains invalid html.
+Sometimes people write malformed HTML markup. This check should ensure the file
+is good.
 
-This file needs to either be replaced with an existing description file or
-edited by hand.
+Additionally, when packaging families for being pushed to the `google/fonts`
+git repo, if there is no DESCRIPTION.en_us.html file, some older versions of
+the `add_font.py` tool insert a dummy description file which contains invalid
+html. This file needs to either be replaced with an existing description file
+or edited by hand.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: descfile
+* 💤 **SKIP** Unfulfilled Conditions: description
 
 </details>
 <details>
@@ -48845,7 +51074,7 @@ malformed.
 
 </pre>
 
-* 💤 **SKIP** Font family at '../fonts/static/ttfs' lacks a METADATA.pb file.
+* 💤 **SKIP** Font family at '../fonts/static/ttfs' lacks a METADATA.pb file. [code: file-not-found]
 
 </details>
 <details>
@@ -48914,6 +51143,28 @@ match exactly those declared on the METADATA.pb file.
 
 Also, to avoid confusion, we expect that font files (other than statics) are
 not placed on subdirectories.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: family_metadata
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure METADATA.pb category field is valid.</summary>
+
+* [com.google.fonts/check/metadata/category](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/category)
+<pre>--- Rationale ---
+
+There are only five acceptable values for the category field in a METADATA.pb
+file:
+- MONOSPACE
+- SANS_SERIF
+- SERIF
+- DISPLAY
+- HANDWRITING
+
+This check is meant to avoid typos in this field.
 
 
 </pre>
@@ -49208,15 +51459,28 @@ We may want to merge them all into a single check.
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Checking OS/2 usWeightClass matches weight specified at METADATA.pb.</summary>
+<summary>💤 <b>SKIP:</b> Check METADATA.pb font weights are correct.</summary>
 
 * [com.google.fonts/check/metadata/os2_weightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/os2_weightclass)
+<pre>--- Rationale ---
+
+Check METADATA.pb font weights are correct.
+
+For static fonts, the metadata weight should be the same
+as the static font&#x27;s OS/2 usWeightClass.
+
+For variable fonts, the weight value should be 400 if the
+font&#x27;s wght axis range includes 400, otherwise it should be the
+value closest to 400.
+
+
+</pre>
 
 * 💤 **SKIP** Unfulfilled Conditions: font_metadata
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName.</summary>
+<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName for static fonts.</summary>
 
 * [com.google.fonts/check/metadata/match_weight_postscript](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/match_weight_postscript)
 
@@ -49360,6 +51624,10 @@ All ligatures in a font must have corresponding caret (text cursor) positions
 defined in the GDEF table, otherwhise, users may experience issues with caret
 rendering.
 
+If using GlyphsApp, ligature carets can be set directly on canvas by accessing
+the `Glyph -&gt; Set Anchors` menu option or by pressing the `Cmd+U` keyboard
+shortcut.
+
 
 </pre>
 
@@ -49437,6 +51705,25 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Check font follows the Google Fonts CJK vertical metric schema</summary>
+
+* [com.google.fonts/check/cjk_vertical_metrics](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/cjk_vertical_metrics)
+<pre>--- Rationale ---
+
+CJK fonts have different vertical metrics when compared to Latin fonts. We
+follow the schema developed by dr Ken Lunde for Source Han Sans and the Noto
+CJK fonts.
+
+Our documentation includes further information:
+https://github.com/googlefonts/gf-docs/tree/master/Spec#cjk-vertical-metrics
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_cjk_font
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Check variable font instances have correct coordinate values</summary>
 
 * [com.google.fonts/check/varfont_instance_coordinates](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont_instance_coordinates)
@@ -49453,7 +51740,7 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Ensure VFs do not contain opsz or ital axes. </summary>
+<summary>💤 <b>SKIP:</b> Ensure VFs do not contain slnt or ital axes. </summary>
 
 * [com.google.fonts/check/varfont/unsupported_axes](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont/unsupported_axes)
 <pre>--- Rationale ---
@@ -49514,6 +51801,21 @@ result in WARNs.
 </pre>
 
 * 💤 **SKIP** Sibling families were not detected.
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure indic fonts have the Indian Rupee Sign glyph. </summary>
+
+* [com.google.fonts/check/rupee](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/rupee)
+<pre>--- Rationale ---
+
+Per Bureau of Indian Standards every font supporting one of the official Indian
+languages needs to include Unicode Character “₹” (U+20B9) Indian Rupee Sign.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_indic_font
 
 </details>
 <details>
@@ -49751,10 +52053,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/GeologicaSharp-Bold.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 125.9kb |
-	| Hinted Size | 161.0kb |
-	| Increase | 35.0kb |
-	| Change   | 27.8 % |
+	| Dehinted Size | 126.2kb |
+	| Hinted Size | 161.6kb |
+	| Increase | 35.4kb |
+	| Change   | 28.1 % |
  [code: size-impact]
 
 </details>
@@ -49846,7 +52148,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [GPOS, gasp, cvt , loca, prep, GSUB, fpgm, DSIG]
+* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, GPOS, DSIG, gasp, prep, loca, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -49969,8 +52271,25 @@ set of characters defined in the `GF-latin-core` glyph-set.
 <summary>🍞 <b>PASS:</b> Checking OS/2 usWeightClass.</summary>
 
 * [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
+<pre>--- Rationale ---
 
-* 🍞 **PASS** OS/2 usWeightClass value looks good!
+Google Fonts expects variable fonts, static ttfs and static otfs to have
+differing OS/2 usWeightClass values.
+
+For Variable Fonts, Thin-Black must be 100-900
+For static ttfs, Thin-Black can be 100-900 or 250-900
+For static otfs, Thin-Black must be 250-900
+
+If static otfs are set lower than 250, text may appear blurry in legacy Windows
+applications.
+
+Glyphsapp users can change the usWeightClass value of an instance by adding a
+&#x27;weightClass&#x27; customParameter.
+
+
+</pre>
+
+* 🍞 **PASS** OS/2 usWeightClass is good
 
 </details>
 <details>
@@ -50156,20 +52475,12 @@ Even though the OpenType spec allows unitsPerEm to be any value between 16 and
 The spec suggests usage of powers of two in order to get some performance
 improvements on legacy renderers, so those values are acceptable.
 
-But value of 500 or 1000 are also acceptable, with the added benefit that it
+But values of 500 or 1000 are also acceptable, with the added benefit that it
 makes upm math easier for designers, while the performance hit of not using a
 power of two is most likely negligible nowadays.
 
-Another acceptable value is 2000. Since TT outlines are all integers (no
-floats), then instances in a VF suffer rounding compromises, and therefore a
-1000 UPM is too small because it forces too many such compromises.
-
-Therefore 2000 is a good &#x27;new VF standard&#x27;, because 2000 is a simple 2x
-conversion from existing fonts drawn on a 1000 UPM, and anyone who knows what
-10 units can do for 1000 UPM will know what 20 units does too.
-
-Additionally, values above 2048 would result in filesize increases with not
-much added benefit.
+Additionally, values above 2048 would likely result in unreasonable filesize
+increases.
 
 
 </pre>
@@ -50395,6 +52706,28 @@ release files, but Google Fonts should only have OpenType tables.
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+<pre>--- Rationale ---
+
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Combined length of family and style must not exceed 27 characters.</summary>
 
 * [com.google.fonts/check/name/family_and_style_max_length](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length)
@@ -50465,11 +52798,73 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> A font repository should not include fontbakery report files</summary>
+
+* [com.google.fonts/check/repo/fb_report](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/fb_report)
+<pre>--- Rationale ---
+
+A FontBakery report is ephemeral and so should be used for posting issues on a
+bug-tracker instead of being hosted in the font project repository.
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> A font repository should not include ZIP files</summary>
+
+* [com.google.fonts/check/repo/zip_files](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/zip_files)
+<pre>--- Rationale ---
+
+Sometimes people check in ZIPs into their font project repositories. While we
+accept the practice of checking in binaries, we believe that a ZIP is a step
+too far ;)
+
+Note: a source purist position is that only source files and build scripts
+should be checked in. 
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Name table records must not have trailing spaces.</summary>
 
 * [com.google.fonts/check/name/trailing_spaces](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/name/trailing_spaces)
 
 * 🍞 **PASS** No trailing spaces on name table entries.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+<pre>--- Rationale ---
+
+A font&#x27;s winAscent and winDescent values should be greater than the head
+table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
+can occur on Windows platforms
+(https://github.com/RedHatBrand/Overpass/issues/33).
+
+If the font includes tall/deep writing systems such as Arabic or Devanagari,
+the winAscent and winDescent can be greater than the yMax and abs(yMin) to
+accommodate vowel marks.
+
+When the win Metrics are significantly greater than the upm, the linespacing
+can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
+(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
+This means the font developer can control the linespacing with the typo values,
+whilst avoiding clipping by setting the win values to values greater than the
+yMax and abs(yMin).
+
+
+</pre>
+
+* 🍞 **PASS** OS/2 usWinAscent & usWinDescent values look good!
 
 </details>
 <details>
@@ -50538,8 +52933,15 @@ space glyph. This might have been relevant for applications on MacOS 9.
 <summary>🍞 <b>PASS:</b> Font has **proper** whitespace glyph names?</summary>
 
 * [com.google.fonts/check/whitespace_glyphnames](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/whitespace_glyphnames)
+<pre>--- Rationale ---
 
-* 🍞 **PASS** Font has **proper** whitespace glyph names.
+This check enforces adherence to recommended whitespace (codepoints 0020 and
+00A0) glyph names according to the Adobe Glyph List.
+
+
+</pre>
+
+* 🍞 **PASS** Font has **AGL recommended** names for whitespace glyphs.
 
 </details>
 <details>
@@ -50762,7 +53164,7 @@ apps.
 <pre>--- Rationale ---
 
 There are various metadata in the OpenType spec to specify if a font is
-monospaced or not. If the font is not trully monospaced, then no monospaced
+monospaced or not. If the font is not truly monospaced, then no monospaced
 metadata should be set (as sometimes they mistakenly are...)
 
 Requirements for monospace fonts:
@@ -50893,15 +53295,45 @@ Reference: https://github.com/googlefonts/fontbakery/issues/1845
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class)</summary>
+
+* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
+<pre>--- Rationale ---
+
+Glyphs in the GDEF mark glyph class should be non-spacing.
+Spacing glyphs in the GDEF mark glyph class may have incorrect anchor
+positioning that was only intended for building composite glyphs during design.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not has spacing glyphs in the GDEF mark glyph class.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class</summary>
+
+* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
+<pre>--- Rationale ---
+
+Mark characters should be in the GDEF mark glyph class.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not have mark characters not in the GDEF mark glyph class.
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Check GDEF mark glyph class doesn't have characters that are not marks)</summary>
 
 * [com.google.fonts/check/gdef_non_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars)
 <pre>--- Rationale ---
 
-Glyphs in the GDEF mark glyph class become non-spacing and may be
-repositioned if they have mark anchors. Only combining mark glyphs
-should be in that class. Any non-mark glyph must not be in that class,
-in particular spacing glyphs.
+Glyphs in the GDEF mark glyph class become non-spacing and may be repositioned
+if they have mark anchors.
+Only combining mark glyphs should be in that class. Any non-mark glyph must not
+be in that class, in particular spacing glyphs.
 
 
 </pre>
@@ -50985,63 +53417,7 @@ the same x,y coordinates.
 <br>
 </details>
 <details>
-<summary><b>[158] GeologicaSharp-BoldItalic.ttf</b></summary>
-<details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
-
-This can be accomplished by using the 'gftools fix-hinting' command.
-
-# create virtualenvpython3 -m venv venv
-# activate virtualenvsource venv/bin/activate
-# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-
-A font&#x27;s winAscent and winDescent values should be greater than the head
-table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
-can occur on Windows platforms
-(https://github.com/RedHatBrand/Overpass/issues/33).
-
-If the font includes tall/deep writing systems such as Arabic or Devanagari,
-the winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-
-When the win Metrics are significantly greater than the upm, the linespacing
-can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
-This means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).
-
-
-</pre>
-
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 895, but got 746 instead [code: descent]
-
-</details>
+<summary><b>[163] GeologicaSharp-BoldItalic.ttf</b></summary>
 <details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
@@ -51096,65 +53472,32 @@ Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uhorn	Contours detected: 2	Expected: 1
 Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
 Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1 [code: contour-count]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class)</summary>
-
-* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
-<pre>--- Rationale ---
-
-Glyphs in the GDEF mark glyph class should be non-spacing.
-Spacing glyphs in the GDEF mark glyph class may have incorrect
-anchor positioning that was only intended for building composite glyphs
-during design.
-
-
-</pre>
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 acutecomb, acutecomb.case, acutecomb.narrow, brevecombcy, dotbelowcomb, gravecomb, gravecomb.case, gravecomb.narrow, hookabovecomb, hookabovecomb.case and 55 more. [code: spacing-mark-glyphs]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class</summary>
-
-* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
-<pre>--- Rationale ---
-
-Mark characters should be in the GDEF mark glyph class.
-
-
-</pre>
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 U+0300, U+0301, U+0302, U+0303, U+0304, U+0306, U+0307, U+0308, U+0309, U+030A, U+030B, U+030C, U+030F, U+0311, U+0312, U+031B, U+0323, U+0324, U+0326, U+0327, U+0328, U+032E, U+0331 and U+0335 [code: mark-chars]
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
 
 </details>
 <details>
@@ -51165,12 +53508,12 @@ Mark characters should be in the GDEF mark glyph class.
 
 The snippet of HTML in the DESCRIPTION.en_us.html file is added to the font
 family webpage on the Google Fonts website. For that reason, all hyperlinks in
-it must be properly working. 
+it must be properly working.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -51193,7 +53536,7 @@ any other git-based version control service.
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -51202,17 +53545,19 @@ any other git-based version control service.
 * [com.google.fonts/check/description/valid_html](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/valid_html)
 <pre>--- Rationale ---
 
-When packaging families for being pushed to the `google/fonts` git repo, if
-there is no DESCRIPTION.en_us.html file, some older versions of the
-`add_font.py` tool insert a dummy description file which contains invalid html.
+Sometimes people write malformed HTML markup. This check should ensure the file
+is good.
 
-This file needs to either be replaced with an existing description file or
-edited by hand.
+Additionally, when packaging families for being pushed to the `google/fonts`
+git repo, if there is no DESCRIPTION.en_us.html file, some older versions of
+the `add_font.py` tool insert a dummy description file which contains invalid
+html. This file needs to either be replaced with an existing description file
+or edited by hand.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: descfile
+* 💤 **SKIP** Unfulfilled Conditions: description
 
 </details>
 <details>
@@ -51263,7 +53608,7 @@ malformed.
 
 </pre>
 
-* 💤 **SKIP** Font family at '../fonts/static/ttfs' lacks a METADATA.pb file.
+* 💤 **SKIP** Font family at '../fonts/static/ttfs' lacks a METADATA.pb file. [code: file-not-found]
 
 </details>
 <details>
@@ -51332,6 +53677,28 @@ match exactly those declared on the METADATA.pb file.
 
 Also, to avoid confusion, we expect that font files (other than statics) are
 not placed on subdirectories.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: family_metadata
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure METADATA.pb category field is valid.</summary>
+
+* [com.google.fonts/check/metadata/category](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/category)
+<pre>--- Rationale ---
+
+There are only five acceptable values for the category field in a METADATA.pb
+file:
+- MONOSPACE
+- SANS_SERIF
+- SERIF
+- DISPLAY
+- HANDWRITING
+
+This check is meant to avoid typos in this field.
 
 
 </pre>
@@ -51626,15 +53993,28 @@ We may want to merge them all into a single check.
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Checking OS/2 usWeightClass matches weight specified at METADATA.pb.</summary>
+<summary>💤 <b>SKIP:</b> Check METADATA.pb font weights are correct.</summary>
 
 * [com.google.fonts/check/metadata/os2_weightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/os2_weightclass)
+<pre>--- Rationale ---
+
+Check METADATA.pb font weights are correct.
+
+For static fonts, the metadata weight should be the same
+as the static font&#x27;s OS/2 usWeightClass.
+
+For variable fonts, the weight value should be 400 if the
+font&#x27;s wght axis range includes 400, otherwise it should be the
+value closest to 400.
+
+
+</pre>
 
 * 💤 **SKIP** Unfulfilled Conditions: font_metadata
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName.</summary>
+<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName for static fonts.</summary>
 
 * [com.google.fonts/check/metadata/match_weight_postscript](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/match_weight_postscript)
 
@@ -51778,6 +54158,10 @@ All ligatures in a font must have corresponding caret (text cursor) positions
 defined in the GDEF table, otherwhise, users may experience issues with caret
 rendering.
 
+If using GlyphsApp, ligature carets can be set directly on canvas by accessing
+the `Glyph -&gt; Set Anchors` menu option or by pressing the `Cmd+U` keyboard
+shortcut.
+
 
 </pre>
 
@@ -51855,6 +54239,25 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Check font follows the Google Fonts CJK vertical metric schema</summary>
+
+* [com.google.fonts/check/cjk_vertical_metrics](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/cjk_vertical_metrics)
+<pre>--- Rationale ---
+
+CJK fonts have different vertical metrics when compared to Latin fonts. We
+follow the schema developed by dr Ken Lunde for Source Han Sans and the Noto
+CJK fonts.
+
+Our documentation includes further information:
+https://github.com/googlefonts/gf-docs/tree/master/Spec#cjk-vertical-metrics
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_cjk_font
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Check variable font instances have correct coordinate values</summary>
 
 * [com.google.fonts/check/varfont_instance_coordinates](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont_instance_coordinates)
@@ -51871,7 +54274,7 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Ensure VFs do not contain opsz or ital axes. </summary>
+<summary>💤 <b>SKIP:</b> Ensure VFs do not contain slnt or ital axes. </summary>
 
 * [com.google.fonts/check/varfont/unsupported_axes](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont/unsupported_axes)
 <pre>--- Rationale ---
@@ -51932,6 +54335,21 @@ result in WARNs.
 </pre>
 
 * 💤 **SKIP** Sibling families were not detected.
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure indic fonts have the Indian Rupee Sign glyph. </summary>
+
+* [com.google.fonts/check/rupee](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/rupee)
+<pre>--- Rationale ---
+
+Per Bureau of Indian Standards every font supporting one of the official Indian
+languages needs to include Unicode Character “₹” (U+20B9) Indian Rupee Sign.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_indic_font
 
 </details>
 <details>
@@ -52169,10 +54587,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/GeologicaSharp-BoldItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 127.2kb |
-	| Hinted Size | 161.6kb |
-	| Increase | 34.4kb |
-	| Change   | 27.1 % |
+	| Dehinted Size | 127.5kb |
+	| Hinted Size | 162.3kb |
+	| Increase | 34.8kb |
+	| Change   | 27.3 % |
  [code: size-impact]
 
 </details>
@@ -52264,7 +54682,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [GPOS, gasp, cvt , loca, prep, GSUB, fpgm, DSIG]
+* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, GPOS, DSIG, gasp, prep, loca, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -52387,8 +54805,25 @@ set of characters defined in the `GF-latin-core` glyph-set.
 <summary>🍞 <b>PASS:</b> Checking OS/2 usWeightClass.</summary>
 
 * [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
+<pre>--- Rationale ---
 
-* 🍞 **PASS** OS/2 usWeightClass value looks good!
+Google Fonts expects variable fonts, static ttfs and static otfs to have
+differing OS/2 usWeightClass values.
+
+For Variable Fonts, Thin-Black must be 100-900
+For static ttfs, Thin-Black can be 100-900 or 250-900
+For static otfs, Thin-Black must be 250-900
+
+If static otfs are set lower than 250, text may appear blurry in legacy Windows
+applications.
+
+Glyphsapp users can change the usWeightClass value of an instance by adding a
+&#x27;weightClass&#x27; customParameter.
+
+
+</pre>
+
+* 🍞 **PASS** OS/2 usWeightClass is good
 
 </details>
 <details>
@@ -52574,20 +55009,12 @@ Even though the OpenType spec allows unitsPerEm to be any value between 16 and
 The spec suggests usage of powers of two in order to get some performance
 improvements on legacy renderers, so those values are acceptable.
 
-But value of 500 or 1000 are also acceptable, with the added benefit that it
+But values of 500 or 1000 are also acceptable, with the added benefit that it
 makes upm math easier for designers, while the performance hit of not using a
 power of two is most likely negligible nowadays.
 
-Another acceptable value is 2000. Since TT outlines are all integers (no
-floats), then instances in a VF suffer rounding compromises, and therefore a
-1000 UPM is too small because it forces too many such compromises.
-
-Therefore 2000 is a good &#x27;new VF standard&#x27;, because 2000 is a simple 2x
-conversion from existing fonts drawn on a 1000 UPM, and anyone who knows what
-10 units can do for 1000 UPM will know what 20 units does too.
-
-Additionally, values above 2048 would result in filesize increases with not
-much added benefit.
+Additionally, values above 2048 would likely result in unreasonable filesize
+increases.
 
 
 </pre>
@@ -52813,6 +55240,28 @@ release files, but Google Fonts should only have OpenType tables.
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+<pre>--- Rationale ---
+
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Combined length of family and style must not exceed 27 characters.</summary>
 
 * [com.google.fonts/check/name/family_and_style_max_length](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length)
@@ -52883,11 +55332,73 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> A font repository should not include fontbakery report files</summary>
+
+* [com.google.fonts/check/repo/fb_report](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/fb_report)
+<pre>--- Rationale ---
+
+A FontBakery report is ephemeral and so should be used for posting issues on a
+bug-tracker instead of being hosted in the font project repository.
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> A font repository should not include ZIP files</summary>
+
+* [com.google.fonts/check/repo/zip_files](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/zip_files)
+<pre>--- Rationale ---
+
+Sometimes people check in ZIPs into their font project repositories. While we
+accept the practice of checking in binaries, we believe that a ZIP is a step
+too far ;)
+
+Note: a source purist position is that only source files and build scripts
+should be checked in. 
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Name table records must not have trailing spaces.</summary>
 
 * [com.google.fonts/check/name/trailing_spaces](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/name/trailing_spaces)
 
 * 🍞 **PASS** No trailing spaces on name table entries.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+<pre>--- Rationale ---
+
+A font&#x27;s winAscent and winDescent values should be greater than the head
+table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
+can occur on Windows platforms
+(https://github.com/RedHatBrand/Overpass/issues/33).
+
+If the font includes tall/deep writing systems such as Arabic or Devanagari,
+the winAscent and winDescent can be greater than the yMax and abs(yMin) to
+accommodate vowel marks.
+
+When the win Metrics are significantly greater than the upm, the linespacing
+can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
+(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
+This means the font developer can control the linespacing with the typo values,
+whilst avoiding clipping by setting the win values to values greater than the
+yMax and abs(yMin).
+
+
+</pre>
+
+* 🍞 **PASS** OS/2 usWinAscent & usWinDescent values look good!
 
 </details>
 <details>
@@ -52956,8 +55467,15 @@ space glyph. This might have been relevant for applications on MacOS 9.
 <summary>🍞 <b>PASS:</b> Font has **proper** whitespace glyph names?</summary>
 
 * [com.google.fonts/check/whitespace_glyphnames](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/whitespace_glyphnames)
+<pre>--- Rationale ---
 
-* 🍞 **PASS** Font has **proper** whitespace glyph names.
+This check enforces adherence to recommended whitespace (codepoints 0020 and
+00A0) glyph names according to the Adobe Glyph List.
+
+
+</pre>
+
+* 🍞 **PASS** Font has **AGL recommended** names for whitespace glyphs.
 
 </details>
 <details>
@@ -53180,7 +55698,7 @@ apps.
 <pre>--- Rationale ---
 
 There are various metadata in the OpenType spec to specify if a font is
-monospaced or not. If the font is not trully monospaced, then no monospaced
+monospaced or not. If the font is not truly monospaced, then no monospaced
 metadata should be set (as sometimes they mistakenly are...)
 
 Requirements for monospace fonts:
@@ -53311,15 +55829,45 @@ Reference: https://github.com/googlefonts/fontbakery/issues/1845
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class)</summary>
+
+* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
+<pre>--- Rationale ---
+
+Glyphs in the GDEF mark glyph class should be non-spacing.
+Spacing glyphs in the GDEF mark glyph class may have incorrect anchor
+positioning that was only intended for building composite glyphs during design.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not has spacing glyphs in the GDEF mark glyph class.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class</summary>
+
+* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
+<pre>--- Rationale ---
+
+Mark characters should be in the GDEF mark glyph class.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not have mark characters not in the GDEF mark glyph class.
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Check GDEF mark glyph class doesn't have characters that are not marks)</summary>
 
 * [com.google.fonts/check/gdef_non_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars)
 <pre>--- Rationale ---
 
-Glyphs in the GDEF mark glyph class become non-spacing and may be
-repositioned if they have mark anchors. Only combining mark glyphs
-should be in that class. Any non-mark glyph must not be in that class,
-in particular spacing glyphs.
+Glyphs in the GDEF mark glyph class become non-spacing and may be repositioned
+if they have mark anchors.
+Only combining mark glyphs should be in that class. Any non-mark glyph must not
+be in that class, in particular spacing glyphs.
 
 
 </pre>
@@ -53403,63 +55951,7 @@ the same x,y coordinates.
 <br>
 </details>
 <details>
-<summary><b>[158] GeologicaSharp-ExtraBold.ttf</b></summary>
-<details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
-
-This can be accomplished by using the 'gftools fix-hinting' command.
-
-# create virtualenvpython3 -m venv venv
-# activate virtualenvsource venv/bin/activate
-# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-
-A font&#x27;s winAscent and winDescent values should be greater than the head
-table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
-can occur on Windows platforms
-(https://github.com/RedHatBrand/Overpass/issues/33).
-
-If the font includes tall/deep writing systems such as Arabic or Devanagari,
-the winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-
-When the win Metrics are significantly greater than the upm, the linespacing
-can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
-This means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).
-
-
-</pre>
-
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 895, but got 746 instead [code: descent]
-
-</details>
+<summary><b>[163] GeologicaSharp-ExtraBold.ttf</b></summary>
 <details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
@@ -53514,32 +56006,32 @@ Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uhorn	Contours detected: 2	Expected: 1
 Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
 Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1 [code: contour-count]
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
 
 </details>
 <details>
@@ -53571,39 +56063,6 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 </details>
 <details>
-<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class)</summary>
-
-* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
-<pre>--- Rationale ---
-
-Glyphs in the GDEF mark glyph class should be non-spacing.
-Spacing glyphs in the GDEF mark glyph class may have incorrect
-anchor positioning that was only intended for building composite glyphs
-during design.
-
-
-</pre>
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 acutecomb, acutecomb.case, acutecomb.narrow, brevecombcy, dotbelowcomb, gravecomb, gravecomb.case, gravecomb.narrow, hookabovecomb, hookabovecomb.case and 55 more. [code: spacing-mark-glyphs]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class</summary>
-
-* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
-<pre>--- Rationale ---
-
-Mark characters should be in the GDEF mark glyph class.
-
-
-</pre>
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 U+0300, U+0301, U+0302, U+0303, U+0304, U+0306, U+0307, U+0308, U+0309, U+030A, U+030B, U+030C, U+030F, U+0311, U+0312, U+031B, U+0323, U+0324, U+0326, U+0327, U+0328, U+032E, U+0331 and U+0335 [code: mark-chars]
-
-</details>
-<details>
 <summary>💤 <b>SKIP:</b> Does DESCRIPTION file contain broken links?</summary>
 
 * [com.google.fonts/check/description/broken_links](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/broken_links)
@@ -53611,12 +56070,12 @@ Mark characters should be in the GDEF mark glyph class.
 
 The snippet of HTML in the DESCRIPTION.en_us.html file is added to the font
 family webpage on the Google Fonts website. For that reason, all hyperlinks in
-it must be properly working. 
+it must be properly working.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -53639,7 +56098,7 @@ any other git-based version control service.
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -53648,17 +56107,19 @@ any other git-based version control service.
 * [com.google.fonts/check/description/valid_html](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/valid_html)
 <pre>--- Rationale ---
 
-When packaging families for being pushed to the `google/fonts` git repo, if
-there is no DESCRIPTION.en_us.html file, some older versions of the
-`add_font.py` tool insert a dummy description file which contains invalid html.
+Sometimes people write malformed HTML markup. This check should ensure the file
+is good.
 
-This file needs to either be replaced with an existing description file or
-edited by hand.
+Additionally, when packaging families for being pushed to the `google/fonts`
+git repo, if there is no DESCRIPTION.en_us.html file, some older versions of
+the `add_font.py` tool insert a dummy description file which contains invalid
+html. This file needs to either be replaced with an existing description file
+or edited by hand.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: descfile
+* 💤 **SKIP** Unfulfilled Conditions: description
 
 </details>
 <details>
@@ -53709,7 +56170,7 @@ malformed.
 
 </pre>
 
-* 💤 **SKIP** Font family at '../fonts/static/ttfs' lacks a METADATA.pb file.
+* 💤 **SKIP** Font family at '../fonts/static/ttfs' lacks a METADATA.pb file. [code: file-not-found]
 
 </details>
 <details>
@@ -53778,6 +56239,28 @@ match exactly those declared on the METADATA.pb file.
 
 Also, to avoid confusion, we expect that font files (other than statics) are
 not placed on subdirectories.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: family_metadata
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure METADATA.pb category field is valid.</summary>
+
+* [com.google.fonts/check/metadata/category](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/category)
+<pre>--- Rationale ---
+
+There are only five acceptable values for the category field in a METADATA.pb
+file:
+- MONOSPACE
+- SANS_SERIF
+- SERIF
+- DISPLAY
+- HANDWRITING
+
+This check is meant to avoid typos in this field.
 
 
 </pre>
@@ -54072,15 +56555,28 @@ We may want to merge them all into a single check.
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Checking OS/2 usWeightClass matches weight specified at METADATA.pb.</summary>
+<summary>💤 <b>SKIP:</b> Check METADATA.pb font weights are correct.</summary>
 
 * [com.google.fonts/check/metadata/os2_weightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/os2_weightclass)
+<pre>--- Rationale ---
+
+Check METADATA.pb font weights are correct.
+
+For static fonts, the metadata weight should be the same
+as the static font&#x27;s OS/2 usWeightClass.
+
+For variable fonts, the weight value should be 400 if the
+font&#x27;s wght axis range includes 400, otherwise it should be the
+value closest to 400.
+
+
+</pre>
 
 * 💤 **SKIP** Unfulfilled Conditions: font_metadata
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName.</summary>
+<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName for static fonts.</summary>
 
 * [com.google.fonts/check/metadata/match_weight_postscript](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/match_weight_postscript)
 
@@ -54224,6 +56720,10 @@ All ligatures in a font must have corresponding caret (text cursor) positions
 defined in the GDEF table, otherwhise, users may experience issues with caret
 rendering.
 
+If using GlyphsApp, ligature carets can be set directly on canvas by accessing
+the `Glyph -&gt; Set Anchors` menu option or by pressing the `Cmd+U` keyboard
+shortcut.
+
 
 </pre>
 
@@ -54301,6 +56801,25 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Check font follows the Google Fonts CJK vertical metric schema</summary>
+
+* [com.google.fonts/check/cjk_vertical_metrics](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/cjk_vertical_metrics)
+<pre>--- Rationale ---
+
+CJK fonts have different vertical metrics when compared to Latin fonts. We
+follow the schema developed by dr Ken Lunde for Source Han Sans and the Noto
+CJK fonts.
+
+Our documentation includes further information:
+https://github.com/googlefonts/gf-docs/tree/master/Spec#cjk-vertical-metrics
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_cjk_font
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Check variable font instances have correct coordinate values</summary>
 
 * [com.google.fonts/check/varfont_instance_coordinates](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont_instance_coordinates)
@@ -54317,7 +56836,7 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Ensure VFs do not contain opsz or ital axes. </summary>
+<summary>💤 <b>SKIP:</b> Ensure VFs do not contain slnt or ital axes. </summary>
 
 * [com.google.fonts/check/varfont/unsupported_axes](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont/unsupported_axes)
 <pre>--- Rationale ---
@@ -54378,6 +56897,21 @@ result in WARNs.
 </pre>
 
 * 💤 **SKIP** Sibling families were not detected.
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure indic fonts have the Indian Rupee Sign glyph. </summary>
+
+* [com.google.fonts/check/rupee](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/rupee)
+<pre>--- Rationale ---
+
+Per Bureau of Indian Standards every font supporting one of the official Indian
+languages needs to include Unicode Character “₹” (U+20B9) Indian Rupee Sign.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_indic_font
 
 </details>
 <details>
@@ -54615,10 +57149,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/GeologicaSharp-ExtraBold.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 126.1kb |
-	| Hinted Size | 161.5kb |
-	| Increase | 35.5kb |
-	| Change   | 28.2 % |
+	| Dehinted Size | 126.3kb |
+	| Hinted Size | 162.2kb |
+	| Increase | 35.9kb |
+	| Change   | 28.4 % |
  [code: size-impact]
 
 </details>
@@ -54710,7 +57244,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [GPOS, gasp, cvt , loca, prep, GSUB, fpgm, DSIG]
+* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, GPOS, DSIG, gasp, prep, loca, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -54833,8 +57367,25 @@ set of characters defined in the `GF-latin-core` glyph-set.
 <summary>🍞 <b>PASS:</b> Checking OS/2 usWeightClass.</summary>
 
 * [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
+<pre>--- Rationale ---
 
-* 🍞 **PASS** OS/2 usWeightClass value looks good!
+Google Fonts expects variable fonts, static ttfs and static otfs to have
+differing OS/2 usWeightClass values.
+
+For Variable Fonts, Thin-Black must be 100-900
+For static ttfs, Thin-Black can be 100-900 or 250-900
+For static otfs, Thin-Black must be 250-900
+
+If static otfs are set lower than 250, text may appear blurry in legacy Windows
+applications.
+
+Glyphsapp users can change the usWeightClass value of an instance by adding a
+&#x27;weightClass&#x27; customParameter.
+
+
+</pre>
+
+* 🍞 **PASS** OS/2 usWeightClass is good
 
 </details>
 <details>
@@ -55020,20 +57571,12 @@ Even though the OpenType spec allows unitsPerEm to be any value between 16 and
 The spec suggests usage of powers of two in order to get some performance
 improvements on legacy renderers, so those values are acceptable.
 
-But value of 500 or 1000 are also acceptable, with the added benefit that it
+But values of 500 or 1000 are also acceptable, with the added benefit that it
 makes upm math easier for designers, while the performance hit of not using a
 power of two is most likely negligible nowadays.
 
-Another acceptable value is 2000. Since TT outlines are all integers (no
-floats), then instances in a VF suffer rounding compromises, and therefore a
-1000 UPM is too small because it forces too many such compromises.
-
-Therefore 2000 is a good &#x27;new VF standard&#x27;, because 2000 is a simple 2x
-conversion from existing fonts drawn on a 1000 UPM, and anyone who knows what
-10 units can do for 1000 UPM will know what 20 units does too.
-
-Additionally, values above 2048 would result in filesize increases with not
-much added benefit.
+Additionally, values above 2048 would likely result in unreasonable filesize
+increases.
 
 
 </pre>
@@ -55259,6 +57802,28 @@ release files, but Google Fonts should only have OpenType tables.
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+<pre>--- Rationale ---
+
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Name table entries should not contain line-breaks.</summary>
 
 * [com.google.fonts/check/name/line_breaks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/line_breaks)
@@ -55304,11 +57869,73 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> A font repository should not include fontbakery report files</summary>
+
+* [com.google.fonts/check/repo/fb_report](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/fb_report)
+<pre>--- Rationale ---
+
+A FontBakery report is ephemeral and so should be used for posting issues on a
+bug-tracker instead of being hosted in the font project repository.
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> A font repository should not include ZIP files</summary>
+
+* [com.google.fonts/check/repo/zip_files](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/zip_files)
+<pre>--- Rationale ---
+
+Sometimes people check in ZIPs into their font project repositories. While we
+accept the practice of checking in binaries, we believe that a ZIP is a step
+too far ;)
+
+Note: a source purist position is that only source files and build scripts
+should be checked in. 
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Name table records must not have trailing spaces.</summary>
 
 * [com.google.fonts/check/name/trailing_spaces](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/name/trailing_spaces)
 
 * 🍞 **PASS** No trailing spaces on name table entries.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+<pre>--- Rationale ---
+
+A font&#x27;s winAscent and winDescent values should be greater than the head
+table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
+can occur on Windows platforms
+(https://github.com/RedHatBrand/Overpass/issues/33).
+
+If the font includes tall/deep writing systems such as Arabic or Devanagari,
+the winAscent and winDescent can be greater than the yMax and abs(yMin) to
+accommodate vowel marks.
+
+When the win Metrics are significantly greater than the upm, the linespacing
+can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
+(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
+This means the font developer can control the linespacing with the typo values,
+whilst avoiding clipping by setting the win values to values greater than the
+yMax and abs(yMin).
+
+
+</pre>
+
+* 🍞 **PASS** OS/2 usWinAscent & usWinDescent values look good!
 
 </details>
 <details>
@@ -55377,8 +58004,15 @@ space glyph. This might have been relevant for applications on MacOS 9.
 <summary>🍞 <b>PASS:</b> Font has **proper** whitespace glyph names?</summary>
 
 * [com.google.fonts/check/whitespace_glyphnames](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/whitespace_glyphnames)
+<pre>--- Rationale ---
 
-* 🍞 **PASS** Font has **proper** whitespace glyph names.
+This check enforces adherence to recommended whitespace (codepoints 0020 and
+00A0) glyph names according to the Adobe Glyph List.
+
+
+</pre>
+
+* 🍞 **PASS** Font has **AGL recommended** names for whitespace glyphs.
 
 </details>
 <details>
@@ -55601,7 +58235,7 @@ apps.
 <pre>--- Rationale ---
 
 There are various metadata in the OpenType spec to specify if a font is
-monospaced or not. If the font is not trully monospaced, then no monospaced
+monospaced or not. If the font is not truly monospaced, then no monospaced
 metadata should be set (as sometimes they mistakenly are...)
 
 Requirements for monospace fonts:
@@ -55732,15 +58366,45 @@ Reference: https://github.com/googlefonts/fontbakery/issues/1845
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class)</summary>
+
+* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
+<pre>--- Rationale ---
+
+Glyphs in the GDEF mark glyph class should be non-spacing.
+Spacing glyphs in the GDEF mark glyph class may have incorrect anchor
+positioning that was only intended for building composite glyphs during design.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not has spacing glyphs in the GDEF mark glyph class.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class</summary>
+
+* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
+<pre>--- Rationale ---
+
+Mark characters should be in the GDEF mark glyph class.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not have mark characters not in the GDEF mark glyph class.
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Check GDEF mark glyph class doesn't have characters that are not marks)</summary>
 
 * [com.google.fonts/check/gdef_non_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars)
 <pre>--- Rationale ---
 
-Glyphs in the GDEF mark glyph class become non-spacing and may be
-repositioned if they have mark anchors. Only combining mark glyphs
-should be in that class. Any non-mark glyph must not be in that class,
-in particular spacing glyphs.
+Glyphs in the GDEF mark glyph class become non-spacing and may be repositioned
+if they have mark anchors.
+Only combining mark glyphs should be in that class. Any non-mark glyph must not
+be in that class, in particular spacing glyphs.
 
 
 </pre>
@@ -55824,63 +58488,7 @@ the same x,y coordinates.
 <br>
 </details>
 <details>
-<summary><b>[158] GeologicaSharp-ExtraBoldItalic.ttf</b></summary>
-<details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
-
-This can be accomplished by using the 'gftools fix-hinting' command.
-
-# create virtualenvpython3 -m venv venv
-# activate virtualenvsource venv/bin/activate
-# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-
-A font&#x27;s winAscent and winDescent values should be greater than the head
-table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
-can occur on Windows platforms
-(https://github.com/RedHatBrand/Overpass/issues/33).
-
-If the font includes tall/deep writing systems such as Arabic or Devanagari,
-the winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-
-When the win Metrics are significantly greater than the upm, the linespacing
-can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
-This means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).
-
-
-</pre>
-
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 895, but got 746 instead [code: descent]
-
-</details>
+<summary><b>[163] GeologicaSharp-ExtraBoldItalic.ttf</b></summary>
 <details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
@@ -55935,32 +58543,32 @@ Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uhorn	Contours detected: 2	Expected: 1
 Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
 Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1 [code: contour-count]
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
 
 </details>
 <details>
@@ -55992,39 +58600,6 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 </details>
 <details>
-<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class)</summary>
-
-* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
-<pre>--- Rationale ---
-
-Glyphs in the GDEF mark glyph class should be non-spacing.
-Spacing glyphs in the GDEF mark glyph class may have incorrect
-anchor positioning that was only intended for building composite glyphs
-during design.
-
-
-</pre>
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 acutecomb, acutecomb.case, acutecomb.narrow, brevecombcy, dotbelowcomb, gravecomb, gravecomb.case, gravecomb.narrow, hookabovecomb, hookabovecomb.case and 55 more. [code: spacing-mark-glyphs]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class</summary>
-
-* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
-<pre>--- Rationale ---
-
-Mark characters should be in the GDEF mark glyph class.
-
-
-</pre>
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 U+0300, U+0301, U+0302, U+0303, U+0304, U+0306, U+0307, U+0308, U+0309, U+030A, U+030B, U+030C, U+030F, U+0311, U+0312, U+031B, U+0323, U+0324, U+0326, U+0327, U+0328, U+032E, U+0331 and U+0335 [code: mark-chars]
-
-</details>
-<details>
 <summary>💤 <b>SKIP:</b> Does DESCRIPTION file contain broken links?</summary>
 
 * [com.google.fonts/check/description/broken_links](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/broken_links)
@@ -56032,12 +58607,12 @@ Mark characters should be in the GDEF mark glyph class.
 
 The snippet of HTML in the DESCRIPTION.en_us.html file is added to the font
 family webpage on the Google Fonts website. For that reason, all hyperlinks in
-it must be properly working. 
+it must be properly working.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -56060,7 +58635,7 @@ any other git-based version control service.
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -56069,17 +58644,19 @@ any other git-based version control service.
 * [com.google.fonts/check/description/valid_html](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/valid_html)
 <pre>--- Rationale ---
 
-When packaging families for being pushed to the `google/fonts` git repo, if
-there is no DESCRIPTION.en_us.html file, some older versions of the
-`add_font.py` tool insert a dummy description file which contains invalid html.
+Sometimes people write malformed HTML markup. This check should ensure the file
+is good.
 
-This file needs to either be replaced with an existing description file or
-edited by hand.
+Additionally, when packaging families for being pushed to the `google/fonts`
+git repo, if there is no DESCRIPTION.en_us.html file, some older versions of
+the `add_font.py` tool insert a dummy description file which contains invalid
+html. This file needs to either be replaced with an existing description file
+or edited by hand.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: descfile
+* 💤 **SKIP** Unfulfilled Conditions: description
 
 </details>
 <details>
@@ -56130,7 +58707,7 @@ malformed.
 
 </pre>
 
-* 💤 **SKIP** Font family at '../fonts/static/ttfs' lacks a METADATA.pb file.
+* 💤 **SKIP** Font family at '../fonts/static/ttfs' lacks a METADATA.pb file. [code: file-not-found]
 
 </details>
 <details>
@@ -56199,6 +58776,28 @@ match exactly those declared on the METADATA.pb file.
 
 Also, to avoid confusion, we expect that font files (other than statics) are
 not placed on subdirectories.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: family_metadata
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure METADATA.pb category field is valid.</summary>
+
+* [com.google.fonts/check/metadata/category](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/category)
+<pre>--- Rationale ---
+
+There are only five acceptable values for the category field in a METADATA.pb
+file:
+- MONOSPACE
+- SANS_SERIF
+- SERIF
+- DISPLAY
+- HANDWRITING
+
+This check is meant to avoid typos in this field.
 
 
 </pre>
@@ -56493,15 +59092,28 @@ We may want to merge them all into a single check.
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Checking OS/2 usWeightClass matches weight specified at METADATA.pb.</summary>
+<summary>💤 <b>SKIP:</b> Check METADATA.pb font weights are correct.</summary>
 
 * [com.google.fonts/check/metadata/os2_weightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/os2_weightclass)
+<pre>--- Rationale ---
+
+Check METADATA.pb font weights are correct.
+
+For static fonts, the metadata weight should be the same
+as the static font&#x27;s OS/2 usWeightClass.
+
+For variable fonts, the weight value should be 400 if the
+font&#x27;s wght axis range includes 400, otherwise it should be the
+value closest to 400.
+
+
+</pre>
 
 * 💤 **SKIP** Unfulfilled Conditions: font_metadata
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName.</summary>
+<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName for static fonts.</summary>
 
 * [com.google.fonts/check/metadata/match_weight_postscript](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/match_weight_postscript)
 
@@ -56645,6 +59257,10 @@ All ligatures in a font must have corresponding caret (text cursor) positions
 defined in the GDEF table, otherwhise, users may experience issues with caret
 rendering.
 
+If using GlyphsApp, ligature carets can be set directly on canvas by accessing
+the `Glyph -&gt; Set Anchors` menu option or by pressing the `Cmd+U` keyboard
+shortcut.
+
 
 </pre>
 
@@ -56722,6 +59338,25 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Check font follows the Google Fonts CJK vertical metric schema</summary>
+
+* [com.google.fonts/check/cjk_vertical_metrics](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/cjk_vertical_metrics)
+<pre>--- Rationale ---
+
+CJK fonts have different vertical metrics when compared to Latin fonts. We
+follow the schema developed by dr Ken Lunde for Source Han Sans and the Noto
+CJK fonts.
+
+Our documentation includes further information:
+https://github.com/googlefonts/gf-docs/tree/master/Spec#cjk-vertical-metrics
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_cjk_font
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Check variable font instances have correct coordinate values</summary>
 
 * [com.google.fonts/check/varfont_instance_coordinates](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont_instance_coordinates)
@@ -56738,7 +59373,7 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Ensure VFs do not contain opsz or ital axes. </summary>
+<summary>💤 <b>SKIP:</b> Ensure VFs do not contain slnt or ital axes. </summary>
 
 * [com.google.fonts/check/varfont/unsupported_axes](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont/unsupported_axes)
 <pre>--- Rationale ---
@@ -56799,6 +59434,21 @@ result in WARNs.
 </pre>
 
 * 💤 **SKIP** Sibling families were not detected.
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure indic fonts have the Indian Rupee Sign glyph. </summary>
+
+* [com.google.fonts/check/rupee](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/rupee)
+<pre>--- Rationale ---
+
+Per Bureau of Indian Standards every font supporting one of the official Indian
+languages needs to include Unicode Character “₹” (U+20B9) Indian Rupee Sign.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_indic_font
 
 </details>
 <details>
@@ -57036,10 +59686,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/GeologicaSharp-ExtraBoldItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 127.4kb |
-	| Hinted Size | 162.6kb |
-	| Increase | 35.2kb |
-	| Change   | 27.6 % |
+	| Dehinted Size | 127.7kb |
+	| Hinted Size | 163.3kb |
+	| Increase | 35.6kb |
+	| Change   | 27.9 % |
  [code: size-impact]
 
 </details>
@@ -57131,7 +59781,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [GPOS, gasp, cvt , loca, prep, GSUB, fpgm, DSIG]
+* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, GPOS, DSIG, gasp, prep, loca, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -57254,8 +59904,25 @@ set of characters defined in the `GF-latin-core` glyph-set.
 <summary>🍞 <b>PASS:</b> Checking OS/2 usWeightClass.</summary>
 
 * [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
+<pre>--- Rationale ---
 
-* 🍞 **PASS** OS/2 usWeightClass value looks good!
+Google Fonts expects variable fonts, static ttfs and static otfs to have
+differing OS/2 usWeightClass values.
+
+For Variable Fonts, Thin-Black must be 100-900
+For static ttfs, Thin-Black can be 100-900 or 250-900
+For static otfs, Thin-Black must be 250-900
+
+If static otfs are set lower than 250, text may appear blurry in legacy Windows
+applications.
+
+Glyphsapp users can change the usWeightClass value of an instance by adding a
+&#x27;weightClass&#x27; customParameter.
+
+
+</pre>
+
+* 🍞 **PASS** OS/2 usWeightClass is good
 
 </details>
 <details>
@@ -57441,20 +60108,12 @@ Even though the OpenType spec allows unitsPerEm to be any value between 16 and
 The spec suggests usage of powers of two in order to get some performance
 improvements on legacy renderers, so those values are acceptable.
 
-But value of 500 or 1000 are also acceptable, with the added benefit that it
+But values of 500 or 1000 are also acceptable, with the added benefit that it
 makes upm math easier for designers, while the performance hit of not using a
 power of two is most likely negligible nowadays.
 
-Another acceptable value is 2000. Since TT outlines are all integers (no
-floats), then instances in a VF suffer rounding compromises, and therefore a
-1000 UPM is too small because it forces too many such compromises.
-
-Therefore 2000 is a good &#x27;new VF standard&#x27;, because 2000 is a simple 2x
-conversion from existing fonts drawn on a 1000 UPM, and anyone who knows what
-10 units can do for 1000 UPM will know what 20 units does too.
-
-Additionally, values above 2048 would result in filesize increases with not
-much added benefit.
+Additionally, values above 2048 would likely result in unreasonable filesize
+increases.
 
 
 </pre>
@@ -57680,6 +60339,28 @@ release files, but Google Fonts should only have OpenType tables.
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+<pre>--- Rationale ---
+
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Name table entries should not contain line-breaks.</summary>
 
 * [com.google.fonts/check/name/line_breaks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/line_breaks)
@@ -57725,11 +60406,73 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> A font repository should not include fontbakery report files</summary>
+
+* [com.google.fonts/check/repo/fb_report](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/fb_report)
+<pre>--- Rationale ---
+
+A FontBakery report is ephemeral and so should be used for posting issues on a
+bug-tracker instead of being hosted in the font project repository.
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> A font repository should not include ZIP files</summary>
+
+* [com.google.fonts/check/repo/zip_files](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/zip_files)
+<pre>--- Rationale ---
+
+Sometimes people check in ZIPs into their font project repositories. While we
+accept the practice of checking in binaries, we believe that a ZIP is a step
+too far ;)
+
+Note: a source purist position is that only source files and build scripts
+should be checked in. 
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Name table records must not have trailing spaces.</summary>
 
 * [com.google.fonts/check/name/trailing_spaces](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/name/trailing_spaces)
 
 * 🍞 **PASS** No trailing spaces on name table entries.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+<pre>--- Rationale ---
+
+A font&#x27;s winAscent and winDescent values should be greater than the head
+table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
+can occur on Windows platforms
+(https://github.com/RedHatBrand/Overpass/issues/33).
+
+If the font includes tall/deep writing systems such as Arabic or Devanagari,
+the winAscent and winDescent can be greater than the yMax and abs(yMin) to
+accommodate vowel marks.
+
+When the win Metrics are significantly greater than the upm, the linespacing
+can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
+(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
+This means the font developer can control the linespacing with the typo values,
+whilst avoiding clipping by setting the win values to values greater than the
+yMax and abs(yMin).
+
+
+</pre>
+
+* 🍞 **PASS** OS/2 usWinAscent & usWinDescent values look good!
 
 </details>
 <details>
@@ -57798,8 +60541,15 @@ space glyph. This might have been relevant for applications on MacOS 9.
 <summary>🍞 <b>PASS:</b> Font has **proper** whitespace glyph names?</summary>
 
 * [com.google.fonts/check/whitespace_glyphnames](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/whitespace_glyphnames)
+<pre>--- Rationale ---
 
-* 🍞 **PASS** Font has **proper** whitespace glyph names.
+This check enforces adherence to recommended whitespace (codepoints 0020 and
+00A0) glyph names according to the Adobe Glyph List.
+
+
+</pre>
+
+* 🍞 **PASS** Font has **AGL recommended** names for whitespace glyphs.
 
 </details>
 <details>
@@ -58022,7 +60772,7 @@ apps.
 <pre>--- Rationale ---
 
 There are various metadata in the OpenType spec to specify if a font is
-monospaced or not. If the font is not trully monospaced, then no monospaced
+monospaced or not. If the font is not truly monospaced, then no monospaced
 metadata should be set (as sometimes they mistakenly are...)
 
 Requirements for monospace fonts:
@@ -58153,15 +60903,45 @@ Reference: https://github.com/googlefonts/fontbakery/issues/1845
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class)</summary>
+
+* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
+<pre>--- Rationale ---
+
+Glyphs in the GDEF mark glyph class should be non-spacing.
+Spacing glyphs in the GDEF mark glyph class may have incorrect anchor
+positioning that was only intended for building composite glyphs during design.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not has spacing glyphs in the GDEF mark glyph class.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class</summary>
+
+* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
+<pre>--- Rationale ---
+
+Mark characters should be in the GDEF mark glyph class.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not have mark characters not in the GDEF mark glyph class.
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Check GDEF mark glyph class doesn't have characters that are not marks)</summary>
 
 * [com.google.fonts/check/gdef_non_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars)
 <pre>--- Rationale ---
 
-Glyphs in the GDEF mark glyph class become non-spacing and may be
-repositioned if they have mark anchors. Only combining mark glyphs
-should be in that class. Any non-mark glyph must not be in that class,
-in particular spacing glyphs.
+Glyphs in the GDEF mark glyph class become non-spacing and may be repositioned
+if they have mark anchors.
+Only combining mark glyphs should be in that class. Any non-mark glyph must not
+be in that class, in particular spacing glyphs.
 
 
 </pre>
@@ -58245,71 +61025,7 @@ the same x,y coordinates.
 <br>
 </details>
 <details>
-<summary><b>[158] GeologicaSharp-ExtraLight.ttf</b></summary>
-<details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
-
-This can be accomplished by using the 'gftools fix-hinting' command.
-
-# create virtualenvpython3 -m venv venv
-# activate virtualenvsource venv/bin/activate
-# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-
-A font&#x27;s winAscent and winDescent values should be greater than the head
-table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
-can occur on Windows platforms
-(https://github.com/RedHatBrand/Overpass/issues/33).
-
-If the font includes tall/deep writing systems such as Arabic or Devanagari,
-the winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-
-When the win Metrics are significantly greater than the upm, the linespacing
-can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
-This means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).
-
-
-</pre>
-
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 895, but got 746 instead [code: descent]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Checking OS/2 usWeightClass.</summary>
-
-* [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
-
-* ⚠ **WARN** ExtraLight:200 is OK on TTFs, but OTF files with those values will cause bluring on Windows. GlyphsApp users must set an Instance Custom Parameter for the Thin and ExtraLight styles to 250 and 275, so that if OTFs are exported then it will not blur on Windows. [code: blur-on-windows]
-
-</details>
+<summary><b>[163] GeologicaSharp-ExtraLight.ttf</b></summary>
 <details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
@@ -58363,31 +61079,31 @@ Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uhorn	Contours detected: 2	Expected: 1
 Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
 Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1 [code: contour-count]
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
 
 </details>
 <details>
@@ -58419,39 +61135,6 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 </details>
 <details>
-<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class)</summary>
-
-* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
-<pre>--- Rationale ---
-
-Glyphs in the GDEF mark glyph class should be non-spacing.
-Spacing glyphs in the GDEF mark glyph class may have incorrect
-anchor positioning that was only intended for building composite glyphs
-during design.
-
-
-</pre>
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 acutecomb, acutecomb.case, acutecomb.narrow, brevecombcy, dotbelowcomb, gravecomb, gravecomb.case, gravecomb.narrow, hookabovecomb, hookabovecomb.case and 55 more. [code: spacing-mark-glyphs]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class</summary>
-
-* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
-<pre>--- Rationale ---
-
-Mark characters should be in the GDEF mark glyph class.
-
-
-</pre>
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 U+0300, U+0301, U+0302, U+0303, U+0304, U+0306, U+0307, U+0308, U+0309, U+030A, U+030B, U+030C, U+030F, U+0311, U+0312, U+031B, U+0323, U+0324, U+0326, U+0327, U+0328, U+032E, U+0331 and U+0335 [code: mark-chars]
-
-</details>
-<details>
 <summary>💤 <b>SKIP:</b> Does DESCRIPTION file contain broken links?</summary>
 
 * [com.google.fonts/check/description/broken_links](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/broken_links)
@@ -58459,12 +61142,12 @@ Mark characters should be in the GDEF mark glyph class.
 
 The snippet of HTML in the DESCRIPTION.en_us.html file is added to the font
 family webpage on the Google Fonts website. For that reason, all hyperlinks in
-it must be properly working. 
+it must be properly working.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -58487,7 +61170,7 @@ any other git-based version control service.
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -58496,17 +61179,19 @@ any other git-based version control service.
 * [com.google.fonts/check/description/valid_html](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/valid_html)
 <pre>--- Rationale ---
 
-When packaging families for being pushed to the `google/fonts` git repo, if
-there is no DESCRIPTION.en_us.html file, some older versions of the
-`add_font.py` tool insert a dummy description file which contains invalid html.
+Sometimes people write malformed HTML markup. This check should ensure the file
+is good.
 
-This file needs to either be replaced with an existing description file or
-edited by hand.
+Additionally, when packaging families for being pushed to the `google/fonts`
+git repo, if there is no DESCRIPTION.en_us.html file, some older versions of
+the `add_font.py` tool insert a dummy description file which contains invalid
+html. This file needs to either be replaced with an existing description file
+or edited by hand.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: descfile
+* 💤 **SKIP** Unfulfilled Conditions: description
 
 </details>
 <details>
@@ -58557,7 +61242,7 @@ malformed.
 
 </pre>
 
-* 💤 **SKIP** Font family at '../fonts/static/ttfs' lacks a METADATA.pb file.
+* 💤 **SKIP** Font family at '../fonts/static/ttfs' lacks a METADATA.pb file. [code: file-not-found]
 
 </details>
 <details>
@@ -58626,6 +61311,28 @@ match exactly those declared on the METADATA.pb file.
 
 Also, to avoid confusion, we expect that font files (other than statics) are
 not placed on subdirectories.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: family_metadata
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure METADATA.pb category field is valid.</summary>
+
+* [com.google.fonts/check/metadata/category](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/category)
+<pre>--- Rationale ---
+
+There are only five acceptable values for the category field in a METADATA.pb
+file:
+- MONOSPACE
+- SANS_SERIF
+- SERIF
+- DISPLAY
+- HANDWRITING
+
+This check is meant to avoid typos in this field.
 
 
 </pre>
@@ -58920,15 +61627,28 @@ We may want to merge them all into a single check.
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Checking OS/2 usWeightClass matches weight specified at METADATA.pb.</summary>
+<summary>💤 <b>SKIP:</b> Check METADATA.pb font weights are correct.</summary>
 
 * [com.google.fonts/check/metadata/os2_weightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/os2_weightclass)
+<pre>--- Rationale ---
+
+Check METADATA.pb font weights are correct.
+
+For static fonts, the metadata weight should be the same
+as the static font&#x27;s OS/2 usWeightClass.
+
+For variable fonts, the weight value should be 400 if the
+font&#x27;s wght axis range includes 400, otherwise it should be the
+value closest to 400.
+
+
+</pre>
 
 * 💤 **SKIP** Unfulfilled Conditions: font_metadata
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName.</summary>
+<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName for static fonts.</summary>
 
 * [com.google.fonts/check/metadata/match_weight_postscript](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/match_weight_postscript)
 
@@ -59072,6 +61792,10 @@ All ligatures in a font must have corresponding caret (text cursor) positions
 defined in the GDEF table, otherwhise, users may experience issues with caret
 rendering.
 
+If using GlyphsApp, ligature carets can be set directly on canvas by accessing
+the `Glyph -&gt; Set Anchors` menu option or by pressing the `Cmd+U` keyboard
+shortcut.
+
 
 </pre>
 
@@ -59149,6 +61873,25 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Check font follows the Google Fonts CJK vertical metric schema</summary>
+
+* [com.google.fonts/check/cjk_vertical_metrics](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/cjk_vertical_metrics)
+<pre>--- Rationale ---
+
+CJK fonts have different vertical metrics when compared to Latin fonts. We
+follow the schema developed by dr Ken Lunde for Source Han Sans and the Noto
+CJK fonts.
+
+Our documentation includes further information:
+https://github.com/googlefonts/gf-docs/tree/master/Spec#cjk-vertical-metrics
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_cjk_font
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Check variable font instances have correct coordinate values</summary>
 
 * [com.google.fonts/check/varfont_instance_coordinates](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont_instance_coordinates)
@@ -59165,7 +61908,7 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Ensure VFs do not contain opsz or ital axes. </summary>
+<summary>💤 <b>SKIP:</b> Ensure VFs do not contain slnt or ital axes. </summary>
 
 * [com.google.fonts/check/varfont/unsupported_axes](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont/unsupported_axes)
 <pre>--- Rationale ---
@@ -59226,6 +61969,21 @@ result in WARNs.
 </pre>
 
 * 💤 **SKIP** Sibling families were not detected.
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure indic fonts have the Indian Rupee Sign glyph. </summary>
+
+* [com.google.fonts/check/rupee](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/rupee)
+<pre>--- Rationale ---
+
+Per Bureau of Indian Standards every font supporting one of the official Indian
+languages needs to include Unicode Character “₹” (U+20B9) Indian Rupee Sign.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_indic_font
 
 </details>
 <details>
@@ -59463,10 +62221,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/GeologicaSharp-ExtraLight.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 126.4kb |
-	| Hinted Size | 154.8kb |
-	| Increase | 28.4kb |
-	| Change   | 22.5 % |
+	| Dehinted Size | 126.6kb |
+	| Hinted Size | 155.4kb |
+	| Increase | 28.8kb |
+	| Change   | 22.7 % |
  [code: size-impact]
 
 </details>
@@ -59558,7 +62316,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [GPOS, gasp, cvt , loca, prep, GSUB, fpgm, DSIG]
+* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, GPOS, DSIG, gasp, prep, loca, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -59675,6 +62433,31 @@ set of characters defined in the `GF-latin-core` glyph-set.
 * [com.google.fonts/check/name/unwanted_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars)
 
 * 🍞 **PASS** No need to substitute copyright, registered and trademark symbols in name table entries of this font.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Checking OS/2 usWeightClass.</summary>
+
+* [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
+<pre>--- Rationale ---
+
+Google Fonts expects variable fonts, static ttfs and static otfs to have
+differing OS/2 usWeightClass values.
+
+For Variable Fonts, Thin-Black must be 100-900
+For static ttfs, Thin-Black can be 100-900 or 250-900
+For static otfs, Thin-Black must be 250-900
+
+If static otfs are set lower than 250, text may appear blurry in legacy Windows
+applications.
+
+Glyphsapp users can change the usWeightClass value of an instance by adding a
+&#x27;weightClass&#x27; customParameter.
+
+
+</pre>
+
+* 🍞 **PASS** OS/2 usWeightClass is good
 
 </details>
 <details>
@@ -59860,20 +62643,12 @@ Even though the OpenType spec allows unitsPerEm to be any value between 16 and
 The spec suggests usage of powers of two in order to get some performance
 improvements on legacy renderers, so those values are acceptable.
 
-But value of 500 or 1000 are also acceptable, with the added benefit that it
+But values of 500 or 1000 are also acceptable, with the added benefit that it
 makes upm math easier for designers, while the performance hit of not using a
 power of two is most likely negligible nowadays.
 
-Another acceptable value is 2000. Since TT outlines are all integers (no
-floats), then instances in a VF suffer rounding compromises, and therefore a
-1000 UPM is too small because it forces too many such compromises.
-
-Therefore 2000 is a good &#x27;new VF standard&#x27;, because 2000 is a simple 2x
-conversion from existing fonts drawn on a 1000 UPM, and anyone who knows what
-10 units can do for 1000 UPM will know what 20 units does too.
-
-Additionally, values above 2048 would result in filesize increases with not
-much added benefit.
+Additionally, values above 2048 would likely result in unreasonable filesize
+increases.
 
 
 </pre>
@@ -60099,6 +62874,28 @@ release files, but Google Fonts should only have OpenType tables.
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+<pre>--- Rationale ---
+
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Name table entries should not contain line-breaks.</summary>
 
 * [com.google.fonts/check/name/line_breaks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/line_breaks)
@@ -60144,11 +62941,73 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> A font repository should not include fontbakery report files</summary>
+
+* [com.google.fonts/check/repo/fb_report](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/fb_report)
+<pre>--- Rationale ---
+
+A FontBakery report is ephemeral and so should be used for posting issues on a
+bug-tracker instead of being hosted in the font project repository.
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> A font repository should not include ZIP files</summary>
+
+* [com.google.fonts/check/repo/zip_files](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/zip_files)
+<pre>--- Rationale ---
+
+Sometimes people check in ZIPs into their font project repositories. While we
+accept the practice of checking in binaries, we believe that a ZIP is a step
+too far ;)
+
+Note: a source purist position is that only source files and build scripts
+should be checked in. 
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Name table records must not have trailing spaces.</summary>
 
 * [com.google.fonts/check/name/trailing_spaces](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/name/trailing_spaces)
 
 * 🍞 **PASS** No trailing spaces on name table entries.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+<pre>--- Rationale ---
+
+A font&#x27;s winAscent and winDescent values should be greater than the head
+table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
+can occur on Windows platforms
+(https://github.com/RedHatBrand/Overpass/issues/33).
+
+If the font includes tall/deep writing systems such as Arabic or Devanagari,
+the winAscent and winDescent can be greater than the yMax and abs(yMin) to
+accommodate vowel marks.
+
+When the win Metrics are significantly greater than the upm, the linespacing
+can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
+(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
+This means the font developer can control the linespacing with the typo values,
+whilst avoiding clipping by setting the win values to values greater than the
+yMax and abs(yMin).
+
+
+</pre>
+
+* 🍞 **PASS** OS/2 usWinAscent & usWinDescent values look good!
 
 </details>
 <details>
@@ -60217,8 +63076,15 @@ space glyph. This might have been relevant for applications on MacOS 9.
 <summary>🍞 <b>PASS:</b> Font has **proper** whitespace glyph names?</summary>
 
 * [com.google.fonts/check/whitespace_glyphnames](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/whitespace_glyphnames)
+<pre>--- Rationale ---
 
-* 🍞 **PASS** Font has **proper** whitespace glyph names.
+This check enforces adherence to recommended whitespace (codepoints 0020 and
+00A0) glyph names according to the Adobe Glyph List.
+
+
+</pre>
+
+* 🍞 **PASS** Font has **AGL recommended** names for whitespace glyphs.
 
 </details>
 <details>
@@ -60441,7 +63307,7 @@ apps.
 <pre>--- Rationale ---
 
 There are various metadata in the OpenType spec to specify if a font is
-monospaced or not. If the font is not trully monospaced, then no monospaced
+monospaced or not. If the font is not truly monospaced, then no monospaced
 metadata should be set (as sometimes they mistakenly are...)
 
 Requirements for monospace fonts:
@@ -60572,15 +63438,45 @@ Reference: https://github.com/googlefonts/fontbakery/issues/1845
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class)</summary>
+
+* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
+<pre>--- Rationale ---
+
+Glyphs in the GDEF mark glyph class should be non-spacing.
+Spacing glyphs in the GDEF mark glyph class may have incorrect anchor
+positioning that was only intended for building composite glyphs during design.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not has spacing glyphs in the GDEF mark glyph class.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class</summary>
+
+* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
+<pre>--- Rationale ---
+
+Mark characters should be in the GDEF mark glyph class.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not have mark characters not in the GDEF mark glyph class.
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Check GDEF mark glyph class doesn't have characters that are not marks)</summary>
 
 * [com.google.fonts/check/gdef_non_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars)
 <pre>--- Rationale ---
 
-Glyphs in the GDEF mark glyph class become non-spacing and may be
-repositioned if they have mark anchors. Only combining mark glyphs
-should be in that class. Any non-mark glyph must not be in that class,
-in particular spacing glyphs.
+Glyphs in the GDEF mark glyph class become non-spacing and may be repositioned
+if they have mark anchors.
+Only combining mark glyphs should be in that class. Any non-mark glyph must not
+be in that class, in particular spacing glyphs.
 
 
 </pre>
@@ -60664,71 +63560,7 @@ the same x,y coordinates.
 <br>
 </details>
 <details>
-<summary><b>[158] GeologicaSharp-ExtraLightItalic.ttf</b></summary>
-<details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
-
-This can be accomplished by using the 'gftools fix-hinting' command.
-
-# create virtualenvpython3 -m venv venv
-# activate virtualenvsource venv/bin/activate
-# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-
-A font&#x27;s winAscent and winDescent values should be greater than the head
-table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
-can occur on Windows platforms
-(https://github.com/RedHatBrand/Overpass/issues/33).
-
-If the font includes tall/deep writing systems such as Arabic or Devanagari,
-the winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-
-When the win Metrics are significantly greater than the upm, the linespacing
-can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
-This means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).
-
-
-</pre>
-
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 895, but got 746 instead [code: descent]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Checking OS/2 usWeightClass.</summary>
-
-* [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
-
-* ⚠ **WARN** ExtraLight Italic:200 is OK on TTFs, but OTF files with those values will cause bluring on Windows. GlyphsApp users must set an Instance Custom Parameter for the Thin and ExtraLight styles to 250 and 275, so that if OTFs are exported then it will not blur on Windows. [code: blur-on-windows]
-
-</details>
+<summary><b>[163] GeologicaSharp-ExtraLightItalic.ttf</b></summary>
 <details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
@@ -60782,31 +63614,31 @@ Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uhorn	Contours detected: 2	Expected: 1
 Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
 Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1 [code: contour-count]
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
 
 </details>
 <details>
@@ -60838,39 +63670,6 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 </details>
 <details>
-<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class)</summary>
-
-* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
-<pre>--- Rationale ---
-
-Glyphs in the GDEF mark glyph class should be non-spacing.
-Spacing glyphs in the GDEF mark glyph class may have incorrect
-anchor positioning that was only intended for building composite glyphs
-during design.
-
-
-</pre>
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 acutecomb, acutecomb.case, acutecomb.narrow, brevecombcy, dotbelowcomb, gravecomb, gravecomb.case, gravecomb.narrow, hookabovecomb, hookabovecomb.case and 55 more. [code: spacing-mark-glyphs]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class</summary>
-
-* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
-<pre>--- Rationale ---
-
-Mark characters should be in the GDEF mark glyph class.
-
-
-</pre>
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 U+0300, U+0301, U+0302, U+0303, U+0304, U+0306, U+0307, U+0308, U+0309, U+030A, U+030B, U+030C, U+030F, U+0311, U+0312, U+031B, U+0323, U+0324, U+0326, U+0327, U+0328, U+032E, U+0331 and U+0335 [code: mark-chars]
-
-</details>
-<details>
 <summary>💤 <b>SKIP:</b> Does DESCRIPTION file contain broken links?</summary>
 
 * [com.google.fonts/check/description/broken_links](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/broken_links)
@@ -60878,12 +63677,12 @@ Mark characters should be in the GDEF mark glyph class.
 
 The snippet of HTML in the DESCRIPTION.en_us.html file is added to the font
 family webpage on the Google Fonts website. For that reason, all hyperlinks in
-it must be properly working. 
+it must be properly working.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -60906,7 +63705,7 @@ any other git-based version control service.
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -60915,17 +63714,19 @@ any other git-based version control service.
 * [com.google.fonts/check/description/valid_html](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/valid_html)
 <pre>--- Rationale ---
 
-When packaging families for being pushed to the `google/fonts` git repo, if
-there is no DESCRIPTION.en_us.html file, some older versions of the
-`add_font.py` tool insert a dummy description file which contains invalid html.
+Sometimes people write malformed HTML markup. This check should ensure the file
+is good.
 
-This file needs to either be replaced with an existing description file or
-edited by hand.
+Additionally, when packaging families for being pushed to the `google/fonts`
+git repo, if there is no DESCRIPTION.en_us.html file, some older versions of
+the `add_font.py` tool insert a dummy description file which contains invalid
+html. This file needs to either be replaced with an existing description file
+or edited by hand.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: descfile
+* 💤 **SKIP** Unfulfilled Conditions: description
 
 </details>
 <details>
@@ -60976,7 +63777,7 @@ malformed.
 
 </pre>
 
-* 💤 **SKIP** Font family at '../fonts/static/ttfs' lacks a METADATA.pb file.
+* 💤 **SKIP** Font family at '../fonts/static/ttfs' lacks a METADATA.pb file. [code: file-not-found]
 
 </details>
 <details>
@@ -61045,6 +63846,28 @@ match exactly those declared on the METADATA.pb file.
 
 Also, to avoid confusion, we expect that font files (other than statics) are
 not placed on subdirectories.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: family_metadata
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure METADATA.pb category field is valid.</summary>
+
+* [com.google.fonts/check/metadata/category](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/category)
+<pre>--- Rationale ---
+
+There are only five acceptable values for the category field in a METADATA.pb
+file:
+- MONOSPACE
+- SANS_SERIF
+- SERIF
+- DISPLAY
+- HANDWRITING
+
+This check is meant to avoid typos in this field.
 
 
 </pre>
@@ -61339,15 +64162,28 @@ We may want to merge them all into a single check.
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Checking OS/2 usWeightClass matches weight specified at METADATA.pb.</summary>
+<summary>💤 <b>SKIP:</b> Check METADATA.pb font weights are correct.</summary>
 
 * [com.google.fonts/check/metadata/os2_weightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/os2_weightclass)
+<pre>--- Rationale ---
+
+Check METADATA.pb font weights are correct.
+
+For static fonts, the metadata weight should be the same
+as the static font&#x27;s OS/2 usWeightClass.
+
+For variable fonts, the weight value should be 400 if the
+font&#x27;s wght axis range includes 400, otherwise it should be the
+value closest to 400.
+
+
+</pre>
 
 * 💤 **SKIP** Unfulfilled Conditions: font_metadata
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName.</summary>
+<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName for static fonts.</summary>
 
 * [com.google.fonts/check/metadata/match_weight_postscript](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/match_weight_postscript)
 
@@ -61491,6 +64327,10 @@ All ligatures in a font must have corresponding caret (text cursor) positions
 defined in the GDEF table, otherwhise, users may experience issues with caret
 rendering.
 
+If using GlyphsApp, ligature carets can be set directly on canvas by accessing
+the `Glyph -&gt; Set Anchors` menu option or by pressing the `Cmd+U` keyboard
+shortcut.
+
 
 </pre>
 
@@ -61568,6 +64408,25 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Check font follows the Google Fonts CJK vertical metric schema</summary>
+
+* [com.google.fonts/check/cjk_vertical_metrics](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/cjk_vertical_metrics)
+<pre>--- Rationale ---
+
+CJK fonts have different vertical metrics when compared to Latin fonts. We
+follow the schema developed by dr Ken Lunde for Source Han Sans and the Noto
+CJK fonts.
+
+Our documentation includes further information:
+https://github.com/googlefonts/gf-docs/tree/master/Spec#cjk-vertical-metrics
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_cjk_font
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Check variable font instances have correct coordinate values</summary>
 
 * [com.google.fonts/check/varfont_instance_coordinates](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont_instance_coordinates)
@@ -61584,7 +64443,7 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Ensure VFs do not contain opsz or ital axes. </summary>
+<summary>💤 <b>SKIP:</b> Ensure VFs do not contain slnt or ital axes. </summary>
 
 * [com.google.fonts/check/varfont/unsupported_axes](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont/unsupported_axes)
 <pre>--- Rationale ---
@@ -61645,6 +64504,21 @@ result in WARNs.
 </pre>
 
 * 💤 **SKIP** Sibling families were not detected.
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure indic fonts have the Indian Rupee Sign glyph. </summary>
+
+* [com.google.fonts/check/rupee](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/rupee)
+<pre>--- Rationale ---
+
+Per Bureau of Indian Standards every font supporting one of the official Indian
+languages needs to include Unicode Character “₹” (U+20B9) Indian Rupee Sign.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_indic_font
 
 </details>
 <details>
@@ -61882,10 +64756,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/GeologicaSharp-ExtraLightItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 127.5kb |
-	| Hinted Size | 156.0kb |
-	| Increase | 28.5kb |
-	| Change   | 22.4 % |
+	| Dehinted Size | 127.8kb |
+	| Hinted Size | 156.7kb |
+	| Increase | 28.9kb |
+	| Change   | 22.6 % |
  [code: size-impact]
 
 </details>
@@ -61977,7 +64851,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [GPOS, gasp, cvt , loca, prep, GSUB, fpgm, DSIG]
+* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, GPOS, DSIG, gasp, prep, loca, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -62094,6 +64968,31 @@ set of characters defined in the `GF-latin-core` glyph-set.
 * [com.google.fonts/check/name/unwanted_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars)
 
 * 🍞 **PASS** No need to substitute copyright, registered and trademark symbols in name table entries of this font.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Checking OS/2 usWeightClass.</summary>
+
+* [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
+<pre>--- Rationale ---
+
+Google Fonts expects variable fonts, static ttfs and static otfs to have
+differing OS/2 usWeightClass values.
+
+For Variable Fonts, Thin-Black must be 100-900
+For static ttfs, Thin-Black can be 100-900 or 250-900
+For static otfs, Thin-Black must be 250-900
+
+If static otfs are set lower than 250, text may appear blurry in legacy Windows
+applications.
+
+Glyphsapp users can change the usWeightClass value of an instance by adding a
+&#x27;weightClass&#x27; customParameter.
+
+
+</pre>
+
+* 🍞 **PASS** OS/2 usWeightClass is good
 
 </details>
 <details>
@@ -62279,20 +65178,12 @@ Even though the OpenType spec allows unitsPerEm to be any value between 16 and
 The spec suggests usage of powers of two in order to get some performance
 improvements on legacy renderers, so those values are acceptable.
 
-But value of 500 or 1000 are also acceptable, with the added benefit that it
+But values of 500 or 1000 are also acceptable, with the added benefit that it
 makes upm math easier for designers, while the performance hit of not using a
 power of two is most likely negligible nowadays.
 
-Another acceptable value is 2000. Since TT outlines are all integers (no
-floats), then instances in a VF suffer rounding compromises, and therefore a
-1000 UPM is too small because it forces too many such compromises.
-
-Therefore 2000 is a good &#x27;new VF standard&#x27;, because 2000 is a simple 2x
-conversion from existing fonts drawn on a 1000 UPM, and anyone who knows what
-10 units can do for 1000 UPM will know what 20 units does too.
-
-Additionally, values above 2048 would result in filesize increases with not
-much added benefit.
+Additionally, values above 2048 would likely result in unreasonable filesize
+increases.
 
 
 </pre>
@@ -62518,6 +65409,28 @@ release files, but Google Fonts should only have OpenType tables.
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+<pre>--- Rationale ---
+
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Name table entries should not contain line-breaks.</summary>
 
 * [com.google.fonts/check/name/line_breaks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/line_breaks)
@@ -62563,11 +65476,73 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> A font repository should not include fontbakery report files</summary>
+
+* [com.google.fonts/check/repo/fb_report](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/fb_report)
+<pre>--- Rationale ---
+
+A FontBakery report is ephemeral and so should be used for posting issues on a
+bug-tracker instead of being hosted in the font project repository.
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> A font repository should not include ZIP files</summary>
+
+* [com.google.fonts/check/repo/zip_files](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/zip_files)
+<pre>--- Rationale ---
+
+Sometimes people check in ZIPs into their font project repositories. While we
+accept the practice of checking in binaries, we believe that a ZIP is a step
+too far ;)
+
+Note: a source purist position is that only source files and build scripts
+should be checked in. 
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Name table records must not have trailing spaces.</summary>
 
 * [com.google.fonts/check/name/trailing_spaces](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/name/trailing_spaces)
 
 * 🍞 **PASS** No trailing spaces on name table entries.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+<pre>--- Rationale ---
+
+A font&#x27;s winAscent and winDescent values should be greater than the head
+table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
+can occur on Windows platforms
+(https://github.com/RedHatBrand/Overpass/issues/33).
+
+If the font includes tall/deep writing systems such as Arabic or Devanagari,
+the winAscent and winDescent can be greater than the yMax and abs(yMin) to
+accommodate vowel marks.
+
+When the win Metrics are significantly greater than the upm, the linespacing
+can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
+(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
+This means the font developer can control the linespacing with the typo values,
+whilst avoiding clipping by setting the win values to values greater than the
+yMax and abs(yMin).
+
+
+</pre>
+
+* 🍞 **PASS** OS/2 usWinAscent & usWinDescent values look good!
 
 </details>
 <details>
@@ -62636,8 +65611,15 @@ space glyph. This might have been relevant for applications on MacOS 9.
 <summary>🍞 <b>PASS:</b> Font has **proper** whitespace glyph names?</summary>
 
 * [com.google.fonts/check/whitespace_glyphnames](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/whitespace_glyphnames)
+<pre>--- Rationale ---
 
-* 🍞 **PASS** Font has **proper** whitespace glyph names.
+This check enforces adherence to recommended whitespace (codepoints 0020 and
+00A0) glyph names according to the Adobe Glyph List.
+
+
+</pre>
+
+* 🍞 **PASS** Font has **AGL recommended** names for whitespace glyphs.
 
 </details>
 <details>
@@ -62860,7 +65842,7 @@ apps.
 <pre>--- Rationale ---
 
 There are various metadata in the OpenType spec to specify if a font is
-monospaced or not. If the font is not trully monospaced, then no monospaced
+monospaced or not. If the font is not truly monospaced, then no monospaced
 metadata should be set (as sometimes they mistakenly are...)
 
 Requirements for monospace fonts:
@@ -62991,15 +65973,45 @@ Reference: https://github.com/googlefonts/fontbakery/issues/1845
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class)</summary>
+
+* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
+<pre>--- Rationale ---
+
+Glyphs in the GDEF mark glyph class should be non-spacing.
+Spacing glyphs in the GDEF mark glyph class may have incorrect anchor
+positioning that was only intended for building composite glyphs during design.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not has spacing glyphs in the GDEF mark glyph class.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class</summary>
+
+* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
+<pre>--- Rationale ---
+
+Mark characters should be in the GDEF mark glyph class.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not have mark characters not in the GDEF mark glyph class.
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Check GDEF mark glyph class doesn't have characters that are not marks)</summary>
 
 * [com.google.fonts/check/gdef_non_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars)
 <pre>--- Rationale ---
 
-Glyphs in the GDEF mark glyph class become non-spacing and may be
-repositioned if they have mark anchors. Only combining mark glyphs
-should be in that class. Any non-mark glyph must not be in that class,
-in particular spacing glyphs.
+Glyphs in the GDEF mark glyph class become non-spacing and may be repositioned
+if they have mark anchors.
+Only combining mark glyphs should be in that class. Any non-mark glyph must not
+be in that class, in particular spacing glyphs.
 
 
 </pre>
@@ -63083,63 +66095,7 @@ the same x,y coordinates.
 <br>
 </details>
 <details>
-<summary><b>[158] GeologicaSharp-Italic.ttf</b></summary>
-<details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
-
-This can be accomplished by using the 'gftools fix-hinting' command.
-
-# create virtualenvpython3 -m venv venv
-# activate virtualenvsource venv/bin/activate
-# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-
-A font&#x27;s winAscent and winDescent values should be greater than the head
-table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
-can occur on Windows platforms
-(https://github.com/RedHatBrand/Overpass/issues/33).
-
-If the font includes tall/deep writing systems such as Arabic or Devanagari,
-the winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-
-When the win Metrics are significantly greater than the upm, the linespacing
-can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
-This means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).
-
-
-</pre>
-
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 895, but got 746 instead [code: descent]
-
-</details>
+<summary><b>[163] GeologicaSharp-Italic.ttf</b></summary>
 <details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
@@ -63193,64 +66149,31 @@ Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uhorn	Contours detected: 2	Expected: 1
 Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
 Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1 [code: contour-count]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class)</summary>
-
-* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
-<pre>--- Rationale ---
-
-Glyphs in the GDEF mark glyph class should be non-spacing.
-Spacing glyphs in the GDEF mark glyph class may have incorrect
-anchor positioning that was only intended for building composite glyphs
-during design.
-
-
-</pre>
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 acutecomb, acutecomb.case, acutecomb.narrow, brevecombcy, dotbelowcomb, gravecomb, gravecomb.case, gravecomb.narrow, hookabovecomb, hookabovecomb.case and 55 more. [code: spacing-mark-glyphs]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class</summary>
-
-* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
-<pre>--- Rationale ---
-
-Mark characters should be in the GDEF mark glyph class.
-
-
-</pre>
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 U+0300, U+0301, U+0302, U+0303, U+0304, U+0306, U+0307, U+0308, U+0309, U+030A, U+030B, U+030C, U+030F, U+0311, U+0312, U+031B, U+0323, U+0324, U+0326, U+0327, U+0328, U+032E, U+0331 and U+0335 [code: mark-chars]
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
 
 </details>
 <details>
@@ -63261,12 +66184,12 @@ Mark characters should be in the GDEF mark glyph class.
 
 The snippet of HTML in the DESCRIPTION.en_us.html file is added to the font
 family webpage on the Google Fonts website. For that reason, all hyperlinks in
-it must be properly working. 
+it must be properly working.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -63289,7 +66212,7 @@ any other git-based version control service.
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -63298,17 +66221,19 @@ any other git-based version control service.
 * [com.google.fonts/check/description/valid_html](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/valid_html)
 <pre>--- Rationale ---
 
-When packaging families for being pushed to the `google/fonts` git repo, if
-there is no DESCRIPTION.en_us.html file, some older versions of the
-`add_font.py` tool insert a dummy description file which contains invalid html.
+Sometimes people write malformed HTML markup. This check should ensure the file
+is good.
 
-This file needs to either be replaced with an existing description file or
-edited by hand.
+Additionally, when packaging families for being pushed to the `google/fonts`
+git repo, if there is no DESCRIPTION.en_us.html file, some older versions of
+the `add_font.py` tool insert a dummy description file which contains invalid
+html. This file needs to either be replaced with an existing description file
+or edited by hand.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: descfile
+* 💤 **SKIP** Unfulfilled Conditions: description
 
 </details>
 <details>
@@ -63359,7 +66284,7 @@ malformed.
 
 </pre>
 
-* 💤 **SKIP** Font family at '../fonts/static/ttfs' lacks a METADATA.pb file.
+* 💤 **SKIP** Font family at '../fonts/static/ttfs' lacks a METADATA.pb file. [code: file-not-found]
 
 </details>
 <details>
@@ -63428,6 +66353,28 @@ match exactly those declared on the METADATA.pb file.
 
 Also, to avoid confusion, we expect that font files (other than statics) are
 not placed on subdirectories.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: family_metadata
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure METADATA.pb category field is valid.</summary>
+
+* [com.google.fonts/check/metadata/category](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/category)
+<pre>--- Rationale ---
+
+There are only five acceptable values for the category field in a METADATA.pb
+file:
+- MONOSPACE
+- SANS_SERIF
+- SERIF
+- DISPLAY
+- HANDWRITING
+
+This check is meant to avoid typos in this field.
 
 
 </pre>
@@ -63722,15 +66669,28 @@ We may want to merge them all into a single check.
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Checking OS/2 usWeightClass matches weight specified at METADATA.pb.</summary>
+<summary>💤 <b>SKIP:</b> Check METADATA.pb font weights are correct.</summary>
 
 * [com.google.fonts/check/metadata/os2_weightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/os2_weightclass)
+<pre>--- Rationale ---
+
+Check METADATA.pb font weights are correct.
+
+For static fonts, the metadata weight should be the same
+as the static font&#x27;s OS/2 usWeightClass.
+
+For variable fonts, the weight value should be 400 if the
+font&#x27;s wght axis range includes 400, otherwise it should be the
+value closest to 400.
+
+
+</pre>
 
 * 💤 **SKIP** Unfulfilled Conditions: font_metadata
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName.</summary>
+<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName for static fonts.</summary>
 
 * [com.google.fonts/check/metadata/match_weight_postscript](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/match_weight_postscript)
 
@@ -63874,6 +66834,10 @@ All ligatures in a font must have corresponding caret (text cursor) positions
 defined in the GDEF table, otherwhise, users may experience issues with caret
 rendering.
 
+If using GlyphsApp, ligature carets can be set directly on canvas by accessing
+the `Glyph -&gt; Set Anchors` menu option or by pressing the `Cmd+U` keyboard
+shortcut.
+
 
 </pre>
 
@@ -63951,6 +66915,25 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Check font follows the Google Fonts CJK vertical metric schema</summary>
+
+* [com.google.fonts/check/cjk_vertical_metrics](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/cjk_vertical_metrics)
+<pre>--- Rationale ---
+
+CJK fonts have different vertical metrics when compared to Latin fonts. We
+follow the schema developed by dr Ken Lunde for Source Han Sans and the Noto
+CJK fonts.
+
+Our documentation includes further information:
+https://github.com/googlefonts/gf-docs/tree/master/Spec#cjk-vertical-metrics
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_cjk_font
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Check variable font instances have correct coordinate values</summary>
 
 * [com.google.fonts/check/varfont_instance_coordinates](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont_instance_coordinates)
@@ -63967,7 +66950,7 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Ensure VFs do not contain opsz or ital axes. </summary>
+<summary>💤 <b>SKIP:</b> Ensure VFs do not contain slnt or ital axes. </summary>
 
 * [com.google.fonts/check/varfont/unsupported_axes](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont/unsupported_axes)
 <pre>--- Rationale ---
@@ -64028,6 +67011,21 @@ result in WARNs.
 </pre>
 
 * 💤 **SKIP** Sibling families were not detected.
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure indic fonts have the Indian Rupee Sign glyph. </summary>
+
+* [com.google.fonts/check/rupee](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/rupee)
+<pre>--- Rationale ---
+
+Per Bureau of Indian Standards every font supporting one of the official Indian
+languages needs to include Unicode Character “₹” (U+20B9) Indian Rupee Sign.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_indic_font
 
 </details>
 <details>
@@ -64265,10 +67263,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/GeologicaSharp-Italic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 127.0kb |
-	| Hinted Size | 167.5kb |
-	| Increase | 40.5kb |
-	| Change   | 31.9 % |
+	| Dehinted Size | 127.2kb |
+	| Hinted Size | 168.1kb |
+	| Increase | 40.9kb |
+	| Change   | 32.1 % |
  [code: size-impact]
 
 </details>
@@ -64360,7 +67358,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [GPOS, gasp, cvt , loca, prep, GSUB, fpgm, DSIG]
+* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, GPOS, DSIG, gasp, prep, loca, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -64483,8 +67481,25 @@ set of characters defined in the `GF-latin-core` glyph-set.
 <summary>🍞 <b>PASS:</b> Checking OS/2 usWeightClass.</summary>
 
 * [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
+<pre>--- Rationale ---
 
-* 🍞 **PASS** OS/2 usWeightClass value looks good!
+Google Fonts expects variable fonts, static ttfs and static otfs to have
+differing OS/2 usWeightClass values.
+
+For Variable Fonts, Thin-Black must be 100-900
+For static ttfs, Thin-Black can be 100-900 or 250-900
+For static otfs, Thin-Black must be 250-900
+
+If static otfs are set lower than 250, text may appear blurry in legacy Windows
+applications.
+
+Glyphsapp users can change the usWeightClass value of an instance by adding a
+&#x27;weightClass&#x27; customParameter.
+
+
+</pre>
+
+* 🍞 **PASS** OS/2 usWeightClass is good
 
 </details>
 <details>
@@ -64670,20 +67685,12 @@ Even though the OpenType spec allows unitsPerEm to be any value between 16 and
 The spec suggests usage of powers of two in order to get some performance
 improvements on legacy renderers, so those values are acceptable.
 
-But value of 500 or 1000 are also acceptable, with the added benefit that it
+But values of 500 or 1000 are also acceptable, with the added benefit that it
 makes upm math easier for designers, while the performance hit of not using a
 power of two is most likely negligible nowadays.
 
-Another acceptable value is 2000. Since TT outlines are all integers (no
-floats), then instances in a VF suffer rounding compromises, and therefore a
-1000 UPM is too small because it forces too many such compromises.
-
-Therefore 2000 is a good &#x27;new VF standard&#x27;, because 2000 is a simple 2x
-conversion from existing fonts drawn on a 1000 UPM, and anyone who knows what
-10 units can do for 1000 UPM will know what 20 units does too.
-
-Additionally, values above 2048 would result in filesize increases with not
-much added benefit.
+Additionally, values above 2048 would likely result in unreasonable filesize
+increases.
 
 
 </pre>
@@ -64909,6 +67916,28 @@ release files, but Google Fonts should only have OpenType tables.
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+<pre>--- Rationale ---
+
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Combined length of family and style must not exceed 27 characters.</summary>
 
 * [com.google.fonts/check/name/family_and_style_max_length](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length)
@@ -64979,11 +68008,73 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> A font repository should not include fontbakery report files</summary>
+
+* [com.google.fonts/check/repo/fb_report](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/fb_report)
+<pre>--- Rationale ---
+
+A FontBakery report is ephemeral and so should be used for posting issues on a
+bug-tracker instead of being hosted in the font project repository.
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> A font repository should not include ZIP files</summary>
+
+* [com.google.fonts/check/repo/zip_files](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/zip_files)
+<pre>--- Rationale ---
+
+Sometimes people check in ZIPs into their font project repositories. While we
+accept the practice of checking in binaries, we believe that a ZIP is a step
+too far ;)
+
+Note: a source purist position is that only source files and build scripts
+should be checked in. 
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Name table records must not have trailing spaces.</summary>
 
 * [com.google.fonts/check/name/trailing_spaces](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/name/trailing_spaces)
 
 * 🍞 **PASS** No trailing spaces on name table entries.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+<pre>--- Rationale ---
+
+A font&#x27;s winAscent and winDescent values should be greater than the head
+table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
+can occur on Windows platforms
+(https://github.com/RedHatBrand/Overpass/issues/33).
+
+If the font includes tall/deep writing systems such as Arabic or Devanagari,
+the winAscent and winDescent can be greater than the yMax and abs(yMin) to
+accommodate vowel marks.
+
+When the win Metrics are significantly greater than the upm, the linespacing
+can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
+(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
+This means the font developer can control the linespacing with the typo values,
+whilst avoiding clipping by setting the win values to values greater than the
+yMax and abs(yMin).
+
+
+</pre>
+
+* 🍞 **PASS** OS/2 usWinAscent & usWinDescent values look good!
 
 </details>
 <details>
@@ -65052,8 +68143,15 @@ space glyph. This might have been relevant for applications on MacOS 9.
 <summary>🍞 <b>PASS:</b> Font has **proper** whitespace glyph names?</summary>
 
 * [com.google.fonts/check/whitespace_glyphnames](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/whitespace_glyphnames)
+<pre>--- Rationale ---
 
-* 🍞 **PASS** Font has **proper** whitespace glyph names.
+This check enforces adherence to recommended whitespace (codepoints 0020 and
+00A0) glyph names according to the Adobe Glyph List.
+
+
+</pre>
+
+* 🍞 **PASS** Font has **AGL recommended** names for whitespace glyphs.
 
 </details>
 <details>
@@ -65276,7 +68374,7 @@ apps.
 <pre>--- Rationale ---
 
 There are various metadata in the OpenType spec to specify if a font is
-monospaced or not. If the font is not trully monospaced, then no monospaced
+monospaced or not. If the font is not truly monospaced, then no monospaced
 metadata should be set (as sometimes they mistakenly are...)
 
 Requirements for monospace fonts:
@@ -65407,15 +68505,45 @@ Reference: https://github.com/googlefonts/fontbakery/issues/1845
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class)</summary>
+
+* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
+<pre>--- Rationale ---
+
+Glyphs in the GDEF mark glyph class should be non-spacing.
+Spacing glyphs in the GDEF mark glyph class may have incorrect anchor
+positioning that was only intended for building composite glyphs during design.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not has spacing glyphs in the GDEF mark glyph class.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class</summary>
+
+* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
+<pre>--- Rationale ---
+
+Mark characters should be in the GDEF mark glyph class.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not have mark characters not in the GDEF mark glyph class.
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Check GDEF mark glyph class doesn't have characters that are not marks)</summary>
 
 * [com.google.fonts/check/gdef_non_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars)
 <pre>--- Rationale ---
 
-Glyphs in the GDEF mark glyph class become non-spacing and may be
-repositioned if they have mark anchors. Only combining mark glyphs
-should be in that class. Any non-mark glyph must not be in that class,
-in particular spacing glyphs.
+Glyphs in the GDEF mark glyph class become non-spacing and may be repositioned
+if they have mark anchors.
+Only combining mark glyphs should be in that class. Any non-mark glyph must not
+be in that class, in particular spacing glyphs.
 
 
 </pre>
@@ -65499,63 +68627,7 @@ the same x,y coordinates.
 <br>
 </details>
 <details>
-<summary><b>[158] GeologicaSharp-Light.ttf</b></summary>
-<details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
-
-This can be accomplished by using the 'gftools fix-hinting' command.
-
-# create virtualenvpython3 -m venv venv
-# activate virtualenvsource venv/bin/activate
-# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-
-A font&#x27;s winAscent and winDescent values should be greater than the head
-table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
-can occur on Windows platforms
-(https://github.com/RedHatBrand/Overpass/issues/33).
-
-If the font includes tall/deep writing systems such as Arabic or Devanagari,
-the winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-
-When the win Metrics are significantly greater than the upm, the linespacing
-can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
-This means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).
-
-
-</pre>
-
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 895, but got 746 instead [code: descent]
-
-</details>
+<summary><b>[163] GeologicaSharp-Light.ttf</b></summary>
 <details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
@@ -65609,31 +68681,31 @@ Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uhorn	Contours detected: 2	Expected: 1
 Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
 Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1 [code: contour-count]
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
 
 </details>
 <details>
@@ -65665,39 +68737,6 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 </details>
 <details>
-<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class)</summary>
-
-* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
-<pre>--- Rationale ---
-
-Glyphs in the GDEF mark glyph class should be non-spacing.
-Spacing glyphs in the GDEF mark glyph class may have incorrect
-anchor positioning that was only intended for building composite glyphs
-during design.
-
-
-</pre>
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 acutecomb, acutecomb.case, acutecomb.narrow, brevecombcy, dotbelowcomb, gravecomb, gravecomb.case, gravecomb.narrow, hookabovecomb, hookabovecomb.case and 55 more. [code: spacing-mark-glyphs]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class</summary>
-
-* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
-<pre>--- Rationale ---
-
-Mark characters should be in the GDEF mark glyph class.
-
-
-</pre>
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 U+0300, U+0301, U+0302, U+0303, U+0304, U+0306, U+0307, U+0308, U+0309, U+030A, U+030B, U+030C, U+030F, U+0311, U+0312, U+031B, U+0323, U+0324, U+0326, U+0327, U+0328, U+032E, U+0331 and U+0335 [code: mark-chars]
-
-</details>
-<details>
 <summary>💤 <b>SKIP:</b> Does DESCRIPTION file contain broken links?</summary>
 
 * [com.google.fonts/check/description/broken_links](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/broken_links)
@@ -65705,12 +68744,12 @@ Mark characters should be in the GDEF mark glyph class.
 
 The snippet of HTML in the DESCRIPTION.en_us.html file is added to the font
 family webpage on the Google Fonts website. For that reason, all hyperlinks in
-it must be properly working. 
+it must be properly working.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -65733,7 +68772,7 @@ any other git-based version control service.
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -65742,17 +68781,19 @@ any other git-based version control service.
 * [com.google.fonts/check/description/valid_html](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/valid_html)
 <pre>--- Rationale ---
 
-When packaging families for being pushed to the `google/fonts` git repo, if
-there is no DESCRIPTION.en_us.html file, some older versions of the
-`add_font.py` tool insert a dummy description file which contains invalid html.
+Sometimes people write malformed HTML markup. This check should ensure the file
+is good.
 
-This file needs to either be replaced with an existing description file or
-edited by hand.
+Additionally, when packaging families for being pushed to the `google/fonts`
+git repo, if there is no DESCRIPTION.en_us.html file, some older versions of
+the `add_font.py` tool insert a dummy description file which contains invalid
+html. This file needs to either be replaced with an existing description file
+or edited by hand.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: descfile
+* 💤 **SKIP** Unfulfilled Conditions: description
 
 </details>
 <details>
@@ -65803,7 +68844,7 @@ malformed.
 
 </pre>
 
-* 💤 **SKIP** Font family at '../fonts/static/ttfs' lacks a METADATA.pb file.
+* 💤 **SKIP** Font family at '../fonts/static/ttfs' lacks a METADATA.pb file. [code: file-not-found]
 
 </details>
 <details>
@@ -65872,6 +68913,28 @@ match exactly those declared on the METADATA.pb file.
 
 Also, to avoid confusion, we expect that font files (other than statics) are
 not placed on subdirectories.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: family_metadata
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure METADATA.pb category field is valid.</summary>
+
+* [com.google.fonts/check/metadata/category](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/category)
+<pre>--- Rationale ---
+
+There are only five acceptable values for the category field in a METADATA.pb
+file:
+- MONOSPACE
+- SANS_SERIF
+- SERIF
+- DISPLAY
+- HANDWRITING
+
+This check is meant to avoid typos in this field.
 
 
 </pre>
@@ -66166,15 +69229,28 @@ We may want to merge them all into a single check.
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Checking OS/2 usWeightClass matches weight specified at METADATA.pb.</summary>
+<summary>💤 <b>SKIP:</b> Check METADATA.pb font weights are correct.</summary>
 
 * [com.google.fonts/check/metadata/os2_weightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/os2_weightclass)
+<pre>--- Rationale ---
+
+Check METADATA.pb font weights are correct.
+
+For static fonts, the metadata weight should be the same
+as the static font&#x27;s OS/2 usWeightClass.
+
+For variable fonts, the weight value should be 400 if the
+font&#x27;s wght axis range includes 400, otherwise it should be the
+value closest to 400.
+
+
+</pre>
 
 * 💤 **SKIP** Unfulfilled Conditions: font_metadata
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName.</summary>
+<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName for static fonts.</summary>
 
 * [com.google.fonts/check/metadata/match_weight_postscript](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/match_weight_postscript)
 
@@ -66318,6 +69394,10 @@ All ligatures in a font must have corresponding caret (text cursor) positions
 defined in the GDEF table, otherwhise, users may experience issues with caret
 rendering.
 
+If using GlyphsApp, ligature carets can be set directly on canvas by accessing
+the `Glyph -&gt; Set Anchors` menu option or by pressing the `Cmd+U` keyboard
+shortcut.
+
 
 </pre>
 
@@ -66395,6 +69475,25 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Check font follows the Google Fonts CJK vertical metric schema</summary>
+
+* [com.google.fonts/check/cjk_vertical_metrics](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/cjk_vertical_metrics)
+<pre>--- Rationale ---
+
+CJK fonts have different vertical metrics when compared to Latin fonts. We
+follow the schema developed by dr Ken Lunde for Source Han Sans and the Noto
+CJK fonts.
+
+Our documentation includes further information:
+https://github.com/googlefonts/gf-docs/tree/master/Spec#cjk-vertical-metrics
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_cjk_font
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Check variable font instances have correct coordinate values</summary>
 
 * [com.google.fonts/check/varfont_instance_coordinates](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont_instance_coordinates)
@@ -66411,7 +69510,7 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Ensure VFs do not contain opsz or ital axes. </summary>
+<summary>💤 <b>SKIP:</b> Ensure VFs do not contain slnt or ital axes. </summary>
 
 * [com.google.fonts/check/varfont/unsupported_axes](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont/unsupported_axes)
 <pre>--- Rationale ---
@@ -66472,6 +69571,21 @@ result in WARNs.
 </pre>
 
 * 💤 **SKIP** Sibling families were not detected.
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure indic fonts have the Indian Rupee Sign glyph. </summary>
+
+* [com.google.fonts/check/rupee](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/rupee)
+<pre>--- Rationale ---
+
+Per Bureau of Indian Standards every font supporting one of the official Indian
+languages needs to include Unicode Character “₹” (U+20B9) Indian Rupee Sign.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_indic_font
 
 </details>
 <details>
@@ -66709,10 +69823,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/GeologicaSharp-Light.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 125.9kb |
-	| Hinted Size | 160.2kb |
-	| Increase | 34.3kb |
-	| Change   | 27.3 % |
+	| Dehinted Size | 126.1kb |
+	| Hinted Size | 160.8kb |
+	| Increase | 34.7kb |
+	| Change   | 27.5 % |
  [code: size-impact]
 
 </details>
@@ -66804,7 +69918,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [GPOS, gasp, cvt , loca, prep, GSUB, fpgm, DSIG]
+* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, GPOS, DSIG, gasp, prep, loca, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -66927,8 +70041,25 @@ set of characters defined in the `GF-latin-core` glyph-set.
 <summary>🍞 <b>PASS:</b> Checking OS/2 usWeightClass.</summary>
 
 * [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
+<pre>--- Rationale ---
 
-* 🍞 **PASS** OS/2 usWeightClass value looks good!
+Google Fonts expects variable fonts, static ttfs and static otfs to have
+differing OS/2 usWeightClass values.
+
+For Variable Fonts, Thin-Black must be 100-900
+For static ttfs, Thin-Black can be 100-900 or 250-900
+For static otfs, Thin-Black must be 250-900
+
+If static otfs are set lower than 250, text may appear blurry in legacy Windows
+applications.
+
+Glyphsapp users can change the usWeightClass value of an instance by adding a
+&#x27;weightClass&#x27; customParameter.
+
+
+</pre>
+
+* 🍞 **PASS** OS/2 usWeightClass is good
 
 </details>
 <details>
@@ -67114,20 +70245,12 @@ Even though the OpenType spec allows unitsPerEm to be any value between 16 and
 The spec suggests usage of powers of two in order to get some performance
 improvements on legacy renderers, so those values are acceptable.
 
-But value of 500 or 1000 are also acceptable, with the added benefit that it
+But values of 500 or 1000 are also acceptable, with the added benefit that it
 makes upm math easier for designers, while the performance hit of not using a
 power of two is most likely negligible nowadays.
 
-Another acceptable value is 2000. Since TT outlines are all integers (no
-floats), then instances in a VF suffer rounding compromises, and therefore a
-1000 UPM is too small because it forces too many such compromises.
-
-Therefore 2000 is a good &#x27;new VF standard&#x27;, because 2000 is a simple 2x
-conversion from existing fonts drawn on a 1000 UPM, and anyone who knows what
-10 units can do for 1000 UPM will know what 20 units does too.
-
-Additionally, values above 2048 would result in filesize increases with not
-much added benefit.
+Additionally, values above 2048 would likely result in unreasonable filesize
+increases.
 
 
 </pre>
@@ -67353,6 +70476,28 @@ release files, but Google Fonts should only have OpenType tables.
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+<pre>--- Rationale ---
+
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Name table entries should not contain line-breaks.</summary>
 
 * [com.google.fonts/check/name/line_breaks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/line_breaks)
@@ -67398,11 +70543,73 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> A font repository should not include fontbakery report files</summary>
+
+* [com.google.fonts/check/repo/fb_report](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/fb_report)
+<pre>--- Rationale ---
+
+A FontBakery report is ephemeral and so should be used for posting issues on a
+bug-tracker instead of being hosted in the font project repository.
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> A font repository should not include ZIP files</summary>
+
+* [com.google.fonts/check/repo/zip_files](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/zip_files)
+<pre>--- Rationale ---
+
+Sometimes people check in ZIPs into their font project repositories. While we
+accept the practice of checking in binaries, we believe that a ZIP is a step
+too far ;)
+
+Note: a source purist position is that only source files and build scripts
+should be checked in. 
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Name table records must not have trailing spaces.</summary>
 
 * [com.google.fonts/check/name/trailing_spaces](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/name/trailing_spaces)
 
 * 🍞 **PASS** No trailing spaces on name table entries.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+<pre>--- Rationale ---
+
+A font&#x27;s winAscent and winDescent values should be greater than the head
+table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
+can occur on Windows platforms
+(https://github.com/RedHatBrand/Overpass/issues/33).
+
+If the font includes tall/deep writing systems such as Arabic or Devanagari,
+the winAscent and winDescent can be greater than the yMax and abs(yMin) to
+accommodate vowel marks.
+
+When the win Metrics are significantly greater than the upm, the linespacing
+can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
+(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
+This means the font developer can control the linespacing with the typo values,
+whilst avoiding clipping by setting the win values to values greater than the
+yMax and abs(yMin).
+
+
+</pre>
+
+* 🍞 **PASS** OS/2 usWinAscent & usWinDescent values look good!
 
 </details>
 <details>
@@ -67471,8 +70678,15 @@ space glyph. This might have been relevant for applications on MacOS 9.
 <summary>🍞 <b>PASS:</b> Font has **proper** whitespace glyph names?</summary>
 
 * [com.google.fonts/check/whitespace_glyphnames](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/whitespace_glyphnames)
+<pre>--- Rationale ---
 
-* 🍞 **PASS** Font has **proper** whitespace glyph names.
+This check enforces adherence to recommended whitespace (codepoints 0020 and
+00A0) glyph names according to the Adobe Glyph List.
+
+
+</pre>
+
+* 🍞 **PASS** Font has **AGL recommended** names for whitespace glyphs.
 
 </details>
 <details>
@@ -67695,7 +70909,7 @@ apps.
 <pre>--- Rationale ---
 
 There are various metadata in the OpenType spec to specify if a font is
-monospaced or not. If the font is not trully monospaced, then no monospaced
+monospaced or not. If the font is not truly monospaced, then no monospaced
 metadata should be set (as sometimes they mistakenly are...)
 
 Requirements for monospace fonts:
@@ -67826,15 +71040,45 @@ Reference: https://github.com/googlefonts/fontbakery/issues/1845
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class)</summary>
+
+* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
+<pre>--- Rationale ---
+
+Glyphs in the GDEF mark glyph class should be non-spacing.
+Spacing glyphs in the GDEF mark glyph class may have incorrect anchor
+positioning that was only intended for building composite glyphs during design.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not has spacing glyphs in the GDEF mark glyph class.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class</summary>
+
+* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
+<pre>--- Rationale ---
+
+Mark characters should be in the GDEF mark glyph class.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not have mark characters not in the GDEF mark glyph class.
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Check GDEF mark glyph class doesn't have characters that are not marks)</summary>
 
 * [com.google.fonts/check/gdef_non_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars)
 <pre>--- Rationale ---
 
-Glyphs in the GDEF mark glyph class become non-spacing and may be
-repositioned if they have mark anchors. Only combining mark glyphs
-should be in that class. Any non-mark glyph must not be in that class,
-in particular spacing glyphs.
+Glyphs in the GDEF mark glyph class become non-spacing and may be repositioned
+if they have mark anchors.
+Only combining mark glyphs should be in that class. Any non-mark glyph must not
+be in that class, in particular spacing glyphs.
 
 
 </pre>
@@ -67918,63 +71162,7 @@ the same x,y coordinates.
 <br>
 </details>
 <details>
-<summary><b>[158] GeologicaSharp-LightItalic.ttf</b></summary>
-<details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
-
-This can be accomplished by using the 'gftools fix-hinting' command.
-
-# create virtualenvpython3 -m venv venv
-# activate virtualenvsource venv/bin/activate
-# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-
-A font&#x27;s winAscent and winDescent values should be greater than the head
-table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
-can occur on Windows platforms
-(https://github.com/RedHatBrand/Overpass/issues/33).
-
-If the font includes tall/deep writing systems such as Arabic or Devanagari,
-the winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-
-When the win Metrics are significantly greater than the upm, the linespacing
-can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
-This means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).
-
-
-</pre>
-
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 895, but got 746 instead [code: descent]
-
-</details>
+<summary><b>[163] GeologicaSharp-LightItalic.ttf</b></summary>
 <details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
@@ -68028,64 +71216,31 @@ Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uhorn	Contours detected: 2	Expected: 1
 Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
 Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1 [code: contour-count]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class)</summary>
-
-* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
-<pre>--- Rationale ---
-
-Glyphs in the GDEF mark glyph class should be non-spacing.
-Spacing glyphs in the GDEF mark glyph class may have incorrect
-anchor positioning that was only intended for building composite glyphs
-during design.
-
-
-</pre>
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 acutecomb, acutecomb.case, acutecomb.narrow, brevecombcy, dotbelowcomb, gravecomb, gravecomb.case, gravecomb.narrow, hookabovecomb, hookabovecomb.case and 55 more. [code: spacing-mark-glyphs]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class</summary>
-
-* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
-<pre>--- Rationale ---
-
-Mark characters should be in the GDEF mark glyph class.
-
-
-</pre>
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 U+0300, U+0301, U+0302, U+0303, U+0304, U+0306, U+0307, U+0308, U+0309, U+030A, U+030B, U+030C, U+030F, U+0311, U+0312, U+031B, U+0323, U+0324, U+0326, U+0327, U+0328, U+032E, U+0331 and U+0335 [code: mark-chars]
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
 
 </details>
 <details>
@@ -68096,12 +71251,12 @@ Mark characters should be in the GDEF mark glyph class.
 
 The snippet of HTML in the DESCRIPTION.en_us.html file is added to the font
 family webpage on the Google Fonts website. For that reason, all hyperlinks in
-it must be properly working. 
+it must be properly working.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -68124,7 +71279,7 @@ any other git-based version control service.
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -68133,17 +71288,19 @@ any other git-based version control service.
 * [com.google.fonts/check/description/valid_html](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/valid_html)
 <pre>--- Rationale ---
 
-When packaging families for being pushed to the `google/fonts` git repo, if
-there is no DESCRIPTION.en_us.html file, some older versions of the
-`add_font.py` tool insert a dummy description file which contains invalid html.
+Sometimes people write malformed HTML markup. This check should ensure the file
+is good.
 
-This file needs to either be replaced with an existing description file or
-edited by hand.
+Additionally, when packaging families for being pushed to the `google/fonts`
+git repo, if there is no DESCRIPTION.en_us.html file, some older versions of
+the `add_font.py` tool insert a dummy description file which contains invalid
+html. This file needs to either be replaced with an existing description file
+or edited by hand.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: descfile
+* 💤 **SKIP** Unfulfilled Conditions: description
 
 </details>
 <details>
@@ -68194,7 +71351,7 @@ malformed.
 
 </pre>
 
-* 💤 **SKIP** Font family at '../fonts/static/ttfs' lacks a METADATA.pb file.
+* 💤 **SKIP** Font family at '../fonts/static/ttfs' lacks a METADATA.pb file. [code: file-not-found]
 
 </details>
 <details>
@@ -68263,6 +71420,28 @@ match exactly those declared on the METADATA.pb file.
 
 Also, to avoid confusion, we expect that font files (other than statics) are
 not placed on subdirectories.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: family_metadata
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure METADATA.pb category field is valid.</summary>
+
+* [com.google.fonts/check/metadata/category](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/category)
+<pre>--- Rationale ---
+
+There are only five acceptable values for the category field in a METADATA.pb
+file:
+- MONOSPACE
+- SANS_SERIF
+- SERIF
+- DISPLAY
+- HANDWRITING
+
+This check is meant to avoid typos in this field.
 
 
 </pre>
@@ -68557,15 +71736,28 @@ We may want to merge them all into a single check.
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Checking OS/2 usWeightClass matches weight specified at METADATA.pb.</summary>
+<summary>💤 <b>SKIP:</b> Check METADATA.pb font weights are correct.</summary>
 
 * [com.google.fonts/check/metadata/os2_weightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/os2_weightclass)
+<pre>--- Rationale ---
+
+Check METADATA.pb font weights are correct.
+
+For static fonts, the metadata weight should be the same
+as the static font&#x27;s OS/2 usWeightClass.
+
+For variable fonts, the weight value should be 400 if the
+font&#x27;s wght axis range includes 400, otherwise it should be the
+value closest to 400.
+
+
+</pre>
 
 * 💤 **SKIP** Unfulfilled Conditions: font_metadata
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName.</summary>
+<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName for static fonts.</summary>
 
 * [com.google.fonts/check/metadata/match_weight_postscript](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/match_weight_postscript)
 
@@ -68709,6 +71901,10 @@ All ligatures in a font must have corresponding caret (text cursor) positions
 defined in the GDEF table, otherwhise, users may experience issues with caret
 rendering.
 
+If using GlyphsApp, ligature carets can be set directly on canvas by accessing
+the `Glyph -&gt; Set Anchors` menu option or by pressing the `Cmd+U` keyboard
+shortcut.
+
 
 </pre>
 
@@ -68786,6 +71982,25 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Check font follows the Google Fonts CJK vertical metric schema</summary>
+
+* [com.google.fonts/check/cjk_vertical_metrics](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/cjk_vertical_metrics)
+<pre>--- Rationale ---
+
+CJK fonts have different vertical metrics when compared to Latin fonts. We
+follow the schema developed by dr Ken Lunde for Source Han Sans and the Noto
+CJK fonts.
+
+Our documentation includes further information:
+https://github.com/googlefonts/gf-docs/tree/master/Spec#cjk-vertical-metrics
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_cjk_font
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Check variable font instances have correct coordinate values</summary>
 
 * [com.google.fonts/check/varfont_instance_coordinates](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont_instance_coordinates)
@@ -68802,7 +72017,7 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Ensure VFs do not contain opsz or ital axes. </summary>
+<summary>💤 <b>SKIP:</b> Ensure VFs do not contain slnt or ital axes. </summary>
 
 * [com.google.fonts/check/varfont/unsupported_axes](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont/unsupported_axes)
 <pre>--- Rationale ---
@@ -68863,6 +72078,21 @@ result in WARNs.
 </pre>
 
 * 💤 **SKIP** Sibling families were not detected.
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure indic fonts have the Indian Rupee Sign glyph. </summary>
+
+* [com.google.fonts/check/rupee](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/rupee)
+<pre>--- Rationale ---
+
+Per Bureau of Indian Standards every font supporting one of the official Indian
+languages needs to include Unicode Character “₹” (U+20B9) Indian Rupee Sign.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_indic_font
 
 </details>
 <details>
@@ -69100,10 +72330,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/GeologicaSharp-LightItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 127.2kb |
-	| Hinted Size | 161.5kb |
-	| Increase | 34.3kb |
-	| Change   | 27.0 % |
+	| Dehinted Size | 127.5kb |
+	| Hinted Size | 162.2kb |
+	| Increase | 34.7kb |
+	| Change   | 27.2 % |
  [code: size-impact]
 
 </details>
@@ -69195,7 +72425,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [GPOS, gasp, cvt , loca, prep, GSUB, fpgm, DSIG]
+* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, GPOS, DSIG, gasp, prep, loca, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -69318,8 +72548,25 @@ set of characters defined in the `GF-latin-core` glyph-set.
 <summary>🍞 <b>PASS:</b> Checking OS/2 usWeightClass.</summary>
 
 * [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
+<pre>--- Rationale ---
 
-* 🍞 **PASS** OS/2 usWeightClass value looks good!
+Google Fonts expects variable fonts, static ttfs and static otfs to have
+differing OS/2 usWeightClass values.
+
+For Variable Fonts, Thin-Black must be 100-900
+For static ttfs, Thin-Black can be 100-900 or 250-900
+For static otfs, Thin-Black must be 250-900
+
+If static otfs are set lower than 250, text may appear blurry in legacy Windows
+applications.
+
+Glyphsapp users can change the usWeightClass value of an instance by adding a
+&#x27;weightClass&#x27; customParameter.
+
+
+</pre>
+
+* 🍞 **PASS** OS/2 usWeightClass is good
 
 </details>
 <details>
@@ -69505,20 +72752,12 @@ Even though the OpenType spec allows unitsPerEm to be any value between 16 and
 The spec suggests usage of powers of two in order to get some performance
 improvements on legacy renderers, so those values are acceptable.
 
-But value of 500 or 1000 are also acceptable, with the added benefit that it
+But values of 500 or 1000 are also acceptable, with the added benefit that it
 makes upm math easier for designers, while the performance hit of not using a
 power of two is most likely negligible nowadays.
 
-Another acceptable value is 2000. Since TT outlines are all integers (no
-floats), then instances in a VF suffer rounding compromises, and therefore a
-1000 UPM is too small because it forces too many such compromises.
-
-Therefore 2000 is a good &#x27;new VF standard&#x27;, because 2000 is a simple 2x
-conversion from existing fonts drawn on a 1000 UPM, and anyone who knows what
-10 units can do for 1000 UPM will know what 20 units does too.
-
-Additionally, values above 2048 would result in filesize increases with not
-much added benefit.
+Additionally, values above 2048 would likely result in unreasonable filesize
+increases.
 
 
 </pre>
@@ -69744,6 +72983,28 @@ release files, but Google Fonts should only have OpenType tables.
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+<pre>--- Rationale ---
+
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Combined length of family and style must not exceed 27 characters.</summary>
 
 * [com.google.fonts/check/name/family_and_style_max_length](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length)
@@ -69814,11 +73075,73 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> A font repository should not include fontbakery report files</summary>
+
+* [com.google.fonts/check/repo/fb_report](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/fb_report)
+<pre>--- Rationale ---
+
+A FontBakery report is ephemeral and so should be used for posting issues on a
+bug-tracker instead of being hosted in the font project repository.
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> A font repository should not include ZIP files</summary>
+
+* [com.google.fonts/check/repo/zip_files](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/zip_files)
+<pre>--- Rationale ---
+
+Sometimes people check in ZIPs into their font project repositories. While we
+accept the practice of checking in binaries, we believe that a ZIP is a step
+too far ;)
+
+Note: a source purist position is that only source files and build scripts
+should be checked in. 
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Name table records must not have trailing spaces.</summary>
 
 * [com.google.fonts/check/name/trailing_spaces](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/name/trailing_spaces)
 
 * 🍞 **PASS** No trailing spaces on name table entries.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+<pre>--- Rationale ---
+
+A font&#x27;s winAscent and winDescent values should be greater than the head
+table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
+can occur on Windows platforms
+(https://github.com/RedHatBrand/Overpass/issues/33).
+
+If the font includes tall/deep writing systems such as Arabic or Devanagari,
+the winAscent and winDescent can be greater than the yMax and abs(yMin) to
+accommodate vowel marks.
+
+When the win Metrics are significantly greater than the upm, the linespacing
+can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
+(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
+This means the font developer can control the linespacing with the typo values,
+whilst avoiding clipping by setting the win values to values greater than the
+yMax and abs(yMin).
+
+
+</pre>
+
+* 🍞 **PASS** OS/2 usWinAscent & usWinDescent values look good!
 
 </details>
 <details>
@@ -69887,8 +73210,15 @@ space glyph. This might have been relevant for applications on MacOS 9.
 <summary>🍞 <b>PASS:</b> Font has **proper** whitespace glyph names?</summary>
 
 * [com.google.fonts/check/whitespace_glyphnames](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/whitespace_glyphnames)
+<pre>--- Rationale ---
 
-* 🍞 **PASS** Font has **proper** whitespace glyph names.
+This check enforces adherence to recommended whitespace (codepoints 0020 and
+00A0) glyph names according to the Adobe Glyph List.
+
+
+</pre>
+
+* 🍞 **PASS** Font has **AGL recommended** names for whitespace glyphs.
 
 </details>
 <details>
@@ -70111,7 +73441,7 @@ apps.
 <pre>--- Rationale ---
 
 There are various metadata in the OpenType spec to specify if a font is
-monospaced or not. If the font is not trully monospaced, then no monospaced
+monospaced or not. If the font is not truly monospaced, then no monospaced
 metadata should be set (as sometimes they mistakenly are...)
 
 Requirements for monospace fonts:
@@ -70242,15 +73572,45 @@ Reference: https://github.com/googlefonts/fontbakery/issues/1845
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class)</summary>
+
+* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
+<pre>--- Rationale ---
+
+Glyphs in the GDEF mark glyph class should be non-spacing.
+Spacing glyphs in the GDEF mark glyph class may have incorrect anchor
+positioning that was only intended for building composite glyphs during design.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not has spacing glyphs in the GDEF mark glyph class.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class</summary>
+
+* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
+<pre>--- Rationale ---
+
+Mark characters should be in the GDEF mark glyph class.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not have mark characters not in the GDEF mark glyph class.
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Check GDEF mark glyph class doesn't have characters that are not marks)</summary>
 
 * [com.google.fonts/check/gdef_non_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars)
 <pre>--- Rationale ---
 
-Glyphs in the GDEF mark glyph class become non-spacing and may be
-repositioned if they have mark anchors. Only combining mark glyphs
-should be in that class. Any non-mark glyph must not be in that class,
-in particular spacing glyphs.
+Glyphs in the GDEF mark glyph class become non-spacing and may be repositioned
+if they have mark anchors.
+Only combining mark glyphs should be in that class. Any non-mark glyph must not
+be in that class, in particular spacing glyphs.
 
 
 </pre>
@@ -70334,63 +73694,7 @@ the same x,y coordinates.
 <br>
 </details>
 <details>
-<summary><b>[158] GeologicaSharp-Medium.ttf</b></summary>
-<details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
-
-This can be accomplished by using the 'gftools fix-hinting' command.
-
-# create virtualenvpython3 -m venv venv
-# activate virtualenvsource venv/bin/activate
-# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-
-A font&#x27;s winAscent and winDescent values should be greater than the head
-table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
-can occur on Windows platforms
-(https://github.com/RedHatBrand/Overpass/issues/33).
-
-If the font includes tall/deep writing systems such as Arabic or Devanagari,
-the winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-
-When the win Metrics are significantly greater than the upm, the linespacing
-can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
-This means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).
-
-
-</pre>
-
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 895, but got 746 instead [code: descent]
-
-</details>
+<summary><b>[163] GeologicaSharp-Medium.ttf</b></summary>
 <details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
@@ -70445,31 +73749,31 @@ Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uhorn	Contours detected: 2	Expected: 1
 Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
 Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1 [code: contour-count]
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
 
 </details>
 <details>
@@ -70501,39 +73805,6 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 </details>
 <details>
-<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class)</summary>
-
-* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
-<pre>--- Rationale ---
-
-Glyphs in the GDEF mark glyph class should be non-spacing.
-Spacing glyphs in the GDEF mark glyph class may have incorrect
-anchor positioning that was only intended for building composite glyphs
-during design.
-
-
-</pre>
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 acutecomb, acutecomb.case, acutecomb.narrow, brevecombcy, dotbelowcomb, gravecomb, gravecomb.case, gravecomb.narrow, hookabovecomb, hookabovecomb.case and 55 more. [code: spacing-mark-glyphs]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class</summary>
-
-* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
-<pre>--- Rationale ---
-
-Mark characters should be in the GDEF mark glyph class.
-
-
-</pre>
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 U+0300, U+0301, U+0302, U+0303, U+0304, U+0306, U+0307, U+0308, U+0309, U+030A, U+030B, U+030C, U+030F, U+0311, U+0312, U+031B, U+0323, U+0324, U+0326, U+0327, U+0328, U+032E, U+0331 and U+0335 [code: mark-chars]
-
-</details>
-<details>
 <summary>💤 <b>SKIP:</b> Does DESCRIPTION file contain broken links?</summary>
 
 * [com.google.fonts/check/description/broken_links](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/broken_links)
@@ -70541,12 +73812,12 @@ Mark characters should be in the GDEF mark glyph class.
 
 The snippet of HTML in the DESCRIPTION.en_us.html file is added to the font
 family webpage on the Google Fonts website. For that reason, all hyperlinks in
-it must be properly working. 
+it must be properly working.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -70569,7 +73840,7 @@ any other git-based version control service.
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -70578,17 +73849,19 @@ any other git-based version control service.
 * [com.google.fonts/check/description/valid_html](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/valid_html)
 <pre>--- Rationale ---
 
-When packaging families for being pushed to the `google/fonts` git repo, if
-there is no DESCRIPTION.en_us.html file, some older versions of the
-`add_font.py` tool insert a dummy description file which contains invalid html.
+Sometimes people write malformed HTML markup. This check should ensure the file
+is good.
 
-This file needs to either be replaced with an existing description file or
-edited by hand.
+Additionally, when packaging families for being pushed to the `google/fonts`
+git repo, if there is no DESCRIPTION.en_us.html file, some older versions of
+the `add_font.py` tool insert a dummy description file which contains invalid
+html. This file needs to either be replaced with an existing description file
+or edited by hand.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: descfile
+* 💤 **SKIP** Unfulfilled Conditions: description
 
 </details>
 <details>
@@ -70639,7 +73912,7 @@ malformed.
 
 </pre>
 
-* 💤 **SKIP** Font family at '../fonts/static/ttfs' lacks a METADATA.pb file.
+* 💤 **SKIP** Font family at '../fonts/static/ttfs' lacks a METADATA.pb file. [code: file-not-found]
 
 </details>
 <details>
@@ -70708,6 +73981,28 @@ match exactly those declared on the METADATA.pb file.
 
 Also, to avoid confusion, we expect that font files (other than statics) are
 not placed on subdirectories.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: family_metadata
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure METADATA.pb category field is valid.</summary>
+
+* [com.google.fonts/check/metadata/category](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/category)
+<pre>--- Rationale ---
+
+There are only five acceptable values for the category field in a METADATA.pb
+file:
+- MONOSPACE
+- SANS_SERIF
+- SERIF
+- DISPLAY
+- HANDWRITING
+
+This check is meant to avoid typos in this field.
 
 
 </pre>
@@ -71002,15 +74297,28 @@ We may want to merge them all into a single check.
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Checking OS/2 usWeightClass matches weight specified at METADATA.pb.</summary>
+<summary>💤 <b>SKIP:</b> Check METADATA.pb font weights are correct.</summary>
 
 * [com.google.fonts/check/metadata/os2_weightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/os2_weightclass)
+<pre>--- Rationale ---
+
+Check METADATA.pb font weights are correct.
+
+For static fonts, the metadata weight should be the same
+as the static font&#x27;s OS/2 usWeightClass.
+
+For variable fonts, the weight value should be 400 if the
+font&#x27;s wght axis range includes 400, otherwise it should be the
+value closest to 400.
+
+
+</pre>
 
 * 💤 **SKIP** Unfulfilled Conditions: font_metadata
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName.</summary>
+<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName for static fonts.</summary>
 
 * [com.google.fonts/check/metadata/match_weight_postscript](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/match_weight_postscript)
 
@@ -71154,6 +74462,10 @@ All ligatures in a font must have corresponding caret (text cursor) positions
 defined in the GDEF table, otherwhise, users may experience issues with caret
 rendering.
 
+If using GlyphsApp, ligature carets can be set directly on canvas by accessing
+the `Glyph -&gt; Set Anchors` menu option or by pressing the `Cmd+U` keyboard
+shortcut.
+
 
 </pre>
 
@@ -71231,6 +74543,25 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Check font follows the Google Fonts CJK vertical metric schema</summary>
+
+* [com.google.fonts/check/cjk_vertical_metrics](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/cjk_vertical_metrics)
+<pre>--- Rationale ---
+
+CJK fonts have different vertical metrics when compared to Latin fonts. We
+follow the schema developed by dr Ken Lunde for Source Han Sans and the Noto
+CJK fonts.
+
+Our documentation includes further information:
+https://github.com/googlefonts/gf-docs/tree/master/Spec#cjk-vertical-metrics
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_cjk_font
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Check variable font instances have correct coordinate values</summary>
 
 * [com.google.fonts/check/varfont_instance_coordinates](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont_instance_coordinates)
@@ -71247,7 +74578,7 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Ensure VFs do not contain opsz or ital axes. </summary>
+<summary>💤 <b>SKIP:</b> Ensure VFs do not contain slnt or ital axes. </summary>
 
 * [com.google.fonts/check/varfont/unsupported_axes](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont/unsupported_axes)
 <pre>--- Rationale ---
@@ -71308,6 +74639,21 @@ result in WARNs.
 </pre>
 
 * 💤 **SKIP** Sibling families were not detected.
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure indic fonts have the Indian Rupee Sign glyph. </summary>
+
+* [com.google.fonts/check/rupee](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/rupee)
+<pre>--- Rationale ---
+
+Per Bureau of Indian Standards every font supporting one of the official Indian
+languages needs to include Unicode Character “₹” (U+20B9) Indian Rupee Sign.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_indic_font
 
 </details>
 <details>
@@ -71545,10 +74891,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/GeologicaSharp-Medium.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 125.9kb |
-	| Hinted Size | 155.9kb |
-	| Increase | 30.0kb |
-	| Change   | 23.8 % |
+	| Dehinted Size | 126.2kb |
+	| Hinted Size | 156.5kb |
+	| Increase | 30.4kb |
+	| Change   | 24.1 % |
  [code: size-impact]
 
 </details>
@@ -71640,7 +74986,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [GPOS, gasp, cvt , loca, prep, GSUB, fpgm, DSIG]
+* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, GPOS, DSIG, gasp, prep, loca, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -71763,8 +75109,25 @@ set of characters defined in the `GF-latin-core` glyph-set.
 <summary>🍞 <b>PASS:</b> Checking OS/2 usWeightClass.</summary>
 
 * [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
+<pre>--- Rationale ---
 
-* 🍞 **PASS** OS/2 usWeightClass value looks good!
+Google Fonts expects variable fonts, static ttfs and static otfs to have
+differing OS/2 usWeightClass values.
+
+For Variable Fonts, Thin-Black must be 100-900
+For static ttfs, Thin-Black can be 100-900 or 250-900
+For static otfs, Thin-Black must be 250-900
+
+If static otfs are set lower than 250, text may appear blurry in legacy Windows
+applications.
+
+Glyphsapp users can change the usWeightClass value of an instance by adding a
+&#x27;weightClass&#x27; customParameter.
+
+
+</pre>
+
+* 🍞 **PASS** OS/2 usWeightClass is good
 
 </details>
 <details>
@@ -71950,20 +75313,12 @@ Even though the OpenType spec allows unitsPerEm to be any value between 16 and
 The spec suggests usage of powers of two in order to get some performance
 improvements on legacy renderers, so those values are acceptable.
 
-But value of 500 or 1000 are also acceptable, with the added benefit that it
+But values of 500 or 1000 are also acceptable, with the added benefit that it
 makes upm math easier for designers, while the performance hit of not using a
 power of two is most likely negligible nowadays.
 
-Another acceptable value is 2000. Since TT outlines are all integers (no
-floats), then instances in a VF suffer rounding compromises, and therefore a
-1000 UPM is too small because it forces too many such compromises.
-
-Therefore 2000 is a good &#x27;new VF standard&#x27;, because 2000 is a simple 2x
-conversion from existing fonts drawn on a 1000 UPM, and anyone who knows what
-10 units can do for 1000 UPM will know what 20 units does too.
-
-Additionally, values above 2048 would result in filesize increases with not
-much added benefit.
+Additionally, values above 2048 would likely result in unreasonable filesize
+increases.
 
 
 </pre>
@@ -72189,6 +75544,28 @@ release files, but Google Fonts should only have OpenType tables.
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+<pre>--- Rationale ---
+
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Name table entries should not contain line-breaks.</summary>
 
 * [com.google.fonts/check/name/line_breaks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/line_breaks)
@@ -72234,11 +75611,73 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> A font repository should not include fontbakery report files</summary>
+
+* [com.google.fonts/check/repo/fb_report](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/fb_report)
+<pre>--- Rationale ---
+
+A FontBakery report is ephemeral and so should be used for posting issues on a
+bug-tracker instead of being hosted in the font project repository.
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> A font repository should not include ZIP files</summary>
+
+* [com.google.fonts/check/repo/zip_files](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/zip_files)
+<pre>--- Rationale ---
+
+Sometimes people check in ZIPs into their font project repositories. While we
+accept the practice of checking in binaries, we believe that a ZIP is a step
+too far ;)
+
+Note: a source purist position is that only source files and build scripts
+should be checked in. 
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Name table records must not have trailing spaces.</summary>
 
 * [com.google.fonts/check/name/trailing_spaces](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/name/trailing_spaces)
 
 * 🍞 **PASS** No trailing spaces on name table entries.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+<pre>--- Rationale ---
+
+A font&#x27;s winAscent and winDescent values should be greater than the head
+table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
+can occur on Windows platforms
+(https://github.com/RedHatBrand/Overpass/issues/33).
+
+If the font includes tall/deep writing systems such as Arabic or Devanagari,
+the winAscent and winDescent can be greater than the yMax and abs(yMin) to
+accommodate vowel marks.
+
+When the win Metrics are significantly greater than the upm, the linespacing
+can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
+(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
+This means the font developer can control the linespacing with the typo values,
+whilst avoiding clipping by setting the win values to values greater than the
+yMax and abs(yMin).
+
+
+</pre>
+
+* 🍞 **PASS** OS/2 usWinAscent & usWinDescent values look good!
 
 </details>
 <details>
@@ -72307,8 +75746,15 @@ space glyph. This might have been relevant for applications on MacOS 9.
 <summary>🍞 <b>PASS:</b> Font has **proper** whitespace glyph names?</summary>
 
 * [com.google.fonts/check/whitespace_glyphnames](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/whitespace_glyphnames)
+<pre>--- Rationale ---
 
-* 🍞 **PASS** Font has **proper** whitespace glyph names.
+This check enforces adherence to recommended whitespace (codepoints 0020 and
+00A0) glyph names according to the Adobe Glyph List.
+
+
+</pre>
+
+* 🍞 **PASS** Font has **AGL recommended** names for whitespace glyphs.
 
 </details>
 <details>
@@ -72531,7 +75977,7 @@ apps.
 <pre>--- Rationale ---
 
 There are various metadata in the OpenType spec to specify if a font is
-monospaced or not. If the font is not trully monospaced, then no monospaced
+monospaced or not. If the font is not truly monospaced, then no monospaced
 metadata should be set (as sometimes they mistakenly are...)
 
 Requirements for monospace fonts:
@@ -72662,15 +76108,45 @@ Reference: https://github.com/googlefonts/fontbakery/issues/1845
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class)</summary>
+
+* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
+<pre>--- Rationale ---
+
+Glyphs in the GDEF mark glyph class should be non-spacing.
+Spacing glyphs in the GDEF mark glyph class may have incorrect anchor
+positioning that was only intended for building composite glyphs during design.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not has spacing glyphs in the GDEF mark glyph class.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class</summary>
+
+* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
+<pre>--- Rationale ---
+
+Mark characters should be in the GDEF mark glyph class.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not have mark characters not in the GDEF mark glyph class.
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Check GDEF mark glyph class doesn't have characters that are not marks)</summary>
 
 * [com.google.fonts/check/gdef_non_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars)
 <pre>--- Rationale ---
 
-Glyphs in the GDEF mark glyph class become non-spacing and may be
-repositioned if they have mark anchors. Only combining mark glyphs
-should be in that class. Any non-mark glyph must not be in that class,
-in particular spacing glyphs.
+Glyphs in the GDEF mark glyph class become non-spacing and may be repositioned
+if they have mark anchors.
+Only combining mark glyphs should be in that class. Any non-mark glyph must not
+be in that class, in particular spacing glyphs.
 
 
 </pre>
@@ -72754,63 +76230,7 @@ the same x,y coordinates.
 <br>
 </details>
 <details>
-<summary><b>[158] GeologicaSharp-MediumItalic.ttf</b></summary>
-<details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
-
-This can be accomplished by using the 'gftools fix-hinting' command.
-
-# create virtualenvpython3 -m venv venv
-# activate virtualenvsource venv/bin/activate
-# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-
-A font&#x27;s winAscent and winDescent values should be greater than the head
-table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
-can occur on Windows platforms
-(https://github.com/RedHatBrand/Overpass/issues/33).
-
-If the font includes tall/deep writing systems such as Arabic or Devanagari,
-the winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-
-When the win Metrics are significantly greater than the upm, the linespacing
-can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
-This means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).
-
-
-</pre>
-
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 895, but got 746 instead [code: descent]
-
-</details>
+<summary><b>[163] GeologicaSharp-MediumItalic.ttf</b></summary>
 <details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
@@ -72864,31 +76284,31 @@ Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uhorn	Contours detected: 2	Expected: 1
 Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
 Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1 [code: contour-count]
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
 
 </details>
 <details>
@@ -72920,39 +76340,6 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 </details>
 <details>
-<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class)</summary>
-
-* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
-<pre>--- Rationale ---
-
-Glyphs in the GDEF mark glyph class should be non-spacing.
-Spacing glyphs in the GDEF mark glyph class may have incorrect
-anchor positioning that was only intended for building composite glyphs
-during design.
-
-
-</pre>
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 acutecomb, acutecomb.case, acutecomb.narrow, brevecombcy, dotbelowcomb, gravecomb, gravecomb.case, gravecomb.narrow, hookabovecomb, hookabovecomb.case and 55 more. [code: spacing-mark-glyphs]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class</summary>
-
-* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
-<pre>--- Rationale ---
-
-Mark characters should be in the GDEF mark glyph class.
-
-
-</pre>
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 U+0300, U+0301, U+0302, U+0303, U+0304, U+0306, U+0307, U+0308, U+0309, U+030A, U+030B, U+030C, U+030F, U+0311, U+0312, U+031B, U+0323, U+0324, U+0326, U+0327, U+0328, U+032E, U+0331 and U+0335 [code: mark-chars]
-
-</details>
-<details>
 <summary>💤 <b>SKIP:</b> Does DESCRIPTION file contain broken links?</summary>
 
 * [com.google.fonts/check/description/broken_links](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/broken_links)
@@ -72960,12 +76347,12 @@ Mark characters should be in the GDEF mark glyph class.
 
 The snippet of HTML in the DESCRIPTION.en_us.html file is added to the font
 family webpage on the Google Fonts website. For that reason, all hyperlinks in
-it must be properly working. 
+it must be properly working.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -72988,7 +76375,7 @@ any other git-based version control service.
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -72997,17 +76384,19 @@ any other git-based version control service.
 * [com.google.fonts/check/description/valid_html](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/valid_html)
 <pre>--- Rationale ---
 
-When packaging families for being pushed to the `google/fonts` git repo, if
-there is no DESCRIPTION.en_us.html file, some older versions of the
-`add_font.py` tool insert a dummy description file which contains invalid html.
+Sometimes people write malformed HTML markup. This check should ensure the file
+is good.
 
-This file needs to either be replaced with an existing description file or
-edited by hand.
+Additionally, when packaging families for being pushed to the `google/fonts`
+git repo, if there is no DESCRIPTION.en_us.html file, some older versions of
+the `add_font.py` tool insert a dummy description file which contains invalid
+html. This file needs to either be replaced with an existing description file
+or edited by hand.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: descfile
+* 💤 **SKIP** Unfulfilled Conditions: description
 
 </details>
 <details>
@@ -73058,7 +76447,7 @@ malformed.
 
 </pre>
 
-* 💤 **SKIP** Font family at '../fonts/static/ttfs' lacks a METADATA.pb file.
+* 💤 **SKIP** Font family at '../fonts/static/ttfs' lacks a METADATA.pb file. [code: file-not-found]
 
 </details>
 <details>
@@ -73127,6 +76516,28 @@ match exactly those declared on the METADATA.pb file.
 
 Also, to avoid confusion, we expect that font files (other than statics) are
 not placed on subdirectories.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: family_metadata
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure METADATA.pb category field is valid.</summary>
+
+* [com.google.fonts/check/metadata/category](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/category)
+<pre>--- Rationale ---
+
+There are only five acceptable values for the category field in a METADATA.pb
+file:
+- MONOSPACE
+- SANS_SERIF
+- SERIF
+- DISPLAY
+- HANDWRITING
+
+This check is meant to avoid typos in this field.
 
 
 </pre>
@@ -73421,15 +76832,28 @@ We may want to merge them all into a single check.
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Checking OS/2 usWeightClass matches weight specified at METADATA.pb.</summary>
+<summary>💤 <b>SKIP:</b> Check METADATA.pb font weights are correct.</summary>
 
 * [com.google.fonts/check/metadata/os2_weightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/os2_weightclass)
+<pre>--- Rationale ---
+
+Check METADATA.pb font weights are correct.
+
+For static fonts, the metadata weight should be the same
+as the static font&#x27;s OS/2 usWeightClass.
+
+For variable fonts, the weight value should be 400 if the
+font&#x27;s wght axis range includes 400, otherwise it should be the
+value closest to 400.
+
+
+</pre>
 
 * 💤 **SKIP** Unfulfilled Conditions: font_metadata
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName.</summary>
+<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName for static fonts.</summary>
 
 * [com.google.fonts/check/metadata/match_weight_postscript](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/match_weight_postscript)
 
@@ -73573,6 +76997,10 @@ All ligatures in a font must have corresponding caret (text cursor) positions
 defined in the GDEF table, otherwhise, users may experience issues with caret
 rendering.
 
+If using GlyphsApp, ligature carets can be set directly on canvas by accessing
+the `Glyph -&gt; Set Anchors` menu option or by pressing the `Cmd+U` keyboard
+shortcut.
+
 
 </pre>
 
@@ -73650,6 +77078,25 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Check font follows the Google Fonts CJK vertical metric schema</summary>
+
+* [com.google.fonts/check/cjk_vertical_metrics](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/cjk_vertical_metrics)
+<pre>--- Rationale ---
+
+CJK fonts have different vertical metrics when compared to Latin fonts. We
+follow the schema developed by dr Ken Lunde for Source Han Sans and the Noto
+CJK fonts.
+
+Our documentation includes further information:
+https://github.com/googlefonts/gf-docs/tree/master/Spec#cjk-vertical-metrics
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_cjk_font
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Check variable font instances have correct coordinate values</summary>
 
 * [com.google.fonts/check/varfont_instance_coordinates](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont_instance_coordinates)
@@ -73666,7 +77113,7 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Ensure VFs do not contain opsz or ital axes. </summary>
+<summary>💤 <b>SKIP:</b> Ensure VFs do not contain slnt or ital axes. </summary>
 
 * [com.google.fonts/check/varfont/unsupported_axes](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont/unsupported_axes)
 <pre>--- Rationale ---
@@ -73727,6 +77174,21 @@ result in WARNs.
 </pre>
 
 * 💤 **SKIP** Sibling families were not detected.
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure indic fonts have the Indian Rupee Sign glyph. </summary>
+
+* [com.google.fonts/check/rupee](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/rupee)
+<pre>--- Rationale ---
+
+Per Bureau of Indian Standards every font supporting one of the official Indian
+languages needs to include Unicode Character “₹” (U+20B9) Indian Rupee Sign.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_indic_font
 
 </details>
 <details>
@@ -73964,10 +77426,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/GeologicaSharp-MediumItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 127.2kb |
-	| Hinted Size | 157.3kb |
-	| Increase | 30.1kb |
-	| Change   | 23.7 % |
+	| Dehinted Size | 127.4kb |
+	| Hinted Size | 158.0kb |
+	| Increase | 30.5kb |
+	| Change   | 24.0 % |
  [code: size-impact]
 
 </details>
@@ -74059,7 +77521,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [GPOS, gasp, cvt , loca, prep, GSUB, fpgm, DSIG]
+* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, GPOS, DSIG, gasp, prep, loca, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -74182,8 +77644,25 @@ set of characters defined in the `GF-latin-core` glyph-set.
 <summary>🍞 <b>PASS:</b> Checking OS/2 usWeightClass.</summary>
 
 * [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
+<pre>--- Rationale ---
 
-* 🍞 **PASS** OS/2 usWeightClass value looks good!
+Google Fonts expects variable fonts, static ttfs and static otfs to have
+differing OS/2 usWeightClass values.
+
+For Variable Fonts, Thin-Black must be 100-900
+For static ttfs, Thin-Black can be 100-900 or 250-900
+For static otfs, Thin-Black must be 250-900
+
+If static otfs are set lower than 250, text may appear blurry in legacy Windows
+applications.
+
+Glyphsapp users can change the usWeightClass value of an instance by adding a
+&#x27;weightClass&#x27; customParameter.
+
+
+</pre>
+
+* 🍞 **PASS** OS/2 usWeightClass is good
 
 </details>
 <details>
@@ -74369,20 +77848,12 @@ Even though the OpenType spec allows unitsPerEm to be any value between 16 and
 The spec suggests usage of powers of two in order to get some performance
 improvements on legacy renderers, so those values are acceptable.
 
-But value of 500 or 1000 are also acceptable, with the added benefit that it
+But values of 500 or 1000 are also acceptable, with the added benefit that it
 makes upm math easier for designers, while the performance hit of not using a
 power of two is most likely negligible nowadays.
 
-Another acceptable value is 2000. Since TT outlines are all integers (no
-floats), then instances in a VF suffer rounding compromises, and therefore a
-1000 UPM is too small because it forces too many such compromises.
-
-Therefore 2000 is a good &#x27;new VF standard&#x27;, because 2000 is a simple 2x
-conversion from existing fonts drawn on a 1000 UPM, and anyone who knows what
-10 units can do for 1000 UPM will know what 20 units does too.
-
-Additionally, values above 2048 would result in filesize increases with not
-much added benefit.
+Additionally, values above 2048 would likely result in unreasonable filesize
+increases.
 
 
 </pre>
@@ -74608,6 +78079,28 @@ release files, but Google Fonts should only have OpenType tables.
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+<pre>--- Rationale ---
+
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Name table entries should not contain line-breaks.</summary>
 
 * [com.google.fonts/check/name/line_breaks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/line_breaks)
@@ -74653,11 +78146,73 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> A font repository should not include fontbakery report files</summary>
+
+* [com.google.fonts/check/repo/fb_report](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/fb_report)
+<pre>--- Rationale ---
+
+A FontBakery report is ephemeral and so should be used for posting issues on a
+bug-tracker instead of being hosted in the font project repository.
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> A font repository should not include ZIP files</summary>
+
+* [com.google.fonts/check/repo/zip_files](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/zip_files)
+<pre>--- Rationale ---
+
+Sometimes people check in ZIPs into their font project repositories. While we
+accept the practice of checking in binaries, we believe that a ZIP is a step
+too far ;)
+
+Note: a source purist position is that only source files and build scripts
+should be checked in. 
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Name table records must not have trailing spaces.</summary>
 
 * [com.google.fonts/check/name/trailing_spaces](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/name/trailing_spaces)
 
 * 🍞 **PASS** No trailing spaces on name table entries.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+<pre>--- Rationale ---
+
+A font&#x27;s winAscent and winDescent values should be greater than the head
+table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
+can occur on Windows platforms
+(https://github.com/RedHatBrand/Overpass/issues/33).
+
+If the font includes tall/deep writing systems such as Arabic or Devanagari,
+the winAscent and winDescent can be greater than the yMax and abs(yMin) to
+accommodate vowel marks.
+
+When the win Metrics are significantly greater than the upm, the linespacing
+can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
+(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
+This means the font developer can control the linespacing with the typo values,
+whilst avoiding clipping by setting the win values to values greater than the
+yMax and abs(yMin).
+
+
+</pre>
+
+* 🍞 **PASS** OS/2 usWinAscent & usWinDescent values look good!
 
 </details>
 <details>
@@ -74726,8 +78281,15 @@ space glyph. This might have been relevant for applications on MacOS 9.
 <summary>🍞 <b>PASS:</b> Font has **proper** whitespace glyph names?</summary>
 
 * [com.google.fonts/check/whitespace_glyphnames](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/whitespace_glyphnames)
+<pre>--- Rationale ---
 
-* 🍞 **PASS** Font has **proper** whitespace glyph names.
+This check enforces adherence to recommended whitespace (codepoints 0020 and
+00A0) glyph names according to the Adobe Glyph List.
+
+
+</pre>
+
+* 🍞 **PASS** Font has **AGL recommended** names for whitespace glyphs.
 
 </details>
 <details>
@@ -74950,7 +78512,7 @@ apps.
 <pre>--- Rationale ---
 
 There are various metadata in the OpenType spec to specify if a font is
-monospaced or not. If the font is not trully monospaced, then no monospaced
+monospaced or not. If the font is not truly monospaced, then no monospaced
 metadata should be set (as sometimes they mistakenly are...)
 
 Requirements for monospace fonts:
@@ -75081,15 +78643,45 @@ Reference: https://github.com/googlefonts/fontbakery/issues/1845
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class)</summary>
+
+* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
+<pre>--- Rationale ---
+
+Glyphs in the GDEF mark glyph class should be non-spacing.
+Spacing glyphs in the GDEF mark glyph class may have incorrect anchor
+positioning that was only intended for building composite glyphs during design.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not has spacing glyphs in the GDEF mark glyph class.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class</summary>
+
+* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
+<pre>--- Rationale ---
+
+Mark characters should be in the GDEF mark glyph class.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not have mark characters not in the GDEF mark glyph class.
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Check GDEF mark glyph class doesn't have characters that are not marks)</summary>
 
 * [com.google.fonts/check/gdef_non_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars)
 <pre>--- Rationale ---
 
-Glyphs in the GDEF mark glyph class become non-spacing and may be
-repositioned if they have mark anchors. Only combining mark glyphs
-should be in that class. Any non-mark glyph must not be in that class,
-in particular spacing glyphs.
+Glyphs in the GDEF mark glyph class become non-spacing and may be repositioned
+if they have mark anchors.
+Only combining mark glyphs should be in that class. Any non-mark glyph must not
+be in that class, in particular spacing glyphs.
 
 
 </pre>
@@ -75173,63 +78765,7 @@ the same x,y coordinates.
 <br>
 </details>
 <details>
-<summary><b>[158] GeologicaSharp-Regular.ttf</b></summary>
-<details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
-
-This can be accomplished by using the 'gftools fix-hinting' command.
-
-# create virtualenvpython3 -m venv venv
-# activate virtualenvsource venv/bin/activate
-# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-
-A font&#x27;s winAscent and winDescent values should be greater than the head
-table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
-can occur on Windows platforms
-(https://github.com/RedHatBrand/Overpass/issues/33).
-
-If the font includes tall/deep writing systems such as Arabic or Devanagari,
-the winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-
-When the win Metrics are significantly greater than the upm, the linespacing
-can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
-This means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).
-
-
-</pre>
-
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 895, but got 746 instead [code: descent]
-
-</details>
+<summary><b>[163] GeologicaSharp-Regular.ttf</b></summary>
 <details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
@@ -75284,64 +78820,31 @@ Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uhorn	Contours detected: 2	Expected: 1
 Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
 Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1 [code: contour-count]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class)</summary>
-
-* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
-<pre>--- Rationale ---
-
-Glyphs in the GDEF mark glyph class should be non-spacing.
-Spacing glyphs in the GDEF mark glyph class may have incorrect
-anchor positioning that was only intended for building composite glyphs
-during design.
-
-
-</pre>
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 acutecomb, acutecomb.case, acutecomb.narrow, brevecombcy, dotbelowcomb, gravecomb, gravecomb.case, gravecomb.narrow, hookabovecomb, hookabovecomb.case and 55 more. [code: spacing-mark-glyphs]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class</summary>
-
-* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
-<pre>--- Rationale ---
-
-Mark characters should be in the GDEF mark glyph class.
-
-
-</pre>
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 U+0300, U+0301, U+0302, U+0303, U+0304, U+0306, U+0307, U+0308, U+0309, U+030A, U+030B, U+030C, U+030F, U+0311, U+0312, U+031B, U+0323, U+0324, U+0326, U+0327, U+0328, U+032E, U+0331 and U+0335 [code: mark-chars]
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
 
 </details>
 <details>
@@ -75352,12 +78855,12 @@ Mark characters should be in the GDEF mark glyph class.
 
 The snippet of HTML in the DESCRIPTION.en_us.html file is added to the font
 family webpage on the Google Fonts website. For that reason, all hyperlinks in
-it must be properly working. 
+it must be properly working.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -75380,7 +78883,7 @@ any other git-based version control service.
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -75389,17 +78892,19 @@ any other git-based version control service.
 * [com.google.fonts/check/description/valid_html](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/valid_html)
 <pre>--- Rationale ---
 
-When packaging families for being pushed to the `google/fonts` git repo, if
-there is no DESCRIPTION.en_us.html file, some older versions of the
-`add_font.py` tool insert a dummy description file which contains invalid html.
+Sometimes people write malformed HTML markup. This check should ensure the file
+is good.
 
-This file needs to either be replaced with an existing description file or
-edited by hand.
+Additionally, when packaging families for being pushed to the `google/fonts`
+git repo, if there is no DESCRIPTION.en_us.html file, some older versions of
+the `add_font.py` tool insert a dummy description file which contains invalid
+html. This file needs to either be replaced with an existing description file
+or edited by hand.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: descfile
+* 💤 **SKIP** Unfulfilled Conditions: description
 
 </details>
 <details>
@@ -75450,7 +78955,7 @@ malformed.
 
 </pre>
 
-* 💤 **SKIP** Font family at '../fonts/static/ttfs' lacks a METADATA.pb file.
+* 💤 **SKIP** Font family at '../fonts/static/ttfs' lacks a METADATA.pb file. [code: file-not-found]
 
 </details>
 <details>
@@ -75519,6 +79024,28 @@ match exactly those declared on the METADATA.pb file.
 
 Also, to avoid confusion, we expect that font files (other than statics) are
 not placed on subdirectories.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: family_metadata
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure METADATA.pb category field is valid.</summary>
+
+* [com.google.fonts/check/metadata/category](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/category)
+<pre>--- Rationale ---
+
+There are only five acceptable values for the category field in a METADATA.pb
+file:
+- MONOSPACE
+- SANS_SERIF
+- SERIF
+- DISPLAY
+- HANDWRITING
+
+This check is meant to avoid typos in this field.
 
 
 </pre>
@@ -75813,15 +79340,28 @@ We may want to merge them all into a single check.
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Checking OS/2 usWeightClass matches weight specified at METADATA.pb.</summary>
+<summary>💤 <b>SKIP:</b> Check METADATA.pb font weights are correct.</summary>
 
 * [com.google.fonts/check/metadata/os2_weightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/os2_weightclass)
+<pre>--- Rationale ---
+
+Check METADATA.pb font weights are correct.
+
+For static fonts, the metadata weight should be the same
+as the static font&#x27;s OS/2 usWeightClass.
+
+For variable fonts, the weight value should be 400 if the
+font&#x27;s wght axis range includes 400, otherwise it should be the
+value closest to 400.
+
+
+</pre>
 
 * 💤 **SKIP** Unfulfilled Conditions: font_metadata
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName.</summary>
+<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName for static fonts.</summary>
 
 * [com.google.fonts/check/metadata/match_weight_postscript](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/match_weight_postscript)
 
@@ -75965,6 +79505,10 @@ All ligatures in a font must have corresponding caret (text cursor) positions
 defined in the GDEF table, otherwhise, users may experience issues with caret
 rendering.
 
+If using GlyphsApp, ligature carets can be set directly on canvas by accessing
+the `Glyph -&gt; Set Anchors` menu option or by pressing the `Cmd+U` keyboard
+shortcut.
+
 
 </pre>
 
@@ -76042,6 +79586,25 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Check font follows the Google Fonts CJK vertical metric schema</summary>
+
+* [com.google.fonts/check/cjk_vertical_metrics](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/cjk_vertical_metrics)
+<pre>--- Rationale ---
+
+CJK fonts have different vertical metrics when compared to Latin fonts. We
+follow the schema developed by dr Ken Lunde for Source Han Sans and the Noto
+CJK fonts.
+
+Our documentation includes further information:
+https://github.com/googlefonts/gf-docs/tree/master/Spec#cjk-vertical-metrics
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_cjk_font
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Check variable font instances have correct coordinate values</summary>
 
 * [com.google.fonts/check/varfont_instance_coordinates](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont_instance_coordinates)
@@ -76058,7 +79621,7 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Ensure VFs do not contain opsz or ital axes. </summary>
+<summary>💤 <b>SKIP:</b> Ensure VFs do not contain slnt or ital axes. </summary>
 
 * [com.google.fonts/check/varfont/unsupported_axes](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont/unsupported_axes)
 <pre>--- Rationale ---
@@ -76119,6 +79682,21 @@ result in WARNs.
 </pre>
 
 * 💤 **SKIP** Sibling families were not detected.
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure indic fonts have the Indian Rupee Sign glyph. </summary>
+
+* [com.google.fonts/check/rupee](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/rupee)
+<pre>--- Rationale ---
+
+Per Bureau of Indian Standards every font supporting one of the official Indian
+languages needs to include Unicode Character “₹” (U+20B9) Indian Rupee Sign.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_indic_font
 
 </details>
 <details>
@@ -76356,10 +79934,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/GeologicaSharp-Regular.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 125.7kb |
-	| Hinted Size | 166.0kb |
-	| Increase | 40.2kb |
-	| Change   | 32.0 % |
+	| Dehinted Size | 126.0kb |
+	| Hinted Size | 166.7kb |
+	| Increase | 40.7kb |
+	| Change   | 32.3 % |
  [code: size-impact]
 
 </details>
@@ -76451,7 +80029,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [GPOS, gasp, cvt , loca, prep, GSUB, fpgm, DSIG]
+* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, GPOS, DSIG, gasp, prep, loca, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -76574,8 +80152,25 @@ set of characters defined in the `GF-latin-core` glyph-set.
 <summary>🍞 <b>PASS:</b> Checking OS/2 usWeightClass.</summary>
 
 * [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
+<pre>--- Rationale ---
 
-* 🍞 **PASS** OS/2 usWeightClass value looks good!
+Google Fonts expects variable fonts, static ttfs and static otfs to have
+differing OS/2 usWeightClass values.
+
+For Variable Fonts, Thin-Black must be 100-900
+For static ttfs, Thin-Black can be 100-900 or 250-900
+For static otfs, Thin-Black must be 250-900
+
+If static otfs are set lower than 250, text may appear blurry in legacy Windows
+applications.
+
+Glyphsapp users can change the usWeightClass value of an instance by adding a
+&#x27;weightClass&#x27; customParameter.
+
+
+</pre>
+
+* 🍞 **PASS** OS/2 usWeightClass is good
 
 </details>
 <details>
@@ -76761,20 +80356,12 @@ Even though the OpenType spec allows unitsPerEm to be any value between 16 and
 The spec suggests usage of powers of two in order to get some performance
 improvements on legacy renderers, so those values are acceptable.
 
-But value of 500 or 1000 are also acceptable, with the added benefit that it
+But values of 500 or 1000 are also acceptable, with the added benefit that it
 makes upm math easier for designers, while the performance hit of not using a
 power of two is most likely negligible nowadays.
 
-Another acceptable value is 2000. Since TT outlines are all integers (no
-floats), then instances in a VF suffer rounding compromises, and therefore a
-1000 UPM is too small because it forces too many such compromises.
-
-Therefore 2000 is a good &#x27;new VF standard&#x27;, because 2000 is a simple 2x
-conversion from existing fonts drawn on a 1000 UPM, and anyone who knows what
-10 units can do for 1000 UPM will know what 20 units does too.
-
-Additionally, values above 2048 would result in filesize increases with not
-much added benefit.
+Additionally, values above 2048 would likely result in unreasonable filesize
+increases.
 
 
 </pre>
@@ -77000,6 +80587,28 @@ release files, but Google Fonts should only have OpenType tables.
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+<pre>--- Rationale ---
+
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Combined length of family and style must not exceed 27 characters.</summary>
 
 * [com.google.fonts/check/name/family_and_style_max_length](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length)
@@ -77070,11 +80679,73 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> A font repository should not include fontbakery report files</summary>
+
+* [com.google.fonts/check/repo/fb_report](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/fb_report)
+<pre>--- Rationale ---
+
+A FontBakery report is ephemeral and so should be used for posting issues on a
+bug-tracker instead of being hosted in the font project repository.
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> A font repository should not include ZIP files</summary>
+
+* [com.google.fonts/check/repo/zip_files](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/zip_files)
+<pre>--- Rationale ---
+
+Sometimes people check in ZIPs into their font project repositories. While we
+accept the practice of checking in binaries, we believe that a ZIP is a step
+too far ;)
+
+Note: a source purist position is that only source files and build scripts
+should be checked in. 
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Name table records must not have trailing spaces.</summary>
 
 * [com.google.fonts/check/name/trailing_spaces](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/name/trailing_spaces)
 
 * 🍞 **PASS** No trailing spaces on name table entries.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+<pre>--- Rationale ---
+
+A font&#x27;s winAscent and winDescent values should be greater than the head
+table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
+can occur on Windows platforms
+(https://github.com/RedHatBrand/Overpass/issues/33).
+
+If the font includes tall/deep writing systems such as Arabic or Devanagari,
+the winAscent and winDescent can be greater than the yMax and abs(yMin) to
+accommodate vowel marks.
+
+When the win Metrics are significantly greater than the upm, the linespacing
+can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
+(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
+This means the font developer can control the linespacing with the typo values,
+whilst avoiding clipping by setting the win values to values greater than the
+yMax and abs(yMin).
+
+
+</pre>
+
+* 🍞 **PASS** OS/2 usWinAscent & usWinDescent values look good!
 
 </details>
 <details>
@@ -77143,8 +80814,15 @@ space glyph. This might have been relevant for applications on MacOS 9.
 <summary>🍞 <b>PASS:</b> Font has **proper** whitespace glyph names?</summary>
 
 * [com.google.fonts/check/whitespace_glyphnames](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/whitespace_glyphnames)
+<pre>--- Rationale ---
 
-* 🍞 **PASS** Font has **proper** whitespace glyph names.
+This check enforces adherence to recommended whitespace (codepoints 0020 and
+00A0) glyph names according to the Adobe Glyph List.
+
+
+</pre>
+
+* 🍞 **PASS** Font has **AGL recommended** names for whitespace glyphs.
 
 </details>
 <details>
@@ -77367,7 +81045,7 @@ apps.
 <pre>--- Rationale ---
 
 There are various metadata in the OpenType spec to specify if a font is
-monospaced or not. If the font is not trully monospaced, then no monospaced
+monospaced or not. If the font is not truly monospaced, then no monospaced
 metadata should be set (as sometimes they mistakenly are...)
 
 Requirements for monospace fonts:
@@ -77498,15 +81176,45 @@ Reference: https://github.com/googlefonts/fontbakery/issues/1845
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class)</summary>
+
+* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
+<pre>--- Rationale ---
+
+Glyphs in the GDEF mark glyph class should be non-spacing.
+Spacing glyphs in the GDEF mark glyph class may have incorrect anchor
+positioning that was only intended for building composite glyphs during design.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not has spacing glyphs in the GDEF mark glyph class.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class</summary>
+
+* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
+<pre>--- Rationale ---
+
+Mark characters should be in the GDEF mark glyph class.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not have mark characters not in the GDEF mark glyph class.
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Check GDEF mark glyph class doesn't have characters that are not marks)</summary>
 
 * [com.google.fonts/check/gdef_non_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars)
 <pre>--- Rationale ---
 
-Glyphs in the GDEF mark glyph class become non-spacing and may be
-repositioned if they have mark anchors. Only combining mark glyphs
-should be in that class. Any non-mark glyph must not be in that class,
-in particular spacing glyphs.
+Glyphs in the GDEF mark glyph class become non-spacing and may be repositioned
+if they have mark anchors.
+Only combining mark glyphs should be in that class. Any non-mark glyph must not
+be in that class, in particular spacing glyphs.
 
 
 </pre>
@@ -77590,63 +81298,7 @@ the same x,y coordinates.
 <br>
 </details>
 <details>
-<summary><b>[158] GeologicaSharp-SemiBold.ttf</b></summary>
-<details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
-
-This can be accomplished by using the 'gftools fix-hinting' command.
-
-# create virtualenvpython3 -m venv venv
-# activate virtualenvsource venv/bin/activate
-# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-
-A font&#x27;s winAscent and winDescent values should be greater than the head
-table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
-can occur on Windows platforms
-(https://github.com/RedHatBrand/Overpass/issues/33).
-
-If the font includes tall/deep writing systems such as Arabic or Devanagari,
-the winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-
-When the win Metrics are significantly greater than the upm, the linespacing
-can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
-This means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).
-
-
-</pre>
-
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 895, but got 746 instead [code: descent]
-
-</details>
+<summary><b>[163] GeologicaSharp-SemiBold.ttf</b></summary>
 <details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
@@ -77673,7 +81325,6 @@ optimized for the typical construction of glyphs in static fonts.
 
 The following glyphs do not have the recommended number of contours:
 
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
 Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
@@ -77702,32 +81353,31 @@ Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uhorn	Contours detected: 2	Expected: 1
 Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
 Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1 [code: contour-count]
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
 
 </details>
 <details>
@@ -77759,39 +81409,6 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 </details>
 <details>
-<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class)</summary>
-
-* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
-<pre>--- Rationale ---
-
-Glyphs in the GDEF mark glyph class should be non-spacing.
-Spacing glyphs in the GDEF mark glyph class may have incorrect
-anchor positioning that was only intended for building composite glyphs
-during design.
-
-
-</pre>
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 acutecomb, acutecomb.case, acutecomb.narrow, brevecombcy, dotbelowcomb, gravecomb, gravecomb.case, gravecomb.narrow, hookabovecomb, hookabovecomb.case and 55 more. [code: spacing-mark-glyphs]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class</summary>
-
-* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
-<pre>--- Rationale ---
-
-Mark characters should be in the GDEF mark glyph class.
-
-
-</pre>
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 U+0300, U+0301, U+0302, U+0303, U+0304, U+0306, U+0307, U+0308, U+0309, U+030A, U+030B, U+030C, U+030F, U+0311, U+0312, U+031B, U+0323, U+0324, U+0326, U+0327, U+0328, U+032E, U+0331 and U+0335 [code: mark-chars]
-
-</details>
-<details>
 <summary>💤 <b>SKIP:</b> Does DESCRIPTION file contain broken links?</summary>
 
 * [com.google.fonts/check/description/broken_links](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/broken_links)
@@ -77799,12 +81416,12 @@ Mark characters should be in the GDEF mark glyph class.
 
 The snippet of HTML in the DESCRIPTION.en_us.html file is added to the font
 family webpage on the Google Fonts website. For that reason, all hyperlinks in
-it must be properly working. 
+it must be properly working.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -77827,7 +81444,7 @@ any other git-based version control service.
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -77836,17 +81453,19 @@ any other git-based version control service.
 * [com.google.fonts/check/description/valid_html](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/valid_html)
 <pre>--- Rationale ---
 
-When packaging families for being pushed to the `google/fonts` git repo, if
-there is no DESCRIPTION.en_us.html file, some older versions of the
-`add_font.py` tool insert a dummy description file which contains invalid html.
+Sometimes people write malformed HTML markup. This check should ensure the file
+is good.
 
-This file needs to either be replaced with an existing description file or
-edited by hand.
+Additionally, when packaging families for being pushed to the `google/fonts`
+git repo, if there is no DESCRIPTION.en_us.html file, some older versions of
+the `add_font.py` tool insert a dummy description file which contains invalid
+html. This file needs to either be replaced with an existing description file
+or edited by hand.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: descfile
+* 💤 **SKIP** Unfulfilled Conditions: description
 
 </details>
 <details>
@@ -77897,7 +81516,7 @@ malformed.
 
 </pre>
 
-* 💤 **SKIP** Font family at '../fonts/static/ttfs' lacks a METADATA.pb file.
+* 💤 **SKIP** Font family at '../fonts/static/ttfs' lacks a METADATA.pb file. [code: file-not-found]
 
 </details>
 <details>
@@ -77966,6 +81585,28 @@ match exactly those declared on the METADATA.pb file.
 
 Also, to avoid confusion, we expect that font files (other than statics) are
 not placed on subdirectories.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: family_metadata
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure METADATA.pb category field is valid.</summary>
+
+* [com.google.fonts/check/metadata/category](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/category)
+<pre>--- Rationale ---
+
+There are only five acceptable values for the category field in a METADATA.pb
+file:
+- MONOSPACE
+- SANS_SERIF
+- SERIF
+- DISPLAY
+- HANDWRITING
+
+This check is meant to avoid typos in this field.
 
 
 </pre>
@@ -78260,15 +81901,28 @@ We may want to merge them all into a single check.
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Checking OS/2 usWeightClass matches weight specified at METADATA.pb.</summary>
+<summary>💤 <b>SKIP:</b> Check METADATA.pb font weights are correct.</summary>
 
 * [com.google.fonts/check/metadata/os2_weightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/os2_weightclass)
+<pre>--- Rationale ---
+
+Check METADATA.pb font weights are correct.
+
+For static fonts, the metadata weight should be the same
+as the static font&#x27;s OS/2 usWeightClass.
+
+For variable fonts, the weight value should be 400 if the
+font&#x27;s wght axis range includes 400, otherwise it should be the
+value closest to 400.
+
+
+</pre>
 
 * 💤 **SKIP** Unfulfilled Conditions: font_metadata
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName.</summary>
+<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName for static fonts.</summary>
 
 * [com.google.fonts/check/metadata/match_weight_postscript](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/match_weight_postscript)
 
@@ -78412,6 +82066,10 @@ All ligatures in a font must have corresponding caret (text cursor) positions
 defined in the GDEF table, otherwhise, users may experience issues with caret
 rendering.
 
+If using GlyphsApp, ligature carets can be set directly on canvas by accessing
+the `Glyph -&gt; Set Anchors` menu option or by pressing the `Cmd+U` keyboard
+shortcut.
+
 
 </pre>
 
@@ -78489,6 +82147,25 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Check font follows the Google Fonts CJK vertical metric schema</summary>
+
+* [com.google.fonts/check/cjk_vertical_metrics](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/cjk_vertical_metrics)
+<pre>--- Rationale ---
+
+CJK fonts have different vertical metrics when compared to Latin fonts. We
+follow the schema developed by dr Ken Lunde for Source Han Sans and the Noto
+CJK fonts.
+
+Our documentation includes further information:
+https://github.com/googlefonts/gf-docs/tree/master/Spec#cjk-vertical-metrics
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_cjk_font
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Check variable font instances have correct coordinate values</summary>
 
 * [com.google.fonts/check/varfont_instance_coordinates](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont_instance_coordinates)
@@ -78505,7 +82182,7 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Ensure VFs do not contain opsz or ital axes. </summary>
+<summary>💤 <b>SKIP:</b> Ensure VFs do not contain slnt or ital axes. </summary>
 
 * [com.google.fonts/check/varfont/unsupported_axes](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont/unsupported_axes)
 <pre>--- Rationale ---
@@ -78566,6 +82243,21 @@ result in WARNs.
 </pre>
 
 * 💤 **SKIP** Sibling families were not detected.
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure indic fonts have the Indian Rupee Sign glyph. </summary>
+
+* [com.google.fonts/check/rupee](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/rupee)
+<pre>--- Rationale ---
+
+Per Bureau of Indian Standards every font supporting one of the official Indian
+languages needs to include Unicode Character “₹” (U+20B9) Indian Rupee Sign.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_indic_font
 
 </details>
 <details>
@@ -78803,10 +82495,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/GeologicaSharp-SemiBold.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 125.9kb |
-	| Hinted Size | 156.1kb |
-	| Increase | 30.1kb |
-	| Change   | 23.9 % |
+	| Dehinted Size | 126.2kb |
+	| Hinted Size | 156.7kb |
+	| Increase | 30.5kb |
+	| Change   | 24.2 % |
  [code: size-impact]
 
 </details>
@@ -78898,7 +82590,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [GPOS, gasp, cvt , loca, prep, GSUB, fpgm, DSIG]
+* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, GPOS, DSIG, gasp, prep, loca, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -79021,8 +82713,25 @@ set of characters defined in the `GF-latin-core` glyph-set.
 <summary>🍞 <b>PASS:</b> Checking OS/2 usWeightClass.</summary>
 
 * [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
+<pre>--- Rationale ---
 
-* 🍞 **PASS** OS/2 usWeightClass value looks good!
+Google Fonts expects variable fonts, static ttfs and static otfs to have
+differing OS/2 usWeightClass values.
+
+For Variable Fonts, Thin-Black must be 100-900
+For static ttfs, Thin-Black can be 100-900 or 250-900
+For static otfs, Thin-Black must be 250-900
+
+If static otfs are set lower than 250, text may appear blurry in legacy Windows
+applications.
+
+Glyphsapp users can change the usWeightClass value of an instance by adding a
+&#x27;weightClass&#x27; customParameter.
+
+
+</pre>
+
+* 🍞 **PASS** OS/2 usWeightClass is good
 
 </details>
 <details>
@@ -79208,20 +82917,12 @@ Even though the OpenType spec allows unitsPerEm to be any value between 16 and
 The spec suggests usage of powers of two in order to get some performance
 improvements on legacy renderers, so those values are acceptable.
 
-But value of 500 or 1000 are also acceptable, with the added benefit that it
+But values of 500 or 1000 are also acceptable, with the added benefit that it
 makes upm math easier for designers, while the performance hit of not using a
 power of two is most likely negligible nowadays.
 
-Another acceptable value is 2000. Since TT outlines are all integers (no
-floats), then instances in a VF suffer rounding compromises, and therefore a
-1000 UPM is too small because it forces too many such compromises.
-
-Therefore 2000 is a good &#x27;new VF standard&#x27;, because 2000 is a simple 2x
-conversion from existing fonts drawn on a 1000 UPM, and anyone who knows what
-10 units can do for 1000 UPM will know what 20 units does too.
-
-Additionally, values above 2048 would result in filesize increases with not
-much added benefit.
+Additionally, values above 2048 would likely result in unreasonable filesize
+increases.
 
 
 </pre>
@@ -79447,6 +83148,28 @@ release files, but Google Fonts should only have OpenType tables.
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+<pre>--- Rationale ---
+
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Name table entries should not contain line-breaks.</summary>
 
 * [com.google.fonts/check/name/line_breaks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/line_breaks)
@@ -79492,11 +83215,73 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> A font repository should not include fontbakery report files</summary>
+
+* [com.google.fonts/check/repo/fb_report](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/fb_report)
+<pre>--- Rationale ---
+
+A FontBakery report is ephemeral and so should be used for posting issues on a
+bug-tracker instead of being hosted in the font project repository.
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> A font repository should not include ZIP files</summary>
+
+* [com.google.fonts/check/repo/zip_files](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/zip_files)
+<pre>--- Rationale ---
+
+Sometimes people check in ZIPs into their font project repositories. While we
+accept the practice of checking in binaries, we believe that a ZIP is a step
+too far ;)
+
+Note: a source purist position is that only source files and build scripts
+should be checked in. 
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Name table records must not have trailing spaces.</summary>
 
 * [com.google.fonts/check/name/trailing_spaces](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/name/trailing_spaces)
 
 * 🍞 **PASS** No trailing spaces on name table entries.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+<pre>--- Rationale ---
+
+A font&#x27;s winAscent and winDescent values should be greater than the head
+table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
+can occur on Windows platforms
+(https://github.com/RedHatBrand/Overpass/issues/33).
+
+If the font includes tall/deep writing systems such as Arabic or Devanagari,
+the winAscent and winDescent can be greater than the yMax and abs(yMin) to
+accommodate vowel marks.
+
+When the win Metrics are significantly greater than the upm, the linespacing
+can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
+(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
+This means the font developer can control the linespacing with the typo values,
+whilst avoiding clipping by setting the win values to values greater than the
+yMax and abs(yMin).
+
+
+</pre>
+
+* 🍞 **PASS** OS/2 usWinAscent & usWinDescent values look good!
 
 </details>
 <details>
@@ -79565,8 +83350,15 @@ space glyph. This might have been relevant for applications on MacOS 9.
 <summary>🍞 <b>PASS:</b> Font has **proper** whitespace glyph names?</summary>
 
 * [com.google.fonts/check/whitespace_glyphnames](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/whitespace_glyphnames)
+<pre>--- Rationale ---
 
-* 🍞 **PASS** Font has **proper** whitespace glyph names.
+This check enforces adherence to recommended whitespace (codepoints 0020 and
+00A0) glyph names according to the Adobe Glyph List.
+
+
+</pre>
+
+* 🍞 **PASS** Font has **AGL recommended** names for whitespace glyphs.
 
 </details>
 <details>
@@ -79789,7 +83581,7 @@ apps.
 <pre>--- Rationale ---
 
 There are various metadata in the OpenType spec to specify if a font is
-monospaced or not. If the font is not trully monospaced, then no monospaced
+monospaced or not. If the font is not truly monospaced, then no monospaced
 metadata should be set (as sometimes they mistakenly are...)
 
 Requirements for monospace fonts:
@@ -79920,15 +83712,45 @@ Reference: https://github.com/googlefonts/fontbakery/issues/1845
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class)</summary>
+
+* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
+<pre>--- Rationale ---
+
+Glyphs in the GDEF mark glyph class should be non-spacing.
+Spacing glyphs in the GDEF mark glyph class may have incorrect anchor
+positioning that was only intended for building composite glyphs during design.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not has spacing glyphs in the GDEF mark glyph class.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class</summary>
+
+* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
+<pre>--- Rationale ---
+
+Mark characters should be in the GDEF mark glyph class.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not have mark characters not in the GDEF mark glyph class.
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Check GDEF mark glyph class doesn't have characters that are not marks)</summary>
 
 * [com.google.fonts/check/gdef_non_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars)
 <pre>--- Rationale ---
 
-Glyphs in the GDEF mark glyph class become non-spacing and may be
-repositioned if they have mark anchors. Only combining mark glyphs
-should be in that class. Any non-mark glyph must not be in that class,
-in particular spacing glyphs.
+Glyphs in the GDEF mark glyph class become non-spacing and may be repositioned
+if they have mark anchors.
+Only combining mark glyphs should be in that class. Any non-mark glyph must not
+be in that class, in particular spacing glyphs.
 
 
 </pre>
@@ -80012,63 +83834,7 @@ the same x,y coordinates.
 <br>
 </details>
 <details>
-<summary><b>[158] GeologicaSharp-SemiBoldItalic.ttf</b></summary>
-<details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
-
-This can be accomplished by using the 'gftools fix-hinting' command.
-
-# create virtualenvpython3 -m venv venv
-# activate virtualenvsource venv/bin/activate
-# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-
-A font&#x27;s winAscent and winDescent values should be greater than the head
-table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
-can occur on Windows platforms
-(https://github.com/RedHatBrand/Overpass/issues/33).
-
-If the font includes tall/deep writing systems such as Arabic or Devanagari,
-the winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-
-When the win Metrics are significantly greater than the upm, the linespacing
-can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
-This means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).
-
-
-</pre>
-
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 895, but got 746 instead [code: descent]
-
-</details>
+<summary><b>[163] GeologicaSharp-SemiBoldItalic.ttf</b></summary>
 <details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
@@ -80095,7 +83861,6 @@ optimized for the typical construction of glyphs in static fonts.
 
 The following glyphs do not have the recommended number of contours:
 
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
 Glyph name: hbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
 Glyph name: tbar	Contours detected: 2	Expected: 1
@@ -80123,32 +83888,31 @@ Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
-Glyph name: uhorn	Contours detected: 2	Expected: 1
 Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
 Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1 [code: contour-count]
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
 
 </details>
 <details>
@@ -80180,39 +83944,6 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 </details>
 <details>
-<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class)</summary>
-
-* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
-<pre>--- Rationale ---
-
-Glyphs in the GDEF mark glyph class should be non-spacing.
-Spacing glyphs in the GDEF mark glyph class may have incorrect
-anchor positioning that was only intended for building composite glyphs
-during design.
-
-
-</pre>
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 acutecomb, acutecomb.case, acutecomb.narrow, brevecombcy, dotbelowcomb, gravecomb, gravecomb.case, gravecomb.narrow, hookabovecomb, hookabovecomb.case and 55 more. [code: spacing-mark-glyphs]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class</summary>
-
-* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
-<pre>--- Rationale ---
-
-Mark characters should be in the GDEF mark glyph class.
-
-
-</pre>
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 U+0300, U+0301, U+0302, U+0303, U+0304, U+0306, U+0307, U+0308, U+0309, U+030A, U+030B, U+030C, U+030F, U+0311, U+0312, U+031B, U+0323, U+0324, U+0326, U+0327, U+0328, U+032E, U+0331 and U+0335 [code: mark-chars]
-
-</details>
-<details>
 <summary>💤 <b>SKIP:</b> Does DESCRIPTION file contain broken links?</summary>
 
 * [com.google.fonts/check/description/broken_links](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/broken_links)
@@ -80220,12 +83951,12 @@ Mark characters should be in the GDEF mark glyph class.
 
 The snippet of HTML in the DESCRIPTION.en_us.html file is added to the font
 family webpage on the Google Fonts website. For that reason, all hyperlinks in
-it must be properly working. 
+it must be properly working.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -80248,7 +83979,7 @@ any other git-based version control service.
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -80257,17 +83988,19 @@ any other git-based version control service.
 * [com.google.fonts/check/description/valid_html](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/valid_html)
 <pre>--- Rationale ---
 
-When packaging families for being pushed to the `google/fonts` git repo, if
-there is no DESCRIPTION.en_us.html file, some older versions of the
-`add_font.py` tool insert a dummy description file which contains invalid html.
+Sometimes people write malformed HTML markup. This check should ensure the file
+is good.
 
-This file needs to either be replaced with an existing description file or
-edited by hand.
+Additionally, when packaging families for being pushed to the `google/fonts`
+git repo, if there is no DESCRIPTION.en_us.html file, some older versions of
+the `add_font.py` tool insert a dummy description file which contains invalid
+html. This file needs to either be replaced with an existing description file
+or edited by hand.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: descfile
+* 💤 **SKIP** Unfulfilled Conditions: description
 
 </details>
 <details>
@@ -80318,7 +84051,7 @@ malformed.
 
 </pre>
 
-* 💤 **SKIP** Font family at '../fonts/static/ttfs' lacks a METADATA.pb file.
+* 💤 **SKIP** Font family at '../fonts/static/ttfs' lacks a METADATA.pb file. [code: file-not-found]
 
 </details>
 <details>
@@ -80387,6 +84120,28 @@ match exactly those declared on the METADATA.pb file.
 
 Also, to avoid confusion, we expect that font files (other than statics) are
 not placed on subdirectories.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: family_metadata
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure METADATA.pb category field is valid.</summary>
+
+* [com.google.fonts/check/metadata/category](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/category)
+<pre>--- Rationale ---
+
+There are only five acceptable values for the category field in a METADATA.pb
+file:
+- MONOSPACE
+- SANS_SERIF
+- SERIF
+- DISPLAY
+- HANDWRITING
+
+This check is meant to avoid typos in this field.
 
 
 </pre>
@@ -80681,15 +84436,28 @@ We may want to merge them all into a single check.
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Checking OS/2 usWeightClass matches weight specified at METADATA.pb.</summary>
+<summary>💤 <b>SKIP:</b> Check METADATA.pb font weights are correct.</summary>
 
 * [com.google.fonts/check/metadata/os2_weightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/os2_weightclass)
+<pre>--- Rationale ---
+
+Check METADATA.pb font weights are correct.
+
+For static fonts, the metadata weight should be the same
+as the static font&#x27;s OS/2 usWeightClass.
+
+For variable fonts, the weight value should be 400 if the
+font&#x27;s wght axis range includes 400, otherwise it should be the
+value closest to 400.
+
+
+</pre>
 
 * 💤 **SKIP** Unfulfilled Conditions: font_metadata
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName.</summary>
+<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName for static fonts.</summary>
 
 * [com.google.fonts/check/metadata/match_weight_postscript](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/match_weight_postscript)
 
@@ -80833,6 +84601,10 @@ All ligatures in a font must have corresponding caret (text cursor) positions
 defined in the GDEF table, otherwhise, users may experience issues with caret
 rendering.
 
+If using GlyphsApp, ligature carets can be set directly on canvas by accessing
+the `Glyph -&gt; Set Anchors` menu option or by pressing the `Cmd+U` keyboard
+shortcut.
+
 
 </pre>
 
@@ -80910,6 +84682,25 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Check font follows the Google Fonts CJK vertical metric schema</summary>
+
+* [com.google.fonts/check/cjk_vertical_metrics](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/cjk_vertical_metrics)
+<pre>--- Rationale ---
+
+CJK fonts have different vertical metrics when compared to Latin fonts. We
+follow the schema developed by dr Ken Lunde for Source Han Sans and the Noto
+CJK fonts.
+
+Our documentation includes further information:
+https://github.com/googlefonts/gf-docs/tree/master/Spec#cjk-vertical-metrics
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_cjk_font
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Check variable font instances have correct coordinate values</summary>
 
 * [com.google.fonts/check/varfont_instance_coordinates](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont_instance_coordinates)
@@ -80926,7 +84717,7 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Ensure VFs do not contain opsz or ital axes. </summary>
+<summary>💤 <b>SKIP:</b> Ensure VFs do not contain slnt or ital axes. </summary>
 
 * [com.google.fonts/check/varfont/unsupported_axes](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont/unsupported_axes)
 <pre>--- Rationale ---
@@ -80987,6 +84778,21 @@ result in WARNs.
 </pre>
 
 * 💤 **SKIP** Sibling families were not detected.
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure indic fonts have the Indian Rupee Sign glyph. </summary>
+
+* [com.google.fonts/check/rupee](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/rupee)
+<pre>--- Rationale ---
+
+Per Bureau of Indian Standards every font supporting one of the official Indian
+languages needs to include Unicode Character “₹” (U+20B9) Indian Rupee Sign.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_indic_font
 
 </details>
 <details>
@@ -81224,10 +85030,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/GeologicaSharp-SemiBoldItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 127.3kb |
-	| Hinted Size | 157.2kb |
-	| Increase | 30.0kb |
-	| Change   | 23.5 % |
+	| Dehinted Size | 127.6kb |
+	| Hinted Size | 157.9kb |
+	| Increase | 30.3kb |
+	| Change   | 23.8 % |
  [code: size-impact]
 
 </details>
@@ -81319,7 +85125,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [GPOS, gasp, cvt , loca, prep, GSUB, fpgm, DSIG]
+* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, GPOS, DSIG, gasp, prep, loca, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -81442,8 +85248,25 @@ set of characters defined in the `GF-latin-core` glyph-set.
 <summary>🍞 <b>PASS:</b> Checking OS/2 usWeightClass.</summary>
 
 * [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
+<pre>--- Rationale ---
 
-* 🍞 **PASS** OS/2 usWeightClass value looks good!
+Google Fonts expects variable fonts, static ttfs and static otfs to have
+differing OS/2 usWeightClass values.
+
+For Variable Fonts, Thin-Black must be 100-900
+For static ttfs, Thin-Black can be 100-900 or 250-900
+For static otfs, Thin-Black must be 250-900
+
+If static otfs are set lower than 250, text may appear blurry in legacy Windows
+applications.
+
+Glyphsapp users can change the usWeightClass value of an instance by adding a
+&#x27;weightClass&#x27; customParameter.
+
+
+</pre>
+
+* 🍞 **PASS** OS/2 usWeightClass is good
 
 </details>
 <details>
@@ -81629,20 +85452,12 @@ Even though the OpenType spec allows unitsPerEm to be any value between 16 and
 The spec suggests usage of powers of two in order to get some performance
 improvements on legacy renderers, so those values are acceptable.
 
-But value of 500 or 1000 are also acceptable, with the added benefit that it
+But values of 500 or 1000 are also acceptable, with the added benefit that it
 makes upm math easier for designers, while the performance hit of not using a
 power of two is most likely negligible nowadays.
 
-Another acceptable value is 2000. Since TT outlines are all integers (no
-floats), then instances in a VF suffer rounding compromises, and therefore a
-1000 UPM is too small because it forces too many such compromises.
-
-Therefore 2000 is a good &#x27;new VF standard&#x27;, because 2000 is a simple 2x
-conversion from existing fonts drawn on a 1000 UPM, and anyone who knows what
-10 units can do for 1000 UPM will know what 20 units does too.
-
-Additionally, values above 2048 would result in filesize increases with not
-much added benefit.
+Additionally, values above 2048 would likely result in unreasonable filesize
+increases.
 
 
 </pre>
@@ -81868,6 +85683,28 @@ release files, but Google Fonts should only have OpenType tables.
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+<pre>--- Rationale ---
+
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Name table entries should not contain line-breaks.</summary>
 
 * [com.google.fonts/check/name/line_breaks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/line_breaks)
@@ -81913,11 +85750,73 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> A font repository should not include fontbakery report files</summary>
+
+* [com.google.fonts/check/repo/fb_report](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/fb_report)
+<pre>--- Rationale ---
+
+A FontBakery report is ephemeral and so should be used for posting issues on a
+bug-tracker instead of being hosted in the font project repository.
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> A font repository should not include ZIP files</summary>
+
+* [com.google.fonts/check/repo/zip_files](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/zip_files)
+<pre>--- Rationale ---
+
+Sometimes people check in ZIPs into their font project repositories. While we
+accept the practice of checking in binaries, we believe that a ZIP is a step
+too far ;)
+
+Note: a source purist position is that only source files and build scripts
+should be checked in. 
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Name table records must not have trailing spaces.</summary>
 
 * [com.google.fonts/check/name/trailing_spaces](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/name/trailing_spaces)
 
 * 🍞 **PASS** No trailing spaces on name table entries.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+<pre>--- Rationale ---
+
+A font&#x27;s winAscent and winDescent values should be greater than the head
+table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
+can occur on Windows platforms
+(https://github.com/RedHatBrand/Overpass/issues/33).
+
+If the font includes tall/deep writing systems such as Arabic or Devanagari,
+the winAscent and winDescent can be greater than the yMax and abs(yMin) to
+accommodate vowel marks.
+
+When the win Metrics are significantly greater than the upm, the linespacing
+can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
+(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
+This means the font developer can control the linespacing with the typo values,
+whilst avoiding clipping by setting the win values to values greater than the
+yMax and abs(yMin).
+
+
+</pre>
+
+* 🍞 **PASS** OS/2 usWinAscent & usWinDescent values look good!
 
 </details>
 <details>
@@ -81986,8 +85885,15 @@ space glyph. This might have been relevant for applications on MacOS 9.
 <summary>🍞 <b>PASS:</b> Font has **proper** whitespace glyph names?</summary>
 
 * [com.google.fonts/check/whitespace_glyphnames](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/whitespace_glyphnames)
+<pre>--- Rationale ---
 
-* 🍞 **PASS** Font has **proper** whitespace glyph names.
+This check enforces adherence to recommended whitespace (codepoints 0020 and
+00A0) glyph names according to the Adobe Glyph List.
+
+
+</pre>
+
+* 🍞 **PASS** Font has **AGL recommended** names for whitespace glyphs.
 
 </details>
 <details>
@@ -82210,7 +86116,7 @@ apps.
 <pre>--- Rationale ---
 
 There are various metadata in the OpenType spec to specify if a font is
-monospaced or not. If the font is not trully monospaced, then no monospaced
+monospaced or not. If the font is not truly monospaced, then no monospaced
 metadata should be set (as sometimes they mistakenly are...)
 
 Requirements for monospace fonts:
@@ -82341,15 +86247,45 @@ Reference: https://github.com/googlefonts/fontbakery/issues/1845
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class)</summary>
+
+* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
+<pre>--- Rationale ---
+
+Glyphs in the GDEF mark glyph class should be non-spacing.
+Spacing glyphs in the GDEF mark glyph class may have incorrect anchor
+positioning that was only intended for building composite glyphs during design.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not has spacing glyphs in the GDEF mark glyph class.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class</summary>
+
+* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
+<pre>--- Rationale ---
+
+Mark characters should be in the GDEF mark glyph class.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not have mark characters not in the GDEF mark glyph class.
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Check GDEF mark glyph class doesn't have characters that are not marks)</summary>
 
 * [com.google.fonts/check/gdef_non_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars)
 <pre>--- Rationale ---
 
-Glyphs in the GDEF mark glyph class become non-spacing and may be
-repositioned if they have mark anchors. Only combining mark glyphs
-should be in that class. Any non-mark glyph must not be in that class,
-in particular spacing glyphs.
+Glyphs in the GDEF mark glyph class become non-spacing and may be repositioned
+if they have mark anchors.
+Only combining mark glyphs should be in that class. Any non-mark glyph must not
+be in that class, in particular spacing glyphs.
 
 
 </pre>
@@ -82433,71 +86369,7 @@ the same x,y coordinates.
 <br>
 </details>
 <details>
-<summary><b>[158] GeologicaSharp-Thin.ttf</b></summary>
-<details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
-
-This can be accomplished by using the 'gftools fix-hinting' command.
-
-# create virtualenvpython3 -m venv venv
-# activate virtualenvsource venv/bin/activate
-# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-
-A font&#x27;s winAscent and winDescent values should be greater than the head
-table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
-can occur on Windows platforms
-(https://github.com/RedHatBrand/Overpass/issues/33).
-
-If the font includes tall/deep writing systems such as Arabic or Devanagari,
-the winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-
-When the win Metrics are significantly greater than the upm, the linespacing
-can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
-This means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).
-
-
-</pre>
-
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 895, but got 746 instead [code: descent]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Checking OS/2 usWeightClass.</summary>
-
-* [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
-
-* ⚠ **WARN** Thin:100 is OK on TTFs, but OTF files with those values will cause bluring on Windows. GlyphsApp users must set an Instance Custom Parameter for the Thin and ExtraLight styles to 250 and 275, so that if OTFs are exported then it will not blur on Windows. [code: blur-on-windows]
-
-</details>
+<summary><b>[163] GeologicaSharp-Thin.ttf</b></summary>
 <details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
@@ -82551,64 +86423,31 @@ Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uhorn	Contours detected: 2	Expected: 1
 Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
 Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1 [code: contour-count]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class)</summary>
-
-* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
-<pre>--- Rationale ---
-
-Glyphs in the GDEF mark glyph class should be non-spacing.
-Spacing glyphs in the GDEF mark glyph class may have incorrect
-anchor positioning that was only intended for building composite glyphs
-during design.
-
-
-</pre>
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 acutecomb, acutecomb.case, acutecomb.narrow, brevecombcy, dotbelowcomb, gravecomb, gravecomb.case, gravecomb.narrow, hookabovecomb, hookabovecomb.case and 55 more. [code: spacing-mark-glyphs]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class</summary>
-
-* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
-<pre>--- Rationale ---
-
-Mark characters should be in the GDEF mark glyph class.
-
-
-</pre>
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 U+0300, U+0301, U+0302, U+0303, U+0304, U+0306, U+0307, U+0308, U+0309, U+030A, U+030B, U+030C, U+030F, U+0311, U+0312, U+031B, U+0323, U+0324, U+0326, U+0327, U+0328, U+032E, U+0331 and U+0335 [code: mark-chars]
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
 
 </details>
 <details>
@@ -82619,12 +86458,12 @@ Mark characters should be in the GDEF mark glyph class.
 
 The snippet of HTML in the DESCRIPTION.en_us.html file is added to the font
 family webpage on the Google Fonts website. For that reason, all hyperlinks in
-it must be properly working. 
+it must be properly working.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -82647,7 +86486,7 @@ any other git-based version control service.
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -82656,17 +86495,19 @@ any other git-based version control service.
 * [com.google.fonts/check/description/valid_html](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/valid_html)
 <pre>--- Rationale ---
 
-When packaging families for being pushed to the `google/fonts` git repo, if
-there is no DESCRIPTION.en_us.html file, some older versions of the
-`add_font.py` tool insert a dummy description file which contains invalid html.
+Sometimes people write malformed HTML markup. This check should ensure the file
+is good.
 
-This file needs to either be replaced with an existing description file or
-edited by hand.
+Additionally, when packaging families for being pushed to the `google/fonts`
+git repo, if there is no DESCRIPTION.en_us.html file, some older versions of
+the `add_font.py` tool insert a dummy description file which contains invalid
+html. This file needs to either be replaced with an existing description file
+or edited by hand.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: descfile
+* 💤 **SKIP** Unfulfilled Conditions: description
 
 </details>
 <details>
@@ -82717,7 +86558,7 @@ malformed.
 
 </pre>
 
-* 💤 **SKIP** Font family at '../fonts/static/ttfs' lacks a METADATA.pb file.
+* 💤 **SKIP** Font family at '../fonts/static/ttfs' lacks a METADATA.pb file. [code: file-not-found]
 
 </details>
 <details>
@@ -82786,6 +86627,28 @@ match exactly those declared on the METADATA.pb file.
 
 Also, to avoid confusion, we expect that font files (other than statics) are
 not placed on subdirectories.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: family_metadata
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure METADATA.pb category field is valid.</summary>
+
+* [com.google.fonts/check/metadata/category](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/category)
+<pre>--- Rationale ---
+
+There are only five acceptable values for the category field in a METADATA.pb
+file:
+- MONOSPACE
+- SANS_SERIF
+- SERIF
+- DISPLAY
+- HANDWRITING
+
+This check is meant to avoid typos in this field.
 
 
 </pre>
@@ -83080,15 +86943,28 @@ We may want to merge them all into a single check.
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Checking OS/2 usWeightClass matches weight specified at METADATA.pb.</summary>
+<summary>💤 <b>SKIP:</b> Check METADATA.pb font weights are correct.</summary>
 
 * [com.google.fonts/check/metadata/os2_weightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/os2_weightclass)
+<pre>--- Rationale ---
+
+Check METADATA.pb font weights are correct.
+
+For static fonts, the metadata weight should be the same
+as the static font&#x27;s OS/2 usWeightClass.
+
+For variable fonts, the weight value should be 400 if the
+font&#x27;s wght axis range includes 400, otherwise it should be the
+value closest to 400.
+
+
+</pre>
 
 * 💤 **SKIP** Unfulfilled Conditions: font_metadata
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName.</summary>
+<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName for static fonts.</summary>
 
 * [com.google.fonts/check/metadata/match_weight_postscript](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/match_weight_postscript)
 
@@ -83232,6 +87108,10 @@ All ligatures in a font must have corresponding caret (text cursor) positions
 defined in the GDEF table, otherwhise, users may experience issues with caret
 rendering.
 
+If using GlyphsApp, ligature carets can be set directly on canvas by accessing
+the `Glyph -&gt; Set Anchors` menu option or by pressing the `Cmd+U` keyboard
+shortcut.
+
 
 </pre>
 
@@ -83309,6 +87189,25 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Check font follows the Google Fonts CJK vertical metric schema</summary>
+
+* [com.google.fonts/check/cjk_vertical_metrics](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/cjk_vertical_metrics)
+<pre>--- Rationale ---
+
+CJK fonts have different vertical metrics when compared to Latin fonts. We
+follow the schema developed by dr Ken Lunde for Source Han Sans and the Noto
+CJK fonts.
+
+Our documentation includes further information:
+https://github.com/googlefonts/gf-docs/tree/master/Spec#cjk-vertical-metrics
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_cjk_font
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Check variable font instances have correct coordinate values</summary>
 
 * [com.google.fonts/check/varfont_instance_coordinates](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont_instance_coordinates)
@@ -83325,7 +87224,7 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Ensure VFs do not contain opsz or ital axes. </summary>
+<summary>💤 <b>SKIP:</b> Ensure VFs do not contain slnt or ital axes. </summary>
 
 * [com.google.fonts/check/varfont/unsupported_axes](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont/unsupported_axes)
 <pre>--- Rationale ---
@@ -83386,6 +87285,21 @@ result in WARNs.
 </pre>
 
 * 💤 **SKIP** Sibling families were not detected.
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure indic fonts have the Indian Rupee Sign glyph. </summary>
+
+* [com.google.fonts/check/rupee](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/rupee)
+<pre>--- Rationale ---
+
+Per Bureau of Indian Standards every font supporting one of the official Indian
+languages needs to include Unicode Character “₹” (U+20B9) Indian Rupee Sign.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_indic_font
 
 </details>
 <details>
@@ -83623,10 +87537,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/GeologicaSharp-Thin.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 120.4kb |
-	| Hinted Size | 148.5kb |
-	| Increase | 28.1kb |
-	| Change   | 23.3 % |
+	| Dehinted Size | 120.6kb |
+	| Hinted Size | 149.1kb |
+	| Increase | 28.5kb |
+	| Change   | 23.6 % |
  [code: size-impact]
 
 </details>
@@ -83718,7 +87632,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [GPOS, gasp, cvt , loca, prep, GSUB, fpgm, DSIG]
+* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, GPOS, DSIG, gasp, prep, loca, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -83835,6 +87749,31 @@ set of characters defined in the `GF-latin-core` glyph-set.
 * [com.google.fonts/check/name/unwanted_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars)
 
 * 🍞 **PASS** No need to substitute copyright, registered and trademark symbols in name table entries of this font.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Checking OS/2 usWeightClass.</summary>
+
+* [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
+<pre>--- Rationale ---
+
+Google Fonts expects variable fonts, static ttfs and static otfs to have
+differing OS/2 usWeightClass values.
+
+For Variable Fonts, Thin-Black must be 100-900
+For static ttfs, Thin-Black can be 100-900 or 250-900
+For static otfs, Thin-Black must be 250-900
+
+If static otfs are set lower than 250, text may appear blurry in legacy Windows
+applications.
+
+Glyphsapp users can change the usWeightClass value of an instance by adding a
+&#x27;weightClass&#x27; customParameter.
+
+
+</pre>
+
+* 🍞 **PASS** OS/2 usWeightClass is good
 
 </details>
 <details>
@@ -84020,20 +87959,12 @@ Even though the OpenType spec allows unitsPerEm to be any value between 16 and
 The spec suggests usage of powers of two in order to get some performance
 improvements on legacy renderers, so those values are acceptable.
 
-But value of 500 or 1000 are also acceptable, with the added benefit that it
+But values of 500 or 1000 are also acceptable, with the added benefit that it
 makes upm math easier for designers, while the performance hit of not using a
 power of two is most likely negligible nowadays.
 
-Another acceptable value is 2000. Since TT outlines are all integers (no
-floats), then instances in a VF suffer rounding compromises, and therefore a
-1000 UPM is too small because it forces too many such compromises.
-
-Therefore 2000 is a good &#x27;new VF standard&#x27;, because 2000 is a simple 2x
-conversion from existing fonts drawn on a 1000 UPM, and anyone who knows what
-10 units can do for 1000 UPM will know what 20 units does too.
-
-Additionally, values above 2048 would result in filesize increases with not
-much added benefit.
+Additionally, values above 2048 would likely result in unreasonable filesize
+increases.
 
 
 </pre>
@@ -84259,6 +88190,28 @@ release files, but Google Fonts should only have OpenType tables.
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+<pre>--- Rationale ---
+
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Combined length of family and style must not exceed 27 characters.</summary>
 
 * [com.google.fonts/check/name/family_and_style_max_length](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length)
@@ -84329,11 +88282,73 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> A font repository should not include fontbakery report files</summary>
+
+* [com.google.fonts/check/repo/fb_report](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/fb_report)
+<pre>--- Rationale ---
+
+A FontBakery report is ephemeral and so should be used for posting issues on a
+bug-tracker instead of being hosted in the font project repository.
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> A font repository should not include ZIP files</summary>
+
+* [com.google.fonts/check/repo/zip_files](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/zip_files)
+<pre>--- Rationale ---
+
+Sometimes people check in ZIPs into their font project repositories. While we
+accept the practice of checking in binaries, we believe that a ZIP is a step
+too far ;)
+
+Note: a source purist position is that only source files and build scripts
+should be checked in. 
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Name table records must not have trailing spaces.</summary>
 
 * [com.google.fonts/check/name/trailing_spaces](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/name/trailing_spaces)
 
 * 🍞 **PASS** No trailing spaces on name table entries.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+<pre>--- Rationale ---
+
+A font&#x27;s winAscent and winDescent values should be greater than the head
+table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
+can occur on Windows platforms
+(https://github.com/RedHatBrand/Overpass/issues/33).
+
+If the font includes tall/deep writing systems such as Arabic or Devanagari,
+the winAscent and winDescent can be greater than the yMax and abs(yMin) to
+accommodate vowel marks.
+
+When the win Metrics are significantly greater than the upm, the linespacing
+can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
+(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
+This means the font developer can control the linespacing with the typo values,
+whilst avoiding clipping by setting the win values to values greater than the
+yMax and abs(yMin).
+
+
+</pre>
+
+* 🍞 **PASS** OS/2 usWinAscent & usWinDescent values look good!
 
 </details>
 <details>
@@ -84402,8 +88417,15 @@ space glyph. This might have been relevant for applications on MacOS 9.
 <summary>🍞 <b>PASS:</b> Font has **proper** whitespace glyph names?</summary>
 
 * [com.google.fonts/check/whitespace_glyphnames](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/whitespace_glyphnames)
+<pre>--- Rationale ---
 
-* 🍞 **PASS** Font has **proper** whitespace glyph names.
+This check enforces adherence to recommended whitespace (codepoints 0020 and
+00A0) glyph names according to the Adobe Glyph List.
+
+
+</pre>
+
+* 🍞 **PASS** Font has **AGL recommended** names for whitespace glyphs.
 
 </details>
 <details>
@@ -84626,7 +88648,7 @@ apps.
 <pre>--- Rationale ---
 
 There are various metadata in the OpenType spec to specify if a font is
-monospaced or not. If the font is not trully monospaced, then no monospaced
+monospaced or not. If the font is not truly monospaced, then no monospaced
 metadata should be set (as sometimes they mistakenly are...)
 
 Requirements for monospace fonts:
@@ -84757,15 +88779,45 @@ Reference: https://github.com/googlefonts/fontbakery/issues/1845
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class)</summary>
+
+* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
+<pre>--- Rationale ---
+
+Glyphs in the GDEF mark glyph class should be non-spacing.
+Spacing glyphs in the GDEF mark glyph class may have incorrect anchor
+positioning that was only intended for building composite glyphs during design.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not has spacing glyphs in the GDEF mark glyph class.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class</summary>
+
+* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
+<pre>--- Rationale ---
+
+Mark characters should be in the GDEF mark glyph class.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not have mark characters not in the GDEF mark glyph class.
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Check GDEF mark glyph class doesn't have characters that are not marks)</summary>
 
 * [com.google.fonts/check/gdef_non_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars)
 <pre>--- Rationale ---
 
-Glyphs in the GDEF mark glyph class become non-spacing and may be
-repositioned if they have mark anchors. Only combining mark glyphs
-should be in that class. Any non-mark glyph must not be in that class,
-in particular spacing glyphs.
+Glyphs in the GDEF mark glyph class become non-spacing and may be repositioned
+if they have mark anchors.
+Only combining mark glyphs should be in that class. Any non-mark glyph must not
+be in that class, in particular spacing glyphs.
 
 
 </pre>
@@ -84849,71 +88901,7 @@ the same x,y coordinates.
 <br>
 </details>
 <details>
-<summary><b>[158] GeologicaSharp-ThinItalic.ttf</b></summary>
-<details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
-
-This can be accomplished by using the 'gftools fix-hinting' command.
-
-# create virtualenvpython3 -m venv venv
-# activate virtualenvsource venv/bin/activate
-# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-
-A font&#x27;s winAscent and winDescent values should be greater than the head
-table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
-can occur on Windows platforms
-(https://github.com/RedHatBrand/Overpass/issues/33).
-
-If the font includes tall/deep writing systems such as Arabic or Devanagari,
-the winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-
-When the win Metrics are significantly greater than the upm, the linespacing
-can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
-This means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).
-
-
-</pre>
-
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 895, but got 746 instead [code: descent]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Checking OS/2 usWeightClass.</summary>
-
-* [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
-
-* ⚠ **WARN** Thin Italic:100 is OK on TTFs, but OTF files with those values will cause bluring on Windows. GlyphsApp users must set an Instance Custom Parameter for the Thin and ExtraLight styles to 250 and 275, so that if OTFs are exported then it will not blur on Windows. [code: blur-on-windows]
-
-</details>
+<summary><b>[163] GeologicaSharp-ThinItalic.ttf</b></summary>
 <details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
@@ -84967,64 +88955,31 @@ Glyph name: uni1EEF	Contours detected: 3	Expected: 2
 Glyph name: uni1EF0	Contours detected: 3	Expected: 2
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
 Glyph name: uni1EDB	Contours detected: 4	Expected: 3
-Glyph name: uni1EDD	Contours detected: 4	Expected: 3
-Glyph name: uni045B	Contours detected: 2	Expected: 1
-Glyph name: tbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EEE	Contours detected: 3	Expected: 2
 Glyph name: Uhorn	Contours detected: 2	Expected: 1
-Glyph name: uni1EDF	Contours detected: 4	Expected: 3
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: uni1EE1	Contours detected: 4	Expected: 3
-Glyph name: uhorn	Contours detected: 2	Expected: 1
 Glyph name: uni1EEC	Contours detected: 3	Expected: 2
-Glyph name: uni1EE8	Contours detected: 3	Expected: 2
-Glyph name: uni1EEF	Contours detected: 3	Expected: 2
-Glyph name: uni04B0	Contours detected: 2	Expected: 1
-Glyph name: uni1EE3	Contours detected: 4	Expected: 3
-Glyph name: uni1EE9	Contours detected: 3	Expected: 2
 Glyph name: uni0492	Contours detected: 2	Expected: 1
 Glyph name: uni1EF1	Contours detected: 3	Expected: 2
-Glyph name: uni1EED	Contours detected: 3	Expected: 2
-Glyph name: ohorn	Contours detected: 3	Expected: 2
-Glyph name: uni0493	Contours detected: 2	Expected: 1
 Glyph name: uni1EEB	Contours detected: 3	Expected: 2
-Glyph name: uni1EEA	Contours detected: 3	Expected: 2
-Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: tbar	Contours detected: 2	Expected: 1
 Glyph name: Tbar	Contours detected: 2	Expected: 1
-Glyph name: uni04B1	Contours detected: 2	Expected: 1 [code: contour-count]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class)</summary>
-
-* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
-<pre>--- Rationale ---
-
-Glyphs in the GDEF mark glyph class should be non-spacing.
-Spacing glyphs in the GDEF mark glyph class may have incorrect
-anchor positioning that was only intended for building composite glyphs
-during design.
-
-
-</pre>
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 acutecomb, acutecomb.case, acutecomb.narrow, brevecombcy, dotbelowcomb, gravecomb, gravecomb.case, gravecomb.narrow, hookabovecomb, hookabovecomb.case and 55 more. [code: spacing-mark-glyphs]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class</summary>
-
-* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
-<pre>--- Rationale ---
-
-Mark characters should be in the GDEF mark glyph class.
-
-
-</pre>
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 U+0300, U+0301, U+0302, U+0303, U+0304, U+0306, U+0307, U+0308, U+0309, U+030A, U+030B, U+030C, U+030F, U+0311, U+0312, U+031B, U+0323, U+0324, U+0326, U+0327, U+0328, U+032E, U+0331 and U+0335 [code: mark-chars]
+Glyph name: uni1EE9	Contours detected: 3	Expected: 2
+Glyph name: uni1EE8	Contours detected: 3	Expected: 2
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: uni1EE1	Contours detected: 4	Expected: 3
+Glyph name: uni1EDD	Contours detected: 4	Expected: 3
+Glyph name: uni045B	Contours detected: 2	Expected: 1
+Glyph name: uni1EEE	Contours detected: 3	Expected: 2
+Glyph name: uni1EEA	Contours detected: 3	Expected: 2
+Glyph name: uni04B1	Contours detected: 2	Expected: 1
+Glyph name: uhorn	Contours detected: 2	Expected: 1
+Glyph name: uni1EEF	Contours detected: 3	Expected: 2
+Glyph name: ohorn	Contours detected: 3	Expected: 2
+Glyph name: uni1EE3	Contours detected: 4	Expected: 3
+Glyph name: uni04B0	Contours detected: 2	Expected: 1
+Glyph name: uni1EF0	Contours detected: 3	Expected: 2
+Glyph name: uni0493	Contours detected: 2	Expected: 1
+Glyph name: uni1EED	Contours detected: 3	Expected: 2
+Glyph name: uni1EDF	Contours detected: 4	Expected: 3 [code: contour-count]
 
 </details>
 <details>
@@ -85035,12 +88990,12 @@ Mark characters should be in the GDEF mark glyph class.
 
 The snippet of HTML in the DESCRIPTION.en_us.html file is added to the font
 family webpage on the Google Fonts website. For that reason, all hyperlinks in
-it must be properly working. 
+it must be properly working.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -85063,7 +89018,7 @@ any other git-based version control service.
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -85072,17 +89027,19 @@ any other git-based version control service.
 * [com.google.fonts/check/description/valid_html](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/valid_html)
 <pre>--- Rationale ---
 
-When packaging families for being pushed to the `google/fonts` git repo, if
-there is no DESCRIPTION.en_us.html file, some older versions of the
-`add_font.py` tool insert a dummy description file which contains invalid html.
+Sometimes people write malformed HTML markup. This check should ensure the file
+is good.
 
-This file needs to either be replaced with an existing description file or
-edited by hand.
+Additionally, when packaging families for being pushed to the `google/fonts`
+git repo, if there is no DESCRIPTION.en_us.html file, some older versions of
+the `add_font.py` tool insert a dummy description file which contains invalid
+html. This file needs to either be replaced with an existing description file
+or edited by hand.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: descfile
+* 💤 **SKIP** Unfulfilled Conditions: description
 
 </details>
 <details>
@@ -85133,7 +89090,7 @@ malformed.
 
 </pre>
 
-* 💤 **SKIP** Font family at '../fonts/static/ttfs' lacks a METADATA.pb file.
+* 💤 **SKIP** Font family at '../fonts/static/ttfs' lacks a METADATA.pb file. [code: file-not-found]
 
 </details>
 <details>
@@ -85202,6 +89159,28 @@ match exactly those declared on the METADATA.pb file.
 
 Also, to avoid confusion, we expect that font files (other than statics) are
 not placed on subdirectories.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: family_metadata
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure METADATA.pb category field is valid.</summary>
+
+* [com.google.fonts/check/metadata/category](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/category)
+<pre>--- Rationale ---
+
+There are only five acceptable values for the category field in a METADATA.pb
+file:
+- MONOSPACE
+- SANS_SERIF
+- SERIF
+- DISPLAY
+- HANDWRITING
+
+This check is meant to avoid typos in this field.
 
 
 </pre>
@@ -85496,15 +89475,28 @@ We may want to merge them all into a single check.
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Checking OS/2 usWeightClass matches weight specified at METADATA.pb.</summary>
+<summary>💤 <b>SKIP:</b> Check METADATA.pb font weights are correct.</summary>
 
 * [com.google.fonts/check/metadata/os2_weightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/os2_weightclass)
+<pre>--- Rationale ---
+
+Check METADATA.pb font weights are correct.
+
+For static fonts, the metadata weight should be the same
+as the static font&#x27;s OS/2 usWeightClass.
+
+For variable fonts, the weight value should be 400 if the
+font&#x27;s wght axis range includes 400, otherwise it should be the
+value closest to 400.
+
+
+</pre>
 
 * 💤 **SKIP** Unfulfilled Conditions: font_metadata
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName.</summary>
+<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName for static fonts.</summary>
 
 * [com.google.fonts/check/metadata/match_weight_postscript](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/match_weight_postscript)
 
@@ -85648,6 +89640,10 @@ All ligatures in a font must have corresponding caret (text cursor) positions
 defined in the GDEF table, otherwhise, users may experience issues with caret
 rendering.
 
+If using GlyphsApp, ligature carets can be set directly on canvas by accessing
+the `Glyph -&gt; Set Anchors` menu option or by pressing the `Cmd+U` keyboard
+shortcut.
+
 
 </pre>
 
@@ -85725,6 +89721,25 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Check font follows the Google Fonts CJK vertical metric schema</summary>
+
+* [com.google.fonts/check/cjk_vertical_metrics](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/cjk_vertical_metrics)
+<pre>--- Rationale ---
+
+CJK fonts have different vertical metrics when compared to Latin fonts. We
+follow the schema developed by dr Ken Lunde for Source Han Sans and the Noto
+CJK fonts.
+
+Our documentation includes further information:
+https://github.com/googlefonts/gf-docs/tree/master/Spec#cjk-vertical-metrics
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_cjk_font
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Check variable font instances have correct coordinate values</summary>
 
 * [com.google.fonts/check/varfont_instance_coordinates](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont_instance_coordinates)
@@ -85741,7 +89756,7 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Ensure VFs do not contain opsz or ital axes. </summary>
+<summary>💤 <b>SKIP:</b> Ensure VFs do not contain slnt or ital axes. </summary>
 
 * [com.google.fonts/check/varfont/unsupported_axes](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont/unsupported_axes)
 <pre>--- Rationale ---
@@ -85802,6 +89817,21 @@ result in WARNs.
 </pre>
 
 * 💤 **SKIP** Sibling families were not detected.
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure indic fonts have the Indian Rupee Sign glyph. </summary>
+
+* [com.google.fonts/check/rupee](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/rupee)
+<pre>--- Rationale ---
+
+Per Bureau of Indian Standards every font supporting one of the official Indian
+languages needs to include Unicode Character “₹” (U+20B9) Indian Rupee Sign.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_indic_font
 
 </details>
 <details>
@@ -86039,10 +90069,10 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/static/ttfs/GeologicaSharp-ThinItalic.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 121.2kb |
-	| Hinted Size | 149.4kb |
-	| Increase | 28.1kb |
-	| Change   | 23.2 % |
+	| Dehinted Size | 121.5kb |
+	| Hinted Size | 150.0kb |
+	| Increase | 28.6kb |
+	| Change   | 23.5 % |
  [code: size-impact]
 
 </details>
@@ -86134,7 +90164,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [GPOS, gasp, cvt , loca, prep, GSUB, fpgm, DSIG]
+* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, GPOS, DSIG, gasp, prep, loca, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -86251,6 +90281,31 @@ set of characters defined in the `GF-latin-core` glyph-set.
 * [com.google.fonts/check/name/unwanted_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars)
 
 * 🍞 **PASS** No need to substitute copyright, registered and trademark symbols in name table entries of this font.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Checking OS/2 usWeightClass.</summary>
+
+* [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
+<pre>--- Rationale ---
+
+Google Fonts expects variable fonts, static ttfs and static otfs to have
+differing OS/2 usWeightClass values.
+
+For Variable Fonts, Thin-Black must be 100-900
+For static ttfs, Thin-Black can be 100-900 or 250-900
+For static otfs, Thin-Black must be 250-900
+
+If static otfs are set lower than 250, text may appear blurry in legacy Windows
+applications.
+
+Glyphsapp users can change the usWeightClass value of an instance by adding a
+&#x27;weightClass&#x27; customParameter.
+
+
+</pre>
+
+* 🍞 **PASS** OS/2 usWeightClass is good
 
 </details>
 <details>
@@ -86436,20 +90491,12 @@ Even though the OpenType spec allows unitsPerEm to be any value between 16 and
 The spec suggests usage of powers of two in order to get some performance
 improvements on legacy renderers, so those values are acceptable.
 
-But value of 500 or 1000 are also acceptable, with the added benefit that it
+But values of 500 or 1000 are also acceptable, with the added benefit that it
 makes upm math easier for designers, while the performance hit of not using a
 power of two is most likely negligible nowadays.
 
-Another acceptable value is 2000. Since TT outlines are all integers (no
-floats), then instances in a VF suffer rounding compromises, and therefore a
-1000 UPM is too small because it forces too many such compromises.
-
-Therefore 2000 is a good &#x27;new VF standard&#x27;, because 2000 is a simple 2x
-conversion from existing fonts drawn on a 1000 UPM, and anyone who knows what
-10 units can do for 1000 UPM will know what 20 units does too.
-
-Additionally, values above 2048 would result in filesize increases with not
-much added benefit.
+Additionally, values above 2048 would likely result in unreasonable filesize
+increases.
 
 
 </pre>
@@ -86675,6 +90722,28 @@ release files, but Google Fonts should only have OpenType tables.
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+<pre>--- Rationale ---
+
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Combined length of family and style must not exceed 27 characters.</summary>
 
 * [com.google.fonts/check/name/family_and_style_max_length](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length)
@@ -86745,11 +90814,73 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> A font repository should not include fontbakery report files</summary>
+
+* [com.google.fonts/check/repo/fb_report](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/fb_report)
+<pre>--- Rationale ---
+
+A FontBakery report is ephemeral and so should be used for posting issues on a
+bug-tracker instead of being hosted in the font project repository.
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> A font repository should not include ZIP files</summary>
+
+* [com.google.fonts/check/repo/zip_files](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/zip_files)
+<pre>--- Rationale ---
+
+Sometimes people check in ZIPs into their font project repositories. While we
+accept the practice of checking in binaries, we believe that a ZIP is a step
+too far ;)
+
+Note: a source purist position is that only source files and build scripts
+should be checked in. 
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Name table records must not have trailing spaces.</summary>
 
 * [com.google.fonts/check/name/trailing_spaces](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/name/trailing_spaces)
 
 * 🍞 **PASS** No trailing spaces on name table entries.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+<pre>--- Rationale ---
+
+A font&#x27;s winAscent and winDescent values should be greater than the head
+table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
+can occur on Windows platforms
+(https://github.com/RedHatBrand/Overpass/issues/33).
+
+If the font includes tall/deep writing systems such as Arabic or Devanagari,
+the winAscent and winDescent can be greater than the yMax and abs(yMin) to
+accommodate vowel marks.
+
+When the win Metrics are significantly greater than the upm, the linespacing
+can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
+(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
+This means the font developer can control the linespacing with the typo values,
+whilst avoiding clipping by setting the win values to values greater than the
+yMax and abs(yMin).
+
+
+</pre>
+
+* 🍞 **PASS** OS/2 usWinAscent & usWinDescent values look good!
 
 </details>
 <details>
@@ -86818,8 +90949,15 @@ space glyph. This might have been relevant for applications on MacOS 9.
 <summary>🍞 <b>PASS:</b> Font has **proper** whitespace glyph names?</summary>
 
 * [com.google.fonts/check/whitespace_glyphnames](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/whitespace_glyphnames)
+<pre>--- Rationale ---
 
-* 🍞 **PASS** Font has **proper** whitespace glyph names.
+This check enforces adherence to recommended whitespace (codepoints 0020 and
+00A0) glyph names according to the Adobe Glyph List.
+
+
+</pre>
+
+* 🍞 **PASS** Font has **AGL recommended** names for whitespace glyphs.
 
 </details>
 <details>
@@ -87042,7 +91180,7 @@ apps.
 <pre>--- Rationale ---
 
 There are various metadata in the OpenType spec to specify if a font is
-monospaced or not. If the font is not trully monospaced, then no monospaced
+monospaced or not. If the font is not truly monospaced, then no monospaced
 metadata should be set (as sometimes they mistakenly are...)
 
 Requirements for monospace fonts:
@@ -87173,15 +91311,45 @@ Reference: https://github.com/googlefonts/fontbakery/issues/1845
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class)</summary>
+
+* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
+<pre>--- Rationale ---
+
+Glyphs in the GDEF mark glyph class should be non-spacing.
+Spacing glyphs in the GDEF mark glyph class may have incorrect anchor
+positioning that was only intended for building composite glyphs during design.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not has spacing glyphs in the GDEF mark glyph class.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class</summary>
+
+* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
+<pre>--- Rationale ---
+
+Mark characters should be in the GDEF mark glyph class.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not have mark characters not in the GDEF mark glyph class.
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Check GDEF mark glyph class doesn't have characters that are not marks)</summary>
 
 * [com.google.fonts/check/gdef_non_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars)
 <pre>--- Rationale ---
 
-Glyphs in the GDEF mark glyph class become non-spacing and may be
-repositioned if they have mark anchors. Only combining mark glyphs
-should be in that class. Any non-mark glyph must not be in that class,
-in particular spacing glyphs.
+Glyphs in the GDEF mark glyph class become non-spacing and may be repositioned
+if they have mark anchors.
+Only combining mark glyphs should be in that class. Any non-mark glyph must not
+be in that class, in particular spacing glyphs.
 
 
 </pre>
@@ -87269,5 +91437,5 @@ the same x,y coordinates.
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 72 | 127 | 2809 | 217 | 2477 | 0 |
-| 0% | 1% | 2% | 49% | 4% | 43% | 0% |
+| 0 | 0 | 47 | 2917 | 217 | 2701 | 0 |
+| 0% | 0% | 1% | 50% | 4% | 46% | 0% |

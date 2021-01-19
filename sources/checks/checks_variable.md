@@ -1,6 +1,6 @@
 ## Fontbakery report
 
-Fontbakery version: 0.7.26
+Fontbakery version: 0.7.29
 
 <details>
 <summary><b>[14] Family checks</b></summary>
@@ -10,7 +10,7 @@ Fontbakery version: 0.7.26
 * [com.google.fonts/check/fontbakery_version](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/fontbakery_version)
 
 * ℹ **INFO** fontbakery (0.7.31)  - Well designed Font QA tool, written in Python 3
-  INSTALLED: 0.7.26
+  INSTALLED: 0.7.29
   LATEST:    0.7.31
 
 * 🍞 **PASS** Font Bakery is up-to-date
@@ -216,7 +216,7 @@ https://github.com/googlefonts/fontbakery/blob/master/prebuilt/workarounds
 <br>
 </details>
 <details>
-<summary><b>[158] Geologica[SHRP,ital,slnt,wght].ttf</b></summary>
+<summary><b>[163] Geologica[SHRP,ital,slnt,wght].ttf</b></summary>
 <details>
 <summary>💔 <b>ERROR:</b> Check correctness of STAT table strings </summary>
 
@@ -233,7 +233,35 @@ variation axes other than &#x27;ital&#x27;.
 
 </details>
 <details>
-<summary>🔥 <b>FAIL:</b> Ensure VFs do not contain opsz or ital axes. </summary>
+<summary>🔥 <b>FAIL:</b> Check variable font instances have correct names</summary>
+
+* [com.google.fonts/check/varfont_instance_names](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont_instance_names)
+
+* 🔥 **FAIL** Following instances are not supported: 
+	- Sharp Thin
+	- Sharp Thin Italic
+	- Sharp ExtraLight
+	- Sharp ExtraLight Italic
+	- Sharp Light
+	- Sharp Light Italic
+	- Sharp Regular
+	- Sharp Italic
+	- Sharp Medium
+	- Sharp Medium Italic
+	- Sharp SemiBold
+	- Sharp SemiBold Italic
+	- Sharp Bold
+	- Sharp Bold Italic
+	- Sharp ExtraBold
+	- Sharp ExtraBold Italic
+	- Sharp Black
+	- Sharp Black Italic
+
+Further info can be found in our spec https://github.com/googlefonts/gf-docs/tree/master/Spec#fvar-instances [code: bad-instance-names]
+
+</details>
+<details>
+<summary>🔥 <b>FAIL:</b> Ensure VFs do not contain slnt or ital axes. </summary>
 
 * [com.google.fonts/check/varfont/unsupported_axes](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont/unsupported_axes)
 <pre>--- Rationale ---
@@ -254,164 +282,6 @@ https://arrowtype.github.io/vf-slnt-test/
 
 </details>
 <details>
-<summary>⚠ <b>WARN:</b> Checking OS/2 usWeightClass.</summary>
-
-* [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
-
-* ⚠ **WARN** Thin:100 is OK on TTFs, but OTF files with those values will cause bluring on Windows. GlyphsApp users must set an Instance Custom Parameter for the Thin and ExtraLight styles to 250 and 275, so that if OTFs are exported then it will not blur on Windows. [code: blur-on-windows]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Check copyright namerecords match license file.</summary>
-
-* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
-<pre>--- Rationale ---
-
-A known licensing description must be provided in the NameID 14 (LICENSE
-DESCRIPTION) entries of the name table.
-
-The source of truth for this check (to determine which license is in use) is a
-file placed side-by-side to your font project including the licensing terms.
-
-Depending on the chosen license, one of the following string snippets is
-expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
-table:
-- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
-This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
-- &quot;Licensed under the Apache License, Version 2.0&quot;
-- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
-
-
-Currently accepted licenses are Apache or Open Font License.
-For a small set of legacy families the Ubuntu Font License may be acceptable as
-well.
-
-When in doubt, please choose OFL for new font projects.
-
-
-</pre>
-
-* 🍞 **PASS** Licensing entry on name table is correctly set.
-* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
-* ⚠ **WARN** For now we're still accepting http URLs, but you should consider using https instead.
- [code: http]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> License URL matches License text on name table?</summary>
-
-* [com.google.fonts/check/name/license_url](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license_url)
-<pre>--- Rationale ---
-
-A known license URL must be provided in the NameID 14 (LICENSE INFO URL) entry
-of the name table.
-
-The source of truth for this check is the licensing text found on the NameID 13
-entry (LICENSE DESCRIPTION).
-
-The string snippets used for detecting licensing terms are:
-- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
-This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
-- &quot;Licensed under the Apache License, Version 2.0&quot;
-- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
-
-
-Currently accepted licenses are Apache or Open Font License.
-For a small set of legacy families the Ubuntu Font License may be acceptable as
-well.
-
-When in doubt, please choose OFL for new font projects.
-
-
-</pre>
-
-* 🍞 **PASS** Font has a valid license URL in NAME table.
-* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
-* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
-* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
-* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=14] [code: http-in-license-info]
-* ⚠ **WARN** For now we're still accepting http URLs, but you should consider using https instead.
- [code: http]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Check variable font instances have correct names</summary>
-
-* [com.google.fonts/check/varfont_instance_names](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont_instance_names)
-
-* ⚠ **WARN** Instance "Sharp Thin": contains the following unparsable tokens "['Sharp']"
-* ⚠ **WARN** Instance "Sharp Thin": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Sharp Thin Italic": contains the following unparsable tokens "['Sharp']"
-* ⚠ **WARN** Instance "Sharp Thin Italic": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Sharp ExtraLight": contains the following unparsable tokens "['Sharp']"
-* ⚠ **WARN** Instance "Sharp ExtraLight": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Sharp ExtraLight Italic": contains the following unparsable tokens "['Sharp']"
-* ⚠ **WARN** Instance "Sharp ExtraLight Italic": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Sharp Light": contains the following unparsable tokens "['Sharp']"
-* ⚠ **WARN** Instance "Sharp Light": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Sharp Light Italic": contains the following unparsable tokens "['Sharp']"
-* ⚠ **WARN** Instance "Sharp Light Italic": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Sharp Regular": contains the following unparsable tokens "['Sharp']"
-* ⚠ **WARN** Instance "Sharp Regular": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Sharp Italic": contains the following unparsable tokens "['Sharp']"
-* ⚠ **WARN** Instance "Sharp Italic": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Sharp Medium": contains the following unparsable tokens "['Sharp']"
-* ⚠ **WARN** Instance "Sharp Medium": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Sharp Medium Italic": contains the following unparsable tokens "['Sharp']"
-* ⚠ **WARN** Instance "Sharp Medium Italic": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Sharp SemiBold": contains the following unparsable tokens "['Sharp']"
-* ⚠ **WARN** Instance "Sharp SemiBold": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Sharp SemiBold Italic": contains the following unparsable tokens "['Sharp']"
-* ⚠ **WARN** Instance "Sharp SemiBold Italic": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Sharp Bold": contains the following unparsable tokens "['Sharp']"
-* ⚠ **WARN** Instance "Sharp Bold": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Sharp Bold Italic": contains the following unparsable tokens "['Sharp']"
-* ⚠ **WARN** Instance "Sharp Bold Italic": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Sharp ExtraBold": contains the following unparsable tokens "['Sharp']"
-* ⚠ **WARN** Instance "Sharp ExtraBold": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Sharp ExtraBold Italic": contains the following unparsable tokens "['Sharp']"
-* ⚠ **WARN** Instance "Sharp ExtraBold Italic": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Sharp Black": contains the following unparsable tokens "['Sharp']"
-* ⚠ **WARN** Instance "Sharp Black": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Sharp Black Italic": contains the following unparsable tokens "['Sharp']"
-* ⚠ **WARN** Instance "Sharp Black Italic": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Check has either failed or produced a warning. See our wip spec for further info https://gist.github.com/m4rc1e/8f4c4498519e8a36cd54e16a004275cb
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class)</summary>
-
-* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
-<pre>--- Rationale ---
-
-Glyphs in the GDEF mark glyph class should be non-spacing.
-Spacing glyphs in the GDEF mark glyph class may have incorrect
-anchor positioning that was only intended for building composite glyphs
-during design.
-
-
-</pre>
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 acutecomb, acutecomb.case, acutecomb.narrow, brevecombcy, dotbelowcomb, gravecomb, gravecomb.case, gravecomb.narrow, hookabovecomb, hookabovecomb.case and 55 more. [code: spacing-mark-glyphs]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class</summary>
-
-* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
-<pre>--- Rationale ---
-
-Mark characters should be in the GDEF mark glyph class.
-
-
-</pre>
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 U+0300, U+0301, U+0302, U+0303, U+0304, U+0306, U+0307, U+0308, U+0309, U+030A, U+030B, U+030C, U+030F, U+0311, U+0312, U+031B, U+0323, U+0324, U+0326, U+0327, U+0328, U+032E, U+0331 and U+0335 [code: mark-chars]
-
-</details>
-<details>
 <summary>💤 <b>SKIP:</b> Does DESCRIPTION file contain broken links?</summary>
 
 * [com.google.fonts/check/description/broken_links](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/broken_links)
@@ -419,12 +289,12 @@ Mark characters should be in the GDEF mark glyph class.
 
 The snippet of HTML in the DESCRIPTION.en_us.html file is added to the font
 family webpage on the Google Fonts website. For that reason, all hyperlinks in
-it must be properly working. 
+it must be properly working.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -447,7 +317,7 @@ any other git-based version control service.
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -456,17 +326,19 @@ any other git-based version control service.
 * [com.google.fonts/check/description/valid_html](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/valid_html)
 <pre>--- Rationale ---
 
-When packaging families for being pushed to the `google/fonts` git repo, if
-there is no DESCRIPTION.en_us.html file, some older versions of the
-`add_font.py` tool insert a dummy description file which contains invalid html.
+Sometimes people write malformed HTML markup. This check should ensure the file
+is good.
 
-This file needs to either be replaced with an existing description file or
-edited by hand.
+Additionally, when packaging families for being pushed to the `google/fonts`
+git repo, if there is no DESCRIPTION.en_us.html file, some older versions of
+the `add_font.py` tool insert a dummy description file which contains invalid
+html. This file needs to either be replaced with an existing description file
+or edited by hand.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: descfile
+* 💤 **SKIP** Unfulfilled Conditions: description
 
 </details>
 <details>
@@ -517,7 +389,7 @@ malformed.
 
 </pre>
 
-* 💤 **SKIP** Font family at '../fonts/variable' lacks a METADATA.pb file.
+* 💤 **SKIP** Font family at '../fonts/variable' lacks a METADATA.pb file. [code: file-not-found]
 
 </details>
 <details>
@@ -586,6 +458,28 @@ match exactly those declared on the METADATA.pb file.
 
 Also, to avoid confusion, we expect that font files (other than statics) are
 not placed on subdirectories.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: family_metadata
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure METADATA.pb category field is valid.</summary>
+
+* [com.google.fonts/check/metadata/category](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/category)
+<pre>--- Rationale ---
+
+There are only five acceptable values for the category field in a METADATA.pb
+file:
+- MONOSPACE
+- SANS_SERIF
+- SERIF
+- DISPLAY
+- HANDWRITING
+
+This check is meant to avoid typos in this field.
 
 
 </pre>
@@ -880,19 +774,32 @@ We may want to merge them all into a single check.
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Checking OS/2 usWeightClass matches weight specified at METADATA.pb.</summary>
+<summary>💤 <b>SKIP:</b> Check METADATA.pb font weights are correct.</summary>
 
 * [com.google.fonts/check/metadata/os2_weightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/os2_weightclass)
+<pre>--- Rationale ---
+
+Check METADATA.pb font weights are correct.
+
+For static fonts, the metadata weight should be the same
+as the static font&#x27;s OS/2 usWeightClass.
+
+For variable fonts, the weight value should be 400 if the
+font&#x27;s wght axis range includes 400, otherwise it should be the
+value closest to 400.
+
+
+</pre>
 
 * 💤 **SKIP** Unfulfilled Conditions: font_metadata
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName.</summary>
+<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName for static fonts.</summary>
 
 * [com.google.fonts/check/metadata/match_weight_postscript](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/match_weight_postscript)
 
-* 💤 **SKIP** Unfulfilled Conditions: font_metadata
+* 💤 **SKIP** Unfulfilled Conditions: font_metadata, not is_variable_font
 
 </details>
 <details>
@@ -1074,6 +981,10 @@ All ligatures in a font must have corresponding caret (text cursor) positions
 defined in the GDEF table, otherwhise, users may experience issues with caret
 rendering.
 
+If using GlyphsApp, ligature carets can be set directly on canvas by accessing
+the `Glyph -&gt; Set Anchors` menu option or by pressing the `Cmd+U` keyboard
+shortcut.
+
 
 </pre>
 
@@ -1151,6 +1062,25 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Check font follows the Google Fonts CJK vertical metric schema</summary>
+
+* [com.google.fonts/check/cjk_vertical_metrics](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/cjk_vertical_metrics)
+<pre>--- Rationale ---
+
+CJK fonts have different vertical metrics when compared to Latin fonts. We
+follow the schema developed by dr Ken Lunde for Source Han Sans and the Noto
+CJK fonts.
+
+Our documentation includes further information:
+https://github.com/googlefonts/gf-docs/tree/master/Spec#cjk-vertical-metrics
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_cjk_font
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Checking with ftxvalidator.</summary>
 
 * [com.google.fonts/check/ftxvalidator](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/ftxvalidator)
@@ -1176,6 +1106,21 @@ result in WARNs.
 </pre>
 
 * 💤 **SKIP** Sibling families were not detected.
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure indic fonts have the Indian Rupee Sign glyph. </summary>
+
+* [com.google.fonts/check/rupee](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/rupee)
+<pre>--- Rationale ---
+
+Per Bureau of Indian Standards every font supporting one of the official Indian
+languages needs to include Unicode Character “₹” (U+20B9) Indian Rupee Sign.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_indic_font
 
 </details>
 <details>
@@ -1318,8 +1263,8 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/variable/Geologica[SHRP,ital,slnt,wght].ttf |
 	|:--- | ---:|
-	| Dehinted Size | 332.7kb |
-	| Hinted Size | 332.1kb |
+	| Dehinted Size | 333.7kb |
+	| Hinted Size | 333.1kb |
 	| Increase | -588 bytes |
 	| Change   | -0.2 % |
  [code: size-impact]
@@ -1429,7 +1374,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [GPOS, loca, GSUB, gasp, prep, DSIG]
+* ℹ **INFO** This font contains the following optional tables [prep, DSIG, loca, GPOS, GSUB, gasp]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -1549,6 +1494,31 @@ set of characters defined in the `GF-latin-core` glyph-set.
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> Checking OS/2 usWeightClass.</summary>
+
+* [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
+<pre>--- Rationale ---
+
+Google Fonts expects variable fonts, static ttfs and static otfs to have
+differing OS/2 usWeightClass values.
+
+For Variable Fonts, Thin-Black must be 100-900
+For static ttfs, Thin-Black can be 100-900 or 250-900
+For static otfs, Thin-Black must be 250-900
+
+If static otfs are set lower than 250, text may appear blurry in legacy Windows
+applications.
+
+Glyphsapp users can change the usWeightClass value of an instance by adding a
+&#x27;weightClass&#x27; customParameter.
+
+
+</pre>
+
+* 🍞 **PASS** OS/2 usWeightClass is good
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Check license file has good copyright string.</summary>
 
 * [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
@@ -1562,6 +1532,70 @@ An OFL.txt file&#x27;s first line should be the font copyright e.g:
 </pre>
 
 * 🍞 **PASS** looks good
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check copyright namerecords match license file.</summary>
+
+* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
+<pre>--- Rationale ---
+
+A known licensing description must be provided in the NameID 14 (LICENSE
+DESCRIPTION) entries of the name table.
+
+The source of truth for this check (to determine which license is in use) is a
+file placed side-by-side to your font project including the licensing terms.
+
+Depending on the chosen license, one of the following string snippets is
+expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
+table:
+- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
+- &quot;Licensed under the Apache License, Version 2.0&quot;
+- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
+
+
+Currently accepted licenses are Apache or Open Font License.
+For a small set of legacy families the Ubuntu Font License may be acceptable as
+well.
+
+When in doubt, please choose OFL for new font projects.
+
+
+</pre>
+
+* 🍞 **PASS** Licensing entry on name table is correctly set.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> License URL matches License text on name table?</summary>
+
+* [com.google.fonts/check/name/license_url](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license_url)
+<pre>--- Rationale ---
+
+A known license URL must be provided in the NameID 14 (LICENSE INFO URL) entry
+of the name table.
+
+The source of truth for this check is the licensing text found on the NameID 13
+entry (LICENSE DESCRIPTION).
+
+The string snippets used for detecting licensing terms are:
+- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
+- &quot;Licensed under the Apache License, Version 2.0&quot;
+- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
+
+
+Currently accepted licenses are Apache or Open Font License.
+For a small set of legacy families the Ubuntu Font License may be acceptable as
+well.
+
+When in doubt, please choose OFL for new font projects.
+
+
+</pre>
+
+* 🍞 **PASS** Font has a valid license URL in NAME table.
 
 </details>
 <details>
@@ -1651,20 +1685,12 @@ Even though the OpenType spec allows unitsPerEm to be any value between 16 and
 The spec suggests usage of powers of two in order to get some performance
 improvements on legacy renderers, so those values are acceptable.
 
-But value of 500 or 1000 are also acceptable, with the added benefit that it
+But values of 500 or 1000 are also acceptable, with the added benefit that it
 makes upm math easier for designers, while the performance hit of not using a
 power of two is most likely negligible nowadays.
 
-Another acceptable value is 2000. Since TT outlines are all integers (no
-floats), then instances in a VF suffer rounding compromises, and therefore a
-1000 UPM is too small because it forces too many such compromises.
-
-Therefore 2000 is a good &#x27;new VF standard&#x27;, because 2000 is a simple 2x
-conversion from existing fonts drawn on a 1000 UPM, and anyone who knows what
-10 units can do for 1000 UPM will know what 20 units does too.
-
-Additionally, values above 2048 would result in filesize increases with not
-much added benefit.
+Additionally, values above 2048 would likely result in unreasonable filesize
+increases.
 
 
 </pre>
@@ -1962,6 +1988,40 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> A font repository should not include fontbakery report files</summary>
+
+* [com.google.fonts/check/repo/fb_report](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/fb_report)
+<pre>--- Rationale ---
+
+A FontBakery report is ephemeral and so should be used for posting issues on a
+bug-tracker instead of being hosted in the font project repository.
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> A font repository should not include ZIP files</summary>
+
+* [com.google.fonts/check/repo/zip_files](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/zip_files)
+<pre>--- Rationale ---
+
+Sometimes people check in ZIPs into their font project repositories. While we
+accept the practice of checking in binaries, we believe that a ZIP is a step
+too far ;)
+
+Note: a source purist position is that only source files and build scripts
+should be checked in. 
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Check variable font instances have correct coordinate values</summary>
 
 * [com.google.fonts/check/varfont_instance_coordinates](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont_instance_coordinates)
@@ -2071,8 +2131,15 @@ space glyph. This might have been relevant for applications on MacOS 9.
 <summary>🍞 <b>PASS:</b> Font has **proper** whitespace glyph names?</summary>
 
 * [com.google.fonts/check/whitespace_glyphnames](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/whitespace_glyphnames)
+<pre>--- Rationale ---
 
-* 🍞 **PASS** Font has **proper** whitespace glyph names.
+This check enforces adherence to recommended whitespace (codepoints 0020 and
+00A0) glyph names according to the Adobe Glyph List.
+
+
+</pre>
+
+* 🍞 **PASS** Font has **AGL recommended** names for whitespace glyphs.
 
 </details>
 <details>
@@ -2295,7 +2362,7 @@ apps.
 <pre>--- Rationale ---
 
 There are various metadata in the OpenType spec to specify if a font is
-monospaced or not. If the font is not trully monospaced, then no monospaced
+monospaced or not. If the font is not truly monospaced, then no monospaced
 metadata should be set (as sometimes they mistakenly are...)
 
 Requirements for monospace fonts:
@@ -2426,15 +2493,45 @@ Reference: https://github.com/googlefonts/fontbakery/issues/1845
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class)</summary>
+
+* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
+<pre>--- Rationale ---
+
+Glyphs in the GDEF mark glyph class should be non-spacing.
+Spacing glyphs in the GDEF mark glyph class may have incorrect anchor
+positioning that was only intended for building composite glyphs during design.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not has spacing glyphs in the GDEF mark glyph class.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class</summary>
+
+* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
+<pre>--- Rationale ---
+
+Mark characters should be in the GDEF mark glyph class.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not have mark characters not in the GDEF mark glyph class.
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Check GDEF mark glyph class doesn't have characters that are not marks)</summary>
 
 * [com.google.fonts/check/gdef_non_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars)
 <pre>--- Rationale ---
 
-Glyphs in the GDEF mark glyph class become non-spacing and may be
-repositioned if they have mark anchors. Only combining mark glyphs
-should be in that class. Any non-mark glyph must not be in that class,
-in particular spacing glyphs.
+Glyphs in the GDEF mark glyph class become non-spacing and may be repositioned
+if they have mark anchors.
+Only combining mark glyphs should be in that class. Any non-mark glyph must not
+be in that class, in particular spacing glyphs.
 
 
 </pre>
@@ -2617,5 +2714,5 @@ scale used for the italicAngle field in the post table.
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 1 | 1 | 7 | 76 | 8 | 79 | 0 |
-| 1% | 1% | 4% | 44% | 5% | 46% | 0% |
+| 1 | 2 | 1 | 79 | 8 | 86 | 0 |
+| 1% | 1% | 1% | 45% | 5% | 49% | 0% |
