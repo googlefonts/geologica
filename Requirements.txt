@@ -1,5 +1,4 @@
-fontTools
 fontmake
-fontbakery>=0.7.0
-git+https://github.com/googlefonts/gftools
+fontbakery
+gftools
 fs
