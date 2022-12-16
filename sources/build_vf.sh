@@ -13,7 +13,7 @@ set -e
 echo "Generating VFs"
 mkdir -p ../fonts/variable
 #fontmake -g Geologica.glyphs -o variable --output-path ../fonts/variable/Geologica[SHRP,ital,slnt,wght].ttf
-fontmake -m master_ufo/Geologica.designspace -o variable --output-path ../fonts/variable/Geologica[SHRP,ital,slnt,wght].ttf
+fontmake -m master_ufo/Geologica.designspace -o variable --output-path ../fonts/variable/Geologica[CRSV,SHRP,slnt,wght].ttf
 rm -rf instance_ufo/ #master_ufo/ #deletes everything in root directory
 
 
@@ -32,9 +32,9 @@ echo "Post processing variable fonts"
 vfs=$(ls ../fonts/variable/*.ttf)
 for vf in $vfs
 do
-    # fix DSIG #
-	echo "fix DSIG in " $vf
-    gftools fix-dsig --autofix $vf
+    # # fix DSIG #
+	# echo "fix DSIG in " $vf
+    # gftools fix-dsig --autofix $vf
 	
 	# fix hinting #
 	gftools fix-nonhinting $vf $vf.fix; #run if fonts have not been released with Google yet
@@ -51,7 +51,7 @@ do
 	
 	# patch Name and STAT table #	
 	ttx -m $vf "../sources/helpers/vf-patch.ttx"
-	mv "../sources/helpers/vf-patch.ttf" "../fonts/variable/Geologica[SHRP,ital,slnt,wght].ttf"
+	mv "../sources/helpers/vf-patch.ttf" "../fonts/variable/Geologica[CRSV,SHRP,slnt,wght].ttf"
 done
 # remove any backup files #
 rm -f ../fonts/variable/*backup*.ttf
