@@ -1,0 +1,74 @@
+sources:
+  - Geologica.glyphs
+buildOTF: False
+buildWebfont: False
+buildTTF: False
+axisOrder:
+  - SHRP
+  - CRSV
+  - slnt
+  - wght
+familyName: "Geologica"
+stat:
+  - name: Sharpness
+    tag: SHRP
+    values:
+    - name: Blunt
+      value: 0
+      flags: 2
+    - name: Sharp
+      value: 100
+  - name: Cursive
+    tag: CRSV
+    values:
+    - name: Roman
+      value: 0
+      flags: 2
+    - name: Auto
+      value: 0.5
+    - name: Cursive
+      value: 1
+  - name: Weight
+    tag: wght
+    values:
+    - name: Thin
+      value: 100
+    - name: ExtraLight
+      value: 200
+    - name: Light
+      value: 300
+    - name: Regular
+      value: 400
+      linkedValue: 700
+      flags: 2
+    - name: Medium
+      value: 500
+    - name: SemiBold
+      value: 600
+    - name: Bold
+      value: 700
+    - name: ExtraBold
+      value: 800
+    - name: Black
+      value: 900
+  - name: Slant
+    tag: slnt
+    values:
+    - name: Roman
+      value: 0
+    - name: Oblique
+      value: -12
+statFormat4:
+      - name: Roman
+        location:
+          slnt: 0
+          CRSV: 0
+          # flags: 2
+      - name: Cursive
+        location:
+          slnt: 0
+          CRSV: 1
+      # - name: Oblique
+      #   location:
+      #     slnt: 1
+      #     CRSV: 0
