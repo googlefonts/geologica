@@ -1,0 +1,2276 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<designspace format="5.0">
+  <axes>
+    <axis tag="wght" name="Weight" minimum="100" maximum="900" default="100">
+      <map input="100" output="56"/>
+      <map input="200" output="74"/>
+      <map input="300" output="92"/>
+      <map input="400" output="110"/>
+      <map input="500" output="128"/>
+      <map input="600" output="146"/>
+      <map input="700" output="164"/>
+      <map input="800" output="182"/>
+      <map input="900" output="200"/>
+    </axis>
+    <axis tag="CRSV" name="Cursive" minimum="0" maximum="1" default="0"/>
+    <axis tag="SHRP" name="Sharpness" minimum="0" maximum="100" default="0"/>
+    <axis tag="slnt" name="Slant" minimum="-12" maximum="0" default="0"/>
+  </axes>
+  <rules>
+    <rule name="ss01">
+      <conditionset>
+        <condition name="Cursive" minimum="0.5" maximum="1"/>
+      </conditionset>
+      <sub name="a" with="a.ss01"/>
+      <sub name="a-cy" with="a-cy.ss01"/>
+      <sub name="aacute" with="aacute.ss01"/>
+      <sub name="abreve" with="abreve.ss01"/>
+      <sub name="abreve-cy" with="abreve-cy.ss01"/>
+      <sub name="abreveacute" with="abreveacute.ss01"/>
+      <sub name="abrevedotbelow" with="abrevedotbelow.ss01"/>
+      <sub name="abrevegrave" with="abrevegrave.ss01"/>
+      <sub name="abrevehookabove" with="abrevehookabove.ss01"/>
+      <sub name="abrevetilde" with="abrevetilde.ss01"/>
+      <sub name="acircumflex" with="acircumflex.ss01"/>
+      <sub name="acircumflexacute" with="acircumflexacute.ss01"/>
+      <sub name="acircumflexdotbelow" with="acircumflexdotbelow.ss01"/>
+      <sub name="acircumflexgrave" with="acircumflexgrave.ss01"/>
+      <sub name="acircumflexhookabove" with="acircumflexhookabove.ss01"/>
+      <sub name="acircumflextilde" with="acircumflextilde.ss01"/>
+      <sub name="adblgrave" with="adblgrave.ss01"/>
+      <sub name="adieresis" with="adieresis.ss01"/>
+      <sub name="adieresis-cy" with="adieresis-cy.ss01"/>
+      <sub name="adotbelow" with="adotbelow.ss01"/>
+      <sub name="ae" with="ae.ss01"/>
+      <sub name="aeacute" with="aeacute.ss01"/>
+      <sub name="agrave" with="agrave.ss01"/>
+      <sub name="ahookabove" with="ahookabove.ss01"/>
+      <sub name="aie-cy" with="aie-cy.ss01"/>
+      <sub name="ainvertedbreve" with="ainvertedbreve.ss01"/>
+      <sub name="amacron" with="amacron.ss01"/>
+      <sub name="aogonek" with="aogonek.ss01"/>
+      <sub name="aring" with="aring.ss01"/>
+      <sub name="aringacute" with="aringacute.ss01"/>
+      <sub name="atilde" with="atilde.ss01"/>
+      <sub name="g" with="g.ss01"/>
+      <sub name="gbreve" with="gbreve.ss01"/>
+      <sub name="gcaron" with="gcaron.ss01"/>
+      <sub name="gcircumflex" with="gcircumflex.ss01"/>
+      <sub name="gcommaaccent" with="gcommaaccent.ss01"/>
+      <sub name="gdotaccent" with="gdotaccent.ss01"/>
+      <sub name="ordfeminine" with="ordfeminine.ss01"/>
+      <sub name="pe-cy.loclSRB" with="pe-cy.loclSRB.ss01"/>
+      <sub name="te-cy.loclSRB" with="te-cy.loclSRB.ss01"/>
+    </rule>
+  </rules>  
+  <sources>
+    <source filename="Geologica-Thin.ufo" name="Geologica Thin" familyname="Geologica" stylename="Thin">
+      <lib copy="1"/>
+      <groups copy="1"/>
+      <features copy="1"/>
+      <info copy="1"/>
+      <location>
+        <dimension name="Weight" xvalue="56"/>
+        <dimension name="Cursive" xvalue="0"/>
+        <dimension name="Sharpness" xvalue="0"/>
+        <dimension name="Slant" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="Geologica-Black.ufo" name="Geologica Black" familyname="Geologica" stylename="Black">
+      <location>
+        <dimension name="Weight" xvalue="200"/>
+        <dimension name="Cursive" xvalue="0"/>
+        <dimension name="Sharpness" xvalue="0"/>
+        <dimension name="Slant" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="Geologica-ThinSharp.ufo" name="Geologica Thin Sharp" familyname="Geologica" stylename="Thin Sharp">
+      <location>
+        <dimension name="Weight" xvalue="56"/>
+        <dimension name="Cursive" xvalue="0"/>
+        <dimension name="Sharpness" xvalue="100"/>
+        <dimension name="Slant" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="Geologica-BlackSharp.ufo" name="Geologica Black Sharp" familyname="Geologica" stylename="Black Sharp">
+      <location>
+        <dimension name="Weight" xvalue="200"/>
+        <dimension name="Cursive" xvalue="0"/>
+        <dimension name="Sharpness" xvalue="100"/>
+        <dimension name="Slant" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="Geologica-ThinItalic.ufo" name="Geologica Thin Italic" familyname="Geologica" stylename="Thin Italic">
+      <location>
+        <dimension name="Weight" xvalue="56"/>
+        <dimension name="Cursive" xvalue="0"/>
+        <dimension name="Sharpness" xvalue="0"/>
+        <dimension name="Slant" xvalue="-12"/>
+      </location>
+    </source>
+    <source filename="Geologica-BlackItalic.ufo" name="Geologica Black Italic" familyname="Geologica" stylename="Black Italic">
+      <location>
+        <dimension name="Weight" xvalue="200"/>
+        <dimension name="Cursive" xvalue="0"/>
+        <dimension name="Sharpness" xvalue="0"/>
+        <dimension name="Slant" xvalue="-12"/>
+      </location>
+    </source>
+    <source filename="Geologica-ThinSharpItalic.ufo" name="Geologica Thin Sharp Italic" familyname="Geologica" stylename="Thin Sharp Italic">
+      <location>
+        <dimension name="Weight" xvalue="56"/>
+        <dimension name="Cursive" xvalue="0"/>
+        <dimension name="Sharpness" xvalue="100"/>
+        <dimension name="Slant" xvalue="-12"/>
+      </location>
+    </source>
+    <source filename="Geologica-BlackSharpItalic.ufo" name="Geologica Black Sharp Italic" familyname="Geologica" stylename="Black Sharp Italic">
+      <location>
+        <dimension name="Weight" xvalue="200"/>
+        <dimension name="Cursive" xvalue="0"/>
+        <dimension name="Sharpness" xvalue="100"/>
+        <dimension name="Slant" xvalue="-12"/>
+      </location>
+    </source>
+  </sources>
+  <instances>
+    <instance name="Geologica Regular" familyname="Geologica" stylename="Regular" filename="../instance_ufo/Geologica-Regular.ufo" stylemapfamilyname="Geologica" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="100"/>
+        <dimension name="Cursive" xvalue="100"/>
+        <dimension name="Sharpness" xvalue="0"/>
+        <dimension name="Slant" xvalue="0"/>
+      </location>
+    </instance>
+    <instance name="Geologica Thin" familyname="Geologica" stylename="Thin" filename="../instance_ufo/Geologica-Thin.ufo" stylemapfamilyname="Geologica Thin" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="56"/>
+        <dimension name="Cursive" xvalue="0"/>
+        <dimension name="Sharpness" xvalue="0"/>
+        <dimension name="Slant" xvalue="0"/>
+      </location>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>italicAngle</string>
+              <string>0</string>
+            </array>
+            <array>
+              <string>Axis Location</string>
+              <array>
+                <dict>
+                  <key>Axis</key>
+                  <string>Weight</string>
+                  <key>Location</key>
+                  <integer>100</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Cursive</string>
+                  <key>Location</key>
+                  <integer>0</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Sharpness</string>
+                  <key>Location</key>
+                  <integer>0</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Slant</string>
+                  <key>Location</key>
+                  <integer>0</integer>
+                </dict>
+              </array>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Geologica Sharp Thin" familyname="Geologica Sharp" stylename="Thin" filename="../instance_ufo/GeologicaSharp-Thin.ufo" stylemapfamilyname="Geologica Sharp Thin" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="56"/>
+        <dimension name="Cursive" xvalue="0"/>
+        <dimension name="Sharpness" xvalue="100"/>
+        <dimension name="Slant" xvalue="0"/>
+      </location>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>italicAngle</string>
+              <string>0</string>
+            </array>
+            <array>
+              <string>Axis Location</string>
+              <array>
+                <dict>
+                  <key>Axis</key>
+                  <string>Weight</string>
+                  <key>Location</key>
+                  <integer>100</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Cursive</string>
+                  <key>Location</key>
+                  <integer>0</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Sharpness</string>
+                  <key>Location</key>
+                  <integer>100</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Slant</string>
+                  <key>Location</key>
+                  <integer>0</integer>
+                </dict>
+              </array>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Geologica Thin Italic" familyname="Geologica" stylename="Thin Italic" filename="../instance_ufo/Geologica-ThinItalic.ufo" stylemapfamilyname="Geologica Thin" stylemapstylename="italic">
+      <location>
+        <dimension name="Weight" xvalue="56"/>
+        <dimension name="Cursive" xvalue="1"/>
+        <dimension name="Sharpness" xvalue="0"/>
+        <dimension name="Slant" xvalue="-12"/>
+      </location>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>italicAngle</string>
+              <string>12</string>
+            </array>
+            <array>
+              <string>Axis Location</string>
+              <array>
+                <dict>
+                  <key>Axis</key>
+                  <string>Weight</string>
+                  <key>Location</key>
+                  <integer>100</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Cursive</string>
+                  <key>Location</key>
+                  <integer>1</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Sharpness</string>
+                  <key>Location</key>
+                  <integer>0</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Slant</string>
+                  <key>Location</key>
+                  <integer>-12</integer>
+                </dict>
+              </array>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Geologica Sharp Thin Italic" familyname="Geologica Sharp" stylename="Thin Italic" filename="../instance_ufo/GeologicaSharp-ThinItalic.ufo" stylemapfamilyname="Geologica Sharp Thin" stylemapstylename="italic">
+      <location>
+        <dimension name="Weight" xvalue="56"/>
+        <dimension name="Cursive" xvalue="1"/>
+        <dimension name="Sharpness" xvalue="100"/>
+        <dimension name="Slant" xvalue="-12"/>
+      </location>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>italicAngle</string>
+              <string>12</string>
+            </array>
+            <array>
+              <string>Axis Location</string>
+              <array>
+                <dict>
+                  <key>Axis</key>
+                  <string>Weight</string>
+                  <key>Location</key>
+                  <integer>100</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Cursive</string>
+                  <key>Location</key>
+                  <integer>1</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Sharpness</string>
+                  <key>Location</key>
+                  <integer>100</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Slant</string>
+                  <key>Location</key>
+                  <integer>-12</integer>
+                </dict>
+              </array>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Geologica ExtraLight" familyname="Geologica" stylename="ExtraLight" filename="../instance_ufo/Geologica-ExtraLight.ufo" stylemapfamilyname="Geologica ExtraLight" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="74"/>
+        <dimension name="Cursive" xvalue="0"/>
+        <dimension name="Sharpness" xvalue="0"/>
+        <dimension name="Slant" xvalue="0"/>
+      </location>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>italicAngle</string>
+              <string>0</string>
+            </array>
+            <array>
+              <string>Axis Location</string>
+              <array>
+                <dict>
+                  <key>Axis</key>
+                  <string>Weight</string>
+                  <key>Location</key>
+                  <integer>200</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Cursive</string>
+                  <key>Location</key>
+                  <integer>0</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Sharpness</string>
+                  <key>Location</key>
+                  <integer>0</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Slant</string>
+                  <key>Location</key>
+                  <integer>0</integer>
+                </dict>
+              </array>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Geologica Sharp ExtraLight" familyname="Geologica Sharp" stylename="ExtraLight" filename="../instance_ufo/GeologicaSharp-ExtraLight.ufo" stylemapfamilyname="Geologica Sharp ExtraLight" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="74"/>
+        <dimension name="Cursive" xvalue="0"/>
+        <dimension name="Sharpness" xvalue="100"/>
+        <dimension name="Slant" xvalue="0"/>
+      </location>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>italicAngle</string>
+              <string>0</string>
+            </array>
+            <array>
+              <string>Axis Location</string>
+              <array>
+                <dict>
+                  <key>Axis</key>
+                  <string>Weight</string>
+                  <key>Location</key>
+                  <integer>200</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Cursive</string>
+                  <key>Location</key>
+                  <integer>0</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Sharpness</string>
+                  <key>Location</key>
+                  <integer>100</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Slant</string>
+                  <key>Location</key>
+                  <integer>0</integer>
+                </dict>
+              </array>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Geologica ExtraLight Italic" familyname="Geologica" stylename="ExtraLight Italic" filename="../instance_ufo/Geologica-ExtraLightItalic.ufo" stylemapfamilyname="Geologica ExtraLight" stylemapstylename="italic">
+      <location>
+        <dimension name="Weight" xvalue="74"/>
+        <dimension name="Cursive" xvalue="1"/>
+        <dimension name="Sharpness" xvalue="0"/>
+        <dimension name="Slant" xvalue="-12"/>
+      </location>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>italicAngle</string>
+              <string>12</string>
+            </array>
+            <array>
+              <string>Axis Location</string>
+              <array>
+                <dict>
+                  <key>Axis</key>
+                  <string>Weight</string>
+                  <key>Location</key>
+                  <integer>200</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Cursive</string>
+                  <key>Location</key>
+                  <integer>1</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Sharpness</string>
+                  <key>Location</key>
+                  <integer>0</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Slant</string>
+                  <key>Location</key>
+                  <integer>-12</integer>
+                </dict>
+              </array>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Geologica Sharp ExtraLight Italic" familyname="Geologica Sharp" stylename="ExtraLight Italic" filename="../instance_ufo/GeologicaSharp-ExtraLightItalic.ufo" stylemapfamilyname="Geologica Sharp ExtraLight" stylemapstylename="italic">
+      <location>
+        <dimension name="Weight" xvalue="74"/>
+        <dimension name="Cursive" xvalue="1"/>
+        <dimension name="Sharpness" xvalue="100"/>
+        <dimension name="Slant" xvalue="-12"/>
+      </location>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>italicAngle</string>
+              <string>12</string>
+            </array>
+            <array>
+              <string>Axis Location</string>
+              <array>
+                <dict>
+                  <key>Axis</key>
+                  <string>Weight</string>
+                  <key>Location</key>
+                  <integer>200</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Cursive</string>
+                  <key>Location</key>
+                  <integer>1</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Sharpness</string>
+                  <key>Location</key>
+                  <integer>100</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Slant</string>
+                  <key>Location</key>
+                  <integer>-12</integer>
+                </dict>
+              </array>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Geologica Light" familyname="Geologica" stylename="Light" filename="../instance_ufo/Geologica-Light.ufo" stylemapfamilyname="Geologica Light" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="92"/>
+        <dimension name="Cursive" xvalue="0"/>
+        <dimension name="Sharpness" xvalue="0"/>
+        <dimension name="Slant" xvalue="0"/>
+      </location>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>italicAngle</string>
+              <string>0</string>
+            </array>
+            <array>
+              <string>Axis Location</string>
+              <array>
+                <dict>
+                  <key>Axis</key>
+                  <string>Weight</string>
+                  <key>Location</key>
+                  <integer>300</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Cursive</string>
+                  <key>Location</key>
+                  <integer>0</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Sharpness</string>
+                  <key>Location</key>
+                  <integer>0</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Slant</string>
+                  <key>Location</key>
+                  <integer>0</integer>
+                </dict>
+              </array>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Geologica Sharp Light" familyname="Geologica Sharp" stylename="Light" filename="../instance_ufo/GeologicaSharp-Light.ufo" stylemapfamilyname="Geologica Sharp Light" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="92"/>
+        <dimension name="Cursive" xvalue="0"/>
+        <dimension name="Sharpness" xvalue="100"/>
+        <dimension name="Slant" xvalue="0"/>
+      </location>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>italicAngle</string>
+              <string>0</string>
+            </array>
+            <array>
+              <string>Axis Location</string>
+              <array>
+                <dict>
+                  <key>Axis</key>
+                  <string>Weight</string>
+                  <key>Location</key>
+                  <integer>300</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Cursive</string>
+                  <key>Location</key>
+                  <integer>0</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Sharpness</string>
+                  <key>Location</key>
+                  <integer>100</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Slant</string>
+                  <key>Location</key>
+                  <integer>0</integer>
+                </dict>
+              </array>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Geologica Light Italic" familyname="Geologica" stylename="Light Italic" filename="../instance_ufo/Geologica-LightItalic.ufo" stylemapfamilyname="Geologica Light" stylemapstylename="italic">
+      <location>
+        <dimension name="Weight" xvalue="92"/>
+        <dimension name="Cursive" xvalue="1"/>
+        <dimension name="Sharpness" xvalue="0"/>
+        <dimension name="Slant" xvalue="-12"/>
+      </location>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>italicAngle</string>
+              <string>12</string>
+            </array>
+            <array>
+              <string>Axis Location</string>
+              <array>
+                <dict>
+                  <key>Axis</key>
+                  <string>Weight</string>
+                  <key>Location</key>
+                  <integer>300</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Cursive</string>
+                  <key>Location</key>
+                  <integer>1</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Sharpness</string>
+                  <key>Location</key>
+                  <integer>0</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Slant</string>
+                  <key>Location</key>
+                  <integer>-12</integer>
+                </dict>
+              </array>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Geologica Sharp Light Italic" familyname="Geologica Sharp" stylename="Light Italic" filename="../instance_ufo/GeologicaSharp-LightItalic.ufo" stylemapfamilyname="Geologica Sharp Light" stylemapstylename="italic">
+      <location>
+        <dimension name="Weight" xvalue="92"/>
+        <dimension name="Cursive" xvalue="1"/>
+        <dimension name="Sharpness" xvalue="100"/>
+        <dimension name="Slant" xvalue="-12"/>
+      </location>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>italicAngle</string>
+              <string>12</string>
+            </array>
+            <array>
+              <string>Axis Location</string>
+              <array>
+                <dict>
+                  <key>Axis</key>
+                  <string>Weight</string>
+                  <key>Location</key>
+                  <integer>300</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Cursive</string>
+                  <key>Location</key>
+                  <integer>1</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Sharpness</string>
+                  <key>Location</key>
+                  <integer>100</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Slant</string>
+                  <key>Location</key>
+                  <integer>-12</integer>
+                </dict>
+              </array>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Geologica Regular" familyname="Geologica" stylename="Regular" filename="../instance_ufo/Geologica-Regular.ufo" stylemapfamilyname="Geologica" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="110"/>
+        <dimension name="Cursive" xvalue="0"/>
+        <dimension name="Sharpness" xvalue="0"/>
+        <dimension name="Slant" xvalue="0"/>
+      </location>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>italicAngle</string>
+              <string>0</string>
+            </array>
+            <array>
+              <string>Axis Location</string>
+              <array>
+                <dict>
+                  <key>Axis</key>
+                  <string>Weight</string>
+                  <key>Location</key>
+                  <integer>400</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Cursive</string>
+                  <key>Location</key>
+                  <integer>0</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Sharpness</string>
+                  <key>Location</key>
+                  <integer>0</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Slant</string>
+                  <key>Location</key>
+                  <integer>0</integer>
+                </dict>
+              </array>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Geologica Sharp Regular" familyname="Geologica Sharp" stylename="Regular" filename="../instance_ufo/GeologicaSharp-Regular.ufo" stylemapfamilyname="Geologica Sharp" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="110"/>
+        <dimension name="Cursive" xvalue="0"/>
+        <dimension name="Sharpness" xvalue="100"/>
+        <dimension name="Slant" xvalue="0"/>
+      </location>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>italicAngle</string>
+              <string>0</string>
+            </array>
+            <array>
+              <string>Axis Location</string>
+              <array>
+                <dict>
+                  <key>Axis</key>
+                  <string>Weight</string>
+                  <key>Location</key>
+                  <integer>400</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Cursive</string>
+                  <key>Location</key>
+                  <integer>0</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Sharpness</string>
+                  <key>Location</key>
+                  <integer>100</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Slant</string>
+                  <key>Location</key>
+                  <integer>0</integer>
+                </dict>
+              </array>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Geologica Italic" familyname="Geologica" stylename="Italic" filename="../instance_ufo/Geologica-Italic.ufo" stylemapfamilyname="Geologica" stylemapstylename="italic">
+      <location>
+        <dimension name="Weight" xvalue="110"/>
+        <dimension name="Cursive" xvalue="1"/>
+        <dimension name="Sharpness" xvalue="0"/>
+        <dimension name="Slant" xvalue="-12"/>
+      </location>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>italicAngle</string>
+              <string>12</string>
+            </array>
+            <array>
+              <string>Axis Location</string>
+              <array>
+                <dict>
+                  <key>Axis</key>
+                  <string>Weight</string>
+                  <key>Location</key>
+                  <integer>400</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Cursive</string>
+                  <key>Location</key>
+                  <integer>1</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Sharpness</string>
+                  <key>Location</key>
+                  <integer>0</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Slant</string>
+                  <key>Location</key>
+                  <integer>-12</integer>
+                </dict>
+              </array>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Geologica Sharp Italic" familyname="Geologica Sharp" stylename="Italic" filename="../instance_ufo/GeologicaSharp-Italic.ufo" stylemapfamilyname="Geologica Sharp" stylemapstylename="italic">
+      <location>
+        <dimension name="Weight" xvalue="110"/>
+        <dimension name="Cursive" xvalue="1"/>
+        <dimension name="Sharpness" xvalue="100"/>
+        <dimension name="Slant" xvalue="-12"/>
+      </location>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>italicAngle</string>
+              <string>12</string>
+            </array>
+            <array>
+              <string>Axis Location</string>
+              <array>
+                <dict>
+                  <key>Axis</key>
+                  <string>Weight</string>
+                  <key>Location</key>
+                  <integer>400</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Cursive</string>
+                  <key>Location</key>
+                  <integer>1</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Sharpness</string>
+                  <key>Location</key>
+                  <integer>100</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Slant</string>
+                  <key>Location</key>
+                  <integer>-12</integer>
+                </dict>
+              </array>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Geologica Medium" familyname="Geologica" stylename="Medium" filename="../instance_ufo/Geologica-Medium.ufo" stylemapfamilyname="Geologica Medium" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="128"/>
+        <dimension name="Cursive" xvalue="0"/>
+        <dimension name="Sharpness" xvalue="0"/>
+        <dimension name="Slant" xvalue="0"/>
+      </location>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>italicAngle</string>
+              <string>0</string>
+            </array>
+            <array>
+              <string>Axis Location</string>
+              <array>
+                <dict>
+                  <key>Axis</key>
+                  <string>Weight</string>
+                  <key>Location</key>
+                  <integer>500</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Cursive</string>
+                  <key>Location</key>
+                  <integer>0</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Sharpness</string>
+                  <key>Location</key>
+                  <integer>0</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Slant</string>
+                  <key>Location</key>
+                  <integer>0</integer>
+                </dict>
+              </array>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Geologica Sharp Medium" familyname="Geologica Sharp" stylename="Medium" filename="../instance_ufo/GeologicaSharp-Medium.ufo" stylemapfamilyname="Geologica Sharp Medium" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="128"/>
+        <dimension name="Cursive" xvalue="0"/>
+        <dimension name="Sharpness" xvalue="100"/>
+        <dimension name="Slant" xvalue="0"/>
+      </location>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>italicAngle</string>
+              <string>0</string>
+            </array>
+            <array>
+              <string>Axis Location</string>
+              <array>
+                <dict>
+                  <key>Axis</key>
+                  <string>Weight</string>
+                  <key>Location</key>
+                  <integer>500</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Cursive</string>
+                  <key>Location</key>
+                  <integer>0</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Sharpness</string>
+                  <key>Location</key>
+                  <integer>100</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Slant</string>
+                  <key>Location</key>
+                  <integer>0</integer>
+                </dict>
+              </array>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Geologica Medium Italic" familyname="Geologica" stylename="Medium Italic" filename="../instance_ufo/Geologica-MediumItalic.ufo" stylemapfamilyname="Geologica Medium" stylemapstylename="italic">
+      <location>
+        <dimension name="Weight" xvalue="128"/>
+        <dimension name="Cursive" xvalue="1"/>
+        <dimension name="Sharpness" xvalue="0"/>
+        <dimension name="Slant" xvalue="-12"/>
+      </location>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>italicAngle</string>
+              <string>12</string>
+            </array>
+            <array>
+              <string>Axis Location</string>
+              <array>
+                <dict>
+                  <key>Axis</key>
+                  <string>Weight</string>
+                  <key>Location</key>
+                  <integer>500</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Cursive</string>
+                  <key>Location</key>
+                  <integer>1</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Sharpness</string>
+                  <key>Location</key>
+                  <integer>0</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Slant</string>
+                  <key>Location</key>
+                  <integer>-12</integer>
+                </dict>
+              </array>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Geologica Sharp Medium Italic" familyname="Geologica Sharp" stylename="Medium Italic" filename="../instance_ufo/GeologicaSharp-MediumItalic.ufo" stylemapfamilyname="Geologica Sharp Medium" stylemapstylename="italic">
+      <location>
+        <dimension name="Weight" xvalue="128"/>
+        <dimension name="Cursive" xvalue="1"/>
+        <dimension name="Sharpness" xvalue="100"/>
+        <dimension name="Slant" xvalue="-12"/>
+      </location>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>italicAngle</string>
+              <string>12</string>
+            </array>
+            <array>
+              <string>Axis Location</string>
+              <array>
+                <dict>
+                  <key>Axis</key>
+                  <string>Weight</string>
+                  <key>Location</key>
+                  <integer>500</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Cursive</string>
+                  <key>Location</key>
+                  <integer>1</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Sharpness</string>
+                  <key>Location</key>
+                  <integer>100</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Slant</string>
+                  <key>Location</key>
+                  <integer>-12</integer>
+                </dict>
+              </array>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Geologica SemiBold" familyname="Geologica" stylename="SemiBold" filename="../instance_ufo/Geologica-SemiBold.ufo" stylemapfamilyname="Geologica SemiBold" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="146"/>
+        <dimension name="Cursive" xvalue="0"/>
+        <dimension name="Sharpness" xvalue="0"/>
+        <dimension name="Slant" xvalue="0"/>
+      </location>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>italicAngle</string>
+              <string>0</string>
+            </array>
+            <array>
+              <string>Axis Location</string>
+              <array>
+                <dict>
+                  <key>Axis</key>
+                  <string>Weight</string>
+                  <key>Location</key>
+                  <integer>600</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Cursive</string>
+                  <key>Location</key>
+                  <integer>0</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Sharpness</string>
+                  <key>Location</key>
+                  <integer>0</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Slant</string>
+                  <key>Location</key>
+                  <integer>0</integer>
+                </dict>
+              </array>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Geologica Sharp SemiBold" familyname="Geologica Sharp" stylename="SemiBold" filename="../instance_ufo/GeologicaSharp-SemiBold.ufo" stylemapfamilyname="Geologica Sharp SemiBold" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="146"/>
+        <dimension name="Cursive" xvalue="0"/>
+        <dimension name="Sharpness" xvalue="100"/>
+        <dimension name="Slant" xvalue="0"/>
+      </location>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>italicAngle</string>
+              <string>0</string>
+            </array>
+            <array>
+              <string>Axis Location</string>
+              <array>
+                <dict>
+                  <key>Axis</key>
+                  <string>Weight</string>
+                  <key>Location</key>
+                  <integer>600</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Cursive</string>
+                  <key>Location</key>
+                  <integer>0</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Sharpness</string>
+                  <key>Location</key>
+                  <integer>100</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Slant</string>
+                  <key>Location</key>
+                  <integer>0</integer>
+                </dict>
+              </array>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Geologica SemiBold Italic" familyname="Geologica" stylename="SemiBold Italic" filename="../instance_ufo/Geologica-SemiBoldItalic.ufo" stylemapfamilyname="Geologica SemiBold" stylemapstylename="italic">
+      <location>
+        <dimension name="Weight" xvalue="146"/>
+        <dimension name="Cursive" xvalue="1"/>
+        <dimension name="Sharpness" xvalue="0"/>
+        <dimension name="Slant" xvalue="-12"/>
+      </location>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>italicAngle</string>
+              <string>12</string>
+            </array>
+            <array>
+              <string>Axis Location</string>
+              <array>
+                <dict>
+                  <key>Axis</key>
+                  <string>Weight</string>
+                  <key>Location</key>
+                  <integer>600</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Cursive</string>
+                  <key>Location</key>
+                  <integer>1</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Sharpness</string>
+                  <key>Location</key>
+                  <integer>0</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Slant</string>
+                  <key>Location</key>
+                  <integer>-12</integer>
+                </dict>
+              </array>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Geologica Sharp SemiBold Italic" familyname="Geologica Sharp" stylename="SemiBold Italic" filename="../instance_ufo/GeologicaSharp-SemiBoldItalic.ufo" stylemapfamilyname="Geologica Sharp SemiBold" stylemapstylename="italic">
+      <location>
+        <dimension name="Weight" xvalue="146"/>
+        <dimension name="Cursive" xvalue="1"/>
+        <dimension name="Sharpness" xvalue="100"/>
+        <dimension name="Slant" xvalue="-12"/>
+      </location>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>italicAngle</string>
+              <string>12</string>
+            </array>
+            <array>
+              <string>Axis Location</string>
+              <array>
+                <dict>
+                  <key>Axis</key>
+                  <string>Weight</string>
+                  <key>Location</key>
+                  <integer>600</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Cursive</string>
+                  <key>Location</key>
+                  <integer>1</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Sharpness</string>
+                  <key>Location</key>
+                  <integer>100</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Slant</string>
+                  <key>Location</key>
+                  <integer>-12</integer>
+                </dict>
+              </array>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Geologica Bold" familyname="Geologica" stylename="Bold" filename="../instance_ufo/Geologica-Bold.ufo" stylemapfamilyname="Geologica" stylemapstylename="bold">
+      <location>
+        <dimension name="Weight" xvalue="164"/>
+        <dimension name="Cursive" xvalue="0"/>
+        <dimension name="Sharpness" xvalue="0"/>
+        <dimension name="Slant" xvalue="0"/>
+      </location>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>italicAngle</string>
+              <string>0</string>
+            </array>
+            <array>
+              <string>Axis Location</string>
+              <array>
+                <dict>
+                  <key>Axis</key>
+                  <string>Weight</string>
+                  <key>Location</key>
+                  <integer>700</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Cursive</string>
+                  <key>Location</key>
+                  <integer>0</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Sharpness</string>
+                  <key>Location</key>
+                  <integer>0</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Slant</string>
+                  <key>Location</key>
+                  <integer>0</integer>
+                </dict>
+              </array>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Geologica Sharp Bold" familyname="Geologica Sharp" stylename="Bold" filename="../instance_ufo/GeologicaSharp-Bold.ufo" stylemapfamilyname="Geologica Sharp" stylemapstylename="bold">
+      <location>
+        <dimension name="Weight" xvalue="164"/>
+        <dimension name="Cursive" xvalue="0"/>
+        <dimension name="Sharpness" xvalue="100"/>
+        <dimension name="Slant" xvalue="0"/>
+      </location>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>italicAngle</string>
+              <string>0</string>
+            </array>
+            <array>
+              <string>Axis Location</string>
+              <array>
+                <dict>
+                  <key>Axis</key>
+                  <string>Weight</string>
+                  <key>Location</key>
+                  <integer>700</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Cursive</string>
+                  <key>Location</key>
+                  <integer>0</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Sharpness</string>
+                  <key>Location</key>
+                  <integer>100</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Slant</string>
+                  <key>Location</key>
+                  <integer>0</integer>
+                </dict>
+              </array>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Geologica Bold Italic" familyname="Geologica" stylename="Bold Italic" filename="../instance_ufo/Geologica-BoldItalic.ufo" stylemapfamilyname="Geologica" stylemapstylename="bold italic">
+      <location>
+        <dimension name="Weight" xvalue="164"/>
+        <dimension name="Cursive" xvalue="1"/>
+        <dimension name="Sharpness" xvalue="0"/>
+        <dimension name="Slant" xvalue="-12"/>
+      </location>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>italicAngle</string>
+              <string>12</string>
+            </array>
+            <array>
+              <string>Axis Location</string>
+              <array>
+                <dict>
+                  <key>Axis</key>
+                  <string>Weight</string>
+                  <key>Location</key>
+                  <integer>700</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Cursive</string>
+                  <key>Location</key>
+                  <integer>1</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Sharpness</string>
+                  <key>Location</key>
+                  <integer>0</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Slant</string>
+                  <key>Location</key>
+                  <integer>-12</integer>
+                </dict>
+              </array>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Geologica Sharp Bold Italic" familyname="Geologica Sharp" stylename="Bold Italic" filename="../instance_ufo/GeologicaSharp-BoldItalic.ufo" stylemapfamilyname="Geologica Sharp" stylemapstylename="bold italic">
+      <location>
+        <dimension name="Weight" xvalue="164"/>
+        <dimension name="Cursive" xvalue="1"/>
+        <dimension name="Sharpness" xvalue="100"/>
+        <dimension name="Slant" xvalue="-12"/>
+      </location>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>italicAngle</string>
+              <string>12</string>
+            </array>
+            <array>
+              <string>Axis Location</string>
+              <array>
+                <dict>
+                  <key>Axis</key>
+                  <string>Weight</string>
+                  <key>Location</key>
+                  <integer>700</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Cursive</string>
+                  <key>Location</key>
+                  <integer>1</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Sharpness</string>
+                  <key>Location</key>
+                  <integer>100</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Slant</string>
+                  <key>Location</key>
+                  <integer>-12</integer>
+                </dict>
+              </array>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Geologica ExtraBold" familyname="Geologica" stylename="ExtraBold" filename="../instance_ufo/Geologica-ExtraBold.ufo" stylemapfamilyname="Geologica ExtraBold" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="182"/>
+        <dimension name="Cursive" xvalue="0"/>
+        <dimension name="Sharpness" xvalue="0"/>
+        <dimension name="Slant" xvalue="0"/>
+      </location>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>italicAngle</string>
+              <string>0</string>
+            </array>
+            <array>
+              <string>Axis Location</string>
+              <array>
+                <dict>
+                  <key>Axis</key>
+                  <string>Weight</string>
+                  <key>Location</key>
+                  <integer>800</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Cursive</string>
+                  <key>Location</key>
+                  <integer>0</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Sharpness</string>
+                  <key>Location</key>
+                  <integer>0</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Slant</string>
+                  <key>Location</key>
+                  <integer>0</integer>
+                </dict>
+              </array>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Geologica Sharp ExtraBold" familyname="Geologica Sharp" stylename="ExtraBold" filename="../instance_ufo/GeologicaSharp-ExtraBold.ufo" stylemapfamilyname="Geologica Sharp ExtraBold" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="182"/>
+        <dimension name="Cursive" xvalue="0"/>
+        <dimension name="Sharpness" xvalue="100"/>
+        <dimension name="Slant" xvalue="0"/>
+      </location>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>italicAngle</string>
+              <string>0</string>
+            </array>
+            <array>
+              <string>Axis Location</string>
+              <array>
+                <dict>
+                  <key>Axis</key>
+                  <string>Weight</string>
+                  <key>Location</key>
+                  <integer>800</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Cursive</string>
+                  <key>Location</key>
+                  <integer>0</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Sharpness</string>
+                  <key>Location</key>
+                  <integer>100</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Slant</string>
+                  <key>Location</key>
+                  <integer>0</integer>
+                </dict>
+              </array>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Geologica ExtraBold Italic" familyname="Geologica" stylename="ExtraBold Italic" filename="../instance_ufo/Geologica-ExtraBoldItalic.ufo" stylemapfamilyname="Geologica ExtraBold" stylemapstylename="italic">
+      <location>
+        <dimension name="Weight" xvalue="182"/>
+        <dimension name="Cursive" xvalue="1"/>
+        <dimension name="Sharpness" xvalue="0"/>
+        <dimension name="Slant" xvalue="-12"/>
+      </location>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>italicAngle</string>
+              <string>12</string>
+            </array>
+            <array>
+              <string>Axis Location</string>
+              <array>
+                <dict>
+                  <key>Axis</key>
+                  <string>Weight</string>
+                  <key>Location</key>
+                  <integer>800</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Cursive</string>
+                  <key>Location</key>
+                  <integer>1</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Sharpness</string>
+                  <key>Location</key>
+                  <integer>0</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Slant</string>
+                  <key>Location</key>
+                  <integer>-12</integer>
+                </dict>
+              </array>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Geologica Sharp ExtraBold Italic" familyname="Geologica Sharp" stylename="ExtraBold Italic" filename="../instance_ufo/GeologicaSharp-ExtraBoldItalic.ufo" stylemapfamilyname="Geologica Sharp ExtraBold" stylemapstylename="italic">
+      <location>
+        <dimension name="Weight" xvalue="182"/>
+        <dimension name="Cursive" xvalue="1"/>
+        <dimension name="Sharpness" xvalue="100"/>
+        <dimension name="Slant" xvalue="-12"/>
+      </location>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>italicAngle</string>
+              <string>12</string>
+            </array>
+            <array>
+              <string>Axis Location</string>
+              <array>
+                <dict>
+                  <key>Axis</key>
+                  <string>Weight</string>
+                  <key>Location</key>
+                  <integer>800</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Cursive</string>
+                  <key>Location</key>
+                  <integer>1</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Sharpness</string>
+                  <key>Location</key>
+                  <integer>100</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Slant</string>
+                  <key>Location</key>
+                  <integer>-12</integer>
+                </dict>
+              </array>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Geologica Black" familyname="Geologica" stylename="Black" filename="../instance_ufo/Geologica-Black.ufo" stylemapfamilyname="Geologica Black" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="200"/>
+        <dimension name="Cursive" xvalue="0"/>
+        <dimension name="Sharpness" xvalue="0"/>
+        <dimension name="Slant" xvalue="0"/>
+      </location>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>italicAngle</string>
+              <string>0</string>
+            </array>
+            <array>
+              <string>Axis Location</string>
+              <array>
+                <dict>
+                  <key>Axis</key>
+                  <string>Weight</string>
+                  <key>Location</key>
+                  <integer>900</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Cursive</string>
+                  <key>Location</key>
+                  <integer>0</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Sharpness</string>
+                  <key>Location</key>
+                  <integer>0</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Slant</string>
+                  <key>Location</key>
+                  <integer>0</integer>
+                </dict>
+              </array>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Geologica Sharp Black" familyname="Geologica Sharp" stylename="Black" filename="../instance_ufo/GeologicaSharp-Black.ufo" stylemapfamilyname="Geologica Sharp Black" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="200"/>
+        <dimension name="Cursive" xvalue="0"/>
+        <dimension name="Sharpness" xvalue="100"/>
+        <dimension name="Slant" xvalue="0"/>
+      </location>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>italicAngle</string>
+              <string>0</string>
+            </array>
+            <array>
+              <string>Axis Location</string>
+              <array>
+                <dict>
+                  <key>Axis</key>
+                  <string>Weight</string>
+                  <key>Location</key>
+                  <integer>900</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Cursive</string>
+                  <key>Location</key>
+                  <integer>0</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Sharpness</string>
+                  <key>Location</key>
+                  <integer>100</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Slant</string>
+                  <key>Location</key>
+                  <integer>0</integer>
+                </dict>
+              </array>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Geologica Black Italic" familyname="Geologica" stylename="Black Italic" filename="../instance_ufo/Geologica-BlackItalic.ufo" stylemapfamilyname="Geologica Black" stylemapstylename="italic">
+      <location>
+        <dimension name="Weight" xvalue="200"/>
+        <dimension name="Cursive" xvalue="1"/>
+        <dimension name="Sharpness" xvalue="0"/>
+        <dimension name="Slant" xvalue="-12"/>
+      </location>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>italicAngle</string>
+              <string>12</string>
+            </array>
+            <array>
+              <string>Axis Location</string>
+              <array>
+                <dict>
+                  <key>Axis</key>
+                  <string>Weight</string>
+                  <key>Location</key>
+                  <integer>900</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Cursive</string>
+                  <key>Location</key>
+                  <integer>1</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Sharpness</string>
+                  <key>Location</key>
+                  <integer>0</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Slant</string>
+                  <key>Location</key>
+                  <integer>-12</integer>
+                </dict>
+              </array>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Geologica Sharp Black Italic" familyname="Geologica Sharp" stylename="Black Italic" filename="../instance_ufo/GeologicaSharp-BlackItalic.ufo" stylemapfamilyname="Geologica Sharp Black" stylemapstylename="italic">
+      <location>
+        <dimension name="Weight" xvalue="200"/>
+        <dimension name="Cursive" xvalue="1"/>
+        <dimension name="Sharpness" xvalue="100"/>
+        <dimension name="Slant" xvalue="-12"/>
+      </location>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>italicAngle</string>
+              <string>12</string>
+            </array>
+            <array>
+              <string>Axis Location</string>
+              <array>
+                <dict>
+                  <key>Axis</key>
+                  <string>Weight</string>
+                  <key>Location</key>
+                  <integer>900</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Cursive</string>
+                  <key>Location</key>
+                  <integer>1</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Sharpness</string>
+                  <key>Location</key>
+                  <integer>100</integer>
+                </dict>
+                <dict>
+                  <key>Axis</key>
+                  <string>Slant</string>
+                  <key>Location</key>
+                  <integer>-12</integer>
+                </dict>
+              </array>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+  </instances>
+  <lib>
+    <dict>
+      <key>GSDimensionPlugin.Dimensions</key>
+      <dict>
+        <key>18C76E4C-C036-4403-BC33-C2D2F695400F</key>
+        <dict>
+          <key>HH</key>
+          <string>120</string>
+          <key>HV</key>
+          <string>132</string>
+          <key>OH</key>
+          <string>124</string>
+          <key>OV</key>
+          <string>142</string>
+          <key>nV</key>
+          <string>115</string>
+          <key>nd</key>
+          <string>110</string>
+          <key>oH</key>
+          <string>108</string>
+          <key>oV</key>
+          <string>120</string>
+          <key>tH</key>
+          <string>105</string>
+        </dict>
+        <key>38FA562F-EF2C-4367-983C-F15B205514DC</key>
+        <dict>
+          <key>HH</key>
+          <string>54</string>
+          <key>HV</key>
+          <string>58</string>
+          <key>OH</key>
+          <string>56</string>
+          <key>OV</key>
+          <string>60</string>
+          <key>nV</key>
+          <string>56</string>
+          <key>nd</key>
+          <string>54</string>
+          <key>oH</key>
+          <string>54</string>
+          <key>oV</key>
+          <string>60</string>
+          <key>tH</key>
+          <string>52</string>
+        </dict>
+        <key>E991CF0C-7E17-4C48-B08A-36C8E595ED17</key>
+        <dict>
+          <key>HH</key>
+          <string>200</string>
+          <key>HV</key>
+          <string>220</string>
+          <key>OH</key>
+          <string>205</string>
+          <key>OV</key>
+          <string>230</string>
+          <key>nV</key>
+          <string>200</string>
+          <key>nd</key>
+          <string>180</string>
+          <key>oH</key>
+          <string>160</string>
+          <key>oV</key>
+          <string>200</string>
+          <key>tH</key>
+          <string>156</string>
+        </dict>
+      </dict>
+      <key>GSDontShowVersionAlert</key>
+      <integer>1</integer>
+      <key>UFO.lib</key>
+      <dict>
+        <key>GSDimensionPlugin.Dimensions</key>
+        <dict>
+          <key>1233B962-75BC-4249-B1BB-5531EE8F4DFC</key>
+          <dict>
+            <key>HH</key>
+            <string>120</string>
+            <key>HV</key>
+            <string>132</string>
+            <key>OH</key>
+            <string>124</string>
+            <key>OV</key>
+            <string>142</string>
+            <key>nV</key>
+            <string>115</string>
+            <key>nd</key>
+            <string>110</string>
+            <key>oH</key>
+            <string>108</string>
+            <key>oV</key>
+            <string>120</string>
+            <key>tH</key>
+            <string>105</string>
+          </dict>
+          <key>58668F39-6F12-40CA-A3F4-CF4D6DF0A54F</key>
+          <dict>
+            <key>HH</key>
+            <string>120</string>
+            <key>HV</key>
+            <string>132</string>
+            <key>OH</key>
+            <string>124</string>
+            <key>OV</key>
+            <string>142</string>
+            <key>nV</key>
+            <string>115</string>
+            <key>nd</key>
+            <string>108</string>
+            <key>oH</key>
+            <string>108</string>
+            <key>oV</key>
+            <string>120</string>
+            <key>tH</key>
+            <string>105</string>
+          </dict>
+        </dict>
+        <key>com.typemytype.robofont.compileSettings.autohint</key>
+        <integer>1</integer>
+        <key>com.typemytype.robofont.compileSettings.checkOutlines</key>
+        <integer>0</integer>
+        <key>com.typemytype.robofont.compileSettings.createDummyDSIG</key>
+        <integer>1</integer>
+        <key>com.typemytype.robofont.compileSettings.decompose</key>
+        <integer>0</integer>
+        <key>com.typemytype.robofont.compileSettings.generateFormat</key>
+        <integer>0</integer>
+        <key>com.typemytype.robofont.compileSettings.releaseMode</key>
+        <integer>0</integer>
+        <key>com.typemytype.robofont.italicSlantOffset</key>
+        <integer>0</integer>
+        <key>com.typemytype.robofont.layerOrder</key>
+        <array/>
+        <key>com.typemytype.robofont.segmentType</key>
+        <string>curve</string>
+        <key>com.typemytype.robofont.shouldAddPointsInSplineConversion</key>
+        <integer>1</integer>
+        <key>com.typemytype.robofont.sort</key>
+        <array>
+          <dict>
+            <key>ascending</key>
+            <array>
+              <string>.notdef</string>
+              <string>NULL</string>
+              <string>CR</string>
+              <string>space</string>
+              <string>nbspace</string>
+              <string>A</string>
+              <string>Aacute</string>
+              <string>Adieresis</string>
+              <string>Agrave</string>
+              <string>Aring</string>
+              <string>AE</string>
+              <string>B</string>
+              <string>C</string>
+              <string>D</string>
+              <string>E</string>
+              <string>Eacute</string>
+              <string>Ecircumflex</string>
+              <string>Egrave</string>
+              <string>F</string>
+              <string>G</string>
+              <string>H</string>
+              <string>I</string>
+              <string>Iacute</string>
+              <string>Igrave</string>
+              <string>J</string>
+              <string>K</string>
+              <string>L</string>
+              <string>M</string>
+              <string>N</string>
+              <string>O</string>
+              <string>Oacute</string>
+              <string>Ocircumflex</string>
+              <string>Odieresis</string>
+              <string>Ograve</string>
+              <string>Oslash</string>
+              <string>P</string>
+              <string>Q</string>
+              <string>R</string>
+              <string>S</string>
+              <string>T</string>
+              <string>U</string>
+              <string>Uacute</string>
+              <string>Udieresis</string>
+              <string>Ugrave</string>
+              <string>V</string>
+              <string>W</string>
+              <string>X</string>
+              <string>Y</string>
+              <string>Z</string>
+              <string>dieresiscomb.case</string>
+              <string>gravecomb.case</string>
+              <string>acutecomb.case</string>
+              <string>circumflexcomb.case</string>
+              <string>ringcomb.case</string>
+              <string>a</string>
+              <string>aacute</string>
+              <string>adieresis</string>
+              <string>agrave</string>
+              <string>aring</string>
+              <string>ae</string>
+              <string>b</string>
+              <string>c</string>
+              <string>d</string>
+              <string>e</string>
+              <string>eacute</string>
+              <string>ecircumflex</string>
+              <string>egrave</string>
+              <string>f</string>
+              <string>g</string>
+              <string>h</string>
+              <string>idotless</string>
+              <string>i</string>
+              <string>iacute</string>
+              <string>igrave</string>
+              <string>jdotless</string>
+              <string>j</string>
+              <string>k</string>
+              <string>l</string>
+              <string>m</string>
+              <string>n</string>
+              <string>o</string>
+              <string>oacute</string>
+              <string>ocircumflex</string>
+              <string>odieresis</string>
+              <string>ograve</string>
+              <string>oslash</string>
+              <string>p</string>
+              <string>q</string>
+              <string>r</string>
+              <string>s</string>
+              <string>t</string>
+              <string>u</string>
+              <string>uacute</string>
+              <string>udieresis</string>
+              <string>ugrave</string>
+              <string>v</string>
+              <string>w</string>
+              <string>x</string>
+              <string>y</string>
+              <string>z</string>
+              <string>dieresiscomb</string>
+              <string>dotaccentcomb</string>
+              <string>gravecomb</string>
+              <string>acutecomb</string>
+              <string>circumflexcomb</string>
+              <string>ringcomb</string>
+              <string>numbersign</string>
+              <string>zero</string>
+              <string>one</string>
+              <string>two</string>
+              <string>three</string>
+              <string>four</string>
+              <string>five</string>
+              <string>six</string>
+              <string>seven</string>
+              <string>eight</string>
+              <string>nine</string>
+              <string>currency</string>
+              <string>cent</string>
+              <string>dollar</string>
+              <string>euro</string>
+              <string>sterling</string>
+              <string>yen</string>
+              <string>onesuperior</string>
+              <string>twosuperior</string>
+              <string>threesuperior</string>
+              <string>fraction</string>
+              <string>onehalf</string>
+              <string>onequarter</string>
+              <string>threequarters</string>
+              <string>percent</string>
+              <string>perthousand</string>
+              <string>period</string>
+              <string>ellipsis</string>
+              <string>periodcentered</string>
+              <string>bullet</string>
+              <string>comma</string>
+              <string>colon</string>
+              <string>semicolon</string>
+              <string>exclam</string>
+              <string>question</string>
+              <string>exclamdown</string>
+              <string>questiondown</string>
+              <string>slash</string>
+              <string>backslash</string>
+              <string>bar</string>
+              <string>brokenbar</string>
+              <string>braceleft</string>
+              <string>braceright</string>
+              <string>bracketleft</string>
+              <string>bracketright</string>
+              <string>parenleft</string>
+              <string>parenright</string>
+              <string>hyphen</string>
+              <string>endash</string>
+              <string>emdash</string>
+              <string>underscore</string>
+              <string>guilsinglleft</string>
+              <string>guilsinglright</string>
+              <string>guillemetleft</string>
+              <string>guillemetright</string>
+              <string>quotesinglbase</string>
+              <string>quotedblbase</string>
+              <string>quoteleft</string>
+              <string>quotedblleft</string>
+              <string>quoteright</string>
+              <string>quotedblright</string>
+              <string>quotesingle</string>
+              <string>quotedbl</string>
+              <string>minus</string>
+              <string>plus</string>
+              <string>plusminus</string>
+              <string>divide</string>
+              <string>multiply</string>
+              <string>equal</string>
+              <string>notequal</string>
+              <string>logicalnot</string>
+              <string>asciitilde</string>
+              <string>approxequal</string>
+              <string>greater</string>
+              <string>less</string>
+              <string>greaterequal</string>
+              <string>lessequal</string>
+              <string>asciicircum</string>
+              <string>degree</string>
+              <string>lozenge</string>
+              <string>at</string>
+              <string>ampersand</string>
+              <string>asterisk</string>
+              <string>dagger</string>
+              <string>daggerdbl</string>
+              <string>section</string>
+              <string>paragraph</string>
+              <string>trademark</string>
+              <string>copyright</string>
+              <string>registered</string>
+            </array>
+            <key>type</key>
+            <string>glyphList</string>
+          </dict>
+        </array>
+      </dict>
+      <key>UFOFormat</key>
+      <integer>2</integer>
+      <key>public.skipExportGlyphs</key>
+      <array>
+        <string>_part.C</string>
+        <string>_part.Kaverticalstroke-cy</string>
+        <string>_part.R</string>
+        <string>_part.T_M</string>
+        <string>_part.Tse-cy</string>
+        <string>_part.Zhe-cy</string>
+        <string>_part.cedi</string>
+        <string>_part.currencyBarHorizontalDoubl</string>
+        <string>_part.currencyBarHorizontalSingle</string>
+        <string>_part.currencyBar_Manat</string>
+        <string>_part.currencyVertDiag</string>
+        <string>_part.currencyVertDiagAdjusted</string>
+        <string>_part.currencyVerticalBar</string>
+        <string>_part.cy-desc-lc</string>
+        <string>_part.cy-desc-lc-reversed</string>
+        <string>_part.cy-desc-lc-stem</string>
+        <string>_part.cy-desc-uc</string>
+        <string>_part.cy-desc-uc-reversed</string>
+        <string>_part.cy-desc-uc-reversed-stem</string>
+        <string>_part.cy-desc-uc-stem</string>
+        <string>_part.cy-descender-lc-center</string>
+        <string>_part.cy-descender-uc-center</string>
+        <string>_part.dollar</string>
+        <string>_part.franc</string>
+        <string>_part.guarani</string>
+        <string>_part.heng</string>
+        <string>_part.hryvnia</string>
+        <string>_part.hryvniaBase</string>
+        <string>_part.kaverticalstroke-cy</string>
+        <string>_part.kip</string>
+        <string>_part.manat</string>
+        <string>_part.naira</string>
+        <string>_part.ogonek</string>
+        <string>_part.peso</string>
+        <string>_part.registered</string>
+        <string>_part.ring</string>
+        <string>_part.rupee</string>
+        <string>_part.tse-cy</string>
+        <string>_part.verticalstroke</string>
+        <string>_part.verticalstroke.case</string>
+        <string>_part.won</string>
+        <string>four.dnom</string>
+        <string>four.numr</string>
+        <string>nine.ss02</string>
+        <string>one.dnom</string>
+        <string>one.numr</string>
+        <string>six.ss02</string>
+        <string>three.dnom</string>
+        <string>three.numr</string>
+        <string>two.dnom</string>
+        <string>two.numr</string>
+      </array>
+    </dict>
+  </lib>
+</designspace>

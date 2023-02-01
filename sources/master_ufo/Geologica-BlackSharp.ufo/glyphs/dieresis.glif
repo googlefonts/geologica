@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="dieresis" format="2">
+  <advance width="1000"/>
+  <unicode hex="00A8"/>
+  <outline>
+    <component base="dieresiscomb" xOffset="1178"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.category</key>
+      <string>Mark</string>
+    </dict>
+  </lib>
+</glyph>

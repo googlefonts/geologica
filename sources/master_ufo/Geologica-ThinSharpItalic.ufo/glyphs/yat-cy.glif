@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="yat-cy" format="2">
+  <advance width="1210"/>
+  <unicode hex="0463"/>
+  <outline>
+    <contour>
+      <point x="268" y="0" type="line"/>
+      <point x="688" y="0" type="line" smooth="yes"/>
+      <point x="906" y="0"/>
+      <point x="1080" y="126"/>
+      <point x="1080" y="324" type="curve" smooth="yes"/>
+      <point x="1080" y="514"/>
+      <point x="956" y="616"/>
+      <point x="742" y="616" type="curve" smooth="yes"/>
+      <point x="484" y="616" type="line"/>
+      <point x="460" y="512" type="line"/>
+      <point x="730" y="512" type="line" smooth="yes"/>
+      <point x="890" y="512"/>
+      <point x="960" y="450"/>
+      <point x="960" y="324" type="curve" smooth="yes"/>
+      <point x="960" y="190"/>
+      <point x="858" y="106"/>
+      <point x="694" y="106" type="curve" smooth="yes"/>
+      <point x="402" y="106" type="line"/>
+      <point x="694" y="1480" type="line"/>
+      <point x="552" y="1338" type="line"/>
+    </contour>
+    <contour>
+      <point x="120" y="856" type="line"/>
+      <point x="880" y="856" type="line"/>
+      <point x="902" y="960" type="line"/>
+      <point x="166" y="960" type="line"/>
+    </contour>
+  </outline>
+</glyph>

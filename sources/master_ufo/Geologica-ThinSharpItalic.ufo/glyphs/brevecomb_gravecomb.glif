@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="brevecomb_gravecomb" format="2">
+  <anchor x="450" y="960" name="_top"/>
+  <anchor x="546" y="1404" name="top"/>
+  <outline>
+    <component base="brevecomb"/>
+    <component base="gravecomb" xOffset="206" yOffset="444"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.category</key>
+      <string>Mark</string>
+      <key>com.schriftgestaltung.Glyphs.originalWidth</key>
+      <integer>678</integer>
+    </dict>
+  </lib>
+</glyph>

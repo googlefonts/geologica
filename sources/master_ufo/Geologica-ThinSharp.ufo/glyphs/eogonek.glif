@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="eogonek" format="2">
+  <advance width="1101"/>
+  <unicode hex="0119"/>
+  <anchor x="556" y="0" name="bottom"/>
+  <anchor x="880" y="0" name="ogonek"/>
+  <anchor x="572" y="960" name="top"/>
+  <outline>
+    <component base="e"/>
+    <component base="_part.ogonek" xOffset="1376"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.componentsSmartComponentValues</key>
+      <array>
+        <dict/>
+        <dict>
+          <key>Depth</key>
+          <real>55.46185</real>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

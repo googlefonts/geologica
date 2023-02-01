@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="tildecomb" format="2">
+  <unicode hex="0303"/>
+  <anchor x="437" y="1040" name="_top"/>
+  <anchor x="437" y="1464" name="top"/>
+  <outline>
+    <contour>
+      <point x="10" y="1178" type="line"/>
+      <point x="65" y="1240"/>
+      <point x="137" y="1280"/>
+      <point x="217" y="1280" type="curve" smooth="yes"/>
+      <point x="334" y="1280"/>
+      <point x="487" y="1180"/>
+      <point x="637" y="1180" type="curve" smooth="yes"/>
+      <point x="733" y="1180"/>
+      <point x="805" y="1218"/>
+      <point x="865" y="1277" type="curve"/>
+      <point x="865" y="1536" type="line"/>
+      <point x="811" y="1474"/>
+      <point x="739" y="1434"/>
+      <point x="659" y="1434" type="curve" smooth="yes"/>
+      <point x="542" y="1434"/>
+      <point x="389" y="1534"/>
+      <point x="239" y="1534" type="curve" smooth="yes"/>
+      <point x="142" y="1534"/>
+      <point x="69" y="1496"/>
+      <point x="10" y="1438" type="curve"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.category</key>
+      <string>Mark</string>
+      <key>com.schriftgestaltung.Glyphs.originalWidth</key>
+      <integer>875</integer>
+    </dict>
+  </lib>
+</glyph>

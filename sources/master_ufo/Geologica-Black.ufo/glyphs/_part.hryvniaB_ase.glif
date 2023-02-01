@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="_part.hryvniaBase" format="2">
+  <advance width="1259"/>
+  <anchor x="581" y="1400" name="top"/>
+  <outline>
+    <contour>
+      <point x="627" y="-30" type="curve" smooth="yes"/>
+      <point x="843" y="-30"/>
+      <point x="1039" y="40"/>
+      <point x="1189" y="172" type="curve"/>
+      <point x="1003" y="470" type="line"/>
+      <point x="919" y="374"/>
+      <point x="749" y="306"/>
+      <point x="597" y="306" type="curve" smooth="yes"/>
+      <point x="507" y="306"/>
+      <point x="449" y="340"/>
+      <point x="449" y="392" type="curve" smooth="yes"/>
+      <point x="449" y="444"/>
+      <point x="475" y="462"/>
+      <point x="631" y="522" type="curve" smooth="yes"/>
+      <point x="739" y="564" type="line" smooth="yes"/>
+      <point x="1009" y="668"/>
+      <point x="1133" y="804"/>
+      <point x="1133" y="996" type="curve" smooth="yes"/>
+      <point x="1133" y="1244"/>
+      <point x="897" y="1430"/>
+      <point x="581" y="1430" type="curve" smooth="yes"/>
+      <point x="371" y="1430"/>
+      <point x="179" y="1362"/>
+      <point x="49" y="1240" type="curve"/>
+      <point x="243" y="952" type="line"/>
+      <point x="325" y="1040"/>
+      <point x="449" y="1094"/>
+      <point x="573" y="1094" type="curve" smooth="yes"/>
+      <point x="669" y="1094"/>
+      <point x="743" y="1052"/>
+      <point x="743" y="998" type="curve" smooth="yes"/>
+      <point x="743" y="952"/>
+      <point x="713" y="932"/>
+      <point x="559" y="878" type="curve" smooth="yes"/>
+      <point x="459" y="838" type="line" smooth="yes"/>
+      <point x="169" y="734"/>
+      <point x="53" y="618"/>
+      <point x="53" y="432" type="curve" smooth="yes"/>
+      <point x="53" y="154"/>
+      <point x="281" y="-30"/>
+    </contour>
+  </outline>
+</glyph>

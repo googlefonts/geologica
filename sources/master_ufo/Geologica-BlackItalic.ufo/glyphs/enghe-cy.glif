@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="enghe-cy" format="2">
+  <advance width="1616"/>
+  <unicode hex="04A5"/>
+  <outline>
+    <contour>
+      <point x="17" y="0" type="line"/>
+      <point x="417" y="0" type="line"/>
+      <point x="495" y="370" type="line"/>
+      <point x="815" y="370" type="line"/>
+      <point x="737" y="0" type="line"/>
+      <point x="1137" y="0" type="line"/>
+      <point x="1291" y="728" type="line"/>
+      <point x="1623" y="728" type="line"/>
+      <point x="1689" y="1040" type="line"/>
+      <point x="957" y="1040" type="line"/>
+      <point x="881" y="682" type="line"/>
+      <point x="561" y="682" type="line"/>
+      <point x="637" y="1040" type="line"/>
+      <point x="237" y="1040" type="line"/>
+    </contour>
+  </outline>
+</glyph>
