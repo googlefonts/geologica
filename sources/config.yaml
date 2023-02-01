@@ -1,15 +1,25 @@
 sources:
-  - Geologica.glyphs
+  - ./master_ufo/Geologica.designspace
 buildOTF: False
 buildWebfont: False
 buildTTF: False
 axisOrder:
-  - SHRP
   - CRSV
+  - SHRP
   - slnt
   - wght
 familyName: "Geologica"
 stat:
+  - name: Cursive
+    tag: CRSV
+    values:
+    - name: Roman
+      value: 0
+    - name: Auto
+      value: 0.5
+      flags: 2
+    - name: Cursive
+      value: 1
   - name: Sharpness
     tag: SHRP
     values:
@@ -18,16 +28,6 @@ stat:
       flags: 2
     - name: Sharp
       value: 100
-  - name: Cursive
-    tag: CRSV
-    values:
-    - name: Roman
-      value: 0
-      flags: 2
-    - name: Auto
-      value: 0.5
-    - name: Cursive
-      value: 1
   - name: Weight
     tag: wght
     values:
@@ -54,21 +54,27 @@ stat:
   - name: Slant
     tag: slnt
     values:
-    - name: Roman
+    - name: Default
       value: 0
+      flags: 2
     - name: Oblique
       value: -12
 statFormat4:
-      - name: Roman
-        location:
-          slnt: 0
-          CRSV: 0
-          # flags: 2
-      - name: Cursive
-        location:
-          slnt: 0
-          CRSV: 1
+  # - name: Roman
+  #   location:
+  #     slnt: 0
+  #     CRSV: 0
+  #     flags: 2
+  - name: Italic
+    location:
+      slnt: -12
+      CRSV: 1
       # - name: Oblique
       #   location:
       #     slnt: 1
       #     CRSV: 0
+      # - name: Cursive
+      #   location:
+      #     slnt: 0
+      #     CRSV: 1
+cleanUp: False
