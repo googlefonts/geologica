@@ -69,4 +69,10 @@ statFormat4:
     location:
       slnt: -12
       CRSV: 1
+  # - name: Cursive
+  #   location:
+  #     CRSV: 1
+  # - name: Oblique
+  #   location:
+  #     slnt: -12
 cleanUp: False
