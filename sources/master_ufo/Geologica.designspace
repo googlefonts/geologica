@@ -137,7 +137,7 @@
     <instance name="Geologica Regular" familyname="Geologica" stylename="Regular" filename="../instance_ufo/Geologica-Regular.ufo" stylemapfamilyname="Geologica" stylemapstylename="regular">
       <location>
         <dimension name="Weight" xvalue="100"/>
-        <dimension name="Cursive" xvalue="100"/>
+        <dimension name="Cursive" xvalue="0"/>
         <dimension name="Sharpness" xvalue="0"/>
         <dimension name="Slant" xvalue="0"/>
       </location>
@@ -190,7 +190,8 @@
         </dict>
       </lib>
     </instance>
-    <instance name="Geologica Sharp Thin" familyname="Geologica Sharp" stylename="Thin" filename="../instance_ufo/GeologicaSharp-Thin.ufo" stylemapfamilyname="Geologica Sharp Thin" stylemapstylename="regular">
+    <!-- 
+<instance name="Geologica Sharp Thin" familyname="Geologica Sharp" stylename="Thin" filename="../instance_ufo/GeologicaSharp-Thin.ufo" stylemapfamilyname="Geologica Sharp Thin" stylemapstylename="regular">
       <location>
         <dimension name="Weight" xvalue="56"/>
         <dimension name="Cursive" xvalue="0"/>
@@ -238,6 +239,7 @@
         </dict>
       </lib>
     </instance>
+ -->
     <instance name="Geologica Thin Italic" familyname="Geologica" stylename="Thin Italic" filename="../instance_ufo/Geologica-ThinItalic.ufo" stylemapfamilyname="Geologica Thin" stylemapstylename="italic">
       <location>
         <dimension name="Weight" xvalue="56"/>
@@ -286,6 +288,7 @@
         </dict>
       </lib>
     </instance>
+<!-- 
     <instance name="Geologica Sharp Thin Italic" familyname="Geologica Sharp" stylename="Thin Italic" filename="../instance_ufo/GeologicaSharp-ThinItalic.ufo" stylemapfamilyname="Geologica Sharp Thin" stylemapstylename="italic">
       <location>
         <dimension name="Weight" xvalue="56"/>
@@ -334,6 +337,7 @@
         </dict>
       </lib>
     </instance>
+ -->
     <instance name="Geologica ExtraLight" familyname="Geologica" stylename="ExtraLight" filename="../instance_ufo/Geologica-ExtraLight.ufo" stylemapfamilyname="Geologica ExtraLight" stylemapstylename="regular">
       <location>
         <dimension name="Weight" xvalue="74"/>
@@ -382,6 +386,7 @@
         </dict>
       </lib>
     </instance>
+<!-- 
     <instance name="Geologica Sharp ExtraLight" familyname="Geologica Sharp" stylename="ExtraLight" filename="../instance_ufo/GeologicaSharp-ExtraLight.ufo" stylemapfamilyname="Geologica Sharp ExtraLight" stylemapstylename="regular">
       <location>
         <dimension name="Weight" xvalue="74"/>
@@ -430,6 +435,7 @@
         </dict>
       </lib>
     </instance>
+ -->
     <instance name="Geologica ExtraLight Italic" familyname="Geologica" stylename="ExtraLight Italic" filename="../instance_ufo/Geologica-ExtraLightItalic.ufo" stylemapfamilyname="Geologica ExtraLight" stylemapstylename="italic">
       <location>
         <dimension name="Weight" xvalue="74"/>
@@ -478,6 +484,7 @@
         </dict>
       </lib>
     </instance>
+<!-- 
     <instance name="Geologica Sharp ExtraLight Italic" familyname="Geologica Sharp" stylename="ExtraLight Italic" filename="../instance_ufo/GeologicaSharp-ExtraLightItalic.ufo" stylemapfamilyname="Geologica Sharp ExtraLight" stylemapstylename="italic">
       <location>
         <dimension name="Weight" xvalue="74"/>
@@ -526,6 +533,7 @@
         </dict>
       </lib>
     </instance>
+ -->
     <instance name="Geologica Light" familyname="Geologica" stylename="Light" filename="../instance_ufo/Geologica-Light.ufo" stylemapfamilyname="Geologica Light" stylemapstylename="regular">
       <location>
         <dimension name="Weight" xvalue="92"/>
@@ -574,6 +582,7 @@
         </dict>
       </lib>
     </instance>
+<!-- 
     <instance name="Geologica Sharp Light" familyname="Geologica Sharp" stylename="Light" filename="../instance_ufo/GeologicaSharp-Light.ufo" stylemapfamilyname="Geologica Sharp Light" stylemapstylename="regular">
       <location>
         <dimension name="Weight" xvalue="92"/>
@@ -622,6 +631,7 @@
         </dict>
       </lib>
     </instance>
+ -->
     <instance name="Geologica Light Italic" familyname="Geologica" stylename="Light Italic" filename="../instance_ufo/Geologica-LightItalic.ufo" stylemapfamilyname="Geologica Light" stylemapstylename="italic">
       <location>
         <dimension name="Weight" xvalue="92"/>
@@ -670,6 +680,7 @@
         </dict>
       </lib>
     </instance>
+<!-- 
     <instance name="Geologica Sharp Light Italic" familyname="Geologica Sharp" stylename="Light Italic" filename="../instance_ufo/GeologicaSharp-LightItalic.ufo" stylemapfamilyname="Geologica Sharp Light" stylemapstylename="italic">
       <location>
         <dimension name="Weight" xvalue="92"/>
@@ -718,6 +729,7 @@
         </dict>
       </lib>
     </instance>
+ -->
     <instance name="Geologica Regular" familyname="Geologica" stylename="Regular" filename="../instance_ufo/Geologica-Regular.ufo" stylemapfamilyname="Geologica" stylemapstylename="regular">
       <location>
         <dimension name="Weight" xvalue="110"/>
@@ -766,6 +778,7 @@
         </dict>
       </lib>
     </instance>
+<!-- 
     <instance name="Geologica Sharp Regular" familyname="Geologica Sharp" stylename="Regular" filename="../instance_ufo/GeologicaSharp-Regular.ufo" stylemapfamilyname="Geologica Sharp" stylemapstylename="regular">
       <location>
         <dimension name="Weight" xvalue="110"/>
@@ -814,6 +827,7 @@
         </dict>
       </lib>
     </instance>
+ -->
     <instance name="Geologica Italic" familyname="Geologica" stylename="Italic" filename="../instance_ufo/Geologica-Italic.ufo" stylemapfamilyname="Geologica" stylemapstylename="italic">
       <location>
         <dimension name="Weight" xvalue="110"/>
@@ -862,6 +876,7 @@
         </dict>
       </lib>
     </instance>
+<!-- 
     <instance name="Geologica Sharp Italic" familyname="Geologica Sharp" stylename="Italic" filename="../instance_ufo/GeologicaSharp-Italic.ufo" stylemapfamilyname="Geologica Sharp" stylemapstylename="italic">
       <location>
         <dimension name="Weight" xvalue="110"/>
@@ -910,6 +925,7 @@
         </dict>
       </lib>
     </instance>
+ -->
     <instance name="Geologica Medium" familyname="Geologica" stylename="Medium" filename="../instance_ufo/Geologica-Medium.ufo" stylemapfamilyname="Geologica Medium" stylemapstylename="regular">
       <location>
         <dimension name="Weight" xvalue="128"/>
@@ -958,6 +974,7 @@
         </dict>
       </lib>
     </instance>
+<!-- 
     <instance name="Geologica Sharp Medium" familyname="Geologica Sharp" stylename="Medium" filename="../instance_ufo/GeologicaSharp-Medium.ufo" stylemapfamilyname="Geologica Sharp Medium" stylemapstylename="regular">
       <location>
         <dimension name="Weight" xvalue="128"/>
@@ -1006,6 +1023,7 @@
         </dict>
       </lib>
     </instance>
+ -->
     <instance name="Geologica Medium Italic" familyname="Geologica" stylename="Medium Italic" filename="../instance_ufo/Geologica-MediumItalic.ufo" stylemapfamilyname="Geologica Medium" stylemapstylename="italic">
       <location>
         <dimension name="Weight" xvalue="128"/>
@@ -1054,6 +1072,7 @@
         </dict>
       </lib>
     </instance>
+<!-- 
     <instance name="Geologica Sharp Medium Italic" familyname="Geologica Sharp" stylename="Medium Italic" filename="../instance_ufo/GeologicaSharp-MediumItalic.ufo" stylemapfamilyname="Geologica Sharp Medium" stylemapstylename="italic">
       <location>
         <dimension name="Weight" xvalue="128"/>
@@ -1102,6 +1121,7 @@
         </dict>
       </lib>
     </instance>
+ -->
     <instance name="Geologica SemiBold" familyname="Geologica" stylename="SemiBold" filename="../instance_ufo/Geologica-SemiBold.ufo" stylemapfamilyname="Geologica SemiBold" stylemapstylename="regular">
       <location>
         <dimension name="Weight" xvalue="146"/>
@@ -1150,6 +1170,7 @@
         </dict>
       </lib>
     </instance>
+<!-- 
     <instance name="Geologica Sharp SemiBold" familyname="Geologica Sharp" stylename="SemiBold" filename="../instance_ufo/GeologicaSharp-SemiBold.ufo" stylemapfamilyname="Geologica Sharp SemiBold" stylemapstylename="regular">
       <location>
         <dimension name="Weight" xvalue="146"/>
@@ -1198,6 +1219,7 @@
         </dict>
       </lib>
     </instance>
+ -->
     <instance name="Geologica SemiBold Italic" familyname="Geologica" stylename="SemiBold Italic" filename="../instance_ufo/Geologica-SemiBoldItalic.ufo" stylemapfamilyname="Geologica SemiBold" stylemapstylename="italic">
       <location>
         <dimension name="Weight" xvalue="146"/>
@@ -1246,6 +1268,7 @@
         </dict>
       </lib>
     </instance>
+<!-- 
     <instance name="Geologica Sharp SemiBold Italic" familyname="Geologica Sharp" stylename="SemiBold Italic" filename="../instance_ufo/GeologicaSharp-SemiBoldItalic.ufo" stylemapfamilyname="Geologica Sharp SemiBold" stylemapstylename="italic">
       <location>
         <dimension name="Weight" xvalue="146"/>
@@ -1294,6 +1317,7 @@
         </dict>
       </lib>
     </instance>
+ -->
     <instance name="Geologica Bold" familyname="Geologica" stylename="Bold" filename="../instance_ufo/Geologica-Bold.ufo" stylemapfamilyname="Geologica" stylemapstylename="bold">
       <location>
         <dimension name="Weight" xvalue="164"/>
@@ -1342,6 +1366,7 @@
         </dict>
       </lib>
     </instance>
+<!-- 
     <instance name="Geologica Sharp Bold" familyname="Geologica Sharp" stylename="Bold" filename="../instance_ufo/GeologicaSharp-Bold.ufo" stylemapfamilyname="Geologica Sharp" stylemapstylename="bold">
       <location>
         <dimension name="Weight" xvalue="164"/>
@@ -1390,6 +1415,7 @@
         </dict>
       </lib>
     </instance>
+ -->
     <instance name="Geologica Bold Italic" familyname="Geologica" stylename="Bold Italic" filename="../instance_ufo/Geologica-BoldItalic.ufo" stylemapfamilyname="Geologica" stylemapstylename="bold italic">
       <location>
         <dimension name="Weight" xvalue="164"/>
@@ -1438,6 +1464,7 @@
         </dict>
       </lib>
     </instance>
+<!-- 
     <instance name="Geologica Sharp Bold Italic" familyname="Geologica Sharp" stylename="Bold Italic" filename="../instance_ufo/GeologicaSharp-BoldItalic.ufo" stylemapfamilyname="Geologica Sharp" stylemapstylename="bold italic">
       <location>
         <dimension name="Weight" xvalue="164"/>
@@ -1486,6 +1513,7 @@
         </dict>
       </lib>
     </instance>
+ -->
     <instance name="Geologica ExtraBold" familyname="Geologica" stylename="ExtraBold" filename="../instance_ufo/Geologica-ExtraBold.ufo" stylemapfamilyname="Geologica ExtraBold" stylemapstylename="regular">
       <location>
         <dimension name="Weight" xvalue="182"/>
@@ -1534,6 +1562,7 @@
         </dict>
       </lib>
     </instance>
+<!-- 
     <instance name="Geologica Sharp ExtraBold" familyname="Geologica Sharp" stylename="ExtraBold" filename="../instance_ufo/GeologicaSharp-ExtraBold.ufo" stylemapfamilyname="Geologica Sharp ExtraBold" stylemapstylename="regular">
       <location>
         <dimension name="Weight" xvalue="182"/>
@@ -1582,6 +1611,7 @@
         </dict>
       </lib>
     </instance>
+ -->
     <instance name="Geologica ExtraBold Italic" familyname="Geologica" stylename="ExtraBold Italic" filename="../instance_ufo/Geologica-ExtraBoldItalic.ufo" stylemapfamilyname="Geologica ExtraBold" stylemapstylename="italic">
       <location>
         <dimension name="Weight" xvalue="182"/>
@@ -1630,6 +1660,7 @@
         </dict>
       </lib>
     </instance>
+<!-- 
     <instance name="Geologica Sharp ExtraBold Italic" familyname="Geologica Sharp" stylename="ExtraBold Italic" filename="../instance_ufo/GeologicaSharp-ExtraBoldItalic.ufo" stylemapfamilyname="Geologica Sharp ExtraBold" stylemapstylename="italic">
       <location>
         <dimension name="Weight" xvalue="182"/>
@@ -1678,6 +1709,7 @@
         </dict>
       </lib>
     </instance>
+ -->
     <instance name="Geologica Black" familyname="Geologica" stylename="Black" filename="../instance_ufo/Geologica-Black.ufo" stylemapfamilyname="Geologica Black" stylemapstylename="regular">
       <location>
         <dimension name="Weight" xvalue="200"/>
@@ -1726,6 +1758,7 @@
         </dict>
       </lib>
     </instance>
+<!-- 
     <instance name="Geologica Sharp Black" familyname="Geologica Sharp" stylename="Black" filename="../instance_ufo/GeologicaSharp-Black.ufo" stylemapfamilyname="Geologica Sharp Black" stylemapstylename="regular">
       <location>
         <dimension name="Weight" xvalue="200"/>
@@ -1774,6 +1807,7 @@
         </dict>
       </lib>
     </instance>
+ -->
     <instance name="Geologica Black Italic" familyname="Geologica" stylename="Black Italic" filename="../instance_ufo/Geologica-BlackItalic.ufo" stylemapfamilyname="Geologica Black" stylemapstylename="italic">
       <location>
         <dimension name="Weight" xvalue="200"/>
@@ -1822,6 +1856,7 @@
         </dict>
       </lib>
     </instance>
+<!-- 
     <instance name="Geologica Sharp Black Italic" familyname="Geologica Sharp" stylename="Black Italic" filename="../instance_ufo/GeologicaSharp-BlackItalic.ufo" stylemapfamilyname="Geologica Sharp Black" stylemapstylename="italic">
       <location>
         <dimension name="Weight" xvalue="200"/>
@@ -1870,6 +1905,7 @@
         </dict>
       </lib>
     </instance>
+ -->
   </instances>
   <lib>
     <dict>
