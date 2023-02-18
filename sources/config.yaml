@@ -1,5 +1,6 @@
 sources:
   - ./master_ufo/Geologica.designspace
+vfDir: ../fonts/variable/Roman-Ital/
 buildOTF: False
 buildWebfont: False
 buildTTF: False
