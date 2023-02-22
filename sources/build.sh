@@ -6,7 +6,7 @@ outputDir="../fonts/variable/full"
 splitDir="../fonts/variable/split"
 vfFullName="Geologica[CRSV,SHRP,slnt,wght].ttf"
 vfRomanName="Geologica[SHRP,wght].ttf"
-VfItalicName="Geologica-Italic[SHRP,wght].ttf"
+vfItalicName="Geologica-Italic[SHRP,wght].ttf"
 
 mkdir -p "$outputDir" "$splitDir"
 
@@ -16,30 +16,48 @@ vfItalicPath="$splitDir/$vfItalicName"
 
 ######### generate variable font ###########
 
-echo "GENERATING FULL VF"
+echo "----GENERATING FULL VF----"
 
 fontmake -g Geologica.glyphs -f --no-check-compatibility -o variable --output-path "$vfFullPath"
 
+########## generating split VFs ############
+
+echo "----GENERATING SPLIT VFS----"
+
+echo "----Building Roman VF----"
+fonttools varLib.instancer $vfFullPath CRSV=0 slnt=0 --output $vfRomanPath
+
+echo "----Building Italic VF----"
+fonttools varLib.instancer $vfFullPath CRSV=1 slnt=-12 --output $vfItalicPath
+
 ########## postprocessing ############
 
-# fix nonhinting
+echo "----Postprocessing----"
+
+
+# fix nonhinting full VF
+echo "Full VF"
 gftools fix-nonhinting "$vfFullPath" "$vfFullPath"
 rm "${vfFullPath/.ttf/-backup-fonttools-prep-gasp.ttf}"
 
-# vfs=$(ls "vfFullPath")
-# for vf in $vfs
-# do
-# 	# fix hinting #
-# 	gftools fix-nonhinting $vf $vf.fix; #run if fonts have not been released with Google yet
-# 	# gftools fix_hinting $vf;  #run if the fonts have been previously autohinted with ttfautohint-vf
-# 	mv "$vf.fix" $vf;
-	
-# 	# # patch Name and STAT table #	
-# 	# ttx -m $vf "../sources/helpers/vf-patch.ttx"
-# 	# mv "../sources/helpers/vf-patch.ttf" "../fonts/variable/Geologica[CRSV,SHRP,slnt,wght].ttf"
-# done
+# fix nonhinting Roman VF
+echo "Roman VF"
+gftools fix-nonhinting "$vfRomanPath" "$vfRomanPath"
+rm "${vfRomanPath/.ttf/-backup-fonttools-prep-gasp.ttf}"
+
+# fix nonhinting Italic VF
+echo "Italic VF"
+gftools fix-nonhinting "$vfItalicPath" "$vfItalicPath"
+rm "${vfItalicPath/.ttf/-backup-fonttools-prep-gasp.ttf}"
+
+# add STAT table
+python3 STAT-Geologica.py $vfFullPath
 
 
 ############### Fontbakery ##################
 
-fontbakery check-googlefonts -l WARN "$vfFullPath" --ghmarkdown ../sources/checks/checks_variable_full.md
+# fontbakery check-googlefonts -l WARN "$vfFullPath" --ghmarkdown ../fonts/checks/checks-variable-full.md 
+
+# fontbakery check-googlefonts -l WARN "$vfRomanPath" --ghmarkdown ../fonts/checks/checks-variable-Roman.md
+
+fontbakery check-googlefonts -l WARN "$vfItalicPath" --ghmarkdown ../fonts/checks/checks-variable-Italicmd
