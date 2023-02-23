@@ -55,6 +55,12 @@ AXES = [
 ]
 LOCATIONS = [
     dict(
+        name="Upright", 
+        location=[
+            dict(CRSV=0, slnt=0),
+        ],
+    ),
+    dict(
         name="Italic", 
         location=[
             dict(CRSV=1, slnt=-12),
