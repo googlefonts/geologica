@@ -24,10 +24,6 @@ echo "Post processing static fonts"
 ttfs=$(ls ../fonts/ttf/*.ttf)
 for ttf in $ttfs
 do
-    # # fix DSIG #
-	# echo "fix DSIG in " $ttf
-    # gftools fix-dsig --autofix $ttf
-	
 	# fix hinting #
 	echo "fix hinting static ttf"
 	#gftools fix-nonhinting $ttf $ttf.fix; #run if the fonts are unhinted
