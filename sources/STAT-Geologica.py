@@ -54,18 +54,8 @@ AXES = [
     ),
 ]
 LOCATIONS = [
-    dict(
-        name="Upright", 
-        location=[
-            dict(CRSV=0, slnt=0),
-        ],
-    ),
-    dict(
-        name="Italic", 
-        location=[
-            dict(CRSV=1, slnt=-12),
-        ],
-    ),
+    dict(name="Upright", location=dict(CRSV=0, slnt=0)),
+    dict(name="Italic", location=dict(CRSV=1, slnt=-12)),
 ]
 
 
@@ -150,7 +140,7 @@ def main():
     # process full VF
     filepath = fullVF
     tt = TTFont(filepath)
-    buildStatTable(tt, AXES)
+    buildStatTable(tt, AXES, LOCATIONS)
     tt.save(filepath)
     print(f"[STAT TABLE] Added STAT table to {filepath}")
 
