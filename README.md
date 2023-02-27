@@ -1,10 +1,10 @@
-![Geologica type specimen](home.png)
+![Geologica type specimen](documentation/home.png)
 
 # Geologica 
 
 Geologica is grounded in the humanist genre, but leans assertively into geometric, constructed letterforms to find its stability. The wide stance, generous spacing, large apertures and even colour makes Geologica a serious text typeface. The stylistic “Sharp” axis adds a rational interpretation of calligraphic pen strokes – a modernist echo of the roots of writing.
 
-![Geologica type specimen](home2.png)
+![Geologica type specimen](documentation/home2.png)
 
 The default style of the Geologica typeface is a sober humanist sans serif with a rational finish. The terminals are perpendicular to the direction of the pen stroke, emphasising the monolinearity of the letterforms. The alternate “Sharp” styles introduces details derived from writing with a broad-nib pen. Sharp points arise where the imagined pen is set to paper. These details are echoed in the Carthesian terminal treatment, causing curved shapes to form sharp inner points as they terminate.
 
