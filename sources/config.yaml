@@ -61,15 +61,15 @@ stat:
       flags: 2
     - name: Oblique
       value: -12
-statFormat4:
-  - name: Upright # flag is reporting an errror avr.AxisIndex = axisTagToIndex[tag] | KeyError: 'flags'
-    location:
-      slnt: 0
-      CRSV: 0
-      # flags: 2
-  - name: Italic
-    location:
-      slnt: -12
-      CRSV: 1
+# statFormat4:
+#   - name: Upright # flag is reporting an errror avr.AxisIndex = axisTagToIndex[tag] | KeyError: 'flags'
+#     location:
+#       slnt: 0
+#       CRSV: 0
+#       # flags: 2
+#   - name: Italic
+#     location:
+#       slnt: -12
+#       CRSV: 1
 
 # cleanUp: False
