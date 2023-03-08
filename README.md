@@ -15,9 +15,9 @@ Geologica uses the power of the OpenType Variable Font format to simultaneously 
 
 | Axes          | Tag  | Range      | Default  | Description                                            |
 | :------------ | :--- | :--------- | :------- | :----------------------------------------------------- | 
-| Weight        | wght | 100 to 900 | 100      | Light to Black                                         |
-| Slant         | slnt | 0 to -12   | 0        | Upright (0°) to right-leaning (-12°)                   |
-| Italic        | ital | 0 to 1     | 0        | Swaps roman for cursive variants of certain characters |
+| Weight        | wght | 100 to 900 | 100      | Thin to Black                                          |
+| Slant         | slnt | 0 to -12   | 0        | Upright (0°) to Oblique (-12°)                         |
+| Cursive       | ital | 0 to 1     | 0        | Swaps roman for cursive variants of certain characters |
 | Sharp         | SHRP | 0 to 100   | 0        | Detailing and terminal treatment                       |
 
 
