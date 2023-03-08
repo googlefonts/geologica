@@ -1,6 +1,7 @@
 sources:
-  - ./master_ufo/Geologica.designspace
-vfDir: ../fonts/variable/Roman-Ital/
+  - Geologica.glyphs
+# vfDir: ../fonts/variable/Roman-Ital/
+checkCompatibility: False
 buildOTF: False
 buildWebfont: False
 buildTTF: False
@@ -61,19 +62,14 @@ stat:
     - name: Oblique
       value: -12
 statFormat4:
-  # - name: Upright # flag is reporting an errror avr.AxisIndex = axisTagToIndex[tag] | KeyError: 'flags'
-  #   location:
-  #     slnt: 0
-  #     CRSV: 0
-  #     # flags: 2
+  - name: Upright # flag is reporting an errror avr.AxisIndex = axisTagToIndex[tag] | KeyError: 'flags'
+    location:
+      slnt: 0
+      CRSV: 0
+      # flags: 2
   - name: Italic
     location:
       slnt: -12
       CRSV: 1
-  # - name: Cursive
-  #   location:
-  #     CRSV: 1
-  # - name: Oblique
-  #   location:
-  #     slnt: -12
-cleanUp: False
+
+# cleanUp: False
