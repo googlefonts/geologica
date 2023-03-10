@@ -1,7 +1,7 @@
 sources:
   - Geologica.glyphs
-# vfDir: ../fonts/variable/Roman-Ital/
 checkCompatibility: False
+# version: 1.003
 buildOTF: False
 buildWebfont: False
 buildTTF: False
