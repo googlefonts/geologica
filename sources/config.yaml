@@ -1,15 +1,16 @@
 sources:
   - Geologica.glyphs
 checkCompatibility: False
-version: 1.008 #Axis order matching STAT
+version: 1.009 #No STAT F4
 buildOTF: False
 buildWebfont: False
 buildTTF: False
 axisOrder:
-  - CRSV
   - SHRP
-  - slnt
   - wght
+  - CRSV
+  - slnt
+
 familyName: "Geologica"
 stat:
   - name: Sharpness
@@ -43,14 +44,6 @@ stat:
       value: 800
     - name: Black
       value: 900
-  - name: Slant
-    tag: slnt
-    values:
-    - name: Default
-      value: 0
-      flags: 2
-    - name: Oblique
-      value: -12
   - name: Cursive
     tag: CRSV
     values:
@@ -61,15 +54,24 @@ stat:
       flags: 2
     - name: Cursive
       value: 1
-statFormat4:
-  - name: Upright 
-    flags: 2
-    location:
-      slnt: 0
-      CRSV: 0
-  - name: Italic
-    location:
-      slnt: -12
-      CRSV: 1
+  - name: Slant
+    tag: slnt
+    values:
+    - name: Default
+      value: 0
+      flags: 2
+    - name: Oblique
+      value: -12
+
+# statFormat4:
+#   - name: Upright 
+#     flags: 2
+#     location:
+#       slnt: 0
+#       CRSV: 0
+#   - name: Italic
+#     location:
+#       slnt: -12
+#       CRSV: 1
 
 # cleanUp: False
