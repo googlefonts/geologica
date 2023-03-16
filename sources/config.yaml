@@ -1,7 +1,7 @@
 sources:
   - Geologica.glyphs
 checkCompatibility: False
-version: 1.007 #Stat order changed in config file
+version: 1.008 #Axis order matching STAT
 buildOTF: False
 buildWebfont: False
 buildTTF: False
