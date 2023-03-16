@@ -1,7 +1,7 @@
 sources:
   - Geologica.glyphs
 checkCompatibility: False
-version: 1.006 #Uright flag enabled
+version: 1.007 #Stat order changed in config file
 buildOTF: False
 buildWebfont: False
 buildTTF: False
@@ -12,16 +12,6 @@ axisOrder:
   - wght
 familyName: "Geologica"
 stat:
-  - name: Cursive
-    tag: CRSV
-    values:
-    - name: Roman
-      value: 0
-    - name: Auto
-      value: 0.5
-      flags: 2
-    - name: Cursive
-      value: 1
   - name: Sharpness
     tag: SHRP
     values:
@@ -61,8 +51,18 @@ stat:
       flags: 2
     - name: Oblique
       value: -12
+  - name: Cursive
+    tag: CRSV
+    values:
+    - name: Roman
+      value: 0
+    - name: Auto
+      value: 0.5
+      flags: 2
+    - name: Cursive
+      value: 1
 statFormat4:
-  - name: Upright # flag is reporting an errror avr.AxisIndex = axisTagToIndex[tag] | KeyError: 'flags'
+  - name: Upright 
     flags: 2
     location:
       slnt: 0
