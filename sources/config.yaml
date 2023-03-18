@@ -1,7 +1,7 @@
 sources:
   - Geologica.glyphs
 checkCompatibility: False
-version: 1.009 #No STAT F4
+version: 1.010
 buildOTF: False
 buildWebfont: False
 buildTTF: False
