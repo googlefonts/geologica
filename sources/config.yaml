@@ -1,18 +1,27 @@
 sources:
   - Geologica.glyphs
 checkCompatibility: False
-version: 1.010
+# version: 1.014 #ultima prueba F4
 buildOTF: False
 buildWebfont: False
 buildTTF: False
 axisOrder:
+  - CRSV
   - SHRP
   - wght
-  - CRSV
   - slnt
-
 familyName: "Geologica"
 stat:
+  - name: Cursive
+    tag: CRSV
+    values:
+    - name: Roman
+      value: 0
+    - name: Auto
+      value: 0.5
+      flags: 2
+    - name: Cursive
+      value: 1
   - name: Sharpness
     tag: SHRP
     values:
@@ -44,16 +53,6 @@ stat:
       value: 800
     - name: Black
       value: 900
-  - name: Cursive
-    tag: CRSV
-    values:
-    - name: Roman
-      value: 0
-    - name: Auto
-      value: 0.5
-      flags: 2
-    - name: Cursive
-      value: 1
   - name: Slant
     tag: slnt
     values:
