@@ -68,7 +68,10 @@ Assuming you are already in the root directory
 cd sources
 ```
 
-### Build OTvar fonts
+**Note:** The alternate cursive shapes are produced using alternate layers in the source file. If you want to include new glyphs with cursive shapes, please ensure to generate them at position `[0,5<CRSV<1]` in the Cursive axis.
+
+
+### Build OTvar and TTF fonts
 
 ```
 gftools builder config.yaml
