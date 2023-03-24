@@ -1,5 +1,6 @@
-fontTools
-fontmake
-fontbakery>=0.7.0
-git+https://github.com/googlefonts/gftools
+# fontmake
+fontbakery
+gftools
 fs
+git+https://github.com/googlefonts/glyphsLib
+git+https://github.com/googlefonts/fontmake
