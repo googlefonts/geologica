@@ -49,7 +49,7 @@ jobs:
           sudo apt-get install ttfautohint
       - name: Build fonts
         id: build_fonts
-        run: gftools builder sources/config.yml
+        run: gftools builder sources/config.yaml
       - name: Upload Fonts
         uses: actions/upload-artifact@v3
         with:
