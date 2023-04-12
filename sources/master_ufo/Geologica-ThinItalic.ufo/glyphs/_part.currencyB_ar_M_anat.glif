@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="_part.currencyBar_Manat" format="2">
+  <advance width="1424"/>
+  <anchor x="982" y="1400" name="_top"/>
+  <outline>
+    <contour>
+      <point x="668" y="160" type="line"/>
+      <point x="768" y="160" type="line"/>
+      <point x="1032" y="1400" type="line"/>
+      <point x="932" y="1400" type="line"/>
+    </contour>
+  </outline>
+</glyph>

@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="je-cy.calt" format="2">
+  <advance width="452"/>
+  <anchor x="226" y="1284" name="top"/>
+  <outline>
+    <component base="j.calt"/>
+  </outline>
+</glyph>

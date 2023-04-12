@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="acutecomb.case" format="2">
+  <anchor x="74" y="1398" name="_top"/>
+  <outline>
+    <contour>
+      <point x="10" y="1592" type="line"/>
+      <point x="118" y="1592" type="line"/>
+      <point x="320" y="1904" type="line"/>
+      <point x="200" y="1904" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.category</key>
+      <string>Mark</string>
+      <key>com.schriftgestaltung.Glyphs.originalWidth</key>
+      <integer>330</integer>
+    </dict>
+  </lib>
+</glyph>

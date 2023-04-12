@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Endescender-cy" format="2">
+  <advance width="1518"/>
+  <unicode hex="04A2"/>
+  <anchor x="1136" y="0" name="descender"/>
+  <anchor x="914" y="1400" name="top"/>
+  <anchor x="316" y="1400" name="topleft"/>
+  <outline>
+    <component base="En-cy"/>
+    <component base="_part.cy-desc-uc" xOffset="1394"/>
+  </outline>
+</glyph>

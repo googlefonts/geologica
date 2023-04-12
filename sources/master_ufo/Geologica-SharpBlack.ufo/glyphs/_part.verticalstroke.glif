@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="_part.verticalstroke" format="2">
+  <advance width="1200"/>
+  <anchor x="510" y="780" name="_center"/>
+  <outline>
+    <contour>
+      <point x="428" y="450" type="line"/>
+      <point x="592" y="450" type="line"/>
+      <point x="592" y="1186" type="line"/>
+      <point x="428" y="1110" type="line"/>
+    </contour>
+  </outline>
+</glyph>

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="acircumflextilde.BRACKET.varAlt01" format="2">
+  <advance width="1254"/>
+  <outline>
+    <component base="acircumflextilde.ss01"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs._originalLayerName</key>
+      <string></string>
+    </dict>
+  </lib>
+</glyph>

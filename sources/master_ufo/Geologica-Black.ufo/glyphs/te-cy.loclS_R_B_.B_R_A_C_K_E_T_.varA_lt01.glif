@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="te-cy.loclSRB.BRACKET.varAlt01" format="2">
+  <advance width="2000"/>
+  <outline>
+    <component base="te-cy.loclSRB.ss01"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs._originalLayerName</key>
+      <string></string>
+    </dict>
+  </lib>
+</glyph>

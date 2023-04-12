@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="abrevegrave.BRACKET.varAlt01" format="2">
+  <advance width="1348"/>
+  <outline>
+    <component base="abrevegrave.ss01"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs._originalLayerName</key>
+      <string></string>
+    </dict>
+  </lib>
+</glyph>

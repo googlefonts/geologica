@@ -1,5 +1,5 @@
 sources:
-  - Geologica.glyphs
+  - master_ufo/Geologica.designspace
 checkCompatibility: False
 # version: 1.010
 buildOTF: False
@@ -48,8 +48,6 @@ stat:
     values:
     - name: Roman
       value: 0
-    - name: Auto
-      value: 0.5
       flags: 2
     - name: Cursive
       value: 1

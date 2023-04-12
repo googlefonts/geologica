@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="dje-cy" format="2">
+  <advance width="1148"/>
+  <unicode hex="0452"/>
+  <anchor x="342" y="1204" name="bar"/>
+  <outline>
+    <component base="_part.heng"/>
+    <component base="strokeshortcomb" xOffset="22" yOffset="684"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>_part.heng</string>
+        </dict>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>1</integer>
+          <key>name</key>
+          <string>strokeshortcomb</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

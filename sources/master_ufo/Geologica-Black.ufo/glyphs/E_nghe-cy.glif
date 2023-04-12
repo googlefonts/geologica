@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Enghe-cy" format="2">
+  <advance width="1952"/>
+  <unicode hex="04A4"/>
+  <anchor x="1424" y="0" name="descender"/>
+  <anchor x="791" y="1400" name="top"/>
+  <anchor x="37" y="1400" name="topleft"/>
+  <outline>
+    <contour>
+      <point x="1429" y="1032" type="line"/>
+      <point x="1925" y="1032" type="line"/>
+      <point x="1925" y="1400" type="line"/>
+      <point x="1025" y="1400" type="line"/>
+    </contour>
+    <component base="En-cy"/>
+  </outline>
+</glyph>

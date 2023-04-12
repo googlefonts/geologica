@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="circumflexcomb.narrow" format="2">
+  <anchor x="286" y="960" name="_top"/>
+  <anchor x="286" y="1444" name="top"/>
+  <anchor x="558" y="1224" name="top_right"/>
+  <outline>
+    <contour>
+      <point x="10" y="1170" type="line"/>
+      <point x="128" y="1170" type="line"/>
+      <point x="290" y="1426" type="line"/>
+      <point x="446" y="1170" type="line"/>
+      <point x="564" y="1170" type="line"/>
+      <point x="352" y="1504" type="line"/>
+      <point x="234" y="1504" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.category</key>
+      <string>Mark</string>
+      <key>com.schriftgestaltung.Glyphs.originalWidth</key>
+      <integer>574</integer>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="tbar" format="2">
+  <advance width="840"/>
+  <unicode hex="0167"/>
+  <anchor x="402" y="520" name="bar"/>
+  <anchor x="524" y="0" name="bottom"/>
+  <anchor x="402" y="1440" name="caron"/>
+  <outline>
+    <component base="t" xOffset="10"/>
+    <component base="strokeshortcomb" xOffset="82"/>
+  </outline>
+</glyph>

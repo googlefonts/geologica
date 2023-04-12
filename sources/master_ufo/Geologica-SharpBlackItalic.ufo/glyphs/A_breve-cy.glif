@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Abreve-cy" format="2">
+  <advance width="1496"/>
+  <unicode hex="04D0"/>
+  <anchor x="645" y="0" name="bottom"/>
+  <anchor x="1343" y="0" name="ogonek"/>
+  <anchor x="941" y="1400" name="top"/>
+  <anchor x="453" y="1400" name="topleft"/>
+  <outline>
+    <component base="A-cy"/>
+    <component base="brevecomb-cy" xOffset="373" yOffset="360"/>
+  </outline>
+</glyph>

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="ohookabove" format="2">
+  <advance width="1172"/>
+  <unicode hex="1ECF"/>
+  <anchor x="586" y="0" name="bottom"/>
+  <anchor x="974" y="960" name="horn"/>
+  <anchor x="802" y="0" name="ogonek"/>
+  <anchor x="586" y="960" name="top"/>
+  <outline>
+    <component base="o"/>
+    <component base="hookabovecomb" xOffset="366"/>
+  </outline>
+</glyph>

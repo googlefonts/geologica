@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="circumflexcomb_tildecomb" format="2">
+  <anchor x="455" y="960" name="_top"/>
+  <anchor x="639" y="1828" name="top"/>
+  <anchor x="849" y="1224" name="top_right"/>
+  <outline>
+    <component base="circumflexcomb" xOffset="26"/>
+    <component base="tildecomb" xOffset="103" yOffset="484"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.category</key>
+      <string>Mark</string>
+      <key>com.schriftgestaltung.Glyphs.originalWidth</key>
+      <integer>704</integer>
+    </dict>
+  </lib>
+</glyph>

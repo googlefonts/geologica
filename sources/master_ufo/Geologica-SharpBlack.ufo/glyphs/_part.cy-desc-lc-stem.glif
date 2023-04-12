@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="_part.cy-desc-lc-stem" format="2">
+  <advance width="1200"/>
+  <anchor x="1190" y="0" name="_descender"/>
+  <outline>
+    <contour>
+      <point x="1008" y="-384" type="line"/>
+      <point x="1372" y="-216" type="line"/>
+      <point x="1372" y="312" type="line"/>
+      <point x="1008" y="312" type="line"/>
+    </contour>
+  </outline>
+</glyph>

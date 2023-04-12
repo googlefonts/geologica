@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="gje-cy.loclMKD.ss01" format="2">
+  <advance width="1064"/>
+  <anchor x="407" y="0" name="bottom"/>
+  <anchor x="673" y="1040" name="top"/>
+  <outline>
+    <component base="ge-cy.loclBGR"/>
+    <component base="macroncomb" xOffset="165"/>
+  </outline>
+</glyph>

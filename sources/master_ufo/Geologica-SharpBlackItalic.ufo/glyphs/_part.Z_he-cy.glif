@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="_part.Zhe-cy" format="2">
+  <advance width="2328"/>
+  <anchor x="2068" y="0" name="descender"/>
+  <anchor x="1350" y="1400" name="top"/>
+  <outline>
+    <contour>
+      <point x="1726" y="0" type="line"/>
+      <point x="2228" y="0" type="line"/>
+      <point x="1792" y="690" type="line"/>
+      <point x="2466" y="1400" type="line"/>
+      <point x="1936" y="1400" type="line"/>
+      <point x="1300" y="714" type="line"/>
+    </contour>
+    <contour>
+      <point x="-120" y="0" type="line"/>
+      <point x="400" y="0" type="line"/>
+      <point x="1102" y="704" type="line"/>
+      <point x="746" y="1400" type="line"/>
+      <point x="242" y="1400" type="line"/>
+      <point x="610" y="708" type="line"/>
+    </contour>
+    <contour>
+      <point x="852" y="0" type="line"/>
+      <point x="1256" y="0" type="line"/>
+      <point x="1370" y="538" type="line"/>
+      <point x="1638" y="538" type="line"/>
+      <point x="1716" y="906" type="line"/>
+      <point x="1448" y="906" type="line"/>
+      <point x="1552" y="1400" type="line"/>
+      <point x="1148" y="1400" type="line"/>
+      <point x="1044" y="906" type="line"/>
+      <point x="776" y="906" type="line"/>
+      <point x="698" y="538" type="line"/>
+      <point x="966" y="538" type="line"/>
+    </contour>
+  </outline>
+</glyph>

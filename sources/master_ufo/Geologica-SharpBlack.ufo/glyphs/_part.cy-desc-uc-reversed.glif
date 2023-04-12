@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="_part.cy-desc-uc-reversed" format="2">
+  <advance width="988"/>
+  <anchor x="-108" y="0" name="_descender"/>
+  <outline>
+    <contour>
+      <point x="-336" y="-440" type="line"/>
+      <point x="48" y="-260" type="line"/>
+      <point x="48" y="0" type="line"/>
+      <point x="148" y="0" type="line"/>
+      <point x="148" y="368" type="line"/>
+      <point x="-336" y="368" type="line"/>
+    </contour>
+  </outline>
+</glyph>

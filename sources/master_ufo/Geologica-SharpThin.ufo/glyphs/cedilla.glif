@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="cedilla" format="2">
+  <advance width="1000"/>
+  <unicode hex="00B8"/>
+  <outline>
+    <component base="cedillacomb" xOffset="280"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.category</key>
+      <string>Mark</string>
+    </dict>
+  </lib>
+</glyph>

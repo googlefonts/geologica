@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="aring.BRACKET.varAlt01" format="2">
+  <advance width="1338"/>
+  <outline>
+    <component base="aring.ss01"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs._originalLayerName</key>
+      <string></string>
+    </dict>
+  </lib>
+</glyph>
