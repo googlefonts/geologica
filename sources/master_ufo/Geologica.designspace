@@ -68,7 +68,7 @@
       </conditionset>
       <sub name="colonsign" with="colonsign.bold"/>
     </rule>
-  </rules>
+  </rules>  
   <sources>
     <source filename="Geologica-Thin.ufo" name="Geologica Thin" familyname="Geologica" stylename="Thin">
       <lib copy="1"/>

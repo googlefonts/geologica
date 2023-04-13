@@ -508,7 +508,6 @@
     <key>public.kern1.a</key>
     <array>
       <string>aring</string>
-      <string>aring.BRACKET.varAlt01</string>
     </array>
     <key>public.kern1.anoteleia</key>
     <array>
@@ -517,7 +516,6 @@
     <key>public.kern1.aogonek</key>
     <array>
       <string>aogonek</string>
-      <string>aogonek.BRACKET.varAlt01</string>
     </array>
     <key>public.kern1.asterisk</key>
     <array>
@@ -533,7 +531,6 @@
       <string>trademark</string>
       <string>degree</string>
       <string>numero</string>
-      <string>ordfeminine.BRACKET.varAlt01</string>
     </array>
     <key>public.kern1.at</key>
     <array>
@@ -720,18 +717,12 @@
       <string>g</string>
       <string>gcommaaccent</string>
       <string>gdotaccent</string>
-      <string>g.BRACKET.varAlt01</string>
-      <string>gcommaaccent.BRACKET.varAlt01</string>
-      <string>gdotaccent.BRACKET.varAlt01</string>
     </array>
     <key>public.kern1.gaccent</key>
     <array>
       <string>gbreve</string>
       <string>gcaron</string>
       <string>gcircumflex</string>
-      <string>gbreve.BRACKET.varAlt01</string>
-      <string>gcaron.BRACKET.varAlt01</string>
-      <string>gcircumflex.BRACKET.varAlt01</string>
     </array>
     <key>public.kern1.geSRB</key>
     <array>
@@ -1006,12 +997,6 @@
       <string>shha-cy</string>
       <string>pe-cy.loclBGR</string>
       <string>te-cy.loclBGR</string>
-      <string>a.BRACKET.varAlt01</string>
-      <string>acircumflexdotbelow.BRACKET.varAlt01</string>
-      <string>adblgrave.BRACKET.varAlt01</string>
-      <string>adotbelow.BRACKET.varAlt01</string>
-      <string>agrave.BRACKET.varAlt01</string>
-      <string>a-cy.BRACKET.varAlt01</string>
     </array>
     <key>public.kern1.naccent</key>
     <array>
@@ -1035,23 +1020,6 @@
       <string>ntilde</string>
       <string>abreve-cy</string>
       <string>adieresis-cy</string>
-      <string>aacute.BRACKET.varAlt01</string>
-      <string>abreve.BRACKET.varAlt01</string>
-      <string>abreveacute.BRACKET.varAlt01</string>
-      <string>abrevedotbelow.BRACKET.varAlt01</string>
-      <string>abrevegrave.BRACKET.varAlt01</string>
-      <string>abrevehookabove.BRACKET.varAlt01</string>
-      <string>abrevetilde.BRACKET.varAlt01</string>
-      <string>acircumflex.BRACKET.varAlt01</string>
-      <string>acircumflextilde.BRACKET.varAlt01</string>
-      <string>adieresis.BRACKET.varAlt01</string>
-      <string>ahookabove.BRACKET.varAlt01</string>
-      <string>ainvertedbreve.BRACKET.varAlt01</string>
-      <string>amacron.BRACKET.varAlt01</string>
-      <string>aringacute.BRACKET.varAlt01</string>
-      <string>atilde.BRACKET.varAlt01</string>
-      <string>abreve-cy.BRACKET.varAlt01</string>
-      <string>adieresis-cy.BRACKET.varAlt01</string>
     </array>
     <key>public.kern1.nine.ss02</key>
     <array>
@@ -1066,9 +1034,6 @@
       <string>acircumflexacute</string>
       <string>acircumflexgrave</string>
       <string>acircumflexhookabove</string>
-      <string>acircumflexacute.BRACKET.varAlt01</string>
-      <string>acircumflexgrave.BRACKET.varAlt01</string>
-      <string>acircumflexhookabove.BRACKET.varAlt01</string>
     </array>
     <key>public.kern1.o</key>
     <array>
@@ -1109,9 +1074,6 @@
       <string>psi</string>
       <string>omega</string>
       <string>omegatonos</string>
-      <string>ae.BRACKET.varAlt01</string>
-      <string>aeacute.BRACKET.varAlt01</string>
-      <string>aie-cy.BRACKET.varAlt01</string>
     </array>
     <key>public.kern1.oaccent</key>
     <array>
@@ -1368,15 +1330,12 @@
       <string>te-cy</string>
       <string>enghe-cy</string>
       <string>te-cy.loclSRB</string>
-      <string>te-cy.loclSRB.BRACKET.varAlt01</string>
     </array>
     <key>public.kern1.teaccent</key>
     <array>
       <string>gje-cy</string>
       <string>gje-cy.loclMKD</string>
       <string>gje-cy.ss01</string>
-      <string>gje-cy.BRACKET.varAlt01</string>
-      <string>gje-cy.loclMKD.BRACKET.varAlt01</string>
     </array>
     <key>public.kern1.theta</key>
     <array>
@@ -1484,7 +1443,6 @@
       <string>abreve-cy.ss01</string>
       <string>pe-cy.loclSRB.ss01</string>
       <string>te-cy.loclSRB.ss01</string>
-      <string>pe-cy.loclSRB.BRACKET.varAlt01</string>
     </array>
     <key>public.kern1.uhorn</key>
     <array>
@@ -2068,15 +2026,6 @@
       <string>aeacute</string>
       <string>a-cy</string>
       <string>aie-cy</string>
-      <string>a.BRACKET.varAlt01</string>
-      <string>aacute.BRACKET.varAlt01</string>
-      <string>adotbelow.BRACKET.varAlt01</string>
-      <string>aogonek.BRACKET.varAlt01</string>
-      <string>aring.BRACKET.varAlt01</string>
-      <string>ae.BRACKET.varAlt01</string>
-      <string>aeacute.BRACKET.varAlt01</string>
-      <string>a-cy.BRACKET.varAlt01</string>
-      <string>aie-cy.BRACKET.varAlt01</string>
     </array>
     <key>public.kern2.aaccent</key>
     <array>
@@ -2101,32 +2050,10 @@
       <string>atilde</string>
       <string>abreve-cy</string>
       <string>adieresis-cy</string>
-      <string>abreve.BRACKET.varAlt01</string>
-      <string>abreveacute.BRACKET.varAlt01</string>
-      <string>abrevedotbelow.BRACKET.varAlt01</string>
-      <string>abrevegrave.BRACKET.varAlt01</string>
-      <string>abrevehookabove.BRACKET.varAlt01</string>
-      <string>abrevetilde.BRACKET.varAlt01</string>
-      <string>acircumflex.BRACKET.varAlt01</string>
-      <string>acircumflexacute.BRACKET.varAlt01</string>
-      <string>acircumflexdotbelow.BRACKET.varAlt01</string>
-      <string>acircumflexgrave.BRACKET.varAlt01</string>
-      <string>acircumflexhookabove.BRACKET.varAlt01</string>
-      <string>acircumflextilde.BRACKET.varAlt01</string>
-      <string>adieresis.BRACKET.varAlt01</string>
-      <string>agrave.BRACKET.varAlt01</string>
-      <string>ahookabove.BRACKET.varAlt01</string>
-      <string>ainvertedbreve.BRACKET.varAlt01</string>
-      <string>amacron.BRACKET.varAlt01</string>
-      <string>aringacute.BRACKET.varAlt01</string>
-      <string>atilde.BRACKET.varAlt01</string>
-      <string>abreve-cy.BRACKET.varAlt01</string>
-      <string>adieresis-cy.BRACKET.varAlt01</string>
     </array>
     <key>public.kern2.adblgrave</key>
     <array>
       <string>adblgrave</string>
-      <string>adblgrave.BRACKET.varAlt01</string>
     </array>
     <key>public.kern2.ampersand</key>
     <array>
@@ -2149,7 +2076,6 @@
       <string>registered</string>
       <string>trademark</string>
       <string>degree</string>
-      <string>ordfeminine.BRACKET.varAlt01</string>
     </array>
     <key>public.kern2.at</key>
     <array>
@@ -2297,18 +2223,12 @@
       <string>g</string>
       <string>gcommaaccent</string>
       <string>gdotaccent</string>
-      <string>g.BRACKET.varAlt01</string>
-      <string>gcommaaccent.BRACKET.varAlt01</string>
-      <string>gdotaccent.BRACKET.varAlt01</string>
     </array>
     <key>public.kern2.gaccent</key>
     <array>
       <string>gbreve</string>
       <string>gcaron</string>
       <string>gcircumflex</string>
-      <string>gbreve.BRACKET.varAlt01</string>
-      <string>gcaron.BRACKET.varAlt01</string>
-      <string>gcircumflex.BRACKET.varAlt01</string>
     </array>
     <key>public.kern2.geSRB</key>
     <array>
@@ -2603,8 +2523,6 @@
       <string>idieresis-cy</string>
       <string>gje-cy.loclMKD</string>
       <string>gje-cy.ss01</string>
-      <string>gje-cy.BRACKET.varAlt01</string>
-      <string>gje-cy.loclMKD.BRACKET.varAlt01</string>
     </array>
     <key>public.kern2.nine</key>
     <array>
@@ -2928,7 +2846,6 @@
       <string>kabashkir-cy</string>
       <string>hardsign-cy.loclBGR</string>
       <string>te-cy.loclSRB</string>
-      <string>te-cy.loclSRB.BRACKET.varAlt01</string>
     </array>
     <key>public.kern2.theta</key>
     <array>
@@ -2999,7 +2916,6 @@
       <string>pe-cy.loclSRB.ss01</string>
       <string>te-cy.loclSRB.ss01</string>
       <string>upsilondieresis</string>
-      <string>pe-cy.loclSRB.BRACKET.varAlt01</string>
     </array>
     <key>public.kern2.udblgrave</key>
     <array>

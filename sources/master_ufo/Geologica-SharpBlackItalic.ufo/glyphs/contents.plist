@@ -750,100 +750,66 @@
     <string>a.glif</string>
     <key>a-cy</key>
     <string>a-cy.glif</string>
-    <key>a-cy.BRACKET.varAlt01</key>
-    <string>a-cy.B_R_A_C_K_E_T_.varA_lt01.glif</string>
     <key>a-cy.ss01</key>
     <string>a-cy.ss01.glif</string>
-    <key>a.BRACKET.varAlt01</key>
-    <string>a.B_R_A_C_K_E_T_.varA_lt01.glif</string>
     <key>a.ss01</key>
     <string>a.ss01.glif</string>
     <key>aacute</key>
     <string>aacute.glif</string>
-    <key>aacute.BRACKET.varAlt01</key>
-    <string>aacute.B_R_A_C_K_E_T_.varA_lt01.glif</string>
     <key>aacute.ss01</key>
     <string>aacute.ss01.glif</string>
     <key>abreve</key>
     <string>abreve.glif</string>
     <key>abreve-cy</key>
     <string>abreve-cy.glif</string>
-    <key>abreve-cy.BRACKET.varAlt01</key>
-    <string>abreve-cy.B_R_A_C_K_E_T_.varA_lt01.glif</string>
     <key>abreve-cy.ss01</key>
     <string>abreve-cy.ss01.glif</string>
-    <key>abreve.BRACKET.varAlt01</key>
-    <string>abreve.B_R_A_C_K_E_T_.varA_lt01.glif</string>
     <key>abreve.ss01</key>
     <string>abreve.ss01.glif</string>
     <key>abreveacute</key>
     <string>abreveacute.glif</string>
-    <key>abreveacute.BRACKET.varAlt01</key>
-    <string>abreveacute.B_R_A_C_K_E_T_.varA_lt01.glif</string>
     <key>abreveacute.ss01</key>
     <string>abreveacute.ss01.glif</string>
     <key>abrevedotbelow</key>
     <string>abrevedotbelow.glif</string>
-    <key>abrevedotbelow.BRACKET.varAlt01</key>
-    <string>abrevedotbelow.B_R_A_C_K_E_T_.varA_lt01.glif</string>
     <key>abrevedotbelow.ss01</key>
     <string>abrevedotbelow.ss01.glif</string>
     <key>abrevegrave</key>
     <string>abrevegrave.glif</string>
-    <key>abrevegrave.BRACKET.varAlt01</key>
-    <string>abrevegrave.B_R_A_C_K_E_T_.varA_lt01.glif</string>
     <key>abrevegrave.ss01</key>
     <string>abrevegrave.ss01.glif</string>
     <key>abrevehookabove</key>
     <string>abrevehookabove.glif</string>
-    <key>abrevehookabove.BRACKET.varAlt01</key>
-    <string>abrevehookabove.B_R_A_C_K_E_T_.varA_lt01.glif</string>
     <key>abrevehookabove.ss01</key>
     <string>abrevehookabove.ss01.glif</string>
     <key>abrevetilde</key>
     <string>abrevetilde.glif</string>
-    <key>abrevetilde.BRACKET.varAlt01</key>
-    <string>abrevetilde.B_R_A_C_K_E_T_.varA_lt01.glif</string>
     <key>abrevetilde.ss01</key>
     <string>abrevetilde.ss01.glif</string>
     <key>acaron</key>
     <string>acaron.glif</string>
-    <key>acaron.BRACKET.varAlt01</key>
-    <string>acaron.B_R_A_C_K_E_T_.varA_lt01.glif</string>
     <key>acircumflex</key>
     <string>acircumflex.glif</string>
-    <key>acircumflex.BRACKET.varAlt01</key>
-    <string>acircumflex.B_R_A_C_K_E_T_.varA_lt01.glif</string>
     <key>acircumflex.ss01</key>
     <string>acircumflex.ss01.glif</string>
     <key>acircumflexacute</key>
     <string>acircumflexacute.glif</string>
-    <key>acircumflexacute.BRACKET.varAlt01</key>
-    <string>acircumflexacute.B_R_A_C_K_E_T_.varA_lt01.glif</string>
     <key>acircumflexacute.ss01</key>
     <string>acircumflexacute.ss01.glif</string>
     <key>acircumflexdotbelow</key>
     <string>acircumflexdotbelow.glif</string>
-    <key>acircumflexdotbelow.BRACKET.varAlt01</key>
-    <string>acircumflexdotbelow.B_R_A_C_K_E_T_.varA_lt01.glif</string>
     <key>acircumflexdotbelow.ss01</key>
     <string>acircumflexdotbelow.ss01.glif</string>
     <key>acircumflexgrave</key>
     <string>acircumflexgrave.glif</string>
-    <key>acircumflexgrave.BRACKET.varAlt01</key>
-    <string>acircumflexgrave.B_R_A_C_K_E_T_.varA_lt01.glif</string>
     <key>acircumflexgrave.ss01</key>
     <string>acircumflexgrave.ss01.glif</string>
     <key>acircumflexhookabove</key>
     <string>acircumflexhookabove.glif</string>
-    <key>acircumflexhookabove.BRACKET.varAlt01</key>
-    <string>acircumflexhookabove.B_R_A_C_K_E_T_.varA_lt01.glif</string>
     <key>acircumflexhookabove.ss01</key>
     <string>acircumflexhookabove.ss01.glif</string>
     <key>acircumflextilde</key>
     <string>acircumflextilde.glif</string>
-    <key>acircumflextilde.BRACKET.varAlt01</key>
-    <string>acircumflextilde.B_R_A_C_K_E_T_.varA_lt01.glif</string>
     <key>acircumflextilde.ss01</key>
     <string>acircumflextilde.ss01.glif</string>
     <key>acute</key>
@@ -856,62 +822,42 @@
     <string>acutecomb.narrow.glif</string>
     <key>adblgrave</key>
     <string>adblgrave.glif</string>
-    <key>adblgrave.BRACKET.varAlt01</key>
-    <string>adblgrave.B_R_A_C_K_E_T_.varA_lt01.glif</string>
     <key>adblgrave.ss01</key>
     <string>adblgrave.ss01.glif</string>
     <key>adieresis</key>
     <string>adieresis.glif</string>
     <key>adieresis-cy</key>
     <string>adieresis-cy.glif</string>
-    <key>adieresis-cy.BRACKET.varAlt01</key>
-    <string>adieresis-cy.B_R_A_C_K_E_T_.varA_lt01.glif</string>
     <key>adieresis-cy.ss01</key>
     <string>adieresis-cy.ss01.glif</string>
-    <key>adieresis.BRACKET.varAlt01</key>
-    <string>adieresis.B_R_A_C_K_E_T_.varA_lt01.glif</string>
     <key>adieresis.ss01</key>
     <string>adieresis.ss01.glif</string>
     <key>adotbelow</key>
     <string>adotbelow.glif</string>
-    <key>adotbelow.BRACKET.varAlt01</key>
-    <string>adotbelow.B_R_A_C_K_E_T_.varA_lt01.glif</string>
     <key>adotbelow.ss01</key>
     <string>adotbelow.ss01.glif</string>
     <key>ae</key>
     <string>ae.glif</string>
-    <key>ae.BRACKET.varAlt01</key>
-    <string>ae.B_R_A_C_K_E_T_.varA_lt01.glif</string>
     <key>ae.ss01</key>
     <string>ae.ss01.glif</string>
     <key>aeacute</key>
     <string>aeacute.glif</string>
-    <key>aeacute.BRACKET.varAlt01</key>
-    <string>aeacute.B_R_A_C_K_E_T_.varA_lt01.glif</string>
     <key>aeacute.ss01</key>
     <string>aeacute.ss01.glif</string>
     <key>agrave</key>
     <string>agrave.glif</string>
-    <key>agrave.BRACKET.varAlt01</key>
-    <string>agrave.B_R_A_C_K_E_T_.varA_lt01.glif</string>
     <key>agrave.ss01</key>
     <string>agrave.ss01.glif</string>
     <key>ahookabove</key>
     <string>ahookabove.glif</string>
-    <key>ahookabove.BRACKET.varAlt01</key>
-    <string>ahookabove.B_R_A_C_K_E_T_.varA_lt01.glif</string>
     <key>ahookabove.ss01</key>
     <string>ahookabove.ss01.glif</string>
     <key>aie-cy</key>
     <string>aie-cy.glif</string>
-    <key>aie-cy.BRACKET.varAlt01</key>
-    <string>aie-cy.B_R_A_C_K_E_T_.varA_lt01.glif</string>
     <key>aie-cy.ss01</key>
     <string>aie-cy.ss01.glif</string>
     <key>ainvertedbreve</key>
     <string>ainvertedbreve.glif</string>
-    <key>ainvertedbreve.BRACKET.varAlt01</key>
-    <string>ainvertedbreve.B_R_A_C_K_E_T_.varA_lt01.glif</string>
     <key>ainvertedbreve.ss01</key>
     <string>ainvertedbreve.ss01.glif</string>
     <key>alpha</key>
@@ -920,8 +866,6 @@
     <string>alphatonos.glif</string>
     <key>amacron</key>
     <string>amacron.glif</string>
-    <key>amacron.BRACKET.varAlt01</key>
-    <string>amacron.B_R_A_C_K_E_T_.varA_lt01.glif</string>
     <key>amacron.ss01</key>
     <string>amacron.ss01.glif</string>
     <key>ampersand</key>
@@ -930,8 +874,6 @@
     <string>anoteleia.glif</string>
     <key>aogonek</key>
     <string>aogonek.glif</string>
-    <key>aogonek.BRACKET.varAlt01</key>
-    <string>aogonek.B_R_A_C_K_E_T_.varA_lt01.glif</string>
     <key>aogonek.ss01</key>
     <string>aogonek.ss01.glif</string>
     <key>apostrophemod</key>
@@ -940,14 +882,10 @@
     <string>approxequal.glif</string>
     <key>aring</key>
     <string>aring.glif</string>
-    <key>aring.BRACKET.varAlt01</key>
-    <string>aring.B_R_A_C_K_E_T_.varA_lt01.glif</string>
     <key>aring.ss01</key>
     <string>aring.ss01.glif</string>
     <key>aringacute</key>
     <string>aringacute.glif</string>
-    <key>aringacute.BRACKET.varAlt01</key>
-    <string>aringacute.B_R_A_C_K_E_T_.varA_lt01.glif</string>
     <key>aringacute.ss01</key>
     <string>aringacute.ss01.glif</string>
     <key>asciicircum</key>
@@ -960,8 +898,6 @@
     <string>at.glif</string>
     <key>atilde</key>
     <string>atilde.glif</string>
-    <key>atilde.BRACKET.varAlt01</key>
-    <string>atilde.B_R_A_C_K_E_T_.varA_lt01.glif</string>
     <key>atilde.ss01</key>
     <string>atilde.ss01.glif</string>
     <key>b</key>
@@ -1292,40 +1228,28 @@
     <string>franc.glif</string>
     <key>g</key>
     <string>g.glif</string>
-    <key>g.BRACKET.varAlt01</key>
-    <string>g.B_R_A_C_K_E_T_.varA_lt01.glif</string>
     <key>g.ss01</key>
     <string>g.ss01.glif</string>
     <key>gamma</key>
     <string>gamma.glif</string>
     <key>gbreve</key>
     <string>gbreve.glif</string>
-    <key>gbreve.BRACKET.varAlt01</key>
-    <string>gbreve.B_R_A_C_K_E_T_.varA_lt01.glif</string>
     <key>gbreve.ss01</key>
     <string>gbreve.ss01.glif</string>
     <key>gcaron</key>
     <string>gcaron.glif</string>
-    <key>gcaron.BRACKET.varAlt01</key>
-    <string>gcaron.B_R_A_C_K_E_T_.varA_lt01.glif</string>
     <key>gcaron.ss01</key>
     <string>gcaron.ss01.glif</string>
     <key>gcircumflex</key>
     <string>gcircumflex.glif</string>
-    <key>gcircumflex.BRACKET.varAlt01</key>
-    <string>gcircumflex.B_R_A_C_K_E_T_.varA_lt01.glif</string>
     <key>gcircumflex.ss01</key>
     <string>gcircumflex.ss01.glif</string>
     <key>gcommaaccent</key>
     <string>gcommaaccent.glif</string>
-    <key>gcommaaccent.BRACKET.varAlt01</key>
-    <string>gcommaaccent.B_R_A_C_K_E_T_.varA_lt01.glif</string>
     <key>gcommaaccent.ss01</key>
     <string>gcommaaccent.ss01.glif</string>
     <key>gdotaccent</key>
     <string>gdotaccent.glif</string>
-    <key>gdotaccent.BRACKET.varAlt01</key>
-    <string>gdotaccent.B_R_A_C_K_E_T_.varA_lt01.glif</string>
     <key>gdotaccent.ss01</key>
     <string>gdotaccent.ss01.glif</string>
     <key>ge-cy</key>
@@ -1346,12 +1270,8 @@
     <string>gheupturn-cy.glif</string>
     <key>gje-cy</key>
     <string>gje-cy.glif</string>
-    <key>gje-cy.BRACKET.varAlt01</key>
-    <string>gje-cy.B_R_A_C_K_E_T_.varA_lt01.glif</string>
     <key>gje-cy.loclMKD</key>
     <string>gje-cy.loclM_K_D_.glif</string>
-    <key>gje-cy.loclMKD.BRACKET.varAlt01</key>
-    <string>gje-cy.loclM_K_D_.B_R_A_C_K_E_T_.varA_lt01.glif</string>
     <key>gje-cy.loclMKD.ss01</key>
     <string>gje-cy.loclM_K_D_.ss01.glif</string>
     <key>gje-cy.ss01</key>
@@ -1726,8 +1646,6 @@
     <string>oogonek.glif</string>
     <key>ordfeminine</key>
     <string>ordfeminine.glif</string>
-    <key>ordfeminine.BRACKET.varAlt01</key>
-    <string>ordfeminine.B_R_A_C_K_E_T_.varA_lt01.glif</string>
     <key>ordfeminine.ss01</key>
     <string>ordfeminine.ss01.glif</string>
     <key>ordmasculine</key>
@@ -1756,8 +1674,6 @@
     <string>pe-cy.loclB_G_R_.glif</string>
     <key>pe-cy.loclSRB</key>
     <string>pe-cy.loclS_R_B_.glif</string>
-    <key>pe-cy.loclSRB.BRACKET.varAlt01</key>
-    <string>pe-cy.loclS_R_B_.B_R_A_C_K_E_T_.varA_lt01.glif</string>
     <key>pe-cy.loclSRB.ss01</key>
     <string>pe-cy.loclS_R_B_.ss01.glif</string>
     <key>percent</key>
@@ -1928,8 +1844,6 @@
     <string>te-cy.loclB_G_R_.glif</string>
     <key>te-cy.loclSRB</key>
     <string>te-cy.loclS_R_B_.glif</string>
-    <key>te-cy.loclSRB.BRACKET.varAlt01</key>
-    <string>te-cy.loclS_R_B_.B_R_A_C_K_E_T_.varA_lt01.glif</string>
     <key>te-cy.loclSRB.ss01</key>
     <string>te-cy.loclS_R_B_.ss01.glif</string>
     <key>tenge</key>

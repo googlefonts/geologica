@@ -3030,114 +3030,76 @@
       <string>_part.tsecy</string>
       <key>a-cy</key>
       <string>uni0430</string>
-      <key>a-cy.BRACKET.varAlt01</key>
-      <string>uni0430.BRACKET.varAlt01</string>
       <key>a-cy.ss01</key>
       <string>uni0430.ss01</string>
       <key>abreve-cy</key>
       <string>uni04D1</string>
-      <key>abreve-cy.BRACKET.varAlt01</key>
-      <string>uni04D1.BRACKET.varAlt01</string>
       <key>abreve-cy.ss01</key>
       <string>uni04D1.ss01</string>
       <key>abreveacute</key>
       <string>uni1EAF</string>
-      <key>abreveacute.BRACKET.varAlt01</key>
-      <string>uni1EAF.BRACKET.varAlt01</string>
       <key>abreveacute.ss01</key>
       <string>uni1EAF.ss01</string>
       <key>abrevedotbelow</key>
       <string>uni1EB7</string>
-      <key>abrevedotbelow.BRACKET.varAlt01</key>
-      <string>uni1EB7.BRACKET.varAlt01</string>
       <key>abrevedotbelow.ss01</key>
       <string>uni1EB7.ss01</string>
       <key>abrevegrave</key>
       <string>uni1EB1</string>
-      <key>abrevegrave.BRACKET.varAlt01</key>
-      <string>uni1EB1.BRACKET.varAlt01</string>
       <key>abrevegrave.ss01</key>
       <string>uni1EB1.ss01</string>
       <key>abrevehookabove</key>
       <string>uni1EB3</string>
-      <key>abrevehookabove.BRACKET.varAlt01</key>
-      <string>uni1EB3.BRACKET.varAlt01</string>
       <key>abrevehookabove.ss01</key>
       <string>uni1EB3.ss01</string>
       <key>abrevetilde</key>
       <string>uni1EB5</string>
-      <key>abrevetilde.BRACKET.varAlt01</key>
-      <string>uni1EB5.BRACKET.varAlt01</string>
       <key>abrevetilde.ss01</key>
       <string>uni1EB5.ss01</string>
       <key>acaron</key>
       <string>uni01CE</string>
-      <key>acaron.BRACKET.varAlt01</key>
-      <string>uni01CE.BRACKET.varAlt01</string>
       <key>acircumflexacute</key>
       <string>uni1EA5</string>
-      <key>acircumflexacute.BRACKET.varAlt01</key>
-      <string>uni1EA5.BRACKET.varAlt01</string>
       <key>acircumflexacute.ss01</key>
       <string>uni1EA5.ss01</string>
       <key>acircumflexdotbelow</key>
       <string>uni1EAD</string>
-      <key>acircumflexdotbelow.BRACKET.varAlt01</key>
-      <string>uni1EAD.BRACKET.varAlt01</string>
       <key>acircumflexdotbelow.ss01</key>
       <string>uni1EAD.ss01</string>
       <key>acircumflexgrave</key>
       <string>uni1EA7</string>
-      <key>acircumflexgrave.BRACKET.varAlt01</key>
-      <string>uni1EA7.BRACKET.varAlt01</string>
       <key>acircumflexgrave.ss01</key>
       <string>uni1EA7.ss01</string>
       <key>acircumflexhookabove</key>
       <string>uni1EA9</string>
-      <key>acircumflexhookabove.BRACKET.varAlt01</key>
-      <string>uni1EA9.BRACKET.varAlt01</string>
       <key>acircumflexhookabove.ss01</key>
       <string>uni1EA9.ss01</string>
       <key>acircumflextilde</key>
       <string>uni1EAB</string>
-      <key>acircumflextilde.BRACKET.varAlt01</key>
-      <string>uni1EAB.BRACKET.varAlt01</string>
       <key>acircumflextilde.ss01</key>
       <string>uni1EAB.ss01</string>
       <key>adblgrave</key>
       <string>uni0201</string>
-      <key>adblgrave.BRACKET.varAlt01</key>
-      <string>uni0201.BRACKET.varAlt01</string>
       <key>adblgrave.ss01</key>
       <string>uni0201.ss01</string>
       <key>adieresis-cy</key>
       <string>uni04D3</string>
-      <key>adieresis-cy.BRACKET.varAlt01</key>
-      <string>uni04D3.BRACKET.varAlt01</string>
       <key>adieresis-cy.ss01</key>
       <string>uni04D3.ss01</string>
       <key>adotbelow</key>
       <string>uni1EA1</string>
-      <key>adotbelow.BRACKET.varAlt01</key>
-      <string>uni1EA1.BRACKET.varAlt01</string>
       <key>adotbelow.ss01</key>
       <string>uni1EA1.ss01</string>
       <key>ahookabove</key>
       <string>uni1EA3</string>
-      <key>ahookabove.BRACKET.varAlt01</key>
-      <string>uni1EA3.BRACKET.varAlt01</string>
       <key>ahookabove.ss01</key>
       <string>uni1EA3.ss01</string>
       <key>aie-cy</key>
       <string>uni04D5</string>
-      <key>aie-cy.BRACKET.varAlt01</key>
-      <string>uni04D5.BRACKET.varAlt01</string>
       <key>aie-cy.ss01</key>
       <string>uni04D5.ss01</string>
       <key>ainvertedbreve</key>
       <string>uni0203</string>
-      <key>ainvertedbreve.BRACKET.varAlt01</key>
-      <string>uni0203.BRACKET.varAlt01</string>
       <key>ainvertedbreve.ss01</key>
       <string>uni0203.ss01</string>
       <key>apostrophemod</key>
@@ -3310,8 +3272,6 @@
       <string>uni2074</string>
       <key>gcommaaccent</key>
       <string>uni0123</string>
-      <key>gcommaaccent.BRACKET.varAlt01</key>
-      <string>uni0123.BRACKET.varAlt01</string>
       <key>gcommaaccent.ss01</key>
       <string>uni0123.ss01</string>
       <key>ge-cy</key>
@@ -3330,12 +3290,8 @@
       <string>uni0491</string>
       <key>gje-cy</key>
       <string>uni0453</string>
-      <key>gje-cy.BRACKET.varAlt01</key>
-      <string>uni0453.BRACKET.varAlt01</string>
       <key>gje-cy.loclMKD</key>
       <string>uni0453.loclMKD</string>
-      <key>gje-cy.loclMKD.BRACKET.varAlt01</key>
-      <string>uni0453.loclMKD.BRACKET.varAlt01</string>
       <key>gje-cy.loclMKD.ss01</key>
       <string>uni0453.loclMKD.ss01</string>
       <key>gje-cy.ss01</key>
@@ -3548,8 +3504,6 @@
       <string>uni043F.loclBGR</string>
       <key>pe-cy.loclSRB</key>
       <string>uni043F.loclSRB</string>
-      <key>pe-cy.loclSRB.BRACKET.varAlt01</key>
-      <string>uni043F.loclSRB.BRACKET.varAlt01</string>
       <key>pe-cy.loclSRB.ss01</key>
       <string>uni043F.loclSRB.ss01</string>
       <key>peso</key>
@@ -3620,8 +3574,6 @@
       <string>uni0442.loclBGR</string>
       <key>te-cy.loclSRB</key>
       <string>uni0442.loclSRB</string>
-      <key>te-cy.loclSRB.BRACKET.varAlt01</key>
-      <string>uni0442.loclSRB.BRACKET.varAlt01</string>
       <key>te-cy.loclSRB.ss01</key>
       <string>uni0442.loclSRB.ss01</string>
       <key>tenge</key>
