@@ -149,7 +149,7 @@
     <key>com.schriftgestaltung.customParameter.GSFontMaster.weightValue</key>
     <integer>200</integer>
     <key>com.schriftgestaltung.customParameter.GSFontMaster.widthValue</key>
-    <integer>1</integer>
+    <integer>0</integer>
     <key>com.schriftgestaltung.customValue</key>
     <integer>100</integer>
     <key>com.schriftgestaltung.customValue1</key>
@@ -158,8 +158,6 @@
     <integer>7</integer>
     <key>com.schriftgestaltung.weightValue</key>
     <integer>200</integer>
-    <key>com.schriftgestaltung.widthValue</key>
-    <integer>1</integer>
     <key>public.glyphOrder</key>
     <array>
       <string>A</string>

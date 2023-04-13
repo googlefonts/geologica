@@ -47,7 +47,8 @@
       <sub name="gdotaccent" with="gdotaccent.ss01"/>
       <sub name="ordfeminine" with="ordfeminine.ss01"/>
       <sub name="pe-cy.loclSRB" with="pe-cy.loclSRB.ss01"/>
-      <sub name="te-cy.loclSRB" with="te-cy.loclSRB.ss01"/>    
+      <sub name="te-cy.loclSRB" with="te-cy.loclSRB.ss01"/>
+      <sub name="gje-cy.loclMKD" with="gje-cy.loclMKD.ss01"/>    
     </rule>
     <rule name="ColonSign Bold">
       <conditionset>
