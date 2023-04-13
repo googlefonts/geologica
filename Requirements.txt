@@ -1,6 +1,0 @@
-# fontmake
-fontbakery
-gftools
-fs
-git+https://github.com/googlefonts/glyphsLib
-git+https://github.com/googlefonts/fontmake
