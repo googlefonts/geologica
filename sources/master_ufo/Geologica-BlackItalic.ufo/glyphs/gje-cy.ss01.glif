@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="gje-cy.ss01" format="2">
+  <advance width="898"/>
+  <anchor x="337" y="462" name="bar"/>
+  <anchor x="419" y="0" name="descender"/>
+  <anchor x="611" y="1040" name="top"/>
+  <outline>
+    <component base="ge-cy"/>
+    <component base="acutecomb" xOffset="291"/>
+  </outline>
+</glyph>

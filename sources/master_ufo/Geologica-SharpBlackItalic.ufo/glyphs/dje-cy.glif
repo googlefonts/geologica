@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="dje-cy" format="2">
+  <advance width="1364"/>
+  <unicode hex="0452"/>
+  <anchor x="553" y="1224" name="bar"/>
+  <outline>
+    <component base="_part.heng"/>
+    <component base="strokeshortcomb" xOffset="141" yOffset="690"/>
+  </outline>
+</glyph>

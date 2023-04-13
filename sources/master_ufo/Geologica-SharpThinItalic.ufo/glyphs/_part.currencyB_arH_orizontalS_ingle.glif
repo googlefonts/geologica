@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="_part.currencyBarHorizontalSingle" format="2">
+  <advance width="1296"/>
+  <anchor x="844" y="1400" name="_top"/>
+  <outline>
+    <contour>
+      <point x="94" y="638" type="line"/>
+      <point x="1270" y="638" type="line"/>
+      <point x="1290" y="738" type="line"/>
+      <point x="114" y="738" type="line"/>
+    </contour>
+  </outline>
+</glyph>

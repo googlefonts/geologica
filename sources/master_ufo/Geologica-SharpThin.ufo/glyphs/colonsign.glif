@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="colonsign" format="2">
+  <advance width="1296"/>
+  <unicode hex="20A1"/>
+  <anchor x="714" y="0" name="bottom"/>
+  <anchor x="714" y="1400" name="top"/>
+  <outline>
+    <component base="_part.cedi"/>
+    <component base="_part.currencyVertDiag" xOffset="-98"/>
+  </outline>
+</glyph>

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="ghestroke-cy" format="2">
+  <advance width="880"/>
+  <unicode hex="0493"/>
+  <anchor x="384" y="486" name="bar"/>
+  <anchor x="220" y="0" name="descender"/>
+  <anchor x="614" y="960" name="top"/>
+  <outline>
+    <component base="ge-cy" xOffset="40"/>
+    <component base="strokeshortcomb" xOffset="54" yOffset="-34"/>
+  </outline>
+</glyph>

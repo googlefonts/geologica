@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="naira" format="2">
+  <advance width="1296"/>
+  <unicode hex="20A6"/>
+  <anchor x="648" y="0" name="bottom"/>
+  <anchor x="648" y="1400" name="top"/>
+  <outline>
+    <component base="_part.naira"/>
+    <component base="_part.currencyBarHorizontalSingle"/>
+  </outline>
+</glyph>

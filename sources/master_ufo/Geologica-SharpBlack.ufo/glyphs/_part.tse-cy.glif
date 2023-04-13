@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="_part.tse-cy" format="2">
+  <advance width="1330"/>
+  <anchor x="665" y="0" name="bottom"/>
+  <anchor x="1205" y="0" name="descender"/>
+  <outline>
+    <contour>
+      <point x="125" y="0" type="line"/>
+      <point x="1205" y="0" type="line"/>
+      <point x="1205" y="1100" type="line"/>
+      <point x="805" y="914" type="line"/>
+      <point x="805" y="312" type="line"/>
+      <point x="525" y="312" type="line"/>
+      <point x="525" y="1100" type="line"/>
+      <point x="125" y="914" type="line"/>
+    </contour>
+  </outline>
+</glyph>

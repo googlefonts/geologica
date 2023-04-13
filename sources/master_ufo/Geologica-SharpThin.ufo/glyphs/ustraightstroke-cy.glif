@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="ustraightstroke-cy" format="2">
+  <advance width="966"/>
+  <unicode hex="04B1"/>
+  <anchor x="484" y="-80" name="bar"/>
+  <outline>
+    <component base="ustraight-cy"/>
+    <component base="strokeshortcomb" xOffset="164" yOffset="-600"/>
+  </outline>
+</glyph>

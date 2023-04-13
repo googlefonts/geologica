@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="chekhakassian-cy" format="2">
+  <advance width="1226"/>
+  <unicode hex="04CC"/>
+  <anchor x="723" y="0" name="_descender"/>
+  <anchor x="567" y="486" name="center"/>
+  <anchor x="1101" y="0" name="descender"/>
+  <anchor x="701" y="0" name="descender_alt"/>
+  <anchor x="567" y="1040" name="top"/>
+  <outline>
+    <contour>
+      <point x="439" y="-384" type="line"/>
+      <point x="803" y="-216" type="line"/>
+      <point x="803" y="0" type="line"/>
+      <point x="883" y="0" type="line"/>
+      <point x="883" y="232" type="line"/>
+      <point x="439" y="232" type="line"/>
+    </contour>
+    <component base="che-cy"/>
+  </outline>
+</glyph>

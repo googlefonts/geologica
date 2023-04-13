@@ -1,0 +1,5 @@
+fontmake
+fontbakery
+gftools
+fs
+freetype-py

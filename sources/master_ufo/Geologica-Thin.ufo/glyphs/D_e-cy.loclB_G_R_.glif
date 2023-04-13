@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="De-cy.loclBGR" format="2">
+  <advance width="1580"/>
+  <outline>
+    <contour>
+      <point x="166" y="0" type="line"/>
+      <point x="292" y="0" type="line"/>
+      <point x="776" y="1228" type="line"/>
+      <point x="1288" y="0" type="line"/>
+      <point x="1418" y="0" type="line"/>
+      <point x="830" y="1400" type="line"/>
+      <point x="730" y="1400" type="line"/>
+    </contour>
+    <contour>
+      <point x="64" y="-360" type="line"/>
+      <point x="172" y="-360" type="line"/>
+      <point x="172" y="0" type="line"/>
+      <point x="1408" y="0" type="line"/>
+      <point x="1408" y="-360" type="line"/>
+      <point x="1516" y="-360" type="line"/>
+      <point x="1516" y="108" type="line"/>
+      <point x="64" y="108" type="line"/>
+    </contour>
+  </outline>
+</glyph>

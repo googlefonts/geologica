@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="aogonek" format="2">
+  <advance width="1213"/>
+  <unicode hex="0105"/>
+  <anchor x="471" y="0" name="bottom"/>
+  <anchor x="989" y="0" name="ogonek"/>
+  <anchor x="689" y="1040" name="top"/>
+  <outline>
+    <contour>
+      <point x="716" y="-449" type="curve" smooth="yes"/>
+      <point x="787" y="-449"/>
+      <point x="866" y="-433"/>
+      <point x="943" y="-389" type="curve"/>
+      <point x="901" y="-192" type="line"/>
+      <point x="869" y="-217"/>
+      <point x="824" y="-229"/>
+      <point x="792" y="-229" type="curve" smooth="yes"/>
+      <point x="748" y="-229"/>
+      <point x="714" y="-205"/>
+      <point x="714" y="-158" type="curve" smooth="yes"/>
+      <point x="714" y="-32"/>
+      <point x="862" y="-7"/>
+      <point x="989" y="0" type="curve"/>
+      <point x="989.0" y="98.5" type="line"/>
+      <point x="726.0" y="87.5"/>
+      <point x="478.0" y="-23.5"/>
+      <point x="478" y="-240" type="curve" smooth="yes"/>
+      <point x="478" y="-367"/>
+      <point x="575" y="-449"/>
+    </contour>
+    <component base="a"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.componentsSmartComponentValues</key>
+      <array>
+        <dict/>
+        <dict>
+          <key>ConnectionWeight</key>
+          <integer>50</integer>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

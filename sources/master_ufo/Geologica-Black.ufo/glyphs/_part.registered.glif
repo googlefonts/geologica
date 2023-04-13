@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="_part.registered" format="2">
+  <advance width="1610"/>
+  <anchor x="805" y="682" name="center"/>
+  <outline>
+    <component base="_part.ring" xOffset="-33"/>
+    <component base="_part.R" xOffset="423" yOffset="290"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>_part.ring</string>
+        </dict>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>1</integer>
+          <key>name</key>
+          <string>_part.R</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>
