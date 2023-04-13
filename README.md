@@ -15,7 +15,7 @@ Geologica uses the power of the OpenType Variable Font format to simultaneously 
 
 | Axes          | Tag  | Range      | Default  | Description                                            |
 | :------------ | :--- | :--------- | :------- | :----------------------------------------------------- |
-| Cursive       | CRSV | 0 to 1     | 0.5      | Swaps Roman for Cursive variants of certain characters | 
+| Cursive       | CRSV | 0 - 1      | 0        | Swaps Roman for Cursive variants of certain characters | 
 | Sharp         | SHRP | 0 to 100   | 0        | Detailing and terminal treatment                       |
 | Weight        | wght | 100 to 900 | 100      | Thin to Black                                          |
 | Slant         | slnt | 0 to -12   | 0        | Upright (0°) to Oblique (-12°)                         |
@@ -68,8 +68,18 @@ Assuming you are already in the root directory
 cd sources
 ```
 
-**Note:** The alternate cursive shapes are produced using alternate layers in the source file. If you want to include new glyphs with cursive shapes, please ensure to generate them at position `[0,5<CRSV<1]` in the Cursive axis.
+<!-- **Note:** The alternate cursive shapes are produced using alternate layers in the source file. If you want to include new glyphs with cursive shapes, please ensure to generate them at position `[0,5<CRSV<1]` in the Cursive axis. -->
 
+### Build designspace file in /master_ufo
+
+```
+sh build_ds.sh
+```
+
+**Notes:** 
+
+- Run this command every time you make changes to the source file.
+- Once you update the designspace, merge the contents of the `RulesFeatureVariations.txt` file with your .designspace file. See details in the txt file.
 
 ### Build OTvar and TTF fonts
 
